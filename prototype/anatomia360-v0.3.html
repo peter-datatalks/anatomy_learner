@@ -1,0 +1,1665 @@
+<title>Anatomia 360°</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..800&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=Source+Serif+4:ital,wght@1,400;1,600&display=swap">
+<style>
+/* Layout: atlas-style app — fixed side rail (desktop) / bottom tabs (phone); tissue colours follow anatomical-atlas convention (muscle red, nerve yellow, bone ivory, joint/vessel blue). */
+:root{
+  --bg:#f4f6f5; --surface:#ffffff; --surface-2:#eaeeed; --line:#d5dcda;
+  --ink:#16222e; --ink-2:#4a5866; --ink-3:#74818c;
+  --accent:#1f4e79;            /* navy from the concept doc */
+  --accent-soft:#dde7f1;
+  --muscle:#b23a48; --muscle-soft:#f6e1e3;
+  --nerve:#a87908;  --nerve-soft:#f8ecc9;
+  --bone:#8a7550;   --bone-soft:#efe8da;
+  --joint:#2b7a8c;  --joint-soft:#dcedf0;
+  --good:#2f7d4f; --good-soft:#dff0e5;
+  --bad:#b5432f;  --bad-soft:#f7e0da;
+  --f-display:"Archivo","Helvetica Neue",Arial,sans-serif;
+  --f-body:"Source Sans 3","Segoe UI",system-ui,sans-serif;
+  --f-latin:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --r:14px;
+  --grid:rgba(31,78,121,.055);
+  --shadow:0 1px 2px rgba(22,34,46,.05),0 10px 28px -14px rgba(22,34,46,.18);
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f161d; --surface:#16202a; --surface-2:#1d2935; --line:#2b3947;
+  --ink:#e6edf2; --ink-2:#a9b6c1; --ink-3:#7f8d99;
+  --accent:#7fb0e0; --accent-soft:#1b3148;
+  --muscle:#e07a85; --muscle-soft:#3a1d22;
+  --nerve:#e2b94a; --nerve-soft:#3a2f12;
+  --bone:#cdb68c; --bone-soft:#332c1f;
+  --joint:#6cc0d2; --joint-soft:#163238;
+  --good:#6cc794; --good-soft:#15301f;
+  --bad:#ec8a76; --bad-soft:#3a1c16;
+  --grid:rgba(127,176,224,.045); --shadow:0 1px 0 rgba(255,255,255,.03) inset,0 12px 30px -16px rgba(0,0,0,.6);
+  color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f161d; --surface:#16202a; --surface-2:#1d2935; --line:#2b3947;
+  --ink:#e6edf2; --ink-2:#a9b6c1; --ink-3:#7f8d99;
+  --accent:#7fb0e0; --accent-soft:#1b3148;
+  --muscle:#e07a85; --muscle-soft:#3a1d22;
+  --nerve:#e2b94a; --nerve-soft:#3a2f12;
+  --bone:#cdb68c; --bone-soft:#332c1f;
+  --joint:#6cc0d2; --joint-soft:#163238;
+  --good:#6cc794; --good-soft:#15301f;
+  --bad:#ec8a76; --bad-soft:#3a1c16;
+  --grid:rgba(127,176,224,.045); --shadow:0 1px 0 rgba(255,255,255,.03) inset,0 12px 30px -16px rgba(0,0,0,.6);
+  color-scheme:dark}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{background-color:var(--bg);background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:24px 24px;background-attachment:fixed;color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.55}
+button,input,select{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+h1,h2,h3,h4{font-family:var(--f-display);line-height:1.2;margin:0;text-wrap:balance;letter-spacing:-.01em}
+h1{font-size:2.25rem;font-weight:800;font-stretch:118%;letter-spacing:-.025em}
+h2{font-size:1.35rem;font-weight:700;font-stretch:108%}
+h3{font-size:1.08rem;font-weight:700}
+p{margin:0}
+.la{font-family:var(--f-latin);font-style:italic}
+.eyebrow{font-size:.74rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+.muted{color:var(--ink-2)}
+.small{font-size:.88rem}
+.tnum{font-variant-numeric:tabular-nums}
+
+/* Shell */
+.app{display:grid;grid-template-columns:232px 1fr;min-height:100%}
+.rail{position:sticky;top:0;height:100vh;border-right:1px solid var(--line);background:var(--surface);padding:22px 14px;display:flex;flex-direction:column;gap:20px;overflow-y:auto}
+.brand{display:grid;grid-template-columns:38px 1fr;column-gap:10px;align-items:center;padding:0 6px}
+#mark{grid-row:span 2;width:38px;height:38px}
+.brand b{font-family:var(--f-display);font-weight:800;font-size:1.08rem;font-stretch:100%;white-space:nowrap;letter-spacing:-.02em;line-height:1.1}
+.brand b span{color:var(--muscle)}
+.brand small{font-size:.74rem;color:var(--ink-3);line-height:1.3}
+.nav{display:flex;flex-direction:column;gap:2px}
+.nav a{display:flex;align-items:center;gap:10px;padding:9px 10px;border-radius:8px;color:var(--ink-2);text-decoration:none;font-weight:600;font-size:.95rem}
+.nav a:hover{background:var(--surface-2);color:var(--ink)}
+.nav a[aria-current="page"]{background:var(--accent-soft);color:var(--accent)}
+.nav .grp{font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);padding:12px 10px 4px;font-weight:700}
+.nav svg{width:18px;height:18px;flex:none}
+.due-pill{margin-left:auto;background:var(--muscle);color:#fff;border-radius:99px;font-size:.72rem;padding:1px 7px;font-weight:700}
+.rail-foot{margin-top:auto;font-size:.75rem;color:var(--ink-3);padding:0 8px;line-height:1.4}
+main{min-width:0;padding-block:28px 96px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:1040px;margin:0 auto;display:flex;flex-direction:column;gap:24px}
+.tabbar{display:none}
+
+@media (max-width:820px){
+  .app{grid-template-columns:1fr}
+  .rail{display:none}
+  .tabbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--surface);border-top:1px solid var(--line);
+    padding:6px max(8px,env(safe-area-inset-right,0px)) calc(6px + env(safe-area-inset-bottom,0px)) max(8px,env(safe-area-inset-left,0px));justify-content:space-around}
+  .tabbar a{display:flex;flex-direction:column;align-items:center;gap:2px;font-size:.68rem;color:var(--ink-3);text-decoration:none;font-weight:600;padding:4px 6px;border-radius:8px;position:relative}
+  .tabbar a[aria-current="page"]{color:var(--accent)}
+  .tabbar svg{width:22px;height:22px}
+  .tabbar .due-pill{position:absolute;top:-2px;right:-2px;margin:0;font-size:.62rem;padding:0 5px}
+  h1{font-size:1.7rem}
+}
+
+/* Components */
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:20px;box-shadow:var(--shadow)}
+.grid{display:grid;gap:14px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.stack{display:flex;flex-direction:column;gap:10px}
+.btn{text-decoration:none;border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:8px 14px;font-weight:600;font-size:.93rem;display:inline-flex;align-items:center;gap:6px}
+.btn:hover{border-color:var(--ink-3)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--surface)}
+.btn.primary:hover{filter:brightness(1.08)}
+.btn.ghost{border-color:transparent;background:transparent;color:var(--ink-2)}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.chip{display:inline-flex;align-items:center;gap:5px;font-size:.76rem;font-weight:700;border-radius:99px;padding:2px 9px;background:var(--surface-2);color:var(--ink-2);white-space:nowrap}
+.chip.muscle{background:var(--muscle-soft);color:var(--muscle)}
+.chip.nerve{background:var(--nerve-soft);color:var(--nerve)}
+.chip.bone{background:var(--bone-soft);color:var(--bone)}
+.chip.joint{background:var(--joint-soft);color:var(--joint)}
+.chip.official{background:var(--accent-soft);color:var(--accent)}
+.chip.suggest{background:transparent;border:1px dashed var(--ink-3);color:var(--ink-2)}
+.dot{width:8px;height:8px;border-radius:50%;display:inline-block;flex:none}
+.seg{display:inline-flex;background:var(--surface-2);border-radius:9px;padding:3px;gap:2px;flex-wrap:wrap}
+.seg button{border:0;background:transparent;border-radius:7px;padding:6px 12px;font-weight:600;font-size:.88rem;color:var(--ink-2)}
+.seg button[aria-pressed="true"]{background:var(--surface);color:var(--ink);box-shadow:0 1px 2px rgba(0,0,0,.08)}
+.icon-btn{border:0;background:transparent;padding:4px;border-radius:6px;color:var(--ink-3);display:inline-flex}
+.icon-btn:hover{color:var(--ink);background:var(--surface-2)}
+.icon-btn svg{width:18px;height:18px}
+.icon-btn.on{color:var(--nerve)}
+.note{font-size:.84rem;color:var(--ink-2);background:var(--surface-2);border-radius:8px;padding:10px 12px}
+
+/* Trilingual term triplet */
+.tri{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px 14px}
+.tri>div{display:flex;flex-direction:column;min-width:0}
+.tri .lbl{font-size:.68rem;font-weight:700;letter-spacing:.08em;color:var(--ink-3)}
+.tri .v{font-weight:600;overflow-wrap:anywhere}
+.tri .v.la{font-weight:400}
+@media (max-width:520px){.tri{grid-template-columns:1fr}.tri>div{flex-direction:row;align-items:baseline;gap:8px}.tri .lbl{width:22px;flex:none}}
+
+/* Home */
+.hero{display:grid;grid-template-columns:1.4fr 1fr;gap:16px}
+@media (max-width:820px){.hero{grid-template-columns:1fr}}
+.hero .lead{display:flex;flex-direction:column;gap:12px;justify-content:center}
+.pillars{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}
+.pillar{border:1px solid var(--line);border-radius:var(--r);padding:14px;background:var(--surface);display:flex;flex-direction:column;gap:6px;text-decoration:none;color:inherit}
+a.pillar:hover{border-color:var(--accent)}
+.pillar .n{font-family:var(--f-display);font-weight:800;color:var(--ink-3);font-size:.8rem}
+.pillar.soon{opacity:.7}
+.bar{height:6px;border-radius:99px;background:var(--surface-2);overflow:hidden}
+.bar i{display:block;height:100%;background:var(--accent);border-radius:99px}
+
+/* Dictionary */
+.search{display:flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+.search input{border:0;outline:0;background:transparent;flex:1;min-width:0;font-size:1.02rem}
+.search svg{width:20px;height:20px;color:var(--ink-3)}
+.terms{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:var(--r);background:var(--surface);overflow:hidden}
+.term{display:grid;grid-template-columns:6px 1fr auto;gap:12px;align-items:center;padding:12px 14px 12px 0;border-top:1px solid var(--line)}
+.term:first-child{border-top:0}
+.term .stripe{align-self:stretch;border-radius:0 3px 3px 0}
+.term .acts{display:flex;gap:2px}
+.term mark{background:var(--nerve-soft);color:inherit;border-radius:3px;padding:0 1px}
+.term .syn{font-size:.82rem;color:var(--ink-3);margin-top:2px}
+
+/* Module */
+.mod-head{display:flex;flex-direction:column;gap:8px}
+.layer-body{display:flex;flex-direction:column;gap:12px;max-width:68ch}
+.layer-body ul{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
+.sheets{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:10px}
+.sheet-btn{text-align:left;border:1px solid var(--line);background:var(--surface);border-radius:var(--r);padding:12px 14px;display:flex;flex-direction:column;gap:4px;box-shadow:var(--shadow);transition:transform .15s,border-color .15s}
+.sheet-btn:hover{transform:translateY(-1px)}
+.sheet-btn:hover{border-color:var(--ink-3)}
+.sheet-btn[aria-pressed="true"]{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
+.sheet-btn .la{font-size:1.02rem}
+.sheet{display:flex;flex-direction:column;gap:16px}
+.fields{display:grid;grid-template-columns:170px 1fr;border-top:1px solid var(--line)}
+.fields dt,.fields dd{margin:0;padding:9px 0;border-bottom:1px solid var(--line)}
+.fields dt{font-size:.8rem;font-weight:700;color:var(--ink-3);letter-spacing:.02em;padding-right:12px}
+.fields dd{min-width:0}
+@media (max-width:560px){.fields{grid-template-columns:1fr}.fields dt{border-bottom:0;padding-bottom:0}}
+.rom{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.rom figure{margin:0;display:flex;flex-direction:column;align-items:center;gap:4px;text-align:center}
+.rom svg{width:100%;max-width:150px;height:auto}
+.rom figcaption{font-size:.84rem}
+
+/* Cranial nerves */
+.cn-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px}
+.cn{border:1px solid var(--line);background:var(--surface);border-radius:var(--r);padding:10px 12px;text-align:left;display:flex;flex-direction:column;gap:2px}
+.cn:hover{border-color:var(--ink-3)}
+.cn[aria-pressed="true"]{border-color:var(--c,var(--nerve));box-shadow:0 0 0 1px var(--c,var(--nerve));background:linear-gradient(160deg,var(--cs,var(--nerve-soft)),var(--surface) 70%)}
+.cn .num{font-family:var(--f-display);font-weight:800;font-stretch:120%;font-size:1.6rem;line-height:1.1;color:var(--c,var(--nerve))}
+.cn{box-shadow:var(--shadow);transition:transform .15s,border-color .15s}
+.cn:hover{transform:translateY(-1px)}
+.cn .la{font-size:.92rem}
+.typekey{display:flex;gap:6px;flex-wrap:wrap}
+
+/* AI tutor */
+.tutor{border:1px solid var(--line);border-radius:var(--r);background:var(--surface-2);padding:14px;display:flex;flex-direction:column;gap:10px}
+.tutor form{display:flex;gap:8px}
+.tutor input{flex:1;min-width:0;border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:8px 10px}
+.tutor .ans{white-space:pre-wrap;font-size:.95rem;background:var(--surface);border-radius:8px;padding:12px;border:1px solid var(--line)}
+.suggest-q{display:flex;gap:6px;flex-wrap:wrap}
+.suggest-q button{border:1px solid var(--line);background:var(--surface);border-radius:99px;padding:4px 10px;font-size:.82rem;color:var(--ink-2)}
+
+/* KI path */
+.sem{display:grid;grid-template-columns:120px 1fr;gap:14px;padding:16px 0;border-top:1px solid var(--line)}
+.sem:first-of-type{border-top:0}
+.sem-h{display:flex;flex-direction:column;gap:2px}
+.sem-h b{font-family:var(--f-display);font-size:2.4rem;font-weight:800;font-stretch:120%;line-height:1;color:var(--accent)}
+.course{border:1px solid var(--line);border-radius:12px;background:var(--surface-2);padding:12px 14px;display:flex;flex-direction:column;gap:6px}
+.course .top{display:flex;gap:10px;align-items:baseline;justify-content:space-between;flex-wrap:wrap}
+.course .code{font-family:var(--f-display);font-weight:700;font-size:.8rem;color:var(--ink-3)}
+.course ul{margin:0;padding-left:18px;font-size:.9rem;color:var(--ink-2)}
+.course a{color:var(--accent);font-weight:600;font-size:.88rem}
+@media (max-width:620px){.sem{grid-template-columns:1fr}}
+
+/* Quiz */
+.q-card{display:flex;flex-direction:column;gap:14px}
+.q-meta{display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:space-between}
+.q-text{font-size:1.15rem;font-weight:600;line-height:1.45}
+.opts{display:flex;flex-direction:column;gap:8px}
+.opt{text-align:left;border:1px solid var(--line);background:var(--surface);border-radius:12px;padding:12px 14px;display:flex;gap:12px;align-items:flex-start;transition:border-color .15s,background .15s}
+.opt:hover:not(:disabled){border-color:var(--ink-3)}
+.opt:disabled{cursor:default}
+.opt .k{font-family:var(--f-display);font-weight:700;color:var(--ink-2);width:28px;height:28px;border-radius:50%;background:var(--surface-2);display:grid;place-items:center;font-size:.82rem;flex:none}
+.opt>span:last-child{padding-top:2px}
+.opt.right .k{background:var(--good);color:var(--surface)}
+.opt.wrong .k{background:var(--bad);color:var(--surface)}
+.opt.right{border-color:var(--good);background:var(--good-soft)}
+.opt.wrong{border-color:var(--bad);background:var(--bad-soft)}
+.opt .why{display:block;font-size:.86rem;color:var(--ink-2);margin-top:3px}
+.feedback{border-radius:var(--r);padding:14px 16px;display:flex;flex-direction:column;gap:8px}
+.feedback.ok{background:var(--good-soft)}
+.feedback.no{background:var(--bad-soft)}
+.feedback h3{font-size:1rem}
+.match{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.match .head{font-size:.7rem;font-weight:700;letter-spacing:.08em;color:var(--ink-3)}
+.match select,.match .fixed{width:100%;border:1px solid var(--line);border-radius:8px;padding:8px;background:var(--surface);min-width:0}
+.match .fixed{font-weight:600}
+.match select.right{border-color:var(--good);background:var(--good-soft)}
+.match select.wrong{border-color:var(--bad);background:var(--bad-soft)}
+@media (max-width:560px){.match{grid-template-columns:1fr 1fr}.match .c3{grid-column:1/-1}}
+.order{display:flex;flex-direction:column;gap:6px}
+.order li{list-style:none;display:flex;align-items:center;gap:8px;border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:8px 10px}
+.order ol{margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+.order li .lab{flex:1}
+.order li.right{border-color:var(--good);background:var(--good-soft)}
+.order li.wrong{border-color:var(--bad);background:var(--bad-soft)}
+.timer{font-family:var(--f-display);font-weight:700;font-variant-numeric:tabular-nums}
+.progress{display:flex;gap:4px}
+.progress i{flex:1;height:7px;border-radius:99px;background:var(--surface-2)}
+.progress i.ok{background:var(--good)}
+.progress i.no{background:var(--bad)}
+.progress i.cur{background:var(--accent)}
+
+/* Stats */
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.kpi{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:14px}
+.kpi b{display:block;font-family:var(--f-display);font-size:1.7rem;font-weight:800;font-variant-numeric:tabular-nums}
+.topic-row{display:grid;grid-template-columns:160px 1fr 64px;gap:12px;align-items:center;padding:8px 0;border-top:1px solid var(--line)}
+.topic-row:first-child{border-top:0}
+@media (max-width:520px){.topic-row{grid-template-columns:1fr 54px}.topic-row .bar{grid-column:1/-1;grid-row:2}}
+.sched{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}
+.sched div{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:10px;text-align:center}
+.sched b{display:block;font-family:var(--f-display);font-size:1.3rem;font-variant-numeric:tabular-nums}
+/* Plates: module headers styled like numbered atlas plates */
+.plate{--t:var(--accent);--ts:var(--accent-soft);container-type:inline-size;position:relative;overflow:hidden;background:linear-gradient(120deg,var(--ts) 0%,transparent 58%),var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:26px 24px 28px;box-shadow:var(--shadow)}
+.plate.muscle{--t:var(--muscle);--ts:var(--muscle-soft)}
+.plate.nerve{--t:var(--nerve);--ts:var(--nerve-soft)}
+.plate.joint{--t:var(--joint);--ts:var(--joint-soft)}
+.plate.bone{--t:var(--bone);--ts:var(--bone-soft)}
+.plate>*{position:relative;z-index:1}
+.plate::after{content:attr(data-wm);position:absolute;right:-4px;bottom:-.3em;font-family:var(--f-latin);font-style:italic;font-size:clamp(2rem,10cqi,6rem);line-height:1;color:var(--t);opacity:.1;white-space:nowrap;pointer-events:none;z-index:0}
+.plate .eyebrow{color:var(--t)}
+.plate .muted{max-width:62ch}
+/* Home dial */
+.dialcard-wrap{container-type:inline-size}
+.dialcard{display:grid;grid-template-columns:180px 1fr;gap:18px;align-items:center}
+.dialcard svg{width:100%;max-width:200px;height:auto}
+.dial-legend{display:flex;flex-direction:column;gap:8px;font-size:.88rem;min-width:0}
+.dial-legend div{display:grid;grid-template-columns:10px 1fr auto;gap:8px;align-items:center}
+.dial-legend i{width:10px;height:10px;border-radius:3px}
+@container (max-width:440px){.dialcard{grid-template-columns:1fr;justify-items:center}.dialcard svg{max-width:170px}.dial-legend{width:100%}}
+.pillar .n{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;font-size:.95rem;color:var(--pc);background:var(--pcs)}
+.pillar{box-shadow:var(--shadow);gap:8px;padding:16px}
+.pillars>:nth-child(1){--pc:var(--muscle);--pcs:var(--muscle-soft)}
+.pillars>:nth-child(2){--pc:var(--nerve);--pcs:var(--nerve-soft)}
+.pillars>:nth-child(3){--pc:var(--accent);--pcs:var(--accent-soft)}
+.pillars>:nth-child(4){--pc:var(--joint);--pcs:var(--joint-soft)}
+.pillars>:nth-child(5){--pc:var(--bone);--pcs:var(--bone-soft)}
+.pillar .bar i{background:var(--pc)}
+a.pillar:hover{border-color:var(--pc);transform:translateY(-1px)}
+.pillar{transition:transform .15s,border-color .15s}
+/* Key facts on datasheets */
+.sheet{container-type:inline-size}
+.facts{display:grid;grid-template-columns:repeat(var(--n,3),minmax(0,1fr));gap:10px}
+@container (max-width:540px){.facts{grid-template-columns:1fr}}
+.fact{background:var(--surface-2);border-radius:10px;padding:12px 14px;display:flex;flex-direction:column;gap:4px;min-width:0}
+.fact .eyebrow{display:flex;align-items:center;gap:6px}
+.fact .eyebrow::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--c);flex:none}
+.fact p{font-size:.95rem}
+/* Bilingual layer */
+.langsw{display:flex;flex-direction:column;gap:6px;padding:0 6px}
+.langsw .seg{width:100%}
+.langsw .seg button{flex:1;padding:6px 6px;font-size:.82rem}
+.lang-mobile{display:none}
+@media (max-width:820px){.lang-mobile{display:flex;justify-content:flex-end}}
+.bi{display:flex;flex-direction:column;gap:3px}
+.bi-hu::before,.bi-sv::before{display:inline-block;font-family:var(--f-body);font-style:normal;font-size:.6rem;font-weight:800;letter-spacing:.08em;border-radius:4px;padding:0 4px;margin-right:6px;vertical-align:.12em}
+.bi-hu::before{content:"HU";color:var(--muscle);background:var(--muscle-soft)}
+.bi-sv::before{content:"SV";color:var(--joint);background:var(--joint-soft)}
+.bi-sv{color:var(--ink-2)}
+.fields dd .bi{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.sheet .fields dd .bi{gap:16px}
+@container (max-width:560px){.fields dd .bi{grid-template-columns:1fr;gap:4px}}
+.q-text .bi-sv{font-size:.95rem;font-weight:500}
+.opt .bi-sv,.order .bi-sv{font-size:.9rem}
+.bi-cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.bi-cols>div{display:flex;flex-direction:column;gap:12px;min-width:0}
+.bi-cols>div+div{border-left:1px solid var(--line);padding-left:24px}
+@media (max-width:760px){.bi-cols{grid-template-columns:1fr}.bi-cols>div+div{border-left:0;padding-left:0;border-top:1px solid var(--line);padding-top:16px}}
+.layer-body:has(.bi-cols){max-width:none}
+.lang-tag{align-self:flex-start;font-size:.66rem;font-weight:800;letter-spacing:.08em;border-radius:4px;padding:1px 6px;color:var(--muscle);background:var(--muscle-soft)}
+.lang-tag.sv{color:var(--joint);background:var(--joint-soft)}
+.h1-sv{font-family:var(--f-display);font-weight:600;font-stretch:110%;font-size:1.15rem;color:var(--joint)}
+.h2-sv{font-weight:500;color:var(--ink-3);font-size:.95em}
+.nav a .sv{display:block;font-size:.72rem;font-weight:500;color:var(--ink-3);line-height:1.1}
+.nav a span.lbl{display:flex;flex-direction:column}
+/* Plexus */
+.diagram{overflow-x:auto;margin:0 -4px}
+.diagram svg{display:block;min-width:640px;width:100%;height:auto}
+.px-edge{fill:none;stroke:var(--nerve);stroke-opacity:.28;stroke-width:2.5;transition:stroke-opacity .2s,stroke-width .2s}
+.px-edge.post{stroke-dasharray:6 4}
+.px-edge.on{stroke-opacity:1;stroke-width:4.5}
+.px-edge.les{stroke:var(--bad);stroke-opacity:1;stroke-width:4.5}
+.px-node{fill:var(--surface);stroke:var(--nerve);stroke-width:2}
+.px-node.on{fill:var(--nerve)}
+.px-node.les{fill:var(--bad);stroke:var(--bad)}
+.px-lbl{fill:var(--ink-2);font-size:12px;font-family:var(--f-body)}
+.px-head{fill:var(--ink-3);font-size:10.5px;font-weight:700;letter-spacing:.08em;font-family:var(--f-body)}
+.px-term{cursor:pointer}
+.px-term text{fill:var(--ink);font-family:var(--f-latin);font-style:italic;font-size:14px}
+.px-term:hover text,.px-term.on text{fill:var(--nerve);font-weight:600}
+.px-term:focus-visible{outline:none}
+.px-term:focus-visible circle{stroke:var(--accent);stroke-width:3}
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:.82rem;color:var(--ink-2);align-items:center}
+.legend svg{width:32px;height:8px;vertical-align:middle}
+.tbl{overflow-x:auto}
+.tbl table{border-collapse:collapse;width:100%;min-width:520px;font-size:.92rem}
+.tbl th{text-align:left;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);padding:8px 10px 8px 0;border-bottom:1px solid var(--line)}
+.tbl td{padding:9px 10px 9px 0;border-bottom:1px solid var(--line);vertical-align:top}
+.tbl td:first-child{font-family:var(--f-display);font-weight:700;color:var(--nerve);white-space:nowrap}
+.lesion{border-left:3px solid var(--bad);background:var(--bad-soft);border-radius:0 var(--r) var(--r) 0;padding:12px 14px;display:flex;flex-direction:column;gap:6px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+
+<div class="app">
+  <aside class="rail" aria-label="Fő navigáció">
+    <div class="brand"><span id="mark" aria-hidden="true"></span><b>ANATOMIA <span>360°</span></b><small>Physiotherapy &amp; Human Movement Academy</small></div>
+    <div class="langsw"><span class="eyebrow">Nyelv · Språk</span><div class="seg" id="langRail"></div></div>
+    <nav class="nav" id="nav"></nav>
+    <div class="rail-foot" id="railFoot"></div>
+  </aside>
+  <main><div class="wrap" id="view"></div></main>
+  <nav class="tabbar" id="tabbar" aria-label="Fő navigáció"></nav>
+</div>
+
+<script>
+/* ============================== DATA ============================== */
+const IC = {
+  home:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/></svg>',
+  dict:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h7a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2H4z"/><path d="M20 5h-4a2 2 0 0 0-2 2"/><path d="M20 5v13h-6"/></svg>',
+  mod:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2.2"/><path d="M12 7.5v6M8 10l4 2 4-2M10 21l2-7 2 7"/></svg>',
+  brain:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4a3 3 0 0 0-3 3 3 3 0 0 0-2 5 3 3 0 0 0 2 5 3 3 0 0 0 6 1V5a2 2 0 0 0-3-1z"/><path d="M15 4a3 3 0 0 1 3 3 3 3 0 0 1 2 5 3 3 0 0 1-2 5 3 3 0 0 1-6 1"/></svg>',
+  path:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="18" r="2"/><circle cx="18" cy="6" r="2"/><path d="M8 18h6a4 4 0 0 0 0-8h-4a4 4 0 0 1 0-8h6"/></svg>',
+  quiz:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8l1.5 1.5L12 7M8 14l1.5 1.5L12 13M14 8h3M14 14h3"/></svg>',
+  plexus:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5h4l4 4h3M3 12h8l3-3M11 12l3 3h3M14 9l3-3h4M17 15l4 3M17 15h4"/></svg>',
+  stats:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M21 20H3"/></svg>',
+  search:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4-4"/></svg>',
+  star:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z"/></svg>',
+  starOn:'<svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z"/></svg>',
+  speak:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9v6h4l5 4V5L8 9z"/><path d="M16.5 8.5a5 5 0 0 1 0 7"/></svg>',
+  up:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 15l6-6 6 6"/></svg>',
+  down:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>'
+};
+
+const CAT = {
+  alap:{label:'Alapfogalmak',cls:'',color:'var(--accent)'},
+  csont:{label:'Csontok',cls:'bone',color:'var(--bone)'},
+  izulet:{label:'Ízületek',cls:'joint',color:'var(--joint)'},
+  izom:{label:'Izmok',cls:'muscle',color:'var(--muscle)'},
+  ideg:{label:'Idegrendszer',cls:'nerve',color:'var(--nerve)'},
+  elettan:{label:'Élettan',cls:'',color:'var(--ink-3)'}
+};
+
+// Trilingual terminology [hu, sv, la, cat, synonyms]
+const TERMS = [
+  ['anatómiai alaphelyzet','anatomiskt grundläge','positio anatomica','alap',''],
+  ['felső, fej felé eső','övre, kranial','superior / cranialis','alap',''],
+  ['alsó, láb felé eső','nedre, kaudal','inferior / caudalis','alap',''],
+  ['elülső, hasi oldali','främre, ventral','anterior / ventralis','alap',''],
+  ['hátsó, háti oldali','bakre, dorsal','posterior / dorsalis','alap',''],
+  ['középvonal felé eső','medial','medialis','alap',''],
+  ['középvonaltól távolabbi','lateral','lateralis','alap',''],
+  ['törzshöz közelebbi','proximal','proximalis','alap',''],
+  ['törzstől távolabbi','distal','distalis','alap',''],
+  ['nyílirányú sík','sagittalplan','planum sagittale','alap',''],
+  ['homloksík','frontalplan','planum frontale','alap','koronális sík'],
+  ['vízszintes (harántsík)','transversalplan','planum transversale','alap','horizontális sík'],
+  ['hajlítás','flexion','flexio','alap',''],
+  ['feszítés','extension','extensio','alap',''],
+  ['távolítás','abduktion','abductio','alap',''],
+  ['közelítés','adduktion','adductio','alap',''],
+  ['befelé forgatás','inåtrotation','rotatio medialis','alap','rotatio interna, IR'],
+  ['kifelé forgatás','utåtrotation','rotatio lateralis','alap','rotatio externa, ER'],
+  ['borítás','pronation','pronatio','alap',''],
+  ['hanyintás','supination','supinatio','alap',''],
+  ['lapocka','skulderblad','scapula','csont',''],
+  ['kulcscsont','nyckelben','clavicula','csont',''],
+  ['felkarcsont','överarmsben','humerus','csont',''],
+  ['orsócsont','strålben','radius','csont',''],
+  ['singcsont','armbågsben','ulna','csont',''],
+  ['combcsont','lårben','femur','csont',''],
+  ['sípcsont','skenben','tibia','csont',''],
+  ['szárkapocscsont','vadben','fibula','csont',''],
+  ['térdkalács','knäskål','patella','csont',''],
+  ['keresztcsont','korsben','os sacrum','csont',''],
+  ['csigolya','kota','vertebra','csont',''],
+  ['vállcsúcs','skulderhöjd','acromion','csont',''],
+  ['vállízület','axelled','articulatio humeri','izulet','glenohumerális ízület'],
+  ['könyökízület','armbågsled','articulatio cubiti','izulet',''],
+  ['csípőízület','höftled','articulatio coxae','izulet',''],
+  ['térdízület','knäled','articulatio genus','izulet',''],
+  ['felső ugróízület','övre språngledens led','articulatio talocruralis','izulet','bokaízület'],
+  ['porckorong','mellankotskiva','discus intervertebralis','izulet','diszkusz'],
+  ['ízületi tok','ledkapsel','capsula articularis','izulet',''],
+  ['ízületi ajak','ledläpp','labrum glenoidale','izulet',''],
+  ['deltaizom','deltamuskeln','m. deltoideus','izom',''],
+  ['tövis feletti izom','övre skulderbladsmuskeln','m. supraspinatus','izom','rotátorköpeny része'],
+  ['tövis alatti izom','nedre skulderbladsmuskeln','m. infraspinatus','izom','rotátorköpeny része'],
+  ['kis görgetegizom','lilla rundmuskeln','m. teres minor','izom','rotátorköpeny része'],
+  ['lapocka alatti izom','subskapulära muskeln','m. subscapularis','izom','rotátorköpeny része'],
+  ['elülső fűrészizom','främre sågmuskeln','m. serratus anterior','izom',''],
+  ['csuklyásizom','kappmuskeln','m. trapezius','izom',''],
+  ['széles hátizom','breda ryggmuskeln','m. latissimus dorsi','izom',''],
+  ['kétfejű karizom','tvåhövdade armmuskeln','m. biceps brachii','izom','bicepsz'],
+  ['háromfejű karizom','trehövdade armmuskeln','m. triceps brachii','izom','tricepsz'],
+  ['négyfejű combizom','fyrhövdade lårmuskeln','m. quadriceps femoris','izom','quadriceps'],
+  ['nagy farizom','stora sätesmuskeln','m. gluteus maximus','izom',''],
+  ['középső farizom','medelstora sätesmuskeln','m. gluteus medius','izom',''],
+  ['nagyagy','storhjärna','cerebrum','ideg',''],
+  ['kisagy','lillhjärna','cerebellum','ideg',''],
+  ['agytörzs','hjärnstam','truncus encephali','ideg',''],
+  ['gerincvelő','ryggmärg','medulla spinalis','ideg',''],
+  ['karfonat','armplexus','plexus brachialis','ideg',''],
+  ['hónaljideg','axillarisnerven','n. axillaris','ideg',''],
+  ['középideg','medianusnerven','n. medianus','ideg',''],
+  ['singideg','ulnarisnerven','n. ulnaris','ideg',''],
+  ['orsóideg','radialisnerven','n. radialis','ideg',''],
+  ['ülőideg','ischiasnerven','n. ischiadicus','ideg','isiász ideg'],
+  ['combideg','femoralisnerven','n. femoralis','ideg',''],
+  ['felső törzs','övre primärsträngen','truncus superior','ideg',''],
+  ['középső törzs','mellersta primärsträngen','truncus medius','ideg',''],
+  ['alsó törzs','nedre primärsträngen','truncus inferior','ideg',''],
+  ['oldalsó köteg','laterala sekundärsträngen','fasciculus lateralis','ideg',''],
+  ['belső köteg','mediala sekundärsträngen','fasciculus medialis','ideg',''],
+  ['hátsó köteg','bakre sekundärsträngen','fasciculus posterior','ideg',''],
+  ['izom-bőrideg','muskulokutana nerven','n. musculocutaneus','ideg',''],
+  ['hosszú mellkasi ideg','långa bröstkorgsnerven','n. thoracicus longus','ideg',''],
+  ['lapocka feletti ideg','suprascapularisnerven','n. suprascapularis','ideg',''],
+  ['kéztőalagút','karpaltunneln','canalis carpi','ideg','carpal tunnel'],
+  ['bőrszelvény','dermatom','dermatoma','ideg',''],
+  ['izomszelvény','myotom','myotoma','ideg',''],
+  ['akciós potenciál','aktionspotential','—','elettan','AP'],
+  ['homeosztázis','homeostas','homoeostasis','elettan',''],
+  ['perctérfogat','hjärtminutvolym','—','elettan','CO, cardiac output'],
+  ['motoros egység','motorisk enhet','—','elettan',''],
+  ['izomorsó','muskelspole','fusus neuromuscularis','elettan',''],
+  ['ínorsó (Golgi-féle)','golgis senorgan','organum tendineum','elettan','GTO']
+];
+TERMS.forEach((t,i)=>t.id='t'+i);
+
+// Muscle / joint / nerve datasheets for the shoulder module
+const SHEETS = {
+  deltoideus:{kind:'izom',hu:'deltaizom',sv:'deltamuskeln',la:'m. deltoideus',
+    loc:'A váll kerek kontúrját adó felszíni izom; három része van (pars clavicularis, acromialis, spinalis).',
+    origo:'Clavicula laterális harmada (elülső rész), acromion (középső rész), spina scapulae (hátsó rész).',
+    insertio:'Tuberositas deltoidea humeri.',
+    innervatio:'N. axillaris (C5–C6), a plexus brachialis hátsó kötegéből.',
+    ver:'A. circumflexa humeri posterior; a. thoracoacromialis ramus deltoideus.',
+    actio:'Elülső rész: flexio, befelé forgatás. Középső rész: abductio (kb. 15°-tól). Hátsó rész: extensio, kifelé forgatás.',
+    syn:'Abductio: m. supraspinatus. Flexio: m. pectoralis major (pars clavicularis), m. biceps brachii.',
+    ant:'Adductio: m. latissimus dorsi, m. pectoralis major, m. teres major.',
+    izulet:'Articulatio humeri.',
+    palp:'Az acromion alatt, 90°-os abductióban ellenállással a középső rész jól kitapintható.',
+    teszt:'MMT: abductio 90°-ban, ellenállás a könyök fölött (középső rész); flexio és extensio ugyanígy a többi részre.',
+    klin:'Proximális humerustörés vagy vállficam után n. axillaris-sérülés: gyenge abductio, érzéskiesés a váll laterális oldalán ("ezredjelvény"-terület).'},
+  supraspinatus:{kind:'izom',hu:'tövis feletti izom',sv:'övre skulderbladsmuskeln',la:'m. supraspinatus',
+    loc:'A rotátorköpeny felső tagja, az acromion alatt halad.',
+    origo:'Fossa supraspinata scapulae.',insertio:'Tuberculum majus humeri (felső facet).',
+    innervatio:'N. suprascapularis (C5–C6).',ver:'A. suprascapularis.',
+    actio:'Az abductio indítása (0–15°) és a humerusfej centrálása a cavitas glenoidalisban.',
+    syn:'M. deltoideus (pars acromialis).',ant:'M. latissimus dorsi, m. pectoralis major.',izulet:'Articulatio humeri.',
+    palp:'A fossa supraspinatában, a m. trapezius alatt.',
+    teszt:'Jobe-teszt ("empty can"), drop arm teszt.',
+    klin:'Subacromialis impingement és rotátorköpeny-szakadás leggyakrabban érintett izma.'},
+  infraspinatus:{kind:'izom',hu:'tövis alatti izom',sv:'nedre skulderbladsmuskeln',la:'m. infraspinatus',
+    loc:'A rotátorköpeny hátsó tagja.',origo:'Fossa infraspinata scapulae.',insertio:'Tuberculum majus humeri (középső facet).',
+    innervatio:'N. suprascapularis (C5–C6).',ver:'A. suprascapularis, a. circumflexa scapulae.',
+    actio:'A humerus kifelé forgatása; a humerusfej hátsó stabilizálása.',
+    syn:'M. teres minor, m. deltoideus (pars spinalis).',ant:'M. subscapularis, m. pectoralis major, m. latissimus dorsi.',izulet:'Articulatio humeri.',
+    palp:'A spina scapulae alatt, kifelé forgatás közben.',
+    teszt:'Ellenállással végzett kifelé forgatás 0° abductióban; external rotation lag sign.',
+    klin:'Overhead sportolóknál túlterhelés; n. suprascapularis kompresszió (incisura spinoglenoidalis) izolált gyengeséget okozhat.'},
+  teresminor:{kind:'izom',hu:'kis görgetegizom',sv:'lilla rundmuskeln',la:'m. teres minor',
+    loc:'A rotátorköpeny hátsó-alsó tagja.',origo:'Margo lateralis scapulae.',insertio:'Tuberculum majus humeri (alsó facet).',
+    innervatio:'N. axillaris (C5–C6).',ver:'A. circumflexa scapulae.',
+    actio:'A humerus kifelé forgatása, gyenge adductio.',syn:'M. infraspinatus.',ant:'M. subscapularis.',izulet:'Articulatio humeri.',
+    palp:'A lapocka laterális szélén, a m. infraspinatus alatt.',teszt:'Hornblower-jel (kifelé forgatás 90° abductióban).',
+    klin:'N. axillaris-sérülésnél a deltaizommal együtt gyengül.'},
+  subscapularis:{kind:'izom',hu:'lapocka alatti izom',sv:'subskapulära muskeln',la:'m. subscapularis',
+    loc:'A rotátorköpeny elülső tagja, a lapocka bordák felé néző felszínén.',origo:'Fossa subscapularis.',insertio:'Tuberculum minus humeri.',
+    innervatio:'Nn. subscapulares superior et inferior (C5–C7).',ver:'A. subscapularis.',
+    actio:'A humerus befelé forgatása; elülső stabilizálás.',syn:'M. pectoralis major, m. latissimus dorsi, m. teres major.',ant:'M. infraspinatus, m. teres minor.',izulet:'Articulatio humeri.',
+    palp:'Csak részlegesen, a hónaljárok hátsó falán.',teszt:'Lift-off teszt (Gerber), belly press teszt.',
+    klin:'Elülső vállficam után sérülhet; gyengesége elülső instabilitást fokoz.'},
+  serratus:{kind:'izom',hu:'elülső fűrészizom',sv:'främre sågmuskeln',la:'m. serratus anterior',
+    loc:'A mellkas oldalfalán, a lapocka és a bordák között.',origo:'Az 1–8(9). borda külső felszíne.',insertio:'Margo medialis scapulae (elülső felszín), angulus inferior.',
+    innervatio:'N. thoracicus longus (C5–C7).',ver:'A. thoracica lateralis, a. thoracodorsalis.',
+    actio:'A lapocka protractiója és felfelé forgatása; a lapocka mellkasfalhoz rögzítése.',syn:'M. trapezius (felső és alsó rész) a felfelé forgatásban.',ant:'Mm. rhomboidei, m. levator scapulae.',izulet:'Scapulothoracalis "ízület".',
+    palp:'A mellkas oldalfalán, a m. latissimus dorsi előtt.',teszt:'Fali támaszban végzett fekvőtámasz: a lapocka mediális széle elemelkedik?',
+    klin:'N. thoracicus longus-sérülés: scapula alata (mediális szárnyas lapocka), nehezített elevatio.'},
+  humeri:{kind:'izulet',hu:'vállízület',sv:'axelled',la:'articulatio humeri',
+    csontok:'Caput humeri és cavitas glenoidalis scapulae.',
+    tipus:'Szabad gömbízület (articulatio spheroidea), 3 szabadsági fok.',
+    tok:'Laza, tág tok; alul redőt (recessus axillaris) képez.',
+    szalag:'Ligg. glenohumeralia (superius, medium, inferius), lig. coracohumerale, lig. transversum humeri; labrum glenoidale mélyíti a vápát.',
+    stab:'Dinamikus: rotátorköpeny, m. biceps brachii hosszú feje. Statikus: tok, szalagok, labrum, negatív intraartikuláris nyomás.',
+    mozgas:'Flexio–extensio, abductio–adductio, befelé és kifelé forgatás, horizontális abductio–adductio, circumductio.',
+    rom:[['Flexio',180],['Extensio',60],['Abductio',180],['Befelé forg.',70],['Kifelé forg.',90]],
+    izmok:'Rotátorköpeny, m. deltoideus, m. pectoralis major, m. latissimus dorsi, m. teres major, m. biceps brachii, m. coracobrachialis.',
+    beidegzes:'N. axillaris, n. suprascapularis, n. musculocutaneus ízületi ágai.',
+    funkcio:'A felső végtag nagy mozgásterjedelmű pozicionálása. Elevációban a scapulohumeralis ritmus kb. 2:1 (glenohumerális : scapulothoracalis).',
+    vizsg:'Aktív és passzív ROM goniométerrel, kapszuláris mintázat, stabilitási tesztek (apprehension), impingement-tesztek (Hawkins–Kennedy, Neer).',
+    komp:'Abductióban a váll felhúzása (m. trapezius felső rész), a törzs oldalra döntése, lapocka-diszkinézis.',
+    klin:'Az elülső-alsó ficam a leggyakoribb. Fagyott váll (adhezív capsulitis) kapszuláris mintázata: kifelé forgatás > abductio > befelé forgatás.'},
+  axillaris:{kind:'ideg',hu:'hónaljideg',sv:'axillarisnerven',la:'n. axillaris',
+    eredes:'Plexus brachialis, fasciculus posterior; C5–C6 gyökök.',
+    lefutas:'A hónaljból a laterális hónaljrésen (spatium quadrangulare) át, az a. circumflexa humeri posteriorral együtt, a collum chirurgicum humeri körül.',
+    motor:'M. deltoideus, m. teres minor.',szenz:'N. cutaneus brachii lateralis superior: a váll laterális bőrfelszíne.',
+    vizsg:'Abductio-erő, kifelé forgatás, érzésvizsgálat a deltaizom felett.',
+    serules:'Collum chirurgicum-törés, elülső vállficam, mankó okozta nyomás.',
+    tunetek:'Gyenge abductio 15° felett, deltaizom-sorvadás (szögletes váll), érzéskiesés a váll laterális oldalán.'},
+  musculocutaneus:{kind:'ideg',hu:'izom-bőrideg',sv:'muskulokutana nerven',la:'n. musculocutaneus',
+    eredes:'Fasciculus lateralis; C5–C7 gyökök.',
+    lefutas:'Átfúrja a m. coracobrachialist, majd a m. biceps brachii és a m. brachialis között halad. A könyök felett bőrágként folytatódik (n. cutaneus antebrachii lateralis).',
+    motor:'M. coracobrachialis, m. biceps brachii, m. brachialis.',szenz:'Az alkar laterális oldalának bőre.',
+    vizsg:'Könyökflexio supinatióban, supinatio-erő, biceps-reflex (C5–C6), érzés az alkar laterális oldalán.',
+    serules:'Izoláltan ritka: vállficam, nehéz teher emelése, a m. coracobrachialisban való beszorulás.',
+    tunetek:'Gyenge könyökflexio és supinatio, csökkent biceps-reflex, érzéskiesés az alkar laterális oldalán.'},
+  medianus:{kind:'ideg',hu:'középideg',sv:'medianusnerven',la:'n. medianus',
+    eredes:'Két gyökkel ered: a fasciculus lateralisból és medialisból; C6–T1 gyökök.',
+    lefutas:'A felkaron az a. brachialisszal együtt halad, a könyökhajlatban mediálisan. Átfut a m. pronator teres két feje között, majd a m. flexor digitorum superficialis és profundus között. A canalis carpin át jut a tenyérbe.',
+    motor:'Az alkarhajlítók nagy része (m. pronator teres, m. flexor carpi radialis, m. flexor digitorum superficialis, a n. interosseus anterioron át a m. flexor pollicis longus és a m. flexor digitorum profundus laterális fele). A kézen: thenar-izmok és az 1–2. mm. lumbricales.',
+    szenz:'Tenyéri oldalon a hüvelyk-, mutató-, középső ujj és a gyűrűsujj radiális fele.',
+    vizsg:'Hüvelykujj-abductio (m. abductor pollicis brevis), "OK"-jel (n. interosseus anterior), Phalen-teszt, Tinel-jel a canalis carpi felett, kétpont-diszkrimináció.',
+    serules:'Kéztőalagút-szindróma (a leggyakoribb), supracondylaris humerustörés gyermekkorban, csuklótáji vágott sérülés.',
+    tunetek:'Kéztőalagút: éjszakai zsibbadás az 1–3½. ujjban, thenar-sorvadás, gyenge oppositio. Proximális lézió: ökölbe szorításkor a mutató- és a középső ujj (2–3.) nyújtva marad ("eskü-kéz").'},
+  ulnaris:{kind:'ideg',hu:'singideg',sv:'ulnarisnerven',la:'n. ulnaris',
+    eredes:'Fasciculus medialis; C8–T1 gyökök (C7 változó).',
+    lefutas:'A felkar mediális oldalán, majd az epicondylus medialis mögött (sulcus n. ulnaris, "könyökcsont-ideg") halad. A m. flexor carpi ulnaris két feje között jut az alkarra, a csuklón a Guyon-csatornán át a kézbe.',
+    motor:'M. flexor carpi ulnaris, a m. flexor digitorum profundus mediális fele, a kéz kisizmainak többsége: hypothenar, mm. interossei, 3–4. mm. lumbricales, m. adductor pollicis.',
+    szenz:'A kisujj és a gyűrűsujj ulnaris fele, tenyéri és háti oldalon.',
+    vizsg:'Froment-jel (m. adductor pollicis), ujjterpesztés és -zárás ellenállással, Tinel-jel a könyöknél, könyökflexiós provokációs teszt.',
+    serules:'Cubitalis alagút-szindróma, epicondylus medialis-törés, Guyon-csatorna (pl. kerékpárosoknál).',
+    tunetek:'Karomállás a 4–5. ujjon, interosseus-sorvadás a kézháton, pozitív Froment-jel, érzéskiesés a kisujjon.'},
+  radialis:{kind:'ideg',hu:'orsóideg',sv:'radialisnerven',la:'n. radialis',
+    eredes:'Fasciculus posterior; C5–T1 gyökök.',
+    lefutas:'A humerus hátsó felszínén, a sulcus n. radialisban halad az a. profunda brachiival. Átfúrja a laterális intermuscularis septumot, a könyök előtt felszíni (érző) és mély ágra oszlik. A mély ág (n. interosseus posterior) a m. supinatoron át fut.',
+    motor:'M. triceps brachii, m. anconeus, m. brachioradialis, mm. extensores carpi radiales, m. supinator és az összes alkarfeszítő.',
+    szenz:'A felkar és az alkar hátsó oldala, a kézhát radiális része (első interdigitalis rés).',
+    vizsg:'Csukló- és ujjextensio, triceps-reflex (C7), brachioradialis-reflex (C6), érzés az első interdigitalis résben.',
+    serules:'Humerusszár-törés, hónaljnyomás (mankó, "szombat esti bénulás"), a m. supinatorban való beszorulás.',
+    tunetek:'Csuklóejtés (wrist drop), gyenge ujjextensio. Humerusszár-sérülésnél a triceps általában megkímélt, mert ágai magasabban erednek.'}
+};
+const SHEET_ORDER=['deltoideus','supraspinatus','infraspinatus','teresminor','subscapularis','serratus','humeri','axillaris'];
+
+// 12 cranial nerves
+const CN = [
+ {n:'I',la:'N. olfactorius',hu:'Szaglóideg',sv:'Luktnerven',type:'S',nuc:'Bulbus olfactorius (nincs agytörzsi mag)',ered:'Telencephalon – bulbus olfactorius',kilep:'Lamina cribrosa ossis ethmoidalis',fn:'Szaglás.',izom:'—',teszt:'Ismert illat azonosítása orrnyílásonként, csukott szemmel.',lez:'Anosmia/hyposmia (pl. koponyaalapi törés után).'},
+ {n:'II',la:'N. opticus',hu:'Látóideg',sv:'Synnerven',type:'S',nuc:'Corpus geniculatum laterale (thalamus)',ered:'Diencephalon (chiasma opticum)',kilep:'Canalis opticus',fn:'Látás; a pupillareflex afferens szára.',izom:'—',teszt:'Visus, látótér (konfrontációs vizsgálat), fundus, pupillareakció.',lez:'Látótérkiesések az érintett pályaszakasz szerint (pl. bitemporalis hemianopia chiasma-léziónál).'},
+ {n:'III',la:'N. oculomotorius',hu:'Szemmozgató ideg',sv:'Ögonmotoriska nerven',type:'M+P',nuc:'Nucleus n. oculomotorii; nucleus Edinger–Westphal (paraszimpatikus)',ered:'Mesencephalon – fossa interpeduncularis',kilep:'Fissura orbitalis superior',fn:'Szemmozgatás, szemhéjemelés, pupillaszűkítés, akkomodáció.',izom:'M. rectus superior, inferior, medialis; m. obliquus inferior; m. levator palpebrae superioris; m. sphincter pupillae, m. ciliaris.',teszt:'Követő szemmozgások "H"-alakban, pupillareakció, konvergencia.',lez:'"Lefelé és kifelé" néző szem, ptosis, tág, fényre nem reagáló pupilla.'},
+ {n:'IV',la:'N. trochlearis',hu:'Sodorideg',sv:'Blocknerven',type:'M',nuc:'Nucleus n. trochlearis',ered:'Mesencephalon – dorsalisan (az egyetlen hátul kilépő agyideg)',kilep:'Fissura orbitalis superior',fn:'A szemgolyó lefelé-befelé mozgatása.',izom:'M. obliquus superior.',teszt:'Lefelé-befelé tekintés (orrhegy felé lefelé).',lez:'Függőleges kettőslátás, főleg lépcsőn lefelé; kompenzáló fejdöntés az ép oldal felé.'},
+ {n:'V',la:'N. trigeminus',hu:'Háromosztatú ideg',sv:'Trillingnerven',type:'Kevert',nuc:'Nucleus mesencephalicus, principalis, spinalis n. trigemini; nucleus motorius',ered:'Pons – laterálisan',kilep:'V1: fissura orbitalis superior · V2: foramen rotundum · V3: foramen ovale',fn:'Az arc, a szájüreg és a szaruhártya érzése; rágás.',izom:'Rágóizmok (m. masseter, m. temporalis, mm. pterygoidei), m. tensor tympani, m. tensor veli palatini.',teszt:'Érintés és fájdalomérzés mindhárom ágban, cornealis reflex (afferens), állkapocs összeszorítása.',lez:'Érzéskiesés az ág területén; nyitáskor az állkapocs a sérült oldal felé tér ki. Trigeminus-neuralgia.'},
+ {n:'VI',la:'N. abducens',hu:'Távolító ideg',sv:'Abducensnerven',type:'M',nuc:'Nucleus n. abducentis',ered:'Pons és medulla határa',kilep:'Fissura orbitalis superior',fn:'A szemgolyó kifelé mozgatása.',izom:'M. rectus lateralis.',teszt:'Oldalra tekintés.',lez:'A szem nem távolítható, befelé áll; vízszintes kettőslátás.'},
+ {n:'VII',la:'N. facialis',hu:'Arcideg',sv:'Ansiktsnerven',type:'Kevert',nuc:'Nucleus motorius n. facialis; nucleus salivatorius superior; nucleus tractus solitarii',ered:'Pons és medulla határa (kisagy-híd szöglet)',kilep:'Porus acusticus internus → foramen stylomastoideum',fn:'Mimika, ízérzés a nyelv elülső 2/3-án, könny- és nyálelválasztás (gl. submandibularis, sublingualis).',izom:'Mimikai izmok, m. stapedius, m. stylohyoideus, m. digastricus hátsó hasa.',teszt:'Szemöldökemelés, erős szemhunyás, mosolygás, arcfelfújás.',lez:'Perifériás (pl. Bell-paresis): az egész arcfél bénul, a homlok is. Centrális: a homlok megkímélt (kétoldali kérgi beidegzés).'},
+ {n:'VIII',la:'N. vestibulocochlearis',hu:'Egyensúlyozó és hallóideg',sv:'Hörsel- och balansnerven',type:'S',nuc:'Nuclei vestibulares, nuclei cochleares',ered:'Pons és medulla határa',kilep:'Porus acusticus internus (a halántékcsonton belül marad)',fn:'Hallás és egyensúlyérzés.',izom:'—',teszt:'Suttogott beszéd, Weber- és Rinne-teszt; fejimpulzus-teszt, nystagmus vizsgálata.',lez:'Halláscsökkenés, fülzúgás, szédülés, nystagmus, egyensúlyzavar.'},
+ {n:'IX',la:'N. glossopharyngeus',hu:'Nyelv-garat ideg',sv:'Tung- och svalgnerven',type:'Kevert',nuc:'Nucleus ambiguus; nucleus salivatorius inferior; nucleus tractus solitarii',ered:'Medulla oblongata (sulcus retroolivaris)',kilep:'Foramen jugulare',fn:'Ízérzés és általános érzés a nyelv hátsó 1/3-án, garatérzés, parotis-elválasztás, sinus caroticus.',izom:'M. stylopharyngeus; glandula parotidea.',teszt:'Garatreflex (afferens szár), ízérzés a nyelv hátsó részén.',lez:'Csökkent garatreflex, ízérzéskiesés a nyelv hátsó 1/3-án.'},
+ {n:'X',la:'N. vagus',hu:'Bolygóideg',sv:'Vagusnerven',type:'Kevert',nuc:'Nucleus ambiguus; nucleus dorsalis n. vagi; nucleus tractus solitarii',ered:'Medulla oblongata (sulcus retroolivaris)',kilep:'Foramen jugulare',fn:'Garat- és gégeizmok, a szív, tüdő és bélrendszer paraszimpatikus beidegzése (a flexura coli sinistráig).',izom:'Garat- és gégeizmok, a lágy szájpad izmai (a m. tensor veli palatini kivételével).',teszt:'"Á" hang: az uvula és a lágy szájpad emelkedése; garatreflex (efferens szár), rekedtség.',lez:'Nyelési zavar, rekedtség; az uvula az ép oldal felé tér ki.'},
+ {n:'XI',la:'N. accessorius',hu:'Járulékos ideg',sv:'Accessoriska nerven',type:'M',nuc:'Nucleus n. accessorii (C1–C5/6 gerincvelői szakasz)',ered:'Gerincvelő felső nyaki szakasza (radix spinalis)',kilep:'Foramen jugulare',fn:'A fej forgatása és a váll emelése.',izom:'M. sternocleidomastoideus, m. trapezius.',teszt:'Vállvonogatás és fejforgatás ellenállással szemben.',lez:'Lecsüngő váll, gyenge vállemelés, nehezített fejforgatás az ellenoldal felé; fizioterápiában fontos nyaki műtétek után.'},
+ {n:'XII',la:'N. hypoglossus',hu:'Nyelv alatti ideg',sv:'Tungans nerv',type:'M',nuc:'Nucleus n. hypoglossi',ered:'Medulla oblongata (pyramis és oliva között)',kilep:'Canalis n. hypoglossi',fn:'A nyelv mozgatása.',izom:'A nyelv külső és belső izmai (a m. palatoglossus kivételével).',teszt:'Nyelvöltés, oldalra mozgatás, nyelvizom-sorvadás és fasciculatio keresése.',lez:'Nyelvöltéskor a nyelv a sérült oldal felé tér ki; sorvadás, fasciculatio.'}
+];
+const CN_TYPE={S:['Érző','nerve'],M:['Mozgató','muscle'],'M+P':['Mozgató + paraszimpatikus','joint'],Kevert:['Kevert','bone']};
+
+// KI 1FY26 programme (official names & credits from KI; topics marked by source)
+const KI = [
+ {s:1,code:'1FY052',name:'Hälsa, vetenskap och profession inom fysioterapi',hp:8.5,src:'ki',topics:['Egészség és etika','Tudományfilozófia','Fizioterápiás alapfogalmak','Interprofesszionális együttműködés']},
+ {s:1,code:'1FY053',name:'Anatomi',hp:6,src:'ki',topics:['Általános anatómia, szövettan, terminológia','Mozgásszervrendszer: törzs, hát, nyak, fej, végtagok','Belső szervek és erek','Topográfia és felszíni palpáció'],links:[['#vall','Vállöv és vállízület modul'],['#plexus','Plexus brachialis modul'],['#szotar','Szótár']]},
+ {s:1,code:'1FY054',name:'Fysiologi',hp:9,src:'ki',topics:['Szervrendszerek élettana','Klinikai összefüggések','Alapvető farmakológia','Laborgyakorlatok, TBL, esetek']},
+ {s:1,code:'1FY055',name:'Rörelsevetenskap',hp:6.5,src:'ki',topics:['Palpáció','Testtartás- és mozgáselemzés','Motoros fejlődés és tanulás','Biomechanika, járás'],links:[['#vall','Vállízület ROM-adatlap']]},
+ {s:2,code:'1FY056',name:'Grundläggande undersökningsmetodik inom fysioterapi',hp:6,src:'ki',topics:['Biopszichoszociális anamnézis','Ideg-, ízület- és izomvizsgálat','Fizioterápiás folyamat'],links:[['#agyidegek','Agyidegek klinikai vizsgálata'],['#plexus','Gyökvizsgálat és perifériás idegek']]},
+ {s:2,code:'1FY057',name:'Psykologi',hp:4.5,src:'ki',topics:['Emberi működés és viselkedés','Viselkedésváltoztatás']},
+ {s:2,code:'1FY058',name:'Smärta ur ett fysioterapeutiskt och fysiologiskt perspektiv',hp:7.5,src:'app',topics:['Nociceptio és fájdalompályák','Akut és tartós fájdalom']},
+ {s:2,code:'1FY059',name:'Fysisk aktivitet ur ett fysioterapeutiskt och fysiologiskt perspektiv',hp:12,src:'app',topics:['Terhelésélettan','Edzésadaptáció','Aerob és anaerob energiaellátás']},
+ {s:3,code:'1FY060',name:'Medicinska ämnen 1',hp:7.5,src:'app',topics:['Belgyógyászati és sebészeti alapok']},
+ {s:3,code:'1FY061',name:'Fysioterapi inriktning slutenvård',hp:6,src:'app',topics:['Fekvőbeteg-ellátás, korai mobilizáció','Légzésfizioterápia']},
+ {s:3,code:'1FY063',name:'Verksamhetsförlagd utbildning inriktning slutenvård',hp:10.5,src:'app',topics:['Klinikai gyakorlat (VFU)']},
+ {s:3,code:'1FY062',name:'Beteendemedicin och prevention',hp:6,src:'app',topics:['Életmódváltás támogatása','Prevenció']},
+ {s:4,code:'',name:'Medicinska ämnen 2',hp:7.5,src:'app',topics:['Neurológiai kórképek: stroke, Parkinson-kór, MS'],links:[['#agyidegek','Agyidegek modul']]},
+ {s:4,code:'',name:'Fysioterapi inriktning habilitering och rehabilitering',hp:6,src:'app',topics:['CP, spaszticitás, funkcionális tréning','Neurológiai rehabilitáció']},
+ {s:4,code:'',name:'VFU inriktning habilitering och rehabilitering',hp:16.5,src:'app',topics:['Klinikai gyakorlat (VFU)']},
+ {s:5,code:'',name:'Vetenskapsmetodik',hp:4.5,src:'app',topics:['Kutatásmódszertan, statisztika']},
+ {s:5,code:'',name:'Examensarbete i fysioterapi',hp:15,src:'app',topics:['Szakdolgozat']},
+ {s:5,code:'',name:'VFU inriktning interprofessionellt teamarbete',hp:3,src:'app',topics:['Csapatmunka a klinikumban']},
+ {s:5,code:'',name:'Hälsopromotion ur ett globalt perspektiv',hp:7.5,src:'app',topics:['Globális egészségfejlesztés']},
+ {s:6,code:'',name:'Fysioterapi inriktning primärvård',hp:7.5,src:'app',topics:['Mozgásszervi panaszok az alapellátásban']},
+ {s:6,code:'',name:'VFU inriktning primärvård',hp:10.5,src:'app',topics:['Klinikai gyakorlat (VFU)']},
+ {s:6,code:'',name:'Klinisk fördjupning och professionsutveckling',hp:12,src:'app',topics:['Klinikai elmélyülés, szakmai fejlődés']}
+];
+
+// Question bank. topic: vall | agyideg | term | neuro
+const Q = [
+ {id:'q1',topic:'vall',type:'mc',q:'Melyik ideg idegzi be a m. deltoideust?',
+  opts:[['N. axillaris (C5–C6)',''],['N. radialis','A n. radialis is a hátsó kötegből ered, de a felkar és alkar feszítőit látja el, a deltaizmot nem.'],['N. suprascapularis','A m. supraspinatust és infraspinatust idegzi be.'],['N. musculocutaneus','A felkar hajlítóit (m. biceps brachii, m. brachialis, m. coracobrachialis) látja el.']],a:0,
+  exp:'A n. axillaris a plexus brachialis hátsó kötegéből ered, a spatium quadrangularén át a collum chirurgicum körül fut, és a m. deltoideust, valamint a m. teres minort idegzi be.',link:['#vall','deltoideus']},
+ {id:'q2',topic:'vall',type:'mc',q:'Melyik izom indítja a vállízületi abductiót (0–15°)?',
+  opts:[['M. deltoideus','A deltaizom középső része kb. 15°-tól a fő abductor; nyugalmi helyzetben húzásiránya inkább felfelé tolja a humerusfejet.'],['M. supraspinatus',''],['M. trapezius','A lapockát forgatja felfelé, a glenohumerális abductiót nem indítja.'],['M. teres minor','Kifelé forgat, gyengén közelít.']],a:1,
+  exp:'A m. supraspinatus a humerusfejet a vápába nyomja, és így indítja az abductiót; ezt követően a deltaizom veszi át a fő szerepet.',link:['#vall','supraspinatus']},
+ {id:'q3',topic:'vall',type:'mc',q:'Mediális szárnyas lapocka (scapula alata) látható fali fekvőtámaszban. Melyik ideg sérülése valószínű?',
+  opts:[['N. thoracicus longus',''],['N. accessorius','Az n. accessorius sérülése a m. trapezius gyengesége miatt inkább laterális szárnyasodást és lecsüngő vállat okoz.'],['N. dorsalis scapulae','A rhomboideusokat idegzi be; kiesése enyhe, nem jellegzetes mediális szárnyasodás.'],['N. axillaris','A deltaizmot és a teres minort idegzi be, lapockarögzítő izmot nem.']],a:0,
+  exp:'A m. serratus anterior rögzíti a lapocka mediális szélét a mellkasfalhoz. Beidegzője a n. thoracicus longus (C5–C7), amely hosszú, felszínes lefutása miatt sérülékeny.',link:['#vall','serratus']},
+ {id:'q4',topic:'vall',type:'tf',q:'A m. infraspinatus fő funkciója a humerus befelé forgatása.',a:false,
+  exp:'Hamis. A m. infraspinatus a m. teres minorral együtt a humerust kifelé forgatja. A befelé forgatás fő izma a m. subscapularis.',link:['#vall','infraspinatus']},
+ {id:'q5',topic:'vall',type:'mc',q:'Hol tapad a m. subscapularis?',
+  opts:[['Tuberculum majus','Itt a supraspinatus, infraspinatus és teres minor tapad.'],['Tuberculum minus',''],['Tuberositas deltoidea','A deltaizom tapadása.'],['Processus coracoideus','Itt a m. pectoralis minor, a m. coracobrachialis és a biceps rövid feje kapcsolódik.']],a:1,
+  exp:'A m. subscapularis az egyetlen rotátorköpeny-izom, amely elöl, a tuberculum minuson tapad; ezért befelé forgat.',link:['#vall','subscapularis']},
+ {id:'q6',topic:'vall',type:'tf',q:'Fagyott vállban (adhezív capsulitis) a kapszuláris mintázat szerint a kifelé forgatás korlátozott leginkább.',a:true,
+  exp:'Igaz. A vállízület kapszuláris mintázata: kifelé forgatás > abductio > befelé forgatás.',link:['#vall','humeri']},
+ {id:'q7',topic:'vall',type:'mc',q:'Mekkora a scapulohumeralis ritmus aránya (glenohumerális : scapulothoracalis) teljes elevációban?',
+  opts:[['1:1','Ez túlbecsüli a lapocka részvételét.'],['2:1',''],['3:1','Ez alábecsüli a lapocka mozgását.'],['1:2','Fordított arány; a mozgás nagyobb része a glenohumerális ízületben zajlik.']],a:1,
+  exp:'180°-os elevációból kb. 120° a glenohumerális ízületben, kb. 60° a lapocka felfelé forgatásából adódik (2:1). Az arány egyénenként és a mozgás fázisaiban változik.',link:['#vall','humeri']},
+ {id:'q8',topic:'term',type:'match',q:'Párosítsd a magyar kifejezést a svéd és a latin alakkal!',
+  rows:[['vállízület','axelled','articulatio humeri'],['kulcscsont','nyckelben','clavicula'],['lapocka','skulderblad','scapula'],['felkarcsont','överarmsben','humerus']],
+  exp:'A latin név a nemzetközi Terminologia Anatomica alakja; a svéd klinikai nyelv gyakran a latin tövet használja (pl. "axillarisnerven").',link:['#szotar','']},
+ {id:'q9',topic:'agyideg',type:'mc',q:'A beteg szeme "lefelé és kifelé" néz, ptosis és tág pupilla látható. Melyik agyideg érintett?',
+  opts:[['IV – n. trochlearis','A IV. kiesése függőleges kettőslátást okoz, ptosist és pupillatágulatot nem.'],['III – n. oculomotorius',''],['VI – n. abducens','A VI. kiesésekor a szem befelé áll.'],['VII – n. facialis','A VII. a szemhéjzárást (m. orbicularis oculi) végzi, nem az emelést.']],a:1,
+  exp:'A III. ideg kiesésekor csak a m. rectus lateralis (VI) és a m. obliquus superior (IV) működik: a szem lefelé-kifelé áll. A m. levator palpebrae és a paraszimpatikus pupillaszűkítő rostok kiesése ptosist és mydriasist okoz.',link:['#agyidegek','III']},
+ {id:'q10',topic:'agyideg',type:'mc',q:'Nyelvöltéskor a nyelv jobbra tér ki. Melyik ideg sérült?',
+  opts:[['Bal n. hypoglossus','A nyelv a sérült oldal felé tér ki, nem az ép felé.'],['Jobb n. hypoglossus',''],['Jobb n. glossopharyngeus','A IX. érzőideg a nyelv hátsó harmadához; a nyelvöltést nem befolyásolja.'],['Bal n. vagus','A vagus-léziónál az uvula tér ki, nem a nyelv.']],a:1,
+  exp:'Az ép oldali m. genioglossus előre és az ellenoldal felé tolja a nyelvet; ha a jobb oldal gyenge, a bal oldal "áttolja" a nyelvet jobbra.',link:['#agyidegek','XII']},
+ {id:'q11',topic:'agyideg',type:'tf',q:'Perifériás arcidegbénulásnál a homlok ráncolása megtartott.',a:false,
+  exp:'Hamis. Perifériás (pl. Bell-) paresisnél az egész arcfél bénul, a homlok is. A homlok megkímélése centrális (supranucleáris) léziót jelez, mert a homlok izmai kétoldali kérgi beidegzést kapnak.',link:['#agyidegek','VII']},
+ {id:'q12',topic:'agyideg',type:'mc',q:'"Á" hang kiejtésekor az uvula balra tér ki. Melyik ideg sérült?',
+  opts:[['Bal n. vagus','Az uvula az ép oldal felé húzódik, tehát a sérülés nem a bal oldalon van.'],['Jobb n. vagus',''],['Jobb n. hypoglossus','A XII. a nyelvet mozgatja, a lágy szájpadot nem.'],['Bal n. facialis','A VII. a lágy szájpad izmait nem idegzi be.']],a:1,
+  exp:'A lágy szájpad izmait a vagus (nucleus ambiguus) idegzi be. Az ép bal oldal emelkedik, és maga felé húzza az uvulát, ezért jobb oldali vagus-lézióra gondolunk.',link:['#agyidegek','X']},
+ {id:'q13',topic:'agyideg',type:'mc',q:'Melyik ág lép ki a koponyából a foramen rotundumon át?',
+  opts:[['V1 – n. ophthalmicus','A fissura orbitalis superioron lép ki.'],['V2 – n. maxillaris',''],['V3 – n. mandibularis','A foramen ovalén lép ki.'],['VII – n. facialis','A porus acusticus internuson lép be, és a foramen stylomastoideumon lép ki.']],a:1,
+  exp:'A trigeminus három ága három különböző nyíláson lép ki: V1 fissura orbitalis superior, V2 foramen rotundum, V3 foramen ovale.',link:['#agyidegek','V']},
+ {id:'q14',topic:'agyideg',type:'mc',q:'Nyaki nyirokcsomó-eltávolítás után a beteg válla lecsüng, és gyenge a vállvonogatás. Melyik ideg sérült?',
+  opts:[['N. accessorius (XI)',''],['N. thoracicus longus','Mediális szárnyas lapockát okozna, vállvonogatási gyengeséget nem.'],['N. axillaris','Abductiós gyengeséget okozna.'],['N. phrenicus','A rekeszizmot idegzi be.']],a:0,
+  exp:'A n. accessorius a hátsó nyaki háromszögben felszínesen fut, ezért nyaki műtétnél sérülékeny. Kiesése a m. trapezius gyengeségét okozza.',link:['#agyidegek','XI']},
+ {id:'q15',topic:'agyideg',type:'match',q:'Párosítsd az agyideg sorszámát a magyar és a svéd nevével!',
+  rows:[['VII','Arcideg','Ansiktsnerven'],['X','Bolygóideg','Vagusnerven'],['II','Látóideg','Synnerven'],['V','Háromosztatú ideg','Trillingnerven']],
+  exp:'A svéd nevek gyakran a funkcióra utalnak: "ansikte" = arc, "syn" = látás, "trilling" = hármas.',link:['#agyidegek','']},
+ {id:'q16',topic:'neuro',type:'order',q:'Állítsd sorrendbe a plexus brachialis felépítését a gerincvelőtől a periféria felé!',
+  items:['Radices (gyökök, C5–T1)','Trunci (törzsek)','Divisiones (osztódások)','Fasciculi (kötegek)','Rami terminales (végágak)'],
+  exp:'Egy gyakori emlékeztető: "Rendelj Tíz Doboz Friss Rétest" (Radices, Trunci, Divisiones, Fasciculi, Rami). A kötegeket az a. axillarishoz viszonyított helyzetük alapján nevezzük el (lateralis, medialis, posterior).',link:['#plexus','']},
+ {id:'q17',topic:'agyideg',type:'mc',q:'Melyik agyideg vizsgálatához használjuk a Weber- és a Rinne-tesztet?',
+  opts:[['VII','A VII. a m. stapediust idegzi be, de a hangvilla-tesztek a hallóideget vizsgálják.'],['VIII',''],['IX','A garatreflexet vizsgáljuk vele.'],['V','A cornealis reflex és az arc érzése tartozik ide.']],a:1,
+  exp:'A Weber- és a Rinne-teszt a vezetéses és az idegi halláscsökkenést különíti el, így a n. vestibulocochlearis (VIII) cochlearis részét vizsgálja.',link:['#agyidegek','VIII']},
+ {id:'q18',topic:'neuro',type:'tf',q:'A n. trochlearis az egyetlen agyideg, amely az agytörzs hátsó felszínén lép ki.',a:true,
+  exp:'Igaz. A IV. ideg a mesencephalon dorsalis felszínén lép ki, és megkerüli az agytörzset. Ez a leghosszabb intracranialis lefutású agyideg.',link:['#agyidegek','IV']},
+ {id:'p1',topic:'plexus',type:'mc',q:'Melyik kötegből ered a n. ulnaris?',
+  opts:[['Fasciculus medialis',''],['Fasciculus lateralis','Ebből a n. musculocutaneus és a n. medianus laterális gyöke ered.'],['Fasciculus posterior','Ebből a n. axillaris és a n. radialis ered.'],['Truncus inferior','A törzs még nem ad végágat; előbb divisiókra, majd kötegekre oszlik.']],a:0,
+  exp:'A fasciculus medialis a truncus inferior elülső divisiójából jön létre (C8–T1), és a n. ulnarisban folytatódik. Emellett a n. medianus mediális gyökét adja.',link:['#plexus','ulnaris']},
+ {id:'p2',topic:'plexus',type:'mc',q:'Újszülöttnél a kar addukcióban és befelé forgatva, nyújtott könyökkel, borított alkarral lóg ("pincér-borravaló" tartás). Mely gyökök sérültek?',
+  opts:[['C5–C6',''],['C8–T1','Ez a Klumpke-bénulás, amelyben a kéz kisizmai gyengülnek.'],['C7','Izolált C7-sérülés főleg a könyök- és csuklófeszítést gyengíti.'],['C5–T1','Teljes plexus-sérülésnél az egész kar petyhüdt.']],a:0,
+  exp:'Erb–Duchenne-bénulás: a truncus superior (C5–C6) sérül, többnyire a fej és a váll közötti szög erőltetett növelésekor. Kiesik a deltoideus, a supraspinatus, az infraspinatus és a biceps, ezért alakul ki ez a tartás.',link:['#plexus','']},
+ {id:'p3',topic:'plexus',type:'mc',q:'Humerusszár-törés után a beteg nem tudja feszíteni a csuklóját. Melyik ideg sérült?',
+  opts:[['N. radialis',''],['N. medianus','Kiesésekor a hajlítás és a hüvelykujj-oppositio gyengül.'],['N. ulnaris','Kiesésekor karomállás alakul ki a 4–5. ujjon.'],['N. musculocutaneus','Kiesésekor a könyökhajlítás gyengül.']],a:0,
+  exp:'A n. radialis a humerus hátsó felszínén, a sulcus n. radialisban közvetlenül a csonton fut, ezért szártörésnél sérülékeny. A tünet csuklóejtés (wrist drop).',link:['#plexus','radialis']},
+ {id:'p4',topic:'plexus',type:'tf',q:'A pozitív Froment-jel a n. medianus kiesésére utal.',a:false,
+  exp:'Hamis. A Froment-jel a m. adductor pollicis gyengeségét mutatja, ezt a n. ulnaris idegzi be. A beteg a papírt a m. flexor pollicis longus (n. medianus) hajlításával próbálja tartani.',link:['#plexus','ulnaris']},
+ {id:'p5',topic:'plexus',type:'mc',q:'Melyik reflex vizsgálja elsősorban a C7 gyököt?',
+  opts:[['Triceps-reflex',''],['Biceps-reflex','Ez C5–C6.'],['Brachioradialis-reflex','Ez főleg C6.'],['Achilles-reflex','Ez S1, az alsó végtagon.']],a:0,
+  exp:'Gyökvizsgálatnál: biceps C5–C6, brachioradialis C6, triceps C7. A C8 és a T1 gyököt nem reflexszel, hanem az ujjflexio és az ujjabductio erejével vizsgáljuk.',link:['#plexus','']},
+ {id:'p6',topic:'plexus',type:'mc',q:'Klumpke-bénulásban ptosis és szűk pupilla is látható. Mi a magyarázat?',
+  opts:[['A T1 gyök szimpatikus rostjai is sérültek (Horner-szindróma)',''],['A n. oculomotorius is sérült','Agyideg-sérülés nem tartozik a plexus-sérüléshez; a III. kiesése ráadásul tág pupillát okozna.'],['A n. facialis sérült','A VII. a szemhéjzárásért felel, a pupillára nincs hatása.'],['A C5 gyök sérült','A C5 a vállizmokat idegzi be, szimpatikus rostot nem visz a fej felé.']],a:0,
+  exp:'A T1 gyök preganglionaris szimpatikus rostokat visz a truncus sympathicus felé. Gyöki avulsiónál ezek is kiesnek: ptosis, miosis, anhidrosis. Ez proximális, rossz prognózisú sérülésre utal.',link:['#plexus','']},
+ {id:'p7',topic:'plexus',type:'match',q:'Párosítsd a végágat a kötegével és egy jellegzetes izmával!',
+  heads:['VÉGÁG','KÖTEG','KULCSIZOM'],
+  rows:[['n. musculocutaneus','fasciculus lateralis','m. biceps brachii'],['n. ulnaris','fasciculus medialis','m. adductor pollicis'],['n. radialis','fasciculus posterior','m. triceps brachii'],['n. axillaris','fasciculus posterior','m. deltoideus']],
+  exp:'A hátsó kötegből (fasciculus posterior) két végág ered: a n. axillaris és a n. radialis. A n. axillaris a m. deltoideust és a m. teres minort, a n. radialis a felkar és az alkar feszítőit látja el.',link:['#plexus','']},
+ {id:'p8',topic:'plexus',type:'mc',q:'Miből jön létre a fasciculus lateralis?',
+  opts:[['A truncus superior és a truncus medius elülső divisiójából',''],['Mindhárom törzs hátsó divisiójából','Így a fasciculus posterior jön létre.'],['A truncus inferior elülső divisiójából','Így a fasciculus medialis jön létre.'],['A C5 és C6 gyökből közvetlenül','A gyökökből előbb törzsek, majd divisiók lesznek.']],a:0,
+  exp:'A fasciculus lateralis C5–C7 rostokat tartalmaz: a truncus superior és a truncus medius elülső divisiójából áll össze.',link:['#plexus','']},
+ {id:'p9',topic:'plexus',type:'mc',q:'Hol jelentkezik a zsibbadás tipikusan kéztőalagút-szindrómában?',
+  opts:[['A hüvelyk-, mutató-, középső ujjon és a gyűrűsujj radiális felén',''],['A kisujjon és a gyűrűsujj ulnaris felén','Ez a n. ulnaris területe.'],['A kézháton, a hüvelyk- és a mutatóujj között','Ez a n. radialis felszíni ágának területe.'],['Az alkar laterális oldalán','Ez a n. musculocutaneus bőrága.']],a:0,
+  exp:'A n. medianus a canalis carpiban a retinaculum flexorum alatt fut. A tünetek gyakran éjszaka jelentkeznek; a tenyér közepét ellátó palmaris ág a csatorna előtt ágazik le, ezért ez a terület többnyire megkímélt.',link:['#plexus','medianus']},
+ {id:'p10',topic:'plexus',type:'tf',q:'A n. thoracicus longus közvetlenül a gyökökből (C5–C7) ered, nem a kötegekből.',a:true,
+  exp:'Igaz. A gyökökből ered a n. dorsalis scapulae (C5) és a n. thoracicus longus (C5–C7). Sérülésének jele a scapula alata.',link:['#vall','serratus']}
+];
+const TOPICS={vall:'Vállöv és vállízület',plexus:'Plexus brachialis',agyideg:'12 agyideg',term:'Terminológia',neuro:'Neuroanatómia'};
+const INTERVALS=[1,3,7,14,30];
+
+/* ============================== STATE ============================== */
+const store={
+  get(k,d){try{const v=localStorage.getItem('a360:'+k);return v?JSON.parse(v):d}catch(e){return d}},
+  set(k,v){try{localStorage.setItem('a360:'+k,JSON.stringify(v))}catch(e){}}
+};
+const today=()=>{const d=new Date();d.setHours(0,0,0,0);return d.getTime()};
+const DAY=864e5;
+let favs=new Set(store.get('favs',[]));
+let srs=store.get('srs',null);
+if(!srs){ // example history so the stats and review views show a working state
+  const t=today();
+  srs={_example:true,
+    q1:{box:2,due:t+3*DAY,ok:3,no:0},q2:{box:1,due:t,ok:1,no:1},q3:{box:0,due:t,ok:0,no:1},
+    q4:{box:1,due:t+DAY,ok:1,no:0},q9:{box:0,due:t,ok:0,no:2},q11:{box:2,due:t+5*DAY,ok:2,no:0},q8:{box:3,due:t+10*DAY,ok:3,no:0}};
+}
+const saveSrs=()=>store.set('srs',srs);
+const dueList=()=>Q.filter(q=>{const r=srs[q.id];return r&&r.due<=today()});
+function grade(id,ok){
+  const r=srs[id]||{box:0,due:0,ok:0,no:0};
+  if(ok){r.ok++;r.box=Math.min(r.box+1,INTERVALS.length-1)}else{r.no++;r.box=0}
+  r.due=today()+(ok?INTERVALS[r.box-1>=0?r.box-1:0]:1)*DAY;
+  r.last=Date.now();srs[id]=r;saveSrs();
+}
+
+/* ============================== HELPERS ============================== */
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const fold=s=>String(s).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+const triRaw=(hu,sv,la)=>`<div class="tri"><div><span class="lbl">HU</span><span class="v">${hu}</span></div><div><span class="lbl">SV</span><span class="v">${sv}</span></div><div><span class="lbl">LA</span><span class="v la">${la}</span></div></div>`;
+const tri=(hu,sv,la)=>triRaw(esc(hu),esc(sv),esc(la));
+/* Swedish content (AI-translated, pending expert review) */
+const SV_A = {
+  sheets: {
+    deltoideus: {
+      loc:'Ytlig muskel som ger axeln dess runda kontur; den har tre delar (pars clavicularis, acromialis, spinalis).',
+      origo:'Laterala tredjedelen av clavicula (främre delen), acromion (mellersta delen), spina scapulae (bakre delen).',
+      insertio:'Tuberositas deltoidea humeri.',
+      innervatio:'N. axillaris (C5–C6), från plexus brachialis bakre sekundärsträng.',
+      ver:'A. circumflexa humeri posterior; a. thoracoacromialis ramus deltoideus.',
+      actio:'Främre delen: flexion, inåtrotation. Mellersta delen: abduktion (från ca 15°). Bakre delen: extension, utåtrotation.',
+      syn:'Abduktion: m. supraspinatus. Flexion: m. pectoralis major (pars clavicularis), m. biceps brachii.',
+      ant:'Adduktion: m. latissimus dorsi, m. pectoralis major, m. teres major.',
+      izulet:'Articulatio humeri.',
+      palp:'Nedanför acromion; i 90° abduktion mot motstånd är den mellersta delen lätt att palpera.',
+      teszt:'MMT: abduktion i 90°, motstånd ovanför armbågen (mellersta delen); flexion och extension på samma sätt för de övriga delarna.',
+      klin:'Skada på n. axillaris efter proximal humerusfraktur eller axelluxation: svag abduktion, känselbortfall på axelns laterala sida ("regementsmärkesområdet").'
+    },
+    supraspinatus: {
+      loc:'Rotatorkuffens övre muskel; den löper under acromion.',
+      origo:'Fossa supraspinata scapulae.',
+      insertio:'Tuberculum majus humeri (övre facetten).',
+      innervatio:'N. suprascapularis (C5–C6).',
+      ver:'A. suprascapularis.',
+      actio:'Initierar abduktionen (0–15°) och centrerar humerushuvudet i cavitas glenoidalis.',
+      syn:'M. deltoideus (pars acromialis).',
+      ant:'M. latissimus dorsi, m. pectoralis major.',
+      izulet:'Articulatio humeri.',
+      palp:'I fossa supraspinata, under m. trapezius.',
+      teszt:'Jobes test ("empty can"), drop arm-test.',
+      klin:'Den muskel som oftast drabbas vid subakromiell impingement och rotatorkuffruptur.'
+    },
+    infraspinatus: {
+      loc:'Rotatorkuffens bakre muskel.',
+      origo:'Fossa infraspinata scapulae.',
+      insertio:'Tuberculum majus humeri (mellersta facetten).',
+      innervatio:'N. suprascapularis (C5–C6).',
+      ver:'A. suprascapularis, a. circumflexa scapulae.',
+      actio:'Utåtrotation av humerus; bakre stabilisering av humerushuvudet.',
+      syn:'M. teres minor, m. deltoideus (pars spinalis).',
+      ant:'M. subscapularis, m. pectoralis major, m. latissimus dorsi.',
+      izulet:'Articulatio humeri.',
+      palp:'Nedanför spina scapulae, under utåtrotation.',
+      teszt:'Utåtrotation mot motstånd i 0° abduktion; external rotation lag sign.',
+      klin:'Överbelastning hos idrottare med överhuvudrörelser; kompression av n. suprascapularis (incisura spinoglenoidalis) kan ge isolerad svaghet.'
+    },
+    teresminor: {
+      loc:'Rotatorkuffens bakre-nedre muskel.',
+      origo:'Margo lateralis scapulae.',
+      insertio:'Tuberculum majus humeri (nedre facetten).',
+      innervatio:'N. axillaris (C5–C6).',
+      ver:'A. circumflexa scapulae.',
+      actio:'Utåtrotation av humerus, svag adduktion.',
+      syn:'M. infraspinatus.',
+      ant:'M. subscapularis.',
+      izulet:'Articulatio humeri.',
+      palp:'Vid skulderbladets laterala kant, nedanför m. infraspinatus.',
+      teszt:'Hornblowers tecken (utåtrotation i 90° abduktion).',
+      klin:'Vid skada på n. axillaris försvagas den tillsammans med deltamuskeln.'
+    },
+    subscapularis: {
+      loc:'Rotatorkuffens främre muskel, på skulderbladets mot revbenen vända yta.',
+      origo:'Fossa subscapularis.',
+      insertio:'Tuberculum minus humeri.',
+      innervatio:'Nn. subscapulares superior et inferior (C5–C7).',
+      ver:'A. subscapularis.',
+      actio:'Inåtrotation av humerus; främre stabilisering.',
+      syn:'M. pectoralis major, m. latissimus dorsi, m. teres major.',
+      ant:'M. infraspinatus, m. teres minor.',
+      izulet:'Articulatio humeri.',
+      palp:'Endast delvis, i axillens bakre vägg.',
+      teszt:'Lift-off-test (Gerber), belly press-test.',
+      klin:'Kan skadas efter främre axelluxation; svaghet i muskeln ökar den främre instabiliteten.'
+    },
+    serratus: {
+      loc:'På bröstkorgens sidovägg, mellan skulderbladet och revbenen.',
+      origo:'Yttre ytan av revben 1–8(9).',
+      insertio:'Margo medialis scapulae (främre ytan), angulus inferior.',
+      innervatio:'N. thoracicus longus (C5–C7).',
+      ver:'A. thoracica lateralis, a. thoracodorsalis.',
+      actio:'Protraktion och uppåtrotation av skulderbladet; fixerar skulderbladet mot bröstkorgsväggen.',
+      syn:'M. trapezius (övre och nedre delen) vid uppåtrotationen.',
+      ant:'Mm. rhomboidei, m. levator scapulae.',
+      izulet:'Skapulotorakal "led".',
+      palp:'På bröstkorgens sidovägg, framför m. latissimus dorsi.',
+      teszt:'Armhävning mot vägg: lyfter skulderbladets mediala kant?',
+      klin:'Skada på n. thoracicus longus: scapula alata (medialt utstående skulderblad), försvårad elevation.'
+    },
+    humeri: {
+      csontok:'Caput humeri och cavitas glenoidalis scapulae.',
+      tipus:'Fri kulled (articulatio spheroidea), 3 frihetsgrader.',
+      tok:'Slapp, vid kapsel; bildar nedtill ett veck (recessus axillaris).',
+      szalag:'Ligg. glenohumeralia (superius, medium, inferius), lig. coracohumerale, lig. transversum humeri; labrum glenoidale fördjupar ledpannan.',
+      stab:'Dynamisk: rotatorkuffen, långa huvudet av m. biceps brachii. Statisk: kapsel, ligament, labrum, negativt intraartikulärt tryck.',
+      mozgas:'Flexion–extension, abduktion–adduktion, inåt- och utåtrotation, horisontell abduktion–adduktion, cirkumduktion.',
+      izmok:'Rotatorkuffen, m. deltoideus, m. pectoralis major, m. latissimus dorsi, m. teres major, m. biceps brachii, m. coracobrachialis.',
+      beidegzes:'Ledgrenar från n. axillaris, n. suprascapularis och n. musculocutaneus.',
+      funkcio:'Positionering av den övre extremiteten med stort rörelseomfång. Vid elevation är den skapulohumerala rytmen ca 2:1 (glenohumeral : skapulotorakal).',
+      vizsg:'Aktivt och passivt ROM med goniometer, kapselmönster, stabilitetstester (apprehension), impingementtester (Hawkins–Kennedy, Neer).',
+      komp:'Vid abduktion: uppdragning av axeln (övre delen av m. trapezius), lateralflexion av bålen, skapulär dyskinesi.',
+      klin:'Främre-nedre luxation är vanligast. Kapselmönstret vid frozen shoulder (adhesiv kapsulit): utåtrotation > abduktion > inåtrotation.',
+      rom:['Flexion','Extension','Abduktion','Inåtrotation','Utåtrotation']
+    },
+    axillaris: {
+      eredes:'Plexus brachialis, fasciculus posterior (bakre sekundärsträngen); nervrötterna C5–C6.',
+      lefutas:'Från axillen genom den laterala axillarluckan (spatium quadrangulare), tillsammans med a. circumflexa humeri posterior, runt collum chirurgicum humeri.',
+      motor:'M. deltoideus, m. teres minor.',
+      szenz:'N. cutaneus brachii lateralis superior: huden på axelns laterala sida.',
+      vizsg:'Abduktionsstyrka, utåtrotation, känselundersökning över deltamuskeln.',
+      serules:'Fraktur på collum chirurgicum, främre axelluxation, tryck från krycka.',
+      tunetek:'Svag abduktion över 15°, atrofi av deltamuskeln (kantig axel), känselbortfall på axelns laterala sida.'
+    },
+    musculocutaneus: {
+      eredes:'Fasciculus lateralis (laterala sekundärsträngen); nervrötterna C5–C7.',
+      lefutas:'Penetrerar m. coracobrachialis och löper sedan mellan m. biceps brachii och m. brachialis. Ovanför armbågen fortsätter den som hudgren (n. cutaneus antebrachii lateralis).',
+      motor:'M. coracobrachialis, m. biceps brachii, m. brachialis.',
+      szenz:'Huden på underarmens laterala sida.',
+      vizsg:'Armbågsflexion i supination, supinationsstyrka, bicepsreflex (C5–C6), känsel på underarmens laterala sida.',
+      serules:'Isolerad skada är ovanlig: axelluxation, tunga lyft, inklämning i m. coracobrachialis.',
+      tunetek:'Svag armbågsflexion och supination, nedsatt bicepsreflex, känselbortfall på underarmens laterala sida.'
+    },
+    medianus: {
+      eredes:'Utgår med två rötter: från fasciculus lateralis och fasciculus medialis; nervrötterna C6–T1.',
+      lefutas:'I överarmen löper den tillsammans med a. brachialis, i armbågsvecket medialt. Den passerar mellan de två huvudena av m. pronator teres och sedan mellan m. flexor digitorum superficialis och profundus. Genom canalis carpi når den handflatan.',
+      motor:'Större delen av underarmens flexorer (m. pronator teres, m. flexor carpi radialis, m. flexor digitorum superficialis, via n. interosseus anterior m. flexor pollicis longus och laterala halvan av m. flexor digitorum profundus). I handen: thenarmusklerna och mm. lumbricales 1–2.',
+      szenz:'Volart tummen, pek- och långfingret samt radiala halvan av ringfingret.',
+      vizsg:'Tumabduktion (m. abductor pollicis brevis), "OK"-tecken (n. interosseus anterior), Phalens test, Tinels tecken över canalis carpi, tvåpunktsdiskrimination.',
+      serules:'Karpaltunnelsyndrom (vanligast), suprakondylär humerusfraktur hos barn, skärskada i handledsregionen.',
+      tunetek:'Karpaltunnelsyndrom: nattliga domningar i fingrarna 1–3½, thenaratrofi, svag opposition. Proximal lesion: vid knytnäve förblir pek- och långfingret (2–3) extenderade ("edshand").'
+    },
+    ulnaris: {
+      eredes:'Fasciculus medialis (mediala sekundärsträngen); nervrötterna C8–T1 (C7 varierar).',
+      lefutas:'Längs överarmens mediala sida och sedan bakom epicondylus medialis (sulcus n. ulnaris, "änkestöten"). Den når underarmen mellan de två huvudena av m. flexor carpi ulnaris och vid handleden går den genom Guyons kanal in i handen.',
+      motor:'M. flexor carpi ulnaris, mediala halvan av m. flexor digitorum profundus, flertalet av handens inre muskler: hypothenar, mm. interossei, mm. lumbricales 3–4, m. adductor pollicis.',
+      szenz:'Lillfingret och ulnara halvan av ringfingret, volart och dorsalt.',
+      vizsg:'Froments tecken (m. adductor pollicis), spretning och samling av fingrarna mot motstånd, Tinels tecken vid armbågen, provokationstest med armbågsflexion.',
+      serules:'Kubitaltunnelsyndrom, fraktur på epicondylus medialis, Guyons kanal (t.ex. hos cyklister).',
+      tunetek:'Klohand i fingrarna 4–5, interosseusatrofi på handryggen, positivt Froments tecken, känselbortfall i lillfingret.'
+    },
+    radialis: {
+      eredes:'Fasciculus posterior (bakre sekundärsträngen); nervrötterna C5–T1.',
+      lefutas:'Löper på humerus baksida i sulcus n. radialis tillsammans med a. profunda brachii. Den penetrerar det laterala intermuskulära septumet och delar sig framför armbågen i en ytlig (sensorisk) och en djup gren. Den djupa grenen (n. interosseus posterior) löper genom m. supinator.',
+      motor:'M. triceps brachii, m. anconeus, m. brachioradialis, mm. extensores carpi radiales, m. supinator och samtliga underarmsextensorer.',
+      szenz:'Överarmens och underarmens baksida, radiala delen av handryggen (första interdigitalrummet).',
+      vizsg:'Handleds- och fingerextension, tricepsreflex (C7), brachioradialisreflex (C6), känsel i första interdigitalrummet.',
+      serules:'Humerusskaftfraktur, tryck i axillen (krycka, "lördagskvällsförlamning"), inklämning i m. supinator.',
+      tunetek:'Dropphand (wrist drop), svag fingerextension. Vid skada på humerusskaftet är triceps oftast skonad, eftersom dess grenar avgår högre upp.'
+    }
+  },
+  layers: {
+    vall: {
+      alap:`<p>Axeln förbinder den övre extremiteten med bålen. Skuldergördeln består av två ben: <span class="la">clavicula</span> (nyckelbenet) och <span class="la">scapula</span> (skulderbladet). Överarmsbenets (<span class="la">humerus</span>) huvud rör sig i skulderbladets grunda ledpanna.</p>
+<ul><li>Axelleden är kroppens mest rörliga led, och därför ges dess stabilitet främst av muskler.</li><li>De fyra rotatorkuffmusklerna (supraspinatus, infraspinatus, teres minor, subscapularis) håller humerushuvudet i ledpannan som en "manschett".</li><li>Deltamuskeln ger axeln dess runda form och är den viktigaste lyftmuskeln.</li></ul>`,
+      egyetem:`<p>Axelkomplexet består av fyra leder: <span class="la">articulatio glenohumeralis</span>, <span class="la">acromioclavicularis</span>, <span class="la">sternoclavicularis</span> och den funktionella skapulotorakala förbindelsen. Elevationen uppstår genom deras samordnade rörelse (skapulohumeral rytm, ca 2:1).</p>
+<ul><li>Rotatorkuffens muskler bildar ett kraftpar med deltamuskeln: deltamuskeln drar humerushuvudet uppåt, kuffen nedåt och inåt, så att huvudet roterar i ledpannan i stället för att glida.</li><li>Rotatorkuffens innervation är C5–C6-dominerad: n. suprascapularis, n. axillaris, nn. subscapulares.</li><li>Kraftparet m. serratus anterior och m. trapezius roterar skulderbladet uppåt; detta krävs för elevation över 90°.</li></ul>`,
+      klinika:`<p>Ur fysioterapeutiskt perspektiv kan axelbesvär delas in i tre grupper: smärta och impingement, instabilitet samt rörelseinskränkning.</p>
+<ul><li><b>Subakromiell smärta:</b> Hawkins–Kennedy- och Neer-test, smärtsam båge mellan 60° och 120°. Behandling: belastningskontroll, skulderbladskontroll, progressiv styrketräning.</li><li><b>Rotatorkuffruptur:</b> Jobes test, drop arm-test, lag sign-tester.</li><li><b>Adhesiv kapsulit:</b> kapselmönster (utåtrotation &gt; abduktion &gt; inåtrotation).</li><li><b>Nervskador:</b> n. axillaris (svag abduktion), n. thoracicus longus (scapula alata), n. accessorius (hängande axel).</li></ul>
+<p class="note">Sammanfattning i utbildningssyfte; ersätter inte professionella riktlinjer eller individuella kliniska beslut.</p>`
+    },
+    plexus: {
+      alap:`<p><span class="la">Plexus brachialis</span> (armplexus) är den nervfläta som försörjer hela den övre extremiteten. Nervrötterna som lämnar ryggmärgens nedre cervikala och första torakala segment (C5–T1) delar sig och förenas upprepade gånger på halsen och i axillen, så att det till slut utgår fem stora nerver mot armen.</p>
+<ul><li>Uppbyggd i fem nivåer: rötter → primärsträngar → divisioner → sekundärsträngar → terminalgrenar.</li><li>De fem terminalgrenarna: <span class="la">n. musculocutaneus, n. axillaris, n. radialis, n. medianus, n. ulnaris</span>.</li><li>Sekundärsträngarna namnges efter sitt läge i förhållande till <span class="la">a. axillaris</span>.</li></ul>`,
+      egyetem:`<p>Rötterna (<span class="la">radices</span>) kommer ut mellan m. scalenus anterior och medius och förenas till tre primärsträngar (<span class="la">trunci</span>). Varje primärsträng delar sig bakom nyckelbenet i en främre och en bakre division (<span class="la">divisiones</span>). De främre divisionerna ger nerverna till flexorerna, de bakre nerverna till extensorerna.</p>
+<ul><li><b>Fasciculus lateralis</b> (C5–C7): främre divisionerna från övre och mellersta primärsträngen → n. musculocutaneus, laterala roten till n. medianus.</li><li><b>Fasciculus medialis</b> (C8–T1): nedre primärsträngens främre division → n. ulnaris, mediala roten till n. medianus.</li><li><b>Fasciculus posterior</b> (C5–T1): alla tre bakre divisionerna → n. axillaris, n. radialis.</li><li>"M"-formen bildas av de två rötterna till n. medianus mellan n. musculocutaneus och n. ulnaris; den är ett orienteringsmärke vid dissektion.</li></ul>`,
+      klinika:`<p>Vid den fysioterapeutiska undersökningen måste man skilja mellan rotskada (radikulopati), plexusskada och perifer nervskada. Dermatom, myotom och reflex visar tillsammans lesionens nivå.</p>
+<ul><li><b>Rotlesion:</b> ett dermatom och ett myotom är påverkade, ofta med nacksmärta (t.ex. C6-radikulopati: domning i tummen, svag handledsextension, nedsatt brachioradialisreflex).</li><li><b>Plexuslesion:</b> flera rötters eller en primärsträngs område är påverkat (Erb, Klumpke, thoracic outlet).</li><li><b>Perifer nerv:</b> nervens eget hudområde och dess muskler är påverkade, reflexerna är oftast bevarade (t.ex. karpaltunnelsyndrom).</li></ul>
+<p class="note">Sammanfattning i utbildningssyfte; ersätter inte professionella riktlinjer eller individuella kliniska beslut.</p>`
+    }
+  },
+  lesions: {
+    erb: {
+      label:'Erb–Duchenne (C5–C6)',
+      text:'Skada på truncus superior (övre primärsträngen), oftast vid forcerad ökning av vinkeln mellan huvud och axel (förlossningsskada, motorcykelolycka). Bortfall av deltoideus, supraspinatus, infraspinatus, biceps och brachialis. Karakteristisk "servitörsdricks"-hållning: armen hänger i adduktion och inåtrotation, armbågen är extenderad och underarmen pronerad. Känselbortfall på axelns och underarmens laterala sida; bicepsreflexen är nedsatt.'
+    },
+    klumpke: {
+      label:'Klumpke (C8–T1)',
+      text:'Skada på truncus inferior (nedre primärsträngen), t.ex. vid forcerad uppåtdragning av armen, vid Pancoasttumör eller halsrevben (thoracic outlet). Handens inre muskler försvagas: klohand, svag fingerspretning och nedsatt finmotorik. Känselbortfall på underarmens och handens ulnara sida. Om avulsionen av T1-roten även drabbar de sympatiska fibrerna tillkommer Horners syndrom (ptos, mios).'
+    }
+  },
+  pxRoots: [
+    ['C5','Axelns och överarmens laterala sida','Axelabduktion','Bicepsreflex (C5–C6)'],
+    ['C6','Underarmens laterala sida, tummen','Armbågsflexion, handledsextension','Brachioradialisreflex'],
+    ['C7','Långfingret','Armbågsextension, handledsflexion','Tricepsreflex'],
+    ['C8','Lillfingret, handens ulnara kant','Fingerflexion, tumextension','—'],
+    ['T1','Underarmens mediala sida','Fingerabduktion (mm. interossei)','—']
+  ],
+  pxBranches: [
+    ['Rötter','n. dorsalis scapulae (C5)','Mm. rhomboidei, m. levator scapulae'],
+    ['Rötter','n. thoracicus longus (C5–C7)','M. serratus anterior'],
+    ['Truncus superior','n. suprascapularis (C5–C6)','M. supraspinatus, m. infraspinatus'],
+    ['Fasciculus lateralis','n. pectoralis lateralis','M. pectoralis major'],
+    ['Fasciculus medialis','n. pectoralis medialis; nn. cutanei brachii et antebrachii mediales','M. pectoralis minor och major; huden på armens och underarmens mediala sida'],
+    ['Fasciculus posterior','nn. subscapulares; n. thoracodorsalis','M. subscapularis, m. teres major; m. latissimus dorsi']
+  ]
+};
+
+const SV_B = {
+  cn: {
+    I: { nuc:'Bulbus olfactorius (ingen hjärnstamskärna)', ered:'Telencephalon – bulbus olfactorius', kilep:'Lamina cribrosa ossis ethmoidalis', fn:'Luktsinne.', izom:'—', teszt:'Identifiering av en känd doft, en näsborre i taget, med slutna ögon.', lez:'Anosmi/hyposmi (t.ex. efter skallbasfraktur).' },
+    II: { nuc:'Corpus geniculatum laterale (thalamus)', ered:'Diencephalon (chiasma opticum)', kilep:'Canalis opticus', fn:'Syn; den afferenta delen av pupillreflexen.', izom:'—', teszt:'Visus, synfält (konfrontationsundersökning), ögonbotten, pupillreaktion.', lez:'Synfältsbortfall beroende på vilket avsnitt av synbanan som är skadat (t.ex. bitemporal hemianopsi vid skada på chiasma).' },
+    III: { nuc:'Nucleus n. oculomotorii; nucleus Edinger–Westphal (parasympatisk)', ered:'Mesencephalon – fossa interpeduncularis', kilep:'Fissura orbitalis superior', fn:'Ögonrörelser, lyft av övre ögonlocket, pupillkonstriktion, ackommodation.', izom:'M. rectus superior, inferior, medialis; m. obliquus inferior; m. levator palpebrae superioris; m. sphincter pupillae, m. ciliaris.', teszt:'Följerörelser med ögonen i ett "H"-mönster, pupillreaktion, konvergens.', lez:'Ögat riktat "nedåt och utåt", ptos, vid pupill som inte reagerar på ljus.' },
+    IV: { nuc:'Nucleus n. trochlearis', ered:'Mesencephalon – dorsalt (den enda kranialnerv som lämnar hjärnstammen på baksidan)', kilep:'Fissura orbitalis superior', fn:'Rör ögongloben nedåt-inåt.', izom:'M. obliquus superior.', teszt:'Blick nedåt-inåt (nedåt mot nästippen).', lez:'Vertikalt dubbelseende, särskilt i trappor nedåt; kompensatorisk lutning av huvudet mot den friska sidan.' },
+    V: { nuc:'Nucleus mesencephalicus, principalis, spinalis n. trigemini; nucleus motorius', ered:'Pons – lateralt', kilep:'V1: fissura orbitalis superior · V2: foramen rotundum · V3: foramen ovale', fn:'Känsel i ansiktet, munhålan och hornhinnan; tuggning.', izom:'Tuggmusklerna (m. masseter, m. temporalis, mm. pterygoidei), m. tensor tympani, m. tensor veli palatini.', teszt:'Beröring och smärtkänsel i alla tre grenarna, kornealreflex (afferent), sammanbitning av käken.', lez:'Känselbortfall i grenens område; vid gapning avviker underkäken mot den skadade sidan. Trigeminusneuralgi.' },
+    VI: { nuc:'Nucleus n. abducentis', ered:'Gränsen mellan pons och medulla', kilep:'Fissura orbitalis superior', fn:'Rör ögongloben utåt.', izom:'M. rectus lateralis.', teszt:'Blick åt sidan.', lez:'Ögat kan inte abduceras och står inåtvänt; horisontellt dubbelseende.' },
+    VII: { nuc:'Nucleus motorius n. facialis; nucleus salivatorius superior; nucleus tractus solitarii', ered:'Gränsen mellan pons och medulla (lillhjärnsbrovinkeln)', kilep:'Porus acusticus internus → foramen stylomastoideum', fn:'Mimik, smak på tungans främre 2/3, tår- och salivsekretion (gl. submandibularis, sublingualis).', izom:'Mimiska muskler, m. stapedius, m. stylohyoideus, bakre buken av m. digastricus.', teszt:'Höja ögonbrynen, knipa hårt med ögonen, le, blåsa upp kinderna.', lez:'Perifer facialispares (t.ex. Bells pares): hela ansiktshalvan är förlamad, även pannan. Central: pannan är skonad (bilateral kortikal innervation).' },
+    VIII: { nuc:'Nuclei vestibulares, nuclei cochleares', ered:'Gränsen mellan pons och medulla', kilep:'Porus acusticus internus (stannar inom tinningbenet)', fn:'Hörsel och balanssinne.', izom:'—', teszt:'Viskad stämma, Weber- och Rinnetest; huvudimpulstest, undersökning av nystagmus.', lez:'Hörselnedsättning, tinnitus, yrsel, nystagmus, balansstörning.' },
+    IX: { nuc:'Nucleus ambiguus; nucleus salivatorius inferior; nucleus tractus solitarii', ered:'Medulla oblongata (sulcus retroolivaris)', kilep:'Foramen jugulare', fn:'Smak och allmän känsel på tungans bakre 1/3, känsel i svalget, sekretion från parotis, sinus caroticus.', izom:'M. stylopharyngeus; glandula parotidea.', teszt:'Kräkreflex (afferent del), smak på tungans bakre del.', lez:'Nedsatt kräkreflex, smakbortfall på tungans bakre 1/3.' },
+    X: { nuc:'Nucleus ambiguus; nucleus dorsalis n. vagi; nucleus tractus solitarii', ered:'Medulla oblongata (sulcus retroolivaris)', kilep:'Foramen jugulare', fn:'Svalg- och struphuvudsmuskler, parasympatisk innervation av hjärta, lungor och tarmkanal (fram till flexura coli sinistra).', izom:'Svalg- och struphuvudsmuskler, mjuka gommens muskler (utom m. tensor veli palatini).', teszt:'Ljudet "A": gomspenen (uvula) och mjuka gommen höjs; kräkreflex (efferent del), heshet.', lez:'Sväljningssvårigheter, heshet; uvula avviker mot den friska sidan.' },
+    XI: { nuc:'Nucleus n. accessorii (ryggmärgssegment C1–C5/6)', ered:'Ryggmärgens övre cervikala del (radix spinalis)', kilep:'Foramen jugulare', fn:'Rotation av huvudet och elevation av axeln.', izom:'M. sternocleidomastoideus, m. trapezius.', teszt:'Axelryckning och huvudrotation mot motstånd.', lez:'Hängande axel, svag axelelevation, försvårad huvudrotation mot motsatt sida; viktigt inom fysioterapin efter halsoperationer.' },
+    XII: { nuc:'Nucleus n. hypoglossi', ered:'Medulla oblongata (mellan pyramis och oliva)', kilep:'Canalis n. hypoglossi', fn:'Rörelser av tungan.', izom:'Tungans yttre och inre muskler (utom m. palatoglossus).', teszt:'Räcka ut tungan, röra den åt sidorna, leta efter atrofi och fascikulationer i tungmuskulaturen.', lez:'När tungan räcks ut avviker den mot den skadade sidan; atrofi, fascikulationer.' }
+  },
+  q: {
+    q1: { q:'Vilken nerv innerverar m. deltoideus?',
+      opts:[['N. axillaris (C5–C6)',''],['N. radialis','N. radialis utgår också från den bakre sekundärsträngen, men den försörjer extensorerna i över- och underarmen, inte deltamuskeln.'],['N. suprascapularis','Den innerverar m. supraspinatus och m. infraspinatus.'],['N. musculocutaneus','Den försörjer överarmens flexorer (m. biceps brachii, m. brachialis, m. coracobrachialis).']],
+      exp:'N. axillaris utgår från plexus brachialis bakre sekundärsträng, passerar genom spatium quadrangulare, löper runt collum chirurgicum och innerverar m. deltoideus samt m. teres minor.' },
+    q2: { q:'Vilken muskel initierar abduktion i axelleden (0–15°)?',
+      opts:[['M. deltoideus','Deltamuskelns mellersta del är den huvudsakliga abduktorn från ca 15°; i viloläget tenderar dess dragriktning snarare att skjuta humerushuvudet uppåt.'],['M. supraspinatus',''],['M. trapezius','Den roterar skulderbladet uppåt men initierar inte den glenohumerala abduktionen.'],['M. teres minor','Den utåtroterar och adducerar svagt.']],
+      exp:'M. supraspinatus pressar humerushuvudet in i ledskålen och initierar på så sätt abduktionen; därefter tar deltamuskeln över huvudrollen.' },
+    q3: { q:'Medial scapula alata (vingad scapula) syns vid armhävning mot vägg. Vilken nervskada är sannolik?',
+      opts:[['N. thoracicus longus',''],['N. accessorius','En skada på n. accessorius ger på grund av svaghet i m. trapezius snarare lateral vingning och hängande axel.'],['N. dorsalis scapulae','Den innerverar rhomboideusmusklerna; bortfall ger en lindrig, inte karakteristisk medial vingning.'],['N. axillaris','Den innerverar deltamuskeln och teres minor, inte någon skulderbladsstabiliserande muskel.']],
+      exp:'M. serratus anterior fixerar skulderbladets mediala kant mot bröstkorgsväggen. Den innerveras av n. thoracicus longus (C5–C7), som är sårbar på grund av sitt långa, ytliga förlopp.' },
+    q4: { q:'Huvudfunktionen för m. infraspinatus är inåtrotation av humerus.',
+      exp:'Falskt. M. infraspinatus utåtroterar humerus tillsammans med m. teres minor. Den viktigaste inåtrotatorn är m. subscapularis.' },
+    q5: { q:'Var fäster m. subscapularis?',
+      opts:[['Tuberculum majus','Här fäster supraspinatus, infraspinatus och teres minor.'],['Tuberculum minus',''],['Tuberositas deltoidea','Deltamuskelns fäste.'],['Processus coracoideus','Här fäster m. pectoralis minor, m. coracobrachialis och bicepsens korta huvud.']],
+      exp:'M. subscapularis är den enda rotatorkuffmuskeln som fäster framtill, på tuberculum minus; därför inåtroterar den.' },
+    q6: { q:'Vid frusen skuldra (adhesiv kapsulit) är det enligt kapselmönstret utåtrotationen som är mest begränsad.',
+      exp:'Sant. Axelledens kapselmönster: utåtrotation > abduktion > inåtrotation.' },
+    q7: { q:'Vilket är förhållandet i den skapulohumerala rytmen (glenohumeral : skapulotorakal) vid full elevation?',
+      opts:[['1:1','Detta överskattar skulderbladets bidrag.'],['2:1',''],['3:1','Detta underskattar skulderbladets rörelse.'],['1:2','Omvänt förhållande; större delen av rörelsen sker i den glenohumerala leden.']],
+      exp:'Av 180° elevation sker ca 120° i den glenohumerala leden och ca 60° kommer från skulderbladets uppåtrotation (2:1). Förhållandet varierar mellan individer och mellan rörelsens faser.' },
+    q8: { q:'Para ihop den ungerska termen med den svenska och den latinska formen!',
+      exp:'Det latinska namnet är formen enligt den internationella Terminologia Anatomica; svenskt kliniskt språk använder ofta den latinska stammen (t.ex. "axillarisnerven").' },
+    q9: { q:'Patientens öga är riktat "nedåt och utåt", ptos och vid pupill syns. Vilken kranialnerv är påverkad?',
+      opts:[['IV – n. trochlearis','Bortfall av IV ger vertikalt dubbelseende, men inte ptos eller pupillvidgning.'],['III – n. oculomotorius',''],['VI – n. abducens','Vid bortfall av VI står ögat inåtvänt.'],['VII – n. facialis','VII sköter stängningen av ögonlocket (m. orbicularis oculi), inte lyftet.']],
+      exp:'Vid bortfall av nerv III fungerar endast m. rectus lateralis (VI) och m. obliquus superior (IV): ögat står nedåt-utåt. Bortfall av m. levator palpebrae och av de parasympatiska pupillkonstriktoriska fibrerna ger ptos och mydriasis.' },
+    q10: { q:'När tungan räcks ut avviker den åt höger. Vilken nerv är skadad?',
+      opts:[['Vänster n. hypoglossus','Tungan avviker mot den skadade sidan, inte mot den friska.'],['Höger n. hypoglossus',''],['Höger n. glossopharyngeus','IX är känselnerv till tungans bakre tredjedel; den påverkar inte utsträckningen av tungan.'],['Vänster n. vagus','Vid vagusskada är det uvula som avviker, inte tungan.']],
+      exp:'M. genioglossus på den friska sidan skjuter tungan framåt och mot motsatt sida; om höger sida är svag "skjuter" vänster sida över tungan åt höger.' },
+    q11: { q:'Vid perifer facialispares är förmågan att rynka pannan bevarad.',
+      exp:'Falskt. Vid perifer facialispares (t.ex. Bells pares) är hela ansiktshalvan förlamad, även pannan. En skonad panna tyder på en central (supranukleär) skada, eftersom pannans muskler får bilateral kortikal innervation.' },
+    q12: { q:'När patienten säger "A" avviker uvula åt vänster. Vilken nerv är skadad?',
+      opts:[['Vänster n. vagus','Uvula dras mot den friska sidan, så skadan sitter inte på vänster sida.'],['Höger n. vagus',''],['Höger n. hypoglossus','XII rör tungan, inte mjuka gommen.'],['Vänster n. facialis','VII innerverar inte mjuka gommens muskler.']],
+      exp:'Mjuka gommens muskler innerveras av vagus (nucleus ambiguus). Den friska vänstra sidan höjs och drar uvula mot sig, därför misstänker vi en högersidig vagusskada.' },
+    q13: { q:'Vilken gren lämnar skallen genom foramen rotundum?',
+      opts:[['V1 – n. ophthalmicus','Den lämnar skallen genom fissura orbitalis superior.'],['V2 – n. maxillaris',''],['V3 – n. mandibularis','Den lämnar skallen genom foramen ovale.'],['VII – n. facialis','Den går in genom porus acusticus internus och kommer ut genom foramen stylomastoideum.']],
+      exp:'Trigeminusnervens tre grenar lämnar skallen genom tre olika öppningar: V1 fissura orbitalis superior, V2 foramen rotundum, V3 foramen ovale.' },
+    q14: { q:'Efter en halslymfkörtelutrymning hänger patientens axel och axelryckningen är svag. Vilken nerv är skadad?',
+      opts:[['N. accessorius (XI)',''],['N. thoracicus longus','Den skulle ge medial scapula alata, inte svaghet vid axelryckning.'],['N. axillaris','Den skulle ge abduktionssvaghet.'],['N. phrenicus','Den innerverar diafragma.']],
+      exp:'N. accessorius löper ytligt i den bakre halstriangeln och är därför sårbar vid halskirurgi. Bortfall ger svaghet i m. trapezius.' },
+    q15: { q:'Para ihop kranialnervens nummer med dess ungerska och svenska namn!',
+      exp:'De svenska namnen syftar ofta på funktionen: "ansikte" = arc, "syn" = látás, "trilling" = hármas (trefaldig).' },
+    q16: { q:'Ordna plexus brachialis uppbyggnad från ryggmärgen ut mot periferin!',
+      items:['Radices (nervrötter, C5–T1)','Trunci (primärsträngar)','Divisiones (divisioner)','Fasciculi (sekundärsträngar)','Rami terminales (ändgrenar)'],
+      exp:'En vanlig minnesregel: "Rika Tanter Dricker Fint Rödvin" (Radices, Trunci, Divisiones, Fasciculi, Rami). Sekundärsträngarna namnges efter sitt läge i förhållande till a. axillaris (lateralis, medialis, posterior).' },
+    q17: { q:'För undersökning av vilken kranialnerv används Weber- och Rinnetestet?',
+      opts:[['VII','VII innerverar m. stapedius, men stämgaffeltesterna undersöker hörselnerven.'],['VIII',''],['IX','Med den undersöker vi kräkreflexen.'],['V','Hit hör kornealreflexen och känseln i ansiktet.']],
+      exp:'Weber- och Rinnetestet skiljer mellan ledningshinder och sensorineural hörselnedsättning och undersöker därmed den kokleära delen av n. vestibulocochlearis (VIII).' },
+    q18: { q:'N. trochlearis är den enda kranialnerv som lämnar hjärnstammen på dess baksida.',
+      exp:'Sant. Nerv IV lämnar mesencephalons dorsala yta och går runt hjärnstammen. Den är den kranialnerv som har längst intrakraniellt förlopp.' },
+    p1: { q:'Från vilken sekundärsträng utgår n. ulnaris?',
+      opts:[['Fasciculus medialis',''],['Fasciculus lateralis','Härifrån utgår n. musculocutaneus och den laterala roten till n. medianus.'],['Fasciculus posterior','Härifrån utgår n. axillaris och n. radialis.'],['Truncus inferior','Primärsträngen avger ännu inga ändgrenar; den delar sig först i divisioner och sedan i sekundärsträngar.']],
+      exp:'Fasciculus medialis bildas av den främre divisionen av truncus inferior (C8–T1) och fortsätter som n. ulnaris. Den avger dessutom den mediala roten till n. medianus.' },
+    p2: { q:'Hos en nyfödd hänger armen adducerad och inåtroterad, med extenderad armbåge och pronerad underarm ("servitörsdricks"-ställning). Vilka nervrötter är skadade?',
+      opts:[['C5–C6',''],['C8–T1','Detta är Klumpkes pares, där handens små muskler försvagas.'],['C7','En isolerad C7-skada försvagar främst armbågs- och handledsextensionen.'],['C5–T1','Vid total plexusskada är hela armen slapp.']],
+      exp:'Erb–Duchennes pares: truncus superior (C5–C6) skadas, oftast när vinkeln mellan huvud och axel tvingas att öka. Deltoideus, supraspinatus, infraspinatus och biceps faller bort, och därför uppstår denna ställning.' },
+    p3: { q:'Efter en fraktur på humerusskaftet kan patienten inte extendera handleden. Vilken nerv är skadad?',
+      opts:[['N. radialis',''],['N. medianus','Vid bortfall försvagas flexionen och tummens opposition.'],['N. ulnaris','Vid bortfall uppstår klohand i 4:e–5:e fingret.'],['N. musculocutaneus','Vid bortfall försvagas armbågsflexionen.']],
+      exp:'N. radialis löper på humerus baksida, i sulcus n. radialis, direkt mot benet och är därför sårbar vid skaftfraktur. Symtomet är dropphand (wrist drop).' },
+    p4: { q:'Ett positivt Froments tecken tyder på bortfall av n. medianus.',
+      exp:'Falskt. Froments tecken visar svaghet i m. adductor pollicis, som innerveras av n. ulnaris. Patienten försöker hålla kvar papperet genom flexion med m. flexor pollicis longus (n. medianus).' },
+    p5: { q:'Vilken reflex undersöker främst nervroten C7?',
+      opts:[['Tricepsreflexen',''],['Bicepsreflexen','Den är C5–C6.'],['Brachioradialisreflexen','Den är främst C6.'],['Achillesreflexen','Den är S1, i nedre extremiteten.']],
+      exp:'Vid rotundersökning: biceps C5–C6, brachioradialis C6, triceps C7. Rötterna C8 och T1 undersöks inte med reflex utan med styrkan i fingerflexion och fingerabduktion.' },
+    p6: { q:'Vid Klumpkes pares ses även ptos och liten pupill. Vad är förklaringen?',
+      opts:[['De sympatiska fibrerna i nervroten T1 är också skadade (Horners syndrom)',''],['N. oculomotorius är också skadad','En kranialnervsskada hör inte till en plexusskada; bortfall av III skulle dessutom ge vid pupill.'],['N. facialis är skadad','VII ansvarar för att stänga ögonlocket och påverkar inte pupillen.'],['Nervroten C5 är skadad','C5 innerverar axelmusklerna och för inga sympatiska fibrer mot huvudet.']],
+      exp:'Nervroten T1 för preganglionära sympatiska fibrer till truncus sympathicus. Vid rotavulsion faller även dessa bort: ptos, mios, anhidros. Det tyder på en proximal skada med dålig prognos.' },
+    p7: { q:'Para ihop ändgrenen med dess sekundärsträng och en karakteristisk muskel!',
+      heads:['ÄNDGREN','SEKUNDÄRSTRÄNG','NYCKELMUSKEL'],
+      exp:'Från den bakre sekundärsträngen (fasciculus posterior) utgår två ändgrenar: n. axillaris och n. radialis. N. axillaris försörjer m. deltoideus och m. teres minor, n. radialis överarmens och underarmens extensorer.' },
+    p8: { q:'Vad bildar fasciculus lateralis?',
+      opts:[['De främre divisionerna av truncus superior och truncus medius',''],['De bakre divisionerna av alla tre primärsträngarna','Så bildas fasciculus posterior.'],['Den främre divisionen av truncus inferior','Så bildas fasciculus medialis.'],['Direkt från nervrötterna C5 och C6','Rötterna bildar först primärsträngar och sedan divisioner.']],
+      exp:'Fasciculus lateralis innehåller fibrer från C5–C7: den bildas av de främre divisionerna av truncus superior och truncus medius.' },
+    p9: { q:'Var uppträder domningarna typiskt vid karpaltunnelsyndrom?',
+      opts:[['I tummen, pekfingret, långfingret och radiala halvan av ringfingret',''],['I lillfingret och ulnara halvan av ringfingret','Detta är n. ulnaris område.'],['På handryggen, mellan tummen och pekfingret','Detta är området för den ytliga grenen av n. radialis.'],['På underarmens laterala sida','Detta är hudgrenen från n. musculocutaneus.']],
+      exp:'N. medianus löper i canalis carpi under retinaculum flexorum. Symtomen uppträder ofta nattetid; den palmara gren som försörjer mitten av handflatan avgår före tunneln, och därför är detta område oftast skonat.' },
+    p10: { q:'N. thoracicus longus utgår direkt från nervrötterna (C5–C7), inte från sekundärsträngarna.',
+      exp:'Sant. Från rötterna utgår n. dorsalis scapulae (C5) och n. thoracicus longus (C5–C7). Tecknet på skada är scapula alata.' }
+  },
+  ki: [
+    ['Hälsa och etik','Vetenskapsfilosofi','Grundläggande begrepp inom fysioterapi','Interprofessionell samverkan'],
+    ['Allmän anatomi, histologi, terminologi','Rörelseapparaten: bål, rygg, nacke, huvud, extremiteter','Inre organ och kärl','Topografi och ytpalpation'],
+    ['Organsystemens fysiologi','Kliniska samband','Grundläggande farmakologi','Laborationer, TBL, fall'],
+    ['Palpation','Hållnings- och rörelseanalys','Motorisk utveckling och inlärning','Biomekanik, gång'],
+    ['Biopsykosocial anamnes','Nerv-, led- och muskelundersökning','Fysioterapiprocessen'],
+    ['Människans funktion och beteende','Beteendeförändring'],
+    ['Nociception och smärtbanor','Akut och långvarig smärta'],
+    ['Arbetsfysiologi','Träningsadaptation','Aerob och anaerob energiförsörjning'],
+    ['Grunder i internmedicin och kirurgi'],
+    ['Slutenvård, tidig mobilisering','Andningsfysioterapi'],
+    ['Klinisk praktik (VFU)'],
+    ['Stöd vid livsstilsförändring','Prevention'],
+    ['Neurologiska sjukdomar: stroke, Parkinsons sjukdom, MS'],
+    ['CP, spasticitet, funktionell träning','Neurologisk rehabilitering'],
+    ['Klinisk praktik (VFU)'],
+    ['Forskningsmetodik, statistik'],
+    ['Examensarbete'],
+    ['Teamarbete i klinisk verksamhet'],
+    ['Globalt hälsofrämjande arbete'],
+    ['Muskuloskeletala besvär i primärvården'],
+    ['Klinisk praktik (VFU)'],
+    ['Klinisk fördjupning, professionell utveckling']
+  ]
+};
+
+let SV=Object.assign({sheets:{},layers:{},lesions:{},pxRoots:[],pxBranches:[],cn:{},q:{},ki:[]},SV_A,SV_B);
+let lang=store.get('lang','both');
+const LBL_SV={'Elhelyezkedés':'Läge','Vérellátás':'Kärlförsörjning','Szinergisták':'Synergister','Antagonisták':'Antagonister','Érintett ízület':'Berörd led','Palpáció':'Palpation','Klinikai teszt':'Kliniskt test','Klinikai jelentőség':'Klinisk betydelse','Ízületi tok':'Ledkapsel','Szalagok':'Ligament','Stabilizáló struktúrák':'Stabiliserande strukturer','Mozgások':'Rörelser','Mozgató izmok':'Verkande muskler','Beidegzés':'Innervation','Funkcionális szerep':'Funktionell roll','Vizsgálati módszerek':'Undersökningsmetoder','Gyakori kompenzációk':'Vanliga kompensationer','Klinikai összefüggések':'Kliniska samband','Lefutás':'Förlopp','Vizsgálat':'Undersökning','Tipikus sérülési hely':'Typisk skadelokalisation','Kiesési tünetek':'Bortfallssymtom','Magok':'Kärnor','Agytörzsi eredés':'Utgång från hjärnstammen','Klinikai vizsgálat':'Klinisk undersökning','Sérülési tünetek':'Skadesymtom','Funkció':'Funktion','Kilépés a koponyából':'Utträde ur skallen','Beidegzett izmok, szervek':'Innerverade muskler och organ','Origo':'Ursprung · origo','Insertio':'Fäste · insertio','Innervatio':'Innervation','Actio':'Funktion · actio','Alkotó csontok':'Ingående ben','Ízülettípus':'Ledtyp','Eredés · gyökök':'Ursprung · rötter','Motoros':'Motorisk','Szenzoros':'Sensorisk','Gyök':'Rot','Dermatóma':'Dermatom','Myotóma (kulcsmozgás)':'Myotom (nyckelrörelse)','Reflex':'Reflex','Ered':'Utgår från','Ideg':'Nerv','Ellátott terület':'Försörjt område'};
+// text pair -> HTML for the current language mode (values escaped)
+function bi(hu,sv){
+  if(lang==='hu'||!sv||sv===hu)return esc(hu);
+  if(lang==='sv')return `<span lang="sv">${esc(sv)}</span>`;
+  return `<span class="bi"><span class="bi-hu">${esc(hu)}</span><span class="bi-sv" lang="sv">${esc(sv)}</span></span>`;
+}
+// short UI label pair (inline)
+const u=(hu,sv)=>lang==='sv'&&sv?sv:hu;
+const CAT_SV={alap:'Grundbegrepp',csont:'Skelett',izulet:'Leder',izom:'Muskler',ideg:'Nervsystemet',elettan:'Fysiologi'};
+const TOPICS_SV={vall:'Skuldergördel och axelled',plexus:'Plexus brachialis',agyideg:'De 12 kranialnerverna',term:'Terminologi',neuro:'Neuroanatomi'};
+const CNT_SV={S:'Sensorisk',M:'Motorisk','M+P':'Motorisk + parasympatisk',Kevert:'Blandad'};
+const GRP_SV={'Tanulás':'Lärande','Modulok':'Moduler','Gyakorlás':'Övning'};
+const LINK_SV={'Vállöv és vállízület modul':'Modul: skuldergördel och axelled','Plexus brachialis modul':'Modul: plexus brachialis','Szótár':'Ordlista','Vállízület ROM-adatlap':'Faktablad: axelledens ROM','Agyidegek klinikai vizsgálata':'Klinisk undersökning av kranialnerver','Gyökvizsgálat és perifériás idegek':'Rotundersökning och perifera nerver','Agyidegek modul':'Modul: kranialnerver'};
+const topicName=k=>u(TOPICS[k],TOPICS_SV[k]);
+const cnType=k=>u(CN_TYPE[k][0],CNT_SV[k]);
+function lb(hu,sv){sv=sv||LBL_SV[hu];if(lang==='hu'||!sv)return esc(hu);if(lang==='sv')return esc(sv);return `${esc(hu)} <span class="h2-sv">· ${esc(sv)}</span>`}
+function H1(hu,sv){if(lang==='hu')return `<h1>${esc(hu)}</h1>`;if(lang==='sv')return `<h1 lang="sv">${esc(sv)}</h1>`;return `<h1>${esc(hu)}</h1><p class="h1-sv" lang="sv">${esc(sv)}</p>`}
+function biHtml(hu,sv){
+  if(lang==='hu'||!sv)return hu;
+  if(lang==='sv')return `<div lang="sv" style="display:flex;flex-direction:column;gap:12px">${sv}</div>`;
+  return `<div class="bi-cols"><div><span class="lang-tag">MAGYAR</span>${hu}</div><div lang="sv"><span class="lang-tag sv">SVENSKA</span>${sv}</div></div>`;
+}
+const layerHtml=(mod,k)=>biHtml(mod==='vall'?LAYERS[k]:PX_LAYERS[k],SV.layers[mod]&&SV.layers[mod][k]);
+function langSwitch(){return [['hu','HU'],['both','HU + SV'],['sv','SV']].map(([k,l])=>`<button data-lang-set="${k}" aria-pressed="${lang===k}">${l}</button>`).join('')}
+document.addEventListener('click',e=>{const b=e.target.closest('[data-lang-set]');if(!b)return;lang=b.dataset.langSet;store.set('lang',lang);
+  render()});
+const K=(lbl,v,c)=>`<div class="fact" style="--c:var(--${c})"><span class="eyebrow">${lbl}</span><p>${esc(v)}</p></div>`;
+function arcPath(cx,cy,r,a0,a1){const pt=a=>{const t=(a-90)*Math.PI/180;return [cx+r*Math.cos(t),cy+r*Math.sin(t)]};
+  const [x0,y0]=pt(a0),[x1,y1]=pt(a1);return `M${x0.toFixed(2)} ${y0.toFixed(2)} A${r} ${r} 0 ${a1-a0>180?1:0} 1 ${x1.toFixed(2)} ${y1.toFixed(2)}`}
+const PILLAR_COLORS=['muscle','nerve','accent','joint','bone'];
+function pillarProgress(){
+  const frac=(qs,min)=>qs.length?qs.filter(q=>srs[q.id]&&srs[q.id].box>=min).length/qs.length:0;
+  return [
+    [u('Anatómia és fiziológia','Anatomi och fysiologi'),frac(Q.filter(q=>q.topic==='vall'||q.topic==='term'),2)],
+    [u('Neuroanatómia','Neuroanatomi'),frac(Q.filter(q=>['agyideg','plexus','neuro'].includes(q.topic)),1)],
+    [u('KI-útvonal (tartalommal)','KI-studieväg (med innehåll)'),KI.filter(c=>c.links).length/KI.length],
+    [u('Konduktori, rehab.','Konduktiv pedagogik, rehab.'),0],
+    [u('Interaktív (látott kérdés)','Interaktivt (sedda frågor)'),frac(Q,0)]
+  ];
+}
+function heroDial(due){
+  const P=pillarProgress();let g='';
+  P.forEach(([l,f],i)=>{const a0=i*72+5,a1=a0+62,c=PILLAR_COLORS[i];
+    g+=`<path d="${arcPath(100,100,78,a0,a1)}" fill="none" stroke="var(--surface-2)" stroke-width="16"/>`;
+    if(f>0)g+=`<path d="${arcPath(100,100,78,a0,a0+Math.max(2,62*f))}" fill="none" stroke="var(--${c})" stroke-width="16"/>`;});
+  return `<div class="dialcard"><svg viewBox="0 0 200 200" role="img" aria-label="${u('Haladás az öt pillérben','Framsteg i de fem pelarna')}; ${due} ${u('esedékes kérdés','frågor att repetera')}">${g}
+    <text x="100" y="104" text-anchor="middle" font-family="Archivo, sans-serif" font-weight="800" font-size="46" fill="var(--ink)">${due}</text>
+    <text x="100" y="126" text-anchor="middle" font-size="12" fill="var(--ink-3)">${u('esedékes ma','att repetera idag')}</text></svg>
+    <div class="dial-legend">${P.map(([l,f],i)=>`<div><i style="background:var(--${PILLAR_COLORS[i]})"></i><span>${l}</span><b class="tnum">${Math.round(f*100)}%</b></div>`).join('')}</div></div>`;
+}
+(function(){const m=document.getElementById('mark');if(!m)return;let g='';
+  PILLAR_COLORS.forEach((c,i)=>{g+=`<path d="${arcPath(19,19,14,i*72+8,i*72+64)}" fill="none" stroke="var(--${c})" stroke-width="5" stroke-linecap="round"/>`});
+  m.innerHTML=`<svg viewBox="0 0 38 38" width="38" height="38">${g}</svg>`})();
+
+// Capabilities (optional; page works without them)
+let sampleFn=null, ttsApi=null;
+if(window.claude&&window.claude.use){
+  window.claude.use('sample').then(s=>{sampleFn=s;document.querySelectorAll('[data-needs-ai]').forEach(el=>el.hidden=!s);document.querySelectorAll('[data-no-ai]').forEach(el=>el.hidden=!!s)}).catch(()=>{});
+  window.claude.use('tts').then(t=>{ttsApi=t}).catch(()=>{});
+}
+function speak(text,lang){
+  if(ttsApi){ttsApi.speak(text,{language:lang}).catch(()=>fallbackSpeak(text,lang));return}
+  fallbackSpeak(text,lang);
+}
+function fallbackSpeak(text,lang){
+  try{const u=new SpeechSynthesisUtterance(text);u.lang=lang==='sv'?'sv-SE':'hu-HU';speechSynthesis.cancel();speechSynthesis.speak(u)}catch(e){}
+}
+
+/* ============================== NAV ============================== */
+const ROUTES=[
+  ['attekintes','Áttekintés',IC.home,'Tanulás','Översikt'],
+  ['szotar','Szótár',IC.dict,'','Ordlista'],
+  ['vall','Vállöv',IC.mod,'Modulok','Skuldergördel'],
+  ['plexus','Plexus',IC.plexus,'','Plexus'],
+  ['agyidegek','Agyidegek',IC.brain,'','Kranialnerver'],
+  ['ki-utvonal','KI-útvonal',IC.path,'','KI-studieväg'],
+  ['kviz','Kvíz',IC.quiz,'Gyakorlás','Quiz'],
+  ['statisztika','Statisztika',IC.stats,'','Statistik']
+];
+function renderNav(cur){
+  const due=dueList().length;
+  $('#langRail').innerHTML=langSwitch();
+  $('#railFoot').textContent=u('Prototípus · oktatási célú tartalom, nem helyettesíti a klinikai döntést. A HU/SV fordítások szakmai ellenőrzésre várnak.','Prototyp · innehåll för utbildning, ersätter inte klinisk bedömning. HU/SV-översättningarna väntar på fackgranskning.');
+  $('#nav').innerHTML=ROUTES.map(([id,label,ic,grp,sv])=>(grp?`<div class="grp">${u(grp,GRP_SV[grp])}</div>`:'')+
+    `<a href="#${id}" ${cur===id?'aria-current="page"':''}>${ic}<span class="lbl">${lang==='sv'?sv:label}${lang==='both'&&sv!==label?`<span class="sv">${sv}</span>`:''}</span>${id==='kviz'&&due?`<span class="due-pill tnum">${due}</span>`:''}</a>`).join('');
+  $('#tabbar').innerHTML=ROUTES.filter(r=>r[0]!=='statisztika').map(([id,label,ic,grp,sv])=>
+    `<a href="#${id}" ${cur===id?'aria-current="page"':''}>${ic}<span>${lang==='sv'?sv:label}</span>${id==='kviz'&&due?`<span class="due-pill tnum">${due}</span>`:''}</a>`).join('');
+}
+
+/* ============================== VIEWS ============================== */
+function viewHome(){
+  const due=dueList().length;
+  const answered=Object.values(srs).filter(r=>r&&r.ok!=null);
+  const ok=answered.reduce((a,r)=>a+r.ok,0),no=answered.reduce((a,r)=>a+r.no,0);
+  const acc=ok+no?Math.round(ok/(ok+no)*100):0;
+  const mastered=Q.filter(q=>srs[q.id]&&srs[q.id].box>=2).length;
+  return `
+  <section class="hero">
+    <div class="lead plate" data-wm="corpus humanum">
+      <span class="eyebrow">${u('Gyógytorna · konduktor · rehabilitáció','Fysioterapi · konduktiv pedagogik · rehabilitering')}</span>
+      ${H1('Az emberi test magyarul, svédül és latinul','Människokroppen på ungerska, svenska och latin')}
+      <div class="muted">${bi('Anatómia, élettan és mozgástudomány a Karolinska Institutet fizioterapeuta-programjához igazítva. Minden fogalom három nyelven, minden feladat után magyarázattal.','Anatomi, fysiologi och rörelsevetenskap anpassade till fysioterapeutprogrammet vid Karolinska Institutet. Varje begrepp på tre språk, varje uppgift med förklaring.')}</div>
+      <div class="row"><a class="btn primary" href="#plexus">${u('Új modul: Plexus brachialis','Ny modul: Plexus brachialis')}</a><a class="btn" href="#kviz">${u('Ismétlés','Repetition')} (${due})</a></div>
+    </div>
+    <div class="card stack dialcard-wrap">
+      <span class="eyebrow">${u('Haladás és mai ismétlés','Framsteg och dagens repetition')}</span>
+      ${heroDial(due)}
+      <p class="small muted">${u('Ismétlési ütemezés: helyes válasz után 1, 3, 7, 14, majd 30 nap múlva jön vissza a kérdés; hibás válasz után másnap.','Repetitionsschema: efter rätt svar kommer frågan tillbaka efter 1, 3, 7, 14 och sedan 30 dagar; efter fel svar nästa dag.')}${srs._example?u(' A számok példaadatok, az első válaszod után a sajátjaid látszanak.',' Siffrorna är exempeldata; efter ditt första svar visas dina egna.'):''}</p>
+    </div>
+  </section>
+  <section class="stack">
+    <h2>${lb('Az öt pillér','De fem pelarna')}</h2>
+    <div class="pillars">
+      <a class="pillar" href="#vall"><span class="n">1</span><h3>${u('Anatómia és fiziológia','Anatomi och fysiologi')}</h3><p class="small muted">${u('Elérhető: Vállöv és vállízület, 8 adatlap','Tillgängligt: skuldergördel och axelled, 8 faktablad')}</p><div class="bar"><i style="width:${Math.round(mastered/Q.length*100)}%"></i></div></a>
+      <a class="pillar" href="#agyidegek"><span class="n">2</span><h3>${u('Neuroanatómia és mozgástudomány','Neuroanatomi och rörelsevetenskap')}</h3><p class="small muted">${u('Elérhető: plexus brachialis, a 12 agyideg','Tillgängligt: plexus brachialis, de 12 kranialnerverna')}</p><div class="bar"><i style="width:${Math.round(Q.filter(q=>(q.topic==='agyideg'||q.topic==='plexus')&&srs[q.id]&&srs[q.id].box>=1).length/Q.filter(q=>q.topic==='agyideg'||q.topic==='plexus').length*100)}%"></i></div></a>
+      <a class="pillar" href="#ki-utvonal"><span class="n">3</span><h3>KI Fysioterapeutprogrammet</h3><p class="small muted">${u('6 félév, 22 kurzus, 180 hp','6 terminer, 22 kurser, 180 hp')}</p></a>
+      <div class="pillar soon"><span class="n">4</span><h3>${u('Konduktori és rehabilitációs tudás','Konduktiv pedagogik och rehabilitering')}</h3><p class="small muted">${u('Tervezett: CP, stroke, Parkinson-kór, MS','Planerat: CP, stroke, Parkinsons sjukdom, MS')}</p></div>
+      <a class="pillar" href="#kviz"><span class="n">5</span><h3>${u('Interaktív tanulás','Interaktivt lärande')}</h3><p class="small muted">${Q.length} ${u('kérdés','frågor')}, ${TERMS.length} ${u('szótári fogalom','begrepp i ordlistan')}, ${u('AI-tanár','AI-lärare')}</p></a>
+    </div>
+  </section>
+  <section class="grid g2">
+    <div class="card stack"><span class="eyebrow">${u('Pontosság','Träffsäkerhet')}</span><b style="font-family:var(--f-display);font-size:1.8rem" class="tnum">${acc}%</b><p class="small muted">${ok+no} ${u('megválaszolt kérdés alapján','besvarade frågor')}</p><a class="small" href="#statisztika" style="color:var(--accent);font-weight:600">${u('Részletes statisztika','Detaljerad statistik')}</a></div>
+    <div class="card stack"><span class="eyebrow">${u('Kedvenc és nehéz fogalmak','Favoriter och svåra begrepp')}</span><b style="font-family:var(--f-display);font-size:1.8rem" class="tnum">${favs.size}</b><p class="small muted">${u('Jelölj meg fogalmakat a szótárban a csillaggal.','Markera begrepp i ordlistan med stjärnan.')}</p><a class="small" href="#szotar" style="color:var(--accent);font-weight:600">${u('Szótár megnyitása','Öppna ordlistan')}</a></div>
+  </section>`;
+}
+
+let dictState={q:'',cat:'all',fav:false};
+function viewDict(){
+  return `
+  <div class="mod-head plate" data-wm="terminologia"><span class="eyebrow">${u('8. fejezet · Háromnyelvű terminológia','Kapitel 8 · Trespråkig terminologi')}</span>${H1('Szótár','Ordlista')}
+  <p class="muted">${u('Keress bármelyik nyelven; a találat mindhárom alakot mutatja.','Sök på valfritt språk; träffen visar alla tre formerna.')} ${TERMS.length} ${u('fogalom','begrepp')}.</p></div>
+  <label class="search" for="dq">${IC.search}<input id="dq" type="search" placeholder="${u('pl. axelled, deltaizom, cerebellum','t.ex. axelled, deltaizom, cerebellum')}" value="${esc(dictState.q)}" autocomplete="off"></label>
+  <div class="row">
+    <div class="seg" id="dcat">${[['all',u('Mind','Alla')],...Object.entries(CAT).map(([k,v])=>[k,u(v.label,CAT_SV[k])])].map(([k,l])=>`<button data-c="${k}" aria-pressed="${dictState.cat===k}">${l}</button>`).join('')}</div>
+    <button class="btn ${dictState.fav?'primary':''}" id="dfav" aria-pressed="${dictState.fav}">${IC.starOn.replace('<svg','<svg width="16" height="16"')} ${u('Kedvencek','Favoriter')}</button>
+  </div>
+  <div class="terms" id="dlist"></div>
+  <p class="note">${u('A latin alakok a Terminologia Anatomica szerintiek. A svéd és magyar megfelelőket szakmai lektorálás előtt ellenőrizni kell (15. fejezet).','De latinska formerna följer Terminologia Anatomica. De svenska och ungerska motsvarigheterna ska kontrolleras vid fackgranskning (kapitel 15).')}</p>`;
+}
+function hl(text,q){
+  if(!q)return esc(text);
+  const f=fold(text),fq=fold(q),i=f.indexOf(fq);
+  if(i<0)return esc(text);
+  return esc(text.slice(0,i))+'<mark>'+esc(text.slice(i,i+q.length))+'</mark>'+esc(text.slice(i+q.length));
+}
+function renderDictList(){
+  const q=dictState.q.trim(),fq=fold(q);
+  const rows=TERMS.filter(t=>(dictState.cat==='all'||t[3]===dictState.cat)&&(!dictState.fav||favs.has(t.id))&&(!fq||[t[0],t[1],t[2],t[4]].some(x=>fold(x).includes(fq))));
+  $('#dlist').innerHTML=rows.length?rows.map(t=>`
+    <div class="term"><span class="stripe" style="background:${CAT[t[3]].color}"></span>
+      <div style="min-width:0">${triRaw(hl(t[0],q),hl(t[1],q),hl(t[2],q))}
+        ${t[4]&&lang!=='sv'?`<div class="syn">${u('Szinonima, rövidítés:','Synonym, förkortning:')} ${hl(t[4],q)}</div>`:''}</div>
+      <div class="acts">
+        <button class="icon-btn" data-say="${esc(t[0])}" data-lang="hu" title="${u('Magyar kiejtés','Ungerskt uttal')}" aria-label="${esc(t[0])} ${u('kiejtése magyarul','uttal på ungerska')}">${IC.speak}<span class="small" style="font-weight:700">HU</span></button>
+        <button class="icon-btn" data-say="${esc(t[1])}" data-lang="sv" title="${u('Svéd kiejtés','Svenskt uttal')}" aria-label="${esc(t[1])} ${u('kiejtése svédül','uttal på svenska')}">${IC.speak}<span class="small" style="font-weight:700">SV</span></button>
+        <button class="icon-btn ${favs.has(t.id)?'on':''}" data-fav="${t.id}" aria-pressed="${favs.has(t.id)}" aria-label="${u('Kedvencekhez','Lägg till i favoriter')}">${favs.has(t.id)?IC.starOn:IC.star}</button>
+      </div></div>`).join(''):`<div class="term"><span></span><p class="muted">${u('Nincs találat erre:','Inga träffar för:')} „${esc(q)}”. ${u('Próbáld a latin vagy a svéd alakot.','Prova den latinska eller ungerska formen.')}</p><span></span></div>`;
+}
+function bindDict(){
+  renderDictList();
+  $('#dq').addEventListener('input',e=>{dictState.q=e.target.value;renderDictList()});
+  $('#dcat').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;dictState.cat=b.dataset.c;
+    document.querySelectorAll('#dcat button').forEach(x=>x.setAttribute('aria-pressed',x===b));renderDictList()});
+  $('#dfav').addEventListener('click',e=>{dictState.fav=!dictState.fav;e.currentTarget.classList.toggle('primary',dictState.fav);e.currentTarget.setAttribute('aria-pressed',dictState.fav);renderDictList()});
+  $('#dlist').addEventListener('click',e=>{
+    const s=e.target.closest('[data-say]');if(s){speak(s.dataset.say,s.dataset.lang);return}
+    const f=e.target.closest('[data-fav]');if(f){const id=f.dataset.fav;favs.has(id)?favs.delete(id):favs.add(id);store.set('favs',[...favs]);renderDictList()}
+  });
+}
+
+/* --- Shoulder module --- */
+let modState={layer:'alap',sheet:'deltoideus'};
+const LAYERS={
+ alap:`<p>A váll a felső végtagot a törzshöz kapcsolja. Két csont alkotja a vállövet: a <span class="la">clavicula</span> (kulcscsont) és a <span class="la">scapula</span> (lapocka). A felkarcsont (<span class="la">humerus</span>) feje a lapocka sekély ízületi vápájában mozog.</p>
+<ul><li>A vállízület a test legmozgékonyabb ízülete, ezért stabilitását főleg izmok adják.</li><li>A négy rotátorköpeny-izom (supraspinatus, infraspinatus, teres minor, subscapularis) "mandzsettaként" tartja a vápában a humerusfejet.</li><li>A deltaizom adja a váll kerek formáját, és ez a fő emelőizom.</li></ul>`,
+ egyetem:`<p>A vállkomplexum négy ízületből áll: <span class="la">articulatio glenohumeralis</span>, <span class="la">acromioclavicularis</span>, <span class="la">sternoclavicularis</span> és a funkcionális scapulothoracalis kapcsolat. Az elevációt ezek összehangolt mozgása adja (scapulohumeralis ritmus, kb. 2:1).</p>
+<ul><li>A rotátorköpeny izmai erőpárt alkotnak a deltaizommal: a deltaizom felfelé, a köpeny lefelé és befelé húzza a humerusfejet, így az a vápában forog, nem csúszik.</li><li>A rotátorköpeny beidegzése C5–C6 dominanciájú: n. suprascapularis, n. axillaris, nn. subscapulares.</li><li>A m. serratus anterior és a m. trapezius erőpárja forgatja felfelé a lapockát; ez szükséges a 90° feletti elevációhoz.</li></ul>`,
+ klinika:`<p>Fizioterápiás szempontból a váll panaszai három csoportba sorolhatók: fájdalom és impingement, instabilitás, valamint mozgásbeszűkülés.</p>
+<ul><li><b>Subacromialis fájdalom:</b> Hawkins–Kennedy- és Neer-teszt, fájdalmas ív 60–120° között. Kezelés: terheléskontroll, lapockakontroll, progresszív erősítés.</li><li><b>Rotátorköpeny-szakadás:</b> Jobe-teszt, drop arm teszt, lag sign tesztek.</li><li><b>Adhezív capsulitis:</b> kapszuláris mintázat (kifelé forgatás &gt; abductio &gt; befelé forgatás).</li><li><b>Idegsérülések:</b> n. axillaris (gyenge abductio), n. thoracicus longus (scapula alata), n. accessorius (lecsüngő váll).</li></ul>
+<p class="note">Oktatási célú összefoglaló; nem helyettesíti a szakmai irányelveket és az egyéni klinikai döntést.</p>`
+};
+function viewShoulder(){
+  return `
+  <div class="mod-head plate muscle" data-wm="cingulum pectorale"><span class="eyebrow">1FY053 Anatomi · 1FY055 Rörelsevetenskap · ${u('Pillér','Pelare')} 1</span>
+    ${H1('Vállöv és vállízület','Skuldergördel och axelled')}${tri('vállöv','skuldergördel','cingulum pectorale')}</div>
+  <section class="card stack">
+    <div class="row" style="justify-content:space-between"><h2>${lb('Tananyag','Kursinnehåll')}</h2>
+      <div class="seg" id="layers">${[['alap',u('Kezdő','Grund')],['egyetem',u('Egyetemi','Universitet')],['klinika',u('Klinikai','Klinik')]].map(([k,l])=>`<button data-l="${k}" aria-pressed="${modState.layer===k}">${l}</button>`).join('')}</div></div>
+    <div class="layer-body" id="layerBody">${layerHtml('vall',modState.layer)}</div>
+  </section>
+  <section class="stack">
+    <h2>${lb('Adatlapok','Faktablad')}</h2>
+    <div class="sheets" id="sheetBtns">${SHEET_ORDER.map(k=>{const s=SHEETS[k];return `<button class="sheet-btn" data-s="${k}" aria-pressed="${modState.sheet===k}"><span class="chip ${CAT[s.kind].cls}"><span class="dot" style="background:${CAT[s.kind].color}"></span>${s.kind==='izom'?u('Izom','Muskel'):s.kind==='ideg'?u('Ideg','Nerv'):u('Ízület','Led')}</span><span class="la">${esc(s.la)}</span><span class="small muted">${esc(s.hu)} · ${esc(s.sv)}</span></button>`}).join('')}</div>
+    <div class="card" id="sheet"></div>
+  </section>`;
+}
+function romSvg(label,deg){
+  // half-dial: 0° at the left horizontal, 180° at the right; arc drawn to scale
+  const r=56,cx=70,cy=70,a=Math.PI*(1-deg/180);
+  const x=cx+r*Math.cos(a),y=cy-r*Math.sin(a);
+  const large=0;
+  return `<figure><svg viewBox="0 0 140 92" role="img" aria-label="${esc(label)}: 0–${deg}°">
+    <path d="M14 70 A56 56 0 0 1 126 70" fill="none" stroke="var(--surface-2)" stroke-width="10" stroke-linecap="round"/>
+    <path d="M14 70 A56 56 0 ${large} 1 ${x.toFixed(1)} ${y.toFixed(1)}" fill="none" stroke="var(--joint)" stroke-width="10" stroke-linecap="round"/>
+    <line x1="${cx}" y1="${cy}" x2="${x.toFixed(1)}" y2="${y.toFixed(1)}" stroke="var(--ink-2)" stroke-width="1.5"/>
+    <circle cx="${cx}" cy="${cy}" r="3" fill="var(--ink)"/>
+    <text x="${cx}" y="86" text-anchor="middle" font-size="16" font-weight="700" fill="var(--ink)" font-family="Archivo, sans-serif">${deg}°</text>
+    <text x="8" y="86" font-size="9" fill="var(--ink-3)">0°</text><text x="114" y="86" font-size="9" fill="var(--ink-3)">180°</text>
+  </svg><figcaption>${esc(label)}</figcaption></figure>`;
+}
+function renderSheet(){renderSheetInto($('#sheet'),modState.sheet)}
+function renderSheetInto(el,key){
+  const s=SHEETS[key];
+  const sv=SV.sheets[key]||{};
+  const F=(dt,k)=>s[k]?`<dt>${lb(dt)}</dt><dd>${bi(s[k],sv[k])}</dd>`:'';
+  const KF=(l,k,c)=>`<div class="fact" style="--c:var(--${c})"><span class="eyebrow">${lb(l)}</span><p>${bi(s[k],sv[k])}</p></div>`;
+  let body='';
+  if(s.kind==='izom') body=`<div class="facts" style="--n:2">${KF('Origo','origo','bone')}${KF('Insertio','insertio','bone')}${KF('Innervatio','innervatio','nerve')}${KF('Actio','actio','muscle')}</div><dl class="fields">${F('Elhelyezkedés','loc')}${F('Vérellátás','ver')}${F('Szinergisták','syn')}${F('Antagonisták','ant')}${F('Érintett ízület','izulet')}${F('Palpáció','palp')}${F('Klinikai teszt','teszt')}${F('Klinikai jelentőség','klin')}</dl>`;
+  if(s.kind==='izulet') body=`<div class="facts" style="--n:2">${KF('Alkotó csontok','csontok','bone')}${KF('Ízülettípus','tipus','joint')}</div><dl class="fields">${F('Ízületi tok','tok')}${F('Szalagok','szalag')}${F('Stabilizáló struktúrák','stab')}${F('Mozgások','mozgas')}</dl>
+    <div class="stack"><h3>${lb('Mozgásterjedelem (aktív ROM, tájékoztató normálértékek)','Rörelseomfång (aktivt ROM, ungefärliga normalvärden)')}</h3><div class="rom">${s.rom.map(([l,d],i)=>romSvg(lang==='sv'&&sv.rom?sv.rom[i]:(lang==='both'&&sv.rom?l+' · '+sv.rom[i]:l),d)).join('')}</div><p class="small muted">${u('A normálértékek forrásonként eltérnek (pl. AAOS); goniometriás mérésnél mindig az ép oldallal hasonlíts.','Normalvärdena skiljer sig mellan källor (t.ex. AAOS); jämför alltid med den friska sidan vid goniometri.')}</p></div>
+    <dl class="fields">${F('Mozgató izmok','izmok')}${F('Beidegzés','beidegzes')}${F('Funkcionális szerep','funkcio')}${F('Vizsgálati módszerek','vizsg')}${F('Gyakori kompenzációk','komp')}${F('Klinikai összefüggések','klin')}</dl>`;
+  if(s.kind==='ideg') body=`<div class="facts">${KF('Eredés · gyökök','eredes','nerve')}${KF('Motoros','motor','muscle')}${KF('Szenzoros','szenz','joint')}</div><dl class="fields">${F('Lefutás','lefutas')}${F('Vizsgálat','vizsg')}${F('Tipikus sérülési hely','serules')}${F('Kiesési tünetek','tunetek')}</dl>`;
+  const qs=Q.filter(q=>q.link&&q.link[1]===key);
+  el.innerHTML=`<div class="sheet">${tri(s.hu,s.sv,s.la)}${body}
+    ${qs.length?`<div class="row"><span class="small muted">${u('Kapcsolódó kérdések','Relaterade frågor')}: ${qs.length}</span><button class="btn" id="sheetQuiz">${u('Gyakorold ezt az adatlapot','Öva på detta faktablad')}</button></div>`:''}
+    ${tutorHtml(s.la)}</div>`;
+  if(qs.length)$('#sheetQuiz').onclick=()=>{quizState=newQuiz(qs.map(q=>q.id),'gyak');location.hash='kviz'};
+  bindTutor(()=>`Adatlap: ${s.la} (${s.hu} / ${s.sv}). Tartalom: ${JSON.stringify(s)}`);
+}
+function bindShoulder(){
+  renderSheet();
+  $('#layers').onclick=e=>{const b=e.target.closest('button');if(!b)return;modState.layer=b.dataset.l;
+    document.querySelectorAll('#layers button').forEach(x=>x.setAttribute('aria-pressed',x===b));$('#layerBody').innerHTML=layerHtml('vall',modState.layer)};
+  $('#sheetBtns').onclick=e=>{const b=e.target.closest('button');if(!b)return;modState.sheet=b.dataset.s;
+    document.querySelectorAll('#sheetBtns button').forEach(x=>x.setAttribute('aria-pressed',x===b));renderSheet()};
+}
+
+/* --- Plexus brachialis --- */
+let plexSel='medianus', plexLesion=null;
+const PX={
+  root:{C5:[70,82],C6:[70,142],C7:[70,202],C8:[70,262],T1:[70,322]},
+  trunk:{sup:[210,112],mid:[210,202],inf:[210,292]},
+  div:{supA:[335,92],supP:[335,132],midA:[335,184],midP:[335,220],infA:[335,274],infP:[335,312]},
+  cord:{lat:[475,122],med:[475,252],post:[475,338]},
+  term:{musculocutaneus:[640,82],medianus:[640,187],ulnaris:[640,262],axillaris:[640,322],radialis:[640,372]}
+};
+const PX_TRUNK_ROOTS={sup:['C5','C6'],mid:['C7'],inf:['C8','T1']};
+const PX_CORD_DIVS={lat:['supA','midA'],med:['infA'],post:['supP','midP','infP']};
+const PX_LEVELS={musculocutaneus:['C5','C6','C7'],axillaris:['C5','C6'],radialis:['C5','C6','C7','C8','T1'],medianus:['C6','C7','C8','T1'],ulnaris:['C8','T1']};
+const PX_CORDS={musculocutaneus:['lat'],medianus:['lat','med'],ulnaris:['med'],axillaris:['post'],radialis:['post']};
+const PX_EDGES=[
+  ...Object.entries(PX_TRUNK_ROOTS).flatMap(([t,rs])=>rs.map(r=>['root',r,'trunk',t])),
+  ...['sup','mid','inf'].flatMap(t=>[['trunk',t,'div',t+'A'],['trunk',t,'div',t+'P']]),
+  ...Object.entries(PX_CORD_DIVS).flatMap(([c,ds])=>ds.map(d=>['div',d,'cord',c])),
+  ['cord','lat','term','musculocutaneus'],['cord','lat','term','medianus'],['cord','med','term','medianus'],['cord','med','term','ulnaris'],['cord','post','term','axillaris'],['cord','post','term','radialis']
+];
+const PX_LESIONS={
+  erb:{label:'Erb–Duchenne (C5–C6)',roots:['C5','C6'],trunks:['sup'],
+    text:'A truncus superior sérülése, többnyire a fej és a váll közötti szög erőltetett növelésekor (szülési sérülés, motoros baleset). Kiesik a deltoideus, a supraspinatus, az infraspinatus, a biceps és a brachialis. Jellegzetes "pincér-borravaló" tartás: a kar addukcióban és befelé forgatva lóg, a könyök nyújtott, az alkar borított. Érzéskiesés a váll és az alkar laterális oldalán; a biceps-reflex csökken.'},
+  klumpke:{label:'Klumpke (C8–T1)',roots:['C8','T1'],trunks:['inf'],
+    text:'A truncus inferior sérülése, például a kar erőltetett felfelé húzásakor, Pancoast-tumornál vagy nyaki bordánál (thoracic outlet). A kéz kisizmai gyengülnek: karomállás, gyenge ujjterpesztés és finommotorika. Érzéskiesés az alkar és a kéz ulnaris oldalán. Ha a T1 gyök avulsiója a szimpatikus rostokat is érinti, Horner-szindróma (ptosis, miosis) társul hozzá.'}
+};
+function pxPath(a,b){const [x1,y1]=a,[x2,y2]=b,m=(x1+x2)/2;return `M${x1} ${y1} C${m} ${y1} ${m} ${y2} ${x2} ${y2}`}
+function pxActive(){
+  const on={root:new Set(),trunk:new Set(),div:new Set(),cord:new Set(),term:new Set()};
+  if(plexLesion){const L=PX_LESIONS[plexLesion];L.roots.forEach(r=>on.root.add(r));L.trunks.forEach(t=>on.trunk.add(t));return on}
+  const t=plexSel;if(!PX_LEVELS[t])return on;
+  on.term.add(t);PX_LEVELS[t].forEach(r=>on.root.add(r));
+  PX_CORDS[t].forEach(c=>{on.cord.add(c);PX_CORD_DIVS[c].forEach(d=>{const tr=d.slice(0,3);if(PX_TRUNK_ROOTS[tr].some(r=>on.root.has(r))){on.div.add(d);on.trunk.add(tr)}})});
+  return on;
+}
+function plexusSvg(){
+  const on=pxActive(),cls=plexLesion?'les':'on';
+  const edgeOn=(ka,a,kb,b)=>{
+    if(plexLesion)return (ka==='root'&&on.root.has(a)&&on.trunk.has(b))||(ka==='trunk'&&on.trunk.has(a));
+    return on[ka].has(a)&&on[kb].has(b);
+  };
+  const heads=[['RADICES',70],['TRUNCI',210],['DIVISIONES',335],['FASCICULI',475],['RAMI TERMINALES',640]];
+  const TL={sup:'superior',mid:'medius',inf:'inferior'},CL={lat:'lateralis',med:'medialis',post:'posterior'};
+  let g='';
+  heads.forEach(([h,x])=>g+=`<text class="px-head" x="${x}" y="34" text-anchor="${x===640?'start':'middle'}" dx="${x===640?-6:0}">${h}</text>`);
+  PX_EDGES.forEach(([ka,a,kb,b])=>{const post=(ka==='div'&&a.endsWith('P'))||(kb==='div'&&b.endsWith('P'));
+    g+=`<path class="px-edge${post?' post':''}${edgeOn(ka,a,kb,b)?' '+cls:''}" d="${pxPath(PX[ka][a],PX[kb][b])}"/>`});
+  Object.entries(PX.root).forEach(([k,[x,y]])=>g+=`<circle class="px-node${on.root.has(k)?' '+cls:''}" cx="${x}" cy="${y}" r="7"/><text class="px-lbl" x="${x-16}" y="${y+4}" text-anchor="end" style="font-weight:700">${k}</text>`);
+  Object.entries(PX.trunk).forEach(([k,[x,y]])=>g+=`<circle class="px-node${on.trunk.has(k)?' '+cls:''}" cx="${x}" cy="${y}" r="7"/><text class="px-lbl" x="${x}" y="${y-13}" text-anchor="middle">${TL[k]}</text>`);
+  Object.entries(PX.div).forEach(([k,[x,y]])=>g+=`<circle class="px-node${on.div.has(k)?' '+cls:''}" cx="${x}" cy="${y}" r="4.5"/>`);
+  Object.entries(PX.cord).forEach(([k,[x,y]])=>g+=`<circle class="px-node${on.cord.has(k)?' '+cls:''}" cx="${x}" cy="${y}" r="7"/><text class="px-lbl" x="${x}" y="${y-13}" text-anchor="middle">${CL[k]}</text>`);
+  Object.entries(PX.term).forEach(([k,[x,y]])=>g+=`<g class="px-term${on.term.has(k)?' on':''}" data-t="${k}" role="button" tabindex="0" aria-label="n. ${k} adatlap"><rect x="${x-10}" y="${y-14}" width="160" height="28" fill="transparent"/><circle class="px-node${on.term.has(k)?' on':''}" cx="${x}" cy="${y}" r="7"/><text x="${x+14}" y="${y+5}">n. ${k}</text></g>`);
+  return `<svg viewBox="0 0 800 400" role="img" aria-label="${u('A plexus brachialis vázlata: gyökök, törzsek, divisiók, kötegek és végágak','Schema över plexus brachialis: rötter, primärsträngar, divisioner, sekundärsträngar och ändgrenar')}">${g}</svg>`;
+}
+const PX_ROOTS=[
+  ['C5','A váll és a felkar laterális oldala','Vállabductio','Biceps-reflex (C5–C6)'],
+  ['C6','Az alkar laterális oldala, hüvelykujj','Könyökflexio, csuklóextensio','Brachioradialis-reflex'],
+  ['C7','Középső ujj','Könyökextensio, csuklóflexio','Triceps-reflex'],
+  ['C8','Kisujj, a kéz ulnaris széle','Ujjflexio, hüvelykujj-extensio','—'],
+  ['T1','Az alkar mediális oldala','Ujjabductio (mm. interossei)','—']
+];
+const PX_BRANCHES=[
+  ['Gyökök','n. dorsalis scapulae (C5)','Mm. rhomboidei, m. levator scapulae'],
+  ['Gyökök','n. thoracicus longus (C5–C7)','M. serratus anterior'],
+  ['Truncus superior','n. suprascapularis (C5–C6)','M. supraspinatus, m. infraspinatus'],
+  ['Fasciculus lateralis','n. pectoralis lateralis','M. pectoralis major'],
+  ['Fasciculus medialis','n. pectoralis medialis; nn. cutanei brachii et antebrachii mediales','M. pectoralis minor és major; a kar és az alkar mediális bőre'],
+  ['Fasciculus posterior','nn. subscapulares; n. thoracodorsalis','M. subscapularis, m. teres major; m. latissimus dorsi']
+];
+const PX_LAYERS={
+ alap:`<p>A <span class="la">plexus brachialis</span> (karfonat) az az idegfonat, amely a teljes felső végtagot ellátja. A gerincvelő alsó nyaki és első háti szakaszából (C5–T1) kilépő gyökök a nyakon és a hónaljban többször szétválnak és újra egyesülnek, így végül öt nagy ideg indul a kar felé.</p>
+<ul><li>Felépítése öt szinten: gyökök → törzsek → osztódások → kötegek → végágak.</li><li>Az öt végág: <span class="la">n. musculocutaneus, n. axillaris, n. radialis, n. medianus, n. ulnaris</span>.</li><li>A kötegeket az <span class="la">a. axillaris</span>hoz viszonyított helyzetük alapján nevezzük el.</li></ul>`,
+ egyetem:`<p>A gyökök (<span class="la">radices</span>) a m. scalenus anterior és medius között lépnek ki, és három törzzsé (<span class="la">trunci</span>) egyesülnek. Minden törzs elülső és hátsó osztódásra (<span class="la">divisiones</span>) válik a kulcscsont mögött. Az elülső osztódások adják a hajlítókat ellátó ideget, a hátsók a feszítőket ellátókat.</p>
+<ul><li><b>Fasciculus lateralis</b> (C5–C7): a felső és a középső törzs elülső osztódása → n. musculocutaneus, a n. medianus laterális gyöke.</li><li><b>Fasciculus medialis</b> (C8–T1): az alsó törzs elülső osztódása → n. ulnaris, a n. medianus mediális gyöke.</li><li><b>Fasciculus posterior</b> (C5–T1): mindhárom hátsó osztódás → n. axillaris, n. radialis.</li><li>Az "M" alakot a n. medianus két gyöke adja a n. musculocutaneus és a n. ulnaris között; ez boncoláskor tájékozódási pont.</li></ul>`,
+ klinika:`<p>A fizioterápiás vizsgálatban el kell különíteni a gyöki (radiculopathia), a plexus- és a perifériás idegsérülést. A dermatóma, a myotóma és a reflex együtt mutatja meg a lézió szintjét.</p>
+<ul><li><b>Gyöki lézió:</b> egy dermatóma és egy myotóma érintett, gyakran nyaki fájdalommal (pl. C6-radiculopathia: hüvelykujj-zsibbadás, gyenge csuklóextensio, csökkent brachioradialis-reflex).</li><li><b>Plexus-lézió:</b> több gyök vagy egy törzs területe érintett (Erb, Klumpke, thoracic outlet).</li><li><b>Perifériás ideg:</b> az ideg saját bőrterülete és izmai érintettek, a reflexek többnyire megtartottak (pl. kéztőalagút).</li></ul>
+<p class="note">Oktatási célú összefoglaló; nem helyettesíti a szakmai irányelveket és az egyéni klinikai döntést.</p>`
+};
+let plexLayer='alap';
+function viewPlexus(){
+  return `
+  <div class="mod-head plate nerve" data-wm="plexus brachialis"><span class="eyebrow">1FY053 Anatomi · 1FY056 Undersökningsmetodik · ${u('Pillér','Pelare')} 2</span>
+    ${H1('Plexus brachialis','Plexus brachialis · armplexus')}${tri('karfonat','armplexus','plexus brachialis')}</div>
+  <section class="card stack">
+    <div class="row" style="justify-content:space-between"><h2>${lb('Szerkezet','Struktur')}</h2>
+      <div class="seg" id="pxMode"><button data-m="" aria-pressed="${!plexLesion}">${u('Végágak','Ändgrenar')}</button>${Object.entries(PX_LESIONS).map(([k,l])=>`<button data-m="${k}" aria-pressed="${plexLesion===k}">${u(l.label,(SV.lesions[k]||{}).label)}</button>`).join('')}</div></div>
+    <p class="small muted" id="pxHint"></p>
+    <div class="diagram" id="pxSvg"></div>
+    <div class="legend"><span><svg viewBox="0 0 32 8"><path d="M0 4h32" stroke="var(--nerve)" stroke-width="3"/></svg> ${u('elülső osztódás (hajlítók)','främre division (flexorer)')}</span><span><svg viewBox="0 0 32 8"><path d="M0 4h32" stroke="var(--nerve)" stroke-width="3" stroke-dasharray="6 4"/></svg> ${u('hátsó osztódás (feszítők)','bakre division (extensorer)')}</span></div>
+    <div id="pxLesion"></div>
+  </section>
+  <section class="card stack">
+    <div class="row" style="justify-content:space-between"><h2>${lb('Tananyag','Kursinnehåll')}</h2>
+      <div class="seg" id="pxLayers">${[['alap',u('Kezdő','Grund')],['egyetem',u('Egyetemi','Universitet')],['klinika',u('Klinikai','Klinik')]].map(([k,l])=>`<button data-l="${k}" aria-pressed="${plexLayer===k}">${l}</button>`).join('')}</div></div>
+    <div class="layer-body" id="pxLayerBody">${layerHtml('plexus',plexLayer)}</div>
+  </section>
+  <section class="stack">
+    <h2>${lb('Végágak adatlapjai','Faktablad för ändgrenarna')}</h2>
+    <div class="sheets" id="pxBtns">${Object.keys(PX.term).map(k=>{const s=SHEETS[k];return `<button class="sheet-btn" data-s="${k}" aria-pressed="${plexSel===k}"><span class="chip nerve"><span class="dot" style="background:var(--nerve)"></span>${u('Ideg','Nerv')}</span><span class="la">${esc(s.la)}</span><span class="small muted">${esc(s.hu)} · ${esc(s.sv)}</span></button>`}).join('')}</div>
+    <div class="card" id="pxSheet"></div>
+  </section>
+  <section class="card stack"><h2>${lb('Gyökvizsgálat: dermatóma, myotóma, reflex','Rotundersökning: dermatom, myotom, reflex')}</h2>
+    <div class="tbl"><table><thead><tr><th>${lb('Gyök')}</th><th>${lb('Dermatóma')}</th><th>${lb('Myotóma (kulcsmozgás)')}</th><th>${lb('Reflex')}</th></tr></thead><tbody>${PX_ROOTS.map((r,i)=>`<tr>${r.map((c,j)=>`<td>${j?bi(c,(SV.pxRoots[i]||[])[j]):esc(c)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>
+    <p class="small muted">${u('A dermatóma-térképek forrásonként eltérnek, és a szomszédos szelvények átfednek. Mindig az ép oldallal hasonlíts.','Dermatomkartor skiljer sig mellan källor, och angränsande segment överlappar. Jämför alltid med den friska sidan.')}</p></section>
+  <section class="card stack"><h2>${lb('Proximális ágak','Proximala grenar')}</h2>
+    <div class="tbl"><table><thead><tr><th>${lb('Ered')}</th><th>${lb('Ideg')}</th><th>${lb('Ellátott terület')}</th></tr></thead><tbody>${PX_BRANCHES.map((r,i)=>{const v=SV.pxBranches[i]||[];return `<tr><td>${bi(r[0],v[0])}</td><td class="la">${esc(r[1])}</td><td>${bi(r[2],v[2])}</td></tr>`}).join('')}</tbody></table></div></section>`;
+}
+function renderPlexusDiagram(){
+  $('#pxSvg').innerHTML=plexusSvg();
+  $('#pxHint').textContent=plexLesion?u('A pirossal jelölt gyökök és törzs sérült.','De rödmarkerade rötterna och primärsträngen är skadade.'):u('Kattints egy végágra: kiemelődik az útja a gyököktől, és megnyílik az adatlapja.','Klicka på en ändgren: dess väg från rötterna markeras och faktabladet öppnas.');
+  $('#pxLesion').innerHTML=plexLesion?`<div class="lesion"><h3>${bi(PX_LESIONS[plexLesion].label,(SV.lesions[plexLesion]||{}).label)}</h3><div>${bi(PX_LESIONS[plexLesion].text,(SV.lesions[plexLesion]||{}).text)}</div></div>`:'';
+  document.querySelectorAll('#pxMode button').forEach(b=>b.setAttribute('aria-pressed',(b.dataset.m||null)===plexLesion));
+}
+function selectPlexusNerve(k,scroll){
+  plexSel=k;plexLesion=null;renderPlexusDiagram();
+  document.querySelectorAll('#pxBtns button').forEach(x=>x.setAttribute('aria-pressed',x.dataset.s===k));
+  renderSheetInto($('#pxSheet'),k);
+  if(scroll)$('#pxSheet').scrollIntoView({behavior:'smooth',block:'start'});
+}
+function bindPlexus(){
+  renderPlexusDiagram();renderSheetInto($('#pxSheet'),plexSel);
+  $('#pxSvg').addEventListener('click',e=>{const g=e.target.closest('[data-t]');if(g)selectPlexusNerve(g.dataset.t,true)});
+  $('#pxSvg').addEventListener('keydown',e=>{const g=e.target.closest('[data-t]');if(g&&(e.key==='Enter'||e.key===' ')){e.preventDefault();selectPlexusNerve(g.dataset.t,true)}});
+  $('#pxMode').onclick=e=>{const b=e.target.closest('button');if(!b)return;plexLesion=b.dataset.m||null;renderPlexusDiagram()};
+  $('#pxBtns').onclick=e=>{const b=e.target.closest('button');if(b)selectPlexusNerve(b.dataset.s,false)};
+  $('#pxLayers').onclick=e=>{const b=e.target.closest('button');if(!b)return;plexLayer=b.dataset.l;
+    document.querySelectorAll('#pxLayers button').forEach(x=>x.setAttribute('aria-pressed',x===b));$('#pxLayerBody').innerHTML=layerHtml('plexus',plexLayer)};
+}
+
+/* --- AI tutor --- */
+function tutorHtml(topic){
+  return `<div class="tutor"><div class="row" style="justify-content:space-between"><h3>${u('AI-tanár','AI-lärare')}</h3><span class="chip">${esc(topic)}</span></div>
+   <div data-needs-ai ${sampleFn?'':'hidden'} class="stack">
+    <div class="suggest-q">${(lang==='sv'?['Förklara enkelt','Ge ett kliniskt fall','Förhör mig','Vad heter det på ungerska?']:['Magyarázd el egyszerűen','Adj egy klinikai esetet','Kérdezz ki belőle','Hogyan mondják ezt svédül a klinikán?']).map(s=>`<button type="button" data-sq="${esc(s)}">${esc(s)}</button>`).join('')}</div>
+    <form id="tutorForm"><input id="tutorIn" placeholder="${u('Kérdezz erről a témáról…','Fråga om det här ämnet…')}" autocomplete="off"><button class="btn primary" type="submit">${u('Kérdezem','Fråga')}</button></form>
+    <div class="ans" id="tutorAns" hidden></div></div>
+   <p data-no-ai ${sampleFn?'hidden':''} class="small muted">${u('Az AI-tanár a claude.ai-on megnyitott oldalon érhető el, ahol engedélyezed a Claude-hoz intézett kérdéseket.','AI-läraren fungerar när sidan är öppnad på claude.ai och du tillåter frågor till Claude.')}</p></div>`;
+}
+let tutorAbort=null;
+function bindTutor(ctx){
+  const form=$('#tutorForm');if(!form)return;
+  const ask=async(question)=>{
+    if(!sampleFn||!question.trim())return;
+    const out=$('#tutorAns');out.hidden=false;out.textContent=u('Gondolkodom…','Tänker…');
+    if(tutorAbort)tutorAbort.abort();tutorAbort=new AbortController();
+    const prompt=`Te egy türelmes anatómia- és fizioterápia-oktató vagy egy gyógytornász-hallgató számára, aki a Karolinska Institutet programjára készül. ${lang==='sv'?'Válaszolj svédül':lang==='both'?'Válaszolj magyarul, majd ugyanezt svédül is':'Válaszolj magyarul'}, tömören (nyelvenként legfeljebb 180 szó), sima szövegként (markdown nélkül). Az anatómiai kifejezéseknél add meg a latin és a svéd alakot is zárójelben. Ha klinikai kérdésről van szó, jelezd, hogy oktatási célú a válasz. Ha a hallgató kikérdezést kér, tegyél fel 3 kérdést, a válaszokat ne áruld el.\n\nKontextus:\n${ctx()}\n\nA hallgató kérdése: ${question}`;
+    try{
+      const r=await sampleFn(prompt,{signal:tutorAbort.signal,modelTier:'default',cache:false,onText:({text})=>{out.textContent=text}});
+      out.textContent=r.text;
+    }catch(e){
+      if(e&&e.name==='AbortError')return;
+      out.textContent=e&&e.code==='rate_limited'?u('Most túl sok a kérés. Próbáld újra egy perc múlva.','För många frågor just nu. Försök igen om en minut.'):e&&e.code==='not_granted'?u('Az AI-tanár nincs engedélyezve ezen az oldalon.','AI-läraren är inte tillåten på den här sidan.'):u('Nem sikerült választ kapni. Próbáld újra.','Kunde inte få något svar. Försök igen.');
+    }
+  };
+  form.onsubmit=e=>{e.preventDefault();ask($('#tutorIn').value)};
+  document.querySelectorAll('[data-sq]').forEach(b=>b.onclick=()=>{$('#tutorIn').value=b.dataset.sq;ask(b.dataset.sq)});
+}
+
+/* --- Cranial nerves --- */
+let cnSel='VII';
+function viewCN(){
+  return `
+  <div class="mod-head plate nerve" data-wm="nervi craniales"><span class="eyebrow">${u('5.3 · Neuroanatómia','5.3 · Neuroanatomi')} · ${u('Pillér','Pelare')} 2</span>${H1('A 12 agyideg','De tolv kranialnerverna')}
+  <p class="muted">${u('Minden agyideghez ugyanaz a sablon: név három nyelven, magok, eredés, kilépés, funkció, beidegzett struktúrák, vizsgálat és kiesési tünetek.','Samma mall för varje kranialnerv: namn på tre språk, kärnor, utgång, utträde, funktion, innerverade strukturer, undersökning och bortfallssymtom.')}</p>
+  <div class="typekey">${Object.entries(CN_TYPE).map(([k,[l,c]])=>`<span class="chip ${c}">${cnType(k)}</span>`).join('')}</div></div>
+  <div class="cn-list" id="cnList">${CN.map(c=>`<button class="cn" data-n="${c.n}" style="--c:var(--${CN_TYPE[c.type][1]});--cs:var(--${CN_TYPE[c.type][1]}-soft)" aria-pressed="${cnSel===c.n}"><span class="row" style="justify-content:space-between"><span class="num">${c.n}</span><span class="chip ${CN_TYPE[c.type][1]}">${cnType(c.type).split(' ')[0]}</span></span><span class="la">${esc(c.la)}</span><span class="small muted">${lang==='sv'?esc(c.sv):lang==='both'?esc(c.hu)+' · '+esc(c.sv):esc(c.hu)}</span></button>`).join('')}</div>
+  <div class="card" id="cnSheet"></div>`;
+}
+function renderCN(){
+  const c=CN.find(x=>x.n===cnSel);
+  const sv=SV.cn[c.n]||{};
+  const F=(dt,k)=>`<dt>${lb(dt)}</dt><dd>${bi(c[k],sv[k])}</dd>`;
+  const KF=(l,k,col)=>`<div class="fact" style="--c:var(--${col})"><span class="eyebrow">${lb(l)}</span><p>${bi(c[k],sv[k])}</p></div>`;
+  const qs=Q.filter(q=>q.link&&q.link[0]==='#agyidegek'&&q.link[1]===c.n);
+  $('#cnSheet').innerHTML=`<div class="sheet"><div class="row" style="justify-content:space-between"><h2>${lb(c.n+'. agyideg','Kranialnerv '+c.n)}</h2><span class="chip ${CN_TYPE[c.type][1]}">${cnType(c.type)}</span></div>
+   ${tri(c.hu,c.sv,c.la)}
+   <div class="facts">${KF('Funkció','fn','nerve')}${KF('Kilépés a koponyából','kilep','bone')}${KF('Beidegzett izmok, szervek','izom','muscle')}</div><dl class="fields">${F('Magok','nuc')}${F('Agytörzsi eredés','ered')}${F('Klinikai vizsgálat','teszt')}${F('Sérülési tünetek','lez')}</dl>
+   ${qs.length?`<div class="row"><span class="small muted">${u('Kapcsolódó kérdések','Relaterade frågor')}: ${qs.length}</span><button class="btn" id="cnQuiz">${u('Gyakorold','Öva')}</button></div>`:''}
+   ${tutorHtml(c.la)}</div>`;
+  if(qs.length)$('#cnQuiz').onclick=()=>{quizState=newQuiz(qs.map(q=>q.id),'gyak');location.hash='kviz'};
+  bindTutor(()=>`Agyideg ${c.n}: ${c.la}. Adatok: ${JSON.stringify(c)}`);
+}
+function bindCN(){
+  renderCN();
+  $('#cnList').onclick=e=>{const b=e.target.closest('button');if(!b)return;cnSel=b.dataset.n;
+    document.querySelectorAll('#cnList button').forEach(x=>x.setAttribute('aria-pressed',x===b));renderCN();
+    if(window.innerWidth<820)$('#cnSheet').scrollIntoView({behavior:'smooth',block:'start'})};
+}
+
+/* --- KI path --- */
+function viewKI(){
+  const sems=[1,2,3,4,5,6];
+  return `
+  <div class="mod-head plate joint" data-wm="180 hp"><span class="eyebrow">${u('12. fejezet','Kapitel 12')} · ${u('Pillér','Pelare')} 3</span>${H1('KI Fysioterapeutprogrammet','Fysioterapeutprogrammet vid Karolinska Institutet')}
+  <p class="muted">${u('1FY26 tantervi változat, 2026 őszétől (HT26). 180 hp, hat félév. A kurzusnevek és kreditek a KI hivatalos adatai; a témalisták jelölése mutatja, melyik származik kursplanból és melyik az app saját javaslata.','Studieplanversion 1FY26, från hösten 2026 (HT26). 180 hp, sex terminer. Kursnamn och högskolepoäng är KI:s officiella uppgifter; märkningen visar vilka ämneslistor som kommer från kursplanen och vilka som är appens egna förslag.')}</p>
+  <div class="row"><span class="chip official">${u('KI kursplan alapján','Enligt KI:s kursplan')}</span><span class="chip suggest">${u('App-javaslat, kursplan még nem jelent meg','Appens förslag, kursplanen är inte publicerad än')}</span></div></div>
+  <div class="card">${sems.map(s=>{const cs=KI.filter(c=>c.s===s);const hp=cs.reduce((a,c)=>a+c.hp,0);
+    return `<div class="sem"><div class="sem-h"><span class="eyebrow">${u('Félév','Termin')}</span><b>${s}</b><span class="small muted tnum">${String(hp).replace('.',',')} hp</span></div>
+    <div class="stack">${cs.map(c=>`<div class="course"><div class="top"><div style="min-width:0"><span class="code">${c.code||u('kód később','kod senare')}</span><h3>${esc(c.name)}</h3></div><span class="tnum" style="font-weight:700">${String(c.hp).replace('.',',')} hp</span></div>
+      <div class="row"><span class="chip ${c.src==='ki'?'official':'suggest'}">${c.src==='ki'?u('KI kursplan alapján','Enligt KI:s kursplan'):u('App-javaslat','Appens förslag')}</span></div>
+      <ul>${c.topics.map((t,j)=>`<li>${bi(t,(SV.ki[KI.indexOf(c)]||[])[j])}</li>`).join('')}</ul>
+      ${c.links?`<div class="row">${c.links.map(([h,l])=>`<a href="${h}">${esc(u(l,LINK_SV[l]))} →</a>`).join('')}</div>`:''}</div>`).join('')}</div></div>`}).join('')}</div>
+  <p class="small muted">${u('Hivatalos kiindulópont:','Officiell utgångspunkt:')} <a href="https://utbildning.ki.se/bli-student/program-och-kurser/fysioterapeutprogrammet" style="color:var(--accent)">utbildning.ki.se – Fysioterapeutprogrammet</a>. ${u('A KI a kurzusterveket fokozatosan teszi közzé; megjelenésükkor a javasolt témákat frissíteni kell.','KI publicerar kursplanerna successivt; när de kommer ska de föreslagna ämnena uppdateras.')}</p>`;
+}
+
+/* --- Quiz --- */
+let quizState=null;
+function newQuiz(ids,mode){
+  return {ids,mode,i:0,res:[],answered:false,start:Date.now(),limit:mode==='vizsga'?ids.length*45:0,order:null,matchOpts:null};
+}
+function viewQuiz(){
+  if(!quizState)return quizStart();
+  if(quizState.i>=quizState.ids.length)return quizDone();
+  return `<div class="mod-head"><span class="eyebrow">${quizState.mode==='vizsga'?u('Vizsgaszimuláció','Tentasimulering'):quizState.mode==='ism'?u('Ismétlés','Repetition'):u('Gyakorlás','Övning')}</span>
+    <div class="row" style="justify-content:space-between"><h1>${u('Kérdés','Fråga')} ${quizState.i+1} / ${quizState.ids.length}</h1>${quizState.limit?`<span class="timer" id="timer"></span>`:''}</div>
+    <div class="progress">${quizState.ids.map((_,k)=>`<i class="${k<quizState.res.length?(quizState.res[k]?'ok':'no'):k===quizState.i?'cur':''}"></i>`).join('')}</div></div>
+    <div class="card q-card" id="qcard"></div>`;
+}
+function quizStart(){
+  const due=dueList();
+  const cnt=t=>Q.filter(q=>q.topic===t).length;
+  return `<div class="mod-head plate bone" data-wm="examen"><span class="eyebrow">${u('9. fejezet · Munkafüzet és kvíz','Kapitel 9 · Arbetsbok och quiz')}</span>${H1('Kvíz','Quiz')}
+   <p class="muted">${u('Feleletválasztás, igaz–hamis, háromnyelvű párosítás és sorrendbe rendezés. Minden válasz után megtudod, miért helyes, miért hibásak a többi lehetőségek, és melyik adatlaphoz kapcsolódik.','Flerval, sant–falskt, trespråkig matchning och ordningsföljd. Efter varje svar får du veta varför det är rätt, varför de andra alternativen är fel och vilket faktablad frågan hör till.')}</p></div>
+   <div class="grid g3">
+    <div class="card stack"><span class="eyebrow">${u('Ismétlés','Repetition')}</span><h3>${u('Mai esedékes kérdések','Dagens frågor att repetera')}</h3><p class="small muted">${u('A hibázott és a lejárt kérdések, az ismétlési ütemezés szerint.','Felbesvarade och förfallna frågor enligt repetitionsschemat.')}</p><b style="font-family:var(--f-display);font-size:2rem" class="tnum">${due.length}</b><button class="btn primary" data-start="ism" ${due.length?'':'disabled'}>${u('Ismétlés indítása','Starta repetition')}</button></div>
+    <div class="card stack"><span class="eyebrow">${u('Gyakorlás','Övning')}</span><h3>${u('Témakör szerint','Per ämne')}</h3>
+      <div class="stack">${Object.entries(TOPICS).map(([k,l])=>`<button class="btn" data-start="gyak" data-topic="${k}">${topicName(k)} <span class="muted tnum" style="margin-left:auto">${cnt(k)}</span></button>`).join('')}</div></div>
+    <div class="card stack"><span class="eyebrow">${u('Vizsgaszimuláció','Tentasimulering')}</span><h3>${u('10 kérdés, időre','10 frågor på tid')}</h3><p class="small muted">${u('45 másodperc jut egy kérdésre. A magyarázatokat a végén látod.','45 sekunder per fråga. Förklaringarna visas i slutet.')}</p><button class="btn" data-start="vizsga">${u('Vizsga indítása','Starta tentan')}</button></div>
+   </div>`;
+}
+function bindQuizStart(){
+  document.querySelectorAll('[data-start]').forEach(b=>b.onclick=()=>{
+    const m=b.dataset.start;let ids;
+    if(m==='ism')ids=dueList().map(q=>q.id);
+    else if(m==='vizsga')ids=shuffle(Q).slice(0,10).map(q=>q.id);
+    else ids=shuffle(Q.filter(q=>q.topic===b.dataset.topic)).map(q=>q.id);
+    quizState=newQuiz(ids,m);render();
+  });
+}
+let timerInt=null;
+function bindQuiz(){
+  if(!quizState){bindQuizStart();return}
+  if(quizState.i>=quizState.ids.length){bindDone();return}
+  renderQ();
+  clearInterval(timerInt);
+  if(quizState.limit){
+    const tick=()=>{const left=quizState.limit-Math.floor((Date.now()-quizState.start)/1000);const el=$('#timer');if(!el){clearInterval(timerInt);return}
+      if(left<=0){clearInterval(timerInt);while(quizState.res.length<quizState.ids.length){grade(quizState.ids[quizState.res.length],false);quizState.res.push(false)}quizState.i=quizState.ids.length;render();return}
+      el.textContent=`${Math.floor(left/60)}:${String(left%60).padStart(2,'0')}`};
+    tick();timerInt=setInterval(tick,1000);
+  }
+}
+function renderQ(){
+  const q=Q.find(x=>x.id===quizState.ids[quizState.i]);
+  const exam=quizState.mode==='vizsga';
+  const svq=SV.q[q.id]||{};
+  let body='';
+  if(q.type==='mc'){
+    if(!quizState.order)quizState.order=shuffle(q.opts.map((_,k)=>k));
+    body=`<div class="opts" id="opts">${quizState.order.map((k,n)=>`<button class="opt" data-k="${k}"><span class="k">${'ABCD'[n]}</span><span>${bi(q.opts[k][0],((svq.opts||[])[k]||[])[0])}<span class="why" hidden></span></span></button>`).join('')}</div>`;
+  }else if(q.type==='tf'){
+    body=`<div class="opts" id="opts"><button class="opt" data-k="true"><span class="k">I</span><span>${bi('Igaz','Sant')}</span></button><button class="opt" data-k="false"><span class="k">H</span><span>${bi('Hamis','Falskt')}</span></button></div>`;
+  }else if(q.type==='match'){
+    if(!quizState.matchOpts)quizState.matchOpts=[shuffle([...new Set(q.rows.map(r=>r[1]))]),shuffle([...new Set(q.rows.map(r=>r[2]))])];
+    const heads=lang==='sv'?(svq.heads||(q.topic==='agyideg'?['NUMMER','UNGERSKA','SVENSKA']:['UNGERSKA','SVENSKA','LATIN'])):(q.heads||(q.topic==='agyideg'?['SORSZÁM','MAGYAR','SVENSKA']:['MAGYAR','SVENSKA','LATINA']));
+    body=`<div class="match" id="match"><span class="head">${heads[0]}</span><span class="head">${heads[1]}</span><span class="head c3">${heads[2]}</span>
+      ${q.rows.map((r,ri)=>`<div class="fixed">${esc(r[0])}</div>
+        <select id="m${ri}a" aria-label="${esc(r[0])} – ${heads[1]}"><option value="">${u('Válassz…','Välj…')}</option>${quizState.matchOpts[0].map(o=>`<option>${esc(o)}</option>`).join('')}</select>
+        <select id="m${ri}b" class="c3" aria-label="${esc(r[0])} – ${heads[2]}"><option value="">${u('Válassz…','Välj…')}</option>${quizState.matchOpts[1].map(o=>`<option>${esc(o)}</option>`).join('')}</select>`).join('')}</div>
+      <div class="row"><button class="btn primary" id="check">${u('Ellenőrzés','Kontrollera')}</button></div>`;
+  }else if(q.type==='order'){
+    if(!quizState.order){do{quizState.order=shuffle(q.items.map((_,k)=>k))}while(quizState.order.every((v,k)=>v===k))}
+    body=`<div class="order"><ol id="olist">${quizState.order.map((k,n)=>`<li data-k="${k}"><span class="lab">${bi(q.items[k],(svq.items||[])[k])}</span><button class="icon-btn" data-mv="-1" aria-label="${u('Fel','Upp')}" ${n===0?'disabled':''}>${IC.up}</button><button class="icon-btn" data-mv="1" aria-label="${u('Le','Ned')}" ${n===q.items.length-1?'disabled':''}>${IC.down}</button></li>`).join('')}</ol></div>
+      <div class="row"><button class="btn primary" id="check">${u('Ellenőrzés','Kontrollera')}</button></div>`;
+  }
+  const tl=(lang==='sv'?{mc:'Flerval',tf:'Sant eller falskt',match:'Matchning',order:'Ordningsföljd'}:{mc:'Feleletválasztás',tf:'Igaz vagy hamis',match:'Párosítás',order:'Sorrend'})[q.type];
+  $('#qcard').innerHTML=`<div class="q-meta"><span class="chip">${topicName(q.topic)}</span><span class="small muted">${tl}</span></div>
+    <div class="q-text">${bi(q.q,svq.q)}</div>${body}<div id="fb"></div>`;
+
+  const finish=(ok)=>{
+    quizState.answered=true;grade(q.id,ok);quizState.res.push(ok);
+    if(exam){next();return}
+    const lk=q.link;
+    $('#fb').innerHTML=`<div class="feedback ${ok?'ok':'no'}"><h3>${ok?lb('Helyes válasz','Rätt svar'):lb('Nem ez a helyes válasz','Inte rätt svar')}</h3><div>${bi(q.exp,svq.exp)}</div>
+      <div class="row" style="justify-content:space-between"><span class="small muted">${ok?u('Következő ismétlés: ','Nästa repetition om ')+INTERVALS[Math.max(srs[q.id].box-1,0)]+u(' nap múlva',' dagar'):u('Holnap újra előkerül.','Kommer tillbaka i morgon.')}</span>
+      <div class="row">${lk?`<a class="btn ghost" href="${lk[0]}" data-open="${lk[1]}">${u('Tananyag megnyitása','Öppna kursinnehållet')}</a>`:''}<button class="btn primary" id="nextQ">${quizState.i+1<quizState.ids.length?u('Következő kérdés','Nästa fråga'):u('Eredmény','Resultat')}</button></div></div>
+      ${!ok?`<div data-needs-ai ${sampleFn?'':'hidden'}><button class="btn" id="explain">${u('Magyarázd el másképp (AI-tanár)','Förklara på ett annat sätt (AI-lärare)')}</button><div class="ans tutor" id="explainOut" hidden style="white-space:pre-wrap"></div></div>`:''}</div>`;
+    $('#nextQ').onclick=next;$('#nextQ').focus();
+    const op=document.querySelector('[data-open]');if(op)op.onclick=()=>{if(lk[0]==='#vall'&&SHEETS[lk[1]])modState.sheet=lk[1];if(lk[0]==='#agyidegek'&&lk[1])cnSel=lk[1];if(lk[0]==='#plexus'&&SHEETS[lk[1]])plexSel=lk[1]};
+    const ex=$('#explain');if(ex)ex.onclick=async()=>{
+      const out=$('#explainOut');out.hidden=false;out.textContent=u('Gondolkodom…','Tänker…');ex.disabled=true;
+      try{const r=await sampleFn(`Egy gyógytornász-hallgató hibásan válaszolt erre a kérdésre. Magyarázd el másképp, ${lang==='sv'?'svédül':lang==='both'?'magyarul, majd svédül is':'magyarul'}, nyelvenként legfeljebb 120 szóban, sima szövegként, egy szemléletes hasonlattal vagy emlékeztetővel. Add meg a kulcsfogalmak latin és svéd alakját.\nKérdés: ${q.q}\nHelyes magyarázat: ${q.exp}`,{modelTier:'quick',onText:({text})=>{out.textContent=text}});out.textContent=r.text}
+      catch(e){out.textContent=u('Nem sikerült választ kapni. Próbáld újra később.','Kunde inte få något svar. Försök igen senare.');ex.disabled=false}};
+  };
+
+  if(q.type==='mc'||q.type==='tf'){
+    $('#opts').onclick=e=>{const b=e.target.closest('.opt');if(!b||quizState.answered)return;
+      const pick=b.dataset.k;const right=q.type==='mc'?String(q.a):String(q.a);
+      document.querySelectorAll('#opts .opt').forEach(o=>{o.disabled=true;
+        if(o.dataset.k===right)o.classList.add('right');else if(o===b)o.classList.add('wrong');
+        if(q.type==='mc'&&!exam){const w=q.opts[+o.dataset.k][1];const why=o.querySelector('.why');if(w&&(o===b||o.dataset.k!==right)){why.innerHTML=lb('Miért nem:','Varför inte:')+' '+bi(w,((svq.opts||[])[+o.dataset.k]||[])[1]);why.hidden=false}}});
+      finish(pick===right)};
+  }else if(q.type==='match'){
+    $('#check').onclick=()=>{let ok=true;q.rows.forEach((r,ri)=>{[['a',1],['b',2]].forEach(([s,c])=>{const el=$('#m'+ri+s);const good=el.value===r[c];ok=ok&&good;el.classList.add(good?'right':'wrong');el.disabled=true;
+        if(!good&&!exam){const o=[...el.options].find(x=>x.value===r[c]);if(o){el.value=r[c];el.title='Helyes: '+r[c]}}})});
+      $('#check').remove();finish(ok)};
+  }else if(q.type==='order'){
+    $('#olist').onclick=e=>{const b=e.target.closest('[data-mv]');if(!b)return;const li=b.closest('li');const idx=[...li.parentNode.children].indexOf(li);const j=idx+(+b.dataset.mv);
+      const o=quizState.order;[o[idx],o[j]]=[o[j],o[idx]];renderQ()};
+    $('#check').onclick=()=>{let ok=true;[...$('#olist').children].forEach((li,n)=>{const g=+li.dataset.k===n;ok=ok&&g;li.classList.add(g?'right':'wrong');li.querySelectorAll('button').forEach(x=>x.disabled=true)});
+      if(!ok&&!exam){const p=document.createElement('p');p.className='small';p.textContent='Helyes sorrend: '+q.items.map(x=>x.split(' (')[0]).join(' → ');$('#olist').after(p)}
+      $('#check').remove();finish(ok)};
+  }
+}
+function next(){quizState.i++;quizState.answered=false;quizState.order=null;quizState.matchOpts=null;render()}
+function quizDone(){
+  clearInterval(timerInt);
+  const n=quizState.res.length,ok=quizState.res.filter(Boolean).length,pct=n?Math.round(ok/n*100):0;
+  const wrong=quizState.ids.filter((_,k)=>!quizState.res[k]).map(id=>Q.find(q=>q.id===id));
+  return `<div class="mod-head"><span class="eyebrow">${quizState.mode==='vizsga'?u('Vizsgaszimuláció','Tentasimulering'):u('Kör vége','Omgången klar')}</span><h1>${ok} / ${n} ${u('helyes','rätt')} · ${pct}%</h1>
+    <p class="muted">${pct>=80?u('Erős eredmény. A helyes kérdések hosszabb időközzel jönnek vissza.','Starkt resultat. Rätt besvarade frågor kommer tillbaka med längre mellanrum.'):pct>=50?u('Jó alap. A hibázott kérdések holnap újra előkerülnek.','Bra grund. Felbesvarade frågor kommer tillbaka i morgon.'):u('Érdemes visszamenni a tananyaghoz, mielőtt újra próbálod.','Gå gärna tillbaka till kursinnehållet innan du försöker igen.')}</p></div>
+    ${wrong.length?`<section class="stack"><h2>${lb('Átnézendő','Att gå igenom')}</h2>${wrong.map(q=>`<div class="card stack"><span class="chip">${topicName(q.topic)}</span><b>${bi(q.q,(SV.q[q.id]||{}).q)}</b><div class="small">${bi(q.exp,(SV.q[q.id]||{}).exp)}</div></div>`).join('')}</section>`:''}
+    <div class="row"><button class="btn primary" id="again">${u('Új kör','Ny omgång')}</button><a class="btn" href="#statisztika">${u('Statisztika','Statistik')}</a></div>`;
+}
+function bindDone(){$('#again').onclick=()=>{quizState=null;render()}}
+
+/* --- Stats --- */
+function viewStats(){
+  const rs=Q.map(q=>[q,srs[q.id]]).filter(x=>x[1]);
+  const ok=rs.reduce((a,[,r])=>a+r.ok,0),no=rs.reduce((a,[,r])=>a+r.no,0);
+  const topic=Object.entries(TOPICS).map(([k,l])=>{const t=rs.filter(([q])=>q.topic===k);const o=t.reduce((a,[,r])=>a+r.ok,0),w=t.reduce((a,[,r])=>a+r.no,0);return [topicName(k),o+w?Math.round(o/(o+w)*100):null,t.length,Q.filter(q=>q.topic===k).length]});
+  const ranked=topic.filter(t=>t[1]!=null).sort((a,b)=>a[1]-b[1]);
+  return `<div class="mod-head plate" data-wm="progressus"><span class="eyebrow">${u('11. fejezet · Személyre szabott tanulás','Kapitel 11 · Personligt lärande')}</span>${H1('Statisztika','Statistik')}
+   ${srs._example?`<p class="note">${u('Példaadatok láthatók. Az első megválaszolt kérdés után a saját eredményeid jelennek meg.','Exempeldata visas. Efter din första besvarade fråga visas dina egna resultat.')}</p>`:''}</div>
+   <div class="kpis">
+    <div class="kpi"><span class="eyebrow">${u('Pontosság','Träffsäkerhet')}</span><b>${ok+no?Math.round(ok/(ok+no)*100):0}%</b><span class="small muted">${ok} ${u('helyes','rätt')}, ${no} ${u('hibás','fel')}</span></div>
+    <div class="kpi"><span class="eyebrow">${u('Látott kérdések','Sedda frågor')}</span><b>${rs.length}<span class="muted" style="font-size:1rem"> / ${Q.length}</span></b></div>
+    <div class="kpi"><span class="eyebrow">${u('Megszilárdult','Befästa')}</span><b>${rs.filter(([,r])=>r.box>=2).length}</b><span class="small muted">${u('legalább 3 napos szinten','minst på 3-dagarsnivå')}</span></div>
+    <div class="kpi"><span class="eyebrow">${u('Ma esedékes','Att repetera idag')}</span><b>${dueList().length}</b></div>
+   </div>
+   <section class="card stack"><h2>${lb('Témakörök','Ämnen')}</h2><div>${topic.map(([l,p,s,t])=>`<div class="topic-row"><span>${l}<br><span class="small muted">${s}/${t} ${u('kérdés látva','frågor sedda')}</span></span><div class="bar"><i style="width:${p??0}%;background:${p==null?'var(--surface-2)':p>=75?'var(--good)':p>=50?'var(--nerve)':'var(--bad)'}"></i></div><span class="tnum" style="text-align:right;font-weight:700">${p==null?'–':p+'%'}</span></div>`).join('')}</div>
+    ${ranked.length?`<p class="small muted">${u('Fejlesztendő:','Att förbättra:')} <b>${ranked[0][0]}</b>${ranked.length>1?` · ${u('Legerősebb:','Starkast:')} <b>${ranked[ranked.length-1][0]}</b>`:''}</p>`:''}</section>
+   <section class="card stack"><h2>${lb('Ismétlési dobozok','Repetitionsnivåer')}</h2><div class="sched">${INTERVALS.map((d,i)=>`<div><b>${rs.filter(([,r])=>r.box===i).length}</b><span class="small muted">${i===0?u('új / hibás','ny / fel'):d+u(' nap',' dagar')}</span></div>`).join('')}</div></section>
+   <div class="row"><button class="btn" id="reset">${u('Előrehaladás törlése','Radera framsteg')}</button><span class="small muted" id="resetMsg"></span></div>`;
+}
+function bindStats(){
+  const b=$('#reset');let armed=false;
+  b.onclick=()=>{if(!armed){armed=true;b.textContent=u('Biztosan törlöd? Kattints újra','Är du säker? Klicka igen');$('#resetMsg').textContent=u('Ez a kvízeredményeket és a kedvenceket is törli ebben a böngészőben.','Detta raderar även quizresultat och favoriter i den här webbläsaren.');return}
+    srs={};saveSrs();favs=new Set();store.set('favs',[]);render()};
+}
+
+/* ============================== ROUTER ============================== */
+const VIEWS={attekintes:[viewHome],szotar:[viewDict,bindDict],vall:[viewShoulder,bindShoulder],plexus:[viewPlexus,bindPlexus],agyidegek:[viewCN,bindCN],'ki-utvonal':[viewKI],kviz:[viewQuiz,bindQuiz],statisztika:[viewStats,bindStats]};
+function render(){
+  const id=(location.hash||'').slice(1);const key=VIEWS[id]?id:'attekintes';
+  if(key!=='kviz')clearInterval(timerInt);
+  // an answered question is finished: move on instead of showing it locked
+  if(key==='kviz'&&quizState&&quizState.answered){quizState.i++;quizState.answered=false;quizState.order=null;quizState.matchOpts=null}
+  renderNav(key);
+  $('#view').innerHTML=`<div class="lang-mobile"><div class="seg">${langSwitch()}</div></div>`+VIEWS[key][0]();
+  if(VIEWS[key][1])VIEWS[key][1]();
+  if(srs._example&&Object.keys(srs).length>1){}
+}
+// first real answer replaces example data
+const _grade=grade;
+grade=function(id,ok){if(srs._example){srs={}}_grade(id,ok)};
+let lastKey=null;
+window.addEventListener('hashchange',()=>{render();window.scrollTo(0,0)});
+render();
+</script>

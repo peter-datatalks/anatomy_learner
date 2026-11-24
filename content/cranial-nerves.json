@@ -1,0 +1,628 @@
+{
+  "cranialNerves": [
+    {
+      "id": "cn.I",
+      "number": "I",
+      "modality": "sensory",
+      "name": {
+        "la": "N. olfactorius",
+        "hu": "Szaglóideg",
+        "sv": "Luktnerven"
+      },
+      "fields": {
+        "nuclei": {
+          "hu": "Bulbus olfactorius (nincs agytörzsi mag)",
+          "sv": "Bulbus olfactorius (ingen hjärnstamskärna)"
+        },
+        "brainstemOrigin": {
+          "hu": "Telencephalon – bulbus olfactorius",
+          "sv": "Telencephalon – bulbus olfactorius"
+        },
+        "skullExit": {
+          "hu": "Lamina cribrosa ossis ethmoidalis",
+          "sv": "Lamina cribrosa ossis ethmoidalis"
+        },
+        "function": {
+          "hu": "Szaglás.",
+          "sv": "Luktsinne."
+        },
+        "innervates": {
+          "hu": "—",
+          "sv": "—"
+        },
+        "examination": {
+          "hu": "Ismert illat azonosítása orrnyílásonként, csukott szemmel.",
+          "sv": "Identifiering av en känd doft, en näsborre i taget, med slutna ögon."
+        },
+        "lesion": {
+          "hu": "Anosmia/hyposmia (pl. koponyaalapi törés után).",
+          "sv": "Anosmi/hyposmi (t.ex. efter skallbasfraktur)."
+        }
+      },
+      "kiCourses": [
+        "1FY053",
+        "1FY056"
+      ],
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      },
+      "sources": [
+        "prototype-v0.3"
+      ]
+    },
+    {
+      "id": "cn.II",
+      "number": "II",
+      "modality": "sensory",
+      "name": {
+        "la": "N. opticus",
+        "hu": "Látóideg",
+        "sv": "Synnerven"
+      },
+      "fields": {
+        "nuclei": {
+          "hu": "Corpus geniculatum laterale (thalamus)",
+          "sv": "Corpus geniculatum laterale (thalamus)"
+        },
+        "brainstemOrigin": {
+          "hu": "Diencephalon (chiasma opticum)",
+          "sv": "Diencephalon (chiasma opticum)"
+        },
+        "skullExit": {
+          "hu": "Canalis opticus",
+          "sv": "Canalis opticus"
+        },
+        "function": {
+          "hu": "Látás; a pupillareflex afferens szára.",
+          "sv": "Syn; den afferenta delen av pupillreflexen."
+        },
+        "innervates": {
+          "hu": "—",
+          "sv": "—"
+        },
+        "examination": {
+          "hu": "Visus, látótér (konfrontációs vizsgálat), fundus, pupillareakció.",
+          "sv": "Visus, synfält (konfrontationsundersökning), ögonbotten, pupillreaktion."
+        },
+        "lesion": {
+          "hu": "Látótérkiesések az érintett pályaszakasz szerint (pl. bitemporalis hemianopia chiasma-léziónál).",
+          "sv": "Synfältsbortfall beroende på vilket avsnitt av synbanan som är skadat (t.ex. bitemporal hemianopsi vid skada på chiasma)."
+        }
+      },
+      "kiCourses": [
+        "1FY053",
+        "1FY056"
+      ],
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      },
+      "sources": [
+        "prototype-v0.3"
+      ]
+    },
+    {
+      "id": "cn.III",
+      "number": "III",
+      "modality": "motor+parasympathetic",
+      "name": {
+        "la": "N. oculomotorius",
+        "hu": "Szemmozgató ideg",
+        "sv": "Ögonmotoriska nerven"
+      },
+      "fields": {
+        "nuclei": {
+          "hu": "Nucleus n. oculomotorii; nucleus Edinger–Westphal (paraszimpatikus)",
+          "sv": "Nucleus n. oculomotorii; nucleus Edinger–Westphal (parasympatisk)"
+        },
+        "brainstemOrigin": {
+          "hu": "Mesencephalon – fossa interpeduncularis",
+          "sv": "Mesencephalon – fossa interpeduncularis"
+        },
+        "skullExit": {
+          "hu": "Fissura orbitalis superior",
+          "sv": "Fissura orbitalis superior"
+        },
+        "function": {
+          "hu": "Szemmozgatás, szemhéjemelés, pupillaszűkítés, akkomodáció.",
+          "sv": "Ögonrörelser, lyft av övre ögonlocket, pupillkonstriktion, ackommodation."
+        },
+        "innervates": {
+          "hu": "M. rectus superior, inferior, medialis; m. obliquus inferior; m. levator palpebrae superioris; m. sphincter pupillae, m. ciliaris.",
+          "sv": "M. rectus superior, inferior, medialis; m. obliquus inferior; m. levator palpebrae superioris; m. sphincter pupillae, m. ciliaris."
+        },
+        "examination": {
+          "hu": "Követő szemmozgások \"H\"-alakban, pupillareakció, konvergencia.",
+          "sv": "Följerörelser med ögonen i ett \"H\"-mönster, pupillreaktion, konvergens."
+        },
+        "lesion": {
+          "hu": "\"Lefelé és kifelé\" néző szem, ptosis, tág, fényre nem reagáló pupilla.",
+          "sv": "Ögat riktat \"nedåt och utåt\", ptos, vid pupill som inte reagerar på ljus."
+        }
+      },
+      "kiCourses": [
+        "1FY053",
+        "1FY056"
+      ],
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      },
+      "sources": [
+        "prototype-v0.3"
+      ]
+    },
+    {
+      "id": "cn.IV",
+      "number": "IV",
+      "modality": "motor",
+      "name": {
+        "la": "N. trochlearis",
+        "hu": "Sodorideg",
+        "sv": "Blocknerven"
+      },
+      "fields": {
+        "nuclei": {
+          "hu": "Nucleus n. trochlearis",
+          "sv": "Nucleus n. trochlearis"
+        },
+        "brainstemOrigin": {
+          "hu": "Mesencephalon – dorsalisan (az egyetlen hátul kilépő agyideg)",
+          "sv": "Mesencephalon – dorsalt (den enda kranialnerv som lämnar hjärnstammen på baksidan)"
+        },
+        "skullExit": {
+          "hu": "Fissura orbitalis superior",
+          "sv": "Fissura orbitalis superior"
+        },
+        "function": {
+          "hu": "A szemgolyó lefelé-befelé mozgatása.",
+          "sv": "Rör ögongloben nedåt-inåt."
+        },
+        "innervates": {
+          "hu": "M. obliquus superior.",
+          "sv": "M. obliquus superior."
+        },
+        "examination": {
+          "hu": "Lefelé-befelé tekintés (orrhegy felé lefelé).",
+          "sv": "Blick nedåt-inåt (nedåt mot nästippen)."
+        },
+        "lesion": {
+          "hu": "Függőleges kettőslátás, főleg lépcsőn lefelé; kompenzáló fejdöntés az ép oldal felé.",
+          "sv": "Vertikalt dubbelseende, särskilt i trappor nedåt; kompensatorisk lutning av huvudet mot den friska sidan."
+        }
+      },
+      "kiCourses": [
+        "1FY053",
+        "1FY056"
+      ],
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      },
+      "sources": [
+        "prototype-v0.3"
+      ]
+    },
+    {
+      "id": "cn.V",
+      "number": "V",
+      "modality": "mixed",
+      "name": {
+        "la": "N. trigeminus",
+        "hu": "Háromosztatú ideg",
+        "sv": "Trillingnerven"
+      },
+      "fields": {
+        "nuclei": {
+          "hu": "Nucleus mesencephalicus, principalis, spinalis n. trigemini; nucleus motorius",
+          "sv": "Nucleus mesencephalicus, principalis, spinalis n. trigemini; nucleus motorius"
+        },
+        "brainstemOrigin": {
+          "hu": "Pons – laterálisan",
+          "sv": "Pons – lateralt"
+        },
+        "skullExit": {
+          "hu": "V1: fissura orbitalis superior · V2: foramen rotundum · V3: foramen ovale",
+          "sv": "V1: fissura orbitalis superior · V2: foramen rotundum · V3: foramen ovale"
+        },
+        "function": {
+          "hu": "Az arc, a szájüreg és a szaruhártya érzése; rágás.",
+          "sv": "Känsel i ansiktet, munhålan och hornhinnan; tuggning."
+        },
+        "innervates": {
+          "hu": "Rágóizmok (m. masseter, m. temporalis, mm. pterygoidei), m. tensor tympani, m. tensor veli palatini.",
+          "sv": "Tuggmusklerna (m. masseter, m. temporalis, mm. pterygoidei), m. tensor tympani, m. tensor veli palatini."
+        },
+        "examination": {
+          "hu": "Érintés és fájdalomérzés mindhárom ágban, cornealis reflex (afferens), állkapocs összeszorítása.",
+          "sv": "Beröring och smärtkänsel i alla tre grenarna, kornealreflex (afferent), sammanbitning av käken."
+        },
+        "lesion": {
+          "hu": "Érzéskiesés az ág területén; nyitáskor az állkapocs a sérült oldal felé tér ki. Trigeminus-neuralgia.",
+          "sv": "Känselbortfall i grenens område; vid gapning avviker underkäken mot den skadade sidan. Trigeminusneuralgi."
+        }
+      },
+      "kiCourses": [
+        "1FY053",
+        "1FY056"
+      ],
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      },
+      "sources": [
+        "prototype-v0.3"
+      ]
+    },
+    {
+      "id": "cn.VI",
+      "number": "VI",
+      "modality": "motor",
+      "name": {
+        "la": "N. abducens",
+        "hu": "Távolító ideg",
+        "sv": "Abducensnerven"
+      },
+      "fields": {
+        "nuclei": {
+          "hu": "Nucleus n. abducentis",
+          "sv": "Nucleus n. abducentis"
+        },
+        "brainstemOrigin": {
+          "hu": "Pons és medulla határa",
+          "sv": "Gränsen mellan pons och medulla"
+        },
+        "skullExit": {
+          "hu": "Fissura orbitalis superior",
+          "sv": "Fissura orbitalis superior"
+        },
+        "function": {
+          "hu": "A szemgolyó kifelé mozgatása.",
+          "sv": "Rör ögongloben utåt."
+        },
+        "innervates": {
+          "hu": "M. rectus lateralis.",
+          "sv": "M. rectus lateralis."
+        },
+        "examination": {
+          "hu": "Oldalra tekintés.",
+          "sv": "Blick åt sidan."
+        },
+        "lesion": {
+          "hu": "A szem nem távolítható, befelé áll; vízszintes kettőslátás.",
+          "sv": "Ögat kan inte abduceras och står inåtvänt; horisontellt dubbelseende."
+        }
+      },
+      "kiCourses": [
+        "1FY053",
+        "1FY056"
+      ],
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      },
+      "sources": [
+        "prototype-v0.3"
+      ]
+    },
+    {
+      "id": "cn.VII",
+      "number": "VII",
+      "modality": "mixed",
+      "name": {
+        "la": "N. facialis",
+        "hu": "Arcideg",
+        "sv": "Ansiktsnerven"
+      },
+      "fields": {
+        "nuclei": {
+          "hu": "Nucleus motorius n. facialis; nucleus salivatorius superior; nucleus tractus solitarii",
+          "sv": "Nucleus motorius n. facialis; nucleus salivatorius superior; nucleus tractus solitarii"
+        },
+        "brainstemOrigin": {
+          "hu": "Pons és medulla határa (kisagy-híd szöglet)",
+          "sv": "Gränsen mellan pons och medulla (lillhjärnsbrovinkeln)"
+        },
+        "skullExit": {
+          "hu": "Porus acusticus internus → foramen stylomastoideum",
+          "sv": "Porus acusticus internus → foramen stylomastoideum"
+        },
+        "function": {
+          "hu": "Mimika, ízérzés a nyelv elülső 2/3-án, könny- és nyálelválasztás (gl. submandibularis, sublingualis).",
+          "sv": "Mimik, smak på tungans främre 2/3, tår- och salivsekretion (gl. submandibularis, sublingualis)."
+        },
+        "innervates": {
+          "hu": "Mimikai izmok, m. stapedius, m. stylohyoideus, m. digastricus hátsó hasa.",
+          "sv": "Mimiska muskler, m. stapedius, m. stylohyoideus, bakre buken av m. digastricus."
+        },
+        "examination": {
+          "hu": "Szemöldökemelés, erős szemhunyás, mosolygás, arcfelfújás.",
+          "sv": "Höja ögonbrynen, knipa hårt med ögonen, le, blåsa upp kinderna."
+        },
+        "lesion": {
+          "hu": "Perifériás (pl. Bell-paresis): az egész arcfél bénul, a homlok is. Centrális: a homlok megkímélt (kétoldali kérgi beidegzés).",
+          "sv": "Perifer facialispares (t.ex. Bells pares): hela ansiktshalvan är förlamad, även pannan. Central: pannan är skonad (bilateral kortikal innervation)."
+        }
+      },
+      "kiCourses": [
+        "1FY053",
+        "1FY056"
+      ],
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      },
+      "sources": [
+        "prototype-v0.3"
+      ]
+    },
+    {
+      "id": "cn.VIII",
+      "number": "VIII",
+      "modality": "sensory",
+      "name": {
+        "la": "N. vestibulocochlearis",
+        "hu": "Egyensúlyozó és hallóideg",
+        "sv": "Hörsel- och balansnerven"
+      },
+      "fields": {
+        "nuclei": {
+          "hu": "Nuclei vestibulares, nuclei cochleares",
+          "sv": "Nuclei vestibulares, nuclei cochleares"
+        },
+        "brainstemOrigin": {
+          "hu": "Pons és medulla határa",
+          "sv": "Gränsen mellan pons och medulla"
+        },
+        "skullExit": {
+          "hu": "Porus acusticus internus (a halántékcsonton belül marad)",
+          "sv": "Porus acusticus internus (stannar inom tinningbenet)"
+        },
+        "function": {
+          "hu": "Hallás és egyensúlyérzés.",
+          "sv": "Hörsel och balanssinne."
+        },
+        "innervates": {
+          "hu": "—",
+          "sv": "—"
+        },
+        "examination": {
+          "hu": "Suttogott beszéd, Weber- és Rinne-teszt; fejimpulzus-teszt, nystagmus vizsgálata.",
+          "sv": "Viskad stämma, Weber- och Rinnetest; huvudimpulstest, undersökning av nystagmus."
+        },
+        "lesion": {
+          "hu": "Halláscsökkenés, fülzúgás, szédülés, nystagmus, egyensúlyzavar.",
+          "sv": "Hörselnedsättning, tinnitus, yrsel, nystagmus, balansstörning."
+        }
+      },
+      "kiCourses": [
+        "1FY053",
+        "1FY056"
+      ],
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      },
+      "sources": [
+        "prototype-v0.3"
+      ]
+    },
+    {
+      "id": "cn.IX",
+      "number": "IX",
+      "modality": "mixed",
+      "name": {
+        "la": "N. glossopharyngeus",
+        "hu": "Nyelv-garat ideg",
+        "sv": "Tung- och svalgnerven"
+      },
+      "fields": {
+        "nuclei": {
+          "hu": "Nucleus ambiguus; nucleus salivatorius inferior; nucleus tractus solitarii",
+          "sv": "Nucleus ambiguus; nucleus salivatorius inferior; nucleus tractus solitarii"
+        },
+        "brainstemOrigin": {
+          "hu": "Medulla oblongata (sulcus retroolivaris)",
+          "sv": "Medulla oblongata (sulcus retroolivaris)"
+        },
+        "skullExit": {
+          "hu": "Foramen jugulare",
+          "sv": "Foramen jugulare"
+        },
+        "function": {
+          "hu": "Ízérzés és általános érzés a nyelv hátsó 1/3-án, garatérzés, parotis-elválasztás, sinus caroticus.",
+          "sv": "Smak och allmän känsel på tungans bakre 1/3, känsel i svalget, sekretion från parotis, sinus caroticus."
+        },
+        "innervates": {
+          "hu": "M. stylopharyngeus; glandula parotidea.",
+          "sv": "M. stylopharyngeus; glandula parotidea."
+        },
+        "examination": {
+          "hu": "Garatreflex (afferens szár), ízérzés a nyelv hátsó részén.",
+          "sv": "Kräkreflex (afferent del), smak på tungans bakre del."
+        },
+        "lesion": {
+          "hu": "Csökkent garatreflex, ízérzéskiesés a nyelv hátsó 1/3-án.",
+          "sv": "Nedsatt kräkreflex, smakbortfall på tungans bakre 1/3."
+        }
+      },
+      "kiCourses": [
+        "1FY053",
+        "1FY056"
+      ],
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      },
+      "sources": [
+        "prototype-v0.3"
+      ]
+    },
+    {
+      "id": "cn.X",
+      "number": "X",
+      "modality": "mixed",
+      "name": {
+        "la": "N. vagus",
+        "hu": "Bolygóideg",
+        "sv": "Vagusnerven"
+      },
+      "fields": {
+        "nuclei": {
+          "hu": "Nucleus ambiguus; nucleus dorsalis n. vagi; nucleus tractus solitarii",
+          "sv": "Nucleus ambiguus; nucleus dorsalis n. vagi; nucleus tractus solitarii"
+        },
+        "brainstemOrigin": {
+          "hu": "Medulla oblongata (sulcus retroolivaris)",
+          "sv": "Medulla oblongata (sulcus retroolivaris)"
+        },
+        "skullExit": {
+          "hu": "Foramen jugulare",
+          "sv": "Foramen jugulare"
+        },
+        "function": {
+          "hu": "Garat- és gégeizmok, a szív, tüdő és bélrendszer paraszimpatikus beidegzése (a flexura coli sinistráig).",
+          "sv": "Svalg- och struphuvudsmuskler, parasympatisk innervation av hjärta, lungor och tarmkanal (fram till flexura coli sinistra)."
+        },
+        "innervates": {
+          "hu": "Garat- és gégeizmok, a lágy szájpad izmai (a m. tensor veli palatini kivételével).",
+          "sv": "Svalg- och struphuvudsmuskler, mjuka gommens muskler (utom m. tensor veli palatini)."
+        },
+        "examination": {
+          "hu": "\"Á\" hang: az uvula és a lágy szájpad emelkedése; garatreflex (efferens szár), rekedtség.",
+          "sv": "Ljudet \"A\": gomspenen (uvula) och mjuka gommen höjs; kräkreflex (efferent del), heshet."
+        },
+        "lesion": {
+          "hu": "Nyelési zavar, rekedtség; az uvula az ép oldal felé tér ki.",
+          "sv": "Sväljningssvårigheter, heshet; uvula avviker mot den friska sidan."
+        }
+      },
+      "kiCourses": [
+        "1FY053",
+        "1FY056"
+      ],
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      },
+      "sources": [
+        "prototype-v0.3"
+      ]
+    },
+    {
+      "id": "cn.XI",
+      "number": "XI",
+      "modality": "motor",
+      "name": {
+        "la": "N. accessorius",
+        "hu": "Járulékos ideg",
+        "sv": "Accessoriska nerven"
+      },
+      "fields": {
+        "nuclei": {
+          "hu": "Nucleus n. accessorii (C1–C5/6 gerincvelői szakasz)",
+          "sv": "Nucleus n. accessorii (ryggmärgssegment C1–C5/6)"
+        },
+        "brainstemOrigin": {
+          "hu": "Gerincvelő felső nyaki szakasza (radix spinalis)",
+          "sv": "Ryggmärgens övre cervikala del (radix spinalis)"
+        },
+        "skullExit": {
+          "hu": "Foramen jugulare",
+          "sv": "Foramen jugulare"
+        },
+        "function": {
+          "hu": "A fej forgatása és a váll emelése.",
+          "sv": "Rotation av huvudet och elevation av axeln."
+        },
+        "innervates": {
+          "hu": "M. sternocleidomastoideus, m. trapezius.",
+          "sv": "M. sternocleidomastoideus, m. trapezius."
+        },
+        "examination": {
+          "hu": "Vállvonogatás és fejforgatás ellenállással szemben.",
+          "sv": "Axelryckning och huvudrotation mot motstånd."
+        },
+        "lesion": {
+          "hu": "Lecsüngő váll, gyenge vállemelés, nehezített fejforgatás az ellenoldal felé; fizioterápiában fontos nyaki műtétek után.",
+          "sv": "Hängande axel, svag axelelevation, försvårad huvudrotation mot motsatt sida; viktigt inom fysioterapin efter halsoperationer."
+        }
+      },
+      "kiCourses": [
+        "1FY053",
+        "1FY056"
+      ],
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      },
+      "sources": [
+        "prototype-v0.3"
+      ]
+    },
+    {
+      "id": "cn.XII",
+      "number": "XII",
+      "modality": "motor",
+      "name": {
+        "la": "N. hypoglossus",
+        "hu": "Nyelv alatti ideg",
+        "sv": "Tungans nerv"
+      },
+      "fields": {
+        "nuclei": {
+          "hu": "Nucleus n. hypoglossi",
+          "sv": "Nucleus n. hypoglossi"
+        },
+        "brainstemOrigin": {
+          "hu": "Medulla oblongata (pyramis és oliva között)",
+          "sv": "Medulla oblongata (mellan pyramis och oliva)"
+        },
+        "skullExit": {
+          "hu": "Canalis n. hypoglossi",
+          "sv": "Canalis n. hypoglossi"
+        },
+        "function": {
+          "hu": "A nyelv mozgatása.",
+          "sv": "Rörelser av tungan."
+        },
+        "innervates": {
+          "hu": "A nyelv külső és belső izmai (a m. palatoglossus kivételével).",
+          "sv": "Tungans yttre och inre muskler (utom m. palatoglossus)."
+        },
+        "examination": {
+          "hu": "Nyelvöltés, oldalra mozgatás, nyelvizom-sorvadás és fasciculatio keresése.",
+          "sv": "Räcka ut tungan, röra den åt sidorna, leta efter atrofi och fascikulationer i tungmuskulaturen."
+        },
+        "lesion": {
+          "hu": "Nyelvöltéskor a nyelv a sérült oldal felé tér ki; sorvadás, fasciculatio.",
+          "sv": "När tungan räcks ut avviker den mot den skadade sidan; atrofi, fascikulationer."
+        }
+      },
+      "kiCourses": [
+        "1FY053",
+        "1FY056"
+      ],
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      },
+      "sources": [
+        "prototype-v0.3"
+      ]
+    }
+  ]
+}

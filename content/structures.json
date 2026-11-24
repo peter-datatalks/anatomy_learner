@@ -1,0 +1,805 @@
+{
+  "structures": [
+    {
+      "id": "m.deltoideus",
+      "type": "muscle",
+      "module": "vall",
+      "name": {
+        "la": "m. deltoideus",
+        "hu": "deltaizom",
+        "sv": "deltamuskeln"
+      },
+      "fields": {
+        "location": {
+          "hu": "A váll kerek kontúrját adó felszíni izom; három része van (pars clavicularis, acromialis, spinalis).",
+          "sv": "Ytlig muskel som ger axeln dess runda kontur; den har tre delar (pars clavicularis, acromialis, spinalis)."
+        },
+        "origin": {
+          "hu": "Clavicula laterális harmada (elülső rész), acromion (középső rész), spina scapulae (hátsó rész).",
+          "sv": "Laterala tredjedelen av clavicula (främre delen), acromion (mellersta delen), spina scapulae (bakre delen)."
+        },
+        "insertion": {
+          "hu": "Tuberositas deltoidea humeri.",
+          "sv": "Tuberositas deltoidea humeri."
+        },
+        "innervation": {
+          "hu": "N. axillaris (C5–C6), a plexus brachialis hátsó kötegéből.",
+          "sv": "N. axillaris (C5–C6), från plexus brachialis bakre sekundärsträng."
+        },
+        "bloodSupply": {
+          "hu": "A. circumflexa humeri posterior; a. thoracoacromialis ramus deltoideus.",
+          "sv": "A. circumflexa humeri posterior; a. thoracoacromialis ramus deltoideus."
+        },
+        "action": {
+          "hu": "Elülső rész: flexio, befelé forgatás. Középső rész: abductio (kb. 15°-tól). Hátsó rész: extensio, kifelé forgatás.",
+          "sv": "Främre delen: flexion, inåtrotation. Mellersta delen: abduktion (från ca 15°). Bakre delen: extension, utåtrotation."
+        },
+        "synergists": {
+          "hu": "Abductio: m. supraspinatus. Flexio: m. pectoralis major (pars clavicularis), m. biceps brachii.",
+          "sv": "Abduktion: m. supraspinatus. Flexion: m. pectoralis major (pars clavicularis), m. biceps brachii."
+        },
+        "antagonists": {
+          "hu": "Adductio: m. latissimus dorsi, m. pectoralis major, m. teres major.",
+          "sv": "Adduktion: m. latissimus dorsi, m. pectoralis major, m. teres major."
+        },
+        "joints": {
+          "hu": "Articulatio humeri.",
+          "sv": "Articulatio humeri."
+        },
+        "palpation": {
+          "hu": "Az acromion alatt, 90°-os abductióban ellenállással a középső rész jól kitapintható.",
+          "sv": "Nedanför acromion; i 90° abduktion mot motstånd är den mellersta delen lätt att palpera."
+        },
+        "clinicalTests": {
+          "hu": "MMT: abductio 90°-ban, ellenállás a könyök fölött (középső rész); flexio és extensio ugyanígy a többi részre.",
+          "sv": "MMT: abduktion i 90°, motstånd ovanför armbågen (mellersta delen); flexion och extension på samma sätt för de övriga delarna."
+        },
+        "clinicalRelevance": {
+          "hu": "Proximális humerustörés vagy vállficam után n. axillaris-sérülés: gyenge abductio, érzéskiesés a váll laterális oldalán (\"ezredjelvény\"-terület).",
+          "sv": "Skada på n. axillaris efter proximal humerusfraktur eller axelluxation: svag abduktion, känselbortfall på axelns laterala sida (\"regementsmärkesområdet\")."
+        }
+      },
+      "kiCourses": [
+        "1FY053",
+        "1FY055"
+      ],
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      },
+      "sources": [
+        "prototype-v0.3"
+      ]
+    },
+    {
+      "id": "m.supraspinatus",
+      "type": "muscle",
+      "module": "vall",
+      "name": {
+        "la": "m. supraspinatus",
+        "hu": "tövis feletti izom",
+        "sv": "övre skulderbladsmuskeln"
+      },
+      "fields": {
+        "location": {
+          "hu": "A rotátorköpeny felső tagja, az acromion alatt halad.",
+          "sv": "Rotatorkuffens övre muskel; den löper under acromion."
+        },
+        "origin": {
+          "hu": "Fossa supraspinata scapulae.",
+          "sv": "Fossa supraspinata scapulae."
+        },
+        "insertion": {
+          "hu": "Tuberculum majus humeri (felső facet).",
+          "sv": "Tuberculum majus humeri (övre facetten)."
+        },
+        "innervation": {
+          "hu": "N. suprascapularis (C5–C6).",
+          "sv": "N. suprascapularis (C5–C6)."
+        },
+        "bloodSupply": {
+          "hu": "A. suprascapularis.",
+          "sv": "A. suprascapularis."
+        },
+        "action": {
+          "hu": "Az abductio indítása (0–15°) és a humerusfej centrálása a cavitas glenoidalisban.",
+          "sv": "Initierar abduktionen (0–15°) och centrerar humerushuvudet i cavitas glenoidalis."
+        },
+        "synergists": {
+          "hu": "M. deltoideus (pars acromialis).",
+          "sv": "M. deltoideus (pars acromialis)."
+        },
+        "antagonists": {
+          "hu": "M. latissimus dorsi, m. pectoralis major.",
+          "sv": "M. latissimus dorsi, m. pectoralis major."
+        },
+        "joints": {
+          "hu": "Articulatio humeri.",
+          "sv": "Articulatio humeri."
+        },
+        "palpation": {
+          "hu": "A fossa supraspinatában, a m. trapezius alatt.",
+          "sv": "I fossa supraspinata, under m. trapezius."
+        },
+        "clinicalTests": {
+          "hu": "Jobe-teszt (\"empty can\"), drop arm teszt.",
+          "sv": "Jobes test (\"empty can\"), drop arm-test."
+        },
+        "clinicalRelevance": {
+          "hu": "Subacromialis impingement és rotátorköpeny-szakadás leggyakrabban érintett izma.",
+          "sv": "Den muskel som oftast drabbas vid subakromiell impingement och rotatorkuffruptur."
+        }
+      },
+      "kiCourses": [
+        "1FY053",
+        "1FY055"
+      ],
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      },
+      "sources": [
+        "prototype-v0.3"
+      ]
+    },
+    {
+      "id": "m.infraspinatus",
+      "type": "muscle",
+      "module": "vall",
+      "name": {
+        "la": "m. infraspinatus",
+        "hu": "tövis alatti izom",
+        "sv": "nedre skulderbladsmuskeln"
+      },
+      "fields": {
+        "location": {
+          "hu": "A rotátorköpeny hátsó tagja.",
+          "sv": "Rotatorkuffens bakre muskel."
+        },
+        "origin": {
+          "hu": "Fossa infraspinata scapulae.",
+          "sv": "Fossa infraspinata scapulae."
+        },
+        "insertion": {
+          "hu": "Tuberculum majus humeri (középső facet).",
+          "sv": "Tuberculum majus humeri (mellersta facetten)."
+        },
+        "innervation": {
+          "hu": "N. suprascapularis (C5–C6).",
+          "sv": "N. suprascapularis (C5–C6)."
+        },
+        "bloodSupply": {
+          "hu": "A. suprascapularis, a. circumflexa scapulae.",
+          "sv": "A. suprascapularis, a. circumflexa scapulae."
+        },
+        "action": {
+          "hu": "A humerus kifelé forgatása; a humerusfej hátsó stabilizálása.",
+          "sv": "Utåtrotation av humerus; bakre stabilisering av humerushuvudet."
+        },
+        "synergists": {
+          "hu": "M. teres minor, m. deltoideus (pars spinalis).",
+          "sv": "M. teres minor, m. deltoideus (pars spinalis)."
+        },
+        "antagonists": {
+          "hu": "M. subscapularis, m. pectoralis major, m. latissimus dorsi.",
+          "sv": "M. subscapularis, m. pectoralis major, m. latissimus dorsi."
+        },
+        "joints": {
+          "hu": "Articulatio humeri.",
+          "sv": "Articulatio humeri."
+        },
+        "palpation": {
+          "hu": "A spina scapulae alatt, kifelé forgatás közben.",
+          "sv": "Nedanför spina scapulae, under utåtrotation."
+        },
+        "clinicalTests": {
+          "hu": "Ellenállással végzett kifelé forgatás 0° abductióban; external rotation lag sign.",
+          "sv": "Utåtrotation mot motstånd i 0° abduktion; external rotation lag sign."
+        },
+        "clinicalRelevance": {
+          "hu": "Overhead sportolóknál túlterhelés; n. suprascapularis kompresszió (incisura spinoglenoidalis) izolált gyengeséget okozhat.",
+          "sv": "Överbelastning hos idrottare med överhuvudrörelser; kompression av n. suprascapularis (incisura spinoglenoidalis) kan ge isolerad svaghet."
+        }
+      },
+      "kiCourses": [
+        "1FY053",
+        "1FY055"
+      ],
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      },
+      "sources": [
+        "prototype-v0.3"
+      ]
+    },
+    {
+      "id": "m.teres-minor",
+      "type": "muscle",
+      "module": "vall",
+      "name": {
+        "la": "m. teres minor",
+        "hu": "kis görgetegizom",
+        "sv": "lilla rundmuskeln"
+      },
+      "fields": {
+        "location": {
+          "hu": "A rotátorköpeny hátsó-alsó tagja.",
+          "sv": "Rotatorkuffens bakre-nedre muskel."
+        },
+        "origin": {
+          "hu": "Margo lateralis scapulae.",
+          "sv": "Margo lateralis scapulae."
+        },
+        "insertion": {
+          "hu": "Tuberculum majus humeri (alsó facet).",
+          "sv": "Tuberculum majus humeri (nedre facetten)."
+        },
+        "innervation": {
+          "hu": "N. axillaris (C5–C6).",
+          "sv": "N. axillaris (C5–C6)."
+        },
+        "bloodSupply": {
+          "hu": "A. circumflexa scapulae.",
+          "sv": "A. circumflexa scapulae."
+        },
+        "action": {
+          "hu": "A humerus kifelé forgatása, gyenge adductio.",
+          "sv": "Utåtrotation av humerus, svag adduktion."
+        },
+        "synergists": {
+          "hu": "M. infraspinatus.",
+          "sv": "M. infraspinatus."
+        },
+        "antagonists": {
+          "hu": "M. subscapularis.",
+          "sv": "M. subscapularis."
+        },
+        "joints": {
+          "hu": "Articulatio humeri.",
+          "sv": "Articulatio humeri."
+        },
+        "palpation": {
+          "hu": "A lapocka laterális szélén, a m. infraspinatus alatt.",
+          "sv": "Vid skulderbladets laterala kant, nedanför m. infraspinatus."
+        },
+        "clinicalTests": {
+          "hu": "Hornblower-jel (kifelé forgatás 90° abductióban).",
+          "sv": "Hornblowers tecken (utåtrotation i 90° abduktion)."
+        },
+        "clinicalRelevance": {
+          "hu": "N. axillaris-sérülésnél a deltaizommal együtt gyengül.",
+          "sv": "Vid skada på n. axillaris försvagas den tillsammans med deltamuskeln."
+        }
+      },
+      "kiCourses": [
+        "1FY053",
+        "1FY055"
+      ],
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      },
+      "sources": [
+        "prototype-v0.3"
+      ]
+    },
+    {
+      "id": "m.subscapularis",
+      "type": "muscle",
+      "module": "vall",
+      "name": {
+        "la": "m. subscapularis",
+        "hu": "lapocka alatti izom",
+        "sv": "subskapulära muskeln"
+      },
+      "fields": {
+        "location": {
+          "hu": "A rotátorköpeny elülső tagja, a lapocka bordák felé néző felszínén.",
+          "sv": "Rotatorkuffens främre muskel, på skulderbladets mot revbenen vända yta."
+        },
+        "origin": {
+          "hu": "Fossa subscapularis.",
+          "sv": "Fossa subscapularis."
+        },
+        "insertion": {
+          "hu": "Tuberculum minus humeri.",
+          "sv": "Tuberculum minus humeri."
+        },
+        "innervation": {
+          "hu": "Nn. subscapulares superior et inferior (C5–C7).",
+          "sv": "Nn. subscapulares superior et inferior (C5–C7)."
+        },
+        "bloodSupply": {
+          "hu": "A. subscapularis.",
+          "sv": "A. subscapularis."
+        },
+        "action": {
+          "hu": "A humerus befelé forgatása; elülső stabilizálás.",
+          "sv": "Inåtrotation av humerus; främre stabilisering."
+        },
+        "synergists": {
+          "hu": "M. pectoralis major, m. latissimus dorsi, m. teres major.",
+          "sv": "M. pectoralis major, m. latissimus dorsi, m. teres major."
+        },
+        "antagonists": {
+          "hu": "M. infraspinatus, m. teres minor.",
+          "sv": "M. infraspinatus, m. teres minor."
+        },
+        "joints": {
+          "hu": "Articulatio humeri.",
+          "sv": "Articulatio humeri."
+        },
+        "palpation": {
+          "hu": "Csak részlegesen, a hónaljárok hátsó falán.",
+          "sv": "Endast delvis, i axillens bakre vägg."
+        },
+        "clinicalTests": {
+          "hu": "Lift-off teszt (Gerber), belly press teszt.",
+          "sv": "Lift-off-test (Gerber), belly press-test."
+        },
+        "clinicalRelevance": {
+          "hu": "Elülső vállficam után sérülhet; gyengesége elülső instabilitást fokoz.",
+          "sv": "Kan skadas efter främre axelluxation; svaghet i muskeln ökar den främre instabiliteten."
+        }
+      },
+      "kiCourses": [
+        "1FY053",
+        "1FY055"
+      ],
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      },
+      "sources": [
+        "prototype-v0.3"
+      ]
+    },
+    {
+      "id": "m.serratus-anterior",
+      "type": "muscle",
+      "module": "vall",
+      "name": {
+        "la": "m. serratus anterior",
+        "hu": "elülső fűrészizom",
+        "sv": "främre sågmuskeln"
+      },
+      "fields": {
+        "location": {
+          "hu": "A mellkas oldalfalán, a lapocka és a bordák között.",
+          "sv": "På bröstkorgens sidovägg, mellan skulderbladet och revbenen."
+        },
+        "origin": {
+          "hu": "Az 1–8(9). borda külső felszíne.",
+          "sv": "Yttre ytan av revben 1–8(9)."
+        },
+        "insertion": {
+          "hu": "Margo medialis scapulae (elülső felszín), angulus inferior.",
+          "sv": "Margo medialis scapulae (främre ytan), angulus inferior."
+        },
+        "innervation": {
+          "hu": "N. thoracicus longus (C5–C7).",
+          "sv": "N. thoracicus longus (C5–C7)."
+        },
+        "bloodSupply": {
+          "hu": "A. thoracica lateralis, a. thoracodorsalis.",
+          "sv": "A. thoracica lateralis, a. thoracodorsalis."
+        },
+        "action": {
+          "hu": "A lapocka protractiója és felfelé forgatása; a lapocka mellkasfalhoz rögzítése.",
+          "sv": "Protraktion och uppåtrotation av skulderbladet; fixerar skulderbladet mot bröstkorgsväggen."
+        },
+        "synergists": {
+          "hu": "M. trapezius (felső és alsó rész) a felfelé forgatásban.",
+          "sv": "M. trapezius (övre och nedre delen) vid uppåtrotationen."
+        },
+        "antagonists": {
+          "hu": "Mm. rhomboidei, m. levator scapulae.",
+          "sv": "Mm. rhomboidei, m. levator scapulae."
+        },
+        "joints": {
+          "hu": "Scapulothoracalis \"ízület\".",
+          "sv": "Skapulotorakal \"led\"."
+        },
+        "palpation": {
+          "hu": "A mellkas oldalfalán, a m. latissimus dorsi előtt.",
+          "sv": "På bröstkorgens sidovägg, framför m. latissimus dorsi."
+        },
+        "clinicalTests": {
+          "hu": "Fali támaszban végzett fekvőtámasz: a lapocka mediális széle elemelkedik?",
+          "sv": "Armhävning mot vägg: lyfter skulderbladets mediala kant?"
+        },
+        "clinicalRelevance": {
+          "hu": "N. thoracicus longus-sérülés: scapula alata (mediális szárnyas lapocka), nehezített elevatio.",
+          "sv": "Skada på n. thoracicus longus: scapula alata (medialt utstående skulderblad), försvårad elevation."
+        }
+      },
+      "kiCourses": [
+        "1FY053",
+        "1FY055"
+      ],
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      },
+      "sources": [
+        "prototype-v0.3"
+      ]
+    },
+    {
+      "id": "art.humeri",
+      "type": "joint",
+      "module": "vall",
+      "name": {
+        "la": "articulatio humeri",
+        "hu": "vállízület",
+        "sv": "axelled"
+      },
+      "fields": {
+        "bones": {
+          "hu": "Caput humeri és cavitas glenoidalis scapulae.",
+          "sv": "Caput humeri och cavitas glenoidalis scapulae."
+        },
+        "jointType": {
+          "hu": "Szabad gömbízület (articulatio spheroidea), 3 szabadsági fok.",
+          "sv": "Fri kulled (articulatio spheroidea), 3 frihetsgrader."
+        },
+        "capsule": {
+          "hu": "Laza, tág tok; alul redőt (recessus axillaris) képez.",
+          "sv": "Slapp, vid kapsel; bildar nedtill ett veck (recessus axillaris)."
+        },
+        "ligaments": {
+          "hu": "Ligg. glenohumeralia (superius, medium, inferius), lig. coracohumerale, lig. transversum humeri; labrum glenoidale mélyíti a vápát.",
+          "sv": "Ligg. glenohumeralia (superius, medium, inferius), lig. coracohumerale, lig. transversum humeri; labrum glenoidale fördjupar ledpannan."
+        },
+        "stabilizers": {
+          "hu": "Dinamikus: rotátorköpeny, m. biceps brachii hosszú feje. Statikus: tok, szalagok, labrum, negatív intraartikuláris nyomás.",
+          "sv": "Dynamisk: rotatorkuffen, långa huvudet av m. biceps brachii. Statisk: kapsel, ligament, labrum, negativt intraartikulärt tryck."
+        },
+        "movements": {
+          "hu": "Flexio–extensio, abductio–adductio, befelé és kifelé forgatás, horizontális abductio–adductio, circumductio.",
+          "sv": "Flexion–extension, abduktion–adduktion, inåt- och utåtrotation, horisontell abduktion–adduktion, cirkumduktion."
+        },
+        "muscles": {
+          "hu": "Rotátorköpeny, m. deltoideus, m. pectoralis major, m. latissimus dorsi, m. teres major, m. biceps brachii, m. coracobrachialis.",
+          "sv": "Rotatorkuffen, m. deltoideus, m. pectoralis major, m. latissimus dorsi, m. teres major, m. biceps brachii, m. coracobrachialis."
+        },
+        "innervation": {
+          "hu": "N. axillaris, n. suprascapularis, n. musculocutaneus ízületi ágai.",
+          "sv": "Ledgrenar från n. axillaris, n. suprascapularis och n. musculocutaneus."
+        },
+        "function": {
+          "hu": "A felső végtag nagy mozgásterjedelmű pozicionálása. Elevációban a scapulohumeralis ritmus kb. 2:1 (glenohumerális : scapulothoracalis).",
+          "sv": "Positionering av den övre extremiteten med stort rörelseomfång. Vid elevation är den skapulohumerala rytmen ca 2:1 (glenohumeral : skapulotorakal)."
+        },
+        "examination": {
+          "hu": "Aktív és passzív ROM goniométerrel, kapszuláris mintázat, stabilitási tesztek (apprehension), impingement-tesztek (Hawkins–Kennedy, Neer).",
+          "sv": "Aktivt och passivt ROM med goniometer, kapselmönster, stabilitetstester (apprehension), impingementtester (Hawkins–Kennedy, Neer)."
+        },
+        "compensations": {
+          "hu": "Abductióban a váll felhúzása (m. trapezius felső rész), a törzs oldalra döntése, lapocka-diszkinézis.",
+          "sv": "Vid abduktion: uppdragning av axeln (övre delen av m. trapezius), lateralflexion av bålen, skapulär dyskinesi."
+        },
+        "clinicalRelevance": {
+          "hu": "Az elülső-alsó ficam a leggyakoribb. Fagyott váll (adhezív capsulitis) kapszuláris mintázata: kifelé forgatás > abductio > befelé forgatás.",
+          "sv": "Främre-nedre luxation är vanligast. Kapselmönstret vid frozen shoulder (adhesiv kapsulit): utåtrotation > abduktion > inåtrotation."
+        }
+      },
+      "rom": [
+        {
+          "movement": {
+            "hu": "Flexio",
+            "sv": "Flexion"
+          },
+          "degrees": 180
+        },
+        {
+          "movement": {
+            "hu": "Extensio",
+            "sv": "Extension"
+          },
+          "degrees": 60
+        },
+        {
+          "movement": {
+            "hu": "Abductio",
+            "sv": "Abduktion"
+          },
+          "degrees": 180
+        },
+        {
+          "movement": {
+            "hu": "Befelé forg.",
+            "sv": "Inåtrotation"
+          },
+          "degrees": 70
+        },
+        {
+          "movement": {
+            "hu": "Kifelé forg.",
+            "sv": "Utåtrotation"
+          },
+          "degrees": 90
+        }
+      ],
+      "kiCourses": [
+        "1FY053",
+        "1FY055"
+      ],
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      },
+      "sources": [
+        "prototype-v0.3"
+      ]
+    },
+    {
+      "id": "n.axillaris",
+      "type": "nerve",
+      "module": "vall",
+      "name": {
+        "la": "n. axillaris",
+        "hu": "hónaljideg",
+        "sv": "axillarisnerven"
+      },
+      "fields": {
+        "origin": {
+          "hu": "Plexus brachialis, fasciculus posterior; C5–C6 gyökök.",
+          "sv": "Plexus brachialis, fasciculus posterior (bakre sekundärsträngen); nervrötterna C5–C6."
+        },
+        "course": {
+          "hu": "A hónaljból a laterális hónaljrésen (spatium quadrangulare) át, az a. circumflexa humeri posteriorral együtt, a collum chirurgicum humeri körül.",
+          "sv": "Från axillen genom den laterala axillarluckan (spatium quadrangulare), tillsammans med a. circumflexa humeri posterior, runt collum chirurgicum humeri."
+        },
+        "motor": {
+          "hu": "M. deltoideus, m. teres minor.",
+          "sv": "M. deltoideus, m. teres minor."
+        },
+        "sensory": {
+          "hu": "N. cutaneus brachii lateralis superior: a váll laterális bőrfelszíne.",
+          "sv": "N. cutaneus brachii lateralis superior: huden på axelns laterala sida."
+        },
+        "examination": {
+          "hu": "Abductio-erő, kifelé forgatás, érzésvizsgálat a deltaizom felett.",
+          "sv": "Abduktionsstyrka, utåtrotation, känselundersökning över deltamuskeln."
+        },
+        "injurySites": {
+          "hu": "Collum chirurgicum-törés, elülső vállficam, mankó okozta nyomás.",
+          "sv": "Fraktur på collum chirurgicum, främre axelluxation, tryck från krycka."
+        },
+        "deficits": {
+          "hu": "Gyenge abductio 15° felett, deltaizom-sorvadás (szögletes váll), érzéskiesés a váll laterális oldalán.",
+          "sv": "Svag abduktion över 15°, atrofi av deltamuskeln (kantig axel), känselbortfall på axelns laterala sida."
+        }
+      },
+      "kiCourses": [
+        "1FY053",
+        "1FY055"
+      ],
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      },
+      "sources": [
+        "prototype-v0.3"
+      ]
+    },
+    {
+      "id": "n.musculocutaneus",
+      "type": "nerve",
+      "module": "plexus",
+      "name": {
+        "la": "n. musculocutaneus",
+        "hu": "izom-bőrideg",
+        "sv": "muskulokutana nerven"
+      },
+      "fields": {
+        "origin": {
+          "hu": "Fasciculus lateralis; C5–C7 gyökök.",
+          "sv": "Fasciculus lateralis (laterala sekundärsträngen); nervrötterna C5–C7."
+        },
+        "course": {
+          "hu": "Átfúrja a m. coracobrachialist, majd a m. biceps brachii és a m. brachialis között halad. A könyök felett bőrágként folytatódik (n. cutaneus antebrachii lateralis).",
+          "sv": "Penetrerar m. coracobrachialis och löper sedan mellan m. biceps brachii och m. brachialis. Ovanför armbågen fortsätter den som hudgren (n. cutaneus antebrachii lateralis)."
+        },
+        "motor": {
+          "hu": "M. coracobrachialis, m. biceps brachii, m. brachialis.",
+          "sv": "M. coracobrachialis, m. biceps brachii, m. brachialis."
+        },
+        "sensory": {
+          "hu": "Az alkar laterális oldalának bőre.",
+          "sv": "Huden på underarmens laterala sida."
+        },
+        "examination": {
+          "hu": "Könyökflexio supinatióban, supinatio-erő, biceps-reflex (C5–C6), érzés az alkar laterális oldalán.",
+          "sv": "Armbågsflexion i supination, supinationsstyrka, bicepsreflex (C5–C6), känsel på underarmens laterala sida."
+        },
+        "injurySites": {
+          "hu": "Izoláltan ritka: vállficam, nehéz teher emelése, a m. coracobrachialisban való beszorulás.",
+          "sv": "Isolerad skada är ovanlig: axelluxation, tunga lyft, inklämning i m. coracobrachialis."
+        },
+        "deficits": {
+          "hu": "Gyenge könyökflexio és supinatio, csökkent biceps-reflex, érzéskiesés az alkar laterális oldalán.",
+          "sv": "Svag armbågsflexion och supination, nedsatt bicepsreflex, känselbortfall på underarmens laterala sida."
+        }
+      },
+      "kiCourses": [
+        "1FY053",
+        "1FY056"
+      ],
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      },
+      "sources": [
+        "prototype-v0.3"
+      ]
+    },
+    {
+      "id": "n.medianus",
+      "type": "nerve",
+      "module": "plexus",
+      "name": {
+        "la": "n. medianus",
+        "hu": "középideg",
+        "sv": "medianusnerven"
+      },
+      "fields": {
+        "origin": {
+          "hu": "Két gyökkel ered: a fasciculus lateralisból és medialisból; C6–T1 gyökök.",
+          "sv": "Utgår med två rötter: från fasciculus lateralis och fasciculus medialis; nervrötterna C6–T1."
+        },
+        "course": {
+          "hu": "A felkaron az a. brachialisszal együtt halad, a könyökhajlatban mediálisan. Átfut a m. pronator teres két feje között, majd a m. flexor digitorum superficialis és profundus között. A canalis carpin át jut a tenyérbe.",
+          "sv": "I överarmen löper den tillsammans med a. brachialis, i armbågsvecket medialt. Den passerar mellan de två huvudena av m. pronator teres och sedan mellan m. flexor digitorum superficialis och profundus. Genom canalis carpi når den handflatan."
+        },
+        "motor": {
+          "hu": "Az alkarhajlítók nagy része (m. pronator teres, m. flexor carpi radialis, m. flexor digitorum superficialis, a n. interosseus anterioron át a m. flexor pollicis longus és a m. flexor digitorum profundus laterális fele). A kézen: thenar-izmok és az 1–2. mm. lumbricales.",
+          "sv": "Större delen av underarmens flexorer (m. pronator teres, m. flexor carpi radialis, m. flexor digitorum superficialis, via n. interosseus anterior m. flexor pollicis longus och laterala halvan av m. flexor digitorum profundus). I handen: thenarmusklerna och mm. lumbricales 1–2."
+        },
+        "sensory": {
+          "hu": "Tenyéri oldalon a hüvelyk-, mutató-, középső ujj és a gyűrűsujj radiális fele.",
+          "sv": "Volart tummen, pek- och långfingret samt radiala halvan av ringfingret."
+        },
+        "examination": {
+          "hu": "Hüvelykujj-abductio (m. abductor pollicis brevis), \"OK\"-jel (n. interosseus anterior), Phalen-teszt, Tinel-jel a canalis carpi felett, kétpont-diszkrimináció.",
+          "sv": "Tumabduktion (m. abductor pollicis brevis), \"OK\"-tecken (n. interosseus anterior), Phalens test, Tinels tecken över canalis carpi, tvåpunktsdiskrimination."
+        },
+        "injurySites": {
+          "hu": "Kéztőalagút-szindróma (a leggyakoribb), supracondylaris humerustörés gyermekkorban, csuklótáji vágott sérülés.",
+          "sv": "Karpaltunnelsyndrom (vanligast), suprakondylär humerusfraktur hos barn, skärskada i handledsregionen."
+        },
+        "deficits": {
+          "hu": "Kéztőalagút: éjszakai zsibbadás az 1–3½. ujjban, thenar-sorvadás, gyenge oppositio. Proximális lézió: ökölbe szorításkor a mutató- és a középső ujj (2–3.) nyújtva marad (\"eskü-kéz\").",
+          "sv": "Karpaltunnelsyndrom: nattliga domningar i fingrarna 1–3½, thenaratrofi, svag opposition. Proximal lesion: vid knytnäve förblir pek- och långfingret (2–3) extenderade (\"edshand\")."
+        }
+      },
+      "kiCourses": [
+        "1FY053",
+        "1FY056"
+      ],
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      },
+      "sources": [
+        "prototype-v0.3"
+      ]
+    },
+    {
+      "id": "n.ulnaris",
+      "type": "nerve",
+      "module": "plexus",
+      "name": {
+        "la": "n. ulnaris",
+        "hu": "singideg",
+        "sv": "ulnarisnerven"
+      },
+      "fields": {
+        "origin": {
+          "hu": "Fasciculus medialis; C8–T1 gyökök (C7 változó).",
+          "sv": "Fasciculus medialis (mediala sekundärsträngen); nervrötterna C8–T1 (C7 varierar)."
+        },
+        "course": {
+          "hu": "A felkar mediális oldalán, majd az epicondylus medialis mögött (sulcus n. ulnaris, \"könyökcsont-ideg\") halad. A m. flexor carpi ulnaris két feje között jut az alkarra, a csuklón a Guyon-csatornán át a kézbe.",
+          "sv": "Längs överarmens mediala sida och sedan bakom epicondylus medialis (sulcus n. ulnaris, \"änkestöten\"). Den når underarmen mellan de två huvudena av m. flexor carpi ulnaris och vid handleden går den genom Guyons kanal in i handen."
+        },
+        "motor": {
+          "hu": "M. flexor carpi ulnaris, a m. flexor digitorum profundus mediális fele, a kéz kisizmainak többsége: hypothenar, mm. interossei, 3–4. mm. lumbricales, m. adductor pollicis.",
+          "sv": "M. flexor carpi ulnaris, mediala halvan av m. flexor digitorum profundus, flertalet av handens inre muskler: hypothenar, mm. interossei, mm. lumbricales 3–4, m. adductor pollicis."
+        },
+        "sensory": {
+          "hu": "A kisujj és a gyűrűsujj ulnaris fele, tenyéri és háti oldalon.",
+          "sv": "Lillfingret och ulnara halvan av ringfingret, volart och dorsalt."
+        },
+        "examination": {
+          "hu": "Froment-jel (m. adductor pollicis), ujjterpesztés és -zárás ellenállással, Tinel-jel a könyöknél, könyökflexiós provokációs teszt.",
+          "sv": "Froments tecken (m. adductor pollicis), spretning och samling av fingrarna mot motstånd, Tinels tecken vid armbågen, provokationstest med armbågsflexion."
+        },
+        "injurySites": {
+          "hu": "Cubitalis alagút-szindróma, epicondylus medialis-törés, Guyon-csatorna (pl. kerékpárosoknál).",
+          "sv": "Kubitaltunnelsyndrom, fraktur på epicondylus medialis, Guyons kanal (t.ex. hos cyklister)."
+        },
+        "deficits": {
+          "hu": "Karomállás a 4–5. ujjon, interosseus-sorvadás a kézháton, pozitív Froment-jel, érzéskiesés a kisujjon.",
+          "sv": "Klohand i fingrarna 4–5, interosseusatrofi på handryggen, positivt Froments tecken, känselbortfall i lillfingret."
+        }
+      },
+      "kiCourses": [
+        "1FY053",
+        "1FY056"
+      ],
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      },
+      "sources": [
+        "prototype-v0.3"
+      ]
+    },
+    {
+      "id": "n.radialis",
+      "type": "nerve",
+      "module": "plexus",
+      "name": {
+        "la": "n. radialis",
+        "hu": "orsóideg",
+        "sv": "radialisnerven"
+      },
+      "fields": {
+        "origin": {
+          "hu": "Fasciculus posterior; C5–T1 gyökök.",
+          "sv": "Fasciculus posterior (bakre sekundärsträngen); nervrötterna C5–T1."
+        },
+        "course": {
+          "hu": "A humerus hátsó felszínén, a sulcus n. radialisban halad az a. profunda brachiival. Átfúrja a laterális intermuscularis septumot, a könyök előtt felszíni (érző) és mély ágra oszlik. A mély ág (n. interosseus posterior) a m. supinatoron át fut.",
+          "sv": "Löper på humerus baksida i sulcus n. radialis tillsammans med a. profunda brachii. Den penetrerar det laterala intermuskulära septumet och delar sig framför armbågen i en ytlig (sensorisk) och en djup gren. Den djupa grenen (n. interosseus posterior) löper genom m. supinator."
+        },
+        "motor": {
+          "hu": "M. triceps brachii, m. anconeus, m. brachioradialis, mm. extensores carpi radiales, m. supinator és az összes alkarfeszítő.",
+          "sv": "M. triceps brachii, m. anconeus, m. brachioradialis, mm. extensores carpi radiales, m. supinator och samtliga underarmsextensorer."
+        },
+        "sensory": {
+          "hu": "A felkar és az alkar hátsó oldala, a kézhát radiális része (első interdigitalis rés).",
+          "sv": "Överarmens och underarmens baksida, radiala delen av handryggen (första interdigitalrummet)."
+        },
+        "examination": {
+          "hu": "Csukló- és ujjextensio, triceps-reflex (C7), brachioradialis-reflex (C6), érzés az első interdigitalis résben.",
+          "sv": "Handleds- och fingerextension, tricepsreflex (C7), brachioradialisreflex (C6), känsel i första interdigitalrummet."
+        },
+        "injurySites": {
+          "hu": "Humerusszár-törés, hónaljnyomás (mankó, \"szombat esti bénulás\"), a m. supinatorban való beszorulás.",
+          "sv": "Humerusskaftfraktur, tryck i axillen (krycka, \"lördagskvällsförlamning\"), inklämning i m. supinator."
+        },
+        "deficits": {
+          "hu": "Csuklóejtés (wrist drop), gyenge ujjextensio. Humerusszár-sérülésnél a triceps általában megkímélt, mert ágai magasabban erednek.",
+          "sv": "Dropphand (wrist drop), svag fingerextension. Vid skada på humerusskaftet är triceps oftast skonad, eftersom dess grenar avgår högre upp."
+        }
+      },
+      "kiCourses": [
+        "1FY053",
+        "1FY056"
+      ],
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      },
+      "sources": [
+        "prototype-v0.3"
+      ]
+    }
+  ]
+}

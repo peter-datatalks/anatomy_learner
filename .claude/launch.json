@@ -1,0 +1,6 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    { "name": "anatomia360", "runtimeExecutable": "python3", "runtimeArgs": ["tools/build.py", "--serve"], "port": 8000 }
+  ]
+}

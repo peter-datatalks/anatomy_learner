@@ -1,0 +1,276 @@
+{
+  "modules": [
+    {
+      "id": "vall",
+      "title": {
+        "hu": "Vállöv és vállízület",
+        "sv": "Skuldergördel och axelled"
+      },
+      "latin": "cingulum pectorale",
+      "termName": {
+        "hu": "vállöv",
+        "sv": "skuldergördel",
+        "la": "cingulum pectorale"
+      },
+      "kiCourses": [
+        "1FY053",
+        "1FY055"
+      ],
+      "lessons": {
+        "basic": {
+          "hu": "<p>A váll a felső végtagot a törzshöz kapcsolja. Két csont alkotja a vállövet: a <span class=\"la\">clavicula</span> (kulcscsont) és a <span class=\"la\">scapula</span> (lapocka). A felkarcsont (<span class=\"la\">humerus</span>) feje a lapocka sekély ízületi vápájában mozog.</p>\n<ul><li>A vállízület a test legmozgékonyabb ízülete, ezért stabilitását főleg izmok adják.</li><li>A négy rotátorköpeny-izom (supraspinatus, infraspinatus, teres minor, subscapularis) \"mandzsettaként\" tartja a vápában a humerusfejet.</li><li>A deltaizom adja a váll kerek formáját, és ez a fő emelőizom.</li></ul>",
+          "sv": "<p>Axeln förbinder den övre extremiteten med bålen. Skuldergördeln består av två ben: <span class=\"la\">clavicula</span> (nyckelbenet) och <span class=\"la\">scapula</span> (skulderbladet). Överarmsbenets (<span class=\"la\">humerus</span>) huvud rör sig i skulderbladets grunda ledpanna.</p>\n<ul><li>Axelleden är kroppens mest rörliga led, och därför ges dess stabilitet främst av muskler.</li><li>De fyra rotatorkuffmusklerna (supraspinatus, infraspinatus, teres minor, subscapularis) håller humerushuvudet i ledpannan som en \"manschett\".</li><li>Deltamuskeln ger axeln dess runda form och är den viktigaste lyftmuskeln.</li></ul>"
+        },
+        "university": {
+          "hu": "<p>A vállkomplexum négy ízületből áll: <span class=\"la\">articulatio glenohumeralis</span>, <span class=\"la\">acromioclavicularis</span>, <span class=\"la\">sternoclavicularis</span> és a funkcionális scapulothoracalis kapcsolat. Az elevációt ezek összehangolt mozgása adja (scapulohumeralis ritmus, kb. 2:1).</p>\n<ul><li>A rotátorköpeny izmai erőpárt alkotnak a deltaizommal: a deltaizom felfelé, a köpeny lefelé és befelé húzza a humerusfejet, így az a vápában forog, nem csúszik.</li><li>A rotátorköpeny beidegzése C5–C6 dominanciájú: n. suprascapularis, n. axillaris, nn. subscapulares.</li><li>A m. serratus anterior és a m. trapezius erőpárja forgatja felfelé a lapockát; ez szükséges a 90° feletti elevációhoz.</li></ul>",
+          "sv": "<p>Axelkomplexet består av fyra leder: <span class=\"la\">articulatio glenohumeralis</span>, <span class=\"la\">acromioclavicularis</span>, <span class=\"la\">sternoclavicularis</span> och den funktionella skapulotorakala förbindelsen. Elevationen uppstår genom deras samordnade rörelse (skapulohumeral rytm, ca 2:1).</p>\n<ul><li>Rotatorkuffens muskler bildar ett kraftpar med deltamuskeln: deltamuskeln drar humerushuvudet uppåt, kuffen nedåt och inåt, så att huvudet roterar i ledpannan i stället för att glida.</li><li>Rotatorkuffens innervation är C5–C6-dominerad: n. suprascapularis, n. axillaris, nn. subscapulares.</li><li>Kraftparet m. serratus anterior och m. trapezius roterar skulderbladet uppåt; detta krävs för elevation över 90°.</li></ul>"
+        },
+        "clinical": {
+          "hu": "<p>Fizioterápiás szempontból a váll panaszai három csoportba sorolhatók: fájdalom és impingement, instabilitás, valamint mozgásbeszűkülés.</p>\n<ul><li><b>Subacromialis fájdalom:</b> Hawkins–Kennedy- és Neer-teszt, fájdalmas ív 60–120° között. Kezelés: terheléskontroll, lapockakontroll, progresszív erősítés.</li><li><b>Rotátorköpeny-szakadás:</b> Jobe-teszt, drop arm teszt, lag sign tesztek.</li><li><b>Adhezív capsulitis:</b> kapszuláris mintázat (kifelé forgatás &gt; abductio &gt; befelé forgatás).</li><li><b>Idegsérülések:</b> n. axillaris (gyenge abductio), n. thoracicus longus (scapula alata), n. accessorius (lecsüngő váll).</li></ul>\n<p class=\"note\">Oktatási célú összefoglaló; nem helyettesíti a szakmai irányelveket és az egyéni klinikai döntést.</p>",
+          "sv": "<p>Ur fysioterapeutiskt perspektiv kan axelbesvär delas in i tre grupper: smärta och impingement, instabilitet samt rörelseinskränkning.</p>\n<ul><li><b>Subakromiell smärta:</b> Hawkins–Kennedy- och Neer-test, smärtsam båge mellan 60° och 120°. Behandling: belastningskontroll, skulderbladskontroll, progressiv styrketräning.</li><li><b>Rotatorkuffruptur:</b> Jobes test, drop arm-test, lag sign-tester.</li><li><b>Adhesiv kapsulit:</b> kapselmönster (utåtrotation &gt; abduktion &gt; inåtrotation).</li><li><b>Nervskador:</b> n. axillaris (svag abduktion), n. thoracicus longus (scapula alata), n. accessorius (hängande axel).</li></ul>\n<p class=\"note\">Sammanfattning i utbildningssyfte; ersätter inte professionella riktlinjer eller individuella kliniska beslut.</p>"
+        }
+      },
+      "structures": [
+        "m.deltoideus",
+        "m.supraspinatus",
+        "m.infraspinatus",
+        "m.teres-minor",
+        "m.subscapularis",
+        "m.serratus-anterior",
+        "art.humeri",
+        "n.axillaris"
+      ],
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "plexus",
+      "title": {
+        "hu": "Plexus brachialis",
+        "sv": "Plexus brachialis · armplexus"
+      },
+      "latin": "plexus brachialis",
+      "termName": {
+        "hu": "karfonat",
+        "sv": "armplexus",
+        "la": "plexus brachialis"
+      },
+      "kiCourses": [
+        "1FY053",
+        "1FY056"
+      ],
+      "lessons": {
+        "basic": {
+          "hu": "<p>A <span class=\"la\">plexus brachialis</span> (karfonat) az az idegfonat, amely a teljes felső végtagot ellátja. A gerincvelő alsó nyaki és első háti szakaszából (C5–T1) kilépő gyökök a nyakon és a hónaljban többször szétválnak és újra egyesülnek, így végül öt nagy ideg indul a kar felé.</p>\n<ul><li>Felépítése öt szinten: gyökök → törzsek → osztódások → kötegek → végágak.</li><li>Az öt végág: <span class=\"la\">n. musculocutaneus, n. axillaris, n. radialis, n. medianus, n. ulnaris</span>.</li><li>A kötegeket az <span class=\"la\">a. axillaris</span>hoz viszonyított helyzetük alapján nevezzük el.</li></ul>",
+          "sv": "<p><span class=\"la\">Plexus brachialis</span> (armplexus) är den nervfläta som försörjer hela den övre extremiteten. Nervrötterna som lämnar ryggmärgens nedre cervikala och första torakala segment (C5–T1) delar sig och förenas upprepade gånger på halsen och i axillen, så att det till slut utgår fem stora nerver mot armen.</p>\n<ul><li>Uppbyggd i fem nivåer: rötter → primärsträngar → divisioner → sekundärsträngar → terminalgrenar.</li><li>De fem terminalgrenarna: <span class=\"la\">n. musculocutaneus, n. axillaris, n. radialis, n. medianus, n. ulnaris</span>.</li><li>Sekundärsträngarna namnges efter sitt läge i förhållande till <span class=\"la\">a. axillaris</span>.</li></ul>"
+        },
+        "university": {
+          "hu": "<p>A gyökök (<span class=\"la\">radices</span>) a m. scalenus anterior és medius között lépnek ki, és három törzzsé (<span class=\"la\">trunci</span>) egyesülnek. Minden törzs elülső és hátsó osztódásra (<span class=\"la\">divisiones</span>) válik a kulcscsont mögött. Az elülső osztódások adják a hajlítókat ellátó ideget, a hátsók a feszítőket ellátókat.</p>\n<ul><li><b>Fasciculus lateralis</b> (C5–C7): a felső és a középső törzs elülső osztódása → n. musculocutaneus, a n. medianus laterális gyöke.</li><li><b>Fasciculus medialis</b> (C8–T1): az alsó törzs elülső osztódása → n. ulnaris, a n. medianus mediális gyöke.</li><li><b>Fasciculus posterior</b> (C5–T1): mindhárom hátsó osztódás → n. axillaris, n. radialis.</li><li>Az \"M\" alakot a n. medianus két gyöke adja a n. musculocutaneus és a n. ulnaris között; ez boncoláskor tájékozódási pont.</li></ul>",
+          "sv": "<p>Rötterna (<span class=\"la\">radices</span>) kommer ut mellan m. scalenus anterior och medius och förenas till tre primärsträngar (<span class=\"la\">trunci</span>). Varje primärsträng delar sig bakom nyckelbenet i en främre och en bakre division (<span class=\"la\">divisiones</span>). De främre divisionerna ger nerverna till flexorerna, de bakre nerverna till extensorerna.</p>\n<ul><li><b>Fasciculus lateralis</b> (C5–C7): främre divisionerna från övre och mellersta primärsträngen → n. musculocutaneus, laterala roten till n. medianus.</li><li><b>Fasciculus medialis</b> (C8–T1): nedre primärsträngens främre division → n. ulnaris, mediala roten till n. medianus.</li><li><b>Fasciculus posterior</b> (C5–T1): alla tre bakre divisionerna → n. axillaris, n. radialis.</li><li>\"M\"-formen bildas av de två rötterna till n. medianus mellan n. musculocutaneus och n. ulnaris; den är ett orienteringsmärke vid dissektion.</li></ul>"
+        },
+        "clinical": {
+          "hu": "<p>A fizioterápiás vizsgálatban el kell különíteni a gyöki (radiculopathia), a plexus- és a perifériás idegsérülést. A dermatóma, a myotóma és a reflex együtt mutatja meg a lézió szintjét.</p>\n<ul><li><b>Gyöki lézió:</b> egy dermatóma és egy myotóma érintett, gyakran nyaki fájdalommal (pl. C6-radiculopathia: hüvelykujj-zsibbadás, gyenge csuklóextensio, csökkent brachioradialis-reflex).</li><li><b>Plexus-lézió:</b> több gyök vagy egy törzs területe érintett (Erb, Klumpke, thoracic outlet).</li><li><b>Perifériás ideg:</b> az ideg saját bőrterülete és izmai érintettek, a reflexek többnyire megtartottak (pl. kéztőalagút).</li></ul>\n<p class=\"note\">Oktatási célú összefoglaló; nem helyettesíti a szakmai irányelveket és az egyéni klinikai döntést.</p>",
+          "sv": "<p>Vid den fysioterapeutiska undersökningen måste man skilja mellan rotskada (radikulopati), plexusskada och perifer nervskada. Dermatom, myotom och reflex visar tillsammans lesionens nivå.</p>\n<ul><li><b>Rotlesion:</b> ett dermatom och ett myotom är påverkade, ofta med nacksmärta (t.ex. C6-radikulopati: domning i tummen, svag handledsextension, nedsatt brachioradialisreflex).</li><li><b>Plexuslesion:</b> flera rötters eller en primärsträngs område är påverkat (Erb, Klumpke, thoracic outlet).</li><li><b>Perifer nerv:</b> nervens eget hudområde och dess muskler är påverkade, reflexerna är oftast bevarade (t.ex. karpaltunnelsyndrom).</li></ul>\n<p class=\"note\">Sammanfattning i utbildningssyfte; ersätter inte professionella riktlinjer eller individuella kliniska beslut.</p>"
+        }
+      },
+      "structures": [
+        "n.musculocutaneus",
+        "n.axillaris",
+        "n.radialis",
+        "n.medianus",
+        "n.ulnaris"
+      ],
+      "lesions": [
+        {
+          "id": "erb",
+          "label": {
+            "hu": "Erb–Duchenne (C5–C6)",
+            "sv": "Erb–Duchenne (C5–C6)"
+          },
+          "roots": [
+            "C5",
+            "C6"
+          ],
+          "trunks": [
+            "sup"
+          ],
+          "text": {
+            "hu": "A truncus superior sérülése, többnyire a fej és a váll közötti szög erőltetett növelésekor (szülési sérülés, motoros baleset). Kiesik a deltoideus, a supraspinatus, az infraspinatus, a biceps és a brachialis. Jellegzetes \"pincér-borravaló\" tartás: a kar addukcióban és befelé forgatva lóg, a könyök nyújtott, az alkar borított. Érzéskiesés a váll és az alkar laterális oldalán; a biceps-reflex csökken.",
+            "sv": "Skada på truncus superior (övre primärsträngen), oftast vid forcerad ökning av vinkeln mellan huvud och axel (förlossningsskada, motorcykelolycka). Bortfall av deltoideus, supraspinatus, infraspinatus, biceps och brachialis. Karakteristisk \"servitörsdricks\"-hållning: armen hänger i adduktion och inåtrotation, armbågen är extenderad och underarmen pronerad. Känselbortfall på axelns och underarmens laterala sida; bicepsreflexen är nedsatt."
+          }
+        },
+        {
+          "id": "klumpke",
+          "label": {
+            "hu": "Klumpke (C8–T1)",
+            "sv": "Klumpke (C8–T1)"
+          },
+          "roots": [
+            "C8",
+            "T1"
+          ],
+          "trunks": [
+            "inf"
+          ],
+          "text": {
+            "hu": "A truncus inferior sérülése, például a kar erőltetett felfelé húzásakor, Pancoast-tumornál vagy nyaki bordánál (thoracic outlet). A kéz kisizmai gyengülnek: karomállás, gyenge ujjterpesztés és finommotorika. Érzéskiesés az alkar és a kéz ulnaris oldalán. Ha a T1 gyök avulsiója a szimpatikus rostokat is érinti, Horner-szindróma (ptosis, miosis) társul hozzá.",
+            "sv": "Skada på truncus inferior (nedre primärsträngen), t.ex. vid forcerad uppåtdragning av armen, vid Pancoasttumör eller halsrevben (thoracic outlet). Handens inre muskler försvagas: klohand, svag fingerspretning och nedsatt finmotorik. Känselbortfall på underarmens och handens ulnara sida. Om avulsionen av T1-roten även drabbar de sympatiska fibrerna tillkommer Horners syndrom (ptos, mios)."
+          }
+        }
+      ],
+      "rootExam": [
+        {
+          "root": "C5",
+          "dermatome": {
+            "hu": "A váll és a felkar laterális oldala",
+            "sv": "Axelns och överarmens laterala sida"
+          },
+          "myotome": {
+            "hu": "Vállabductio",
+            "sv": "Axelabduktion"
+          },
+          "reflex": {
+            "hu": "Biceps-reflex (C5–C6)",
+            "sv": "Bicepsreflex (C5–C6)"
+          }
+        },
+        {
+          "root": "C6",
+          "dermatome": {
+            "hu": "Az alkar laterális oldala, hüvelykujj",
+            "sv": "Underarmens laterala sida, tummen"
+          },
+          "myotome": {
+            "hu": "Könyökflexio, csuklóextensio",
+            "sv": "Armbågsflexion, handledsextension"
+          },
+          "reflex": {
+            "hu": "Brachioradialis-reflex",
+            "sv": "Brachioradialisreflex"
+          }
+        },
+        {
+          "root": "C7",
+          "dermatome": {
+            "hu": "Középső ujj",
+            "sv": "Långfingret"
+          },
+          "myotome": {
+            "hu": "Könyökextensio, csuklóflexio",
+            "sv": "Armbågsextension, handledsflexion"
+          },
+          "reflex": {
+            "hu": "Triceps-reflex",
+            "sv": "Tricepsreflex"
+          }
+        },
+        {
+          "root": "C8",
+          "dermatome": {
+            "hu": "Kisujj, a kéz ulnaris széle",
+            "sv": "Lillfingret, handens ulnara kant"
+          },
+          "myotome": {
+            "hu": "Ujjflexio, hüvelykujj-extensio",
+            "sv": "Fingerflexion, tumextension"
+          },
+          "reflex": {
+            "hu": "—",
+            "sv": "—"
+          }
+        },
+        {
+          "root": "T1",
+          "dermatome": {
+            "hu": "Az alkar mediális oldala",
+            "sv": "Underarmens mediala sida"
+          },
+          "myotome": {
+            "hu": "Ujjabductio (mm. interossei)",
+            "sv": "Fingerabduktion (mm. interossei)"
+          },
+          "reflex": {
+            "hu": "—",
+            "sv": "—"
+          }
+        }
+      ],
+      "proximalBranches": [
+        {
+          "origin": {
+            "hu": "Gyökök",
+            "sv": "Rötter"
+          },
+          "nerve": "n. dorsalis scapulae (C5)",
+          "area": {
+            "hu": "Mm. rhomboidei, m. levator scapulae",
+            "sv": "Mm. rhomboidei, m. levator scapulae"
+          }
+        },
+        {
+          "origin": {
+            "hu": "Gyökök",
+            "sv": "Rötter"
+          },
+          "nerve": "n. thoracicus longus (C5–C7)",
+          "area": {
+            "hu": "M. serratus anterior",
+            "sv": "M. serratus anterior"
+          }
+        },
+        {
+          "origin": {
+            "hu": "Truncus superior",
+            "sv": "Truncus superior"
+          },
+          "nerve": "n. suprascapularis (C5–C6)",
+          "area": {
+            "hu": "M. supraspinatus, m. infraspinatus",
+            "sv": "M. supraspinatus, m. infraspinatus"
+          }
+        },
+        {
+          "origin": {
+            "hu": "Fasciculus lateralis",
+            "sv": "Fasciculus lateralis"
+          },
+          "nerve": "n. pectoralis lateralis",
+          "area": {
+            "hu": "M. pectoralis major",
+            "sv": "M. pectoralis major"
+          }
+        },
+        {
+          "origin": {
+            "hu": "Fasciculus medialis",
+            "sv": "Fasciculus medialis"
+          },
+          "nerve": "n. pectoralis medialis; nn. cutanei brachii et antebrachii mediales",
+          "area": {
+            "hu": "M. pectoralis minor és major; a kar és az alkar mediális bőre",
+            "sv": "M. pectoralis minor och major; huden på armens och underarmens mediala sida"
+          }
+        },
+        {
+          "origin": {
+            "hu": "Fasciculus posterior",
+            "sv": "Fasciculus posterior"
+          },
+          "nerve": "nn. subscapulares; n. thoracodorsalis",
+          "area": {
+            "hu": "M. subscapularis, m. teres major; m. latissimus dorsi",
+            "sv": "M. subscapularis, m. teres major; m. latissimus dorsi"
+          }
+        }
+      ],
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    }
+  ]
+}

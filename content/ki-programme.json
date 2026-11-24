@@ -1,0 +1,439 @@
+{
+  "programme": "1FY26",
+  "firstIntake": "HT26",
+  "credits": 180,
+  "officialUrl": "https://utbildning.ki.se/bli-student/program-och-kurser/fysioterapeutprogrammet",
+  "note": {
+    "hu": "A kurzusnevek és kreditek a KI hivatalos adatai.",
+    "sv": "Kursnamn och högskolepoäng är KI:s officiella uppgifter."
+  },
+  "courses": [
+    {
+      "semester": 1,
+      "code": "1FY052",
+      "name": "Hälsa, vetenskap och profession inom fysioterapi",
+      "credits": 8.5,
+      "topicSource": "kursplan",
+      "topics": [
+        {
+          "hu": "Egészség és etika",
+          "sv": "Hälsa och etik"
+        },
+        {
+          "hu": "Tudományfilozófia",
+          "sv": "Vetenskapsfilosofi"
+        },
+        {
+          "hu": "Fizioterápiás alapfogalmak",
+          "sv": "Grundläggande begrepp inom fysioterapi"
+        },
+        {
+          "hu": "Interprofesszionális együttműködés",
+          "sv": "Interprofessionell samverkan"
+        }
+      ]
+    },
+    {
+      "semester": 1,
+      "code": "1FY053",
+      "name": "Anatomi",
+      "credits": 6,
+      "topicSource": "kursplan",
+      "topics": [
+        {
+          "hu": "Általános anatómia, szövettan, terminológia",
+          "sv": "Allmän anatomi, histologi, terminologi"
+        },
+        {
+          "hu": "Mozgásszervrendszer: törzs, hát, nyak, fej, végtagok",
+          "sv": "Rörelseapparaten: bål, rygg, nacke, huvud, extremiteter"
+        },
+        {
+          "hu": "Belső szervek és erek",
+          "sv": "Inre organ och kärl"
+        },
+        {
+          "hu": "Topográfia és felszíni palpáció",
+          "sv": "Topografi och ytpalpation"
+        }
+      ],
+      "links": [
+        {
+          "view": "vall",
+          "label": {
+            "hu": "Vállöv és vállízület modul",
+            "sv": "Modul: skuldergördel och axelled"
+          }
+        },
+        {
+          "view": "plexus",
+          "label": {
+            "hu": "Plexus brachialis modul",
+            "sv": "Modul: plexus brachialis"
+          }
+        },
+        {
+          "view": "szotar",
+          "label": {
+            "hu": "Szótár",
+            "sv": "Ordlista"
+          }
+        }
+      ]
+    },
+    {
+      "semester": 1,
+      "code": "1FY054",
+      "name": "Fysiologi",
+      "credits": 9,
+      "topicSource": "kursplan",
+      "topics": [
+        {
+          "hu": "Szervrendszerek élettana",
+          "sv": "Organsystemens fysiologi"
+        },
+        {
+          "hu": "Klinikai összefüggések",
+          "sv": "Kliniska samband"
+        },
+        {
+          "hu": "Alapvető farmakológia",
+          "sv": "Grundläggande farmakologi"
+        },
+        {
+          "hu": "Laborgyakorlatok, TBL, esetek",
+          "sv": "Laborationer, TBL, fall"
+        }
+      ]
+    },
+    {
+      "semester": 1,
+      "code": "1FY055",
+      "name": "Rörelsevetenskap",
+      "credits": 6.5,
+      "topicSource": "kursplan",
+      "topics": [
+        {
+          "hu": "Palpáció",
+          "sv": "Palpation"
+        },
+        {
+          "hu": "Testtartás- és mozgáselemzés",
+          "sv": "Hållnings- och rörelseanalys"
+        },
+        {
+          "hu": "Motoros fejlődés és tanulás",
+          "sv": "Motorisk utveckling och inlärning"
+        },
+        {
+          "hu": "Biomechanika, járás",
+          "sv": "Biomekanik, gång"
+        }
+      ],
+      "links": [
+        {
+          "view": "vall",
+          "label": {
+            "hu": "Vállízület ROM-adatlap",
+            "sv": "Faktablad: axelledens ROM"
+          }
+        }
+      ]
+    },
+    {
+      "semester": 2,
+      "code": "1FY056",
+      "name": "Grundläggande undersökningsmetodik inom fysioterapi",
+      "credits": 6,
+      "topicSource": "kursplan",
+      "topics": [
+        {
+          "hu": "Biopszichoszociális anamnézis",
+          "sv": "Biopsykosocial anamnes"
+        },
+        {
+          "hu": "Ideg-, ízület- és izomvizsgálat",
+          "sv": "Nerv-, led- och muskelundersökning"
+        },
+        {
+          "hu": "Fizioterápiás folyamat",
+          "sv": "Fysioterapiprocessen"
+        }
+      ],
+      "links": [
+        {
+          "view": "agyidegek",
+          "label": {
+            "hu": "Agyidegek klinikai vizsgálata",
+            "sv": "Klinisk undersökning av kranialnerver"
+          }
+        },
+        {
+          "view": "plexus",
+          "label": {
+            "hu": "Gyökvizsgálat és perifériás idegek",
+            "sv": "Rotundersökning och perifera nerver"
+          }
+        }
+      ]
+    },
+    {
+      "semester": 2,
+      "code": "1FY057",
+      "name": "Psykologi",
+      "credits": 4.5,
+      "topicSource": "kursplan",
+      "topics": [
+        {
+          "hu": "Emberi működés és viselkedés",
+          "sv": "Människans funktion och beteende"
+        },
+        {
+          "hu": "Viselkedésváltoztatás",
+          "sv": "Beteendeförändring"
+        }
+      ]
+    },
+    {
+      "semester": 2,
+      "code": "1FY058",
+      "name": "Smärta ur ett fysioterapeutiskt och fysiologiskt perspektiv",
+      "credits": 7.5,
+      "topicSource": "app-suggestion",
+      "topics": [
+        {
+          "hu": "Nociceptio és fájdalompályák",
+          "sv": "Nociception och smärtbanor"
+        },
+        {
+          "hu": "Akut és tartós fájdalom",
+          "sv": "Akut och långvarig smärta"
+        }
+      ]
+    },
+    {
+      "semester": 2,
+      "code": "1FY059",
+      "name": "Fysisk aktivitet ur ett fysioterapeutiskt och fysiologiskt perspektiv",
+      "credits": 12,
+      "topicSource": "app-suggestion",
+      "topics": [
+        {
+          "hu": "Terhelésélettan",
+          "sv": "Arbetsfysiologi"
+        },
+        {
+          "hu": "Edzésadaptáció",
+          "sv": "Träningsadaptation"
+        },
+        {
+          "hu": "Aerob és anaerob energiaellátás",
+          "sv": "Aerob och anaerob energiförsörjning"
+        }
+      ]
+    },
+    {
+      "semester": 3,
+      "code": "1FY060",
+      "name": "Medicinska ämnen 1",
+      "credits": 7.5,
+      "topicSource": "app-suggestion",
+      "topics": [
+        {
+          "hu": "Belgyógyászati és sebészeti alapok",
+          "sv": "Grunder i internmedicin och kirurgi"
+        }
+      ]
+    },
+    {
+      "semester": 3,
+      "code": "1FY061",
+      "name": "Fysioterapi inriktning slutenvård",
+      "credits": 6,
+      "topicSource": "app-suggestion",
+      "topics": [
+        {
+          "hu": "Fekvőbeteg-ellátás, korai mobilizáció",
+          "sv": "Slutenvård, tidig mobilisering"
+        },
+        {
+          "hu": "Légzésfizioterápia",
+          "sv": "Andningsfysioterapi"
+        }
+      ]
+    },
+    {
+      "semester": 3,
+      "code": "1FY063",
+      "name": "Verksamhetsförlagd utbildning inriktning slutenvård",
+      "credits": 10.5,
+      "topicSource": "app-suggestion",
+      "topics": [
+        {
+          "hu": "Klinikai gyakorlat (VFU)",
+          "sv": "Klinisk praktik (VFU)"
+        }
+      ]
+    },
+    {
+      "semester": 3,
+      "code": "1FY062",
+      "name": "Beteendemedicin och prevention",
+      "credits": 6,
+      "topicSource": "app-suggestion",
+      "topics": [
+        {
+          "hu": "Életmódváltás támogatása",
+          "sv": "Stöd vid livsstilsförändring"
+        },
+        {
+          "hu": "Prevenció",
+          "sv": "Prevention"
+        }
+      ]
+    },
+    {
+      "semester": 4,
+      "code": null,
+      "name": "Medicinska ämnen 2",
+      "credits": 7.5,
+      "topicSource": "app-suggestion",
+      "topics": [
+        {
+          "hu": "Neurológiai kórképek: stroke, Parkinson-kór, MS",
+          "sv": "Neurologiska sjukdomar: stroke, Parkinsons sjukdom, MS"
+        }
+      ],
+      "links": [
+        {
+          "view": "agyidegek",
+          "label": {
+            "hu": "Agyidegek modul",
+            "sv": "Modul: kranialnerver"
+          }
+        }
+      ]
+    },
+    {
+      "semester": 4,
+      "code": null,
+      "name": "Fysioterapi inriktning habilitering och rehabilitering",
+      "credits": 6,
+      "topicSource": "app-suggestion",
+      "topics": [
+        {
+          "hu": "CP, spaszticitás, funkcionális tréning",
+          "sv": "CP, spasticitet, funktionell träning"
+        },
+        {
+          "hu": "Neurológiai rehabilitáció",
+          "sv": "Neurologisk rehabilitering"
+        }
+      ]
+    },
+    {
+      "semester": 4,
+      "code": null,
+      "name": "VFU inriktning habilitering och rehabilitering",
+      "credits": 16.5,
+      "topicSource": "app-suggestion",
+      "topics": [
+        {
+          "hu": "Klinikai gyakorlat (VFU)",
+          "sv": "Klinisk praktik (VFU)"
+        }
+      ]
+    },
+    {
+      "semester": 5,
+      "code": null,
+      "name": "Vetenskapsmetodik",
+      "credits": 4.5,
+      "topicSource": "app-suggestion",
+      "topics": [
+        {
+          "hu": "Kutatásmódszertan, statisztika",
+          "sv": "Forskningsmetodik, statistik"
+        }
+      ]
+    },
+    {
+      "semester": 5,
+      "code": null,
+      "name": "Examensarbete i fysioterapi",
+      "credits": 15,
+      "topicSource": "app-suggestion",
+      "topics": [
+        {
+          "hu": "Szakdolgozat",
+          "sv": "Examensarbete"
+        }
+      ]
+    },
+    {
+      "semester": 5,
+      "code": null,
+      "name": "VFU inriktning interprofessionellt teamarbete",
+      "credits": 3,
+      "topicSource": "app-suggestion",
+      "topics": [
+        {
+          "hu": "Csapatmunka a klinikumban",
+          "sv": "Teamarbete i klinisk verksamhet"
+        }
+      ]
+    },
+    {
+      "semester": 5,
+      "code": null,
+      "name": "Hälsopromotion ur ett globalt perspektiv",
+      "credits": 7.5,
+      "topicSource": "app-suggestion",
+      "topics": [
+        {
+          "hu": "Globális egészségfejlesztés",
+          "sv": "Globalt hälsofrämjande arbete"
+        }
+      ]
+    },
+    {
+      "semester": 6,
+      "code": null,
+      "name": "Fysioterapi inriktning primärvård",
+      "credits": 7.5,
+      "topicSource": "app-suggestion",
+      "topics": [
+        {
+          "hu": "Mozgásszervi panaszok az alapellátásban",
+          "sv": "Muskuloskeletala besvär i primärvården"
+        }
+      ]
+    },
+    {
+      "semester": 6,
+      "code": null,
+      "name": "VFU inriktning primärvård",
+      "credits": 10.5,
+      "topicSource": "app-suggestion",
+      "topics": [
+        {
+          "hu": "Klinikai gyakorlat (VFU)",
+          "sv": "Klinisk praktik (VFU)"
+        }
+      ]
+    },
+    {
+      "semester": 6,
+      "code": null,
+      "name": "Klinisk fördjupning och professionsutveckling",
+      "credits": 12,
+      "topicSource": "app-suggestion",
+      "topics": [
+        {
+          "hu": "Klinikai elmélyülés, szakmai fejlődés",
+          "sv": "Klinisk fördjupning, professionell utveckling"
+        }
+      ]
+    }
+  ]
+}

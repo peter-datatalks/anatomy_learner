@@ -1,0 +1,1171 @@
+{
+  "terms": [
+    {
+      "id": "t.positio-anatomica",
+      "category": "basics",
+      "name": {
+        "hu": "anatómiai alaphelyzet",
+        "sv": "anatomiskt grundläge",
+        "la": "positio anatomica"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.superior-cranialis",
+      "category": "basics",
+      "name": {
+        "hu": "felső, fej felé eső",
+        "sv": "övre, kranial",
+        "la": "superior / cranialis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.inferior-caudalis",
+      "category": "basics",
+      "name": {
+        "hu": "alsó, láb felé eső",
+        "sv": "nedre, kaudal",
+        "la": "inferior / caudalis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.anterior-ventralis",
+      "category": "basics",
+      "name": {
+        "hu": "elülső, hasi oldali",
+        "sv": "främre, ventral",
+        "la": "anterior / ventralis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.posterior-dorsalis",
+      "category": "basics",
+      "name": {
+        "hu": "hátsó, háti oldali",
+        "sv": "bakre, dorsal",
+        "la": "posterior / dorsalis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.medialis",
+      "category": "basics",
+      "name": {
+        "hu": "középvonal felé eső",
+        "sv": "medial",
+        "la": "medialis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.lateralis",
+      "category": "basics",
+      "name": {
+        "hu": "középvonaltól távolabbi",
+        "sv": "lateral",
+        "la": "lateralis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.proximalis",
+      "category": "basics",
+      "name": {
+        "hu": "törzshöz közelebbi",
+        "sv": "proximal",
+        "la": "proximalis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.distalis",
+      "category": "basics",
+      "name": {
+        "hu": "törzstől távolabbi",
+        "sv": "distal",
+        "la": "distalis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.planum-sagittale",
+      "category": "basics",
+      "name": {
+        "hu": "nyílirányú sík",
+        "sv": "sagittalplan",
+        "la": "planum sagittale"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.planum-frontale",
+      "category": "basics",
+      "name": {
+        "hu": "homloksík",
+        "sv": "frontalplan",
+        "la": "planum frontale"
+      },
+      "synonymsHu": "koronális sík",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.planum-transversale",
+      "category": "basics",
+      "name": {
+        "hu": "vízszintes (harántsík)",
+        "sv": "transversalplan",
+        "la": "planum transversale"
+      },
+      "synonymsHu": "horizontális sík",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.flexio",
+      "category": "basics",
+      "name": {
+        "hu": "hajlítás",
+        "sv": "flexion",
+        "la": "flexio"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.extensio",
+      "category": "basics",
+      "name": {
+        "hu": "feszítés",
+        "sv": "extension",
+        "la": "extensio"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.abductio",
+      "category": "basics",
+      "name": {
+        "hu": "távolítás",
+        "sv": "abduktion",
+        "la": "abductio"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.adductio",
+      "category": "basics",
+      "name": {
+        "hu": "közelítés",
+        "sv": "adduktion",
+        "la": "adductio"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.rotatio-medialis",
+      "category": "basics",
+      "name": {
+        "hu": "befelé forgatás",
+        "sv": "inåtrotation",
+        "la": "rotatio medialis"
+      },
+      "synonymsHu": "rotatio interna, IR",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.rotatio-lateralis",
+      "category": "basics",
+      "name": {
+        "hu": "kifelé forgatás",
+        "sv": "utåtrotation",
+        "la": "rotatio lateralis"
+      },
+      "synonymsHu": "rotatio externa, ER",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.pronatio",
+      "category": "basics",
+      "name": {
+        "hu": "borítás",
+        "sv": "pronation",
+        "la": "pronatio"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.supinatio",
+      "category": "basics",
+      "name": {
+        "hu": "hanyintás",
+        "sv": "supination",
+        "la": "supinatio"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.scapula",
+      "category": "bones",
+      "name": {
+        "hu": "lapocka",
+        "sv": "skulderblad",
+        "la": "scapula"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.clavicula",
+      "category": "bones",
+      "name": {
+        "hu": "kulcscsont",
+        "sv": "nyckelben",
+        "la": "clavicula"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.humerus",
+      "category": "bones",
+      "name": {
+        "hu": "felkarcsont",
+        "sv": "överarmsben",
+        "la": "humerus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.radius",
+      "category": "bones",
+      "name": {
+        "hu": "orsócsont",
+        "sv": "strålben",
+        "la": "radius"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.ulna",
+      "category": "bones",
+      "name": {
+        "hu": "singcsont",
+        "sv": "armbågsben",
+        "la": "ulna"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.femur",
+      "category": "bones",
+      "name": {
+        "hu": "combcsont",
+        "sv": "lårben",
+        "la": "femur"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.tibia",
+      "category": "bones",
+      "name": {
+        "hu": "sípcsont",
+        "sv": "skenben",
+        "la": "tibia"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.fibula",
+      "category": "bones",
+      "name": {
+        "hu": "szárkapocscsont",
+        "sv": "vadben",
+        "la": "fibula"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.patella",
+      "category": "bones",
+      "name": {
+        "hu": "térdkalács",
+        "sv": "knäskål",
+        "la": "patella"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.os-sacrum",
+      "category": "bones",
+      "name": {
+        "hu": "keresztcsont",
+        "sv": "korsben",
+        "la": "os sacrum"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.vertebra",
+      "category": "bones",
+      "name": {
+        "hu": "csigolya",
+        "sv": "kota",
+        "la": "vertebra"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.acromion",
+      "category": "bones",
+      "name": {
+        "hu": "vállcsúcs",
+        "sv": "skulderhöjd",
+        "la": "acromion"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.articulatio-humeri",
+      "category": "joints",
+      "name": {
+        "hu": "vállízület",
+        "sv": "axelled",
+        "la": "articulatio humeri"
+      },
+      "synonymsHu": "glenohumerális ízület",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.articulatio-cubiti",
+      "category": "joints",
+      "name": {
+        "hu": "könyökízület",
+        "sv": "armbågsled",
+        "la": "articulatio cubiti"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.articulatio-coxae",
+      "category": "joints",
+      "name": {
+        "hu": "csípőízület",
+        "sv": "höftled",
+        "la": "articulatio coxae"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.articulatio-genus",
+      "category": "joints",
+      "name": {
+        "hu": "térdízület",
+        "sv": "knäled",
+        "la": "articulatio genus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.articulatio-talocruralis",
+      "category": "joints",
+      "name": {
+        "hu": "felső ugróízület",
+        "sv": "övre språngledens led",
+        "la": "articulatio talocruralis"
+      },
+      "synonymsHu": "bokaízület",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.discus-intervertebralis",
+      "category": "joints",
+      "name": {
+        "hu": "porckorong",
+        "sv": "mellankotskiva",
+        "la": "discus intervertebralis"
+      },
+      "synonymsHu": "diszkusz",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.capsula-articularis",
+      "category": "joints",
+      "name": {
+        "hu": "ízületi tok",
+        "sv": "ledkapsel",
+        "la": "capsula articularis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.labrum-glenoidale",
+      "category": "joints",
+      "name": {
+        "hu": "ízületi ajak",
+        "sv": "ledläpp",
+        "la": "labrum glenoidale"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.deltoideus",
+      "category": "muscles",
+      "name": {
+        "hu": "deltaizom",
+        "sv": "deltamuskeln",
+        "la": "m. deltoideus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.supraspinatus",
+      "category": "muscles",
+      "name": {
+        "hu": "tövis feletti izom",
+        "sv": "övre skulderbladsmuskeln",
+        "la": "m. supraspinatus"
+      },
+      "synonymsHu": "rotátorköpeny része",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.infraspinatus",
+      "category": "muscles",
+      "name": {
+        "hu": "tövis alatti izom",
+        "sv": "nedre skulderbladsmuskeln",
+        "la": "m. infraspinatus"
+      },
+      "synonymsHu": "rotátorköpeny része",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.teres-minor",
+      "category": "muscles",
+      "name": {
+        "hu": "kis görgetegizom",
+        "sv": "lilla rundmuskeln",
+        "la": "m. teres minor"
+      },
+      "synonymsHu": "rotátorköpeny része",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.subscapularis",
+      "category": "muscles",
+      "name": {
+        "hu": "lapocka alatti izom",
+        "sv": "subskapulära muskeln",
+        "la": "m. subscapularis"
+      },
+      "synonymsHu": "rotátorköpeny része",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.serratus-anterior",
+      "category": "muscles",
+      "name": {
+        "hu": "elülső fűrészizom",
+        "sv": "främre sågmuskeln",
+        "la": "m. serratus anterior"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.trapezius",
+      "category": "muscles",
+      "name": {
+        "hu": "csuklyásizom",
+        "sv": "kappmuskeln",
+        "la": "m. trapezius"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.latissimus-dorsi",
+      "category": "muscles",
+      "name": {
+        "hu": "széles hátizom",
+        "sv": "breda ryggmuskeln",
+        "la": "m. latissimus dorsi"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.biceps-brachii",
+      "category": "muscles",
+      "name": {
+        "hu": "kétfejű karizom",
+        "sv": "tvåhövdade armmuskeln",
+        "la": "m. biceps brachii"
+      },
+      "synonymsHu": "bicepsz",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.triceps-brachii",
+      "category": "muscles",
+      "name": {
+        "hu": "háromfejű karizom",
+        "sv": "trehövdade armmuskeln",
+        "la": "m. triceps brachii"
+      },
+      "synonymsHu": "tricepsz",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.quadriceps-femoris",
+      "category": "muscles",
+      "name": {
+        "hu": "négyfejű combizom",
+        "sv": "fyrhövdade lårmuskeln",
+        "la": "m. quadriceps femoris"
+      },
+      "synonymsHu": "quadriceps",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.gluteus-maximus",
+      "category": "muscles",
+      "name": {
+        "hu": "nagy farizom",
+        "sv": "stora sätesmuskeln",
+        "la": "m. gluteus maximus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.gluteus-medius",
+      "category": "muscles",
+      "name": {
+        "hu": "középső farizom",
+        "sv": "medelstora sätesmuskeln",
+        "la": "m. gluteus medius"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.cerebrum",
+      "category": "nervous",
+      "name": {
+        "hu": "nagyagy",
+        "sv": "storhjärna",
+        "la": "cerebrum"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.cerebellum",
+      "category": "nervous",
+      "name": {
+        "hu": "kisagy",
+        "sv": "lillhjärna",
+        "la": "cerebellum"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.truncus-encephali",
+      "category": "nervous",
+      "name": {
+        "hu": "agytörzs",
+        "sv": "hjärnstam",
+        "la": "truncus encephali"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.medulla-spinalis",
+      "category": "nervous",
+      "name": {
+        "hu": "gerincvelő",
+        "sv": "ryggmärg",
+        "la": "medulla spinalis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.plexus-brachialis",
+      "category": "nervous",
+      "name": {
+        "hu": "karfonat",
+        "sv": "armplexus",
+        "la": "plexus brachialis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.axillaris",
+      "category": "nervous",
+      "name": {
+        "hu": "hónaljideg",
+        "sv": "axillarisnerven",
+        "la": "n. axillaris"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.medianus",
+      "category": "nervous",
+      "name": {
+        "hu": "középideg",
+        "sv": "medianusnerven",
+        "la": "n. medianus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.ulnaris",
+      "category": "nervous",
+      "name": {
+        "hu": "singideg",
+        "sv": "ulnarisnerven",
+        "la": "n. ulnaris"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.radialis",
+      "category": "nervous",
+      "name": {
+        "hu": "orsóideg",
+        "sv": "radialisnerven",
+        "la": "n. radialis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.ischiadicus",
+      "category": "nervous",
+      "name": {
+        "hu": "ülőideg",
+        "sv": "ischiasnerven",
+        "la": "n. ischiadicus"
+      },
+      "synonymsHu": "isiász ideg",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.femoralis",
+      "category": "nervous",
+      "name": {
+        "hu": "combideg",
+        "sv": "femoralisnerven",
+        "la": "n. femoralis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.truncus-superior",
+      "category": "nervous",
+      "name": {
+        "hu": "felső törzs",
+        "sv": "övre primärsträngen",
+        "la": "truncus superior"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.truncus-medius",
+      "category": "nervous",
+      "name": {
+        "hu": "középső törzs",
+        "sv": "mellersta primärsträngen",
+        "la": "truncus medius"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.truncus-inferior",
+      "category": "nervous",
+      "name": {
+        "hu": "alsó törzs",
+        "sv": "nedre primärsträngen",
+        "la": "truncus inferior"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.fasciculus-lateralis",
+      "category": "nervous",
+      "name": {
+        "hu": "oldalsó köteg",
+        "sv": "laterala sekundärsträngen",
+        "la": "fasciculus lateralis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.fasciculus-medialis",
+      "category": "nervous",
+      "name": {
+        "hu": "belső köteg",
+        "sv": "mediala sekundärsträngen",
+        "la": "fasciculus medialis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.fasciculus-posterior",
+      "category": "nervous",
+      "name": {
+        "hu": "hátsó köteg",
+        "sv": "bakre sekundärsträngen",
+        "la": "fasciculus posterior"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.musculocutaneus",
+      "category": "nervous",
+      "name": {
+        "hu": "izom-bőrideg",
+        "sv": "muskulokutana nerven",
+        "la": "n. musculocutaneus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.thoracicus-longus",
+      "category": "nervous",
+      "name": {
+        "hu": "hosszú mellkasi ideg",
+        "sv": "långa bröstkorgsnerven",
+        "la": "n. thoracicus longus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.suprascapularis",
+      "category": "nervous",
+      "name": {
+        "hu": "lapocka feletti ideg",
+        "sv": "suprascapularisnerven",
+        "la": "n. suprascapularis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.canalis-carpi",
+      "category": "nervous",
+      "name": {
+        "hu": "kéztőalagút",
+        "sv": "karpaltunneln",
+        "la": "canalis carpi"
+      },
+      "synonymsHu": "carpal tunnel",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.dermatoma",
+      "category": "nervous",
+      "name": {
+        "hu": "bőrszelvény",
+        "sv": "dermatom",
+        "la": "dermatoma"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.myotoma",
+      "category": "nervous",
+      "name": {
+        "hu": "izomszelvény",
+        "sv": "myotom",
+        "la": "myotoma"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.aktionspotential",
+      "category": "physiology",
+      "name": {
+        "hu": "akciós potenciál",
+        "sv": "aktionspotential",
+        "la": "—"
+      },
+      "synonymsHu": "AP",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.homoeostasis",
+      "category": "physiology",
+      "name": {
+        "hu": "homeosztázis",
+        "sv": "homeostas",
+        "la": "homoeostasis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.hj-rtminutvolym",
+      "category": "physiology",
+      "name": {
+        "hu": "perctérfogat",
+        "sv": "hjärtminutvolym",
+        "la": "—"
+      },
+      "synonymsHu": "CO, cardiac output",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.motorisk-enhet",
+      "category": "physiology",
+      "name": {
+        "hu": "motoros egység",
+        "sv": "motorisk enhet",
+        "la": "—"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.fusus-neuromuscularis",
+      "category": "physiology",
+      "name": {
+        "hu": "izomorsó",
+        "sv": "muskelspole",
+        "la": "fusus neuromuscularis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.organum-tendineum",
+      "category": "physiology",
+      "name": {
+        "hu": "ínorsó (Golgi-féle)",
+        "sv": "golgis senorgan",
+        "la": "organum tendineum"
+      },
+      "synonymsHu": "GTO",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    }
+  ]
+}

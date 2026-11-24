@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Anatomia 360°</title>
+<meta name="description" content="Háromnyelvű (magyar–svéd–latin) anatómia-tanulóalkalmazás gyógytornász-hallgatóknak.">
+<meta name="theme-color" content="#1f4e79" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f161d" media="(prefers-color-scheme: dark)">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/icon-180.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Anatomia 360°">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..800&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=Source+Serif+4:ital,wght@1,400;1,600&display=swap">
+<link rel="stylesheet" href="css/app.css?v=__BUILD_VERSION__">
+</head>
+<body>
+<div class="app">
+  <aside class="rail" aria-label="Fő navigáció">
+    <div class="brand"><span id="mark" aria-hidden="true"></span><b>ANATOMIA <span>360°</span></b><small>Physiotherapy &amp; Human Movement Academy</small></div>
+    <div class="langsw"><span class="eyebrow">Nyelv · Språk</span><div class="seg" id="langRail"></div></div>
+    <nav class="nav" id="nav"></nav>
+    <div class="rail-foot" id="railFoot"></div>
+  </aside>
+  <main><div class="wrap" id="view"></div></main>
+  <nav class="tabbar" id="tabbar" aria-label="Fő navigáció"></nav>
+</div>
+<script src="js/app.js?v=__BUILD_VERSION__"></script>
+</body>
+</html>

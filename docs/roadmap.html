@@ -1,0 +1,341 @@
+<title>Anatomia 360° Roadmap</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..800&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=Source+Serif+4:ital,wght@1,400;1,600&display=swap">
+<style>
+/* Layout: one reading column; timeline and target table break out to full width. Same atlas palette as the app (muscle red, nerve yellow, joint teal, bone ivory, navy accent). */
+:root{
+  --bg:#f4f6f5; --surface:#ffffff; --surface-2:#eaeeed; --line:#d5dcda;
+  --ink:#16222e; --ink-2:#4a5866; --ink-3:#74818c;
+  --accent:#1f4e79; --accent-soft:#dde7f1;
+  --muscle:#b23a48; --muscle-soft:#f6e1e3;
+  --nerve:#a87908; --nerve-soft:#f8ecc9;
+  --bone:#8a7550; --bone-soft:#efe8da;
+  --joint:#2b7a8c; --joint-soft:#dcedf0;
+  --good:#2f7d4f; --good-soft:#dff0e5;
+  --grid:rgba(31,78,121,.055);
+  --f-display:"Archivo","Helvetica Neue",Arial,sans-serif;
+  --f-body:"Source Sans 3","Segoe UI",system-ui,sans-serif;
+  --f-latin:"Source Serif 4",Georgia,serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f161d; --surface:#16202a; --surface-2:#1d2935; --line:#2b3947;
+  --ink:#e6edf2; --ink-2:#a9b6c1; --ink-3:#7f8d99;
+  --accent:#7fb0e0; --accent-soft:#1b3148;
+  --muscle:#e07a85; --muscle-soft:#3a1d22; --nerve:#e2b94a; --nerve-soft:#3a2f12;
+  --bone:#cdb68c; --bone-soft:#332c1f; --joint:#6cc0d2; --joint-soft:#163238;
+  --good:#6cc794; --good-soft:#15301f; --grid:rgba(127,176,224,.045); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f161d; --surface:#16202a; --surface-2:#1d2935; --line:#2b3947;
+  --ink:#e6edf2; --ink-2:#a9b6c1; --ink-3:#7f8d99;
+  --accent:#7fb0e0; --accent-soft:#1b3148;
+  --muscle:#e07a85; --muscle-soft:#3a1d22; --nerve:#e2b94a; --nerve-soft:#3a2f12;
+  --bone:#cdb68c; --bone-soft:#332c1f; --joint:#6cc0d2; --joint-soft:#163238;
+  --good:#6cc794; --good-soft:#15301f; --grid:rgba(127,176,224,.045); color-scheme:dark}
+*{box-sizing:border-box}
+body{background-color:var(--bg);background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:24px 24px;color:var(--ink);font-family:var(--f-body);font-size:16.5px;line-height:1.6}
+.page{max-width:1080px;margin:0 auto;padding-block:40px 80px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:44px}
+h1,h2,h3{font-family:var(--f-display);margin:0;line-height:1.15;text-wrap:balance}
+h1{font-size:clamp(2.2rem,5vw,3.4rem);font-weight:800;font-stretch:120%;letter-spacing:-.03em}
+h2{font-size:1.6rem;font-weight:800;font-stretch:112%;letter-spacing:-.015em}
+h3{font-size:1.08rem;font-weight:700}
+p{margin:0}
+.la{font-family:var(--f-latin);font-style:italic}
+.eyebrow{font-size:.74rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3)}
+.muted{color:var(--ink-2)}
+.small{font-size:.88rem}
+.tnum{font-variant-numeric:tabular-nums}
+section{display:flex;flex-direction:column;gap:16px}
+.prose{max-width:70ch;display:flex;flex-direction:column;gap:12px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px}
+a{color:var(--accent)}
+
+/* Plate header */
+.plate{position:relative;overflow:hidden;container-type:inline-size;background:linear-gradient(120deg,var(--accent-soft) 0%,transparent 60%),var(--surface);border:1px solid var(--line);border-radius:16px;padding:34px 30px 38px;display:flex;flex-direction:column;gap:14px}
+.plate>*{position:relative;z-index:1}
+.plate::after{content:"via regia";position:absolute;right:-4px;bottom:-.28em;font-family:var(--f-latin);font-style:italic;font-size:clamp(3rem,15cqi,8rem);line-height:1;color:var(--accent);opacity:.09;white-space:nowrap;pointer-events:none}
+.plate .lead{font-size:1.15rem;max-width:62ch;color:var(--ink-2)}
+.stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:6px}
+.stats div{display:flex;flex-direction:column}
+.stats b{font-family:var(--f-display);font-size:1.7rem;font-weight:800;font-stretch:115%;line-height:1.1}
+
+/* Timeline */
+.tl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--surface)}
+.tl{min-width:760px;display:grid;grid-template-columns:210px repeat(13,minmax(0,1fr));font-size:.86rem}
+.tl .m{padding:10px 0 8px;text-align:center;font-weight:700;color:var(--ink-3);font-size:.72rem;letter-spacing:.06em;border-bottom:1px solid var(--line);border-left:1px solid var(--line)}
+.tl .m.sem{color:var(--accent)}
+.tl .corner{border-bottom:1px solid var(--line);padding:10px 14px;font-size:.72rem;font-weight:700;letter-spacing:.06em;color:var(--ink-3)}
+.tl .lbl{padding:10px 14px;border-bottom:1px solid var(--line);display:flex;flex-direction:column;justify-content:center;min-width:0}
+.tl .lbl b{font-family:var(--f-display);font-weight:700}
+.tl .lbl span{font-size:.76rem;color:var(--ink-3)}
+.tl .track{grid-column:2/-1;position:relative;border-bottom:1px solid var(--line);background-image:linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:calc(100%/13) 100%;min-height:52px}
+.tl .bar{position:absolute;top:12px;bottom:12px;border-radius:8px;background:var(--c-soft);border:1.5px solid var(--c);display:flex;align-items:center;padding:0 10px;font-weight:700;font-size:.78rem;color:var(--c);white-space:nowrap;overflow:hidden}
+.tl .ms{position:absolute;top:50%;width:12px;height:12px;transform:translate(-50%,-50%) rotate(45deg);background:var(--c);border-radius:2px}
+.tl .sem-band{grid-column:2/-1;display:grid;grid-template-columns:repeat(13,minmax(0,1fr));border-bottom:1px solid var(--line);font-size:.72rem;font-weight:700;color:var(--accent)}
+.tl .sem-band span{padding:6px 8px;background:var(--accent-soft);border-left:1px solid var(--surface)}
+.legend{display:flex;gap:18px;flex-wrap:wrap;font-size:.84rem;color:var(--ink-2)}
+.legend i{display:inline-block;width:10px;height:10px;transform:rotate(45deg);background:var(--ink-2);margin-right:6px;border-radius:2px}
+
+/* Phases */
+.phases{display:flex;flex-direction:column;gap:14px}
+.phase{display:grid;grid-template-columns:64px 1fr;gap:18px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px}
+.phase .num{font-family:var(--f-display);font-weight:800;font-stretch:125%;font-size:2.2rem;line-height:1;color:var(--c)}
+.phase .body{display:flex;flex-direction:column;gap:10px;min-width:0}
+.phase .meta{display:flex;gap:8px;flex-wrap:wrap}
+.chip{display:inline-flex;align-items:center;gap:5px;font-size:.76rem;font-weight:700;border-radius:99px;padding:2px 10px;background:var(--surface-2);color:var(--ink-2);white-space:nowrap}
+.chip.c{background:var(--c-soft);color:var(--c)}
+.cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.cols h4{margin:0 0 4px;font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+.cols ul{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:4px;font-size:.95rem}
+.exit{font-size:.9rem;border-top:1px dashed var(--line);padding-top:10px;color:var(--ink-2)}
+.exit b{color:var(--ink)}
+@media (max-width:640px){.phase{grid-template-columns:1fr;gap:8px}.cols{grid-template-columns:1fr}}
+
+/* Targets */
+.tg-wrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:620px}
+th{text-align:left;font-size:.72rem;letter-spacing:.07em;text-transform:uppercase;color:var(--ink-3);padding:10px 12px 10px 0;border-bottom:1px solid var(--line)}
+td{padding:11px 12px 11px 0;border-bottom:1px solid var(--line);vertical-align:middle}
+td.n{font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
+th.n{text-align:right}
+.meter{height:8px;border-radius:99px;background:var(--surface-2);overflow:hidden;min-width:120px}
+.meter i{display:block;height:100%;background:var(--c);border-radius:99px;min-width:3px}
+
+/* Pipeline */
+.pipe{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px;counter-reset:st}
+.pipe div{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px;display:flex;flex-direction:column;gap:6px;position:relative}
+.pipe b{font-family:var(--f-display);font-size:.95rem}
+.pipe .st{font-family:var(--f-display);font-weight:800;color:var(--accent);font-size:.8rem;letter-spacing:.06em}
+@media (max-width:900px){.pipe{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:480px){.pipe{grid-template-columns:1fr}}
+
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+@media (max-width:720px){.grid2{grid-template-columns:1fr}}
+.risk{display:flex;flex-direction:column;gap:6px}
+.risk .row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.sev{font-size:.7rem;font-weight:800;letter-spacing:.06em;border-radius:4px;padding:1px 6px}
+.sev.h{background:var(--muscle-soft);color:var(--muscle)}
+.sev.m{background:var(--nerve-soft);color:var(--nerve)}
+ol.next{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:8px}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.86em;background:var(--surface-2);padding:1px 5px;border-radius:4px}
+pre{margin:0;background:var(--surface-2);border-radius:10px;padding:14px;overflow-x:auto;font-size:.82rem;line-height:1.5}
+.decide{display:flex;flex-direction:column;gap:12px}
+.decide div{border-left:3px solid var(--accent);padding:2px 0 2px 14px}
+</style>
+
+<div class="page">
+
+<header class="plate">
+  <span class="eyebrow" style="color:var(--accent)">Roadmap · v0.3 → v1.0 · December 2026 – December 2027</span>
+  <h1>Anatomia 360°</h1>
+  <p class="lead">How to grow the prototype into a complete, bilingual (Hungarian + Swedish, with Latin) study platform for physiotherapy and conductive education, aligned with the KI Fysioterapeutprogrammet 1FY26 semesters.</p>
+  <div class="stats">
+    <div><b class="tnum">9</b><span class="small muted">phases</span></div>
+    <div><b class="tnum">13</b><span class="small muted">months</span></div>
+    <div><b class="tnum">≈2&nbsp;500</b><span class="small muted">trilingual terms at v1.0</span></div>
+    <div><b class="tnum">≈2&nbsp;000</b><span class="small muted">explained questions at v1.0</span></div>
+  </div>
+</header>
+
+<section>
+  <span class="eyebrow">Where it stands today</span>
+  <h2>The prototype proves the format</h2>
+  <div class="prose">
+    <p>Version 0.3 is one HTML page with its data written into the code. It has 72 terms, 13 datasheets (shoulder girdle and plexus brachialis), the 12 cranial nerves, the KI course path, 28 quiz questions with explanations, a 1-3-7-14-30 day review schedule and an AI tutor. Learning content can now be shown in Hungarian and Swedish side by side.</p>
+    <p>That covers roughly 3–5% of what a complete platform needs. The main limits are structural: content sits inside the code, the interface text is still mostly Hungarian, progress lives in one browser, and no expert has reviewed anything. Phase 0 fixes the structure before content volume grows twentyfold.</p>
+  </div>
+</section>
+
+<section>
+  <span class="eyebrow">Timeline</span>
+  <h2>Thirteen months, paced to the KI semesters</h2>
+  <p class="muted" style="max-width:70ch">Each content block lands just before the course that needs it. Semester 2 (VT27) brings examination methods, pain and physical activity. Semester 3 (HT27) brings the first clinical courses, so clinical and rehabilitation content must be ready by August 2027.</p>
+  <div class="tl-wrap"><div class="tl" id="tl"></div></div>
+  <div class="legend"><span><i></i>Milestone</span><span>Shaded columns = KI semester boundaries (HT26 ends mid-January, VT27 runs January–June, HT27 starts late August)</span></div>
+</section>
+
+<section>
+  <span class="eyebrow">Phases</span>
+  <h2>What gets built, in order</h2>
+  <div class="phases" id="phases"></div>
+</section>
+
+<section>
+  <span class="eyebrow">Content targets</span>
+  <h2>From 3% to complete</h2>
+  <p class="muted" style="max-width:70ch">"Complete" here means every structure a Swedish physiotherapy student is examined on in anatomy, physiology and movement science, plus the neurological rehabilitation core from conductive education. Every item exists in Hungarian, Swedish and Latin.</p>
+  <div class="card tg-wrap"><table>
+    <thead><tr><th>Content type</th><th class="n">Today</th><th class="n">v1.0</th><th style="width:34%">Progress</th><th>Phase</th></tr></thead>
+    <tbody id="targets"></tbody>
+  </table></div>
+</section>
+
+<section>
+  <span class="eyebrow">Content pipeline</span>
+  <h2>How every item is made</h2>
+  <p class="muted" style="max-width:70ch">The volume only works with a repeatable pipeline. Claude drafts and translates; people verify. Nothing is marked as reviewed until a human has checked it.</p>
+  <div class="pipe">
+    <div><span class="st">1 · DRAFT</span><b>Hungarian draft</b><span class="small muted">From open sources (OpenStax A&amp;P, CC BY 4.0) and the KI course plans, following the datasheet templates.</span></div>
+    <div><span class="st">2 · TERMS</span><b>Latin check</b><span class="small muted">Every Latin name checked against Terminologia Anatomica (TA2).</span></div>
+    <div><span class="st">3 · SWEDISH</span><b>Swedish version</b><span class="small muted">Translated, then terms checked against Svensk MeSH (KI University Library).</span></div>
+    <div><span class="st">4 · QUESTIONS</span><b>Question set</b><span class="small muted">At least 10 questions per datasheet, each wrong answer explained, linked to its source item.</span></div>
+    <div><span class="st">5 · REVIEW</span><b>Expert review</b><span class="small muted">A reviewer checks the content and sets the status to <code>reviewed</code>, with their name and the date.</span></div>
+    <div><span class="st">6 · RELEASE</span><b>Publish</b><span class="small muted">Unreviewed items stay visible but carry a "draft" marker in the app.</span></div>
+  </div>
+</section>
+
+<section>
+  <span class="eyebrow">Data model</span>
+  <h2>One record per structure, three languages per field</h2>
+  <div class="grid2">
+    <div class="prose">
+      <p>Every text field holds all three languages, so the Hungarian and Swedish versions can never drift apart. A build check fails if any field is missing its Swedish text. Relations (innervated by, acts on joint, tested by) are links between records, not free text, so the quiz can generate "which nerve…" questions automatically.</p>
+      <p class="small muted">Record types: term, muscle, joint, bone, nerve, spinal segment, organ system, physiology topic, condition, outcome measure, lesson, question, clinical case, media asset.</p>
+    </div>
+<pre>{
+  "id": "m.deltoideus",
+  "type": "muscle",
+  "name": { "la": "musculus deltoideus",
+            "hu": "deltaizom", "sv": "deltamuskeln" },
+  "origin":    { "hu": "…", "sv": "…" },
+  "insertion": { "hu": "…", "sv": "…" },
+  "innervatedBy": ["n.axillaris"],
+  "segments": ["C5","C6"],
+  "actsOn": ["art.humeri"],
+  "kiCourses": ["1FY053","1FY055"],
+  "level": "university",
+  "review": { "status": "draft",
+              "by": null, "date": null },
+  "sources": ["openstax-ap2e:11.5"]
+}</pre>
+  </div>
+</section>
+
+<section>
+  <span class="eyebrow">Risks</span>
+  <h2>What could go wrong</h2>
+  <div class="grid2" id="risks"></div>
+</section>
+
+<section>
+  <span class="eyebrow">Decisions for you</span>
+  <h2>Four choices that shape Phase 0</h2>
+  <div class="decide">
+    <div><h3>Platform</h3><p class="muted">A web app that installs on the phone and works offline (recommended, one codebase), or native iOS and Android apps (more work, App Store review).</p></div>
+    <div><h3>Who reviews</h3><p class="muted">At least one Swedish-speaking physiotherapist or anatomy teacher and one Hungarian conductor or physiotherapist. Without them, everything stays marked as draft.</p></div>
+    <div><h3>Who uses it</h3><p class="muted">Only you, or classmates too. Sharing it means accounts and progress sync, and it makes the image-licence rules stricter.</p></div>
+    <div><h3>Scope of conductive education</h3><p class="muted">Whether Pető-method content stays in this app as its own track, or moves to a separate product later.</p></div>
+  </div>
+</section>
+
+<section>
+  <span class="eyebrow">Next two weeks</span>
+  <h2>Concrete first steps</h2>
+  <div class="card"><ol class="next">
+    <li><b>Decide the four questions above.</b> They determine the Phase 0 architecture.</li>
+    <li><b>Move content out of the code</b> into JSON files following the data model, starting with today's 13 datasheets, 12 cranial nerves and 28 questions.</li>
+    <li><b>Translate the remaining interface text into Swedish</b> (buttons, status messages, statistics), so the Swedish-only mode is complete.</li>
+    <li><b>Finish the upper limb</b>: elbow, forearm and hand (about 35 muscles, 6 joints) as the first full region for 1FY053.</li>
+    <li><b>Book one reviewer</b> for a 2-hour pass over the shoulder and plexus modules, to calibrate the review checklist.</li>
+  </ol></div>
+</section>
+
+<p class="small muted">Dates are planning estimates for one person working part time with Claude doing the drafting and translation. KI course plans for semesters 4–6 are not yet published; those phases will be re-planned when they appear.</p>
+</div>
+
+<script>
+const C={muscle:['var(--muscle)','var(--muscle-soft)'],nerve:['var(--nerve)','var(--nerve-soft)'],joint:['var(--joint)','var(--joint-soft)'],bone:['var(--bone)','var(--bone-soft)'],accent:['var(--accent)','var(--accent-soft)'],good:['var(--good)','var(--good-soft)']};
+const MONTHS=['Dec','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+// start/end are month indexes (0 = Dec 2026, 12 = Dec 2027), end exclusive
+const PHASES=[
+ {n:'0',t:'Foundation',sv:'Grund',c:'accent',s:0,e:1.5,weeks:'6 weeks',courses:'all',
+  goal:'Turn the single page into a real app that can hold 50× more content.',
+  build:['Content as JSON files with a schema and build-time checks','Complete HU/SV interface text, with the language switch remembered','Installable web app that works offline','Progress sync across devices','Draft/reviewed status shown on every item'],
+  content:['Migrate today’s 13 datasheets, 12 cranial nerves, 28 questions','Write the review checklist'],
+  exit:'all current content loads from JSON, the Swedish-only mode has no Hungarian text left, and progress survives a device change.'},
+ {n:'1',t:'Musculoskeletal system',sv:'Rörelseapparaten',c:'muscle',s:1,e:5.5,weeks:'4½ months',courses:'1FY053 · 1FY055',
+  goal:'Every examinable bone, joint and muscle, with palpation and ROM.',
+  build:['Region browser (upper limb, lower limb, trunk and spine, head and neck)','ROM norm tables with goniometry instructions','Palpation guide with surface landmarks'],
+  content:['≈150 muscle datasheets','≈40 joint datasheets with ROM','≈80 bones and landmarks','≈600 questions'],
+  exit:'all four regions complete, with 10+ questions per datasheet.'},
+ {n:'2',t:'Nervous system',sv:'Nervsystemet',c:'nerve',s:3,e:7,weeks:'4 months',courses:'1FY053 · 1FY056',
+  goal:'From the cortex to the peripheral nerve, with the clinical examination.',
+  build:['Interactive dermatome and myotome body map','Pathway diagrams (corticospinal, dorsal column, spinothalamic)','Lesion simulator: pick a lesion, see the deficits'],
+  content:['Plexus lumbalis and sacralis','≈45 peripheral nerves','Spinal cord, brainstem, cerebellum, basal ganglia','Reflexes and motor control','≈400 questions'],
+  exit:'a student can localise a lesion from examination findings in the app.'},
+ {n:'3',t:'Physiology',sv:'Fysiologi',c:'joint',s:1,e:7,weeks:'6 months, parallel',courses:'1FY054 · 1FY059',
+  goal:'All organ systems, plus exercise physiology for semester 2.',
+  build:['Interactive graphs: action potential, cardiac cycle, oxygen dissociation curve','Exercise calculators (VO₂, heart-rate zones)'],
+  content:['≈60 physiology lessons across 11 organ systems','Exercise physiology and training adaptation','≈350 questions'],
+  exit:'every 1FY054 topic in the KI course plan has a lesson and a question set.'},
+ {n:'4',t:'Movement science',sv:'Rörelsevetenskap',c:'bone',s:5,e:9,weeks:'4 months',courses:'1FY055 · 1FY056',
+  goal:'Biomechanics, gait and motor development as tools, not only text.',
+  build:['Torque and lever calculator for joint moments','Animated gait cycle with muscle activity','Posture and movement analysis checklists'],
+  content:['Gait, balance, motor learning, development across the lifespan','≈150 questions and 20 worked calculations'],
+  exit:'the 1FY055 calculation types can be practised with step-by-step solutions.'},
+ {n:'5',t:'Clinical and rehabilitation',sv:'Klinik och rehabilitering',c:'muscle',s:7,e:11.5,weeks:'4½ months',courses:'1FY058 · 1FY060 · 1FY061 · sem. 4',
+  goal:'Conditions, examination and outcome measures, including conductive education.',
+  build:['Clinical case player (history → examination → goals → plan)','Outcome measures with scoring (Berg, TUG, 6MWT, Modified Ashworth)'],
+  content:['≈40 conditions: stroke, Parkinson’s disease, MS, CP, spinal cord injury, pain conditions','Conductive education track (Pető principles, rhythmic intention)','≈80 clinical cases','≈400 questions'],
+  exit:'ready before HT27 starts, so it can be used during the first inpatient placement.'},
+ {n:'6',t:'3D and visual anatomy',sv:'3D och bilder',c:'joint',s:4,e:10,weeks:'6 months, parallel',courses:'all',
+  goal:'Layered 3D models and image-labelling questions.',
+  build:['3D viewer with layers you can switch on and off (skin, fascia, muscle, vessel, nerve, bone)','Labelling and image-recognition question types','Joint movement animations'],
+  content:['Models from Z-Anatomy (licence CC BY-SA 4.0, attribution required)','≈30 animations'],
+  exit:'every datasheet links to a 3D view or a licensed image.'},
+ {n:'7',t:'Adaptive learning and AI',sv:'Adaptiv inlärning och AI',c:'accent',s:6,e:11,weeks:'5 months',courses:'all',
+  goal:'The app decides what you study next.',
+  build:['Modern spaced repetition scheduler (FSRS) instead of fixed intervals','Exam mode per KI course, with time limits','AI tutor answering only from the app’s own reviewed content, with links','Swedish pronunciation practice'],
+  content:['Personal study plan from exam dates and weak topics'],
+  exit:'the home screen shows a daily plan that adapts to your results.'},
+ {n:'8',t:'Review and v1.0 release',sv:'Granskning och lansering',c:'good',s:2,e:13,weeks:'continuous',courses:'—',
+  goal:'Everything reviewed, licensed and accessible.',
+  build:['Accessibility pass (keyboard, screen reader, contrast)','Licence register for every image and model'],
+  content:['Rolling expert review of each finished phase','Beta with classmates in October 2027'],
+  exit:'more than 90% of content marked reviewed; v1.0 in December 2027.'}
+];
+const MILESTONES=[[1.5,'Foundation done'],[5.5,'MSK complete'],[8.7,'Clinical ready for HT27'],[10,'Beta'],[12.5,'v1.0']];
+
+// timeline
+(function(){
+  const tl=document.getElementById('tl');let h=`<div class="corner">PHASE</div>`;
+  MONTHS.forEach((m,i)=>h+=`<div class="m${[1,6,8].includes(i)?' sem':''}">${m}${i===0?" '26":i===1?" '27":''}</div>`);
+  h+=`<div class="lbl"><b>KI semesters</b><span>1FY26 programme</span></div><div class="sem-band">
+      <span style="grid-column:1/3">HT26 · sem. 1</span><span style="grid-column:3/8">VT27 · sem. 2</span><span style="grid-column:8/10;background:transparent;color:var(--ink-3)">summer</span><span style="grid-column:10/14">HT27 · sem. 3</span></div>`;
+  PHASES.forEach(p=>{const [c,cs]=C[p.c];
+    h+=`<div class="lbl"><b>${p.n} · ${p.t}</b><span>${p.sv}</span></div><div class="track"><div class="bar" style="--c:${c};--c-soft:${cs};left:calc(${p.s}/13*100%);width:calc(${p.e-p.s}/13*100% - 4px)">${p.weeks}</div></div>`});
+  h+=`<div class="lbl"><b>Milestones</b><span>Mérföldkövek · Milstolpar</span></div><div class="track">${MILESTONES.map(([x,l])=>`<span class="ms" style="--c:var(--ink-2);background:var(--ink-2);left:calc(${x}/13*100%)" title="${l}"></span>`).join('')}</div>`;
+  tl.innerHTML=h;
+})();
+// phases
+document.getElementById('phases').innerHTML=PHASES.map(p=>{const [c,cs]=C[p.c];return `
+  <article class="phase" style="--c:${c};--c-soft:${cs}"><div class="num">${p.n}</div><div class="body">
+    <div><h3>${p.t} <span class="muted" style="font-weight:500">· ${p.sv}</span></h3><p class="muted">${p.goal}</p></div>
+    <div class="meta"><span class="chip c">${p.weeks}</span><span class="chip">KI: ${p.courses}</span></div>
+    <div class="cols"><div><h4>Build</h4><ul>${p.build.map(x=>`<li>${x}</li>`).join('')}</ul></div><div><h4>Content</h4><ul>${p.content.map(x=>`<li>${x}</li>`).join('')}</ul></div></div>
+    <p class="exit"><b>Done when</b> ${p.exit}</p></div></article>`}).join('');
+// targets
+const TARGETS=[
+ ['Trilingual terms (HU · SV · LA)',82,2500,'accent','0–8'],
+ ['Muscle datasheets',6,150,'muscle','1'],
+ ['Joint datasheets',1,40,'joint','1'],
+ ['Peripheral nerve datasheets',5,45,'nerve','2'],
+ ['Cranial nerves',12,12,'nerve','done'],
+ ['Physiology lessons',0,60,'joint','3'],
+ ['Conditions',0,40,'muscle','5'],
+ ['Clinical cases',0,80,'muscle','5'],
+ ['Quiz questions with explanations',28,2000,'bone','1–7'],
+ ['3D views and animations',0,60,'joint','6'],
+ ['Reviewed by an expert',0,100,'good','8','%']
+];
+document.getElementById('targets').innerHTML=TARGETS.map(([l,a,b,c,ph,u])=>{const pct=Math.min(100,a/b*100);return `<tr><td>${l}</td><td class="n">${a}${u||''}</td><td class="n">${b.toLocaleString('sv-SE')}${u||''}</td><td><div class="meter"><i style="width:${pct}%;--c:var(--${c});background:var(--${c})"></i></div></td><td>${ph==='done'?'<span class="chip c" style="--c:var(--good);--c-soft:var(--good-soft)">done</span>':ph}</td></tr>`}).join('');
+// risks
+const RISKS=[
+ ['h','Factual errors in clinical content','Wrong anatomy or clinical advice harms learning and trust.','Draft marker until expert review; sources recorded per item; a "report an error" button on every page.'],
+ ['h','Image and 3D licensing','CC BY-SA models require attribution and share-alike; many web images may not be reused at all.','Licence register; use only CC0, CC BY or CC BY-SA sources, or your own drawings; never copy from atlases.'],
+ ['m','Swedish terminology quality','Machine translation can pick a word that is correct but not the one used at KI.','Check against Svensk MeSH; one Swedish reviewer; a glossary of preferred terms the translator must follow.'],
+ ['m','KI course plans change','Semesters 4–6 are not published yet; 1FY26 is a new syllabus.','Course mapping is data, not code; re-plan phases 5 and 7 when the plans appear.'],
+ ['m','Scope creep','"Complete" can grow without end.','The content target table is the definition of v1.0; anything else goes on a v1.x list.'],
+ ['m','Hungarian–Swedish drift','Edits in one language not made in the other.','Both languages in one record; the build fails on a missing translation.']
+];
+document.getElementById('risks').innerHTML=RISKS.map(([s,t,d,m])=>`<div class="card risk"><div class="row"><span class="sev ${s}">${s==='h'?'HIGH':'MEDIUM'}</span><h3>${t}</h3></div><p class="muted small">${d}</p><p class="small"><b>Mitigation:</b> ${m}</p></div>`).join('');
+</script>

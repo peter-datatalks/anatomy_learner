@@ -1,0 +1,50 @@
+{
+  "termCategories": {
+    "basics": {
+      "hu": "Alapfogalmak",
+      "sv": "Grundbegrepp"
+    },
+    "bones": {
+      "hu": "Csontok",
+      "sv": "Skelett"
+    },
+    "joints": {
+      "hu": "Ízületek",
+      "sv": "Leder"
+    },
+    "muscles": {
+      "hu": "Izmok",
+      "sv": "Muskler"
+    },
+    "nervous": {
+      "hu": "Idegrendszer",
+      "sv": "Nervsystemet"
+    },
+    "physiology": {
+      "hu": "Élettan",
+      "sv": "Fysiologi"
+    }
+  },
+  "quizTopics": {
+    "vall": {
+      "hu": "Vállöv és vállízület",
+      "sv": "Skuldergördel och axelled"
+    },
+    "plexus": {
+      "hu": "Plexus brachialis",
+      "sv": "Plexus brachialis"
+    },
+    "agyideg": {
+      "hu": "12 agyideg",
+      "sv": "De 12 kranialnerverna"
+    },
+    "term": {
+      "hu": "Terminológia",
+      "sv": "Terminologi"
+    },
+    "neuro": {
+      "hu": "Neuroanatómia",
+      "sv": "Neuroanatomi"
+    }
+  }
+}

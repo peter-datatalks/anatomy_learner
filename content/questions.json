@@ -1,0 +1,1446 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "topic": "vall",
+      "type": "mc",
+      "prompt": {
+        "hu": "Melyik ideg idegzi be a m. deltoideust?",
+        "sv": "Vilken nerv innerverar m. deltoideus?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "N. axillaris (C5–C6)",
+            "sv": "N. axillaris (C5–C6)"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "N. radialis",
+            "sv": "N. radialis"
+          },
+          "whyWrong": {
+            "hu": "A n. radialis is a hátsó kötegből ered, de a felkar és alkar feszítőit látja el, a deltaizmot nem.",
+            "sv": "N. radialis utgår också från den bakre sekundärsträngen, men den försörjer extensorerna i över- och underarmen, inte deltamuskeln."
+          }
+        },
+        {
+          "text": {
+            "hu": "N. suprascapularis",
+            "sv": "N. suprascapularis"
+          },
+          "whyWrong": {
+            "hu": "A m. supraspinatust és infraspinatust idegzi be.",
+            "sv": "Den innerverar m. supraspinatus och m. infraspinatus."
+          }
+        },
+        {
+          "text": {
+            "hu": "N. musculocutaneus",
+            "sv": "N. musculocutaneus"
+          },
+          "whyWrong": {
+            "hu": "A felkar hajlítóit (m. biceps brachii, m. brachialis, m. coracobrachialis) látja el.",
+            "sv": "Den försörjer överarmens flexorer (m. biceps brachii, m. brachialis, m. coracobrachialis)."
+          }
+        }
+      ],
+      "answer": 0,
+      "explanation": {
+        "hu": "A n. axillaris a plexus brachialis hátsó kötegéből ered, a spatium quadrangularén át a collum chirurgicum körül fut, és a m. deltoideust, valamint a m. teres minort idegzi be.",
+        "sv": "N. axillaris utgår från plexus brachialis bakre sekundärsträng, passerar genom spatium quadrangulare, löper runt collum chirurgicum och innerverar m. deltoideus samt m. teres minor."
+      },
+      "link": {
+        "view": "vall",
+        "item": "m.deltoideus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "q2",
+      "topic": "vall",
+      "type": "mc",
+      "prompt": {
+        "hu": "Melyik izom indítja a vállízületi abductiót (0–15°)?",
+        "sv": "Vilken muskel initierar abduktion i axelleden (0–15°)?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "M. deltoideus",
+            "sv": "M. deltoideus"
+          },
+          "whyWrong": {
+            "hu": "A deltaizom középső része kb. 15°-tól a fő abductor; nyugalmi helyzetben húzásiránya inkább felfelé tolja a humerusfejet.",
+            "sv": "Deltamuskelns mellersta del är den huvudsakliga abduktorn från ca 15°; i viloläget tenderar dess dragriktning snarare att skjuta humerushuvudet uppåt."
+          }
+        },
+        {
+          "text": {
+            "hu": "M. supraspinatus",
+            "sv": "M. supraspinatus"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "M. trapezius",
+            "sv": "M. trapezius"
+          },
+          "whyWrong": {
+            "hu": "A lapockát forgatja felfelé, a glenohumerális abductiót nem indítja.",
+            "sv": "Den roterar skulderbladet uppåt men initierar inte den glenohumerala abduktionen."
+          }
+        },
+        {
+          "text": {
+            "hu": "M. teres minor",
+            "sv": "M. teres minor"
+          },
+          "whyWrong": {
+            "hu": "Kifelé forgat, gyengén közelít.",
+            "sv": "Den utåtroterar och adducerar svagt."
+          }
+        }
+      ],
+      "answer": 1,
+      "explanation": {
+        "hu": "A m. supraspinatus a humerusfejet a vápába nyomja, és így indítja az abductiót; ezt követően a deltaizom veszi át a fő szerepet.",
+        "sv": "M. supraspinatus pressar humerushuvudet in i ledskålen och initierar på så sätt abduktionen; därefter tar deltamuskeln över huvudrollen."
+      },
+      "link": {
+        "view": "vall",
+        "item": "m.supraspinatus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "q3",
+      "topic": "vall",
+      "type": "mc",
+      "prompt": {
+        "hu": "Mediális szárnyas lapocka (scapula alata) látható fali fekvőtámaszban. Melyik ideg sérülése valószínű?",
+        "sv": "Medial scapula alata (vingad scapula) syns vid armhävning mot vägg. Vilken nervskada är sannolik?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "N. thoracicus longus",
+            "sv": "N. thoracicus longus"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "N. accessorius",
+            "sv": "N. accessorius"
+          },
+          "whyWrong": {
+            "hu": "Az n. accessorius sérülése a m. trapezius gyengesége miatt inkább laterális szárnyasodást és lecsüngő vállat okoz.",
+            "sv": "En skada på n. accessorius ger på grund av svaghet i m. trapezius snarare lateral vingning och hängande axel."
+          }
+        },
+        {
+          "text": {
+            "hu": "N. dorsalis scapulae",
+            "sv": "N. dorsalis scapulae"
+          },
+          "whyWrong": {
+            "hu": "A rhomboideusokat idegzi be; kiesése enyhe, nem jellegzetes mediális szárnyasodás.",
+            "sv": "Den innerverar rhomboideusmusklerna; bortfall ger en lindrig, inte karakteristisk medial vingning."
+          }
+        },
+        {
+          "text": {
+            "hu": "N. axillaris",
+            "sv": "N. axillaris"
+          },
+          "whyWrong": {
+            "hu": "A deltaizmot és a teres minort idegzi be, lapockarögzítő izmot nem.",
+            "sv": "Den innerverar deltamuskeln och teres minor, inte någon skulderbladsstabiliserande muskel."
+          }
+        }
+      ],
+      "answer": 0,
+      "explanation": {
+        "hu": "A m. serratus anterior rögzíti a lapocka mediális szélét a mellkasfalhoz. Beidegzője a n. thoracicus longus (C5–C7), amely hosszú, felszínes lefutása miatt sérülékeny.",
+        "sv": "M. serratus anterior fixerar skulderbladets mediala kant mot bröstkorgsväggen. Den innerveras av n. thoracicus longus (C5–C7), som är sårbar på grund av sitt långa, ytliga förlopp."
+      },
+      "link": {
+        "view": "vall",
+        "item": "m.serratus-anterior"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "q4",
+      "topic": "vall",
+      "type": "tf",
+      "prompt": {
+        "hu": "A m. infraspinatus fő funkciója a humerus befelé forgatása.",
+        "sv": "Huvudfunktionen för m. infraspinatus är inåtrotation av humerus."
+      },
+      "answer": false,
+      "explanation": {
+        "hu": "Hamis. A m. infraspinatus a m. teres minorral együtt a humerust kifelé forgatja. A befelé forgatás fő izma a m. subscapularis.",
+        "sv": "Falskt. M. infraspinatus utåtroterar humerus tillsammans med m. teres minor. Den viktigaste inåtrotatorn är m. subscapularis."
+      },
+      "link": {
+        "view": "vall",
+        "item": "m.infraspinatus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "q5",
+      "topic": "vall",
+      "type": "mc",
+      "prompt": {
+        "hu": "Hol tapad a m. subscapularis?",
+        "sv": "Var fäster m. subscapularis?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "Tuberculum majus",
+            "sv": "Tuberculum majus"
+          },
+          "whyWrong": {
+            "hu": "Itt a supraspinatus, infraspinatus és teres minor tapad.",
+            "sv": "Här fäster supraspinatus, infraspinatus och teres minor."
+          }
+        },
+        {
+          "text": {
+            "hu": "Tuberculum minus",
+            "sv": "Tuberculum minus"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "Tuberositas deltoidea",
+            "sv": "Tuberositas deltoidea"
+          },
+          "whyWrong": {
+            "hu": "A deltaizom tapadása.",
+            "sv": "Deltamuskelns fäste."
+          }
+        },
+        {
+          "text": {
+            "hu": "Processus coracoideus",
+            "sv": "Processus coracoideus"
+          },
+          "whyWrong": {
+            "hu": "Itt a m. pectoralis minor, a m. coracobrachialis és a biceps rövid feje kapcsolódik.",
+            "sv": "Här fäster m. pectoralis minor, m. coracobrachialis och bicepsens korta huvud."
+          }
+        }
+      ],
+      "answer": 1,
+      "explanation": {
+        "hu": "A m. subscapularis az egyetlen rotátorköpeny-izom, amely elöl, a tuberculum minuson tapad; ezért befelé forgat.",
+        "sv": "M. subscapularis är den enda rotatorkuffmuskeln som fäster framtill, på tuberculum minus; därför inåtroterar den."
+      },
+      "link": {
+        "view": "vall",
+        "item": "m.subscapularis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "q6",
+      "topic": "vall",
+      "type": "tf",
+      "prompt": {
+        "hu": "Fagyott vállban (adhezív capsulitis) a kapszuláris mintázat szerint a kifelé forgatás korlátozott leginkább.",
+        "sv": "Vid frusen skuldra (adhesiv kapsulit) är det enligt kapselmönstret utåtrotationen som är mest begränsad."
+      },
+      "answer": true,
+      "explanation": {
+        "hu": "Igaz. A vállízület kapszuláris mintázata: kifelé forgatás > abductio > befelé forgatás.",
+        "sv": "Sant. Axelledens kapselmönster: utåtrotation > abduktion > inåtrotation."
+      },
+      "link": {
+        "view": "vall",
+        "item": "art.humeri"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "q7",
+      "topic": "vall",
+      "type": "mc",
+      "prompt": {
+        "hu": "Mekkora a scapulohumeralis ritmus aránya (glenohumerális : scapulothoracalis) teljes elevációban?",
+        "sv": "Vilket är förhållandet i den skapulohumerala rytmen (glenohumeral : skapulotorakal) vid full elevation?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "1:1",
+            "sv": "1:1"
+          },
+          "whyWrong": {
+            "hu": "Ez túlbecsüli a lapocka részvételét.",
+            "sv": "Detta överskattar skulderbladets bidrag."
+          }
+        },
+        {
+          "text": {
+            "hu": "2:1",
+            "sv": "2:1"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "3:1",
+            "sv": "3:1"
+          },
+          "whyWrong": {
+            "hu": "Ez alábecsüli a lapocka mozgását.",
+            "sv": "Detta underskattar skulderbladets rörelse."
+          }
+        },
+        {
+          "text": {
+            "hu": "1:2",
+            "sv": "1:2"
+          },
+          "whyWrong": {
+            "hu": "Fordított arány; a mozgás nagyobb része a glenohumerális ízületben zajlik.",
+            "sv": "Omvänt förhållande; större delen av rörelsen sker i den glenohumerala leden."
+          }
+        }
+      ],
+      "answer": 1,
+      "explanation": {
+        "hu": "180°-os elevációból kb. 120° a glenohumerális ízületben, kb. 60° a lapocka felfelé forgatásából adódik (2:1). Az arány egyénenként és a mozgás fázisaiban változik.",
+        "sv": "Av 180° elevation sker ca 120° i den glenohumerala leden och ca 60° kommer från skulderbladets uppåtrotation (2:1). Förhållandet varierar mellan individer och mellan rörelsens faser."
+      },
+      "link": {
+        "view": "vall",
+        "item": "art.humeri"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "q8",
+      "topic": "term",
+      "type": "match",
+      "prompt": {
+        "hu": "Párosítsd a magyar kifejezést a svéd és a latin alakkal!",
+        "sv": "Para ihop den ungerska termen med den svenska och den latinska formen!"
+      },
+      "rows": [
+        [
+          "vállízület",
+          "axelled",
+          "articulatio humeri"
+        ],
+        [
+          "kulcscsont",
+          "nyckelben",
+          "clavicula"
+        ],
+        [
+          "lapocka",
+          "skulderblad",
+          "scapula"
+        ],
+        [
+          "felkarcsont",
+          "överarmsben",
+          "humerus"
+        ]
+      ],
+      "explanation": {
+        "hu": "A latin név a nemzetközi Terminologia Anatomica alakja; a svéd klinikai nyelv gyakran a latin tövet használja (pl. \"axillarisnerven\").",
+        "sv": "Det latinska namnet är formen enligt den internationella Terminologia Anatomica; svenskt kliniskt språk använder ofta den latinska stammen (t.ex. \"axillarisnerven\")."
+      },
+      "link": {
+        "view": "szotar",
+        "item": null
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "q9",
+      "topic": "agyideg",
+      "type": "mc",
+      "prompt": {
+        "hu": "A beteg szeme \"lefelé és kifelé\" néz, ptosis és tág pupilla látható. Melyik agyideg érintett?",
+        "sv": "Patientens öga är riktat \"nedåt och utåt\", ptos och vid pupill syns. Vilken kranialnerv är påverkad?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "IV – n. trochlearis",
+            "sv": "IV – n. trochlearis"
+          },
+          "whyWrong": {
+            "hu": "A IV. kiesése függőleges kettőslátást okoz, ptosist és pupillatágulatot nem.",
+            "sv": "Bortfall av IV ger vertikalt dubbelseende, men inte ptos eller pupillvidgning."
+          }
+        },
+        {
+          "text": {
+            "hu": "III – n. oculomotorius",
+            "sv": "III – n. oculomotorius"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "VI – n. abducens",
+            "sv": "VI – n. abducens"
+          },
+          "whyWrong": {
+            "hu": "A VI. kiesésekor a szem befelé áll.",
+            "sv": "Vid bortfall av VI står ögat inåtvänt."
+          }
+        },
+        {
+          "text": {
+            "hu": "VII – n. facialis",
+            "sv": "VII – n. facialis"
+          },
+          "whyWrong": {
+            "hu": "A VII. a szemhéjzárást (m. orbicularis oculi) végzi, nem az emelést.",
+            "sv": "VII sköter stängningen av ögonlocket (m. orbicularis oculi), inte lyftet."
+          }
+        }
+      ],
+      "answer": 1,
+      "explanation": {
+        "hu": "A III. ideg kiesésekor csak a m. rectus lateralis (VI) és a m. obliquus superior (IV) működik: a szem lefelé-kifelé áll. A m. levator palpebrae és a paraszimpatikus pupillaszűkítő rostok kiesése ptosist és mydriasist okoz.",
+        "sv": "Vid bortfall av nerv III fungerar endast m. rectus lateralis (VI) och m. obliquus superior (IV): ögat står nedåt-utåt. Bortfall av m. levator palpebrae och av de parasympatiska pupillkonstriktoriska fibrerna ger ptos och mydriasis."
+      },
+      "link": {
+        "view": "agyidegek",
+        "item": "cn.III"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "q10",
+      "topic": "agyideg",
+      "type": "mc",
+      "prompt": {
+        "hu": "Nyelvöltéskor a nyelv jobbra tér ki. Melyik ideg sérült?",
+        "sv": "När tungan räcks ut avviker den åt höger. Vilken nerv är skadad?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "Bal n. hypoglossus",
+            "sv": "Vänster n. hypoglossus"
+          },
+          "whyWrong": {
+            "hu": "A nyelv a sérült oldal felé tér ki, nem az ép felé.",
+            "sv": "Tungan avviker mot den skadade sidan, inte mot den friska."
+          }
+        },
+        {
+          "text": {
+            "hu": "Jobb n. hypoglossus",
+            "sv": "Höger n. hypoglossus"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "Jobb n. glossopharyngeus",
+            "sv": "Höger n. glossopharyngeus"
+          },
+          "whyWrong": {
+            "hu": "A IX. érzőideg a nyelv hátsó harmadához; a nyelvöltést nem befolyásolja.",
+            "sv": "IX är känselnerv till tungans bakre tredjedel; den påverkar inte utsträckningen av tungan."
+          }
+        },
+        {
+          "text": {
+            "hu": "Bal n. vagus",
+            "sv": "Vänster n. vagus"
+          },
+          "whyWrong": {
+            "hu": "A vagus-léziónál az uvula tér ki, nem a nyelv.",
+            "sv": "Vid vagusskada är det uvula som avviker, inte tungan."
+          }
+        }
+      ],
+      "answer": 1,
+      "explanation": {
+        "hu": "Az ép oldali m. genioglossus előre és az ellenoldal felé tolja a nyelvet; ha a jobb oldal gyenge, a bal oldal \"áttolja\" a nyelvet jobbra.",
+        "sv": "M. genioglossus på den friska sidan skjuter tungan framåt och mot motsatt sida; om höger sida är svag \"skjuter\" vänster sida över tungan åt höger."
+      },
+      "link": {
+        "view": "agyidegek",
+        "item": "cn.XII"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "q11",
+      "topic": "agyideg",
+      "type": "tf",
+      "prompt": {
+        "hu": "Perifériás arcidegbénulásnál a homlok ráncolása megtartott.",
+        "sv": "Vid perifer facialispares är förmågan att rynka pannan bevarad."
+      },
+      "answer": false,
+      "explanation": {
+        "hu": "Hamis. Perifériás (pl. Bell-) paresisnél az egész arcfél bénul, a homlok is. A homlok megkímélése centrális (supranucleáris) léziót jelez, mert a homlok izmai kétoldali kérgi beidegzést kapnak.",
+        "sv": "Falskt. Vid perifer facialispares (t.ex. Bells pares) är hela ansiktshalvan förlamad, även pannan. En skonad panna tyder på en central (supranukleär) skada, eftersom pannans muskler får bilateral kortikal innervation."
+      },
+      "link": {
+        "view": "agyidegek",
+        "item": "cn.VII"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "q12",
+      "topic": "agyideg",
+      "type": "mc",
+      "prompt": {
+        "hu": "\"Á\" hang kiejtésekor az uvula balra tér ki. Melyik ideg sérült?",
+        "sv": "När patienten säger \"A\" avviker uvula åt vänster. Vilken nerv är skadad?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "Bal n. vagus",
+            "sv": "Vänster n. vagus"
+          },
+          "whyWrong": {
+            "hu": "Az uvula az ép oldal felé húzódik, tehát a sérülés nem a bal oldalon van.",
+            "sv": "Uvula dras mot den friska sidan, så skadan sitter inte på vänster sida."
+          }
+        },
+        {
+          "text": {
+            "hu": "Jobb n. vagus",
+            "sv": "Höger n. vagus"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "Jobb n. hypoglossus",
+            "sv": "Höger n. hypoglossus"
+          },
+          "whyWrong": {
+            "hu": "A XII. a nyelvet mozgatja, a lágy szájpadot nem.",
+            "sv": "XII rör tungan, inte mjuka gommen."
+          }
+        },
+        {
+          "text": {
+            "hu": "Bal n. facialis",
+            "sv": "Vänster n. facialis"
+          },
+          "whyWrong": {
+            "hu": "A VII. a lágy szájpad izmait nem idegzi be.",
+            "sv": "VII innerverar inte mjuka gommens muskler."
+          }
+        }
+      ],
+      "answer": 1,
+      "explanation": {
+        "hu": "A lágy szájpad izmait a vagus (nucleus ambiguus) idegzi be. Az ép bal oldal emelkedik, és maga felé húzza az uvulát, ezért jobb oldali vagus-lézióra gondolunk.",
+        "sv": "Mjuka gommens muskler innerveras av vagus (nucleus ambiguus). Den friska vänstra sidan höjs och drar uvula mot sig, därför misstänker vi en högersidig vagusskada."
+      },
+      "link": {
+        "view": "agyidegek",
+        "item": "cn.X"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "q13",
+      "topic": "agyideg",
+      "type": "mc",
+      "prompt": {
+        "hu": "Melyik ág lép ki a koponyából a foramen rotundumon át?",
+        "sv": "Vilken gren lämnar skallen genom foramen rotundum?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "V1 – n. ophthalmicus",
+            "sv": "V1 – n. ophthalmicus"
+          },
+          "whyWrong": {
+            "hu": "A fissura orbitalis superioron lép ki.",
+            "sv": "Den lämnar skallen genom fissura orbitalis superior."
+          }
+        },
+        {
+          "text": {
+            "hu": "V2 – n. maxillaris",
+            "sv": "V2 – n. maxillaris"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "V3 – n. mandibularis",
+            "sv": "V3 – n. mandibularis"
+          },
+          "whyWrong": {
+            "hu": "A foramen ovalén lép ki.",
+            "sv": "Den lämnar skallen genom foramen ovale."
+          }
+        },
+        {
+          "text": {
+            "hu": "VII – n. facialis",
+            "sv": "VII – n. facialis"
+          },
+          "whyWrong": {
+            "hu": "A porus acusticus internuson lép be, és a foramen stylomastoideumon lép ki.",
+            "sv": "Den går in genom porus acusticus internus och kommer ut genom foramen stylomastoideum."
+          }
+        }
+      ],
+      "answer": 1,
+      "explanation": {
+        "hu": "A trigeminus három ága három különböző nyíláson lép ki: V1 fissura orbitalis superior, V2 foramen rotundum, V3 foramen ovale.",
+        "sv": "Trigeminusnervens tre grenar lämnar skallen genom tre olika öppningar: V1 fissura orbitalis superior, V2 foramen rotundum, V3 foramen ovale."
+      },
+      "link": {
+        "view": "agyidegek",
+        "item": "cn.V"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "q14",
+      "topic": "agyideg",
+      "type": "mc",
+      "prompt": {
+        "hu": "Nyaki nyirokcsomó-eltávolítás után a beteg válla lecsüng, és gyenge a vállvonogatás. Melyik ideg sérült?",
+        "sv": "Efter en halslymfkörtelutrymning hänger patientens axel och axelryckningen är svag. Vilken nerv är skadad?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "N. accessorius (XI)",
+            "sv": "N. accessorius (XI)"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "N. thoracicus longus",
+            "sv": "N. thoracicus longus"
+          },
+          "whyWrong": {
+            "hu": "Mediális szárnyas lapockát okozna, vállvonogatási gyengeséget nem.",
+            "sv": "Den skulle ge medial scapula alata, inte svaghet vid axelryckning."
+          }
+        },
+        {
+          "text": {
+            "hu": "N. axillaris",
+            "sv": "N. axillaris"
+          },
+          "whyWrong": {
+            "hu": "Abductiós gyengeséget okozna.",
+            "sv": "Den skulle ge abduktionssvaghet."
+          }
+        },
+        {
+          "text": {
+            "hu": "N. phrenicus",
+            "sv": "N. phrenicus"
+          },
+          "whyWrong": {
+            "hu": "A rekeszizmot idegzi be.",
+            "sv": "Den innerverar diafragma."
+          }
+        }
+      ],
+      "answer": 0,
+      "explanation": {
+        "hu": "A n. accessorius a hátsó nyaki háromszögben felszínesen fut, ezért nyaki műtétnél sérülékeny. Kiesése a m. trapezius gyengeségét okozza.",
+        "sv": "N. accessorius löper ytligt i den bakre halstriangeln och är därför sårbar vid halskirurgi. Bortfall ger svaghet i m. trapezius."
+      },
+      "link": {
+        "view": "agyidegek",
+        "item": "cn.XI"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "q15",
+      "topic": "agyideg",
+      "type": "match",
+      "prompt": {
+        "hu": "Párosítsd az agyideg sorszámát a magyar és a svéd nevével!",
+        "sv": "Para ihop kranialnervens nummer med dess ungerska och svenska namn!"
+      },
+      "rows": [
+        [
+          "VII",
+          "Arcideg",
+          "Ansiktsnerven"
+        ],
+        [
+          "X",
+          "Bolygóideg",
+          "Vagusnerven"
+        ],
+        [
+          "II",
+          "Látóideg",
+          "Synnerven"
+        ],
+        [
+          "V",
+          "Háromosztatú ideg",
+          "Trillingnerven"
+        ]
+      ],
+      "explanation": {
+        "hu": "A svéd nevek gyakran a funkcióra utalnak: \"ansikte\" = arc, \"syn\" = látás, \"trilling\" = hármas.",
+        "sv": "De svenska namnen syftar ofta på funktionen: \"ansikte\" = arc, \"syn\" = látás, \"trilling\" = hármas (trefaldig)."
+      },
+      "link": {
+        "view": "agyidegek",
+        "item": null
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "q16",
+      "topic": "neuro",
+      "type": "order",
+      "prompt": {
+        "hu": "Állítsd sorrendbe a plexus brachialis felépítését a gerincvelőtől a periféria felé!",
+        "sv": "Ordna plexus brachialis uppbyggnad från ryggmärgen ut mot periferin!"
+      },
+      "items": [
+        {
+          "hu": "Radices (gyökök, C5–T1)",
+          "sv": "Radices (nervrötter, C5–T1)"
+        },
+        {
+          "hu": "Trunci (törzsek)",
+          "sv": "Trunci (primärsträngar)"
+        },
+        {
+          "hu": "Divisiones (osztódások)",
+          "sv": "Divisiones (divisioner)"
+        },
+        {
+          "hu": "Fasciculi (kötegek)",
+          "sv": "Fasciculi (sekundärsträngar)"
+        },
+        {
+          "hu": "Rami terminales (végágak)",
+          "sv": "Rami terminales (ändgrenar)"
+        }
+      ],
+      "explanation": {
+        "hu": "Egy gyakori emlékeztető: \"Rendelj Tíz Doboz Friss Rétest\" (Radices, Trunci, Divisiones, Fasciculi, Rami). A kötegeket az a. axillarishoz viszonyított helyzetük alapján nevezzük el (lateralis, medialis, posterior).",
+        "sv": "En vanlig minnesregel: \"Rika Tanter Dricker Fint Rödvin\" (Radices, Trunci, Divisiones, Fasciculi, Rami). Sekundärsträngarna namnges efter sitt läge i förhållande till a. axillaris (lateralis, medialis, posterior)."
+      },
+      "link": {
+        "view": "plexus",
+        "item": null
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "q17",
+      "topic": "agyideg",
+      "type": "mc",
+      "prompt": {
+        "hu": "Melyik agyideg vizsgálatához használjuk a Weber- és a Rinne-tesztet?",
+        "sv": "För undersökning av vilken kranialnerv används Weber- och Rinnetestet?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "VII",
+            "sv": "VII"
+          },
+          "whyWrong": {
+            "hu": "A VII. a m. stapediust idegzi be, de a hangvilla-tesztek a hallóideget vizsgálják.",
+            "sv": "VII innerverar m. stapedius, men stämgaffeltesterna undersöker hörselnerven."
+          }
+        },
+        {
+          "text": {
+            "hu": "VIII",
+            "sv": "VIII"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "IX",
+            "sv": "IX"
+          },
+          "whyWrong": {
+            "hu": "A garatreflexet vizsgáljuk vele.",
+            "sv": "Med den undersöker vi kräkreflexen."
+          }
+        },
+        {
+          "text": {
+            "hu": "V",
+            "sv": "V"
+          },
+          "whyWrong": {
+            "hu": "A cornealis reflex és az arc érzése tartozik ide.",
+            "sv": "Hit hör kornealreflexen och känseln i ansiktet."
+          }
+        }
+      ],
+      "answer": 1,
+      "explanation": {
+        "hu": "A Weber- és a Rinne-teszt a vezetéses és az idegi halláscsökkenést különíti el, így a n. vestibulocochlearis (VIII) cochlearis részét vizsgálja.",
+        "sv": "Weber- och Rinnetestet skiljer mellan ledningshinder och sensorineural hörselnedsättning och undersöker därmed den kokleära delen av n. vestibulocochlearis (VIII)."
+      },
+      "link": {
+        "view": "agyidegek",
+        "item": "cn.VIII"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "q18",
+      "topic": "neuro",
+      "type": "tf",
+      "prompt": {
+        "hu": "A n. trochlearis az egyetlen agyideg, amely az agytörzs hátsó felszínén lép ki.",
+        "sv": "N. trochlearis är den enda kranialnerv som lämnar hjärnstammen på dess baksida."
+      },
+      "answer": true,
+      "explanation": {
+        "hu": "Igaz. A IV. ideg a mesencephalon dorsalis felszínén lép ki, és megkerüli az agytörzset. Ez a leghosszabb intracranialis lefutású agyideg.",
+        "sv": "Sant. Nerv IV lämnar mesencephalons dorsala yta och går runt hjärnstammen. Den är den kranialnerv som har längst intrakraniellt förlopp."
+      },
+      "link": {
+        "view": "agyidegek",
+        "item": "cn.IV"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "p1",
+      "topic": "plexus",
+      "type": "mc",
+      "prompt": {
+        "hu": "Melyik kötegből ered a n. ulnaris?",
+        "sv": "Från vilken sekundärsträng utgår n. ulnaris?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "Fasciculus medialis",
+            "sv": "Fasciculus medialis"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "Fasciculus lateralis",
+            "sv": "Fasciculus lateralis"
+          },
+          "whyWrong": {
+            "hu": "Ebből a n. musculocutaneus és a n. medianus laterális gyöke ered.",
+            "sv": "Härifrån utgår n. musculocutaneus och den laterala roten till n. medianus."
+          }
+        },
+        {
+          "text": {
+            "hu": "Fasciculus posterior",
+            "sv": "Fasciculus posterior"
+          },
+          "whyWrong": {
+            "hu": "Ebből a n. axillaris és a n. radialis ered.",
+            "sv": "Härifrån utgår n. axillaris och n. radialis."
+          }
+        },
+        {
+          "text": {
+            "hu": "Truncus inferior",
+            "sv": "Truncus inferior"
+          },
+          "whyWrong": {
+            "hu": "A törzs még nem ad végágat; előbb divisiókra, majd kötegekre oszlik.",
+            "sv": "Primärsträngen avger ännu inga ändgrenar; den delar sig först i divisioner och sedan i sekundärsträngar."
+          }
+        }
+      ],
+      "answer": 0,
+      "explanation": {
+        "hu": "A fasciculus medialis a truncus inferior elülső divisiójából jön létre (C8–T1), és a n. ulnarisban folytatódik. Emellett a n. medianus mediális gyökét adja.",
+        "sv": "Fasciculus medialis bildas av den främre divisionen av truncus inferior (C8–T1) och fortsätter som n. ulnaris. Den avger dessutom den mediala roten till n. medianus."
+      },
+      "link": {
+        "view": "plexus",
+        "item": "n.ulnaris"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "p2",
+      "topic": "plexus",
+      "type": "mc",
+      "prompt": {
+        "hu": "Újszülöttnél a kar addukcióban és befelé forgatva, nyújtott könyökkel, borított alkarral lóg (\"pincér-borravaló\" tartás). Mely gyökök sérültek?",
+        "sv": "Hos en nyfödd hänger armen adducerad och inåtroterad, med extenderad armbåge och pronerad underarm (\"servitörsdricks\"-ställning). Vilka nervrötter är skadade?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "C5–C6",
+            "sv": "C5–C6"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "C8–T1",
+            "sv": "C8–T1"
+          },
+          "whyWrong": {
+            "hu": "Ez a Klumpke-bénulás, amelyben a kéz kisizmai gyengülnek.",
+            "sv": "Detta är Klumpkes pares, där handens små muskler försvagas."
+          }
+        },
+        {
+          "text": {
+            "hu": "C7",
+            "sv": "C7"
+          },
+          "whyWrong": {
+            "hu": "Izolált C7-sérülés főleg a könyök- és csuklófeszítést gyengíti.",
+            "sv": "En isolerad C7-skada försvagar främst armbågs- och handledsextensionen."
+          }
+        },
+        {
+          "text": {
+            "hu": "C5–T1",
+            "sv": "C5–T1"
+          },
+          "whyWrong": {
+            "hu": "Teljes plexus-sérülésnél az egész kar petyhüdt.",
+            "sv": "Vid total plexusskada är hela armen slapp."
+          }
+        }
+      ],
+      "answer": 0,
+      "explanation": {
+        "hu": "Erb–Duchenne-bénulás: a truncus superior (C5–C6) sérül, többnyire a fej és a váll közötti szög erőltetett növelésekor. Kiesik a deltoideus, a supraspinatus, az infraspinatus és a biceps, ezért alakul ki ez a tartás.",
+        "sv": "Erb–Duchennes pares: truncus superior (C5–C6) skadas, oftast när vinkeln mellan huvud och axel tvingas att öka. Deltoideus, supraspinatus, infraspinatus och biceps faller bort, och därför uppstår denna ställning."
+      },
+      "link": {
+        "view": "plexus",
+        "item": null
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "p3",
+      "topic": "plexus",
+      "type": "mc",
+      "prompt": {
+        "hu": "Humerusszár-törés után a beteg nem tudja feszíteni a csuklóját. Melyik ideg sérült?",
+        "sv": "Efter en fraktur på humerusskaftet kan patienten inte extendera handleden. Vilken nerv är skadad?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "N. radialis",
+            "sv": "N. radialis"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "N. medianus",
+            "sv": "N. medianus"
+          },
+          "whyWrong": {
+            "hu": "Kiesésekor a hajlítás és a hüvelykujj-oppositio gyengül.",
+            "sv": "Vid bortfall försvagas flexionen och tummens opposition."
+          }
+        },
+        {
+          "text": {
+            "hu": "N. ulnaris",
+            "sv": "N. ulnaris"
+          },
+          "whyWrong": {
+            "hu": "Kiesésekor karomállás alakul ki a 4–5. ujjon.",
+            "sv": "Vid bortfall uppstår klohand i 4:e–5:e fingret."
+          }
+        },
+        {
+          "text": {
+            "hu": "N. musculocutaneus",
+            "sv": "N. musculocutaneus"
+          },
+          "whyWrong": {
+            "hu": "Kiesésekor a könyökhajlítás gyengül.",
+            "sv": "Vid bortfall försvagas armbågsflexionen."
+          }
+        }
+      ],
+      "answer": 0,
+      "explanation": {
+        "hu": "A n. radialis a humerus hátsó felszínén, a sulcus n. radialisban közvetlenül a csonton fut, ezért szártörésnél sérülékeny. A tünet csuklóejtés (wrist drop).",
+        "sv": "N. radialis löper på humerus baksida, i sulcus n. radialis, direkt mot benet och är därför sårbar vid skaftfraktur. Symtomet är dropphand (wrist drop)."
+      },
+      "link": {
+        "view": "plexus",
+        "item": "n.radialis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "p4",
+      "topic": "plexus",
+      "type": "tf",
+      "prompt": {
+        "hu": "A pozitív Froment-jel a n. medianus kiesésére utal.",
+        "sv": "Ett positivt Froments tecken tyder på bortfall av n. medianus."
+      },
+      "answer": false,
+      "explanation": {
+        "hu": "Hamis. A Froment-jel a m. adductor pollicis gyengeségét mutatja, ezt a n. ulnaris idegzi be. A beteg a papírt a m. flexor pollicis longus (n. medianus) hajlításával próbálja tartani.",
+        "sv": "Falskt. Froments tecken visar svaghet i m. adductor pollicis, som innerveras av n. ulnaris. Patienten försöker hålla kvar papperet genom flexion med m. flexor pollicis longus (n. medianus)."
+      },
+      "link": {
+        "view": "plexus",
+        "item": "n.ulnaris"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "p5",
+      "topic": "plexus",
+      "type": "mc",
+      "prompt": {
+        "hu": "Melyik reflex vizsgálja elsősorban a C7 gyököt?",
+        "sv": "Vilken reflex undersöker främst nervroten C7?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "Triceps-reflex",
+            "sv": "Tricepsreflexen"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "Biceps-reflex",
+            "sv": "Bicepsreflexen"
+          },
+          "whyWrong": {
+            "hu": "Ez C5–C6.",
+            "sv": "Den är C5–C6."
+          }
+        },
+        {
+          "text": {
+            "hu": "Brachioradialis-reflex",
+            "sv": "Brachioradialisreflexen"
+          },
+          "whyWrong": {
+            "hu": "Ez főleg C6.",
+            "sv": "Den är främst C6."
+          }
+        },
+        {
+          "text": {
+            "hu": "Achilles-reflex",
+            "sv": "Achillesreflexen"
+          },
+          "whyWrong": {
+            "hu": "Ez S1, az alsó végtagon.",
+            "sv": "Den är S1, i nedre extremiteten."
+          }
+        }
+      ],
+      "answer": 0,
+      "explanation": {
+        "hu": "Gyökvizsgálatnál: biceps C5–C6, brachioradialis C6, triceps C7. A C8 és a T1 gyököt nem reflexszel, hanem az ujjflexio és az ujjabductio erejével vizsgáljuk.",
+        "sv": "Vid rotundersökning: biceps C5–C6, brachioradialis C6, triceps C7. Rötterna C8 och T1 undersöks inte med reflex utan med styrkan i fingerflexion och fingerabduktion."
+      },
+      "link": {
+        "view": "plexus",
+        "item": null
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "p6",
+      "topic": "plexus",
+      "type": "mc",
+      "prompt": {
+        "hu": "Klumpke-bénulásban ptosis és szűk pupilla is látható. Mi a magyarázat?",
+        "sv": "Vid Klumpkes pares ses även ptos och liten pupill. Vad är förklaringen?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "A T1 gyök szimpatikus rostjai is sérültek (Horner-szindróma)",
+            "sv": "De sympatiska fibrerna i nervroten T1 är också skadade (Horners syndrom)"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "A n. oculomotorius is sérült",
+            "sv": "N. oculomotorius är också skadad"
+          },
+          "whyWrong": {
+            "hu": "Agyideg-sérülés nem tartozik a plexus-sérüléshez; a III. kiesése ráadásul tág pupillát okozna.",
+            "sv": "En kranialnervsskada hör inte till en plexusskada; bortfall av III skulle dessutom ge vid pupill."
+          }
+        },
+        {
+          "text": {
+            "hu": "A n. facialis sérült",
+            "sv": "N. facialis är skadad"
+          },
+          "whyWrong": {
+            "hu": "A VII. a szemhéjzárásért felel, a pupillára nincs hatása.",
+            "sv": "VII ansvarar för att stänga ögonlocket och påverkar inte pupillen."
+          }
+        },
+        {
+          "text": {
+            "hu": "A C5 gyök sérült",
+            "sv": "Nervroten C5 är skadad"
+          },
+          "whyWrong": {
+            "hu": "A C5 a vállizmokat idegzi be, szimpatikus rostot nem visz a fej felé.",
+            "sv": "C5 innerverar axelmusklerna och för inga sympatiska fibrer mot huvudet."
+          }
+        }
+      ],
+      "answer": 0,
+      "explanation": {
+        "hu": "A T1 gyök preganglionaris szimpatikus rostokat visz a truncus sympathicus felé. Gyöki avulsiónál ezek is kiesnek: ptosis, miosis, anhidrosis. Ez proximális, rossz prognózisú sérülésre utal.",
+        "sv": "Nervroten T1 för preganglionära sympatiska fibrer till truncus sympathicus. Vid rotavulsion faller även dessa bort: ptos, mios, anhidros. Det tyder på en proximal skada med dålig prognos."
+      },
+      "link": {
+        "view": "plexus",
+        "item": null
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "p7",
+      "topic": "plexus",
+      "type": "match",
+      "prompt": {
+        "hu": "Párosítsd a végágat a kötegével és egy jellegzetes izmával!",
+        "sv": "Para ihop ändgrenen med dess sekundärsträng och en karakteristisk muskel!"
+      },
+      "rows": [
+        [
+          "n. musculocutaneus",
+          "fasciculus lateralis",
+          "m. biceps brachii"
+        ],
+        [
+          "n. ulnaris",
+          "fasciculus medialis",
+          "m. adductor pollicis"
+        ],
+        [
+          "n. radialis",
+          "fasciculus posterior",
+          "m. triceps brachii"
+        ],
+        [
+          "n. axillaris",
+          "fasciculus posterior",
+          "m. deltoideus"
+        ]
+      ],
+      "heads": {
+        "hu": [
+          "VÉGÁG",
+          "KÖTEG",
+          "KULCSIZOM"
+        ],
+        "sv": [
+          "ÄNDGREN",
+          "SEKUNDÄRSTRÄNG",
+          "NYCKELMUSKEL"
+        ]
+      },
+      "explanation": {
+        "hu": "A hátsó kötegből (fasciculus posterior) két végág ered: a n. axillaris és a n. radialis. A n. axillaris a m. deltoideust és a m. teres minort, a n. radialis a felkar és az alkar feszítőit látja el.",
+        "sv": "Från den bakre sekundärsträngen (fasciculus posterior) utgår två ändgrenar: n. axillaris och n. radialis. N. axillaris försörjer m. deltoideus och m. teres minor, n. radialis överarmens och underarmens extensorer."
+      },
+      "link": {
+        "view": "plexus",
+        "item": null
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "p8",
+      "topic": "plexus",
+      "type": "mc",
+      "prompt": {
+        "hu": "Miből jön létre a fasciculus lateralis?",
+        "sv": "Vad bildar fasciculus lateralis?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "A truncus superior és a truncus medius elülső divisiójából",
+            "sv": "De främre divisionerna av truncus superior och truncus medius"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "Mindhárom törzs hátsó divisiójából",
+            "sv": "De bakre divisionerna av alla tre primärsträngarna"
+          },
+          "whyWrong": {
+            "hu": "Így a fasciculus posterior jön létre.",
+            "sv": "Så bildas fasciculus posterior."
+          }
+        },
+        {
+          "text": {
+            "hu": "A truncus inferior elülső divisiójából",
+            "sv": "Den främre divisionen av truncus inferior"
+          },
+          "whyWrong": {
+            "hu": "Így a fasciculus medialis jön létre.",
+            "sv": "Så bildas fasciculus medialis."
+          }
+        },
+        {
+          "text": {
+            "hu": "A C5 és C6 gyökből közvetlenül",
+            "sv": "Direkt från nervrötterna C5 och C6"
+          },
+          "whyWrong": {
+            "hu": "A gyökökből előbb törzsek, majd divisiók lesznek.",
+            "sv": "Rötterna bildar först primärsträngar och sedan divisioner."
+          }
+        }
+      ],
+      "answer": 0,
+      "explanation": {
+        "hu": "A fasciculus lateralis C5–C7 rostokat tartalmaz: a truncus superior és a truncus medius elülső divisiójából áll össze.",
+        "sv": "Fasciculus lateralis innehåller fibrer från C5–C7: den bildas av de främre divisionerna av truncus superior och truncus medius."
+      },
+      "link": {
+        "view": "plexus",
+        "item": null
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "p9",
+      "topic": "plexus",
+      "type": "mc",
+      "prompt": {
+        "hu": "Hol jelentkezik a zsibbadás tipikusan kéztőalagút-szindrómában?",
+        "sv": "Var uppträder domningarna typiskt vid karpaltunnelsyndrom?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "A hüvelyk-, mutató-, középső ujjon és a gyűrűsujj radiális felén",
+            "sv": "I tummen, pekfingret, långfingret och radiala halvan av ringfingret"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "A kisujjon és a gyűrűsujj ulnaris felén",
+            "sv": "I lillfingret och ulnara halvan av ringfingret"
+          },
+          "whyWrong": {
+            "hu": "Ez a n. ulnaris területe.",
+            "sv": "Detta är n. ulnaris område."
+          }
+        },
+        {
+          "text": {
+            "hu": "A kézháton, a hüvelyk- és a mutatóujj között",
+            "sv": "På handryggen, mellan tummen och pekfingret"
+          },
+          "whyWrong": {
+            "hu": "Ez a n. radialis felszíni ágának területe.",
+            "sv": "Detta är området för den ytliga grenen av n. radialis."
+          }
+        },
+        {
+          "text": {
+            "hu": "Az alkar laterális oldalán",
+            "sv": "På underarmens laterala sida"
+          },
+          "whyWrong": {
+            "hu": "Ez a n. musculocutaneus bőrága.",
+            "sv": "Detta är hudgrenen från n. musculocutaneus."
+          }
+        }
+      ],
+      "answer": 0,
+      "explanation": {
+        "hu": "A n. medianus a canalis carpiban a retinaculum flexorum alatt fut. A tünetek gyakran éjszaka jelentkeznek; a tenyér közepét ellátó palmaris ág a csatorna előtt ágazik le, ezért ez a terület többnyire megkímélt.",
+        "sv": "N. medianus löper i canalis carpi under retinaculum flexorum. Symtomen uppträder ofta nattetid; den palmara gren som försörjer mitten av handflatan avgår före tunneln, och därför är detta område oftast skonat."
+      },
+      "link": {
+        "view": "plexus",
+        "item": "n.medianus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "p10",
+      "topic": "plexus",
+      "type": "tf",
+      "prompt": {
+        "hu": "A n. thoracicus longus közvetlenül a gyökökből (C5–C7) ered, nem a kötegekből.",
+        "sv": "N. thoracicus longus utgår direkt från nervrötterna (C5–C7), inte från sekundärsträngarna."
+      },
+      "answer": true,
+      "explanation": {
+        "hu": "Igaz. A gyökökből ered a n. dorsalis scapulae (C5) és a n. thoracicus longus (C5–C7). Sérülésének jele a scapula alata.",
+        "sv": "Sant. Från rötterna utgår n. dorsalis scapulae (C5) och n. thoracicus longus (C5–C7). Tecknet på skada är scapula alata."
+      },
+      "link": {
+        "view": "vall",
+        "item": "m.serratus-anterior"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    }
+  ]
+}
