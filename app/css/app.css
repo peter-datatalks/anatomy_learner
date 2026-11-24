@@ -359,3 +359,14 @@ a.pillar:hover{border-color:var(--pc);transform:translateY(-1px)}
 .hub-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px}
 .hub-grid .pillar .la{font-size:.9rem}
 .hub-grid .pillar .bar i{background:var(--pc)}
+
+/* 3D viewer */
+.v3d-panel{display:flex;flex-direction:column;gap:8px;border:1px solid var(--line);border-radius:12px;padding:14px;background:var(--surface)}
+.v3d-tools{gap:14px;font-size:.88rem}
+.v3d-tools label{display:inline-flex;gap:6px;align-items:center;cursor:pointer}
+.v3d{position:relative;border-radius:10px;background:radial-gradient(ellipse at 50% 35%,var(--surface) 0%,var(--surface-2) 100%);overflow:hidden}
+.v3d-canvas{height:min(420px,62vh);touch-action:none;cursor:grab}
+.v3d-canvas:active{cursor:grabbing}
+.v3d-canvas canvas{display:block;width:100%;height:100%}
+.v3d-intro{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;min-height:160px;padding:16px;text-align:center}
+.v3d-pick a{color:var(--accent);font-weight:600}

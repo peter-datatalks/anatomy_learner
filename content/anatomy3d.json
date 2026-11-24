@@ -1,0 +1,314 @@
+{
+  "models": [
+    {
+      "id": "upper-limb",
+      "title": {
+        "hu": "Jobb felső végtag",
+        "sv": "Höger övre extremitet"
+      },
+      "source": {
+        "name": "BodyParts3D",
+        "version": "4.0 (isa, 99% reduction)",
+        "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/download.html",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "BodyParts3D, © The Database Center for Life Science, licensed under CC Attribution 4.0 International",
+        "changes": "Right upper limb parts selected, merged per structure and converted to a compact binary mesh format."
+      },
+      "bones": {
+        "scapula": [
+          "right scapula"
+        ],
+        "clavicle": [
+          "right clavicle"
+        ],
+        "humerus": [
+          "right humerus"
+        ],
+        "radius": [
+          "right radius"
+        ],
+        "ulna": [
+          "right ulna"
+        ],
+        "scaphoid": [
+          "right scaphoid"
+        ],
+        "lunate": [
+          "right lunate"
+        ],
+        "triquetral": [
+          "right triquetral"
+        ],
+        "pisiform": [
+          "right pisiform"
+        ],
+        "trapezium": [
+          "right trapezium"
+        ],
+        "trapezoid": [
+          "right trapezoid"
+        ],
+        "capitate": [
+          "right capitate"
+        ],
+        "hamate": [
+          "right hamate"
+        ],
+        "mcfirst": [
+          "right first metacarpal bone"
+        ],
+        "mcsecond": [
+          "right second metacarpal bone"
+        ],
+        "mcthird": [
+          "right third metacarpal bone"
+        ],
+        "mcfourth": [
+          "right fourth metacarpal bone"
+        ],
+        "mcfifth": [
+          "right fifth metacarpal bone"
+        ],
+        "proximal-thumb": [
+          "proximal phalanx of right thumb"
+        ],
+        "distal-thumb": [
+          "distal phalanx of right thumb"
+        ],
+        "proximal-index": [
+          "proximal phalanx of right index finger"
+        ],
+        "middle-index": [
+          "middle phalanx of right index finger"
+        ],
+        "distal-index": [
+          "distal phalanx of right index finger"
+        ],
+        "proximal-middle": [
+          "proximal phalanx of right middle finger"
+        ],
+        "middle-middle": [
+          "middle phalanx of right middle finger"
+        ],
+        "distal-middle": [
+          "distal phalanx of right middle finger"
+        ],
+        "proximal-ring": [
+          "proximal phalanx of right ring finger"
+        ],
+        "middle-ring": [
+          "middle phalanx of right ring finger"
+        ],
+        "distal-ring": [
+          "distal phalanx of right ring finger"
+        ],
+        "proximal-little": [
+          "proximal phalanx of right little finger"
+        ],
+        "middle-little": [
+          "middle phalanx of right little finger"
+        ],
+        "distal-little": [
+          "distal phalanx of right little finger"
+        ]
+      },
+      "muscles": {
+        "m.deltoideus": [
+          "clavicular part of right deltoid",
+          "acromial part of right deltoid",
+          "spinal part of right deltoid"
+        ],
+        "m.supraspinatus": [
+          "right supraspinatus"
+        ],
+        "m.infraspinatus": [
+          "right infraspinatus muscle"
+        ],
+        "m.teres-minor": [
+          "right teres minor"
+        ],
+        "m.subscapularis": [
+          "right subscapularis"
+        ],
+        "m.serratus-anterior": [
+          "right serratus anterior"
+        ],
+        "m.biceps-brachii": [
+          "long head of right biceps brachii",
+          "short head of right biceps brachii"
+        ],
+        "m.brachialis": [
+          "right brachialis"
+        ],
+        "m.coracobrachialis": [
+          "right coracobrachialis"
+        ],
+        "m.triceps-brachii": [
+          "long head of right triceps brachii",
+          "lateral head of right triceps brachii",
+          "medial head of right triceps brachii"
+        ],
+        "m.anconeus": [
+          "right anconeus"
+        ],
+        "m.pronator-teres": [
+          "humeral head of right pronator teres",
+          "ulnar head of right pronator teres"
+        ],
+        "m.flexor-carpi-radialis": [
+          "right flexor carpi radialis"
+        ],
+        "m.palmaris-longus": [
+          "right palmaris longus"
+        ],
+        "m.flexor-carpi-ulnaris": [
+          "humeral head of right flexor carpi ulnaris",
+          "ulnar head of right flexor carpi ulnaris"
+        ],
+        "m.flexor-digitorum-superficialis": [
+          "right flexor digitorum superficialis"
+        ],
+        "m.flexor-digitorum-profundus": [
+          "right flexor digitorum profundus"
+        ],
+        "m.flexor-pollicis-longus": [
+          "right flexor pollicis longus"
+        ],
+        "m.pronator-quadratus": [
+          "right pronator quadratus"
+        ],
+        "m.brachioradialis": [
+          "right brachioradialis"
+        ],
+        "m.extensor-carpi-radialis-longus": [
+          "right extensor carpi radialis longus"
+        ],
+        "m.extensor-carpi-radialis-brevis": [
+          "right extensor carpi radialis brevis"
+        ],
+        "m.extensor-digitorum": [
+          "right extensor digitorum"
+        ],
+        "m.extensor-digiti-minimi": [
+          "right extensor digiti minimi"
+        ],
+        "m.extensor-carpi-ulnaris": [
+          "right extensor carpi ulnaris"
+        ],
+        "m.supinator": [
+          "right supinator"
+        ],
+        "m.abductor-pollicis-longus": [
+          "right abductor pollicis longus"
+        ],
+        "m.extensor-pollicis-brevis": [
+          "right extensor pollicis brevis"
+        ],
+        "m.extensor-pollicis-longus": [
+          "right extensor pollicis longus"
+        ],
+        "m.extensor-indicis": [
+          "right extensor indicis"
+        ],
+        "m.abductor-pollicis-brevis": [
+          "right abductor pollicis brevis"
+        ],
+        "m.flexor-pollicis-brevis": [
+          "right flexor pollicis brevis"
+        ],
+        "m.opponens-pollicis": [
+          "right opponens pollicis"
+        ],
+        "m.adductor-pollicis": [
+          "oblique head of right adductor pollicis",
+          "transverse head of right adductor pollicis"
+        ],
+        "m.abductor-digiti-minimi-manus": [
+          "abductor digiti minimi of right hand"
+        ],
+        "m.flexor-digiti-minimi-brevis-manus": [
+          "flexor digiti minimi brevis of right hand"
+        ],
+        "m.opponens-digiti-minimi": [
+          "opponens digiti minimi of right hand"
+        ],
+        "m.lumbricales-manus": [
+          "set of lumbricals of right hand"
+        ],
+        "m.interossei-dorsales-manus": [
+          "set of dorsal interossei of right hand"
+        ],
+        "m.interossei-palmares": [
+          "set of palmar interossei of right hand"
+        ]
+      },
+      "joints": {
+        "art.humeri": [
+          "humerus",
+          "scapula"
+        ],
+        "art.cubiti": [
+          "humerus",
+          "radius",
+          "ulna"
+        ],
+        "art.radioulnaris": [
+          "radius",
+          "ulna"
+        ],
+        "art.manus": [
+          "radius",
+          "ulna",
+          "scaphoid",
+          "lunate",
+          "triquetral",
+          "pisiform",
+          "trapezium",
+          "trapezoid",
+          "capitate",
+          "hamate"
+        ],
+        "art.carpometacarpalis-pollicis": [
+          "trapezium",
+          "mcfirst"
+        ],
+        "art.metacarpophalangeae": [
+          "mcfirst",
+          "mcsecond",
+          "mcthird",
+          "mcfourth",
+          "mcfifth",
+          "proximal-thumb",
+          "proximal-index",
+          "proximal-middle",
+          "proximal-ring",
+          "proximal-little"
+        ],
+        "art.interphalangeae-manus": [
+          "proximal-thumb",
+          "distal-thumb",
+          "proximal-index",
+          "middle-index",
+          "distal-index",
+          "proximal-middle",
+          "middle-middle",
+          "distal-middle",
+          "proximal-ring",
+          "middle-ring",
+          "distal-ring",
+          "proximal-little",
+          "middle-little",
+          "distal-little"
+        ]
+      },
+      "regions": [
+        "vall",
+        "konyok",
+        "alkar",
+        "kez",
+        "plexus"
+      ]
+    }
+  ]
+}

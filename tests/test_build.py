@@ -67,6 +67,16 @@ class ContentChecks(unittest.TestCase):
             d['ki-programme.json']['courses'][0]['credits'] += 1
         self.assertTrue(any('semester 1' in e for e in run_with(m)))
 
+    def test_3d_licence_must_be_allowed(self):
+        def m(d):
+            d['anatomy3d.json']['models'][0]['source']['license'] = 'all rights reserved'
+        self.assertTrue(any('not on the allowed list' in e for e in run_with(m)))
+
+    def test_3d_mapping_must_point_at_structures(self):
+        def m(d):
+            d['anatomy3d.json']['models'][0]['muscles']['m.not-a-muscle'] = ['right something']
+        self.assertTrue(any('"m.not-a-muscle" is not a structure' in e for e in run_with(m)))
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -300,11 +300,12 @@ function renderSheetInto(el,key){
     <dl class="fields">${F('Mozgató izmok','izmok')}${F('Beidegzés','beidegzes')}${F('Funkcionális szerep','funkcio')}${F('Vizsgálati módszerek','vizsg')}${F('Gyakori kompenzációk','komp')}${F('Klinikai összefüggések','klin')}</dl>`;
   if(s.kind==='ideg') body=`<div class="facts">${KF('Eredés · gyökök','eredes','nerve')}${KF('Motoros','motor','muscle')}${KF('Szenzoros','szenz','joint')}</div><dl class="fields">${F('Lefutás','lefutas')}${F('Vizsgálat','vizsg')}${F('Tipikus sérülési hely','serules')}${F('Kiesési tünetek','tunetek')}</dl>`;
   const qs=Q.filter(q=>q.link&&q.link[1]===key);
-  el.innerHTML=`<div class="sheet">${reviewBadge(key)}${tri(s.hu,s.sv,s.la)}${body}
+  el.innerHTML=`<div class="sheet">${reviewBadge(key)}${tri(s.hu,s.sv,s.la)}${v3dHtml(key)}${body}
     ${qs.length?`<div class="row"><span class="small muted">${u('Kapcsolódó kérdések','Relaterade frågor')}: ${qs.length}</span><button class="btn" id="sheetQuiz">${u('Gyakorold ezt az adatlapot','Öva på detta faktablad')}</button></div>`:''}
     ${tutorHtml(s.la)}</div>`;
   if(qs.length)$('#sheetQuiz').onclick=()=>{quizState=newQuiz(qs.map(q=>q.id),'gyak');location.hash='kviz'};
   bindTutor(()=>`Adatlap: ${s.la} (${s.hu} / ${s.sv}). Tartalom: ${JSON.stringify(s)}`);
+  mount3d(el,key);
 }
 function bindShoulder(){
   renderSheet();
@@ -709,7 +710,8 @@ window.addEventListener('hashchange',()=>{if(TERMS){render();window.scrollTo(0,0
    content.json is built from content/*.json by tools/build.py. The views below were
    written against the prototype's in-memory shapes, so hydrate() maps the content
    model onto those shapes. New views should read BUNDLE directly. */
-let BUNDLE=null,MODS={},MOD_LESSONS={},REGIONS={};
+const STRUCT_MODULE={};
+let BUNDLE=null,MODS={},MOD_LESSONS={},REGIONS={},MODELS3D=[],MODEL_OF={};
 const REVIEW={};
 const CAT_KEY={basics:'alap',bones:'csont',joints:'izulet',muscles:'izom',nervous:'ideg',physiology:'elettan'};
 const KIND={muscle:'izom',joint:'izulet',nerve:'ideg'};
@@ -737,7 +739,7 @@ function hydrate(b){
     const o={kind:KIND[s.type],hu:s.name.hu,sv:s.name.sv,la:s.name.la},v={};
     Object.entries(s.fields).forEach(([k,p])=>{const ok=FIELD_KEYS[s.type][k];o[ok]=p.hu;v[ok]=p.sv});
     if(s.rom){o.rom=s.rom.map(r=>[r.movement.hu,r.degrees]);v.rom=s.rom.map(r=>r.movement.sv)}
-    SHEETS[s.id]=o;sv.sheets[s.id]=v;rv(s.id,s.review);
+    SHEETS[s.id]=o;sv.sheets[s.id]=v;rv(s.id,s.review);STRUCT_MODULE[s.id]=s.module;
   });
   // modules
   MODS={};MOD_LESSONS={};
@@ -773,6 +775,7 @@ function hydrate(b){
     const it=q.link&&q.link.item;
     o.link=['#'+q.link.view,it?(it.startsWith('cn.')?it.slice(3):it):''];
     sv.q[q.id]=v;rv(q.id,q.review);return o});
+  MODELS3D=b.models3d||[];MODEL_OF={};MODELS3D.forEach(m=>m.structures.forEach(id=>{MODEL_OF[id]=m}));
   SV=sv;
 }
 
@@ -794,6 +797,71 @@ async function boot(){
     $('#view').innerHTML=`<div class="card stack"><h2>${u('A tananyag nem töltődött be','Kursinnehållet kunde inte läsas in')}</h2><p class="muted">${u('Ellenőrizd az internetkapcsolatot, majd töltsd újra az oldalt. Ha az alkalmazás már egyszer betöltődött, offline is működik.','Kontrollera internetanslutningen och ladda om sidan. Om appen har laddats en gång fungerar den även offline.')}</p><p class="small muted">${esc(String(e.message||e))}</p></div>`;
   }
   if('serviceWorker' in navigator&&location.protocol!=='file:'){navigator.serviceWorker.register('sw.js').catch(()=>{})}
+}
+
+/* ============================== 3D VIEWER ==============================
+   The viewer module (and three.js) load only when the student asks for 3D once;
+   after that the choice is remembered and every datasheet opens with its 3D view. */
+const BONE_LA={scapula:'scapula',clavicle:'clavicula',humerus:'humerus',radius:'radius',ulna:'ulna',scaphoid:'os scaphoideum',lunate:'os lunatum',triquetral:'os triquetrum',pisiform:'os pisiforme',trapezium:'os trapezium',trapezoid:'os trapezoideum',capitate:'os capitatum',hamate:'os hamatum',
+  mcfirst:'os metacarpi I',mcsecond:'os metacarpi II',mcthird:'os metacarpi III',mcfourth:'os metacarpi IV',mcfifth:'os metacarpi V'};
+const FINGER_LA={thumb:'pollicis',index:'indicis',middle:'digiti medii',ring:'digiti anularis',little:'digiti minimi'};
+function boneLatin(k){
+  if(BONE_LA[k])return BONE_LA[k];
+  const [ph,f]=k.split('-');return `phalanx ${({proximal:'proximalis',middle:'media',distal:'distalis'})[ph]} ${FINGER_LA[f]||''}`;
+}
+let viewer=null,viewerMod=null,viewerToken=0;
+function v3dHtml(key){
+  const m=MODEL_OF[key];
+  if(!m){
+    return SHEETS[key]&&SHEETS[key].kind==='ideg'?`<p class="small muted">${u('Az idegek 3D-modellje még nem érhető el: a jelenlegi forrás (BodyParts3D) nem tartalmaz perifériás idegeket.','3D-modell för nerver finns inte än: den nuvarande källan (BodyParts3D) innehåller inga perifera nerver.')}</p>`:'';
+  }
+  return `<section class="v3d-panel">
+    <div class="row" style="justify-content:space-between"><h3>${lb('3D nézet','3D-vy')}</h3>
+      <div class="row v3d-tools" hidden>
+        <label><input type="checkbox" data-layer="bone" checked> ${u('Csontok','Skelett')}</label>
+        <label><input type="checkbox" data-layer="muscle" checked> ${u('Izmok','Muskler')}</label>
+        <button class="btn ghost" type="button" data-v3d-reset>${u('Nézet visszaállítása','Återställ vy')}</button></div></div>
+    <div class="v3d"></div>
+    <p class="small muted v3d-pick" role="status">${u('Forgatás: húzás · Nagyítás: görgetés vagy csippentés · Koppints egy részre a nevéért.','Rotera: dra · Zooma: scrolla eller nyp · Tryck på en del för att se namnet.')}</p>
+    <p class="small muted">3D: <a href="${esc(m.sourceUrl)}" target="_blank" rel="noopener">${esc(m.sourceName)}</a> · ${esc(m.attribution)} · <a href="${esc(m.licenseUrl)}" target="_blank" rel="noopener">${esc(m.license)}</a> · ${u('módosítva','bearbetad')}</p>
+  </section>`;
+}
+async function mount3d(root,key){
+  const box=root.querySelector('.v3d');
+  if(viewer){viewer.dispose();viewer=null}
+  if(!box)return;
+  const token=++viewerToken,m=MODEL_OF[key];
+  if(!store.get('v3d',false)){
+    box.innerHTML=`<div class="v3d-intro"><button class="btn primary" type="button">${u('3D nézet betöltése','Läs in 3D-vy')}</button><span class="small muted">${u(`Egyszeri letöltés, kb. ${m.sizeMB} MB; utána offline is működik.`,`Engångsnedladdning, cirka ${m.sizeMB} MB; sedan fungerar den även offline.`)}</span></div>`;
+    box.querySelector('button').onclick=()=>{store.set('v3d',true);mount3d(root,key)};
+    return;
+  }
+  box.innerHTML=`<p class="muted small v3d-intro">${u('3D-modell betöltése…','Läser in 3D-modell…')}</p>`;
+  try{
+    viewerMod=viewerMod||await import(new URL('js/viewer3d.js',document.baseURI).href);
+    if(token!==viewerToken||!document.body.contains(box))return;
+    const v=await viewerMod.mountViewer(box,{modelId:m.id,structure:key});
+    if(token!==viewerToken){v.dispose();return}
+    viewer=v;
+    const panel=box.closest('.v3d-panel'),tools=panel.querySelector('.v3d-tools');tools.hidden=false;
+    tools.querySelectorAll('[data-layer]').forEach(c=>c.onchange=()=>viewer.setLayer(c.dataset.layer,c.checked));
+    tools.querySelector('[data-v3d-reset]').onclick=()=>viewer.resetView();
+    box.addEventListener('v3d-pick',e=>{
+      const d=e.detail,out=panel.querySelector('.v3d-pick');
+      if(!d){out.textContent=u('Nincs kijelölt rész.','Ingen del vald.');return}
+      if(d.kind==='muscle'&&SHEETS[d.key]){const t=SHEETS[d.key];out.innerHTML=`<b class="la">${esc(t.la)}</b> · ${esc(lang==='sv'?t.sv:t.hu)}${d.key!==key?` · <a href="#${moduleRoute(STRUCT_MODULE[d.key])}" data-open-sheet="${esc(d.key)}">${u('Adatlap','Faktablad')}</a>`:''}`;
+        const a=out.querySelector('[data-open-sheet]');if(a)a.onclick=()=>openSheet(d.key);}
+      else out.innerHTML=`<b class="la">${esc(boneLatin(d.key))}</b>`;
+    });
+  }catch(err){
+    if(token!==viewerToken)return;
+    box.innerHTML=`<p class="small muted v3d-intro">${u('A 3D nézet nem tölthető be ezen az eszközön (WebGL szükséges), vagy nincs internetkapcsolat az első letöltéshez.','3D-vyn kan inte läsas in på den här enheten (WebGL krävs), eller så saknas internet för den första nedladdningen.')}</p>`;
+  }
+}
+// open a structure's datasheet in whichever module page shows it
+function openSheet(id){
+  const mid=STRUCT_MODULE[id];
+  if(mid==='vall')modState.sheet=id;else if(mid==='plexus')plexSel=id;else modStateFor(mid).sheet=id;
 }
 
 /* ============================== PROGRESS TRANSFER ==============================

@@ -22,6 +22,7 @@ Then open http://localhost:8000. The build checks the content first and refuses 
 | `python3 tools/build.py --serve` | Build and serve `dist/` on port 8000 |
 | `python3 -m unittest discover tests` | Test the content checks |
 | `python3 tools/merge_drafts.py build/drafts/x.json` | Merge a drafted module (module, structures, questions, terms) into `content/` |
+| `python3 tools/build_3d.py` | Rebuild the 3D meshes in `app/models/` from BodyParts3D (see below) |
 | `python3 tools/make_icons.py` | Redraw the app icons |
 
 ## Project layout
@@ -31,6 +32,9 @@ app/                 the web app (copied into dist/ by the build)
   index.html
   css/app.css
   js/app.js          all views; loads content.json at start
+  js/viewer3d.js     3D viewer (three.js), loaded only when a student opens 3D
+  models/            compact 3D meshes built by tools/build_3d.py
+  vendor/three/      three.js 0.160.0 (MIT)
   sw.js              service worker (offline cache, versioned per build)
   manifest.webmanifest, icons/
 content/             the learning content — the source of truth
@@ -41,6 +45,7 @@ content/             the learning content — the source of truth
   questions.json     quiz questions with explanations
   ki-programme.json  KI 1FY26 courses, credits and topics
   taxonomy.json      dictionary categories, quiz topics, body regions
+  anatomy3d.json     3D licence register + which meshes show which structure
 tools/build.py       content checks + build
 tests/               tests for the content checks
 prototype/           the v0.3 single-page prototype, kept for reference
@@ -62,6 +67,22 @@ The build fails unless all of these hold:
 - KI semesters add up to 30 hp each and 180 hp in total.
 
 Modules without a custom page get one automatically at `#modul-<id>`. Record ids are namespaced: `t.` terms, `m.` muscles, `art.` joints, `n.` nerves, `cn.` cranial nerves.
+
+## 3D anatomy
+
+Datasheets of muscles and joints have a 3D view of the right upper limb. The selected structure lights up,
+the bone and muscle layers can be switched off, and tapping a part shows its name. The viewer downloads
+about 2.6 MB (three.js + meshes) the first time a student opens it; after that it works offline.
+
+The meshes come from **BodyParts3D**, © The Database Center for Life Science, licensed under
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). We selected the right upper limb parts,
+merged them per structure and converted them to a compact format. The credit is shown under every 3D view.
+Peripheral nerves are not part of BodyParts3D, so nerve datasheets have no 3D view yet.
+
+To rebuild the meshes, download `isa_BP3D_4.0_obj_99.zip` (136 MB) and `isa_element_parts.txt` from the
+[BodyParts3D download page](https://dbarchive.biosciencedbc.jp/en/bodyparts3d/download.html) into
+`build/bp3d/`, then run `python3 tools/build_3d.py`. The build refuses any 3D source whose licence is
+not on the allowed list (CC0, public domain, CC BY 4.0, CC BY-SA 4.0, MIT).
 
 ## Moving progress between devices
 

@@ -37,6 +37,7 @@ STRUCT_FIELDS = {
 }
 CN_FIELDS = ['nuclei', 'brainstemOrigin', 'skullExit', 'function', 'innervates', 'examination', 'lesion']
 MODALITIES = {'sensory', 'motor', 'motor+parasympathetic', 'mixed'}
+ALLOWED_LICENSES = {'CC0 1.0', 'public domain', 'CC BY 4.0', 'CC BY-SA 4.0', 'MIT'}
 ROMAN = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII']
 
 
@@ -271,10 +272,40 @@ def validate():
             c.pair(w, b.get('area'), f'proximalBranches[{i}].area')
         c.review(w, m.get('review'))
 
+    # 3D models: licence register + structure mapping
+    models3d = []
+    anat = load('anatomy3d.json') if (CONTENT / 'anatomy3d.json').exists() else {'models': []}
+    for mdl in anat['models']:
+        w = f'anatomy3d/{mdl.get("id")}'
+        src = mdl.get('source', {})
+        for f in ('name', 'url', 'license', 'licenseUrl', 'attribution', 'changes'):
+            c.text(w, src.get(f), f'source.{f}')
+        if src.get('license') not in ALLOWED_LICENSES:
+            c.err(w, f'licence "{src.get("license")}" is not on the allowed list {sorted(ALLOWED_LICENSES)}')
+        for sid in list(mdl.get('muscles', {})) + list(mdl.get('joints', {})):
+            if sid not in struct_ids:
+                c.err(w, f'"{sid}" is not a structure')
+        for sid, bones in mdl.get('joints', {}).items():
+            for b in bones:
+                if b not in mdl.get('bones', {}):
+                    c.err(w, f'joint "{sid}" uses unknown bone "{b}"')
+        binf, manf = APP / 'models' / f'{mdl["id"]}.bin', APP / 'models' / f'{mdl["id"]}.json'
+        if not (binf.exists() and manf.exists()):
+            c.err(w, f'model files missing in app/models/ — run tools/build_3d.py')
+            continue
+        man = json.loads(manf.read_text(encoding='utf-8'))
+        expected = set(mdl.get('muscles', {})) | set(mdl.get('joints', {}))
+        if set(man.get('structures', {})) != expected:
+            c.err(w, 'app/models manifest is out of date with content/anatomy3d.json — run tools/build_3d.py')
+        models3d.append({'id': mdl['id'], 'structures': sorted(expected), 'sizeMB': round(binf.stat().st_size / 1e6, 1),
+                         'sourceName': src.get('name'), 'sourceUrl': src.get('url'), 'license': src.get('license'),
+                         'licenseUrl': src.get('licenseUrl'), 'attribution': src.get('attribution')})
+
     bundle = {'terms': terms, 'structures': structures, 'cranialNerves': cranial, 'questions': questions,
-              'ki': ki, 'modules': modules, 'taxonomy': taxonomy}
+              'ki': ki, 'modules': modules, 'taxonomy': taxonomy, 'models3d': models3d}
     counts = {'terms': len(terms), 'structures': len(structures), 'cranial nerves': len(cranial),
-              'questions': len(questions), 'KI courses': len(ki.get('courses', [])), 'modules': len(modules)}
+              'questions': len(questions), 'KI courses': len(ki.get('courses', [])), 'modules': len(modules),
+              '3D-mapped structures': sum(len(m['structures']) for m in models3d)}
     records = terms + structures + cranial + questions + modules
     reviewed = sum(1 for r in records if (r.get('review') or {}).get('status') == 'reviewed')
     return c.errors, bundle, counts, (reviewed, len(records))

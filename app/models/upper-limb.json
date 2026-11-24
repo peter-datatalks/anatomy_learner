@@ -1,0 +1,853 @@
+{
+ "id": "upper-limb",
+ "units": "mm",
+ "up": "z",
+ "bboxMin": [
+  -323.914,
+  -195.428,
+  653.067
+ ],
+ "bboxMax": [
+  301.25,
+  5.26406,
+  1355.44
+ ],
+ "source": {
+  "name": "BodyParts3D",
+  "version": "4.0 (isa, 99% reduction)",
+  "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/download.html",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "attribution": "BodyParts3D, © The Database Center for Life Science, licensed under CC Attribution 4.0 International",
+  "changes": "Right upper limb parts selected, merged per structure and converted to a compact binary mesh format."
+ },
+ "parts": [
+  {
+   "key": "scapula",
+   "kind": "bone",
+   "vertexCount": 13118,
+   "indexCount": 78516,
+   "positionOffset": 0,
+   "indexOffset": 78708,
+   "indexType": "uint16"
+  },
+  {
+   "key": "clavicle",
+   "kind": "bone",
+   "vertexCount": 583,
+   "indexCount": 3438,
+   "positionOffset": 235740,
+   "indexOffset": 239240,
+   "indexType": "uint16"
+  },
+  {
+   "key": "humerus",
+   "kind": "bone",
+   "vertexCount": 2233,
+   "indexCount": 11352,
+   "positionOffset": 246116,
+   "indexOffset": 259516,
+   "indexType": "uint16"
+  },
+  {
+   "key": "radius",
+   "kind": "bone",
+   "vertexCount": 388,
+   "indexCount": 2016,
+   "positionOffset": 282220,
+   "indexOffset": 284548,
+   "indexType": "uint16"
+  },
+  {
+   "key": "ulna",
+   "kind": "bone",
+   "vertexCount": 500,
+   "indexCount": 2502,
+   "positionOffset": 288580,
+   "indexOffset": 291580,
+   "indexType": "uint16"
+  },
+  {
+   "key": "scaphoid",
+   "kind": "bone",
+   "vertexCount": 195,
+   "indexCount": 966,
+   "positionOffset": 296584,
+   "indexOffset": 297756,
+   "indexType": "uint16"
+  },
+  {
+   "key": "lunate",
+   "kind": "bone",
+   "vertexCount": 196,
+   "indexCount": 996,
+   "positionOffset": 299688,
+   "indexOffset": 300864,
+   "indexType": "uint16"
+  },
+  {
+   "key": "triquetral",
+   "kind": "bone",
+   "vertexCount": 139,
+   "indexCount": 510,
+   "positionOffset": 302856,
+   "indexOffset": 303692,
+   "indexType": "uint16"
+  },
+  {
+   "key": "pisiform",
+   "kind": "bone",
+   "vertexCount": 110,
+   "indexCount": 570,
+   "positionOffset": 304712,
+   "indexOffset": 305372,
+   "indexType": "uint16"
+  },
+  {
+   "key": "trapezium",
+   "kind": "bone",
+   "vertexCount": 277,
+   "indexCount": 1302,
+   "positionOffset": 306512,
+   "indexOffset": 308176,
+   "indexType": "uint16"
+  },
+  {
+   "key": "trapezoid",
+   "kind": "bone",
+   "vertexCount": 271,
+   "indexCount": 1080,
+   "positionOffset": 310780,
+   "indexOffset": 312408,
+   "indexType": "uint16"
+  },
+  {
+   "key": "capitate",
+   "kind": "bone",
+   "vertexCount": 256,
+   "indexCount": 1284,
+   "positionOffset": 314568,
+   "indexOffset": 316104,
+   "indexType": "uint16"
+  },
+  {
+   "key": "hamate",
+   "kind": "bone",
+   "vertexCount": 335,
+   "indexCount": 1566,
+   "positionOffset": 318672,
+   "indexOffset": 320684,
+   "indexType": "uint16"
+  },
+  {
+   "key": "mcfirst",
+   "kind": "bone",
+   "vertexCount": 307,
+   "indexCount": 1698,
+   "positionOffset": 323816,
+   "indexOffset": 325660,
+   "indexType": "uint16"
+  },
+  {
+   "key": "mcsecond",
+   "kind": "bone",
+   "vertexCount": 418,
+   "indexCount": 2244,
+   "positionOffset": 329056,
+   "indexOffset": 331564,
+   "indexType": "uint16"
+  },
+  {
+   "key": "mcthird",
+   "kind": "bone",
+   "vertexCount": 404,
+   "indexCount": 2106,
+   "positionOffset": 336052,
+   "indexOffset": 338476,
+   "indexType": "uint16"
+  },
+  {
+   "key": "mcfourth",
+   "kind": "bone",
+   "vertexCount": 340,
+   "indexCount": 1608,
+   "positionOffset": 342688,
+   "indexOffset": 344728,
+   "indexType": "uint16"
+  },
+  {
+   "key": "mcfifth",
+   "kind": "bone",
+   "vertexCount": 279,
+   "indexCount": 1518,
+   "positionOffset": 347944,
+   "indexOffset": 349620,
+   "indexType": "uint16"
+  },
+  {
+   "key": "proximal-thumb",
+   "kind": "bone",
+   "vertexCount": 197,
+   "indexCount": 954,
+   "positionOffset": 352656,
+   "indexOffset": 353840,
+   "indexType": "uint16"
+  },
+  {
+   "key": "distal-thumb",
+   "kind": "bone",
+   "vertexCount": 187,
+   "indexCount": 720,
+   "positionOffset": 355748,
+   "indexOffset": 356872,
+   "indexType": "uint16"
+  },
+  {
+   "key": "proximal-index",
+   "kind": "bone",
+   "vertexCount": 226,
+   "indexCount": 1158,
+   "positionOffset": 358312,
+   "indexOffset": 359668,
+   "indexType": "uint16"
+  },
+  {
+   "key": "middle-index",
+   "kind": "bone",
+   "vertexCount": 190,
+   "indexCount": 792,
+   "positionOffset": 361984,
+   "indexOffset": 363124,
+   "indexType": "uint16"
+  },
+  {
+   "key": "distal-index",
+   "kind": "bone",
+   "vertexCount": 188,
+   "indexCount": 630,
+   "positionOffset": 364708,
+   "indexOffset": 365836,
+   "indexType": "uint16"
+  },
+  {
+   "key": "proximal-middle",
+   "kind": "bone",
+   "vertexCount": 271,
+   "indexCount": 1374,
+   "positionOffset": 367096,
+   "indexOffset": 368724,
+   "indexType": "uint16"
+  },
+  {
+   "key": "middle-middle",
+   "kind": "bone",
+   "vertexCount": 227,
+   "indexCount": 1026,
+   "positionOffset": 371472,
+   "indexOffset": 372836,
+   "indexType": "uint16"
+  },
+  {
+   "key": "distal-middle",
+   "kind": "bone",
+   "vertexCount": 143,
+   "indexCount": 522,
+   "positionOffset": 374888,
+   "indexOffset": 375748,
+   "indexType": "uint16"
+  },
+  {
+   "key": "proximal-ring",
+   "kind": "bone",
+   "vertexCount": 209,
+   "indexCount": 1128,
+   "positionOffset": 376792,
+   "indexOffset": 378048,
+   "indexType": "uint16"
+  },
+  {
+   "key": "middle-ring",
+   "kind": "bone",
+   "vertexCount": 219,
+   "indexCount": 948,
+   "positionOffset": 380304,
+   "indexOffset": 381620,
+   "indexType": "uint16"
+  },
+  {
+   "key": "distal-ring",
+   "kind": "bone",
+   "vertexCount": 114,
+   "indexCount": 336,
+   "positionOffset": 383516,
+   "indexOffset": 384200,
+   "indexType": "uint16"
+  },
+  {
+   "key": "proximal-little",
+   "kind": "bone",
+   "vertexCount": 187,
+   "indexCount": 942,
+   "positionOffset": 384872,
+   "indexOffset": 385996,
+   "indexType": "uint16"
+  },
+  {
+   "key": "middle-little",
+   "kind": "bone",
+   "vertexCount": 169,
+   "indexCount": 624,
+   "positionOffset": 387880,
+   "indexOffset": 388896,
+   "indexType": "uint16"
+  },
+  {
+   "key": "distal-little",
+   "kind": "bone",
+   "vertexCount": 140,
+   "indexCount": 564,
+   "positionOffset": 390144,
+   "indexOffset": 390984,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.deltoideus",
+   "kind": "muscle",
+   "vertexCount": 5173,
+   "indexCount": 16218,
+   "positionOffset": 392112,
+   "indexOffset": 423152,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.supraspinatus",
+   "kind": "muscle",
+   "vertexCount": 843,
+   "indexCount": 2634,
+   "positionOffset": 455588,
+   "indexOffset": 460648,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.infraspinatus",
+   "kind": "muscle",
+   "vertexCount": 743,
+   "indexCount": 2598,
+   "positionOffset": 465916,
+   "indexOffset": 470376,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.teres-minor",
+   "kind": "muscle",
+   "vertexCount": 392,
+   "indexCount": 1518,
+   "positionOffset": 475572,
+   "indexOffset": 477924,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.subscapularis",
+   "kind": "muscle",
+   "vertexCount": 2775,
+   "indexCount": 6276,
+   "positionOffset": 480960,
+   "indexOffset": 497612,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.serratus-anterior",
+   "kind": "muscle",
+   "vertexCount": 28465,
+   "indexCount": 147636,
+   "positionOffset": 510164,
+   "indexOffset": 680956,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.biceps-brachii",
+   "kind": "muscle",
+   "vertexCount": 2792,
+   "indexCount": 9846,
+   "positionOffset": 976228,
+   "indexOffset": 992980,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.brachialis",
+   "kind": "muscle",
+   "vertexCount": 1266,
+   "indexCount": 5238,
+   "positionOffset": 1012672,
+   "indexOffset": 1020268,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.coracobrachialis",
+   "kind": "muscle",
+   "vertexCount": 451,
+   "indexCount": 1332,
+   "positionOffset": 1030744,
+   "indexOffset": 1033452,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.triceps-brachii",
+   "kind": "muscle",
+   "vertexCount": 3403,
+   "indexCount": 15078,
+   "positionOffset": 1036116,
+   "indexOffset": 1056536,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.anconeus",
+   "kind": "muscle",
+   "vertexCount": 1105,
+   "indexCount": 3834,
+   "positionOffset": 1086692,
+   "indexOffset": 1093324,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.pronator-teres",
+   "kind": "muscle",
+   "vertexCount": 2379,
+   "indexCount": 8658,
+   "positionOffset": 1100992,
+   "indexOffset": 1115268,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.flexor-carpi-radialis",
+   "kind": "muscle",
+   "vertexCount": 819,
+   "indexCount": 3444,
+   "positionOffset": 1132584,
+   "indexOffset": 1137500,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.palmaris-longus",
+   "kind": "muscle",
+   "vertexCount": 4471,
+   "indexCount": 14904,
+   "positionOffset": 1144388,
+   "indexOffset": 1171216,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.flexor-carpi-ulnaris",
+   "kind": "muscle",
+   "vertexCount": 3602,
+   "indexCount": 12582,
+   "positionOffset": 1201024,
+   "indexOffset": 1222636,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.flexor-digitorum-superficialis",
+   "kind": "muscle",
+   "vertexCount": 6745,
+   "indexCount": 28692,
+   "positionOffset": 1247800,
+   "indexOffset": 1288272,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.flexor-digitorum-profundus",
+   "kind": "muscle",
+   "vertexCount": 3857,
+   "indexCount": 14514,
+   "positionOffset": 1345656,
+   "indexOffset": 1368800,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.flexor-pollicis-longus",
+   "kind": "muscle",
+   "vertexCount": 1781,
+   "indexCount": 4326,
+   "positionOffset": 1397828,
+   "indexOffset": 1408516,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.pronator-quadratus",
+   "kind": "muscle",
+   "vertexCount": 2257,
+   "indexCount": 5514,
+   "positionOffset": 1417168,
+   "indexOffset": 1430712,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.brachioradialis",
+   "kind": "muscle",
+   "vertexCount": 3270,
+   "indexCount": 14622,
+   "positionOffset": 1441740,
+   "indexOffset": 1461360,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.extensor-carpi-radialis-longus",
+   "kind": "muscle",
+   "vertexCount": 1696,
+   "indexCount": 7422,
+   "positionOffset": 1490604,
+   "indexOffset": 1500780,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.extensor-carpi-radialis-brevis",
+   "kind": "muscle",
+   "vertexCount": 1564,
+   "indexCount": 6294,
+   "positionOffset": 1515624,
+   "indexOffset": 1525008,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.extensor-digitorum",
+   "kind": "muscle",
+   "vertexCount": 3355,
+   "indexCount": 12882,
+   "positionOffset": 1537596,
+   "indexOffset": 1557728,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.extensor-digiti-minimi",
+   "kind": "muscle",
+   "vertexCount": 1014,
+   "indexCount": 4302,
+   "positionOffset": 1583492,
+   "indexOffset": 1589576,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.extensor-carpi-ulnaris",
+   "kind": "muscle",
+   "vertexCount": 4089,
+   "indexCount": 10182,
+   "positionOffset": 1598180,
+   "indexOffset": 1622716,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.supinator",
+   "kind": "muscle",
+   "vertexCount": 2368,
+   "indexCount": 9330,
+   "positionOffset": 1643080,
+   "indexOffset": 1657288,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.abductor-pollicis-longus",
+   "kind": "muscle",
+   "vertexCount": 1439,
+   "indexCount": 5622,
+   "positionOffset": 1675948,
+   "indexOffset": 1684584,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.extensor-pollicis-brevis",
+   "kind": "muscle",
+   "vertexCount": 846,
+   "indexCount": 2994,
+   "positionOffset": 1695828,
+   "indexOffset": 1700904,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.extensor-pollicis-longus",
+   "kind": "muscle",
+   "vertexCount": 1177,
+   "indexCount": 3978,
+   "positionOffset": 1706892,
+   "indexOffset": 1713956,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.extensor-indicis",
+   "kind": "muscle",
+   "vertexCount": 690,
+   "indexCount": 2160,
+   "positionOffset": 1721912,
+   "indexOffset": 1726052,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.abductor-pollicis-brevis",
+   "kind": "muscle",
+   "vertexCount": 713,
+   "indexCount": 2232,
+   "positionOffset": 1730372,
+   "indexOffset": 1734652,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.flexor-pollicis-brevis",
+   "kind": "muscle",
+   "vertexCount": 735,
+   "indexCount": 2142,
+   "positionOffset": 1739116,
+   "indexOffset": 1743528,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.opponens-pollicis",
+   "kind": "muscle",
+   "vertexCount": 1015,
+   "indexCount": 2868,
+   "positionOffset": 1747812,
+   "indexOffset": 1753904,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.adductor-pollicis",
+   "kind": "muscle",
+   "vertexCount": 1379,
+   "indexCount": 4236,
+   "positionOffset": 1759640,
+   "indexOffset": 1767916,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.abductor-digiti-minimi-manus",
+   "kind": "muscle",
+   "vertexCount": 625,
+   "indexCount": 1524,
+   "positionOffset": 1776388,
+   "indexOffset": 1780140,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.flexor-digiti-minimi-brevis-manus",
+   "kind": "muscle",
+   "vertexCount": 312,
+   "indexCount": 984,
+   "positionOffset": 1783188,
+   "indexOffset": 1785060,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.opponens-digiti-minimi",
+   "kind": "muscle",
+   "vertexCount": 626,
+   "indexCount": 1452,
+   "positionOffset": 1787028,
+   "indexOffset": 1790784,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.lumbricales-manus",
+   "kind": "muscle",
+   "vertexCount": 3008,
+   "indexCount": 8004,
+   "positionOffset": 1793688,
+   "indexOffset": 1811736,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.interossei-dorsales-manus",
+   "kind": "muscle",
+   "vertexCount": 3762,
+   "indexCount": 7854,
+   "positionOffset": 1827744,
+   "indexOffset": 1850316,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.interossei-palmares",
+   "kind": "muscle",
+   "vertexCount": 1239,
+   "indexCount": 2898,
+   "positionOffset": 1866024,
+   "indexOffset": 1873460,
+   "indexType": "uint16"
+  }
+ ],
+ "structures": {
+  "m.deltoideus": [
+   "m.deltoideus"
+  ],
+  "m.supraspinatus": [
+   "m.supraspinatus"
+  ],
+  "m.infraspinatus": [
+   "m.infraspinatus"
+  ],
+  "m.teres-minor": [
+   "m.teres-minor"
+  ],
+  "m.subscapularis": [
+   "m.subscapularis"
+  ],
+  "m.serratus-anterior": [
+   "m.serratus-anterior"
+  ],
+  "m.biceps-brachii": [
+   "m.biceps-brachii"
+  ],
+  "m.brachialis": [
+   "m.brachialis"
+  ],
+  "m.coracobrachialis": [
+   "m.coracobrachialis"
+  ],
+  "m.triceps-brachii": [
+   "m.triceps-brachii"
+  ],
+  "m.anconeus": [
+   "m.anconeus"
+  ],
+  "m.pronator-teres": [
+   "m.pronator-teres"
+  ],
+  "m.flexor-carpi-radialis": [
+   "m.flexor-carpi-radialis"
+  ],
+  "m.palmaris-longus": [
+   "m.palmaris-longus"
+  ],
+  "m.flexor-carpi-ulnaris": [
+   "m.flexor-carpi-ulnaris"
+  ],
+  "m.flexor-digitorum-superficialis": [
+   "m.flexor-digitorum-superficialis"
+  ],
+  "m.flexor-digitorum-profundus": [
+   "m.flexor-digitorum-profundus"
+  ],
+  "m.flexor-pollicis-longus": [
+   "m.flexor-pollicis-longus"
+  ],
+  "m.pronator-quadratus": [
+   "m.pronator-quadratus"
+  ],
+  "m.brachioradialis": [
+   "m.brachioradialis"
+  ],
+  "m.extensor-carpi-radialis-longus": [
+   "m.extensor-carpi-radialis-longus"
+  ],
+  "m.extensor-carpi-radialis-brevis": [
+   "m.extensor-carpi-radialis-brevis"
+  ],
+  "m.extensor-digitorum": [
+   "m.extensor-digitorum"
+  ],
+  "m.extensor-digiti-minimi": [
+   "m.extensor-digiti-minimi"
+  ],
+  "m.extensor-carpi-ulnaris": [
+   "m.extensor-carpi-ulnaris"
+  ],
+  "m.supinator": [
+   "m.supinator"
+  ],
+  "m.abductor-pollicis-longus": [
+   "m.abductor-pollicis-longus"
+  ],
+  "m.extensor-pollicis-brevis": [
+   "m.extensor-pollicis-brevis"
+  ],
+  "m.extensor-pollicis-longus": [
+   "m.extensor-pollicis-longus"
+  ],
+  "m.extensor-indicis": [
+   "m.extensor-indicis"
+  ],
+  "m.abductor-pollicis-brevis": [
+   "m.abductor-pollicis-brevis"
+  ],
+  "m.flexor-pollicis-brevis": [
+   "m.flexor-pollicis-brevis"
+  ],
+  "m.opponens-pollicis": [
+   "m.opponens-pollicis"
+  ],
+  "m.adductor-pollicis": [
+   "m.adductor-pollicis"
+  ],
+  "m.abductor-digiti-minimi-manus": [
+   "m.abductor-digiti-minimi-manus"
+  ],
+  "m.flexor-digiti-minimi-brevis-manus": [
+   "m.flexor-digiti-minimi-brevis-manus"
+  ],
+  "m.opponens-digiti-minimi": [
+   "m.opponens-digiti-minimi"
+  ],
+  "m.lumbricales-manus": [
+   "m.lumbricales-manus"
+  ],
+  "m.interossei-dorsales-manus": [
+   "m.interossei-dorsales-manus"
+  ],
+  "m.interossei-palmares": [
+   "m.interossei-palmares"
+  ],
+  "art.humeri": [
+   "humerus",
+   "scapula"
+  ],
+  "art.cubiti": [
+   "humerus",
+   "radius",
+   "ulna"
+  ],
+  "art.radioulnaris": [
+   "radius",
+   "ulna"
+  ],
+  "art.manus": [
+   "radius",
+   "ulna",
+   "scaphoid",
+   "lunate",
+   "triquetral",
+   "pisiform",
+   "trapezium",
+   "trapezoid",
+   "capitate",
+   "hamate"
+  ],
+  "art.carpometacarpalis-pollicis": [
+   "trapezium",
+   "mcfirst"
+  ],
+  "art.metacarpophalangeae": [
+   "mcfirst",
+   "mcsecond",
+   "mcthird",
+   "mcfourth",
+   "mcfifth",
+   "proximal-thumb",
+   "proximal-index",
+   "proximal-middle",
+   "proximal-ring",
+   "proximal-little"
+  ],
+  "art.interphalangeae-manus": [
+   "proximal-thumb",
+   "distal-thumb",
+   "proximal-index",
+   "middle-index",
+   "distal-index",
+   "proximal-middle",
+   "middle-middle",
+   "distal-middle",
+   "proximal-ring",
+   "middle-ring",
+   "distal-ring",
+   "proximal-little",
+   "middle-little",
+   "distal-little"
+  ]
+ }
+}
