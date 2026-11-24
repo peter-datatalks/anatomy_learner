@@ -1441,6 +1441,3184 @@
         "by": null,
         "date": null
       }
+    },
+    {
+      "id": "ko1",
+      "topic": "konyok",
+      "type": "mc",
+      "prompt": {
+        "hu": "Vállsérülés után a beteg könyökhajlítása supinált alkarnál gyenge, a supinatio is erőtlen, a bicepsz-reflex hiányzik, és az alkar laterális oldalán zsibbadást érez. Melyik ideg sérült?",
+        "sv": "Efter en axelskada är patientens armbågsflexion med supinerad underarm svag, även supinationen är kraftlös, bicepsreflexen saknas och patienten har domningar på underarmens laterala sida. Vilken nerv är skadad?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "N. radialis",
+            "sv": "N. radialis"
+          },
+          "whyWrong": {
+            "hu": "A n. radialis a könyök- és csuklófeszítőket látja el, sérülése csuklóejtést okoz, nem hajlítógyengeséget; bőrterülete az alkar hátsó oldala és a kézhát radiális része.",
+            "sv": "N. radialis försörjer armbågs- och handledsextensorerna; skada ger dropphand, inte flexionssvaghet, och dess hudområde är underarmens baksida och radiala handryggen."
+          }
+        },
+        {
+          "text": {
+            "hu": "N. medianus",
+            "sv": "N. medianus"
+          },
+          "whyWrong": {
+            "hu": "A n. medianus a felkaron nem ad izomágat; az alkarhajlítókat és pronátorokat látja el, érzőterülete a tenyér radiális része.",
+            "sv": "N. medianus ger inga muskelgrenar i överarmen; den försörjer underarmens flexorer och pronatorer och dess känselområde är handflatans radiala del."
+          }
+        },
+        {
+          "text": {
+            "hu": "N. musculocutaneus",
+            "sv": "N. musculocutaneus"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "N. axillaris",
+            "sv": "N. axillaris"
+          },
+          "whyWrong": {
+            "hu": "A n. axillaris a m. deltoideust és a m. teres minort idegzi be; sérülése a vállabductiót gyengíti, érzészavara a váll laterális oldalán van.",
+            "sv": "N. axillaris innerverar m. deltoideus och m. teres minor; skada försvagar axelabduktionen och känselbortfallet sitter på axelns laterala sida."
+          }
+        }
+      ],
+      "answer": 2,
+      "explanation": {
+        "hu": "A n. musculocutaneus (C5–C6) a felkar elülső rekeszének izmait (m. biceps brachii, m. brachialis, m. coracobrachialis) idegzi be, majd n. cutaneus antebrachii lateralisként az alkar laterális bőrét látja el. Mivel a biceps a fő supinátor hajlított könyöknél, a supinatio is gyengül; a m. brachioradialis (n. radialis) miatt a hajlítás nem szűnik meg teljesen.",
+        "sv": "N. musculocutaneus (C5–C6) innerverar musklerna i överarmens främre kompartment (m. biceps brachii, m. brachialis, m. coracobrachialis) och fortsätter som n. cutaneus antebrachii lateralis till underarmens laterala hud. Eftersom biceps är den främsta supinatorn med flekterad armbåge försvagas även supinationen; tack vare m. brachioradialis (n. radialis) försvinner flexionen inte helt."
+      },
+      "link": {
+        "view": "modul-konyok",
+        "item": "m.biceps-brachii"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "ko2",
+      "topic": "konyok",
+      "type": "mc",
+      "prompt": {
+        "hu": "Humerusszár-törés után a betegnek csuklóejtése van, de a könyöknyújtás ereje szinte normális. Mi a legvalószínűbb magyarázat?",
+        "sv": "Efter en humerusskaftfraktur har patienten dropphand, men kraften i armbågsextensionen är nästan normal. Vad är den mest sannolika förklaringen?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "A tricepszet a n. musculocutaneus idegzi be.",
+            "sv": "Triceps innerveras av n. musculocutaneus."
+          },
+          "whyWrong": {
+            "hu": "A n. musculocutaneus az elülső rekesz hajlítóit látja el; a triceps a n. radialis izma.",
+            "sv": "N. musculocutaneus försörjer flexorerna i det främre kompartmentet; triceps är en radialismuskel."
+          }
+        },
+        {
+          "text": {
+            "hu": "A n. radialis tricepszágai többnyire a sulcus nervi radialis előtt, proximálisan lépnek ki.",
+            "sv": "N. radialis tricepsgrenar avgår oftast proximalt, innan nerven når sulcus nervi radialis."
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "A könyöknyújtást főként a m. anconeus végzi.",
+            "sv": "Armbågsextension utförs främst av m. anconeus."
+          },
+          "whyWrong": {
+            "hu": "A m. anconeus kis segédizom, és szintén a n. radialis idegzi be; a fő feszítő a triceps.",
+            "sv": "M. anconeus är en liten hjälpmuskel och innerveras också av n. radialis; huvudextensorn är triceps."
+          }
+        },
+        {
+          "text": {
+            "hu": "A gravitáció pótolja a tricepsz működését.",
+            "sv": "Gravitationen ersätter tricepsfunktionen."
+          },
+          "whyWrong": {
+            "hu": "Ez csak bizonyos testhelyzetekben segít, ellenállással szemben nem; a vizsgálat ellenállással méri az erőt.",
+            "sv": "Det hjälper bara i vissa lägen, inte mot motstånd; undersökningen mäter kraft mot motstånd."
+          }
+        }
+      ],
+      "answer": 1,
+      "explanation": {
+        "hu": "A n. radialis a humerus hátsó felszínén, a sulcus nervi radialisban fut, ahol szártörésnél sérülhet. A tricepszhez futó ágak jellemzően ennél proximálisabban erednek, így a könyöknyújtás megmarad, a csukló- és ujjfeszítők viszont kiesnek. A sérülés magassága tehát a klinikai képből becsülhető.",
+        "sv": "N. radialis löper på humerus baksida i sulcus nervi radialis, där den kan skadas vid skaftfraktur. Grenarna till triceps avgår vanligen proximalt om detta, så armbågsextensionen bevaras medan handleds- och fingerextensorerna faller bort. Skadans nivå kan alltså uppskattas utifrån den kliniska bilden."
+      },
+      "link": {
+        "view": "modul-konyok",
+        "item": "m.triceps-brachii"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "ko3",
+      "topic": "konyok",
+      "type": "mc",
+      "prompt": {
+        "hu": "Melyik izom a legerősebb supinátor 90°-ban hajlított könyöknél (pl. csavarhúzó használatakor)?",
+        "sv": "Vilken muskel är den starkaste supinatorn med armbågen flekterad 90° (t.ex. när man använder en skruvmejsel)?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "M. supinator",
+            "sv": "M. supinator"
+          },
+          "whyWrong": {
+            "hu": "Fontos supinátor, főleg nyújtott könyöknél és kis erőnél, de hajlított könyöknél a biceps lényegesen erősebb.",
+            "sv": "En viktig supinator, särskilt med extenderad armbåge och vid låg kraft, men med flekterad armbåge är biceps betydligt starkare."
+          }
+        },
+        {
+          "text": {
+            "hu": "M. brachioradialis",
+            "sv": "M. brachioradialis"
+          },
+          "whyWrong": {
+            "hu": "A m. brachioradialis főként könyökhajlító középhelyzetben; az alkart csak a középhelyzet felé forgatja, nem igazi supinátor.",
+            "sv": "M. brachioradialis är främst armbågsflexor i mellanläge; den för underarmen bara mot mellanläget och är ingen egentlig supinator."
+          }
+        },
+        {
+          "text": {
+            "hu": "M. pronator teres",
+            "sv": "M. pronator teres"
+          },
+          "whyWrong": {
+            "hu": "Nevéből is látszik: pronátor, a supinatio antagonistája.",
+            "sv": "Som namnet säger är den en pronator, antagonist till supinationen."
+          }
+        },
+        {
+          "text": {
+            "hu": "M. biceps brachii",
+            "sv": "M. biceps brachii"
+          },
+          "whyWrong": null
+        }
+      ],
+      "answer": 3,
+      "explanation": {
+        "hu": "A m. biceps brachii a tuberositas radiin tapad, amely pronált alkarnál hátrafelé fordul; az izom összehúzódáskor \"visszatekeri\" a radiust. Erőkarja 90°-os könyökhajlításnál a legkedvezőbb, ezért a csavarok jobbmenetesek – jobbkezes ember supinációval húzza meg őket.",
+        "sv": "M. biceps brachii fäster på tuberositas radii, som vänds bakåt när underarmen proneras; vid kontraktion \"lindar\" muskeln tillbaka radius. Hävarmen är mest gynnsam vid 90° armbågsflexion, därför är skruvar högergängade – en högerhänt person drar åt dem med supination."
+      },
+      "link": {
+        "view": "modul-konyok",
+        "item": "m.biceps-brachii"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "ko4",
+      "topic": "konyok",
+      "type": "tf",
+      "prompt": {
+        "hu": "A m. brachialis a tuberositas radiin tapad, ezért ereje az alkar forgatott helyzetétől függ.",
+        "sv": "M. brachialis fäster på tuberositas radii, och därför beror dess kraft på underarmens rotationsläge."
+      },
+      "answer": false,
+      "explanation": {
+        "hu": "Hamis. A m. brachialis a tuberositas ulnaen és a processus coronoideuson tapad. Mivel az ulna nem vesz részt a forgatásban, az izom pronatióban és supinatióban egyformán hajlít – ezért nevezik a könyök \"munkalovának\". Pronált alkarnál végzett hajlítással a brachialis jobban vizsgálható.",
+        "sv": "Falskt. M. brachialis fäster på tuberositas ulnae och processus coronoideus. Eftersom ulna inte deltar i rotationen flekterar muskeln lika bra i pronation som i supination – därför kallas den armbågens \"arbetshäst\". Flexion med pronerad underarm testar brachialis bättre."
+      },
+      "link": {
+        "view": "modul-konyok",
+        "item": "m.brachialis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "ko5",
+      "topic": "konyok",
+      "type": "mc",
+      "prompt": {
+        "hu": "Melyik gerincvelői szegmentet vizsgálja elsősorban a tricepsz-reflex?",
+        "sv": "Vilket ryggmärgssegment testar tricepsreflexen främst?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "C5",
+            "sv": "C5"
+          },
+          "whyWrong": {
+            "hu": "A C5-öt a bicepsz-reflex (C5–C6) és a vállabductio (myotoma) jelzi.",
+            "sv": "C5 speglas av bicepsreflexen (C5–C6) och axelabduktion (myotom)."
+          }
+        },
+        {
+          "text": {
+            "hu": "C6",
+            "sv": "C6"
+          },
+          "whyWrong": {
+            "hu": "A C6-ot főleg a brachioradialis-reflex és a bicepsz-reflex jelzi.",
+            "sv": "C6 speglas främst av brachioradialisreflexen och bicepsreflexen."
+          }
+        },
+        {
+          "text": {
+            "hu": "C7",
+            "sv": "C7"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "T1",
+            "sv": "T1"
+          },
+          "whyWrong": {
+            "hu": "A T1-nek nincs rutin felsővégtagi reflexe; myotomája a kéz kis izmai (ujjabductio).",
+            "sv": "T1 har ingen rutinmässig reflex i övre extremiteten; dess myotom är handens små muskler (fingerabduktion)."
+          }
+        }
+      ],
+      "answer": 2,
+      "explanation": {
+        "hu": "A tricepsz-reflex a n. radialison keresztül főként a C7 szegmentet vizsgálja (C6–C8). C7-gyöki radiculopathiában (pl. C6–C7 discusprolapsus) a reflex csökken, a könyöknyújtás gyengül, és a középső ujj zsibbadhat. A reflexeket mindig oldalösszehasonlításban értékeljük.",
+        "sv": "Tricepsreflexen testar via n. radialis främst segmentet C7 (C6–C8). Vid C7-radikulopati (t.ex. diskbråck C6–C7) är reflexen nedsatt, armbågsextensionen svag och långfingret kan domna. Reflexer bedöms alltid i sidojämförelse."
+      },
+      "link": {
+        "view": "modul-konyok",
+        "item": "m.triceps-brachii"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "ko6",
+      "topic": "konyok",
+      "type": "match",
+      "prompt": {
+        "hu": "Párosítsd az izmot az eredésével és a tapadásával!",
+        "sv": "Para ihop muskeln med dess ursprung och fäste!"
+      },
+      "heads": {
+        "hu": [
+          "IZOM",
+          "EREDÉS",
+          "TAPADÁS"
+        ],
+        "sv": [
+          "MUSKEL",
+          "URSPRUNG",
+          "FÄSTE"
+        ]
+      },
+      "rows": [
+        [
+          "m. biceps brachii (caput longum)",
+          "tuberculum supraglenoidale",
+          "tuberositas radii"
+        ],
+        [
+          "m. triceps brachii (caput longum)",
+          "tuberculum infraglenoidale",
+          "olecranon"
+        ],
+        [
+          "m. brachialis",
+          "facies anterior humeri (distalis)",
+          "tuberositas ulnae"
+        ],
+        [
+          "m. coracobrachialis",
+          "processus coracoideus",
+          "corpus humeri (medialis)"
+        ]
+      ],
+      "explanation": {
+        "hu": "A biceps és a triceps hosszú feje a lapockán ered, ezért mindkettő a vállízületre is hat (flexio, illetve extensio). A radiuson tapadó biceps supinálni is tud, az ulnán tapadó brachialis nem. A coracobrachialis nem éri el a könyököt, csak a vállra hat.",
+        "sv": "Långa huvudena av biceps och triceps utgår från scapula och verkar därför även på axelleden (flexion respektive extension). Biceps som fäster på radius kan även supinera, brachialis som fäster på ulna kan det inte. Coracobrachialis når inte armbågen och verkar bara på axeln."
+      },
+      "link": {
+        "view": "modul-konyok",
+        "item": null
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "ko7",
+      "topic": "konyok",
+      "type": "order",
+      "prompt": {
+        "hu": "Állítsd sorrendbe a könyökhajlat (fossa cubitalis) képleteit laterálistól mediális felé!",
+        "sv": "Ordna strukturerna i armbågsvecket (fossa cubitalis) från lateralt till medialt!"
+      },
+      "items": [
+        {
+          "hu": "N. radialis (a m. brachioradialis alatt)",
+          "sv": "N. radialis (under m. brachioradialis)"
+        },
+        {
+          "hu": "A m. biceps brachii ina",
+          "sv": "Senan till m. biceps brachii"
+        },
+        {
+          "hu": "A. brachialis",
+          "sv": "A. brachialis"
+        },
+        {
+          "hu": "N. medianus",
+          "sv": "N. medianus"
+        }
+      ],
+      "explanation": {
+        "hu": "A könyökhajlat közepén laterálistól mediális felé: ín – artéria – ideg (angol emlékeztető: \"TAN\", tendon, artery, nerve), laterálisan a mélyben a n. radialis. A bicepszín tehát jó tájékozódási pont: tőle mediálisan tapintható az a. brachialis pulzusa (vérnyomásmérés), és még mediálisabban fut a n. medianus.",
+        "sv": "I armbågsvecket från lateralt till medialt: sena – artär – nerv (engelsk minnesregel \"TAN\": tendon, artery, nerve), och lateralt på djupet n. radialis. Bicepssenan är alltså ett bra orienteringsmärke: medialt om den palperas pulsen i a. brachialis (blodtrycksmätning) och ännu mer medialt löper n. medianus."
+      },
+      "link": {
+        "view": "modul-konyok",
+        "item": "m.biceps-brachii"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "ko8",
+      "topic": "konyok",
+      "type": "mc",
+      "prompt": {
+        "hu": "Egy 3 éves gyermeket a kezénél fogva hirtelen felrántottak. Azóta nem használja a karját, pronált alkarral, enyhén hajlított könyökkel tartja, duzzanat nincs. Melyik képlet érintett legvalószínűbben?",
+        "sv": "Ett treårigt barn har plötsligt lyfts upp i handen. Sedan dess använder barnet inte armen utan håller den med pronerad underarm och lätt flekterad armbåge; ingen svullnad syns. Vilken struktur är mest sannolikt påverkad?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "Lig. collaterale ulnare",
+            "sv": "Lig. collaterale ulnare"
+          },
+          "whyWrong": {
+            "hu": "Ezt valgus-terhelés (pl. dobás, esés) sérti, nem hosszanti húzás; általában duzzanattal és mediális fájdalommal jár.",
+            "sv": "Det skadas av valgusbelastning (t.ex. kast, fall), inte av längsgående drag, och ger oftast svullnad och medial smärta."
+          }
+        },
+        {
+          "text": {
+            "hu": "Lig. anulare radii",
+            "sv": "Lig. anulare radii"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "A m. biceps brachii disztális ina",
+            "sv": "Distala senan till m. biceps brachii"
+          },
+          "whyWrong": {
+            "hu": "Disztális bicepszín-szakadás felnőttekre, főleg középkorú férfiakra jellemző, excentrikus terhelésnél.",
+            "sv": "Distal bicepsseneruptur är typisk för vuxna, främst medelålders män, vid excentrisk belastning."
+          }
+        },
+        {
+          "text": {
+            "hu": "Membrana interossea antebrachii",
+            "sv": "Membrana interossea antebrachii"
+          },
+          "whyWrong": {
+            "hu": "Sérülése nagy energiájú traumánál, caput radii-töréssel együtt fordul elő (Essex-Lopresti), nem egyszerű húzásnál.",
+            "sv": "Den skadas vid högenergivåld tillsammans med caput radii-fraktur (Essex-Lopresti), inte vid ett enkelt drag."
+          }
+        }
+      ],
+      "answer": 1,
+      "explanation": {
+        "hu": "Ez a \"pulled elbow\" (radiusfej-subluxatio): kisgyermekben a lig. anulare radii még laza, és hosszanti húzásra a caput radii részben kicsúszik alóla, a szalag beszorul az ízületbe. A gyermek fájdalom miatt pronált helyzetben tartja az alkart. Repozíciója (supinatio + flexio vagy hiperpronatio) általában egyszerű, de a törést ki kell zárni.",
+        "sv": "Detta är \"pulled elbow\" (subluxation av radiushuvudet): hos småbarn är lig. anulare radii fortfarande slappt, och vid längsgående drag glider caput radii delvis ut under det så att ligamentet kläms i leden. Barnet håller underarmen pronerad på grund av smärta. Reponeringen (supination + flexion eller hyperpronation) är oftast enkel, men fraktur måste uteslutas."
+      },
+      "link": {
+        "view": "modul-konyok",
+        "item": "art.radioulnaris"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "ko9",
+      "topic": "konyok",
+      "type": "mc",
+      "prompt": {
+        "hu": "Egy fiatal kézilabda-kapus (dobó) mediális könyökfájdalomról panaszkodik dobás közben; a valgus-stresszteszt 30°-os flexióban fájdalmas és fokozott nyílást mutat. Melyik képlet sérült legvalószínűbben?",
+        "sv": "En ung handbollsspelare (kastare) klagar på medial armbågssmärta vid kast; valgusstresstest i 30° flexion är smärtsamt och visar ökad uppklaffning. Vilken struktur är mest sannolikt skadad?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "Lig. collaterale radiale",
+            "sv": "Lig. collaterale radiale"
+          },
+          "whyWrong": {
+            "hu": "Ez a laterális oldalon van, és varus-terhelés ellen véd; valgus-stresszre nem nyílik.",
+            "sv": "Det sitter på den laterala sidan och skyddar mot varusbelastning; det öppnas inte vid valgusstress."
+          }
+        },
+        {
+          "text": {
+            "hu": "Lig. anulare radii",
+            "sv": "Lig. anulare radii"
+          },
+          "whyWrong": {
+            "hu": "A caput radiit rögzíti az ulnához; nem a valgus elsődleges stabilizátora.",
+            "sv": "Det håller caput radii mot ulna; det är inte den primära valgusstabilisatorn."
+          }
+        },
+        {
+          "text": {
+            "hu": "Lig. collaterale ulnare",
+            "sv": "Lig. collaterale ulnare"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "A m. triceps brachii ina",
+            "sv": "Senan till m. triceps brachii"
+          },
+          "whyWrong": {
+            "hu": "A tricepszín a könyök hátsó oldalán tapad, fájdalma ellenállásos nyújtásra jelentkezik, valgus-instabilitást nem okoz.",
+            "sv": "Tricepssenan fäster på armbågens baksida; smärta uppstår vid resisterad extension och den orsakar ingen valgusinstabilitet."
+          }
+        }
+      ],
+      "answer": 2,
+      "explanation": {
+        "hu": "Dobáskor a késői felhúzás és a korai gyorsítás fázisában nagy valgus-erő hat a könyökre, amelyet elsősorban a lig. collaterale ulnare elülső kötege tart. A tesztet kb. 20–30° flexióban végezzük, hogy az olecranon kiemelkedjen a fossa olecraniból és a csontos stabilitás ne fedje el a szalagot. A n. ulnaris irritációja gyakran kíséri.",
+        "sv": "Vid kast verkar en stor valguskraft på armbågen i sena uppdragnings- och tidiga accelerationsfasen, och den bärs främst av främre bunten av lig. collaterale ulnare. Testet görs i ca 20–30° flexion så att olecranon lyfts ur fossa olecrani och benstabiliteten inte döljer ligamentet. Irritation av n. ulnaris förekommer ofta samtidigt."
+      },
+      "link": {
+        "view": "modul-konyok",
+        "item": "art.cubiti"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "ko10",
+      "topic": "konyok",
+      "type": "tf",
+      "prompt": {
+        "hu": "A könyökízület kapszuláris mintázatában a flexio jobban beszűkül, mint az extensio.",
+        "sv": "I armbågsledens kapselmönster är flexionen mer inskränkt än extensionen."
+      },
+      "answer": true,
+      "explanation": {
+        "hu": "Igaz. Cyriax szerint a könyök kapszuláris mintázata: flexio > extensio; a pronatio és supinatio általában csak előrehaladott esetben érintett. Ha a mozgáskorlátozottság nem ezt a mintát követi, nem tokeredetű okot (pl. szabad ízületi test, izomeredetű ok) kell keresni.",
+        "sv": "Sant. Enligt Cyriax är armbågens kapselmönster flexion > extension; pronation och supination påverkas vanligen först i avancerade fall. Om rörelseinskränkningen inte följer detta mönster bör man söka en icke-kapsulär orsak (t.ex. fri kropp i leden eller muskulär orsak)."
+      },
+      "link": {
+        "view": "modul-konyok",
+        "item": "art.cubiti"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "ko11",
+      "topic": "konyok",
+      "type": "mc",
+      "prompt": {
+        "hu": "Pronatio és supinatio goniométeres mérésekor miért kell a könyököt 90°-ban hajlítva a törzs mellé szorítani?",
+        "sv": "Varför ska armbågen vara flekterad 90° och hållas mot bålen när pronation och supination mäts med goniometer?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "Mert így a m. biceps brachii kikapcsol.",
+            "sv": "För att m. biceps brachii då kopplas ur."
+          },
+          "whyWrong": {
+            "hu": "Éppen ellenkezőleg: hajlított könyöknél a biceps a legerősebb supinátor; a helyzet célja nem az izom kikapcsolása.",
+            "sv": "Tvärtom: med flekterad armbåge är biceps den starkaste supinatorn; syftet med läget är inte att koppla ur en muskel."
+          }
+        },
+        {
+          "text": {
+            "hu": "Mert a radioulnaris ízületek csak hajlított könyöknél mozognak.",
+            "sv": "För att radioulnarlederna bara rör sig med flekterad armbåge."
+          },
+          "whyWrong": {
+            "hu": "Pronatio–supinatio nyújtott könyöknél is lehetséges; a helyzet a mérés standardizálását szolgálja.",
+            "sv": "Pronation–supination är möjlig även med extenderad armbåge; läget syftar till att standardisera mätningen."
+          }
+        },
+        {
+          "text": {
+            "hu": "Mert így a lig. anulare radii megfeszül és stabilizál.",
+            "sv": "För att lig. anulare radii då spänns och stabiliserar."
+          },
+          "whyWrong": {
+            "hu": "A lig. anulare a caput radii körül minden könyökhelyzetben gyűrűt képez; nem ez a pozicionálás oka.",
+            "sv": "Lig. anulare bildar en ring kring caput radii i alla armbågslägen; det är inte skälet till positioneringen."
+          }
+        },
+        {
+          "text": {
+            "hu": "Hogy a váll rotációja és abductiója ne kompenzálja a mozgást.",
+            "sv": "För att axelns rotation och abduktion inte ska kompensera rörelsen."
+          },
+          "whyWrong": null
+        }
+      ],
+      "answer": 3,
+      "explanation": {
+        "hu": "Nyújtott könyöknél a humerus rotációja hozzáadódik az alkar forgatásához, így a mért érték megnő. 90°-os flexióban, a felkart a törzshöz rögzítve a váll rotációja kizárható, és csak a radioulnaris mozgást mérjük (AAOS-norma kb. 80–80°, forrásonként eltérő). Ugyanezt a kompenzációt kell figyelni funkcionális feladatoknál is.",
+        "sv": "Med extenderad armbåge adderas humerusrotation till underarmsrotationen, så att det uppmätta värdet blir större. Med 90° flexion och överarmen fixerad mot bålen utesluts axelrotationen och bara den radioulnara rörelsen mäts (AAOS-norm ca 80–80°, varierar mellan källor). Samma kompensation ska observeras vid funktionella uppgifter."
+      },
+      "link": {
+        "view": "modul-konyok",
+        "item": "art.radioulnaris"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "ko12",
+      "topic": "konyok",
+      "type": "mc",
+      "prompt": {
+        "hu": "Egy 6 éves gyermek nyújtott karra esett, dislokált supracondylaris humerustörése van. Melyik képletek állapotát kell elsőként és ismételten ellenőrizni?",
+        "sv": "Ett sexårigt barn har fallit på utsträckt arm och har en dislocerad suprakondylär humerusfraktur. Vilka strukturers status ska kontrolleras först och upprepat?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "Az a. brachialis keringését és a n. medianus (n. interosseus anterior) működését",
+            "sv": "Cirkulationen i a. brachialis och funktionen i n. medianus (n. interosseus anterior)"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "A lig. collaterale radiale stabilitását",
+            "sv": "Stabiliteten i lig. collaterale radiale"
+          },
+          "whyWrong": {
+            "hu": "Szalagsérülés nem az elsődleges veszély; a törésvégek az elülső neurovaszkuláris kötegre veszélyesek.",
+            "sv": "Ligamentskada är inte den primära faran; frakturändarna hotar det främre neurovaskulära knippet."
+          }
+        },
+        {
+          "text": {
+            "hu": "A m. triceps brachii erejét",
+            "sv": "Kraften i m. triceps brachii"
+          },
+          "whyWrong": {
+            "hu": "Akut törésnél izomerő-vizsgálat nem végezhető megbízhatóan, és nem ez szűri ki a súlyos szövődményt.",
+            "sv": "Vid akut fraktur kan muskelstyrka inte testas tillförlitligt, och det fångar inte den allvarliga komplikationen."
+          }
+        },
+        {
+          "text": {
+            "hu": "A bicepsz-reflexet",
+            "sv": "Bicepsreflexen"
+          },
+          "whyWrong": {
+            "hu": "A reflex a C5–C6 gyököt vizsgálja; a szövődmény itt perifériás ér- és idegsérülés.",
+            "sv": "Reflexen testar rötterna C5–C6; komplikationen här är perifer kärl- och nervskada."
+          }
+        }
+      ],
+      "answer": 0,
+      "explanation": {
+        "hu": "Extenziós típusú supracondylaris törésnél a proximális törésvég előre mozdul, és sértheti a könyökhajlatban futó a. brachialist és a n. medianust (gyakran a n. interosseus anteriort: \"OK-jel\" nem formálható). Az alkar kompartment-szindrómája Volkmann-féle ischaemiás kontraktúrához vezethet, ezért a keringést, a fájdalmat passzív ujjnyújtásra és az idegfunkciót ismételten kell ellenőrizni.",
+        "sv": "Vid suprakondylär fraktur av extensionstyp förskjuts det proximala fragmentet framåt och kan skada a. brachialis och n. medianus i armbågsvecket (ofta n. interosseus anterior: patienten kan inte forma ett \"OK-tecken\"). Kompartmentsyndrom i underarmen kan leda till Volkmanns ischemiska kontraktur, därför ska cirkulation, smärta vid passiv fingerextension och nervfunktion kontrolleras upprepat."
+      },
+      "link": {
+        "view": "modul-konyok",
+        "item": "art.cubiti"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "ko13",
+      "topic": "konyok",
+      "type": "tf",
+      "prompt": {
+        "hu": "A membrana interossea antebrachii fő rostjai a radiustól distalis-medialis irányban futnak az ulnához, így a kézről a radiusra jutó nyomóerő egy része az ulnára tevődik át.",
+        "sv": "Huvudfibrerna i membrana interossea antebrachii löper från radius i distal-medial riktning till ulna, så att en del av tryckkraften från handen via radius överförs till ulna."
+      },
+      "answer": true,
+      "explanation": {
+        "hu": "Igaz. A csukló felé a terhelés nagy része a radiusra jut, a könyökben viszont a humeroulnaris ízület a fő teherviselő; a ferde rostlefutású membrana interossea ezt a terhelésátvitelt biztosítja. Szakadása (pl. Essex-Lopresti-sérülésnél) a radius proximális vándorlásához és disztális radioulnaris panaszokhoz vezethet.",
+        "sv": "Sant. Vid handleden bärs största delen av belastningen av radius, medan humeroulnarleden är huvudbärare i armbågen; den snett förlöpande membrana interossea möjliggör denna kraftöverföring. Ruptur (t.ex. vid Essex-Lopresti-skada) kan leda till proximal migration av radius och distala radioulnara besvär."
+      },
+      "link": {
+        "view": "modul-konyok",
+        "item": "art.radioulnaris"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "ko14",
+      "topic": "konyok",
+      "type": "mc",
+      "prompt": {
+        "hu": "Miért gyengülhet a vállextensio is, ha a m. triceps brachii sérül?",
+        "sv": "Varför kan även axelextensionen försvagas om m. triceps brachii skadas?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "Mert a caput laterale a scapulán ered.",
+            "sv": "För att caput laterale utgår från scapula."
+          },
+          "whyWrong": {
+            "hu": "A caput laterale a humerus hátsó felszínén ered, nem éri el a vállízületet.",
+            "sv": "Caput laterale utgår från humerus baksida och når inte axelleden."
+          }
+        },
+        {
+          "text": {
+            "hu": "Mert a triceps a humerus fejét is tapadási pontként használja.",
+            "sv": "För att triceps även fäster på humerushuvudet."
+          },
+          "whyWrong": {
+            "hu": "A triceps egyetlen tapadása az olecranon; a humeruson csak eredések vannak.",
+            "sv": "Tricepsens enda fäste är olecranon; på humerus finns bara ursprung."
+          }
+        },
+        {
+          "text": {
+            "hu": "Mert a caput longum a tuberculum infraglenoidalén ered, így a vállízületen is átfut.",
+            "sv": "För att caput longum utgår från tuberculum infraglenoidale och därmed även korsar axelleden."
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "Mert a tricepszet és a deltaizmot ugyanaz az ideg látja el.",
+            "sv": "För att triceps och deltamuskeln försörjs av samma nerv."
+          },
+          "whyWrong": {
+            "hu": "Nem ugyanaz: a deltaizom a n. axillaris, a triceps a n. radialis izma (bár mindkettő a hátsó kötegből ered); a közös beidegzés egyébként sem magyarázná az izom saját funkcióját.",
+            "sv": "Inte samma: deltamuskeln innerveras av n. axillaris, triceps av n. radialis (båda från bakre sekundärsträngen); gemensam innervation skulle dessutom inte förklara muskelns egen funktion."
+          }
+        }
+      ],
+      "answer": 2,
+      "explanation": {
+        "hu": "A triceps hosszú feje kétízületi izom: a lapockán ered, ezért a vállat is extendálja és adducálja, a könyököt pedig nyújtja. Kétízületi izmoknál az erőkifejtés függ a másik ízület helyzetétől: a hosszú fej flektált vállnál (megnyújtott helyzetben) a leghatékonyabb, ezért a tricepsz MMT-jét gyakran vállflexióban végezzük.",
+        "sv": "Tricepsens långa huvud är en tvåledsmuskel: den utgår från scapula och extenderar och adducerar därför även axeln, samtidigt som den extenderar armbågen. Hos tvåledsmuskler beror kraften på läget i den andra leden: långa huvudet är mest effektivt med flekterad axel (förlängt läge), därför görs tricepsens MMT ofta med axeln flekterad."
+      },
+      "link": {
+        "view": "modul-konyok",
+        "item": "m.triceps-brachii"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "ko15",
+      "topic": "konyok",
+      "type": "mc",
+      "prompt": {
+        "hu": "Egy irodai dolgozó a IV–V. ujj zsibbadásáról panaszkodik, ami könyökre támaszkodáskor és hosszan hajlított könyökkel (telefonálás) fokozódik. A belső bütyök mögött a kopogtatás az ujjakba sugárzó bizsergést vált ki. Hol szorul be legvalószínűbben az ideg?",
+        "sv": "En kontorsarbetare klagar på domningar i fjärde och femte fingret som förvärras när hen stöder sig på armbågen och vid långvarigt flekterad armbåge (telefonsamtal). Knackning bakom den mediala epikondylen ger stickningar ut i fingrarna. Var kläms nerven mest sannolikt?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "A n. ulnaris a sulcus nervi ulnarisban (cubitalis alagút)",
+            "sv": "N. ulnaris i sulcus nervi ulnaris (kubitaltunneln)"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "A n. medianus a canalis carpiban",
+            "sv": "N. medianus i canalis carpi"
+          },
+          "whyWrong": {
+            "hu": "A kéztőalagút-szindróma az I–III. (IV. radiális fele) ujjat érinti, és a csuklónál, nem a könyöknél provokálható.",
+            "sv": "Karpaltunnelsyndrom påverkar fingrarna I–III (radiala halvan av IV) och provoceras vid handleden, inte vid armbågen."
+          }
+        },
+        {
+          "text": {
+            "hu": "A n. radialis a sulcus nervi radialisban",
+            "sv": "N. radialis i sulcus nervi radialis"
+          },
+          "whyWrong": {
+            "hu": "A n. radialis érzőterülete a kézhát radiális része; sérülése csuklóejtést okoz, nem ulnaris oldali zsibbadást.",
+            "sv": "N. radialis känselområde är den radiala handryggen; skada ger dropphand, inte ulnarsidiga domningar."
+          }
+        },
+        {
+          "text": {
+            "hu": "A n. musculocutaneus a m. coracobrachialisban",
+            "sv": "N. musculocutaneus i m. coracobrachialis"
+          },
+          "whyWrong": {
+            "hu": "A n. musculocutaneus érzőterülete az alkar laterális oldala, nem a kéz ulnaris ujjai.",
+            "sv": "N. musculocutaneus känselområde är underarmens laterala sida, inte handens ulnara fingrar."
+          }
+        }
+      ],
+      "answer": 0,
+      "explanation": {
+        "hu": "A n. ulnaris az epicondylus medialis mögött, a sulcus nervi ulnarisban felszínesen fut, és hajlított könyöknél megnyúlik, a cubitalis alagút szűkül. A tipikus lelet: zsibbadás a IV. ujj ulnaris felén és az V. ujjban, pozitív Tinel-jel és könyökhajlítási teszt; előrehaladott esetben a kéz kis izmainak gyengesége (Froment-jel). Kezelés: a hosszan tartó flexio és a nyomás kerülése, éjszakai sín.",
+        "sv": "N. ulnaris löper ytligt bakom epicondylus medialis i sulcus nervi ulnaris, och vid flekterad armbåge sträcks den medan kubitaltunneln blir trängre. Typiska fynd: domningar i ulnara halvan av fjärde fingret och i femte fingret, positivt Tinels tecken och armbågsflexionstest; i avancerade fall svaghet i handens små muskler (Froments tecken). Behandling: undvik långvarig flexion och tryck, nattskena."
+      },
+      "link": {
+        "view": "modul-konyok",
+        "item": "art.cubiti"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "al1",
+      "topic": "alkar",
+      "type": "mc",
+      "prompt": {
+        "hu": "Egy 45 éves asztalos fájdalmat érez az epicondylus lateralis felett markoláskor és ellenállással végzett csuklóextensiókor. Melyik izom eredési ínja érintett leggyakrabban?",
+        "sv": "En 45-årig snickare har smärta över epicondylus lateralis vid grepp och vid handledsextension mot motstånd. Vilken muskels ursprungssena är oftast drabbad?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "M. brachioradialis",
+            "sv": "M. brachioradialis"
+          },
+          "whyWrong": {
+            "hu": "A crista supracondylaris lateralisról ered, az epicondylus felett, és könyökhajlító; nem a tipikus teniszkönyök-struktúra.",
+            "sv": "Den utgår från crista supracondylaris lateralis ovanför epikondylen och är armbågsflexor; inte den typiska strukturen vid tennisarmbåge."
+          }
+        },
+        {
+          "text": {
+            "hu": "M. extensor carpi ulnaris",
+            "sv": "M. extensor carpi ulnaris"
+          },
+          "whyWrong": {
+            "hu": "Ered ugyan a közös feszítő ínból, de tendinopathiája jellemzően ulnaris oldali csuklófájdalmat okoz.",
+            "sv": "Den utgår visserligen från den gemensamma extensorsenan, men dess tendinopati ger typiskt ulnarsidig handledssmärta."
+          }
+        },
+        {
+          "text": {
+            "hu": "M. extensor carpi radialis brevis",
+            "sv": "M. extensor carpi radialis brevis"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "M. supinator",
+            "sv": "M. supinator"
+          },
+          "whyWrong": {
+            "hu": "A supinator a radialis alagút-szindrómában fontos (a n. radialis mély ága itt szorul be), ami a teniszkönyök differenciáldiagnózisa, nem maga a tendinopathia.",
+            "sv": "Supinatorn är viktig vid radialtunnelsyndrom (djupa radialisgrenen kläms där), vilket är en differentialdiagnos, inte själva tendinopatin."
+          }
+        }
+      ],
+      "answer": 2,
+      "explanation": {
+        "hu": "A laterális epicondylalgia döntően az ECRB eredési ínjának degeneratív tendinopathiája. Az ECRB markoláskor a csukló fő stabilizátora, ezért a tartós, ismétlődő fogás terheli. A Cozen- és a Maudsley-teszt ezt az izomcsoportot provokálja.",
+        "sv": "Lateral epikondylalgi är främst en degenerativ tendinopati i ECRB:s ursprungssena. ECRB är handledens viktigaste stabilisator vid grepp och belastas därför av långvarigt, upprepat grepp. Cozens och Maudsleys test provocerar denna muskelgrupp."
+      },
+      "link": {
+        "view": "modul-alkar",
+        "item": "m.extensor-carpi-radialis-brevis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "al2",
+      "topic": "alkar",
+      "type": "mc",
+      "prompt": {
+        "hu": "Humerusszár-törés után a beteg nem tudja nyújtani a csuklóját és az ujjait, és zsibbad a kézháton a hüvelyk- és mutatóujj között. A könyöknyújtás ép. Hol sérült legvalószínűbben az ideg?",
+        "sv": "Efter en humerusskaftfraktur kan patienten inte extendera handleden eller fingrarna och har domningar på handryggen mellan tumme och pekfinger. Armbågsextensionen är intakt. Var är nerven sannolikt skadad?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "A n. medianus a könyökhajlatban",
+            "sv": "N. medianus i armbågsvecket"
+          },
+          "whyWrong": {
+            "hu": "A n. medianus a hajlítókat látja el; sérülése nem okoz csuklóesést.",
+            "sv": "N. medianus försörjer flexorerna; skadan ger inte dropphand."
+          }
+        },
+        {
+          "text": {
+            "hu": "A n. radialis a sulcus nervi radialisban",
+            "sv": "N. radialis i sulcus nervi radialis"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "A n. interosseus posterior a m. supinatorban",
+            "sv": "N. interosseus posterior i m. supinator"
+          },
+          "whyWrong": {
+            "hu": "PIN-lézióban nincs érzéskiesés, és a csukló (ECRL) még nyújtható.",
+            "sv": "Vid PIN-skada finns inget känselbortfall, och handleden (ECRL) kan fortfarande extenderas."
+          }
+        },
+        {
+          "text": {
+            "hu": "A n. radialis az axillában",
+            "sv": "N. radialis i axillen"
+          },
+          "whyWrong": {
+            "hu": "Axillaris szintű sérülésnél a m. triceps brachii is bénulna, de a könyöknyújtás ép.",
+            "sv": "Vid skada i axillen skulle även m. triceps brachii vara förlamad, men armbågsextensionen är intakt."
+          }
+        }
+      ],
+      "answer": 1,
+      "explanation": {
+        "hu": "A n. radialis a humerus szára körül, a sulcus nervi radialisban fut, ezért szártöréskor itt sérül. A tricepsz ágai többnyire e szint felett lépnek ki, így a könyöknyújtás megmarad. Az összes alkarfeszítő és a felszíni ág kiesése adja a csuklóesést és a kézhát radiális érzéskiesését.",
+        "sv": "N. radialis löper runt humerusskaftet i sulcus nervi radialis och skadas därför vid skaftfraktur. Tricepsgrenarna avgår oftast ovanför denna nivå, så armbågsextensionen bevaras. Bortfall av alla underarmsextensorer och den ytliga grenen ger dropphand och känselbortfall radialt på handryggen."
+      },
+      "link": {
+        "view": "modul-alkar",
+        "item": "m.extensor-carpi-radialis-longus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "al3",
+      "topic": "alkar",
+      "type": "mc",
+      "prompt": {
+        "hu": "Egy betegnél az ujjak MCP-ben nem nyújthatók, a csukló nyújtásakor a kéz radiális irányba tér ki, érzéskiesés nincs. Melyik ideg sérült?",
+        "sv": "En patient kan inte extendera fingrarna i MCP, vid handledsextension avviker handen radialt och det finns inget känselbortfall. Vilken nerv är skadad?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "N. radialis, ramus superficialis",
+            "sv": "N. radialis, ramus superficialis"
+          },
+          "whyWrong": {
+            "hu": "A felszíni ág tisztán érző; sérülése zsibbadást okoz, gyengeséget nem.",
+            "sv": "Den ytliga grenen är rent sensorisk; skadan ger domningar men ingen svaghet."
+          }
+        },
+        {
+          "text": {
+            "hu": "N. ulnaris",
+            "sv": "N. ulnaris"
+          },
+          "whyWrong": {
+            "hu": "A n. ulnaris nem lát el ujjfeszítőt; sérülése a kéz intrinsic izmait és a kisujj oldali érzést érinti.",
+            "sv": "N. ulnaris försörjer inga fingersträckare; skadan påverkar handens intrinsiska muskler och känseln på lillfingersidan."
+          }
+        },
+        {
+          "text": {
+            "hu": "N. radialis a sulcus nervi radialisban",
+            "sv": "N. radialis i sulcus nervi radialis"
+          },
+          "whyWrong": {
+            "hu": "Ilyen magas sérülésnél teljes csuklóesés és érzéskiesés is lenne.",
+            "sv": "Vid en så hög skada skulle det finnas fullständig dropphand och känselbortfall."
+          }
+        },
+        {
+          "text": {
+            "hu": "N. interosseus posterior",
+            "sv": "N. interosseus posterior"
+          },
+          "whyWrong": null
+        }
+      ],
+      "answer": 3,
+      "explanation": {
+        "hu": "A n. interosseus posterior a mély ág folytatása, és csak motoros rostokat visz az ujj- és hüvelykujjfeszítőkhöz, valamint az ECU-hoz. Az ECRL a radialis törzsből, a kettéválás előtt kap ágat, így megmarad, és ellensúly nélkül radialis deviatióba húzza a csuklót. Érzéskiesés nincs, mert a felszíni ág ép.",
+        "sv": "N. interosseus posterior är fortsättningen av djupa grenen och för enbart motoriska fibrer till finger- och tumsträckarna samt ECU. ECRL får sin gren från radialisstammen före delningen och är därför bevarad, och drar utan motvikt handleden i radialdeviation. Känselbortfall saknas eftersom den ytliga grenen är intakt."
+      },
+      "link": {
+        "view": "modul-alkar",
+        "item": "m.extensor-digitorum"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "al4",
+      "topic": "alkar",
+      "type": "mc",
+      "prompt": {
+        "hu": "Egy beteg a hüvelyk- és mutatóujjával kerek \"OK\"-jel helyett csak lapos csípőfogást tud formálni, érzéskiesés nélkül. Melyik izmok gyengék?",
+        "sv": "En patient kan bara forma ett platt pincettgrepp i stället för ett runt \"OK\"-tecken med tumme och pekfinger, utan känselbortfall. Vilka muskler är svaga?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "M. abductor pollicis brevis és m. opponens pollicis",
+            "sv": "M. abductor pollicis brevis och m. opponens pollicis"
+          },
+          "whyWrong": {
+            "hu": "Ezek a thenar-izmok a n. medianus disztális ágából kapnak beidegzést; gyengeségük kéztőalagút-szindrómára jellemző, érzéskieséssel.",
+            "sv": "Dessa thenarmuskler innerveras av n. medianus distala gren; deras svaghet är typisk för karpaltunnelsyndrom, med känselbortfall."
+          }
+        },
+        {
+          "text": {
+            "hu": "M. flexor pollicis longus és a mutatóujj m. flexor digitorum profundusa",
+            "sv": "M. flexor pollicis longus och pekfingrets m. flexor digitorum profundus"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "M. adductor pollicis és m. interosseus dorsalis I",
+            "sv": "M. adductor pollicis och m. interosseus dorsalis I"
+          },
+          "whyWrong": {
+            "hu": "Ezek n. ulnaris-izmok; gyengeségüket a Froment-jel mutatja.",
+            "sv": "Dessa är ulnarismuskler; svagheten visas av Froments tecken."
+          }
+        },
+        {
+          "text": {
+            "hu": "M. extensor pollicis longus és m. extensor indicis",
+            "sv": "M. extensor pollicis longus och m. extensor indicis"
+          },
+          "whyWrong": {
+            "hu": "Ezek feszítők (n. interosseus posterior); a kerek \"O\"-hoz a végpercek hajlítása kell.",
+            "sv": "Dessa är sträckare (n. interosseus posterior); för ett runt \"O\" krävs flexion av ytterfalangerna."
+          }
+        }
+      ],
+      "answer": 1,
+      "explanation": {
+        "hu": "A kerek \"O\" a hüvelykujj IP- és a mutatóujj DIP-ízületének flexióját igényli, amit egyedül az FPL, illetve az FDP laterális része végez. Mindkettőt a n. interosseus anterior idegzi be, amely tisztán motoros ág (csak a csukló ízületeit látja el érzőrostokkal). Ezért nincs bőrérzészavar.",
+        "sv": "Det runda \"O\" kräver flexion i tummens IP-led och pekfingrets DIP-led, som utförs enbart av FPL respektive den laterala delen av FDP. Båda innerveras av n. interosseus anterior, en motorisk gren (den ger bara sensoriska fibrer till handledens leder). Därför finns ingen hudkänselstörning."
+      },
+      "link": {
+        "view": "modul-alkar",
+        "item": "m.flexor-pollicis-longus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "al5",
+      "topic": "alkar",
+      "type": "mc",
+      "prompt": {
+        "hu": "Egy kisbaba anyja fájdalmat érez a processus styloideus radii felett; a Finkelstein-teszt pozitív. Melyik inak érintettek?",
+        "sv": "En småbarnsmamma har smärta över processus styloideus radii; Finkelsteins test är positivt. Vilka senor är engagerade?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "M. extensor carpi radialis longus és brevis",
+            "sv": "M. extensor carpi radialis longus och brevis"
+          },
+          "whyWrong": {
+            "hu": "Ezek a 2. rekeszben futnak; gyulladásuk (intersection-szindróma) proximálisabban, az alkar hátsó-radiális részén fáj.",
+            "sv": "Dessa löper i 2:a facket; deras inflammation (intersektionssyndrom) gör ont mer proximalt, på underarmens dorsoradiala del."
+          }
+        },
+        {
+          "text": {
+            "hu": "M. extensor pollicis longus",
+            "sv": "M. extensor pollicis longus"
+          },
+          "whyWrong": {
+            "hu": "Az EPL a 3. rekeszben, a Lister-dudor körül fut, nem a processus styloideus felett.",
+            "sv": "EPL löper i 3:e facket runt Listers tuberkel, inte över processus styloideus."
+          }
+        },
+        {
+          "text": {
+            "hu": "M. abductor pollicis longus és m. extensor pollicis brevis",
+            "sv": "M. abductor pollicis longus och m. extensor pollicis brevis"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "M. flexor carpi radialis",
+            "sv": "M. flexor carpi radialis"
+          },
+          "whyWrong": {
+            "hu": "Az FCR a csukló palmaris oldalán fut; a Finkelstein-teszt nem ezt feszíti.",
+            "sv": "FCR löper på handledens volarsida; Finkelsteins test belastar inte den."
+          }
+        }
+      ],
+      "answer": 2,
+      "explanation": {
+        "hu": "A de Quervain-tenosynovitis az 1. feszítő-rekesz szűkülete, amelyben az APL és az EPB fut a processus styloideus radii felett. A Finkelstein-teszt (és az Eichhoff-változat) a hüvelykujj hajlításával és a csukló ulnaris deviatiójával megnyújtja ezeket az inakat. Az ismételt hüvelykujj-terhelés, pl. a kisbaba emelése, tipikus kiváltó ok.",
+        "sv": "De Quervains tenosynovit är en trånghet i 1:a extensorfacket där APL och EPB löper över processus styloideus radii. Finkelsteins test (och Eichhoff-varianten) sträcker dessa senor genom tumflexion och ulnardeviation av handleden. Upprepad tumbelastning, t.ex. att lyfta ett spädbarn, är en typisk utlösande faktor."
+      },
+      "link": {
+        "view": "modul-alkar",
+        "item": "m.abductor-pollicis-longus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "al6",
+      "topic": "alkar",
+      "type": "tf",
+      "prompt": {
+        "hu": "A n. radialis felszíni ágának kompressziója (pl. szoros óraszíj miatt) zsibbadást okoz a kézhát radiális részén, de izomgyengeséget nem.",
+        "sv": "Kompression av n. radialis ytliga gren (t.ex. av ett tight klockarmband) ger domningar på handryggens radiala del men ingen muskelsvaghet."
+      },
+      "answer": true,
+      "explanation": {
+        "hu": "Igaz. A ramus superficialis n. radialis tisztán érző ág, amely a brachioradialis alól a disztális alkaron bukkan felszínre. Kompressziója (Wartenberg-szindróma, cheiralgia paraesthetica) csak érzészavart okoz. Ezzel szemben a mély ág (n. interosseus posterior) motoros.",
+        "sv": "Sant. Ramus superficialis n. radialis är en rent sensorisk gren som kommer fram under brachioradialis på distala underarmen. Kompression (Wartenbergs syndrom, cheiralgia paraesthetica) ger enbart känselstörning. Den djupa grenen (n. interosseus posterior) är däremot motorisk."
+      },
+      "link": {
+        "view": "modul-alkar",
+        "item": null
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "al7",
+      "topic": "alkar",
+      "type": "mc",
+      "prompt": {
+        "hu": "Melyik alkarizmokat idegzi be a n. ulnaris?",
+        "sv": "Vilka underarmsmuskler innerveras av n. ulnaris?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "M. flexor carpi ulnaris és a m. flexor digitorum profundus mediális (IV–V.) része",
+            "sv": "M. flexor carpi ulnaris och mediala delen (IV–V) av m. flexor digitorum profundus"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "M. flexor carpi ulnaris és m. extensor carpi ulnaris",
+            "sv": "M. flexor carpi ulnaris och m. extensor carpi ulnaris"
+          },
+          "whyWrong": {
+            "hu": "Az ECU a hátsó rekesz része, a n. interosseus posterior idegzi be.",
+            "sv": "ECU hör till det bakre facket och innerveras av n. interosseus posterior."
+          }
+        },
+        {
+          "text": {
+            "hu": "A teljes m. flexor digitorum profundus",
+            "sv": "Hela m. flexor digitorum profundus"
+          },
+          "whyWrong": {
+            "hu": "Az FDP laterális (II–III.) részét a n. interosseus anterior látja el.",
+            "sv": "Den laterala delen (II–III) av FDP försörjs av n. interosseus anterior."
+          }
+        },
+        {
+          "text": {
+            "hu": "M. flexor digitorum superficialis és m. palmaris longus",
+            "sv": "M. flexor digitorum superficialis och m. palmaris longus"
+          },
+          "whyWrong": {
+            "hu": "Mindkettő n. medianus-izom.",
+            "sv": "Båda är medianusmuskler."
+          }
+        }
+      ],
+      "answer": 0,
+      "explanation": {
+        "hu": "Az alkaron a n. ulnaris csak másfél izmot lát el: az FCU-t és az FDP ulnaris felét. Proximális (könyöktáji) sérülésnél ezért a IV–V. ujj DIP-flexiója és az ulnaris deviatio is gyengül. Disztális (csuklótáji) sérülésnél ezek megmaradnak, és csak a kéz intrinsic izmai esnek ki.",
+        "sv": "På underarmen försörjer n. ulnaris endast en och en halv muskel: FCU och den ulnara halvan av FDP. Vid proximal skada (vid armbågen) försvagas därför DIP-flexionen i finger IV–V och ulnardeviationen. Vid distal skada (vid handleden) är dessa bevarade och endast handens intrinsiska muskler faller bort."
+      },
+      "link": {
+        "view": "modul-alkar",
+        "item": "m.flexor-carpi-ulnaris"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "al8",
+      "topic": "alkar",
+      "type": "mc",
+      "prompt": {
+        "hu": "Egy 22 éves kerékpáros kinyújtott kézre esett. A röntgen negatív, de a tubákszelencében erős nyomásérzékenység van. Mire kell gondolni elsősorban?",
+        "sv": "En 22-årig cyklist har fallit på utsträckt hand. Röntgen är negativ, men det finns uttalad ömhet i snusdosan. Vad bör man i första hand misstänka?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "De Quervain-tenosynovitisre",
+            "sv": "De Quervains tenosynovit"
+          },
+          "whyWrong": {
+            "hu": "A de Quervain túlterheléses kórkép, nem akut trauma következménye, és a fájdalom a processus styloideus felett van.",
+            "sv": "De Quervain är ett överbelastningstillstånd, inte en följd av akut trauma, och smärtan sitter över processus styloideus."
+          }
+        },
+        {
+          "text": {
+            "hu": "Disztális ulnatörésre",
+            "sv": "Distal ulnafraktur"
+          },
+          "whyWrong": {
+            "hu": "Az ulna a csukló ulnaris oldalán van; a tubákszelence radiális.",
+            "sv": "Ulna sitter på handledens ulnara sida; snusdosan är radial."
+          }
+        },
+        {
+          "text": {
+            "hu": "M. extensor pollicis longus-szakadásra",
+            "sv": "Ruptur av m. extensor pollicis longus"
+          },
+          "whyWrong": {
+            "hu": "Az EPL-szakadás késői szövődmény hetekkel radiustörés után, és a hüvelykujj nyújtása esik ki.",
+            "sv": "EPL-ruptur är en sen komplikation veckor efter radiusfraktur, och tumextensionen faller bort."
+          }
+        },
+        {
+          "text": {
+            "hu": "Os scaphoideum-törésre",
+            "sv": "Fraktur på os scaphoideum"
+          },
+          "whyWrong": null
+        }
+      ],
+      "answer": 3,
+      "explanation": {
+        "hu": "A tubákszelence alapját az os scaphoideum (és a trapezium) adja, ezért itt a nyomásérzékenység scaphoideum-törésre utal. Az első röntgen gyakran negatív; ilyenkor immobilizáció és ismételt képalkotás (vagy MR/CT) javasolt. A scaphoideum vérellátása disztálisról érkezik, így a proximális pólus elhalhat.",
+        "sv": "Snusdosans botten bildas av os scaphoideum (och trapezium), så ömhet här tyder på skafoideumfraktur. Första röntgen är ofta negativ; då rekommenderas immobilisering och förnyad bilddiagnostik (eller MR/DT). Skafoideums blodförsörjning kommer distalt ifrån, så proximala polen kan bli nekrotisk."
+      },
+      "link": {
+        "view": "modul-alkar",
+        "item": "art.manus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "al9",
+      "topic": "alkar",
+      "type": "mc",
+      "prompt": {
+        "hu": "Melyik ín képezi az anatómiai tubákszelence ulnaris (dorsalis) határát?",
+        "sv": "Vilken sena bildar den anatomiska snusdosans ulnara (dorsala) gräns?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "M. extensor pollicis longus",
+            "sv": "M. extensor pollicis longus"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "M. extensor pollicis brevis",
+            "sv": "M. extensor pollicis brevis"
+          },
+          "whyWrong": {
+            "hu": "Az EPB az APL-lel együtt a radiális (palmaris) határt alkotja.",
+            "sv": "EPB bildar tillsammans med APL den radiala (volara) gränsen."
+          }
+        },
+        {
+          "text": {
+            "hu": "M. extensor carpi radialis longus",
+            "sv": "M. extensor carpi radialis longus"
+          },
+          "whyWrong": {
+            "hu": "Az ECRL ina a tubákszelence alján, mélyen halad át, nem határolja.",
+            "sv": "ECRL:s sena passerar djupt i snusdosans botten men avgränsar den inte."
+          }
+        },
+        {
+          "text": {
+            "hu": "M. abductor pollicis longus",
+            "sv": "M. abductor pollicis longus"
+          },
+          "whyWrong": {
+            "hu": "Az APL a radiális (palmaris) határ része.",
+            "sv": "APL är en del av den radiala (volara) gränsen."
+          }
+        }
+      ],
+      "answer": 0,
+      "explanation": {
+        "hu": "A tubákszelence radiális határa az APL és az EPB (1. rekesz), ulnaris határa az EPL (3. rekesz), amely a Lister-dudor körül fordul a hüvelykujj felé. Az alján tapintható az a. radialis és az os scaphoideum. A hüvelykujj nyújtásakor a határok jól láthatóvá válnak.",
+        "sv": "Snusdosans radiala gräns är APL och EPB (1:a facket), den ulnara gränsen är EPL (3:e facket), som vänder runt Listers tuberkel mot tummen. I botten palperas a. radialis och os scaphoideum. Vid tumextension blir gränserna tydligt synliga."
+      },
+      "link": {
+        "view": "modul-alkar",
+        "item": "m.extensor-pollicis-longus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "al10",
+      "topic": "alkar",
+      "type": "tf",
+      "prompt": {
+        "hu": "Ha a m. palmaris longus hiányzik, a csuklóflexio ereje jelentősen csökken.",
+        "sv": "Om m. palmaris longus saknas minskar handledsflexionens kraft betydligt."
+      },
+      "answer": false,
+      "explanation": {
+        "hu": "Hamis. A m. palmaris longus a népesség kb. 10–15%-ában hiányzik, és ez funkcionálisan nem jelentős, mert az FCR és az FCU adja a csuklóflexio erejét. Éppen ezért gyakran használják íngraftként (pl. könyök szalagpótlásnál).",
+        "sv": "Falskt. M. palmaris longus saknas hos ca 10–15 % av befolkningen, och det har ingen funktionell betydelse eftersom FCR och FCU står för handledsflexionens kraft. Just därför används den ofta som senautotransplantat (t.ex. vid ligamentrekonstruktion i armbågen)."
+      },
+      "link": {
+        "view": "modul-alkar",
+        "item": "m.palmaris-longus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "al11",
+      "topic": "alkar",
+      "type": "mc",
+      "prompt": {
+        "hu": "Hogyan vizsgálható izoláltan a középső ujj m. flexor digitorum superficialis-a?",
+        "sv": "Hur testas m. flexor digitorum superficialis för långfingret isolerat?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "A középső percet rögzítve a beteg a DIP-ízületet hajlítja",
+            "sv": "Mellanfalangen fixeras och patienten flekterar DIP-leden"
+          },
+          "whyWrong": {
+            "hu": "Ez az FDP tesztje; a DIP-et csak a mély hajlító hajlítja.",
+            "sv": "Detta är testet för FDP; DIP-leden flekteras bara av den djupa böjaren."
+          }
+        },
+        {
+          "text": {
+            "hu": "A beteg ökölbe szorítja a kezét ellenállással szemben",
+            "sv": "Patienten knyter handen mot motstånd"
+          },
+          "whyWrong": {
+            "hu": "Ökölbe szorításkor az összes hajlító együtt dolgozik, ez nem izolált teszt.",
+            "sv": "Vid knytnäve arbetar alla böjare tillsammans; det är inget isolerat test."
+          }
+        },
+        {
+          "text": {
+            "hu": "A vizsgáló a többi ujjat nyújtva tartja, a beteg a középső ujj PIP-ízületét hajlítja",
+            "sv": "Undersökaren håller övriga fingrar extenderade och patienten flekterar långfingrets PIP-led"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "A beteg a csuklót ellenállással szemben hajlítja",
+            "sv": "Patienten flekterar handleden mot motstånd"
+          },
+          "whyWrong": {
+            "hu": "A csuklóflexiót főleg az FCR és az FCU végzi.",
+            "sv": "Handledsflexionen utförs främst av FCR och FCU."
+          }
+        }
+      ],
+      "answer": 2,
+      "explanation": {
+        "hu": "Az FDP-nek közös izomhasa van, ezért ha a többi ujjat nyújtva tartjuk, a vizsgált ujj FDP-je sem tud hatékonyan összehúzódni (quadriga-jelenség). Ilyenkor a PIP-flexiót csak az FDS végezheti, a DIP laza marad. Vágott sérüléseknél így különíthető el a két ín épsége.",
+        "sv": "FDP har en gemensam muskelbuk, så om övriga fingrar hålls extenderade kan inte heller det undersökta fingrets FDP kontrahera effektivt (quadriga-fenomenet). PIP-flexionen kan då bara utföras av FDS, och DIP-leden förblir slapp. Vid skärskador kan man på så sätt skilja de två senornas integritet åt."
+      },
+      "link": {
+        "view": "modul-alkar",
+        "item": "m.flexor-digitorum-superficialis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "al12",
+      "topic": "alkar",
+      "type": "mc",
+      "prompt": {
+        "hu": "Melyik izom pronátoros erejét méri leginkább az ellenállással végzett pronatio maximálisan hajlított könyöknél?",
+        "sv": "Vilken muskels pronationskraft mäts främst vid pronation mot motstånd med maximalt flekterad armbåge?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "M. pronator quadratus",
+            "sv": "M. pronator quadratus"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "M. pronator teres",
+            "sv": "M. pronator teres"
+          },
+          "whyWrong": {
+            "hu": "Teljes könyökflexióban a pronator teres megrövidül és aktív elégtelenségbe kerül, ezért kevés erőt ad.",
+            "sv": "I full armbågsflexion förkortas pronator teres och hamnar i aktiv insufficiens, så den bidrar med lite kraft."
+          }
+        },
+        {
+          "text": {
+            "hu": "M. brachioradialis",
+            "sv": "M. brachioradialis"
+          },
+          "whyWrong": {
+            "hu": "A brachioradialis csak supinált helyzetből viszi középállásba az alkart, nem valódi pronátor.",
+            "sv": "Brachioradialis för bara underarmen från supination mot mellanläge och är ingen egentlig pronator."
+          }
+        },
+        {
+          "text": {
+            "hu": "M. flexor carpi radialis",
+            "sv": "M. flexor carpi radialis"
+          },
+          "whyWrong": {
+            "hu": "Az FCR csak gyenge, segítő pronátor.",
+            "sv": "FCR är bara en svag, hjälpande pronator."
+          }
+        }
+      ],
+      "answer": 0,
+      "explanation": {
+        "hu": "A m. pronator quadratus egyízületi izom, ereje nem függ a könyök helyzetétől. A m. pronator teres a könyököt is keresztezi, ezért maximális flexióban megrövidül és gyengébben húz. Így a hajlított könyökkel végzett teszt főleg a pronator quadratust (és a n. interosseus anteriort) vizsgálja.",
+        "sv": "M. pronator quadratus är en enledsmuskel vars kraft inte beror på armbågsläget. M. pronator teres korsar även armbågen och förkortas därför i maximal flexion och drar svagare. Testet med flekterad armbåge undersöker därför främst pronator quadratus (och n. interosseus anterior)."
+      },
+      "link": {
+        "view": "modul-alkar",
+        "item": "m.pronator-quadratus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "al13",
+      "topic": "alkar",
+      "type": "mc",
+      "prompt": {
+        "hu": "Melyik gerincvelői szegmentet vizsgálja elsősorban a brachioradialis-reflex?",
+        "sv": "Vilket ryggmärgssegment undersöks främst med brachioradialisreflexen?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "C8",
+            "sv": "C8"
+          },
+          "whyWrong": {
+            "hu": "A C8-at inkább az ujjhajlítók ereje és a kisujj oldali érzés jelzi.",
+            "sv": "C8 bedöms snarare med fingerböjarnas kraft och känseln på lillfingersidan."
+          }
+        },
+        {
+          "text": {
+            "hu": "C7",
+            "sv": "C7"
+          },
+          "whyWrong": {
+            "hu": "A C7 fő reflexe a tricepsz-reflex.",
+            "sv": "C7:s huvudreflex är tricepsreflexen."
+          }
+        },
+        {
+          "text": {
+            "hu": "C6 (C5–C6)",
+            "sv": "C6 (C5–C6)"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "T1",
+            "sv": "T1"
+          },
+          "whyWrong": {
+            "hu": "A T1-hez nem tartozik standard reflex a felső végtagon.",
+            "sv": "Det finns ingen standardreflex för T1 i den övre extremiteten."
+          }
+        }
+      ],
+      "answer": 2,
+      "explanation": {
+        "hu": "A m. brachioradialis a n. radialisból kap C5–C6 rostokat; a reflexet a radius disztális részére mért ütéssel váltjuk ki. A bicepsz-reflex elsősorban C5, a brachioradialis C6, a tricepsz C7 szegmentet jelez. Csökkent brachioradialis-reflex és a hüvelykujj zsibbadása együtt C6-radiculopathiára utalhat.",
+        "sv": "M. brachioradialis får C5–C6-fibrer via n. radialis; reflexen utlöses genom slag mot distala radius. Bicepsreflexen speglar främst C5, brachioradialis C6 och triceps C7. Nedsatt brachioradialisreflex tillsammans med domningar i tummen kan tyda på C6-radikulopati."
+      },
+      "link": {
+        "view": "modul-alkar",
+        "item": "m.brachioradialis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "al14",
+      "topic": "alkar",
+      "type": "mc",
+      "prompt": {
+        "hu": "Az alkar melyik helyzetében a legerősebb a m. brachioradialis könyökhajlító hatása?",
+        "sv": "I vilket underarmsläge är m. brachioradialis armbågsflekterande effekt starkast?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "Középállásban (semipronatio, hüvelykujj felfelé)",
+            "sv": "I mellanläge (semipronation, tummen uppåt)"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "Teljes supinatióban",
+            "sv": "I full supination"
+          },
+          "whyWrong": {
+            "hu": "Teljes supinatióban a bicepsz a legerősebb hajlító; a brachioradialis ilyenkor pronáló komponenst is kifejt.",
+            "sv": "I full supination är biceps den starkaste flexorn; brachioradialis har då även en pronerande komponent."
+          }
+        },
+        {
+          "text": {
+            "hu": "Teljes pronatióban",
+            "sv": "I full pronation"
+          },
+          "whyWrong": {
+            "hu": "Pronált helyzetben a m. brachialis a fő hajlító; a brachioradialis ilyenkor supináló irányba húz.",
+            "sv": "I pronation är m. brachialis den främsta flexorn; brachioradialis drar då i supinerande riktning."
+          }
+        },
+        {
+          "text": {
+            "hu": "A helyzet nem számít",
+            "sv": "Läget spelar ingen roll"
+          },
+          "whyWrong": {
+            "hu": "A brachioradialis tapadása miatt a karerő az alkar helyzetétől függ.",
+            "sv": "På grund av brachioradialis fäste beror hävarmen på underarmens läge."
+          }
+        }
+      ],
+      "answer": 0,
+      "explanation": {
+        "hu": "A brachioradialis a processus styloideus radiin tapad, ezért hosszú erőkarral, középállásban hajlítja legjobban a könyököt (pl. pohár szájhoz emelése). Pronált vagy supinált helyzetből az alkart középállás felé is viszi. Klinikai MMT-je ezért semipronatióban történik.",
+        "sv": "Brachioradialis fäster på processus styloideus radii och flekterar därför armbågen bäst med lång hävarm i mellanläge (t.ex. att lyfta ett glas till munnen). Från pronation eller supination för den även underarmen mot mellanläge. Den kliniska MMT:n görs därför i semipronation."
+      },
+      "link": {
+        "view": "modul-alkar",
+        "item": "m.brachioradialis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "al15",
+      "topic": "alkar",
+      "type": "mc",
+      "prompt": {
+        "hu": "Hol szorul be leggyakrabban a n. radialis mély ága (n. interosseus posterior)?",
+        "sv": "Var kläms n. radialis djupa gren (n. interosseus posterior) oftast?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "A sulcus nervi radialisban",
+            "sv": "I sulcus nervi radialis"
+          },
+          "whyWrong": {
+            "hu": "Ez a radialis törzs sérülési helye, a kettéválás felett.",
+            "sv": "Detta är skadeplatsen för radialisstammen, ovanför delningen."
+          }
+        },
+        {
+          "text": {
+            "hu": "A canalis carpiban",
+            "sv": "I canalis carpi"
+          },
+          "whyWrong": {
+            "hu": "A canalis carpiban a n. medianus fut.",
+            "sv": "I canalis carpi löper n. medianus."
+          }
+        },
+        {
+          "text": {
+            "hu": "A Guyon-csatornában",
+            "sv": "I Guyons kanal"
+          },
+          "whyWrong": {
+            "hu": "A Guyon-csatornában a n. ulnaris fut a csuklón.",
+            "sv": "I Guyons kanal löper n. ulnaris vid handleden."
+          }
+        },
+        {
+          "text": {
+            "hu": "A m. supinator proximális szélénél (Frohse-árkád)",
+            "sv": "Vid m. supinators proximala kant (Frohses arkad)"
+          },
+          "whyWrong": null
+        }
+      ],
+      "answer": 3,
+      "explanation": {
+        "hu": "A mély ág a könyök magasságában válik le, és a m. supinator két rétege között, a proximális ínos ív (Frohse-árkád) alatt lép be az izomba. Itt kompresszió okozhat motoros PIN-szindrómát vagy fájdalommal járó radialis alagút-szindrómát. Utóbbi a laterális epicondylalgia fontos differenciáldiagnózisa (fájdalom kb. 4–5 cm-rel az epicondylus alatt).",
+        "sv": "Djupa grenen avgår i armbågshöjd och går in i m. supinator mellan dess två lager, under den proximala seniga bågen (Frohses arkad). Kompression här kan ge motoriskt PIN-syndrom eller smärtsamt radialtunnelsyndrom. Det senare är en viktig differentialdiagnos till lateral epikondylalgi (smärta ca 4–5 cm distalt om epikondylen)."
+      },
+      "link": {
+        "view": "modul-alkar",
+        "item": "m.supinator"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "al16",
+      "topic": "alkar",
+      "type": "tf",
+      "prompt": {
+        "hu": "A supinatio ereje 90°-ban hajlított könyöknél a legnagyobb, mert ekkor a m. biceps brachii is hatékonyan supinál.",
+        "sv": "Supinationskraften är störst med armbågen flekterad 90°, eftersom m. biceps brachii då också supinerar effektivt."
+      },
+      "answer": true,
+      "explanation": {
+        "hu": "Igaz. A bicepsz a tuberositas radiin tapad, és kb. 90°-os könyökflexióban a legjobb a supináló erőkarja. Nyújtott könyöknél a supinatiót főleg a m. supinator végzi. Ezért pl. a csavarhúzó használata hajlított könyökkel hatékonyabb.",
+        "sv": "Sant. Biceps fäster på tuberositas radii och har sin bästa supinerande hävarm vid ca 90° armbågsflexion. Med extenderad armbåge utförs supinationen främst av m. supinator. Därför är t.ex. skruvmejselarbete effektivare med flekterad armbåge."
+      },
+      "link": {
+        "view": "modul-alkar",
+        "item": "m.supinator"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "al17",
+      "topic": "alkar",
+      "type": "match",
+      "prompt": {
+        "hu": "Párosítsd az izmot a tapadásával és a beidegzésével!",
+        "sv": "Para ihop muskeln med dess fäste och innervation!"
+      },
+      "heads": {
+        "hu": [
+          "IZOM",
+          "TAPADÁS",
+          "BEIDEGZÉS"
+        ],
+        "sv": [
+          "MUSKEL",
+          "FÄSTE",
+          "INNERVATION"
+        ]
+      },
+      "rows": [
+        [
+          "m. flexor carpi radialis",
+          "basis ossis metacarpalis II (palmaris)",
+          "n. medianus"
+        ],
+        [
+          "m. flexor carpi ulnaris",
+          "os pisiforme",
+          "n. ulnaris"
+        ],
+        [
+          "m. extensor carpi radialis brevis",
+          "basis ossis metacarpalis III (dorsalis)",
+          "n. radialis, ramus profundus"
+        ],
+        [
+          "m. extensor pollicis longus",
+          "phalanx distalis pollicis",
+          "n. interosseus posterior"
+        ]
+      ],
+      "explanation": {
+        "hu": "A csuklómozgató izmok a kézközépcsontok basisán tapadnak, így az ízületek mindkét sorát áthidalják. Az elülső oldalon a n. medianus és a n. ulnaris, a hátsón kizárólag a n. radialis ágai dolgoznak. A tapadás iránya magyarázza a mellékhatásokat: a radiális oldalon tapadó izmok radialis, az ulnáris oldalon tapadók ulnaris deviatiót is végeznek.",
+        "sv": "Handledsmusklerna fäster på metakarpalbenens baser och överbryggar därmed båda ledraderna. På framsidan arbetar n. medianus och n. ulnaris, på baksidan uteslutande grenar från n. radialis. Fästets läge förklarar bieffekterna: muskler som fäster radialt ger även radialdeviation, de som fäster ulnart ulnardeviation."
+      },
+      "link": {
+        "view": "modul-alkar",
+        "item": "art.manus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "al18",
+      "topic": "alkar",
+      "type": "match",
+      "prompt": {
+        "hu": "Párosítsd a magyar kifejezést a svéd és a latin alakkal!",
+        "sv": "Para ihop den ungerska termen med den svenska och den latinska formen!"
+      },
+      "rows": [
+        [
+          "közös ujjfeszítő izom",
+          "gemensamma fingersträckaren",
+          "m. extensor digitorum"
+        ],
+        [
+          "mély ujjhajlító izom",
+          "djupa fingerböjaren",
+          "m. flexor digitorum profundus"
+        ],
+        [
+          "hanyintóizom",
+          "supinatormuskeln",
+          "m. supinator"
+        ],
+        [
+          "anatómiai tubákszelence",
+          "anatomiska snusdosan",
+          "fovea radialis"
+        ]
+      ],
+      "explanation": {
+        "hu": "A magyar nevek többnyire a funkciót írják le (\"feszítő\", \"hajlító\", \"hanyintó\" = supinator, \"borintó\" = pronator). A svéd klinikai nyelv gyakran a latin tövet használja, a tubákszelence pedig mindkét nyelvben a dohánytartó szelencére utal.",
+        "sv": "De ungerska namnen beskriver oftast funktionen (\"feszítő\" = sträckare, \"hajlító\" = böjare, \"hanyintó\" = supinator, \"borintó\" = pronator). Svenskt kliniskt språk använder ofta den latinska stammen, och snusdosan syftar på båda språken på en tobaksdosa."
+      },
+      "link": {
+        "view": "modul-alkar",
+        "item": null
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "al19",
+      "topic": "alkar",
+      "type": "order",
+      "prompt": {
+        "hu": "Állítsd sorrendbe a n. radialis lefutását proximálistól disztálisig!",
+        "sv": "Ordna n. radialis förlopp från proximalt till distalt!"
+      },
+      "items": [
+        {
+          "hu": "Sulcus nervi radialis a humerus hátsó felszínén",
+          "sv": "Sulcus nervi radialis på humerus baksida"
+        },
+        {
+          "hu": "Átfúrja a septum intermusculare lateralét, a m. brachialis és a m. brachioradialis közé kerül",
+          "sv": "Genomborrar septum intermusculare laterale och hamnar mellan m. brachialis och m. brachioradialis"
+        },
+        {
+          "hu": "Az epicondylus lateralis előtt felszíni és mély ágra oszlik",
+          "sv": "Delar sig framför epicondylus lateralis i en ytlig och en djup gren"
+        },
+        {
+          "hu": "A mély ág a Frohse-árkád alatt belép a m. supinatorba",
+          "sv": "Djupa grenen går in i m. supinator under Frohses arkad"
+        },
+        {
+          "hu": "N. interosseus posteriorként az alkar hátsó mély rétegében halad",
+          "sv": "Fortsätter som n. interosseus posterior i underarmens bakre djupa lager"
+        }
+      ],
+      "explanation": {
+        "hu": "A lefutás ismerete magyarázza a tünetek szintjét: a sulcusban sérülve csuklóesés és érzéskiesés, a supinatornál sérülve csak ujjnyújtás-gyengeség lép fel. A brachioradialis és az ECRL ágai a kettéválás előtt lépnek ki, ezért PIN-lézióban megmaradnak.",
+        "sv": "Kunskap om förloppet förklarar symtomnivån: skada i sulcus ger dropphand och känselbortfall, skada vid supinatorn ger enbart svag fingerextension. Grenarna till brachioradialis och ECRL avgår före delningen och bevaras därför vid PIN-skada."
+      },
+      "link": {
+        "view": "modul-alkar",
+        "item": "m.supinator"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "al20",
+      "topic": "alkar",
+      "type": "order",
+      "prompt": {
+        "hu": "Állítsd sorrendbe a retinaculum extensorum alatti feszítő-rekeszeket radiálistól ulnárisig!",
+        "sv": "Ordna extensorfacken under retinaculum extensorum från radialt till ulnart!"
+      },
+      "items": [
+        {
+          "hu": "1. rekesz: m. abductor pollicis longus + m. extensor pollicis brevis",
+          "sv": "1:a facket: m. abductor pollicis longus + m. extensor pollicis brevis"
+        },
+        {
+          "hu": "2. rekesz: m. extensor carpi radialis longus + brevis",
+          "sv": "2:a facket: m. extensor carpi radialis longus + brevis"
+        },
+        {
+          "hu": "3. rekesz: m. extensor pollicis longus",
+          "sv": "3:e facket: m. extensor pollicis longus"
+        },
+        {
+          "hu": "4. rekesz: m. extensor digitorum + m. extensor indicis",
+          "sv": "4:e facket: m. extensor digitorum + m. extensor indicis"
+        },
+        {
+          "hu": "5. rekesz: m. extensor digiti minimi",
+          "sv": "5:e facket: m. extensor digiti minimi"
+        },
+        {
+          "hu": "6. rekesz: m. extensor carpi ulnaris",
+          "sv": "6:e facket: m. extensor carpi ulnaris"
+        }
+      ],
+      "explanation": {
+        "hu": "A rekeszek klinikai térképként szolgálnak: az 1. rekesz a de Quervain, a 3. az EPL-szakadás (Lister-dudor), a 6. az ulnaris oldali ECU-tendinopathia helye. A Lister-dudor a 2. és a 3. rekeszt választja el.",
+        "sv": "Facken fungerar som en klinisk karta: 1:a facket är platsen för de Quervain, 3:e för EPL-ruptur (Listers tuberkel), 6:e för ulnarsidig ECU-tendinopati. Listers tuberkel skiljer 2:a och 3:e facket åt."
+      },
+      "link": {
+        "view": "modul-alkar",
+        "item": "m.extensor-pollicis-longus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "al21",
+      "topic": "alkar",
+      "type": "mc",
+      "prompt": {
+        "hu": "Melyik állítás igaz a csukló normál aktív mozgásterjedelmére?",
+        "sv": "Vilket påstående om handledens normala aktiva rörelseomfång är sant?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "A radialis deviatio nagyobb, mint az ulnaris",
+            "sv": "Radialdeviationen är större än ulnardeviationen"
+          },
+          "whyWrong": {
+            "hu": "Fordítva: a processus styloideus radii disztálisabb, ezért a radialis deviatio a kisebb (kb. 20°).",
+            "sv": "Tvärtom: processus styloideus radii når längre distalt, så radialdeviationen är mindre (ca 20°)."
+          }
+        },
+        {
+          "text": {
+            "hu": "Az ulnaris deviatio (kb. 30°) nagyobb, mint a radialis (kb. 20°)",
+            "sv": "Ulnardeviationen (ca 30°) är större än radialdeviationen (ca 20°)"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "Az extensio (kb. 90°) jóval nagyobb a flexiónál",
+            "sv": "Extensionen (ca 90°) är betydligt större än flexionen"
+          },
+          "whyWrong": {
+            "hu": "A flexio (kb. 80°) általában valamivel nagyobb, mint az extensio (kb. 70°).",
+            "sv": "Flexionen (ca 80°) är i regel något större än extensionen (ca 70°)."
+          }
+        },
+        {
+          "text": {
+            "hu": "A pronatio és a supinatio a radiocarpalis ízületben történik",
+            "sv": "Pronation och supination sker i radiokarpalleden"
+          },
+          "whyWrong": {
+            "hu": "A pronatio–supinatio a proximális és disztális radioulnaris ízületekben zajlik.",
+            "sv": "Pronation–supination sker i den proximala och distala radioulnarleden."
+          }
+        }
+      ],
+      "answer": 1,
+      "explanation": {
+        "hu": "AAOS-szerű normák: flexio kb. 80°, extensio kb. 70°, radialis deviatio kb. 20°, ulnaris deviatio kb. 30° (forrásonként eltérhet). Az ulnaris deviatio azért nagyobb, mert az ulna rövidebb processus styloideusa és a TFCC rugalmassága nagyobb teret enged. Goniometriánál a kézközépcsont III tengelyét és a radius tengelyét használjuk.",
+        "sv": "AAOS-liknande normer: flexion ca 80°, extension ca 70°, radialdeviation ca 20°, ulnardeviation ca 30° (kan variera mellan källor). Ulnardeviationen är större eftersom ulnas kortare processus styloideus och TFCC:s eftergivlighet ger mer utrymme. Vid goniometri används axeln för os metacarpale III och radius."
+      },
+      "link": {
+        "view": "modul-alkar",
+        "item": "art.manus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "al22",
+      "topic": "alkar",
+      "type": "mc",
+      "prompt": {
+        "hu": "Hat héttel egy nem elmozdult disztális radiustörés után a beteg hirtelen nem tudja kinyújtani a hüvelykujja végpercét. Mi a legvalószínűbb ok?",
+        "sv": "Sex veckor efter en odislocerad distal radiusfraktur kan patienten plötsligt inte extendera tummens ytterfalang. Vad är den troligaste orsaken?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "N. interosseus anterior-sérülés",
+            "sv": "Skada på n. interosseus anterior"
+          },
+          "whyWrong": {
+            "hu": "Az AIN a hüvelykujj hajlítóját (FPL) idegzi be, nem a feszítőt.",
+            "sv": "AIN innerverar tummens böjare (FPL), inte sträckaren."
+          }
+        },
+        {
+          "text": {
+            "hu": "De Quervain-tenosynovitis",
+            "sv": "De Quervains tenosynovit"
+          },
+          "whyWrong": {
+            "hu": "De Quervainben fájdalom van, de az ín nem szakad el, a nyújtás megtartott.",
+            "sv": "Vid de Quervain finns smärta men senan rupturerar inte; extensionen är bevarad."
+          }
+        },
+        {
+          "text": {
+            "hu": "A m. extensor pollicis brevis szakadása",
+            "sv": "Ruptur av m. extensor pollicis brevis"
+          },
+          "whyWrong": {
+            "hu": "Az EPB a proximális percen tapad, ezért a végperc nyújtását nem végzi.",
+            "sv": "EPB fäster på grundfalangen och extenderar därför inte ytterfalangen."
+          }
+        },
+        {
+          "text": {
+            "hu": "A m. extensor pollicis longus szakadása a Lister-dudornál",
+            "sv": "Ruptur av m. extensor pollicis longus vid Listers tuberkel"
+          },
+          "whyWrong": null
+        }
+      ],
+      "answer": 3,
+      "explanation": {
+        "hu": "Az EPL a Lister-dudor körül éles szögben fordul, és nem elmozdult törésnél a csontfelszín vagy a romlott vérellátás miatt kopik el. A hüvelykujj IP-extensióját egyedül az EPL végzi (külső izomként), így szakadásakor ez kiesik. A kezelés gyakran m. extensor indicis-íntranszfer.",
+        "sv": "EPL vänder i skarp vinkel runt Listers tuberkel och nöts av vid odislocerad fraktur på grund av benytan eller försämrad blodförsörjning. Tummens IP-extension utförs enbart av EPL (som extrinsisk muskel), så den faller bort vid ruptur. Behandlingen är ofta senöverföring av m. extensor indicis."
+      },
+      "link": {
+        "view": "modul-alkar",
+        "item": "m.extensor-pollicis-longus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "al23",
+      "topic": "alkar",
+      "type": "mc",
+      "prompt": {
+        "hu": "Melyik izom NEM a közös hajlító eredésről (epicondylus medialis) indul?",
+        "sv": "Vilken muskel utgår INTE från det gemensamma flexorursprunget (epicondylus medialis)?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "M. pronator teres",
+            "sv": "M. pronator teres"
+          },
+          "whyWrong": {
+            "hu": "Caput humeraléja az epicondylus medialisról ered.",
+            "sv": "Dess caput humerale utgår från epicondylus medialis."
+          }
+        },
+        {
+          "text": {
+            "hu": "M. flexor carpi radialis",
+            "sv": "M. flexor carpi radialis"
+          },
+          "whyWrong": {
+            "hu": "A közös hajlító eredésről indul.",
+            "sv": "Den utgår från det gemensamma flexorursprunget."
+          }
+        },
+        {
+          "text": {
+            "hu": "M. palmaris longus",
+            "sv": "M. palmaris longus"
+          },
+          "whyWrong": {
+            "hu": "A közös hajlító eredésről indul.",
+            "sv": "Den utgår från det gemensamma flexorursprunget."
+          }
+        },
+        {
+          "text": {
+            "hu": "M. brachioradialis",
+            "sv": "M. brachioradialis"
+          },
+          "whyWrong": null
+        }
+      ],
+      "answer": 3,
+      "explanation": {
+        "hu": "A brachioradialis a crista supracondylaris lateralisról ered, és a hátsó (radialis által beidegzett) csoporthoz tartozik, bár könyökhajlító. A mediális epicondylalgia (\"golfkönyök\") a közös hajlító-pronátor eredést, főleg a pronator terest és az FCR-t érinti. Provokálja az ellenállással végzett csuklóflexio és pronatio.",
+        "sv": "Brachioradialis utgår från crista supracondylaris lateralis och hör till den bakre (radialisinnerverade) gruppen, trots att den är armbågsflexor. Medial epikondylalgi (\"golfarmbåge\") drabbar det gemensamma flexor-pronatorursprunget, främst pronator teres och FCR. Den provoceras av handledsflexion och pronation mot motstånd."
+      },
+      "link": {
+        "view": "modul-alkar",
+        "item": "m.pronator-teres"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "al24",
+      "topic": "alkar",
+      "type": "tf",
+      "prompt": {
+        "hu": "A m. flexor digitorum profundust teljes egészében a n. medianus idegzi be.",
+        "sv": "M. flexor digitorum profundus innerveras i sin helhet av n. medianus."
+      },
+      "answer": false,
+      "explanation": {
+        "hu": "Hamis. Az FDP kettős beidegzésű: a II–III. ujjhoz menő laterális részét a n. interosseus anterior (n. medianus), a IV–V. ujjhoz menő mediális részét a n. ulnaris látja el. Ezért proximális ulnaris-sérülésnél a gyűrűs- és a kisujj DIP-flexiója gyengül.",
+        "sv": "Falskt. FDP har dubbel innervation: den laterala delen till finger II–III försörjs av n. interosseus anterior (n. medianus), den mediala delen till finger IV–V av n. ulnaris. Därför försvagas DIP-flexionen i ring- och lillfingret vid proximal ulnarisskada."
+      },
+      "link": {
+        "view": "modul-alkar",
+        "item": "m.flexor-digitorum-profundus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "al25",
+      "topic": "alkar",
+      "type": "mc",
+      "prompt": {
+        "hu": "Csuklóesésben (n. radialis-bénulás) a betegnek a markolóereje is jelentősen csökken, pedig az ujjhajlítók épek. Mi a magyarázat?",
+        "sv": "Vid dropphand (radialispares) är även greppstyrkan kraftigt nedsatt, trots att fingerböjarna är intakta. Vad är förklaringen?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "A n. radialis az ujjhajlítókat is beidegzi",
+            "sv": "N. radialis innerverar även fingerböjarna"
+          },
+          "whyWrong": {
+            "hu": "Az ujjhajlítókat a n. medianus és a n. ulnaris idegzi be.",
+            "sv": "Fingerböjarna innerveras av n. medianus och n. ulnaris."
+          }
+        },
+        {
+          "text": {
+            "hu": "Flektált csuklónál az ujjhajlítók túl rövidek, aktív elégtelenségbe kerülnek",
+            "sv": "Med flekterad handled är fingerböjarna för korta och hamnar i aktiv insufficiens"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "A markolóerőt főleg a kéz intrinsic izmai adják",
+            "sv": "Greppstyrkan kommer främst från handens intrinsiska muskler"
+          },
+          "whyWrong": {
+            "hu": "Az erőfogás fő motorja a külső ujjhajlítók (FDS, FDP); az intrinsic izmok kisebb részt adnak.",
+            "sv": "Kraftgreppets huvudmotor är de extrinsiska fingerböjarna (FDS, FDP); de intrinsiska musklerna bidrar mindre."
+          }
+        },
+        {
+          "text": {
+            "hu": "A csuklóízület tokja zsugorodik",
+            "sv": "Handledskapseln krymper"
+          },
+          "whyWrong": {
+            "hu": "Akut bénulásban a tok még nem változik; az erőcsökkenés azonnal jelentkezik.",
+            "sv": "Vid akut pares har kapseln ännu inte förändrats; kraftnedsättningen uppträder direkt."
+          }
+        }
+      ],
+      "answer": 1,
+      "explanation": {
+        "hu": "Erős markoláshoz a csuklófeszítők enyhe extensióban rögzítik a csuklót, így az ujjhajlítók optimális hossz–feszülés tartományban dolgoznak. Csuklóesésben a csukló flektált, a hosszú hajlítók megrövidülnek, és nem tudnak nagy erőt kifejteni. Ezért a rehabilitációban gyakran dinamikus csuklósínt (extensiós ortézist) alkalmazunk.",
+        "sv": "Vid kraftigt grepp fixerar handledsextensorerna handleden i lätt extension, så att fingerböjarna arbetar i optimalt längd–spänningsområde. Vid dropphand är handleden flekterad, de långa böjarna förkortas och kan inte utveckla stor kraft. Därför används ofta en dynamisk handledsortos (extensionsortos) i rehabiliteringen."
+      },
+      "link": {
+        "view": "modul-alkar",
+        "item": "m.extensor-carpi-radialis-brevis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "kz1",
+      "topic": "kez",
+      "type": "mc",
+      "prompt": {
+        "hu": "Csuklótáji vágott sérülés után a betegnél a gyűrűs- és a kisujj karomállásban van, a mutató- és a középső ujj nem. Mi magyarázza ezt?",
+        "sv": "Efter en skärskada vid handleden står patientens ring- och lillfinger i klohandsställning, men inte pek- och långfingret. Vad förklarar detta?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "A 2–3. ujj extensor-ina a n. radialisból kap beidegzést",
+            "sv": "Extensorsenorna till finger 2–3 innerveras av n. radialis"
+          },
+          "whyWrong": {
+            "hu": "A m. extensor digitorum mind a négy ujjon a n. radialis ága; ez nem magyarázza a különbséget.",
+            "sv": "M. extensor digitorum innerveras av n. radialis för alla fyra fingrarna; det förklarar inte skillnaden."
+          }
+        },
+        {
+          "text": {
+            "hu": "A 4–5. ujj hajlítóinai sérültek",
+            "sv": "Flexorsenorna till finger 4–5 är skadade"
+          },
+          "whyWrong": {
+            "hu": "Hajlítóín-sérülésnél az ujj nem tud hajlítani; a karomállás éppen fokozott IP-flexio.",
+            "sv": "Vid flexorsenskada kan fingret inte flekteras; klohand innebär tvärtom ökad IP-flexion."
+          }
+        },
+        {
+          "text": {
+            "hu": "Az 1–2. m. lumbricalis a n. medianusból kap beidegzést, így a 2–3. ujjon megtartott",
+            "sv": "Lumbrikal 1–2 innerveras av n. medianus och fungerar därför i finger 2–3"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "A m. interossei dorsales csak a 4–5. ujjra tapadnak",
+            "sv": "Mm. interossei dorsales fäster bara på finger 4–5"
+          },
+          "whyWrong": {
+            "hu": "A háti interosseusok a 2–4. ujjra tapadnak, és mind a n. ulnaris ágai; nem ez a különbség oka.",
+            "sv": "De dorsala interosseusmusklerna fäster på finger 2–4 och innerveras alla av n. ulnaris; det är inte orsaken till skillnaden."
+          }
+        }
+      ],
+      "answer": 2,
+      "explanation": {
+        "hu": "A karomállás az intrinsic izmok kiesésekor alakul ki: a hosszú feszítő MCP-hiperextenziót, a hosszú hajlítók IP-flexiót okoznak. A mutató- és a középső ujjon az 1–2. lumbricalis (n. medianus) még MCP-flexiót és IP-extensiót ad, így ott a karom alig látszik. Medianus- és ulnaris-lézió együtt mind a négy ujjon karomállást okoz.",
+        "sv": "Klohand uppstår när intrinsicmusklerna faller bort: den långa extensorn ger MCP-hyperextension och de långa flexorerna IP-flexion. I pek- och långfingret ger lumbrikal 1–2 (n. medianus) fortfarande MCP-flexion och IP-extension, så klon syns knappt där. Kombinerad medianus- och ulnarisskada ger klohand i alla fyra fingrarna."
+      },
+      "link": {
+        "view": "modul-kez",
+        "item": "m.lumbricales-manus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "kz2",
+      "topic": "kez",
+      "type": "mc",
+      "prompt": {
+        "hu": "A beteg papírt szorít a hüvelyk- és a mutatóujja közé; húzáskor a hüvelykujj IP-ízülete erősen behajlik. Melyik izom gyenge?",
+        "sv": "Patienten håller ett papper mellan tummen och pekfingret; när man drar i det flekteras tummens IP-led kraftigt. Vilken muskel är svag?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "M. flexor pollicis longus",
+            "sv": "M. flexor pollicis longus"
+          },
+          "whyWrong": {
+            "hu": "Éppen ez az izom kompenzál (n. medianus, n. interosseus anterior), ezért hajlik be az IP-ízület.",
+            "sv": "Det är just denna muskel som kompenserar (n. medianus, n. interosseus anterior), därför flekteras IP-leden."
+          }
+        },
+        {
+          "text": {
+            "hu": "M. adductor pollicis",
+            "sv": "M. adductor pollicis"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "M. abductor pollicis brevis",
+            "sv": "M. abductor pollicis brevis"
+          },
+          "whyWrong": {
+            "hu": "A palmaris abductio izma; a papír szorítása adductiót igényel.",
+            "sv": "Den utför palmar abduktion; att klämma papperet kräver adduktion."
+          }
+        },
+        {
+          "text": {
+            "hu": "M. extensor pollicis longus",
+            "sv": "M. extensor pollicis longus"
+          },
+          "whyWrong": {
+            "hu": "A n. radialis izma, az IP-ízületet nyújtja; gyengesége nem okoz flexiós kompenzációt.",
+            "sv": "En radialisinnerverad muskel som extenderar IP-leden; svaghet ger inte flexionskompensation."
+          }
+        }
+      ],
+      "answer": 1,
+      "explanation": {
+        "hu": "Ez a Froment-jel. A m. adductor pollicis (n. ulnaris, ramus profundus) gyengesége miatt a beteg a m. flexor pollicis longusszal (n. medianus) próbálja tartani a papírt, ezért az IP-ízület flektál. A jel n. ulnaris-lézióra utal, a csuklónál és a könyöknél egyaránt.",
+        "sv": "Detta är Froments tecken. På grund av svaghet i m. adductor pollicis (n. ulnaris, ramus profundus) försöker patienten hålla papperet med m. flexor pollicis longus (n. medianus), varför IP-leden flekteras. Tecknet talar för ulnarisskada, både vid handleden och vid armbågen."
+      },
+      "link": {
+        "view": "modul-kez",
+        "item": "m.adductor-pollicis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "kz3",
+      "topic": "kez",
+      "type": "mc",
+      "prompt": {
+        "hu": "Kéztőalagút-szindrómás betegnél a thenar laterális része sorvadt. Melyik izom vizsgálata a legérzékenyebb a motoros érintettségre?",
+        "sv": "En patient med karpaltunnelsyndrom har atrofi i laterala delen av tenar. Vilken muskel är mest känslig att testa för motorisk påverkan?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "M. adductor pollicis",
+            "sv": "M. adductor pollicis"
+          },
+          "whyWrong": {
+            "hu": "A n. ulnaris látja el, kéztőalagút-szindrómában ép.",
+            "sv": "Den innerveras av n. ulnaris och är intakt vid karpaltunnelsyndrom."
+          }
+        },
+        {
+          "text": {
+            "hu": "M. flexor digiti minimi brevis",
+            "sv": "M. flexor digiti minimi brevis"
+          },
+          "whyWrong": {
+            "hu": "Hypothenar-izom, a n. ulnaris ága.",
+            "sv": "En hypotenarmuskel som innerveras av n. ulnaris."
+          }
+        },
+        {
+          "text": {
+            "hu": "1. m. interosseus dorsalis",
+            "sv": "Första m. interosseus dorsalis"
+          },
+          "whyWrong": {
+            "hu": "A n. ulnaris ramus profundusa idegzi be; sorvadása ulnaris-lézióra utal.",
+            "sv": "Den innerveras av ramus profundus n. ulnaris; atrofi talar för ulnarisskada."
+          }
+        },
+        {
+          "text": {
+            "hu": "M. abductor pollicis brevis",
+            "sv": "M. abductor pollicis brevis"
+          },
+          "whyWrong": null
+        }
+      ],
+      "answer": 3,
+      "explanation": {
+        "hu": "A m. abductor pollicis brevis szinte mindig csak a n. medianus ramus recurrensétől kap beidegzést, ezért a palmaris abductio ereje a legmegbízhatóbb motoros teszt. A m. flexor pollicis brevis kettős beidegzése miatt kevésbé megbízható.",
+        "sv": "M. abductor pollicis brevis innerveras nästan alltid enbart av ramus recurrens n. mediani, därför är kraften i palmar abduktion det mest tillförlitliga motoriska testet. M. flexor pollicis brevis är mindre tillförlitlig på grund av dubbel innervation."
+      },
+      "link": {
+        "view": "modul-kez",
+        "item": "m.abductor-pollicis-brevis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "kz4",
+      "topic": "kez",
+      "type": "tf",
+      "prompt": {
+        "hu": "Kéztőalagút-szindrómában jellemzően csökken a thenar feletti bőr érzése.",
+        "sv": "Vid karpaltunnelsyndrom är sensibiliteten i huden över tenar typiskt nedsatt."
+      },
+      "answer": false,
+      "explanation": {
+        "hu": "Hamis. A n. medianus ramus palmarisa a canalis carpi előtt ered, és a retinaculum flexorum fölött halad, ezért a thenar bőrének érzése általában ép. Ha a tenyér érzése is kiesik, proximálisabb léziót kell keresni.",
+        "sv": "Falskt. Ramus palmaris n. mediani avgår proximalt om canalis carpi och löper ovanför retinaculum flexorum, så sensibiliteten över tenar är vanligen bevarad. Om även handflatans sensibilitet är nedsatt bör man leta efter en mer proximal lesion."
+      },
+      "link": {
+        "view": "modul-kez",
+        "item": "m.abductor-pollicis-brevis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "kz5",
+      "topic": "kez",
+      "type": "mc",
+      "prompt": {
+        "hu": "55 éves nő hüvelykujj-tövi fájdalomról panaszkodik üvegnyitáskor és kulcsfordításkor. Melyik teszt illik leginkább a feltételezett diagnózishoz?",
+        "sv": "En 55-årig kvinna har smärta vid tumbasen när hon öppnar burkar och vrider om nycklar. Vilket test passar bäst för den misstänkta diagnosen?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "Finkelstein-teszt",
+            "sv": "Finkelsteins test"
+          },
+          "whyWrong": {
+            "hu": "A de Quervain-tendinopathia (APL/EPB-ínhüvely) tesztje; a fájdalom a processus styloideus radii felett van.",
+            "sv": "Testet är för de Quervains tendinopati (APL/EPB-senskidan); smärtan sitter över processus styloideus radii."
+          }
+        },
+        {
+          "text": {
+            "hu": "Phalen-teszt",
+            "sv": "Phalens test"
+          },
+          "whyWrong": {
+            "hu": "Kéztőalagút-szindrómára provokál zsibbadást, nem ízületi fájdalomra.",
+            "sv": "Provocerar domningar vid karpaltunnelsyndrom, inte ledsmärta."
+          }
+        },
+        {
+          "text": {
+            "hu": "Grind-teszt (axiális kompresszió és forgatás a CMC I-ben)",
+            "sv": "Grindtest (axiell kompression och rotation i CMC I)"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "Froment-jel",
+            "sv": "Froments tecken"
+          },
+          "whyWrong": {
+            "hu": "A m. adductor pollicis gyengeségét mutatja n. ulnaris-léziónál.",
+            "sv": "Visar svaghet i m. adductor pollicis vid ulnarisskada."
+          }
+        }
+      ],
+      "answer": 2,
+      "explanation": {
+        "hu": "A tünetek a hüvelykujj CMC-artrózisára (rhizarthrosis) utalnak, amely 50 év feletti nőknél gyakori. A grind-teszt a nyeregízület felszíneit préseli és forgatja; a fájdalom és a krepitáció pozitív jel. Ellátás: edukáció, ortézis és stabilizáló gyakorlatok.",
+        "sv": "Symtomen talar för tumbasartros (CMC I), som är vanlig hos kvinnor över 50 år. Grindtestet komprimerar och roterar sadelledens ledytor; smärta och krepitation är ett positivt fynd. Behandling: patientutbildning, ortos och stabiliserande träning."
+      },
+      "link": {
+        "view": "modul-kez",
+        "item": "art.carpometacarpalis-pollicis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "kz6",
+      "topic": "kez",
+      "type": "mc",
+      "prompt": {
+        "hu": "Síelő elesik, a bot a hüvelykujját radiális irányba feszíti. Az MCP I ulnaris oldalán fájdalom és radiális stresszre fokozott lazaság van. Mi sérült?",
+        "sv": "En skidåkare faller och staven tvingar tummen i radial riktning. Det finns smärta på ulnara sidan av MCP I och ökad laxitet vid radialt stresstest. Vad är skadat?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "Az MCP I radiális kollaterális szalagja",
+            "sv": "Radiala kollateralligamentet i MCP I"
+          },
+          "whyWrong": {
+            "hu": "Radiális irányú erő az ulnaris oldalt feszíti meg, nem a radiálist.",
+            "sv": "En radialt riktad kraft sträcker den ulnara sidan, inte den radiala."
+          }
+        },
+        {
+          "text": {
+            "hu": "Az MCP I ulnaris kollaterális szalagja",
+            "sv": "Ulnara kollateralligamentet i MCP I"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "A CMC I elülső ferde szalagja",
+            "sv": "Främre sneda ligamentet i CMC I"
+          },
+          "whyWrong": {
+            "hu": "A tünetek az MCP-ízületnél vannak, nem a hüvelykujj tövénél.",
+            "sv": "Symtomen sitter vid MCP-leden, inte vid tumbasen."
+          }
+        },
+        {
+          "text": {
+            "hu": "A hüvelykujj IP-ízületének lamina palmarisa",
+            "sv": "Volarplattan i tummens IP-led"
+          },
+          "whyWrong": {
+            "hu": "Hiperextenziós sérülésnél sérül, és a fájdalom az IP-ízületnél lenne.",
+            "sv": "Skadas vid hyperextension och smärtan skulle sitta vid IP-leden."
+          }
+        }
+      ],
+      "answer": 1,
+      "explanation": {
+        "hu": "Ez a síhüvelyk (krónikus formája a \"vadőrhüvelyk\"). A stressztesztet nyújtott és kb. 30°-ban hajlított MCP-nél végezzük, és az ép oldallal hasonlítjuk össze; jelentős lazaság vagy hiányzó végérzés teljes szakadásra utal. A sérült szalag gyengíti a csípő- és kulcsfogást.",
+        "sv": "Detta är skidtumme (den kroniska formen kallas \"gamekeeper's thumb\"). Stresstestet görs med MCP i extension och i ca 30° flexion och jämförs med den friska sidan; betydande laxitet eller saknat ändläge talar för total ruptur. Det skadade ligamentet försvagar pincett- och nyckelgrepp."
+      },
+      "link": {
+        "view": "modul-kez",
+        "item": "art.metacarpophalangeae"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "kz7",
+      "topic": "kez",
+      "type": "mc",
+      "prompt": {
+        "hu": "Síhüvelyknél miért teszi szükségessé a műtétet a Stener-lézió?",
+        "sv": "Varför kräver en Stenerlesion vid skidtumme kirurgi?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "Mert a szalag a csontos tapadással együtt szakad le",
+            "sv": "Eftersom ligamentet slits loss tillsammans med ett benfragment"
+          },
+          "whyWrong": {
+            "hu": "Az avulsiós törés nem azonos a Stener-lézióval, és kis elmozdulásnál konzervatívan is kezelhető.",
+            "sv": "En avulsionsfraktur är inte samma sak som en Stenerlesion och kan vid liten dislokation behandlas konservativt."
+          }
+        },
+        {
+          "text": {
+            "hu": "Mert a n. ulnaris is mindig sérül",
+            "sv": "Eftersom n. ulnaris alltid skadas samtidigt"
+          },
+          "whyWrong": {
+            "hu": "A Stener-lézió szalagsérülés; idegsérülés nem része.",
+            "sv": "Stenerlesionen är en ligamentskada; nervskada ingår inte."
+          }
+        },
+        {
+          "text": {
+            "hu": "Mert a szakadt szalagvég az adductor-aponeurosis fölé csúszik, így nem tud visszagyógyulni",
+            "sv": "Eftersom den avslitna ligamentänden hamnar ovanpå adduktoraponeurosen och inte kan läka tillbaka"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "Mert az MCP-ízület tartósan luxálva marad",
+            "sv": "Eftersom MCP-leden förblir permanent luxerad"
+          },
+          "whyWrong": {
+            "hu": "Az ízület általában spontán repozícionálódik; a probléma a szalagvég helyzete.",
+            "sv": "Leden reponeras oftast spontant; problemet är ligamentändens läge."
+          }
+        }
+      ],
+      "answer": 2,
+      "explanation": {
+        "hu": "Stener-léziónál a m. adductor pollicis aponeurosisa a szalag szakadt vége és tapadása közé kerül, így a gipsz vagy ortézis nem hozza össze a végeket. Ultrahang vagy MR segíthet a felismerésben; kezeletlenül krónikus instabilitás és artrózis alakulhat ki.",
+        "sv": "Vid Stenerlesion hamnar aponeurosen till m. adductor pollicis mellan ligamentets avslitna ände och dess fäste, så gips eller ortos kan inte föra ihop ändarna. Ultraljud eller MR kan hjälpa till att upptäcka den; obehandlad kan kronisk instabilitet och artros uppstå."
+      },
+      "link": {
+        "view": "modul-kez",
+        "item": "m.adductor-pollicis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "kz8",
+      "topic": "kez",
+      "type": "mc",
+      "prompt": {
+        "hu": "Kézközépcsont-törés után rögzítő ortézist készít. Melyik helyzet a legbiztonságosabb az ujjízületek merevsége szempontjából?",
+        "sv": "Du tillverkar en immobiliseringsortos efter en metakarpalfraktur. Vilken position är säkrast med tanke på stelhet i fingerlederna?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "MCP nyújtva, IP-k hajlítva",
+            "sv": "MCP extenderade, IP-lederna flekterade"
+          },
+          "whyWrong": {
+            "hu": "Ez az intrinsic-minus (karom) helyzet: az MCP kollaterális szalagjai ellazult, rövidülésre hajlamos állapotban vannak.",
+            "sv": "Detta är intrinsic minus-ställningen (klo): MCP-ledernas kollateralligament är slappa och tenderar att förkortas."
+          }
+        },
+        {
+          "text": {
+            "hu": "Minden ízület teljesen nyújtva",
+            "sv": "Alla leder helt extenderade"
+          },
+          "whyWrong": {
+            "hu": "Nyújtott MCP-nél a kollaterális szalagok lazák, és rövidülve MCP-extenziós kontraktúra alakul ki.",
+            "sv": "Med extenderade MCP-leder är kollateralligamenten slappa och kan förkortas till en extensionskontraktur."
+          }
+        },
+        {
+          "text": {
+            "hu": "Minden ízület 30°-ban hajlítva (nyugalmi helyzet)",
+            "sv": "Alla leder i 30° flexion (viloställning)"
+          },
+          "whyWrong": {
+            "hu": "A nyugalmi helyzet kényelmes, de az MCP szalagjai nincsenek megfeszítve, és PIP-flexiós kontraktúra fenyeget.",
+            "sv": "Viloställningen är bekväm, men MCP-ledernas ligament är inte sträckta och det finns risk för PIP-flexionskontraktur."
+          }
+        },
+        {
+          "text": {
+            "hu": "MCP 70–90° flexio, IP-k nyújtva (intrinsic-plus)",
+            "sv": "MCP 70–90° flexion, IP-lederna extenderade (intrinsic plus)"
+          },
+          "whyWrong": null
+        }
+      ],
+      "answer": 3,
+      "explanation": {
+        "hu": "Az MCP kollaterális szalagjai az excentrikus tapadás miatt flexióban a leghosszabbak (cam-hatás), a PIP lamina palmarisa és szalagjai pedig nyújtásban vannak hosszukon. Az intrinsic-plus helyzetben tehát egyik szalag sem rövidül. A csuklót általában kb. 20–30° extensióban rögzítik.",
+        "sv": "MCP-ledernas kollateralligament är längst i flexion på grund av det excentriska fästet (cam-effekt), medan PIP-ledens volarplatta och ligament är som längst i extension. I intrinsic plus-positionen förkortas alltså inget av ligamenten. Handleden fixeras oftast i ca 20–30° extension."
+      },
+      "link": {
+        "view": "modul-kez",
+        "item": "art.metacarpophalangeae"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "kz9",
+      "topic": "kez",
+      "type": "tf",
+      "prompt": {
+        "hu": "Az intrinsic-minus helyzet MCP-hiperextenziót és IP-flexiót jelent, ami a kéz kisizmainak bénulására jellemző.",
+        "sv": "Intrinsic minus-ställning innebär MCP-hyperextension och IP-flexion, vilket är typiskt för förlamning av handens inre muskler."
+      },
+      "answer": true,
+      "explanation": {
+        "hu": "Igaz. A lumbricalisok és interosseusok normálisan MCP-flexiót és IP-extensiót adnak. Kiesésükkor a hosszú feszítő és hajlítók ellensúly nélkül húznak, így kialakul a karomállás. Hosszú távon ez kontraktúrákhoz vezethet, ezért korai ortézis és mozgatás fontos.",
+        "sv": "Sant. Lumbrikalerna och interosseusmusklerna ger normalt MCP-flexion och IP-extension. När de faller bort drar de långa extensorerna och flexorerna utan motvikt, och klohand uppstår. På sikt kan detta leda till kontrakturer, därför är tidig ortos och mobilisering viktig."
+      },
+      "link": {
+        "view": "modul-kez",
+        "item": "m.lumbricales-manus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "kz10",
+      "topic": "kez",
+      "type": "mc",
+      "prompt": {
+        "hu": "A beteg nem tudja szétterpeszteni az ujjait, a középső ujj sem mozdul oldalra egyik irányba sem. Melyik izomcsoport gyenge?",
+        "sv": "Patienten kan inte spreta med fingrarna, och långfingret kan inte heller röras åt sidan åt något håll. Vilken muskelgrupp är svag?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "Mm. interossei dorsales",
+            "sv": "Mm. interossei dorsales"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "Mm. interossei palmares",
+            "sv": "Mm. interossei palmares"
+          },
+          "whyWrong": {
+            "hu": "A tenyéri interosseusok zárják (addukálják) az ujjakat, és a középső ujjra nem tapadnak.",
+            "sv": "De palmara interosseusmusklerna samlar (adducerar) fingrarna och fäster inte på långfingret."
+          }
+        },
+        {
+          "text": {
+            "hu": "Mm. lumbricales",
+            "sv": "Mm. lumbricales"
+          },
+          "whyWrong": {
+            "hu": "A lumbricalisok MCP-flexiót és IP-extensiót adnak, nem terpesztenek.",
+            "sv": "Lumbrikalerna ger MCP-flexion och IP-extension, de spretar inte med fingrarna."
+          }
+        },
+        {
+          "text": {
+            "hu": "M. extensor digitorum",
+            "sv": "M. extensor digitorum"
+          },
+          "whyWrong": {
+            "hu": "Elsősorban nyújt; enyhe széttartást okozhat, de nem ez a terpesztés fő izma, és a n. radialis látja el.",
+            "sv": "Den extenderar främst; den kan ge lätt spretning men är inte huvudmuskeln för abduktion och innerveras av n. radialis."
+          }
+        }
+      ],
+      "answer": 0,
+      "explanation": {
+        "hu": "A háti interosseusok a középső ujj tengelyétől távolítanak (DAB). A középső ujjra kettő tapad (radiális és ulnaris oldalon), ezért mindkét irányban ezek mozgatják. Mindegyik a n. ulnaris ramus profundusa; gyengeségük ulnaris-lézióra utal.",
+        "sv": "De dorsala interosseusmusklerna abducerar från långfingrets axel (DAB). Två av dem fäster på långfingret (radialt och ulnart), så de rör det åt båda hållen. Alla innerveras av ramus profundus n. ulnaris; svaghet talar för ulnarisskada."
+      },
+      "link": {
+        "view": "modul-kez",
+        "item": "m.interossei-dorsales-manus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "kz11",
+      "topic": "kez",
+      "type": "mc",
+      "prompt": {
+        "hu": "Melyik kézizom ered nem csontról, hanem egy másik izom inából?",
+        "sv": "Vilken handmuskel har sitt ursprung inte på ben utan på en annan muskels sena?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "M. opponens pollicis",
+            "sv": "M. opponens pollicis"
+          },
+          "whyWrong": {
+            "hu": "A retinaculum flexorumról és a tuberculum ossis trapeziiről ered.",
+            "sv": "Den utgår från retinaculum flexorum och tuberculum ossis trapezii."
+          }
+        },
+        {
+          "text": {
+            "hu": "Mm. interossei palmares",
+            "sv": "Mm. interossei palmares"
+          },
+          "whyWrong": {
+            "hu": "A kézközépcsontokról erednek.",
+            "sv": "De utgår från mellanhandsbenen."
+          }
+        },
+        {
+          "text": {
+            "hu": "Mm. lumbricales",
+            "sv": "Mm. lumbricales"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "M. adductor pollicis",
+            "sv": "M. adductor pollicis"
+          },
+          "whyWrong": {
+            "hu": "Az os capitatumról és a 2–3. kézközépcsontról ered.",
+            "sv": "Den utgår från os capitatum och mellanhandsben 2–3."
+          }
+        }
+      ],
+      "answer": 2,
+      "explanation": {
+        "hu": "A lumbricalisok a m. flexor digitorum profundus inairól erednek, és a dorsalis aponeurosisba tapadnak, így a hajlító- és a feszítőrendszert kapcsolják össze. Összehúzódásukkor a profundus-inat distalisan húzzák, ami csökkenti az IP-flexiós feszülést és segíti az IP-extensiót.",
+        "sv": "Lumbrikalerna utgår från senorna till m. flexor digitorum profundus och fäster i dorsalaponeurosen, så de förbinder flexor- och extensorsystemet. När de kontraheras drar de profundussenan distalt, vilket minskar flexionsspänningen över IP-lederna och underlättar IP-extension."
+      },
+      "link": {
+        "view": "modul-kez",
+        "item": "m.lumbricales-manus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "kz12",
+      "topic": "kez",
+      "type": "mc",
+      "prompt": {
+        "hu": "Melyik thenar-izomnak van a n. ulnaris által beidegzett feje?",
+        "sv": "Vilken tenarmuskel har ett huvud som innerveras av n. ulnaris?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "M. opponens pollicis",
+            "sv": "M. opponens pollicis"
+          },
+          "whyWrong": {
+            "hu": "Tipikusan csak a n. medianus ramus recurrense idegzi be.",
+            "sv": "Den innerveras typiskt enbart av ramus recurrens n. mediani."
+          }
+        },
+        {
+          "text": {
+            "hu": "M. flexor pollicis brevis",
+            "sv": "M. flexor pollicis brevis"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "M. abductor pollicis brevis",
+            "sv": "M. abductor pollicis brevis"
+          },
+          "whyWrong": {
+            "hu": "Szinte mindig tisztán medianus-beidegzésű; ezért ez a legjobb medianus-tesztizom.",
+            "sv": "Den är nästan alltid rent medianusinnerverad; därför är den den bästa testmuskeln för n. medianus."
+          }
+        },
+        {
+          "text": {
+            "hu": "M. abductor pollicis longus",
+            "sv": "M. abductor pollicis longus"
+          },
+          "whyWrong": {
+            "hu": "Alkarizom, a n. radialis (n. interosseus posterior) idegzi be, és nem thenar-izom.",
+            "sv": "En underarmsmuskel som innerveras av n. radialis (n. interosseus posterior) och är ingen tenarmuskel."
+          }
+        }
+      ],
+      "answer": 1,
+      "explanation": {
+        "hu": "A m. flexor pollicis brevis felszínes feje a n. medianus, mély feje a n. ulnaris ramus profundusa felől kap beidegzést. Ezért n. medianus-lézió után a hüvelykujj MCP-flexiója részben megmaradhat. A beidegzési variációk (pl. Martin–Gruber- vagy Riche–Cannieu-anasztomózis) a klinikai képet tovább bonyolíthatják.",
+        "sv": "Ytliga huvudet av m. flexor pollicis brevis innerveras av n. medianus och djupa huvudet av ramus profundus n. ulnaris. Därför kan MCP-flexion av tummen delvis finnas kvar efter medianusskada. Innervationsvarianter (t.ex. Martin–Gruber- eller Riche–Cannieu-anastomos) kan komplicera den kliniska bilden ytterligare."
+      },
+      "link": {
+        "view": "modul-kez",
+        "item": "m.flexor-pollicis-brevis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "kz13",
+      "topic": "kez",
+      "type": "match",
+      "prompt": {
+        "hu": "Párosítsd az izmot a beidegzésével és fő funkciójával!",
+        "sv": "Para ihop muskeln med dess innervation och huvudfunktion!"
+      },
+      "heads": {
+        "hu": [
+          "IZOM",
+          "IDEG",
+          "FŐ FUNKCIÓ"
+        ],
+        "sv": [
+          "MUSKEL",
+          "NERV",
+          "HUVUDFUNKTION"
+        ]
+      },
+      "rows": [
+        [
+          "m. abductor pollicis brevis",
+          "n. medianus",
+          "abductio palmaris pollicis"
+        ],
+        [
+          "m. adductor pollicis",
+          "n. ulnaris",
+          "adductio pollicis"
+        ],
+        [
+          "mm. interossei dorsales",
+          "n. ulnaris",
+          "abductio digitorum"
+        ],
+        [
+          "m. opponens pollicis",
+          "n. medianus",
+          "oppositio pollicis"
+        ]
+      ],
+      "explanation": {
+        "hu": "A thenar felszínes izmai (abductor pollicis brevis, opponens pollicis) a n. medianus ramus recurrensétől kapnak beidegzést, a mélyben fekvő adductor pollicis és az interosseusok a n. ulnaris ramus profundusától. Egyszerű szabály: a kéz kisizmai közül csak a \"LOAF\" izmok (lumbricales 1–2, opponens, abductor és flexor pollicis brevis) medianus-beidegzésűek.",
+        "sv": "Tenars ytliga muskler (abductor pollicis brevis, opponens pollicis) innerveras av ramus recurrens n. mediani, medan den djupt liggande adductor pollicis och interosseusmusklerna innerveras av ramus profundus n. ulnaris. Enkel regel: av handens inre muskler är bara \"LOAF\"-musklerna (lumbrikal 1–2, opponens, abductor och flexor pollicis brevis) medianusinnerverade."
+      },
+      "link": {
+        "view": "modul-kez",
+        "item": "m.opponens-pollicis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "kz14",
+      "topic": "kez",
+      "type": "match",
+      "prompt": {
+        "hu": "Párosítsd a magyar kifejezést a svéd és a latin alakkal!",
+        "sv": "Para ihop den ungerska termen med den svenska och den latinska formen!"
+      },
+      "rows": [
+        [
+          "sajkacsont",
+          "båtbenet",
+          "os scaphoideum"
+        ],
+        [
+          "holdascsont",
+          "månbenet",
+          "os lunatum"
+        ],
+        [
+          "borsócsont",
+          "ärtbenet",
+          "os pisiforme"
+        ],
+        [
+          "horgascsont",
+          "hakbenet",
+          "os hamatum"
+        ]
+      ],
+      "explanation": {
+        "hu": "A kéztőcsontok nevei az alakjukat írják le: a sajkacsont csónak, a holdascsont félhold, a borsócsont borsó alakú, a horgascsontnak horgas nyúlványa (hamulus) van. Klinikailag a sajkacsont-törés a leggyakoribb kéztőtörés, a holdascsont pedig a leggyakrabban ficamodó kéztőcsont.",
+        "sv": "Handlovsbenens namn beskriver deras form: båtbenet är båtformat, månbenet halvmåneformat, ärtbenet ärtformat och hakbenet har ett hakformat utskott (hamulus). Kliniskt är scaphoideumfrakturen den vanligaste handlovsfrakturen och lunatum det handlovsben som oftast luxerar."
+      },
+      "link": {
+        "view": "modul-kez",
+        "item": null
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "kz15",
+      "topic": "kez",
+      "type": "order",
+      "prompt": {
+        "hu": "Állítsd sorrendbe a proximális kéztősor csontjait radiálistól ulnaris irányba!",
+        "sv": "Ordna benen i den proximala handlovsraden från radialt till ulnart!"
+      },
+      "items": [
+        {
+          "hu": "Os scaphoideum (sajkacsont)",
+          "sv": "Os scaphoideum (båtbenet)"
+        },
+        {
+          "hu": "Os lunatum (holdascsont)",
+          "sv": "Os lunatum (månbenet)"
+        },
+        {
+          "hu": "Os triquetrum (háromszögletű csont)",
+          "sv": "Os triquetrum (trekantiga benet)"
+        },
+        {
+          "hu": "Os pisiforme (borsócsont)",
+          "sv": "Os pisiforme (ärtbenet)"
+        }
+      ],
+      "explanation": {
+        "hu": "A proximális sor radiálistól ulnaris felé: scaphoideum, lunatum, triquetrum, pisiforme; a distalis sor: trapezium, trapezoideum, capitatum, hamatum. Az os pisiforme valójában a m. flexor carpi ulnaris inába ágyazott szezámcsont, a triquetrum tenyéri felszínén ül. A scaphoideum a tabatière (anatómiai burnótszelence) alján tapintható.",
+        "sv": "Proximala raden från radialt till ulnart: scaphoideum, lunatum, triquetrum, pisiforme; distala raden: trapezium, trapezoideum, capitatum, hamatum. Os pisiforme är egentligen ett sesamben i senan till m. flexor carpi ulnaris och ligger på volarsidan av triquetrum. Scaphoideum palperas i botten av fossa tabatière (anatomiska snusdosan)."
+      },
+      "link": {
+        "view": "modul-kez",
+        "item": null
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "kz16",
+      "topic": "kez",
+      "type": "order",
+      "prompt": {
+        "hu": "Állítsd sorrendbe, ahogyan a n. ulnaris ramus profundusa a kézben az izmokat beidegzi (proximálistól distalis/radiális felé)!",
+        "sv": "Ordna i vilken ordning ramus profundus n. ulnaris innerverar musklerna i handen (från proximalt mot distalt/radialt)!"
+      },
+      "items": [
+        {
+          "hu": "Kettéoszlás a Guyon-csatornában (canalis ulnaris)",
+          "sv": "Delning i Guyons kanal (canalis ulnaris)"
+        },
+        {
+          "hu": "Hypothenar-izmok",
+          "sv": "Hypotenarmusklerna"
+        },
+        {
+          "hu": "Mm. interossei és 3–4. mm. lumbricales",
+          "sv": "Mm. interossei och lumbrikal 3–4"
+        },
+        {
+          "hu": "M. adductor pollicis és a m. flexor pollicis brevis mély feje",
+          "sv": "M. adductor pollicis och djupa huvudet av m. flexor pollicis brevis"
+        }
+      ],
+      "explanation": {
+        "hu": "A n. ulnaris a Guyon-csatornában felszínes (érző) és mély (motoros) ágra oszlik. A ramus profundus a hamulus ossis hamati körül fut, ellátja a hypothenart, majd az arcus palmaris profundusszal radiális irányba haladva az interosseusokat és a 3–4. lumbricalist, végül az adductor pollicist. Ezért a hamulus melletti lézió megkímélheti a hypothenart, de az interosseusokat és az adductort nem.",
+        "sv": "N. ulnaris delar sig i Guyons kanal i en ytlig (sensorisk) och en djup (motorisk) gren. Ramus profundus löper runt hamulus ossis hamati, försörjer hypotenar och fortsätter sedan radialt med arcus palmaris profundus till interosseusmusklerna och lumbrikal 3–4 och slutligen till adductor pollicis. En lesion vid hamulus kan därför skona hypotenar men inte interosseusmusklerna eller adduktorn."
+      },
+      "link": {
+        "view": "modul-kez",
+        "item": "m.interossei-dorsales-manus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "kz17",
+      "topic": "kez",
+      "type": "tf",
+      "prompt": {
+        "hu": "Az MCP-ízületek kollaterális szalagjai nyújtott helyzetben a legfeszesebbek.",
+        "sv": "MCP-ledernas kollateralligament är som mest spända i extension."
+      },
+      "answer": false,
+      "explanation": {
+        "hu": "Hamis. A kézközépcsont feje tenyéri irányban szélesebb, és a szalagok excentrikusan tapadnak, ezért flexióban feszülnek meg (cam-hatás). Ezért nyújtott MCP-nél van oldalirányú mozgás (abductio), flexióban szinte nincs, és ezért kell az MCP-ket flexióban rögzíteni.",
+        "sv": "Falskt. Mellanhandsbenets huvud är bredare volart och ligamenten fäster excentriskt, så de spänns i flexion (cam-effekt). Därför finns sidorörlighet (abduktion) med extenderad MCP men nästan ingen i flexion, och därför ska MCP-lederna immobiliseras i flexion."
+      },
+      "link": {
+        "view": "modul-kez",
+        "item": "art.metacarpophalangeae"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "kz18",
+      "topic": "kez",
+      "type": "mc",
+      "prompt": {
+        "hu": "Miért enyhébb a karomállás könyöktáji (magas) n. ulnaris-léziónál, mint csuklótájinál?",
+        "sv": "Varför är klohanden mindre uttalad vid en hög ulnarisskada (armbågen) än vid en skada vid handleden?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "Mert magas léziónál a n. medianus átveszi az interosseusok beidegzését",
+            "sv": "Eftersom n. medianus tar över innervationen av interosseusmusklerna vid hög skada"
+          },
+          "whyWrong": {
+            "hu": "Ilyen átvétel rendszerint nincs; anasztomózisok csak egyes esetekben módosítják a képet.",
+            "sv": "Något sådant övertagande sker normalt inte; anastomoser förändrar bara bilden i enstaka fall."
+          }
+        },
+        {
+          "text": {
+            "hu": "Mert a könyöknél az ideg csak részlegesen sérülhet",
+            "sv": "Eftersom nerven bara kan skadas partiellt vid armbågen"
+          },
+          "whyWrong": {
+            "hu": "A könyöknél is lehet teljes lézió; a különbség anatómiai, nem a sérülés mértékén múlik.",
+            "sv": "Även vid armbågen kan skadan vara total; skillnaden är anatomisk och beror inte på skadans omfattning."
+          }
+        },
+        {
+          "text": {
+            "hu": "Mert a m. flexor digitorum profundus ulnaris fele is bénul, így kevesebb az IP-flexio",
+            "sv": "Eftersom även ulnara delen av m. flexor digitorum profundus är förlamad, vilket ger mindre IP-flexion"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "Mert a m. extensor digitorum is bénul",
+            "sv": "Eftersom även m. extensor digitorum är förlamad"
+          },
+          "whyWrong": {
+            "hu": "A m. extensor digitorum a n. radialis izma, ulnaris-lézió nem érinti.",
+            "sv": "M. extensor digitorum innerveras av n. radialis och påverkas inte av en ulnarisskada."
+          }
+        }
+      ],
+      "answer": 2,
+      "explanation": {
+        "hu": "Ez az \"ulnaris paradoxon\". A karomállás IP-komponensét a m. flexor digitorum profundus húzása adja; ha a lézió a FDP-ág eredése fölött van, a 4–5. ujj DIP-flexiója is gyenge, így a karom kevésbé látványos. Regenerációkor a karom paradox módon erősödhet, ahogy a FDP előbb tér vissza, mint a kisizmok.",
+        "sv": "Detta är \"ulnarisparadoxen\". IP-komponenten i klohanden kommer från draget i m. flexor digitorum profundus; om skadan sitter proximalt om FDP-grenens avgång är även DIP-flexionen i finger 4–5 svag, så klon blir mindre påtaglig. Under reinnervation kan klon paradoxalt nog förvärras, eftersom FDP återhämtar sig före de inre handmusklerna."
+      },
+      "link": {
+        "view": "modul-kez",
+        "item": "m.lumbricales-manus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "kz19",
+      "topic": "kez",
+      "type": "mc",
+      "prompt": {
+        "hu": "68 éves férfi nem tudja a tenyerét laposan az asztalra tenni; a tenyérben a gyűrűsujj felé futó tapintható köteg van. Melyik struktúra érintett?",
+        "sv": "En 68-årig man kan inte lägga handflatan platt mot bordet; i handflatan finns en palpabel sträng mot ringfingret. Vilken struktur är påverkad?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "A m. flexor digitorum superficialis ina",
+            "sv": "Senan till m. flexor digitorum superficialis"
+          },
+          "whyWrong": {
+            "hu": "Az ín a mozgással elmozdul, és a hajlítóín-betegség (pl. pattanó ujj) nem okoz fix köteget a tenyérben.",
+            "sv": "Senan glider vid rörelse, och flexorsenesjukdom (t.ex. triggerfinger) ger ingen fast sträng i handflatan."
+          }
+        },
+        {
+          "text": {
+            "hu": "Retinaculum flexorum",
+            "sv": "Retinaculum flexorum"
+          },
+          "whyWrong": {
+            "hu": "A csuklónál, a kéztőalagút tetejét alkotja, nem fut az ujjak felé.",
+            "sv": "Den ligger vid handleden som tak över karpaltunneln och löper inte ut mot fingrarna."
+          }
+        },
+        {
+          "text": {
+            "hu": "Mm. lumbricales",
+            "sv": "Mm. lumbricales"
+          },
+          "whyWrong": {
+            "hu": "Izmok, nem kötegszerű kötőszövet; zsugorodásuk nem okoz ilyen képet.",
+            "sv": "Dessa är muskler, inte strängformad bindväv; förkortning av dem ger inte denna bild."
+          }
+        },
+        {
+          "text": {
+            "hu": "Aponeurosis palmaris (Dupuytren-kontraktúra)",
+            "sv": "Aponeurosis palmaris (Dupuytrens kontraktur)"
+          },
+          "whyWrong": null
+        }
+      ],
+      "answer": 3,
+      "explanation": {
+        "hu": "A Dupuytren-kontraktúra az aponeurosis palmaris fibromatózisa, amely MCP- és PIP-flexiós kontraktúrát okoz, főleg a 4–5. ujjon. Gyakoribb idősebb, északi származású férfiaknál. A pozitív asztallap-teszt (Hueston) a kezelés mérlegelését indokolja; műtét vagy tűfasciotomia után a fizioterápia ortézissel és mozgásgyakorlatokkal segít.",
+        "sv": "Dupuytrens kontraktur är en fibromatos i aponeurosis palmaris som ger flexionskontraktur i MCP och PIP, främst i finger 4–5. Den är vanligare hos äldre män med nordiskt ursprung. Ett positivt bordsskivetest (Hueston) motiverar att behandling övervägs; efter kirurgi eller nålfasciotomi bidrar fysioterapin med ortos och rörlighetsträning."
+      },
+      "link": {
+        "view": "modul-kez",
+        "item": null
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "kz20",
+      "topic": "kez",
+      "type": "mc",
+      "prompt": {
+        "hu": "Hosszú távú kerékpáros: gyenge ujjterpesztés és Froment-jel, de a kézhát ulnaris oldalának érzése ép. Hol a legvalószínűbb a lézió?",
+        "sv": "En långdistanscyklist har svag spretning av fingrarna och positivt Froments tecken, men sensibiliteten på handryggens ulnara sida är normal. Var sitter skadan troligast?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "A Guyon-csatornában (canalis ulnaris)",
+            "sv": "I Guyons kanal (canalis ulnaris)"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "A sulcus n. ulnarisban a könyöknél",
+            "sv": "I sulcus n. ulnaris vid armbågen"
+          },
+          "whyWrong": {
+            "hu": "Könyöktáji léziónál a ramus dorsalis is érintett, így a kézhát ulnaris oldalának érzése csökkenne.",
+            "sv": "Vid skada vid armbågen påverkas även ramus dorsalis, så sensibiliteten på handryggens ulnara sida skulle vara nedsatt."
+          }
+        },
+        {
+          "text": {
+            "hu": "A canalis carpiban",
+            "sv": "I canalis carpi"
+          },
+          "whyWrong": {
+            "hu": "A kéztőalagútban a n. medianus fut, nem a n. ulnaris.",
+            "sv": "Genom karpaltunneln löper n. medianus, inte n. ulnaris."
+          }
+        },
+        {
+          "text": {
+            "hu": "A C8–T1 gyököknél",
+            "sv": "Vid nervrötterna C8–T1"
+          },
+          "whyWrong": {
+            "hu": "Gyöki léziónál a C8 dermatoma (az alkar és kéz ulnaris oldala) érzése is érintett lenne, és a medianus-izmok is gyengülhetnének.",
+            "sv": "Vid rotskada skulle även sensibiliteten i C8-dermatomet (ulnara sidan av underarm och hand) vara påverkad och medianusmusklerna kunna försvagas."
+          }
+        }
+      ],
+      "answer": 0,
+      "explanation": {
+        "hu": "A n. ulnaris ramus dorsalisa az alkar distalis harmadában, a Guyon-csatorna előtt ágazik le, és a kézhát ulnaris oldalát látja el. Ha ennek érzése ép, de a kéz kisizmai gyengék, a lézió a Guyon-csatornában van, amelyet az os pisiforme és a hamulus ossis hamati határol. Kerékpárosoknál a kormányra nehezedő nyomás tipikus ok; ilyenkor kesztyű, kormányfogás-változtatás segíthet.",
+        "sv": "Ramus dorsalis n. ulnaris avgår i underarmens distala tredjedel, proximalt om Guyons kanal, och försörjer handryggens ulnara sida. Om den sensibiliteten är normal men handens inre muskler är svaga sitter skadan i Guyons kanal, som avgränsas av os pisiforme och hamulus ossis hamati. Hos cyklister är trycket mot styret en typisk orsak; handskar och ändrat grepp om styret kan hjälpa."
+      },
+      "link": {
+        "view": "modul-kez",
+        "item": "m.adductor-pollicis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
     }
   ]
 }

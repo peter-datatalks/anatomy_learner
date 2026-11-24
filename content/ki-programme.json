@@ -73,6 +73,27 @@
           }
         },
         {
+          "view": "modul-konyok",
+          "label": {
+            "hu": "Felkar és könyök modul",
+            "sv": "Modul: överarm och armbåge"
+          }
+        },
+        {
+          "view": "modul-alkar",
+          "label": {
+            "hu": "Alkar és csukló modul",
+            "sv": "Modul: underarm och handled"
+          }
+        },
+        {
+          "view": "modul-kez",
+          "label": {
+            "hu": "Kéz modul",
+            "sv": "Modul: hand"
+          }
+        },
+        {
           "view": "szotar",
           "label": {
             "hu": "Szótár",

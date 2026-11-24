@@ -1,53 +1,13 @@
 {
   "modules": [
     {
-      "id": "vall",
-      "title": {
-        "hu": "Vállöv és vállízület",
-        "sv": "Skuldergördel och axelled"
-      },
-      "latin": "cingulum pectorale",
-      "termName": {
-        "hu": "vállöv",
-        "sv": "skuldergördel",
-        "la": "cingulum pectorale"
-      },
-      "kiCourses": [
-        "1FY053",
-        "1FY055"
-      ],
-      "lessons": {
-        "basic": {
-          "hu": "<p>A váll a felső végtagot a törzshöz kapcsolja. Két csont alkotja a vállövet: a <span class=\"la\">clavicula</span> (kulcscsont) és a <span class=\"la\">scapula</span> (lapocka). A felkarcsont (<span class=\"la\">humerus</span>) feje a lapocka sekély ízületi vápájában mozog.</p>\n<ul><li>A vállízület a test legmozgékonyabb ízülete, ezért stabilitását főleg izmok adják.</li><li>A négy rotátorköpeny-izom (supraspinatus, infraspinatus, teres minor, subscapularis) \"mandzsettaként\" tartja a vápában a humerusfejet.</li><li>A deltaizom adja a váll kerek formáját, és ez a fő emelőizom.</li></ul>",
-          "sv": "<p>Axeln förbinder den övre extremiteten med bålen. Skuldergördeln består av två ben: <span class=\"la\">clavicula</span> (nyckelbenet) och <span class=\"la\">scapula</span> (skulderbladet). Överarmsbenets (<span class=\"la\">humerus</span>) huvud rör sig i skulderbladets grunda ledpanna.</p>\n<ul><li>Axelleden är kroppens mest rörliga led, och därför ges dess stabilitet främst av muskler.</li><li>De fyra rotatorkuffmusklerna (supraspinatus, infraspinatus, teres minor, subscapularis) håller humerushuvudet i ledpannan som en \"manschett\".</li><li>Deltamuskeln ger axeln dess runda form och är den viktigaste lyftmuskeln.</li></ul>"
-        },
-        "university": {
-          "hu": "<p>A vállkomplexum négy ízületből áll: <span class=\"la\">articulatio glenohumeralis</span>, <span class=\"la\">acromioclavicularis</span>, <span class=\"la\">sternoclavicularis</span> és a funkcionális scapulothoracalis kapcsolat. Az elevációt ezek összehangolt mozgása adja (scapulohumeralis ritmus, kb. 2:1).</p>\n<ul><li>A rotátorköpeny izmai erőpárt alkotnak a deltaizommal: a deltaizom felfelé, a köpeny lefelé és befelé húzza a humerusfejet, így az a vápában forog, nem csúszik.</li><li>A rotátorköpeny beidegzése C5–C6 dominanciájú: n. suprascapularis, n. axillaris, nn. subscapulares.</li><li>A m. serratus anterior és a m. trapezius erőpárja forgatja felfelé a lapockát; ez szükséges a 90° feletti elevációhoz.</li></ul>",
-          "sv": "<p>Axelkomplexet består av fyra leder: <span class=\"la\">articulatio glenohumeralis</span>, <span class=\"la\">acromioclavicularis</span>, <span class=\"la\">sternoclavicularis</span> och den funktionella skapulotorakala förbindelsen. Elevationen uppstår genom deras samordnade rörelse (skapulohumeral rytm, ca 2:1).</p>\n<ul><li>Rotatorkuffens muskler bildar ett kraftpar med deltamuskeln: deltamuskeln drar humerushuvudet uppåt, kuffen nedåt och inåt, så att huvudet roterar i ledpannan i stället för att glida.</li><li>Rotatorkuffens innervation är C5–C6-dominerad: n. suprascapularis, n. axillaris, nn. subscapulares.</li><li>Kraftparet m. serratus anterior och m. trapezius roterar skulderbladet uppåt; detta krävs för elevation över 90°.</li></ul>"
-        },
-        "clinical": {
-          "hu": "<p>Fizioterápiás szempontból a váll panaszai három csoportba sorolhatók: fájdalom és impingement, instabilitás, valamint mozgásbeszűkülés.</p>\n<ul><li><b>Subacromialis fájdalom:</b> Hawkins–Kennedy- és Neer-teszt, fájdalmas ív 60–120° között. Kezelés: terheléskontroll, lapockakontroll, progresszív erősítés.</li><li><b>Rotátorköpeny-szakadás:</b> Jobe-teszt, drop arm teszt, lag sign tesztek.</li><li><b>Adhezív capsulitis:</b> kapszuláris mintázat (kifelé forgatás &gt; abductio &gt; befelé forgatás).</li><li><b>Idegsérülések:</b> n. axillaris (gyenge abductio), n. thoracicus longus (scapula alata), n. accessorius (lecsüngő váll).</li></ul>\n<p class=\"note\">Oktatási célú összefoglaló; nem helyettesíti a szakmai irányelveket és az egyéni klinikai döntést.</p>",
-          "sv": "<p>Ur fysioterapeutiskt perspektiv kan axelbesvär delas in i tre grupper: smärta och impingement, instabilitet samt rörelseinskränkning.</p>\n<ul><li><b>Subakromiell smärta:</b> Hawkins–Kennedy- och Neer-test, smärtsam båge mellan 60° och 120°. Behandling: belastningskontroll, skulderbladskontroll, progressiv styrketräning.</li><li><b>Rotatorkuffruptur:</b> Jobes test, drop arm-test, lag sign-tester.</li><li><b>Adhesiv kapsulit:</b> kapselmönster (utåtrotation &gt; abduktion &gt; inåtrotation).</li><li><b>Nervskador:</b> n. axillaris (svag abduktion), n. thoracicus longus (scapula alata), n. accessorius (hängande axel).</li></ul>\n<p class=\"note\">Sammanfattning i utbildningssyfte; ersätter inte professionella riktlinjer eller individuella kliniska beslut.</p>"
-        }
-      },
-      "structures": [
-        "m.deltoideus",
-        "m.supraspinatus",
-        "m.infraspinatus",
-        "m.teres-minor",
-        "m.subscapularis",
-        "m.serratus-anterior",
-        "art.humeri",
-        "n.axillaris"
-      ],
-      "review": {
-        "status": "draft",
-        "by": null,
-        "date": null
-      }
-    },
-    {
       "id": "plexus",
+      "region": "nervous",
+      "order": 1,
+      "navLabel": {
+        "hu": "Plexus brachialis",
+        "sv": "Plexus brachialis"
+      },
       "title": {
         "hu": "Plexus brachialis",
         "sv": "Plexus brachialis · armplexus"
@@ -265,6 +225,352 @@
             "sv": "M. subscapularis, m. teres major; m. latissimus dorsi"
           }
         }
+      ],
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "vall",
+      "region": "upper-limb",
+      "order": 1,
+      "navLabel": {
+        "hu": "Vállöv",
+        "sv": "Skuldergördel"
+      },
+      "title": {
+        "hu": "Vállöv és vállízület",
+        "sv": "Skuldergördel och axelled"
+      },
+      "latin": "cingulum pectorale",
+      "termName": {
+        "hu": "vállöv",
+        "sv": "skuldergördel",
+        "la": "cingulum pectorale"
+      },
+      "kiCourses": [
+        "1FY053",
+        "1FY055"
+      ],
+      "lessons": {
+        "basic": {
+          "hu": "<p>A váll a felső végtagot a törzshöz kapcsolja. Két csont alkotja a vállövet: a <span class=\"la\">clavicula</span> (kulcscsont) és a <span class=\"la\">scapula</span> (lapocka). A felkarcsont (<span class=\"la\">humerus</span>) feje a lapocka sekély ízületi vápájában mozog.</p>\n<ul><li>A vállízület a test legmozgékonyabb ízülete, ezért stabilitását főleg izmok adják.</li><li>A négy rotátorköpeny-izom (supraspinatus, infraspinatus, teres minor, subscapularis) \"mandzsettaként\" tartja a vápában a humerusfejet.</li><li>A deltaizom adja a váll kerek formáját, és ez a fő emelőizom.</li></ul>",
+          "sv": "<p>Axeln förbinder den övre extremiteten med bålen. Skuldergördeln består av två ben: <span class=\"la\">clavicula</span> (nyckelbenet) och <span class=\"la\">scapula</span> (skulderbladet). Överarmsbenets (<span class=\"la\">humerus</span>) huvud rör sig i skulderbladets grunda ledpanna.</p>\n<ul><li>Axelleden är kroppens mest rörliga led, och därför ges dess stabilitet främst av muskler.</li><li>De fyra rotatorkuffmusklerna (supraspinatus, infraspinatus, teres minor, subscapularis) håller humerushuvudet i ledpannan som en \"manschett\".</li><li>Deltamuskeln ger axeln dess runda form och är den viktigaste lyftmuskeln.</li></ul>"
+        },
+        "university": {
+          "hu": "<p>A vállkomplexum négy ízületből áll: <span class=\"la\">articulatio glenohumeralis</span>, <span class=\"la\">acromioclavicularis</span>, <span class=\"la\">sternoclavicularis</span> és a funkcionális scapulothoracalis kapcsolat. Az elevációt ezek összehangolt mozgása adja (scapulohumeralis ritmus, kb. 2:1).</p>\n<ul><li>A rotátorköpeny izmai erőpárt alkotnak a deltaizommal: a deltaizom felfelé, a köpeny lefelé és befelé húzza a humerusfejet, így az a vápában forog, nem csúszik.</li><li>A rotátorköpeny beidegzése C5–C6 dominanciájú: n. suprascapularis, n. axillaris, nn. subscapulares.</li><li>A m. serratus anterior és a m. trapezius erőpárja forgatja felfelé a lapockát; ez szükséges a 90° feletti elevációhoz.</li></ul>",
+          "sv": "<p>Axelkomplexet består av fyra leder: <span class=\"la\">articulatio glenohumeralis</span>, <span class=\"la\">acromioclavicularis</span>, <span class=\"la\">sternoclavicularis</span> och den funktionella skapulotorakala förbindelsen. Elevationen uppstår genom deras samordnade rörelse (skapulohumeral rytm, ca 2:1).</p>\n<ul><li>Rotatorkuffens muskler bildar ett kraftpar med deltamuskeln: deltamuskeln drar humerushuvudet uppåt, kuffen nedåt och inåt, så att huvudet roterar i ledpannan i stället för att glida.</li><li>Rotatorkuffens innervation är C5–C6-dominerad: n. suprascapularis, n. axillaris, nn. subscapulares.</li><li>Kraftparet m. serratus anterior och m. trapezius roterar skulderbladet uppåt; detta krävs för elevation över 90°.</li></ul>"
+        },
+        "clinical": {
+          "hu": "<p>Fizioterápiás szempontból a váll panaszai három csoportba sorolhatók: fájdalom és impingement, instabilitás, valamint mozgásbeszűkülés.</p>\n<ul><li><b>Subacromialis fájdalom:</b> Hawkins–Kennedy- és Neer-teszt, fájdalmas ív 60–120° között. Kezelés: terheléskontroll, lapockakontroll, progresszív erősítés.</li><li><b>Rotátorköpeny-szakadás:</b> Jobe-teszt, drop arm teszt, lag sign tesztek.</li><li><b>Adhezív capsulitis:</b> kapszuláris mintázat (kifelé forgatás &gt; abductio &gt; befelé forgatás).</li><li><b>Idegsérülések:</b> n. axillaris (gyenge abductio), n. thoracicus longus (scapula alata), n. accessorius (lecsüngő váll).</li></ul>\n<p class=\"note\">Oktatási célú összefoglaló; nem helyettesíti a szakmai irányelveket és az egyéni klinikai döntést.</p>",
+          "sv": "<p>Ur fysioterapeutiskt perspektiv kan axelbesvär delas in i tre grupper: smärta och impingement, instabilitet samt rörelseinskränkning.</p>\n<ul><li><b>Subakromiell smärta:</b> Hawkins–Kennedy- och Neer-test, smärtsam båge mellan 60° och 120°. Behandling: belastningskontroll, skulderbladskontroll, progressiv styrketräning.</li><li><b>Rotatorkuffruptur:</b> Jobes test, drop arm-test, lag sign-tester.</li><li><b>Adhesiv kapsulit:</b> kapselmönster (utåtrotation &gt; abduktion &gt; inåtrotation).</li><li><b>Nervskador:</b> n. axillaris (svag abduktion), n. thoracicus longus (scapula alata), n. accessorius (hängande axel).</li></ul>\n<p class=\"note\">Sammanfattning i utbildningssyfte; ersätter inte professionella riktlinjer eller individuella kliniska beslut.</p>"
+        }
+      },
+      "structures": [
+        "m.deltoideus",
+        "m.supraspinatus",
+        "m.infraspinatus",
+        "m.teres-minor",
+        "m.subscapularis",
+        "m.serratus-anterior",
+        "art.humeri",
+        "n.axillaris"
+      ],
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "konyok",
+      "region": "upper-limb",
+      "order": 2,
+      "title": {
+        "hu": "Felkar és könyök",
+        "sv": "Överarm och armbåge"
+      },
+      "latin": "regio brachii et cubiti",
+      "termName": {
+        "hu": "könyök",
+        "sv": "armbåge",
+        "la": "cubitus"
+      },
+      "kiCourses": [
+        "1FY053",
+        "1FY055"
+      ],
+      "lessons": {
+        "basic": {
+          "hu": "<p>A felkar egyetlen csontja a <span class=\"la\">humerus</span> (felkarcsont); a könyökben az alkar két csontjával, a <span class=\"la\">radius</span> (orsócsont) és az <span class=\"la\">ulna</span> (singcsont) csonttal ízesül. A könyök hátsó, jól tapintható csúcsa az <span class=\"la\">olecranon</span>, két oldalán a felkarcsont két bütyke (<span class=\"la\">epicondylus medialis</span> és <span class=\"la\">lateralis</span>).</p>\n<ul><li>A felkar elülső izmai (kétfejű karizom, felkarizom) hajlítják, a hátsó háromfejű karizom nyújtja a könyököt.</li><li>A könyök kétféle mozgást enged: hajlítást–nyújtást, valamint az alkar forgatását (pronatio: tenyér lefelé, supinatio: tenyér felfelé).</li><li>A forgatás nem a könyök csuklópántszerű részében, hanem a két alkarcsont közötti ízületekben történik: a radius az ulna körül fordul.</li><li>A könyökhajlatban (<span class=\"la\">fossa cubitalis</span>) fut a kar fő artériája és a n. medianus; a belső bütyök mögött az ún. \"ütőideg\", a n. ulnaris.</li></ul>",
+          "sv": "<p>Överarmens enda ben är <span class=\"la\">humerus</span> (överarmsbenet); i armbågen ledar det mot underarmens två ben, <span class=\"la\">radius</span> (strålbenet) och <span class=\"la\">ulna</span> (armbågsbenet). Armbågens bakre, lätt palpabla spets är <span class=\"la\">olecranon</span>, och på var sida finns överarmsbenets två knölar (<span class=\"la\">epicondylus medialis</span> och <span class=\"la\">lateralis</span>).</p>\n<ul><li>Överarmens främre muskler (tvåhövdade armmuskeln, armbågsböjaren) böjer armbågen, och den bakre trehövdade armmuskeln sträcker den.</li><li>Armbågen tillåter två slags rörelser: böjning–sträckning samt vridning av underarmen (pronation: handflatan nedåt, supination: handflatan uppåt).</li><li>Vridningen sker inte i armbågens gångjärnsdel utan i lederna mellan de två underarmsbenen: radius roterar runt ulna.</li><li>I armbågsvecket (<span class=\"la\">fossa cubitalis</span>) löper armens huvudartär och n. medianus; bakom den mediala knölen ligger \"tjuvnerven\", n. ulnaris.</li></ul>"
+        },
+        "university": {
+          "hu": "<p>Az <span class=\"la\">articulatio cubiti</span> összetett ízület: három ízület egy közös tokban. A <span class=\"la\">articulatio humeroulnaris</span> (trochlea humeri – incisura trochlearis ulnae) csuklóízület, ez adja a flexiót–extensiót; a <span class=\"la\">articulatio humeroradialis</span> (capitulum humeri – fovea capitis radii) mindkét mozgásban részt vesz; az <span class=\"la\">articulatio radioulnaris proximalis</span> kerekízület, ahol a caput radii a <span class=\"la\">lig. anulare radii</span> gyűrűjében forog.</p>\n<ul><li>A pronatio–supinatio a proximális és disztális radioulnaris ízület együttes mozgása; tengelye a caput radiitól a caput ulnaeig fut. A két csontot a <span class=\"la\">membrana interossea antebrachii</span> köti össze, amely a radiusra jutó terhelés egy részét az ulnára vezeti át.</li><li>Oldalsó stabilitás: valgus ellen a lig. collaterale ulnare (főként elülső kötege), varus ellen a lig. collaterale radiale és a lateralis szalagkomplexum. Nyújtott könyöknél a csontos illeszkedés (olecranon a fossa olecraniban) is stabilizál. Élettani valgus (\"carrying angle\") kb. 10–15°.</li><li>Hajlítók: m. brachialis (tisztán könyökhajlító, az ulnán tapad, ezért az alkar helyzetétől független), m. biceps brachii (hajlít és supinál; supinált alkarnál a legerősebb), m. brachioradialis (középhelyzetben). Feszítő: m. triceps brachii, kisegítő a m. anconeus.</li><li>Beidegzési logika: a felkar elülső rekesze a n. musculocutaneus (C5–C6), a hátsó rekesz a n. radialis (C6–C8, főleg C7) területe. A bicepsz-reflex C5–C6, a tricepsz-reflex C7 szegmentet vizsgál.</li></ul>",
+          "sv": "<p><span class=\"la\">Articulatio cubiti</span> är en sammansatt led: tre leder i en gemensam kapsel. <span class=\"la\">Articulatio humeroulnaris</span> (trochlea humeri – incisura trochlearis ulnae) är en gångjärnsled och står för flexion–extension; <span class=\"la\">articulatio humeroradialis</span> (capitulum humeri – fovea capitis radii) deltar i båda rörelserna; <span class=\"la\">articulatio radioulnaris proximalis</span> är en vridled där caput radii roterar i ringen som bildas av <span class=\"la\">lig. anulare radii</span>.</p>\n<ul><li>Pronation–supination är en gemensam rörelse i proximala och distala radioulnarleden; axeln går från caput radii till caput ulnae. Benen förbinds av <span class=\"la\">membrana interossea antebrachii</span>, som överför en del av belastningen från radius till ulna.</li><li>Sidostabilitet: mot valgus lig. collaterale ulnare (framför allt dess främre bunt), mot varus lig. collaterale radiale och det laterala ligamentkomplexet. I extension bidrar även benkongruensen (olecranon i fossa olecrani). Fysiologisk valgus (\"carrying angle\") är ca 10–15°.</li><li>Flexorer: m. brachialis (ren armbågsflexor som fäster på ulna, därför oberoende av underarmens läge), m. biceps brachii (flekterar och supinerar; starkast med supinerad underarm), m. brachioradialis (i mellanläge). Extensor: m. triceps brachii, assisterad av m. anconeus.</li><li>Innervationslogik: överarmens främre kompartment försörjs av n. musculocutaneus (C5–C6), det bakre av n. radialis (C6–C8, främst C7). Bicepsreflexen testar C5–C6, tricepsreflexen C7.</li></ul>"
+        },
+        "clinical": {
+          "hu": "<p>A könyök vizsgálata: inspekció (duzzanat, carrying angle), tapintás (epicondylusok, olecranon, caput radii pronatio–supinatio közben), aktív és passzív ROM, izomerő, reflexek és a környező idegek vizsgálata.</p>\n<ul><li><b>Laterális epicondylalgia (\"teniszkönyök\"):</b> fájdalom a laterális epicondyluson, ellenállással szembeni csukló-extensióra (Cozen-teszt) és középsőujj-extensióra; az alkarfeszítők eredési ina érintett. Kezelés: terheléskontroll, progresszív erősítés.</li><li><b>Mediális epicondylalgia (\"golfkönyök\")</b> és dobóknál a <b>lig. collaterale ulnare</b> túlterhelése: valgus stresszteszt, moving valgus stress test.</li><li><b>Disztális bicepszín-ruptúra:</b> hirtelen fájdalom excentrikus terhelésnél, gyenge supinatio, pozitív Hook-teszt. A hosszú fej proximális szakadása \"Popeye-jelet\" ad, kevés funkcióvesztéssel.</li><li><b>Gyermekkori sérülések:</b> \"pulled elbow\" (a caput radii kicsúszik a lig. anulare alól; a gyermek pronált alkarral tartja a kezét); supracondylaris humerustörés – az a. brachialis és a n. medianus állapotát ellenőrizni kell (Volkmann-féle ischaemiás kontraktúra veszélye).</li><li><b>Idegek:</b> n. ulnaris a sulcus nervi ulnarisban (cubitalis alagút: zsibbadás a IV–V. ujjban, pozitív Tinel-jel, könyökhajlítási teszt); humerusszár-törésnél n. radialis-sérülés (csuklóejtés, a triceps többnyire ép).</li><li><b>Mozgásbeszűkülés:</b> trauma vagy immobilizáció után a könyök gyorsan merevedik; a kapszuláris mintázat flexio &gt; extensio. Myositis ossificans a m. brachialisban – kerülendő az erőltetett passzív nyújtás.</li></ul>\n<p class=\"note\">Oktatási célú összefoglaló; nem helyettesíti a szakmai irányelveket és az egyéni klinikai döntést.</p>",
+          "sv": "<p>Undersökning av armbågen: inspektion (svullnad, carrying angle), palpation (epikondylerna, olecranon, caput radii under pronation–supination), aktivt och passivt ROM, muskelstyrka, reflexer och undersökning av de omgivande nerverna.</p>\n<ul><li><b>Lateral epikondylalgi (\"tennisarmbåge\"):</b> smärta över laterala epikondylen vid resisterad handledsextension (Cozens test) och långfingerextension; underarmsextensorernas ursprungssena är påverkad. Behandling: belastningskontroll, progressiv styrketräning.</li><li><b>Medial epikondylalgi (\"golfarmbåge\")</b> och hos kastare överbelastning av <b>lig. collaterale ulnare</b>: valgusstresstest, moving valgus stress test.</li><li><b>Distal bicepsseneruptur:</b> plötslig smärta vid excentrisk belastning, svag supination, positivt Hook-test. Proximal ruptur av långa huvudet ger \"Popeye-tecken\" med liten funktionsförlust.</li><li><b>Skador hos barn:</b> \"pulled elbow\" (caput radii glider ut under lig. anulare; barnet håller underarmen pronerad); suprakondylär humerusfraktur – kontrollera a. brachialis och n. medianus (risk för Volkmanns ischemiska kontraktur).</li><li><b>Nerver:</b> n. ulnaris i sulcus nervi ulnaris (kubitaltunnelsyndrom: domningar i fjärde–femte fingret, positivt Tinels tecken, armbågsflexionstest); vid humerusskaftfraktur skada på n. radialis (dropphand, triceps oftast intakt).</li><li><b>Rörelseinskränkning:</b> efter trauma eller immobilisering blir armbågen snabbt stel; kapselmönstret är flexion &gt; extension. Myositis ossificans i m. brachialis – undvik forcerad passiv töjning.</li></ul>\n<p class=\"note\">Sammanfattning för utbildningssyfte; ersätter inte professionella riktlinjer eller individuell klinisk bedömning.</p>"
+        }
+      },
+      "structureGroups": [
+        {
+          "title": {
+            "hu": "Felkar elülső izmai",
+            "sv": "Överarmens främre muskler"
+          },
+          "structures": [
+            "m.biceps-brachii",
+            "m.brachialis",
+            "m.coracobrachialis"
+          ]
+        },
+        {
+          "title": {
+            "hu": "Felkar hátsó izmai",
+            "sv": "Överarmens bakre muskler"
+          },
+          "structures": [
+            "m.triceps-brachii",
+            "m.anconeus"
+          ]
+        },
+        {
+          "title": {
+            "hu": "Ízületek",
+            "sv": "Leder"
+          },
+          "structures": [
+            "art.cubiti",
+            "art.radioulnaris"
+          ]
+        }
+      ],
+      "structures": [
+        "m.biceps-brachii",
+        "m.brachialis",
+        "m.coracobrachialis",
+        "m.triceps-brachii",
+        "m.anconeus",
+        "art.cubiti",
+        "art.radioulnaris"
+      ],
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "alkar",
+      "region": "upper-limb",
+      "order": 3,
+      "title": {
+        "hu": "Alkar és csukló",
+        "sv": "Underarm och handled"
+      },
+      "latin": "antebrachium et carpus",
+      "termName": {
+        "hu": "alkar",
+        "sv": "underarm",
+        "la": "antebrachium"
+      },
+      "kiCourses": [
+        "1FY053",
+        "1FY055"
+      ],
+      "lessons": {
+        "basic": {
+          "hu": "<p>Az alkart két csont alkotja: a hüvelykujj oldalán fekvő orsócsont (<span class=\"la\">radius</span>) és a kisujj oldalán fekvő singcsont (<span class=\"la\">ulna</span>). A csukló (<span class=\"la\">articulatio radiocarpalis et mediocarpalis</span>) a radiust köti össze a kéztőcsontokkal (<span class=\"la\">ossa carpi</span>).</p>\n<ul><li>Az alkar elülső oldalán a <b>hajlítók</b> vannak: többségük a felkarcsont belső bütykéről (<span class=\"la\">epicondylus medialis</span>) ered, és a csuklót és az ujjakat hajlítja.</li><li>A hátsó oldalon a <b>feszítők</b> vannak: többségük a külső bütyökről (<span class=\"la\">epicondylus lateralis</span>) ered, és a csuklót, az ujjakat és a hüvelykujjat nyújtja.</li><li>A borintás (<span class=\"la\">pronatio</span>, tenyér lefelé) és a hanyintás (<span class=\"la\">supinatio</span>, tenyér felfelé) során a radius az ulna körül fordul.</li><li>A hüvelykujj tövénél, nyújtáskor látható mélyedés az anatómiai tubákszelence (<span class=\"la\">fovea radialis</span>).</li></ul>",
+          "sv": "<p>Underarmen består av två ben: strålbenet (<span class=\"la\">radius</span>) på tumsidan och armbågsbenet (<span class=\"la\">ulna</span>) på lillfingersidan. Handleden (<span class=\"la\">articulatio radiocarpalis et mediocarpalis</span>) förbinder radius med handlovsbenen (<span class=\"la\">ossa carpi</span>).</p>\n<ul><li>På underarmens framsida finns <b>böjarna</b>: de flesta utgår från överarmsbenets inre knöl (<span class=\"la\">epicondylus medialis</span>) och böjer handleden och fingrarna.</li><li>På baksidan finns <b>sträckarna</b>: de flesta utgår från den yttre knölen (<span class=\"la\">epicondylus lateralis</span>) och sträcker handleden, fingrarna och tummen.</li><li>Vid pronation (handflatan nedåt) och supination (handflatan uppåt) roterar radius runt ulna.</li><li>Gropen vid tumbasen som syns när tummen sträcks är den anatomiska snusdosan (<span class=\"la\">fovea radialis</span>).</li></ul>"
+        },
+        "university": {
+          "hu": "<p>Az alkarizmok két rekeszbe rendeződnek. Az <b>elülső (flexor-pronátor) rekesz</b> felszíni rétege (m. pronator teres, m. flexor carpi radialis, m. palmaris longus, m. flexor carpi ulnaris) és a középső m. flexor digitorum superficialis a közös hajlító eredésről indul; a mély rétegben a m. flexor digitorum profundus, a m. flexor pollicis longus és a m. pronator quadratus fekszik. A <b>hátsó (extensor-supinátor) rekesz</b> laterális csoportja (m. brachioradialis, m. extensor carpi radialis longus et brevis) a crista supracondylaris lateralisról, felszíni rétege a közös feszítő ínról ered; a mély réteg (m. supinator és a négy \"hüvelykujj–mutatóujj\" izom) a csontokról és a <span class=\"la\">membrana interossea</span>-ról.</p>\n<ul><li><b>Beidegzési logika:</b> az elülső rekeszt a <span class=\"la\">n. medianus</span> látja el (mélyen a <span class=\"la\">n. interosseus anterior</span> ágán át), kivéve a m. flexor carpi ulnarist és a m. flexor digitorum profundus mediális felét (<span class=\"la\">n. ulnaris</span>). A hátsó rekesz teljes egészében a <span class=\"la\">n. radialis</span> területe: a brachioradialis és az ECRL a törzsből, az ECRB és a supinator a mély ágból, a többi a <span class=\"la\">n. interosseus posterior</span>-ból. A felszíni ág tisztán érző.</li><li><b>Pronatio–supinatio:</b> a fő pronátor a m. pronator quadratus, erőkifejtéskor a m. pronator teres segít. Supinatiót nyújtott könyöknél a m. supinator, hajlított könyöknél (kb. 90°) főleg a m. biceps brachii végez.</li><li><b>Csuklómechanika:</b> a csukló a radiocarpalis és a mediocarpalis ízület együttműködése. A radialis deviatio kisebb (kb. 20°), mint az ulnaris (kb. 30°), mert a <span class=\"la\">processus styloideus radii</span> disztálisabban ér le. A csuklófeszítők markoláskor kokontrakcióval tartják a csuklót enyhe extensióban, így az ujjhajlítók optimális hosszon dolgoznak.</li><li><b>Retinaculumok:</b> a <span class=\"la\">retinaculum flexorum</span> a canalis carpi teteje; a <span class=\"la\">retinaculum extensorum</span> alatt hat feszítő-rekesz fut radiálistól ulnárisig: (1) APL+EPB, (2) ECRL+ECRB, (3) EPL, (4) ED+EI, (5) EDM, (6) ECU.</li></ul>",
+          "sv": "<p>Underarmsmusklerna ordnas i två fack. Det <b>främre (flexor-pronator-)facket</b> har ett ytligt lager (m. pronator teres, m. flexor carpi radialis, m. palmaris longus, m. flexor carpi ulnaris) och det mellersta m. flexor digitorum superficialis som utgår från det gemensamma flexorursprunget; i det djupa lagret ligger m. flexor digitorum profundus, m. flexor pollicis longus och m. pronator quadratus. Det <b>bakre (extensor-supinator-)facket</b> har en lateral grupp (m. brachioradialis, m. extensor carpi radialis longus och brevis) från crista supracondylaris lateralis, ett ytligt lager från den gemensamma extensorsenan och ett djupt lager (m. supinator och de fyra \"tum–pekfingermusklerna\") från benen och <span class=\"la\">membrana interossea</span>.</p>\n<ul><li><b>Innervationslogik:</b> det främre facket försörjs av <span class=\"la\">n. medianus</span> (på djupet via <span class=\"la\">n. interosseus anterior</span>), utom m. flexor carpi ulnaris och mediala halvan av m. flexor digitorum profundus (<span class=\"la\">n. ulnaris</span>). Hela det bakre facket är <span class=\"la\">n. radialis</span> område: brachioradialis och ECRL från stammen, ECRB och supinator från djupa grenen, övriga från <span class=\"la\">n. interosseus posterior</span>. Den ytliga grenen är rent sensorisk.</li><li><b>Pronation–supination:</b> huvudpronatorn är m. pronator quadratus, vid kraftutveckling hjälper m. pronator teres. Supination med extenderad armbåge utförs av m. supinator, med flekterad armbåge (ca 90°) främst av m. biceps brachii.</li><li><b>Handledsmekanik:</b> handleden är ett samspel mellan radiokarpal- och mediokarpalleden. Radialdeviationen är mindre (ca 20°) än ulnardeviationen (ca 30°) eftersom <span class=\"la\">processus styloideus radii</span> når längre distalt. Vid grepp håller handledsextensorerna genom samkontraktion handleden i lätt extension, så att fingerböjarna arbetar vid optimal längd.</li><li><b>Retinakel:</b> <span class=\"la\">retinaculum flexorum</span> är taket i canalis carpi; under <span class=\"la\">retinaculum extensorum</span> löper sex extensorfack från radialt till ulnart: (1) APL+EPB, (2) ECRL+ECRB, (3) EPL, (4) ED+EI, (5) EDM, (6) ECU.</li></ul>"
+        },
+        "clinical": {
+          "hu": "<p>Az alkar–csukló régióban a fizioterapeuta főleg túlterheléses tendinopathiákkal, idegkompressziókkal és törések utáni rehabilitációval találkozik.</p>\n<ul><li><b>Laterális epicondylalgia (\"teniszkönyök\"):</b> főleg a m. extensor carpi radialis brevis eredési ínja. Nyomásérzékenység az epicondylus lateralison, fájdalmas markolás; Cozen-, Mill- és Maudsley-teszt. Kezelés: terhelésadagolás, progresszív erősítés, ergonómia. Differenciáldiagnózis: radialis alagút-szindróma, cervicalis radiculopathia.</li><li><b>Mediális epicondylalgia (\"golfkönyök\"):</b> a közös hajlító-pronátor eredés (m. pronator teres, m. flexor carpi radialis); fájdalom ellenállással végzett csuklóflexióra és pronatióra.</li><li><b>De Quervain-tenosynovitis:</b> az 1. feszítő-rekesz (APL, EPB) szűkülete; fájdalom a <span class=\"la\">processus styloideus radii</span> felett, pozitív Finkelstein- / Eichhoff-teszt.</li><li><b>N. radialis-sérülések:</b> a sulcus nervi radialisban (humerusszár-törés) <b>csuklóesés</b> (wrist drop) és érzéskiesés a kézhát radiális részén. A <span class=\"la\">n. interosseus posterior</span> lézióban nincs érzéskiesés, a csukló radialis deviatióval nyújtható (ECRL ép), de az ujjak MCP-ben nem nyújthatók. A felszíni ág kompressziója (pl. szoros óraszíj, bilincs) csak zsibbadást okoz a kézhát radiális részén (Wartenberg-szindróma).</li><li><b>N. interosseus anterior-szindróma:</b> a beteg nem tud kerek \"OK\"-jelet formálni (FPL és a mutatóujj FDP-je gyenge), érzéskiesés nincs.</li><li><b>Esés kinyújtott kézre:</b> disztális radiustörés vagy scaphoideum-törés (nyomásérzékenység a tubákszelencében – röntgen akkor is, ha negatív az első felvétel). Radiustörés után figyelni kell a késői m. extensor pollicis longus-szakadásra.</li></ul>\n<p class=\"note\">Oktatási célú összefoglaló; nem helyettesíti a szakmai irányelveket és az egyéni klinikai döntést.</p>",
+          "sv": "<p>I underarms- och handledsregionen möter fysioterapeuten främst överbelastningstendinopatier, nervkompressioner och rehabilitering efter frakturer.</p>\n<ul><li><b>Lateral epikondylalgi (\"tennisarmbåge\"):</b> främst ursprungssenan till m. extensor carpi radialis brevis. Ömhet över epicondylus lateralis, smärtsamt grepp; Cozens, Mills och Maudsleys test. Behandling: belastningsdosering, progressiv styrketräning, ergonomi. Differentialdiagnoser: radialtunnelsyndrom, cervikal radikulopati.</li><li><b>Medial epikondylalgi (\"golfarmbåge\"):</b> det gemensamma flexor-pronatorursprunget (m. pronator teres, m. flexor carpi radialis); smärta vid handledsflexion och pronation mot motstånd.</li><li><b>De Quervains tenosynovit:</b> trånghet i 1:a extensorfacket (APL, EPB); smärta över <span class=\"la\">processus styloideus radii</span>, positivt Finkelsteins / Eichhoffs test.</li><li><b>Radialisskador:</b> i sulcus nervi radialis (humerusskaftfraktur) <b>dropphand</b> (wrist drop) och känselbortfall på handryggens radiala del. Vid skada på <span class=\"la\">n. interosseus posterior</span> finns inget känselbortfall, handleden kan extenderas med radialdeviation (ECRL intakt), men fingrarna kan inte extenderas i MCP. Kompression av den ytliga grenen (t.ex. tight klockarmband, handbojor) ger enbart domningar på handryggens radiala del (Wartenbergs syndrom).</li><li><b>N. interosseus anterior-syndrom:</b> patienten kan inte forma ett runt \"OK\"-tecken (FPL och pekfingrets FDP svaga), inget känselbortfall.</li><li><b>Fall på utsträckt hand:</b> distal radiusfraktur eller skafoideumfraktur (ömhet i snusdosan – röntgen även om första bilden är negativ). Efter radiusfraktur ska man vara uppmärksam på sen ruptur av m. extensor pollicis longus.</li></ul>\n<p class=\"note\">Sammanfattning för utbildningssyfte; ersätter inte professionella riktlinjer eller individuell klinisk bedömning.</p>"
+        }
+      },
+      "structureGroups": [
+        {
+          "title": {
+            "hu": "Elülső felszíni réteg",
+            "sv": "Främre ytliga lagret"
+          },
+          "structures": [
+            "m.pronator-teres",
+            "m.flexor-carpi-radialis",
+            "m.palmaris-longus",
+            "m.flexor-carpi-ulnaris",
+            "m.flexor-digitorum-superficialis"
+          ]
+        },
+        {
+          "title": {
+            "hu": "Elülső mély réteg",
+            "sv": "Främre djupa lagret"
+          },
+          "structures": [
+            "m.flexor-digitorum-profundus",
+            "m.flexor-pollicis-longus",
+            "m.pronator-quadratus"
+          ]
+        },
+        {
+          "title": {
+            "hu": "Hátsó és oldalsó izmok",
+            "sv": "Bakre och laterala muskler"
+          },
+          "structures": [
+            "m.brachioradialis",
+            "m.extensor-carpi-radialis-longus",
+            "m.extensor-carpi-radialis-brevis",
+            "m.extensor-digitorum",
+            "m.extensor-digiti-minimi",
+            "m.extensor-carpi-ulnaris",
+            "m.supinator",
+            "m.abductor-pollicis-longus",
+            "m.extensor-pollicis-brevis",
+            "m.extensor-pollicis-longus",
+            "m.extensor-indicis"
+          ]
+        },
+        {
+          "title": {
+            "hu": "Ízület",
+            "sv": "Led"
+          },
+          "structures": [
+            "art.manus"
+          ]
+        }
+      ],
+      "structures": [
+        "m.pronator-teres",
+        "m.flexor-carpi-radialis",
+        "m.palmaris-longus",
+        "m.flexor-carpi-ulnaris",
+        "m.flexor-digitorum-superficialis",
+        "m.flexor-digitorum-profundus",
+        "m.flexor-pollicis-longus",
+        "m.pronator-quadratus",
+        "m.brachioradialis",
+        "m.extensor-carpi-radialis-longus",
+        "m.extensor-carpi-radialis-brevis",
+        "m.extensor-digitorum",
+        "m.extensor-digiti-minimi",
+        "m.extensor-carpi-ulnaris",
+        "m.supinator",
+        "m.abductor-pollicis-longus",
+        "m.extensor-pollicis-brevis",
+        "m.extensor-pollicis-longus",
+        "m.extensor-indicis",
+        "art.manus"
+      ],
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "kez",
+      "region": "upper-limb",
+      "order": 4,
+      "title": {
+        "hu": "Kéz",
+        "sv": "Hand"
+      },
+      "latin": "manus",
+      "termName": {
+        "hu": "kéz",
+        "sv": "hand",
+        "la": "manus"
+      },
+      "kiCourses": [
+        "1FY053",
+        "1FY055"
+      ],
+      "lessons": {
+        "basic": {
+          "hu": "<p>A kéz csontjai három csoportba tartoznak: 8 kéztőcsont (<span class=\"la\">ossa carpi</span>), 5 kézközépcsont (<span class=\"la\">ossa metacarpi</span>) és 14 ujjperc (<span class=\"la\">phalanges</span>). A kéz kisizmai a kézen belül erednek és tapadnak, és a finom mozgásokért felelnek.</p>\n<ul><li>A hüvelykujj tövénél a <b>thenar</b> (hüvelykujjpárna) négy izma teszi lehetővé, hogy a hüvelykujj szembeforduljon a többi ujjal (<span class=\"la\">oppositio</span>).</li><li>A kisujj oldalán a <b>hypothenar</b> (kisujjpárna) három izma mozgatja a kisujjat.</li><li>A mélyben a féregszerű izmok (<span class=\"la\">mm. lumbricales</span>) és a csontközi izmok (<span class=\"la\">mm. interossei</span>) terpesztik és zárják az ujjakat, és segítenek az ujjak nyújtásában.</li><li>A hüvelykujj tövén nyeregízület van; ez adja a hüvelykujj különleges mozgékonyságát.</li></ul>",
+          "sv": "<p>Handens ben delas in i tre grupper: 8 handlovsben (<span class=\"la\">ossa carpi</span>), 5 mellanhandsben (<span class=\"la\">ossa metacarpi</span>) och 14 falanger (<span class=\"la\">phalanges</span>). Handens inre muskler har både ursprung och fäste i handen och står för de fina rörelserna.</p>\n<ul><li>Vid tumbasen gör <b>tenar</b> (tumvalken) med sina fyra muskler det möjligt för tummen att vändas mot de andra fingrarna (<span class=\"la\">oppositio</span>).</li><li>På lillfingersidan rör <b>hypotenar</b> (lillfingervalken) med sina tre muskler lillfingret.</li><li>På djupet spretar och samlar maskmusklerna (<span class=\"la\">mm. lumbricales</span>) och mellanbensmusklerna (<span class=\"la\">mm. interossei</span>) fingrarna och hjälper till att sträcka dem.</li><li>Vid tumbasen finns en sadelled; den ger tummen dess särskilda rörlighet.</li></ul>"
+        },
+        "university": {
+          "hu": "<p>A kéztőcsontok két sorban állnak. Proximális sor (radiálistól ulnaris felé): <span class=\"la\">os scaphoideum, lunatum, triquetrum, pisiforme</span>; distalis sor: <span class=\"la\">os trapezium, trapezoideum, capitatum, hamatum</span>. A retinaculum flexorum a canalis carpit, az os pisiforme és a hamulus ossis hamati közötti rés a canalis ulnarist (Guyon) határolja.</p>\n<ul><li><b>Beidegzési logika:</b> a kéz kisizmai C8–T1 eredetűek. A n. medianus (ramus recurrens) látja el a thenar felszínes izmait (abductor pollicis brevis, opponens pollicis, flexor pollicis brevis felszínes feje) és az 1–2. lumbricalist; minden más (hypothenar, interossei, 3–4. lumbricalis, adductor pollicis, FPB mély feje) a n. ulnaris ramus profundusa.</li><li><b>Interossei:</b> a középső ujj tengelyéhez viszonyítva a háti izmok abdukálnak (DAB), a tenyériek addukálnak (PAD).</li><li><b>Extensor-mechanizmus:</b> a lumbricalisok és interosseusok a dorsalis aponeurosisba tapadnak, a MCP-ízület forgástengelye előtt, de a PIP és DIP mögött haladnak, ezért MCP-flexiót és IP-extensiót okoznak (intrinsic-plus).</li><li><b>Ízületek:</b> a hüvelykujj CMC-ízülete nyeregízület (2 szabadsági fok + tengelyforgás az oppositióban); az MCP-ízületek tojásdad ízületek, kollaterális szalagjaik flexióban feszesek; az IP-ízületek csuklóízületek.</li></ul>",
+          "sv": "<p>Handlovsbenen står i två rader. Proximala raden (från radialt till ulnart): <span class=\"la\">os scaphoideum, lunatum, triquetrum, pisiforme</span>; distala raden: <span class=\"la\">os trapezium, trapezoideum, capitatum, hamatum</span>. Retinaculum flexorum avgränsar canalis carpi, och utrymmet mellan os pisiforme och hamulus ossis hamati avgränsar canalis ulnaris (Guyons kanal).</p>\n<ul><li><b>Innervationslogik:</b> handens inre muskler är C8–T1. N. medianus (ramus recurrens) försörjer de ytliga thenarmusklerna (abductor pollicis brevis, opponens pollicis, ytliga huvudet av flexor pollicis brevis) och lumbrikal 1–2; allt annat (hypotenar, interossei, lumbrikal 3–4, adductor pollicis, djupa huvudet av FPB) försörjs av ramus profundus n. ulnaris.</li><li><b>Interossei:</b> i förhållande till långfingrets axel abducerar de dorsala (DAB) och adducerar de palmara (PAD).</li><li><b>Extensormekanismen:</b> lumbrikalerna och interosseusmusklerna fäster i dorsalaponeurosen; de passerar volart om MCP-ledens rörelseaxel men dorsalt om PIP och DIP, och ger därför MCP-flexion och IP-extension (intrinsic plus).</li><li><b>Leder:</b> tummens CMC-led är en sadelled (2 frihetsgrader + axialrotation vid opposition); MCP-lederna är ellipsoidleder vars kollateralligament är spända i flexion; IP-lederna är gångjärnsleder.</li></ul>"
+        },
+        "clinical": {
+          "hu": "<p>A kéz vizsgálatakor a fizioterapeuta megtekinti a thenar és a hypothenar kontúrját, az interosseus-árkokat és az ujjak nyugalmi helyzetét, majd ROM-ot, fogáserőt, érzést és specifikus teszteket vizsgál.</p>\n<ul><li><b>Kéztőalagút-szindróma:</b> thenar-sorvadás (főleg m. abductor pollicis brevis), gyenge palmaris abductio és oppositio; a thenar bőrének érzése többnyire ép, mert a ramus palmaris n. mediani a csatorna fölött halad.</li><li><b>N. ulnaris-lézió:</b> karomállás a 4–5. ujjon (MCP-hiperextenzió, IP-flexio), Froment-jel, Wartenberg-jel, interosseus-sorvadás. \"Ulnaris paradoxon\": distalis (csukló) léziónál erősebb a karomállás, mert az FDP ulnaris fele ép.</li><li><b>Hüvelykujj CMC-artrózis:</b> fájdalom a hüvelykujj tövén, pozitív grind-teszt, beszűkült első ujjköz; ellátás: edukáció, ortézis, stabilizáló gyakorlatok.</li><li><b>Síhüvelyk:</b> az MCP I ulnaris kollaterális szalagjának sérülése; radiális irányú stressztesztnél fokozott lazaság. Stener-lézió (a szalagvég az adductor-aponeurosis fölé csúszik) esetén műtét szükséges.</li><li><b>Intrinsic-plus és -minus:</b> rögzítésnél a biztonságos helyzet MCP-flexio + IP-extensio; az intrinsic-minus (karom) helyzet a kisizmok bénulására utal.</li><li><b>Dupuytren-kontraktúra:</b> az aponeurosis palmaris megvastagodása, főleg a 4–5. ujjon, gyakori északi származásúaknál.</li></ul>\n<p class=\"note\">Oktatási célú összefoglaló; nem helyettesíti a szakmai irányelveket és az egyéni klinikai döntést.</p>",
+          "sv": "<p>Vid undersökning av handen inspekterar fysioterapeuten tenars och hypotenars kontur, mellanrummen mellan mellanhandsbenen och fingrarnas viloställning, och bedömer sedan ROM, greppstyrka, sensibilitet och specifika tester.</p>\n<ul><li><b>Karpaltunnelsyndrom:</b> tenaratrofi (främst m. abductor pollicis brevis), svag palmar abduktion och opposition; sensibiliteten över tenar är oftast bevarad eftersom ramus palmaris n. mediani löper ovanför kanalen.</li><li><b>Ulnarisskada:</b> klohand i finger 4–5 (MCP-hyperextension, IP-flexion), Froments tecken, Wartenbergs tecken, interosseusatrofi. \"Ulnarisparadoxen\": vid distal skada (handled) blir klohanden tydligare, eftersom ulnara delen av FDP är intakt.</li><li><b>Tumbasartros (CMC I):</b> smärta vid tumbasen, positivt grindtest, minskat första interdigitalveck; behandling: patientutbildning, ortos, stabiliserande träning.</li><li><b>Skidtumme:</b> skada på ulnara kollateralligamentet i MCP I; ökad laxitet vid radialt riktat stresstest. Vid Stenerlesion (ligamentänden hamnar ovanpå adduktoraponeurosen) krävs kirurgi.</li><li><b>Intrinsic plus och minus:</b> vid immobilisering är den säkra positionen MCP-flexion + IP-extension; intrinsic minus-ställning (klo) talar för förlamning av de inre handmusklerna.</li><li><b>Dupuytrens kontraktur:</b> förtjockning av aponeurosis palmaris, främst i finger 4–5, vanlig hos personer med nordiskt ursprung.</li></ul>\n<p class=\"note\">Sammanfattning för utbildningssyfte; ersätter inte professionella riktlinjer eller individuell klinisk bedömning.</p>"
+        }
+      },
+      "structureGroups": [
+        {
+          "title": {
+            "hu": "Hüvelykujjpárna (thenar)",
+            "sv": "Tenar"
+          },
+          "structures": [
+            "m.abductor-pollicis-brevis",
+            "m.flexor-pollicis-brevis",
+            "m.opponens-pollicis",
+            "m.adductor-pollicis"
+          ]
+        },
+        {
+          "title": {
+            "hu": "Kisujjpárna (hypothenar)",
+            "sv": "Hypotenar"
+          },
+          "structures": [
+            "m.abductor-digiti-minimi-manus",
+            "m.flexor-digiti-minimi-brevis-manus",
+            "m.opponens-digiti-minimi"
+          ]
+        },
+        {
+          "title": {
+            "hu": "Kéz mély izmai",
+            "sv": "Handens djupa muskler"
+          },
+          "structures": [
+            "m.lumbricales-manus",
+            "m.interossei-dorsales-manus",
+            "m.interossei-palmares"
+          ]
+        },
+        {
+          "title": {
+            "hu": "Ízületek",
+            "sv": "Leder"
+          },
+          "structures": [
+            "art.carpometacarpalis-pollicis",
+            "art.metacarpophalangeae",
+            "art.interphalangeae-manus"
+          ]
+        }
+      ],
+      "structures": [
+        "m.abductor-pollicis-brevis",
+        "m.flexor-pollicis-brevis",
+        "m.opponens-pollicis",
+        "m.adductor-pollicis",
+        "m.abductor-digiti-minimi-manus",
+        "m.flexor-digiti-minimi-brevis-manus",
+        "m.opponens-digiti-minimi",
+        "m.lumbricales-manus",
+        "m.interossei-dorsales-manus",
+        "m.interossei-palmares",
+        "art.carpometacarpalis-pollicis",
+        "art.metacarpophalangeae",
+        "art.interphalangeae-manus"
       ],
       "review": {
         "status": "draft",

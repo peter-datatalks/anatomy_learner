@@ -3,12 +3,13 @@
 
     python3 tools/build.py            validate + build
     python3 tools/build.py --check    validate only (no output files)
-    python3 tools/build.py --serve    build, then serve dist/ on http://localhost:8000
+    python3 tools/build.py --serve    build, then serve dist/ on http://localhost:8000 (or $PORT)
 
 The build fails (exit code 1) when any record is invalid. Every learning text must exist
 in both Hungarian and Swedish, so the two languages can never drift apart.
 """
 import hashlib
+import os
 import http.server
 import json
 import pathlib
@@ -21,7 +22,8 @@ CONTENT = ROOT / 'content'
 APP = ROOT / 'app'
 DIST = ROOT / 'dist'
 
-VIEWS = {'attekintes', 'szotar', 'vall', 'plexus', 'agyidegek', 'ki-utvonal', 'kviz', 'statisztika'}
+VIEWS = {'attekintes', 'szotar', 'modulok', 'vall', 'plexus', 'agyidegek', 'ki-utvonal', 'kviz', 'statisztika'}
+# every module also has a page at 'modul-<module id>'
 REVIEW_STATUSES = {'draft', 'in-review', 'reviewed'}
 STRUCT_FIELDS = {
     'muscle': {'required': ['origin', 'insertion', 'innervation', 'action'],
@@ -96,6 +98,10 @@ def validate():
     modules = load('modules.json')['modules']
     taxonomy = load('taxonomy.json')
 
+    regions = taxonomy.get('regions', {})
+    for k, v in regions.items():
+        c.pair(f'taxonomy.regions.{k}', v, 'label')
+    views = VIEWS | {'modul-' + m.get('id', '') for m in modules}
     cats = taxonomy.get('termCategories', {})
     topics = taxonomy.get('quizTopics', {})
     for k, v in cats.items():
@@ -194,7 +200,7 @@ def validate():
         else:
             c.err(w, f'unknown type "{t}"')
         link = q.get('link') or {}
-        if link.get('view') not in VIEWS:
+        if link.get('view') not in views:
             c.err(w, f'link.view "{link.get("view")}" is not a page in the app')
         item = link.get('item')
         if item and item not in struct_ids | cn_ids:
@@ -213,7 +219,7 @@ def validate():
         for j, t in enumerate(co.get('topics', [])):
             c.pair(w, t, f'topics[{j}]')
         for j, l in enumerate(co.get('links', [])):
-            if l.get('view') not in VIEWS:
+            if l.get('view') not in views:
                 c.err(w, f'links[{j}].view "{l.get("view")}" is not a page in the app')
             c.pair(w, l.get('label'), f'links[{j}].label')
     if abs(total - ki.get('credits', 0)) > 0.01:
@@ -223,9 +229,31 @@ def validate():
         if abs(sem - 30) > 0.01:
             c.err('ki-programme', f'semester {s} has {sem} hp, expected 30')
 
+    c.unique('modules', [m.get('id') for m in modules])
+    by_module = {m.get('id'): m for m in modules}
+    for s in structures:
+        m = by_module.get(s.get('module'))
+        if m and s.get('id') not in m.get('structures', []):
+            c.err(f'structures/{s.get("id")}', f'is not listed in module "{m["id"]}"')
     for m in modules:
         w = f'modules/{m.get("id")}'
         c.pair(w, m.get('title'), 'title')
+        if m.get('region') not in regions:
+            c.err(w, f'region "{m.get("region")}" is not in taxonomy.regions')
+        if not isinstance(m.get('order'), int):
+            c.err(w, '"order" must be a whole number')
+        c.text(w, m.get('latin'), 'latin')
+        if 'navLabel' in m:
+            c.pair(w, m['navLabel'], 'navLabel')
+        if m.get('id') not in topics:
+            c.err(w, f'needs a quiz topic "{m.get("id")}" in taxonomy.quizTopics')
+        if 'structureGroups' in m:
+            grouped = []
+            for i, g in enumerate(m['structureGroups']):
+                c.pair(w, g.get('title'), f'structureGroups[{i}].title')
+                grouped += g.get('structures', [])
+            if sorted(grouped) != sorted(m.get('structures', [])):
+                c.err(w, 'structureGroups must list exactly the module\'s structures, each once')
         c.name3(w, m.get('termName'))
         for k in ('basic', 'university', 'clinical'):
             c.pair(w, m.get('lessons', {}).get(k), f'lessons.{k}')
@@ -285,7 +313,7 @@ def main():
     version, size = build(bundle)
     print(f'Built dist/ (version {version}, content.json {size // 1024} KB)')
     if '--serve' in sys.argv:
-        port = 8000
+        port = int(os.environ.get('PORT', 8000))
         handler = lambda *a, **k: http.server.SimpleHTTPRequestHandler(*a, directory=str(DIST), **k)
         with socketserver.TCPServer(('127.0.0.1', port), handler) as httpd:
             print(f'Serving on http://localhost:{port}  (Ctrl+C to stop)')

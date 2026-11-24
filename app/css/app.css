@@ -354,3 +354,8 @@ a.pillar:hover{border-color:var(--pc);transform:translateY(-1px)}
 .chip.reviewed{background:var(--good-soft);color:var(--good)}
 .sheet>.chip.draft,.sheet>.chip.reviewed{align-self:flex-start}
 
+
+/* Module hub */
+.hub-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px}
+.hub-grid .pillar .la{font-size:.9rem}
+.hub-grid .pillar .bar i{background:var(--pc)}

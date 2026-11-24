@@ -7,7 +7,7 @@ const APP_SHELL = [
   'index.html',
   'css/app.css?v=__BUILD_VERSION__',
   'js/app.js?v=__BUILD_VERSION__',
-  'content.json',
+  'content.json?v=__BUILD_VERSION__',
   'manifest.webmanifest',
   'icons/icon.svg',
   'icons/icon-192.png',

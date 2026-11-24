@@ -45,6 +45,40 @@
     "neuro": {
       "hu": "Neuroanatómia",
       "sv": "Neuroanatomi"
+    },
+    "konyok": {
+      "hu": "Felkar és könyök",
+      "sv": "Överarm och armbåge"
+    },
+    "alkar": {
+      "hu": "Alkar és csukló",
+      "sv": "Underarm och handled"
+    },
+    "kez": {
+      "hu": "Kéz",
+      "sv": "Hand"
+    }
+  },
+  "regions": {
+    "upper-limb": {
+      "hu": "Felső végtag",
+      "sv": "Övre extremiteten"
+    },
+    "lower-limb": {
+      "hu": "Alsó végtag",
+      "sv": "Nedre extremiteten"
+    },
+    "trunk": {
+      "hu": "Törzs és gerinc",
+      "sv": "Bål och ryggrad"
+    },
+    "head-neck": {
+      "hu": "Fej és nyak",
+      "sv": "Huvud och hals"
+    },
+    "nervous": {
+      "hu": "Idegrendszer",
+      "sv": "Nervsystemet"
     }
   }
 }

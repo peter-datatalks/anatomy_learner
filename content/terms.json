@@ -1166,6 +1166,962 @@
         "by": null,
         "date": null
       }
+    },
+    {
+      "id": "t.brachialis",
+      "category": "muscles",
+      "name": {
+        "hu": "felkarizom",
+        "sv": "armbågsböjaren",
+        "la": "m. brachialis"
+      },
+      "synonymsHu": "brachialis",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.coracobrachialis",
+      "category": "muscles",
+      "name": {
+        "hu": "hollócsőr-karizom",
+        "sv": "korpnäbbsarmmuskeln",
+        "la": "m. coracobrachialis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.anconeus",
+      "category": "muscles",
+      "name": {
+        "hu": "könyökizom",
+        "sv": "armbågsmuskeln",
+        "la": "m. anconeus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.articulationes-radioulnares",
+      "category": "joints",
+      "name": {
+        "hu": "radioulnaris ízületek (orsó-singcsonti ízületek)",
+        "sv": "radioulnarlederna",
+        "la": "articulationes radioulnares proximalis et distalis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.epicondylus-medialis-humeri",
+      "category": "bones",
+      "name": {
+        "hu": "a felkarcsont belső bütyke",
+        "sv": "mediala epikondylen (humerus)",
+        "la": "epicondylus medialis humeri"
+      },
+      "synonymsHu": "mediális epicondylus",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.epicondylus-lateralis-humeri",
+      "category": "bones",
+      "name": {
+        "hu": "a felkarcsont külső bütyke",
+        "sv": "laterala epikondylen (humerus)",
+        "la": "epicondylus lateralis humeri"
+      },
+      "synonymsHu": "laterális epicondylus",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.olecranon",
+      "category": "bones",
+      "name": {
+        "hu": "könyöknyújtvány",
+        "sv": "armbågsutskottet",
+        "la": "olecranon"
+      },
+      "synonymsHu": "könyökcsúcs",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.processus-coronoideus-ulnae",
+      "category": "bones",
+      "name": {
+        "hu": "a singcsont koronanyúlványa",
+        "sv": "kronutskottet på ulna",
+        "la": "processus coronoideus ulnae"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.caput-radii",
+      "category": "bones",
+      "name": {
+        "hu": "orsócsontfej",
+        "sv": "radiushuvudet",
+        "la": "caput radii"
+      },
+      "synonymsHu": "radiusfej",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.fossa-cubitalis",
+      "category": "basics",
+      "name": {
+        "hu": "könyökhajlat",
+        "sv": "armbågsvecket",
+        "la": "fossa cubitalis"
+      },
+      "synonymsHu": "könyökárok",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.lig-collaterale-ulnare",
+      "category": "joints",
+      "name": {
+        "hu": "ulnaris oldalszalag",
+        "sv": "ulnara kollateralligamentet",
+        "la": "lig. collaterale ulnare"
+      },
+      "synonymsHu": "mediális oldalszalag",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.lig-collaterale-radiale",
+      "category": "joints",
+      "name": {
+        "hu": "radialis oldalszalag",
+        "sv": "radiala kollateralligamentet",
+        "la": "lig. collaterale radiale"
+      },
+      "synonymsHu": "laterális oldalszalag",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.lig-anulare-radii",
+      "category": "joints",
+      "name": {
+        "hu": "az orsócsont gyűrűs szalagja",
+        "sv": "ringligamentet (radius)",
+        "la": "lig. anulare radii"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.membrana-interossea-antebrachii",
+      "category": "joints",
+      "name": {
+        "hu": "alkari csontközti hártya",
+        "sv": "underarmens mellanbensmembran",
+        "la": "membrana interossea antebrachii"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.pronator-teres",
+      "category": "muscles",
+      "name": {
+        "hu": "kerek borintóizom",
+        "sv": "runda pronatormuskeln",
+        "la": "m. pronator teres"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.flexor-carpi-radialis",
+      "category": "muscles",
+      "name": {
+        "hu": "orsócsonti csuklóhajlító izom",
+        "sv": "radiala handledsböjaren",
+        "la": "m. flexor carpi radialis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.palmaris-longus",
+      "category": "muscles",
+      "name": {
+        "hu": "hosszú tenyérizom",
+        "sv": "långa handflatemuskeln",
+        "la": "m. palmaris longus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.flexor-carpi-ulnaris",
+      "category": "muscles",
+      "name": {
+        "hu": "singcsonti csuklóhajlító izom",
+        "sv": "ulnara handledsböjaren",
+        "la": "m. flexor carpi ulnaris"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.flexor-digitorum-superficialis",
+      "category": "muscles",
+      "name": {
+        "hu": "felületes ujjhajlító izom",
+        "sv": "ytliga fingerböjaren",
+        "la": "m. flexor digitorum superficialis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.flexor-digitorum-profundus",
+      "category": "muscles",
+      "name": {
+        "hu": "mély ujjhajlító izom",
+        "sv": "djupa fingerböjaren",
+        "la": "m. flexor digitorum profundus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.flexor-pollicis-longus",
+      "category": "muscles",
+      "name": {
+        "hu": "hosszú hüvelykujj-hajlító izom",
+        "sv": "långa tumböjaren",
+        "la": "m. flexor pollicis longus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.pronator-quadratus",
+      "category": "muscles",
+      "name": {
+        "hu": "négyszögletes borintóizom",
+        "sv": "fyrkantiga pronatormuskeln",
+        "la": "m. pronator quadratus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.brachioradialis",
+      "category": "muscles",
+      "name": {
+        "hu": "felkar-orsócsonti izom",
+        "sv": "brachioradialismuskeln",
+        "la": "m. brachioradialis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.extensor-carpi-radialis-longus",
+      "category": "muscles",
+      "name": {
+        "hu": "hosszú orsócsonti csuklófeszítő izom",
+        "sv": "långa radiala handledssträckaren",
+        "la": "m. extensor carpi radialis longus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.extensor-carpi-radialis-brevis",
+      "category": "muscles",
+      "name": {
+        "hu": "rövid orsócsonti csuklófeszítő izom",
+        "sv": "korta radiala handledssträckaren",
+        "la": "m. extensor carpi radialis brevis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.extensor-digitorum",
+      "category": "muscles",
+      "name": {
+        "hu": "közös ujjfeszítő izom",
+        "sv": "gemensamma fingersträckaren",
+        "la": "m. extensor digitorum"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.extensor-digiti-minimi",
+      "category": "muscles",
+      "name": {
+        "hu": "kisujjfeszítő izom",
+        "sv": "lillfingersträckaren",
+        "la": "m. extensor digiti minimi"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.extensor-carpi-ulnaris",
+      "category": "muscles",
+      "name": {
+        "hu": "singcsonti csuklófeszítő izom",
+        "sv": "ulnara handledssträckaren",
+        "la": "m. extensor carpi ulnaris"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.supinator",
+      "category": "muscles",
+      "name": {
+        "hu": "hanyintóizom",
+        "sv": "supinatormuskeln",
+        "la": "m. supinator"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.abductor-pollicis-longus",
+      "category": "muscles",
+      "name": {
+        "hu": "hosszú hüvelykujj-távolító izom",
+        "sv": "långa tumutåtföraren",
+        "la": "m. abductor pollicis longus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.extensor-pollicis-brevis",
+      "category": "muscles",
+      "name": {
+        "hu": "rövid hüvelykujj-feszítő izom",
+        "sv": "korta tumsträckaren",
+        "la": "m. extensor pollicis brevis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.extensor-pollicis-longus",
+      "category": "muscles",
+      "name": {
+        "hu": "hosszú hüvelykujj-feszítő izom",
+        "sv": "långa tumsträckaren",
+        "la": "m. extensor pollicis longus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.extensor-indicis",
+      "category": "muscles",
+      "name": {
+        "hu": "mutatóujj-feszítő izom",
+        "sv": "pekfingersträckaren",
+        "la": "m. extensor indicis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.articulatio-radiocarpalis-et-mediocarpalis",
+      "category": "joints",
+      "name": {
+        "hu": "csuklóízület",
+        "sv": "handleden",
+        "la": "articulatio radiocarpalis et mediocarpalis"
+      },
+      "synonymsHu": "csukló",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.processus-styloideus-radii",
+      "category": "bones",
+      "name": {
+        "hu": "orsócsont bökőnyúlványa",
+        "sv": "strålbenets griffelutskott",
+        "la": "processus styloideus radii"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.processus-styloideus-ulnae",
+      "category": "bones",
+      "name": {
+        "hu": "singcsont bökőnyúlványa",
+        "sv": "armbågsbenets griffelutskott",
+        "la": "processus styloideus ulnae"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.retinaculum-flexorum",
+      "category": "muscles",
+      "name": {
+        "hu": "hajlítóín-rögzítő szalag",
+        "sv": "flexorretinaklet",
+        "la": "retinaculum flexorum"
+      },
+      "synonymsHu": "lig. carpi transversum",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.retinaculum-extensorum",
+      "category": "muscles",
+      "name": {
+        "hu": "feszítőín-rögzítő szalag",
+        "sv": "extensorretinaklet",
+        "la": "retinaculum extensorum"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.fovea-radialis",
+      "category": "bones",
+      "name": {
+        "hu": "anatómiai tubákszelence",
+        "sv": "anatomiska snusdosan",
+        "la": "fovea radialis"
+      },
+      "synonymsHu": "tabatière anatomique",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.tuberositas-radii",
+      "category": "bones",
+      "name": {
+        "hu": "orsócsont-érdesség",
+        "sv": "strålbensknölen",
+        "la": "tuberositas radii"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.interosseus-anterior",
+      "category": "nervous",
+      "name": {
+        "hu": "elülső csontközi ideg",
+        "sv": "främre interosseusnerven",
+        "la": "n. interosseus anterior"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.interosseus-posterior",
+      "category": "nervous",
+      "name": {
+        "hu": "hátsó csontközi ideg",
+        "sv": "bakre interosseusnerven",
+        "la": "n. interosseus posterior"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.abductor-pollicis-brevis",
+      "category": "muscles",
+      "name": {
+        "hu": "rövid hüvelykujj-távolító izom",
+        "sv": "korta tumutåtförarmuskeln",
+        "la": "m. abductor pollicis brevis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.flexor-pollicis-brevis",
+      "category": "muscles",
+      "name": {
+        "hu": "rövid hüvelykujj-hajlító izom",
+        "sv": "korta tumböjarmuskeln",
+        "la": "m. flexor pollicis brevis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.opponens-pollicis",
+      "category": "muscles",
+      "name": {
+        "hu": "hüvelykujj-szembefordító izom",
+        "sv": "tummens motställarmuskel",
+        "la": "m. opponens pollicis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.adductor-pollicis",
+      "category": "muscles",
+      "name": {
+        "hu": "hüvelykujj-közelítő izom",
+        "sv": "tummens inåtförarmuskel",
+        "la": "m. adductor pollicis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.abductor-digiti-minimi-manus",
+      "category": "muscles",
+      "name": {
+        "hu": "kisujj-távolító izom (kéz)",
+        "sv": "lillfingrets utåtförarmuskel (handen)",
+        "la": "m. abductor digiti minimi manus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.flexor-digiti-minimi-brevis-manus",
+      "category": "muscles",
+      "name": {
+        "hu": "rövid kisujjhajlító izom (kéz)",
+        "sv": "korta lillfingerböjarmuskeln (handen)",
+        "la": "m. flexor digiti minimi brevis manus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.opponens-digiti-minimi",
+      "category": "muscles",
+      "name": {
+        "hu": "kisujj-szembefordító izom",
+        "sv": "lillfingrets motställarmuskel",
+        "la": "m. opponens digiti minimi"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.lumbricales-manus",
+      "category": "muscles",
+      "name": {
+        "hu": "féregszerű izmok (kéz)",
+        "sv": "maskmusklerna (handen)",
+        "la": "mm. lumbricales manus"
+      },
+      "synonymsHu": "lumbricalisok",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.interossei-dorsales-manus",
+      "category": "muscles",
+      "name": {
+        "hu": "háti csontközi izmok (kéz)",
+        "sv": "dorsala mellanbensmusklerna (handen)",
+        "la": "mm. interossei dorsales manus"
+      },
+      "synonymsHu": "dorsalis interosseusok",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.interossei-palmares",
+      "category": "muscles",
+      "name": {
+        "hu": "tenyéri csontközi izmok",
+        "sv": "palmara mellanbensmusklerna",
+        "la": "mm. interossei palmares"
+      },
+      "synonymsHu": "palmaris interosseusok",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.articulatio-carpometacarpalis-pollicis",
+      "category": "joints",
+      "name": {
+        "hu": "hüvelykujj kéztő-kézközépízülete",
+        "sv": "tummens karpometakarpalled (CMC I)",
+        "la": "articulatio carpometacarpalis pollicis"
+      },
+      "synonymsHu": "CMC I-ízület, nyeregízület",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.articulationes-metacarpophalangeae",
+      "category": "joints",
+      "name": {
+        "hu": "kézközép-ujjízületek (MCP)",
+        "sv": "metakarpofalangeallederna (MCP-lederna)",
+        "la": "articulationes metacarpophalangeae"
+      },
+      "synonymsHu": "MCP-ízületek",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.articulationes-interphalangeae-manus",
+      "category": "joints",
+      "name": {
+        "hu": "kéz ujjízületei (PIP és DIP)",
+        "sv": "handens interfalangealleder (PIP och DIP)",
+        "la": "articulationes interphalangeae manus"
+      },
+      "synonymsHu": "PIP- és DIP-ízületek",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.os-scaphoideum",
+      "category": "bones",
+      "name": {
+        "hu": "sajkacsont",
+        "sv": "båtbenet",
+        "la": "os scaphoideum"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.os-lunatum",
+      "category": "bones",
+      "name": {
+        "hu": "holdascsont",
+        "sv": "månbenet",
+        "la": "os lunatum"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.os-triquetrum",
+      "category": "bones",
+      "name": {
+        "hu": "háromszögletű csont",
+        "sv": "trekantiga benet",
+        "la": "os triquetrum"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.os-pisiforme",
+      "category": "bones",
+      "name": {
+        "hu": "borsócsont",
+        "sv": "ärtbenet",
+        "la": "os pisiforme"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.os-trapezium",
+      "category": "bones",
+      "name": {
+        "hu": "nagy sokszögletű csont",
+        "sv": "stora mångkantsbenet",
+        "la": "os trapezium"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.os-trapezoideum",
+      "category": "bones",
+      "name": {
+        "hu": "kis sokszögletű csont",
+        "sv": "lilla mångkantsbenet",
+        "la": "os trapezoideum"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.os-capitatum",
+      "category": "bones",
+      "name": {
+        "hu": "fejescsont",
+        "sv": "huvudbenet",
+        "la": "os capitatum"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.os-hamatum",
+      "category": "bones",
+      "name": {
+        "hu": "horgascsont",
+        "sv": "hakbenet",
+        "la": "os hamatum"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.ossa-metacarpi",
+      "category": "bones",
+      "name": {
+        "hu": "kézközépcsontok",
+        "sv": "mellanhandsbenen",
+        "la": "ossa metacarpi"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.phalanges-manus",
+      "category": "bones",
+      "name": {
+        "hu": "ujjpercek (kéz)",
+        "sv": "fingrarnas falanger",
+        "la": "phalanges manus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.aponeurosis-palmaris",
+      "category": "muscles",
+      "name": {
+        "hu": "tenyéri bőnye",
+        "sv": "palmaraponeurosen",
+        "la": "aponeurosis palmaris"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.canalis-ulnaris",
+      "category": "nervous",
+      "name": {
+        "hu": "Guyon-csatorna",
+        "sv": "Guyons kanal",
+        "la": "canalis ulnaris"
+      },
+      "synonymsHu": "ulnaris csatorna",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
     }
   ]
 }

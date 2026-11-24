@@ -3,7 +3,7 @@
 A trilingual (Hungarian · Swedish · Latin) anatomy study app for physiotherapy students, aligned with
 the Karolinska Institutet Fysioterapeutprogrammet (1FY26). It installs on a phone and works offline.
 
-Status: **Phase 0 (Foundation)** of the [roadmap](docs/roadmap.html). All content is an unreviewed draft.
+Status: Phase 0 (Foundation) is done, and Phase 1 has started: the upper limb has 4 modules (shoulder girdle, arm and elbow, forearm and wrist, hand). All content is an unreviewed draft. Start reviewing with [docs/review-notes.md](docs/review-notes.md).
 
 ## Run it
 
@@ -21,6 +21,7 @@ Then open http://localhost:8000. The build checks the content first and refuses 
 | `python3 tools/build.py --check` | Check content only |
 | `python3 tools/build.py --serve` | Build and serve `dist/` on port 8000 |
 | `python3 -m unittest discover tests` | Test the content checks |
+| `python3 tools/merge_drafts.py build/drafts/x.json` | Merge a drafted module (module, structures, questions, terms) into `content/` |
 | `python3 tools/make_icons.py` | Redraw the app icons |
 
 ## Project layout
@@ -36,10 +37,10 @@ content/             the learning content — the source of truth
   terms.json         trilingual dictionary
   structures.json    muscles, joints and nerves (datasheets)
   cranial-nerves.json
-  modules.json       modules with their lessons (shoulder girdle, plexus brachialis)
+  modules.json       modules: body region, order, lessons, grouped datasheets
   questions.json     quiz questions with explanations
   ki-programme.json  KI 1FY26 courses, credits and topics
-  taxonomy.json      dictionary categories and quiz topics
+  taxonomy.json      dictionary categories, quiz topics, body regions
 tools/build.py       content checks + build
 tests/               tests for the content checks
 prototype/           the v0.3 single-page prototype, kept for reference
@@ -57,9 +58,10 @@ The build fails unless all of these hold:
 - Every record has `review.status`: `draft`, `in-review` or `reviewed`. A `reviewed` record must name
   the reviewer (`review.by`) and the date (`review.date`). The app shows a "Vázlat · Utkast" badge on
   anything not yet reviewed.
+- Every module has a body region, an order, a quiz topic with the same id, and (if it groups its datasheets) groups that list exactly its structures.
 - KI semesters add up to 30 hp each and 180 hp in total.
 
-Record ids are namespaced: `t.` terms, `m.` muscles, `art.` joints, `n.` nerves, `cn.` cranial nerves.
+Modules without a custom page get one automatically at `#modul-<id>`. Record ids are namespaced: `t.` terms, `m.` muscles, `art.` joints, `n.` nerves, `cn.` cranial nerves.
 
 ## Moving progress between devices
 

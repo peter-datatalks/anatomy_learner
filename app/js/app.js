@@ -100,7 +100,7 @@ function biHtml(hu,sv){
   if(lang==='sv')return `<div lang="sv" style="display:flex;flex-direction:column;gap:12px">${sv}</div>`;
   return `<div class="bi-cols"><div><span class="lang-tag">MAGYAR</span>${hu}</div><div lang="sv"><span class="lang-tag sv">SVENSKA</span>${sv}</div></div>`;
 }
-const layerHtml=(mod,k)=>biHtml(mod==='vall'?LAYERS[k]:PX_LAYERS[k],SV.layers[mod]&&SV.layers[mod][k]);
+const layerHtml=(mod,k)=>{const l=(MOD_LESSONS[mod]||{})[k]||{hu:'',sv:''};return biHtml(l.hu,l.sv)};
 function langSwitch(){return [['hu','HU'],['both','HU + SV'],['sv','SV']].map(([k,l])=>`<button data-lang-set="${k}" aria-pressed="${lang===k}">${l}</button>`).join('')}
 document.addEventListener('click',e=>{const b=e.target.closest('[data-lang-set]');if(!b)return;lang=b.dataset.langSet;store.set('lang',lang);
   render()});
@@ -111,7 +111,7 @@ const PILLAR_COLORS=['muscle','nerve','accent','joint','bone'];
 function pillarProgress(){
   const frac=(qs,min)=>qs.length?qs.filter(q=>srs[q.id]&&srs[q.id].box>=min).length/qs.length:0;
   return [
-    [u('Anatómia és fiziológia','Anatomi och fysiologi'),frac(Q.filter(q=>q.topic==='vall'||q.topic==='term'),2)],
+    [u('Anatómia és fiziológia','Anatomi och fysiologi'),frac(Q.filter(q=>q.topic==='term'||(MODS[q.topic]&&MODS[q.topic].region!=='nervous')),2)],
     [u('Neuroanatómia','Neuroanatomi'),frac(Q.filter(q=>['agyideg','plexus','neuro'].includes(q.topic)),1)],
     [u('KI-útvonal (tartalommal)','KI-studieväg (med innehåll)'),KI.filter(c=>c.links).length/KI.length],
     [u('Konduktori, rehab.','Konduktiv pedagogik, rehab.'),0],
@@ -147,24 +147,31 @@ function fallbackSpeak(text,lang){
 }
 
 /* ============================== NAV ============================== */
-const ROUTES=[
-  ['attekintes','Áttekintés',IC.home,'Tanulás','Översikt'],
-  ['szotar','Szótár',IC.dict,'','Ordlista'],
-  ['vall','Vállöv',IC.mod,'Modulok','Skuldergördel'],
-  ['plexus','Plexus',IC.plexus,'','Plexus'],
-  ['agyidegek','Agyidegek',IC.brain,'','Kranialnerver'],
-  ['ki-utvonal','KI-útvonal',IC.path,'','KI-studieväg'],
-  ['kviz','Kvíz',IC.quiz,'Gyakorlás','Quiz'],
-  ['statisztika','Statisztika',IC.stats,'','Statistik']
-];
+// [route, label hu, icon, group heading {hu,sv} or null, label sv]
+function navRoutes(){
+  const r=[
+    ['attekintes','Áttekintés',IC.home,{hu:'Tanulás',sv:'Lärande'},'Översikt'],
+    ['szotar','Szótár',IC.dict,null,'Ordlista'],
+    ['ki-utvonal','KI-útvonal',IC.path,null,'KI-studieväg']];
+  Object.entries(REGIONS).forEach(([rid,reg])=>{
+    const mods=Object.values(MODS).filter(m=>m.region===rid).sort((a,b)=>a.order-b.order);
+    const items=mods.map(m=>[moduleRoute(m.id),(m.navLabel||m.title).hu,rid==='nervous'?IC.plexus:IC.mod,null,(m.navLabel||m.title).sv]);
+    if(rid==='nervous')items.push(['agyidegek','Agyidegek',IC.brain,null,'Kranialnerver']);
+    if(items.length){items[0][3]=reg;r.push(...items)}
+  });
+  r.push(['kviz','Kvíz',IC.quiz,{hu:'Gyakorlás',sv:'Övning'},'Quiz'],['statisztika','Statisztika',IC.stats,null,'Statistik']);
+  return r;
+}
+const TABBAR=[['attekintes','Áttekintés',IC.home,'Översikt'],['szotar','Szótár',IC.dict,'Ordlista'],['modulok','Modulok',IC.mod,'Moduler'],['kviz','Kvíz',IC.quiz,'Quiz'],['ki-utvonal','KI',IC.path,'KI']];
 function renderNav(cur){
   const due=dueList().length;
   $('#langRail').innerHTML=langSwitch();
   $('#railFoot').textContent=u('Prototípus · oktatási célú tartalom, nem helyettesíti a klinikai döntést. A HU/SV fordítások szakmai ellenőrzésre várnak.','Prototyp · innehåll för utbildning, ersätter inte klinisk bedömning. HU/SV-översättningarna väntar på fackgranskning.');
-  $('#nav').innerHTML=ROUTES.map(([id,label,ic,grp,sv])=>(grp?`<div class="grp">${u(grp,GRP_SV[grp])}</div>`:'')+
+  $('#nav').innerHTML=navRoutes().map(([id,label,ic,grp,sv])=>(grp?`<div class="grp">${esc(u(grp.hu,grp.sv))}</div>`:'')+
     `<a href="#${id}" ${cur===id?'aria-current="page"':''}>${ic}<span class="lbl">${lang==='sv'?sv:label}${lang==='both'&&sv!==label?`<span class="sv">${sv}</span>`:''}</span>${id==='kviz'&&due?`<span class="due-pill tnum">${due}</span>`:''}</a>`).join('');
-  $('#tabbar').innerHTML=ROUTES.filter(r=>r[0]!=='statisztika').map(([id,label,ic,grp,sv])=>
-    `<a href="#${id}" ${cur===id?'aria-current="page"':''}>${ic}<span>${lang==='sv'?sv:label}</span>${id==='kviz'&&due?`<span class="due-pill tnum">${due}</span>`:''}</a>`).join('');
+  const inModules=cur==='modulok'||cur==='agyidegek'||cur.startsWith('modul-')||Object.keys(CUSTOM_MODULE_VIEWS).includes(cur);
+  $('#tabbar').innerHTML=TABBAR.map(([id,label,ic,sv])=>
+    `<a href="#${id}" ${cur===id||(id==='modulok'&&inModules)?'aria-current="page"':''}>${ic}<span>${lang==='sv'?sv:label}</span>${id==='kviz'&&due?`<span class="due-pill tnum">${due}</span>`:''}</a>`).join('');
 }
 
 /* ============================== VIEWS ============================== */
@@ -191,7 +198,7 @@ function viewHome(){
   <section class="stack">
     <h2>${lb('Az öt pillér','De fem pelarna')}</h2>
     <div class="pillars">
-      <a class="pillar" href="#vall"><span class="n">1</span><h3>${u('Anatómia és fiziológia','Anatomi och fysiologi')}</h3><p class="small muted">${u('Elérhető: Vállöv és vállízület, 8 adatlap','Tillgängligt: skuldergördel och axelled, 8 faktablad')}</p><div class="bar"><i style="width:${Math.round(mastered/Q.length*100)}%"></i></div></a>
+      <a class="pillar" href="#modulok"><span class="n">1</span><h3>${u('Anatómia és fiziológia','Anatomi och fysiologi')}</h3><p class="small muted">${(()=>{const ms=Object.values(MODS).filter(m=>m.region!=='nervous');const n=ms.reduce((a,m)=>a+m.structures.length,0);return u(`Elérhető: ${ms.length} modul, ${n} adatlap`,`Tillgängligt: ${ms.length} moduler, ${n} faktablad`)})()}</p><div class="bar"><i style="width:${Math.round(mastered/Q.length*100)}%"></i></div></a>
       <a class="pillar" href="#agyidegek"><span class="n">2</span><h3>${u('Neuroanatómia és mozgástudomány','Neuroanatomi och rörelsevetenskap')}</h3><p class="small muted">${u('Elérhető: plexus brachialis, a 12 agyideg','Tillgängligt: plexus brachialis, de 12 kranialnerverna')}</p><div class="bar"><i style="width:${Math.round(Q.filter(q=>(q.topic==='agyideg'||q.topic==='plexus')&&srs[q.id]&&srs[q.id].box>=1).length/Q.filter(q=>q.topic==='agyideg'||q.topic==='plexus').length*100)}%"></i></div></a>
       <a class="pillar" href="#ki-utvonal"><span class="n">3</span><h3>KI Fysioterapeutprogrammet</h3><p class="small muted">${u('6 félév, 22 kurzus, 180 hp','6 terminer, 22 kurser, 180 hp')}</p></a>
       <div class="pillar soon"><span class="n">4</span><h3>${u('Konduktori és rehabilitációs tudás','Konduktiv pedagogik och rehabilitering')}</h3><p class="small muted">${u('Tervezett: CP, stroke, Parkinson-kór, MS','Planerat: CP, stroke, Parkinsons sjukdom, MS')}</p></div>
@@ -305,6 +312,55 @@ function bindShoulder(){
     document.querySelectorAll('#layers button').forEach(x=>x.setAttribute('aria-pressed',x===b));$('#layerBody').innerHTML=layerHtml('vall',modState.layer)};
   $('#sheetBtns').onclick=e=>{const b=e.target.closest('button');if(!b)return;modState.sheet=b.dataset.s;
     document.querySelectorAll('#sheetBtns button').forEach(x=>x.setAttribute('aria-pressed',x===b));renderSheet()};
+}
+
+/* --- Generic module page (any module without a custom view) --- */
+const CUSTOM_MODULE_VIEWS={vall:'vall',plexus:'plexus'};
+const moduleRoute=id=>CUSTOM_MODULE_VIEWS[id]||'modul-'+id;
+const genState={};
+function modStateFor(id){return genState[id]||(genState[id]={layer:'alap',sheet:MODS[id].structures[0]})}
+const REGION_TINT={'upper-limb':'muscle','lower-limb':'bone','trunk':'joint','head-neck':'joint',nervous:'nerve'};
+function sheetBtn(k,pressed){const s=SHEETS[k];return `<button class="sheet-btn" data-s="${k}" aria-pressed="${pressed}"><span class="chip ${CAT[s.kind].cls}"><span class="dot" style="background:${CAT[s.kind].color}"></span>${s.kind==='izom'?u('Izom','Muskel'):s.kind==='ideg'?u('Ideg','Nerv'):u('Ízület','Led')}</span><span class="la">${esc(s.la)}</span><span class="small muted">${esc(s.hu)} · ${esc(s.sv)}</span></button>`}
+function viewModule(id){
+  const m=MODS[id],st=modStateFor(id),reg=REGIONS[m.region]||{hu:'',sv:''};
+  const qn=Q.filter(q=>q.topic===id).length;
+  const groups=m.structureGroups&&m.structureGroups.length?m.structureGroups:[{title:{hu:'Adatlapok',sv:'Faktablad'},structures:m.structures}];
+  return `
+  <div class="mod-head plate ${REGION_TINT[m.region]||''}" data-wm="${esc(m.latin)}"><span class="eyebrow">${esc(m.kiCourses.join(' · '))} · ${esc(u(reg.hu,reg.sv))}</span>
+    ${H1(m.title.hu,m.title.sv)}${tri(m.termName.hu,m.termName.sv,m.termName.la)}</div>
+  <section class="card stack">
+    <div class="row" style="justify-content:space-between"><h2>${lb('Tananyag','Kursinnehåll')}</h2>
+      <div class="seg" id="genLayers">${[['alap',u('Kezdő','Grund')],['egyetem',u('Egyetemi','Universitet')],['klinika',u('Klinikai','Klinik')]].map(([k,l])=>`<button data-l="${k}" aria-pressed="${st.layer===k}">${l}</button>`).join('')}</div></div>
+    <div class="layer-body" id="genLayerBody">${layerHtml(id,st.layer)}</div>
+  </section>
+  <section class="stack">
+    <div class="row" style="justify-content:space-between"><h2>${lb('Adatlapok','Faktablad')}</h2>${qn?`<button class="btn" id="modQuiz">${u('A modul gyakorlása','Öva på modulen')} (${qn})</button>`:''}</div>
+    <div class="stack" id="genBtns">${groups.map(g=>`<div class="stack" style="gap:8px"><h3 class="eyebrow">${lb(g.title.hu,g.title.sv)}</h3><div class="sheets">${g.structures.map(k=>sheetBtn(k,st.sheet===k)).join('')}</div></div>`).join('')}</div>
+    <div class="card" id="genSheet"></div>
+  </section>`;
+}
+function bindModule(id){
+  const st=modStateFor(id);
+  renderSheetInto($('#genSheet'),st.sheet);
+  $('#genLayers').onclick=e=>{const b=e.target.closest('button');if(!b)return;st.layer=b.dataset.l;
+    document.querySelectorAll('#genLayers button').forEach(x=>x.setAttribute('aria-pressed',x===b));$('#genLayerBody').innerHTML=layerHtml(id,st.layer)};
+  $('#genBtns').onclick=e=>{const b=e.target.closest('[data-s]');if(!b)return;st.sheet=b.dataset.s;
+    document.querySelectorAll('#genBtns [data-s]').forEach(x=>x.setAttribute('aria-pressed',x===b));renderSheetInto($('#genSheet'),st.sheet);
+    if(window.innerWidth<820)$('#genSheet').scrollIntoView({behavior:'smooth',block:'start'})};
+  const mq=$('#modQuiz');if(mq)mq.onclick=()=>{quizState=newQuiz(shuffle(Q.filter(q=>q.topic===id)).map(q=>q.id),'gyak');location.hash='kviz'};
+}
+function viewHub(){
+  const card=(href,title,latin,nStruct,qs,tint)=>{const seen=qs.filter(q=>srs[q.id]).length;
+    return `<a class="pillar" href="#${href}" style="--pc:var(--${tint});--pcs:var(--${tint}-soft)"><span class="la muted">${esc(latin)}</span><h3>${esc(title)}</h3>
+      <p class="small muted">${nStruct} ${u('adatlap','faktablad')} · ${qs.length} ${u('kérdés','frågor')}</p><div class="bar"><i style="width:${qs.length?Math.round(seen/qs.length*100):0}%"></i></div></a>`};
+  return `<div class="mod-head plate" data-wm="corpus humanum"><span class="eyebrow">${u('Pillér 1–2 · Testtájak szerint','Pelare 1–2 · Efter kroppsregion')}</span>${H1('Modulok','Moduler')}
+    <p class="muted">${u('A sáv azt mutatja, a modul kérdéseiből mennyit láttál már.','Stapeln visar hur stor del av modulens frågor du redan har sett.')}</p></div>
+  ${Object.entries(REGIONS).map(([rid,reg])=>{
+    const mods=Object.values(MODS).filter(m=>m.region===rid).sort((a,b)=>a.order-b.order);
+    const cards=mods.map(m=>card(moduleRoute(m.id),u(m.title.hu,m.title.sv),m.latin,m.structures.length,Q.filter(q=>q.topic===m.id),REGION_TINT[rid]||'accent'));
+    if(rid==='nervous')cards.push(card('agyidegek',u('A 12 agyideg','De tolv kranialnerverna'),'nervi craniales',CN.length,Q.filter(q=>q.topic==='agyideg'),'nerve'));
+    return cards.length?`<section class="stack"><h2>${lb(reg.hu,reg.sv)}</h2><div class="hub-grid">${cards.join('')}</div></section>`:'';
+  }).join('')}`;
 }
 
 /* --- Plexus brachialis --- */
@@ -568,7 +624,7 @@ function renderQ(){
       <div class="row">${lk?`<a class="btn ghost" href="${lk[0]}" data-open="${lk[1]}">${u('Tananyag megnyitása','Öppna kursinnehållet')}</a>`:''}<button class="btn primary" id="nextQ">${quizState.i+1<quizState.ids.length?u('Következő kérdés','Nästa fråga'):u('Eredmény','Resultat')}</button></div></div>
       ${!ok?`<div data-needs-ai ${sampleFn?'':'hidden'}><button class="btn" id="explain">${u('Magyarázd el másképp (AI-tanár)','Förklara på ett annat sätt (AI-lärare)')}</button><div class="ans tutor" id="explainOut" hidden style="white-space:pre-wrap"></div></div>`:''}</div>`;
     $('#nextQ').onclick=next;$('#nextQ').focus();
-    const op=document.querySelector('[data-open]');if(op)op.onclick=()=>{if(lk[0]==='#vall'&&SHEETS[lk[1]])modState.sheet=lk[1];if(lk[0]==='#agyidegek'&&lk[1])cnSel=lk[1];if(lk[0]==='#plexus'&&SHEETS[lk[1]])plexSel=lk[1]};
+    const op=document.querySelector('[data-open]');if(op)op.onclick=()=>{if(lk[0].startsWith('#modul-')&&SHEETS[lk[1]])modStateFor(lk[0].slice(7)).sheet=lk[1];if(lk[0]==='#vall'&&SHEETS[lk[1]])modState.sheet=lk[1];if(lk[0]==='#agyidegek'&&lk[1])cnSel=lk[1];if(lk[0]==='#plexus'&&SHEETS[lk[1]])plexSel=lk[1]};
     const ex=$('#explain');if(ex)ex.onclick=async()=>{
       const out=$('#explainOut');out.hidden=false;out.textContent=u('Gondolkodom…','Tänker…');ex.disabled=true;
       try{const r=await sampleFn(`Egy gyógytornász-hallgató hibásan válaszolt erre a kérdésre. Magyarázd el másképp, ${lang==='sv'?'svédül':lang==='both'?'magyarul, majd svédül is':'magyarul'}, nyelvenként legfeljebb 120 szóban, sima szövegként, egy szemléletes hasonlattal vagy emlékeztetővel. Add meg a kulcsfogalmak latin és svéd alakját.\nKérdés: ${q.q}\nHelyes magyarázat: ${q.exp}`,{modelTier:'quick',onText:({text})=>{out.textContent=text}});out.textContent=r.text}
@@ -634,15 +690,18 @@ function bindStats(){
 }
 
 /* ============================== ROUTER ============================== */
-const VIEWS={attekintes:[viewHome],szotar:[viewDict,bindDict],vall:[viewShoulder,bindShoulder],plexus:[viewPlexus,bindPlexus],agyidegek:[viewCN,bindCN],'ki-utvonal':[viewKI],kviz:[viewQuiz,bindQuiz],statisztika:[viewStats,bindStats]};
+const VIEWS={modulok:[viewHub],attekintes:[viewHome],szotar:[viewDict,bindDict],vall:[viewShoulder,bindShoulder],plexus:[viewPlexus,bindPlexus],agyidegek:[viewCN,bindCN],'ki-utvonal':[viewKI],kviz:[viewQuiz,bindQuiz],statisztika:[viewStats,bindStats]};
 function render(){
-  const id=(location.hash||'').slice(1);const key=VIEWS[id]?id:'attekintes';
+  const id=(location.hash||'').slice(1);
+  const modId=id.startsWith('modul-')?id.slice(6):null;
+  const key=VIEWS[id]?id:(modId&&MODS[modId]&&!CUSTOM_MODULE_VIEWS[modId]?id:'attekintes');
+  const view=VIEWS[key]||[()=>viewModule(modId),()=>bindModule(modId)];
   if(key!=='kviz')clearInterval(timerInt);
   // an answered question is finished: move on instead of showing it locked
   if(key==='kviz'&&quizState&&quizState.answered){quizState.i++;quizState.answered=false;quizState.order=null;quizState.matchOpts=null}
   renderNav(key);
-  $('#view').innerHTML=`<div class="lang-mobile"><div class="seg">${langSwitch()}</div></div>`+VIEWS[key][0]();
-  if(VIEWS[key][1])VIEWS[key][1]();
+  $('#view').innerHTML=`<div class="lang-mobile"><div class="seg">${langSwitch()}</div></div>`+view[0]();
+  if(view[1])view[1]();
 }
 window.addEventListener('hashchange',()=>{if(TERMS){render();window.scrollTo(0,0)}});
 
@@ -650,7 +709,7 @@ window.addEventListener('hashchange',()=>{if(TERMS){render();window.scrollTo(0,0
    content.json is built from content/*.json by tools/build.py. The views below were
    written against the prototype's in-memory shapes, so hydrate() maps the content
    model onto those shapes. New views should read BUNDLE directly. */
-let BUNDLE=null;
+let BUNDLE=null,MODS={},MOD_LESSONS={},REGIONS={};
 const REVIEW={};
 const CAT_KEY={basics:'alap',bones:'csont',joints:'izulet',muscles:'izom',nervous:'ideg',physiology:'elettan'};
 const KIND={muscle:'izom',joint:'izulet',nerve:'ideg'};
@@ -681,6 +740,9 @@ function hydrate(b){
     SHEETS[s.id]=o;sv.sheets[s.id]=v;rv(s.id,s.review);
   });
   // modules
+  MODS={};MOD_LESSONS={};
+  b.modules.forEach(m=>{MODS[m.id]=m;MOD_LESSONS[m.id]={};Object.entries(m.lessons||{}).forEach(([k,p])=>{MOD_LESSONS[m.id][LESSON_KEY[k]]=p})});
+  REGIONS=b.taxonomy.regions||{};
   const mod=id=>b.modules.find(m=>m.id===id)||{};
   const vall=mod('vall'),plex=mod('plexus');
   SHEET_ORDER=vall.structures||[];
@@ -723,7 +785,8 @@ function reviewBadge(id){
 async function boot(){
   $('#view').innerHTML=`<p class="muted" style="padding:24px 0">${u('Tananyag betöltése…','Läser in kursinnehåll…')}</p>`;
   try{
-    const r=await fetch('content.json');
+    const v=(document.querySelector('meta[name=build]')||{}).content||'dev';
+    const r=await fetch('content.json?v='+encodeURIComponent(v));
     if(!r.ok)throw new Error('HTTP '+r.status);
     hydrate(await r.json());
     render();
