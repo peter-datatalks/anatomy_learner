@@ -309,6 +309,308 @@
         "kez",
         "plexus"
       ]
+    },
+    {
+      "id": "lower-limb",
+      "title": {
+        "hu": "Jobb alsó végtag",
+        "sv": "Höger nedre extremitet"
+      },
+      "source": {
+        "name": "BodyParts3D",
+        "version": "4.0 (isa, 99% reduction)",
+        "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/download.html",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "BodyParts3D, © The Database Center for Life Science, licensed under CC Attribution 4.0 International",
+        "changes": "Right lower limb parts (and the sacrum) selected, merged per structure and converted to a compact binary mesh format."
+      },
+      "bones": {
+        "hip-bone": [
+          "right hip bone"
+        ],
+        "sacrum": [
+          "sacrum"
+        ],
+        "femur": [
+          "right femur"
+        ],
+        "patella": [
+          "right patella"
+        ],
+        "tibia": [
+          "right tibia"
+        ],
+        "fibula": [
+          "right fibula"
+        ],
+        "talus": [
+          "right talus"
+        ],
+        "calcaneus": [
+          "right calcaneus"
+        ],
+        "navicular": [
+          "navicular bone of right foot"
+        ],
+        "cuboid": [
+          "right cuboid bone"
+        ],
+        "cuneiform-medial": [
+          "right medial cuneiform bone"
+        ],
+        "cuneiform-intermediate": [
+          "right intermediate cuneiform bone"
+        ],
+        "cuneiform-lateral": [
+          "right lateral cuneiform bone"
+        ],
+        "mtfirst": [
+          "right first metatarsal bone"
+        ],
+        "mtsecond": [
+          "right second metatarsal bone"
+        ],
+        "mtthird": [
+          "right third metatarsal bone"
+        ],
+        "mtfourth": [
+          "right fourth metatarsal bone"
+        ],
+        "mtfifth": [
+          "right fifth metatarsal bone"
+        ],
+        "proximal-big-toe": [
+          "proximal phalanx of right big toe"
+        ],
+        "distal-big-toe": [
+          "distal phalanx of right big toe"
+        ],
+        "proximal-second-toe": [
+          "proximal phalanx of right second toe"
+        ],
+        "middle-second-toe": [
+          "middle phalanx of right second toe"
+        ],
+        "distal-second-toe": [
+          "distal phalanx of right second toe"
+        ],
+        "proximal-third-toe": [
+          "proximal phalanx of right third toe"
+        ],
+        "middle-third-toe": [
+          "middle phalanx of right third toe"
+        ],
+        "distal-third-toe": [
+          "distal phalanx of right third toe"
+        ],
+        "proximal-fourth-toe": [
+          "proximal phalanx of right fourth toe"
+        ],
+        "middle-fourth-toe": [
+          "middle phalanx of right fourth toe"
+        ],
+        "distal-fourth-toe": [
+          "distal phalanx of right fourth toe"
+        ],
+        "proximal-little-toe": [
+          "proximal phalanx of right little toe"
+        ],
+        "middle-little-toe": [
+          "middle phalanx of right little toe"
+        ],
+        "distal-little-toe": [
+          "distal phalanx of right little toe"
+        ]
+      },
+      "muscles": {
+        "m.gluteus-maximus": [
+          "right gluteus maximus"
+        ],
+        "m.gluteus-medius": [
+          "right gluteus medius"
+        ],
+        "m.gluteus-minimus": [
+          "right gluteus minimus"
+        ],
+        "m.tensor-fasciae-latae": [
+          "right tensor fasciae latae"
+        ],
+        "m.piriformis": [
+          "right piriformis"
+        ],
+        "m.obturator-internus": [
+          "right obturator internus"
+        ],
+        "m.gemellus-superior": [
+          "right gemellus superior"
+        ],
+        "m.gemellus-inferior": [
+          "right gemellus inferior"
+        ],
+        "m.quadratus-femoris": [
+          "right quadratus femoris"
+        ],
+        "m.obturator-externus": [
+          "right obturator externus"
+        ],
+        "m.psoas-major": [
+          "right psoas major"
+        ],
+        "m.iliacus": [
+          "right iliacus"
+        ],
+        "m.pectineus": [
+          "right pectineus"
+        ],
+        "m.adductor-longus": [
+          "right adductor longus"
+        ],
+        "m.adductor-brevis": [
+          "right adductor brevis"
+        ],
+        "m.adductor-magnus": [
+          "right adductor magnus"
+        ],
+        "m.gracilis": [
+          "right gracilis"
+        ],
+        "m.sartorius": [
+          "right sartorius"
+        ],
+        "m.rectus-femoris": [
+          "right rectus femoris"
+        ],
+        "m.vastus-lateralis": [
+          "right vastus lateralis"
+        ],
+        "m.vastus-medialis": [
+          "right vastus medialis"
+        ],
+        "m.vastus-intermedius": [
+          "right vastus intermedius"
+        ],
+        "m.biceps-femoris": [
+          "long head of right biceps femoris",
+          "short head of right biceps femoris"
+        ],
+        "m.semitendinosus": [
+          "right semitendinosus"
+        ],
+        "m.semimembranosus": [
+          "right semimembranosus"
+        ],
+        "m.popliteus": [
+          "right popliteus"
+        ],
+        "m.tibialis-anterior": [
+          "right tibialis anterior"
+        ],
+        "m.extensor-hallucis-longus": [
+          "right extensor hallucis longus"
+        ],
+        "m.extensor-digitorum-longus": [
+          "right extensor digitorum longus"
+        ],
+        "m.fibularis-tertius": [
+          "right fibularis tertius"
+        ],
+        "m.fibularis-longus": [
+          "right fibularis longus"
+        ],
+        "m.fibularis-brevis": [
+          "right fibularis brevis"
+        ],
+        "m.gastrocnemius": [
+          "lateral head of right gastrocnemius",
+          "medial head of right gastrocnemius"
+        ],
+        "m.soleus": [
+          "right soleus"
+        ],
+        "m.plantaris": [
+          "right plantaris"
+        ],
+        "m.tibialis-posterior": [
+          "right tibialis posterior"
+        ],
+        "m.flexor-hallucis-longus": [
+          "right flexor hallucis longus"
+        ],
+        "m.flexor-digitorum-longus": [
+          "right flexor digitorum longus"
+        ],
+        "m.extensor-hallucis-brevis": [
+          "right extensor hallucis brevis"
+        ],
+        "m.abductor-hallucis": [
+          "right abductor hallucis"
+        ],
+        "m.flexor-digitorum-brevis": [
+          "right flexor digitorum brevis"
+        ],
+        "m.abductor-digiti-minimi-pedis": [
+          "abductor digiti minimi of right foot"
+        ],
+        "m.lumbricales-pedis": [
+          "first lumbrical of right foot",
+          "second lumbrical of right foot",
+          "third lumbrical of right foot",
+          "fourth lumbrical of right foot"
+        ],
+        "m.flexor-hallucis-brevis": [
+          "lateral head of right flexor hallucis brevis",
+          "medial head of right flexor hallucis brevis"
+        ],
+        "m.adductor-hallucis": [
+          "oblique head of right adductor hallucis",
+          "transverse head of right adductor hallucis"
+        ]
+      },
+      "joints": {
+        "art.coxae": [
+          "hip-bone",
+          "femur"
+        ],
+        "art.genus": [
+          "femur",
+          "tibia",
+          "patella"
+        ],
+        "art.talocruralis": [
+          "tibia",
+          "fibula",
+          "talus"
+        ],
+        "art.subtalaris": [
+          "talus",
+          "calcaneus"
+        ],
+        "art.tarsi-transversa": [
+          "talus",
+          "calcaneus",
+          "navicular",
+          "cuboid"
+        ],
+        "art.metatarsophalangeae": [
+          "mtfirst",
+          "mtsecond",
+          "mtthird",
+          "mtfourth",
+          "mtfifth",
+          "proximal-big-toe",
+          "proximal-second-toe",
+          "proximal-third-toe",
+          "proximal-fourth-toe",
+          "proximal-little-toe"
+        ]
+      },
+      "regions": [
+        "csipo",
+        "comb-terd",
+        "labszar",
+        "labfej"
+      ]
     }
   ]
 }

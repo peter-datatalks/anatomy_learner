@@ -1,0 +1,892 @@
+{
+ "id": "lower-limb",
+ "units": "mm",
+ "up": "z",
+ "bboxMin": [
+  -169.327,
+  -236.044,
+  -72.8101
+ ],
+ "bboxMax": [
+  58.2029,
+  19.8663,
+  1098.74
+ ],
+ "source": {
+  "name": "BodyParts3D",
+  "version": "4.0 (isa, 99% reduction)",
+  "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/download.html",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "attribution": "BodyParts3D, © The Database Center for Life Science, licensed under CC Attribution 4.0 International",
+  "changes": "Right lower limb parts (and the sacrum) selected, merged per structure and converted to a compact binary mesh format."
+ },
+ "parts": [
+  {
+   "key": "hip-bone",
+   "kind": "bone",
+   "vertexCount": 1282,
+   "indexCount": 7122,
+   "positionOffset": 0,
+   "indexOffset": 7692,
+   "indexType": "uint16"
+  },
+  {
+   "key": "sacrum",
+   "kind": "bone",
+   "vertexCount": 5293,
+   "indexCount": 29766,
+   "positionOffset": 21936,
+   "indexOffset": 53696,
+   "indexType": "uint16"
+  },
+  {
+   "key": "femur",
+   "kind": "bone",
+   "vertexCount": 1574,
+   "indexCount": 9306,
+   "positionOffset": 113228,
+   "indexOffset": 122672,
+   "indexType": "uint16"
+  },
+  {
+   "key": "patella",
+   "kind": "bone",
+   "vertexCount": 178,
+   "indexCount": 918,
+   "positionOffset": 141284,
+   "indexOffset": 142352,
+   "indexType": "uint16"
+  },
+  {
+   "key": "tibia",
+   "kind": "bone",
+   "vertexCount": 857,
+   "indexCount": 4992,
+   "positionOffset": 144188,
+   "indexOffset": 149332,
+   "indexType": "uint16"
+  },
+  {
+   "key": "fibula",
+   "kind": "bone",
+   "vertexCount": 593,
+   "indexCount": 3426,
+   "positionOffset": 159316,
+   "indexOffset": 162876,
+   "indexType": "uint16"
+  },
+  {
+   "key": "talus",
+   "kind": "bone",
+   "vertexCount": 812,
+   "indexCount": 4140,
+   "positionOffset": 169728,
+   "indexOffset": 174600,
+   "indexType": "uint16"
+  },
+  {
+   "key": "calcaneus",
+   "kind": "bone",
+   "vertexCount": 739,
+   "indexCount": 3786,
+   "positionOffset": 182880,
+   "indexOffset": 187316,
+   "indexType": "uint16"
+  },
+  {
+   "key": "navicular",
+   "kind": "bone",
+   "vertexCount": 455,
+   "indexCount": 2148,
+   "positionOffset": 194888,
+   "indexOffset": 197620,
+   "indexType": "uint16"
+  },
+  {
+   "key": "cuboid",
+   "kind": "bone",
+   "vertexCount": 543,
+   "indexCount": 2796,
+   "positionOffset": 201916,
+   "indexOffset": 205176,
+   "indexType": "uint16"
+  },
+  {
+   "key": "cuneiform-medial",
+   "kind": "bone",
+   "vertexCount": 615,
+   "indexCount": 2856,
+   "positionOffset": 210768,
+   "indexOffset": 214460,
+   "indexType": "uint16"
+  },
+  {
+   "key": "cuneiform-intermediate",
+   "kind": "bone",
+   "vertexCount": 288,
+   "indexCount": 1350,
+   "positionOffset": 220172,
+   "indexOffset": 221900,
+   "indexType": "uint16"
+  },
+  {
+   "key": "cuneiform-lateral",
+   "kind": "bone",
+   "vertexCount": 395,
+   "indexCount": 1878,
+   "positionOffset": 224600,
+   "indexOffset": 226972,
+   "indexType": "uint16"
+  },
+  {
+   "key": "mtfirst",
+   "kind": "bone",
+   "vertexCount": 602,
+   "indexCount": 3366,
+   "positionOffset": 230728,
+   "indexOffset": 234340,
+   "indexType": "uint16"
+  },
+  {
+   "key": "mtsecond",
+   "kind": "bone",
+   "vertexCount": 515,
+   "indexCount": 2256,
+   "positionOffset": 241072,
+   "indexOffset": 244164,
+   "indexType": "uint16"
+  },
+  {
+   "key": "mtthird",
+   "kind": "bone",
+   "vertexCount": 423,
+   "indexCount": 2100,
+   "positionOffset": 248676,
+   "indexOffset": 251216,
+   "indexType": "uint16"
+  },
+  {
+   "key": "mtfourth",
+   "kind": "bone",
+   "vertexCount": 397,
+   "indexCount": 2022,
+   "positionOffset": 255416,
+   "indexOffset": 257800,
+   "indexType": "uint16"
+  },
+  {
+   "key": "mtfifth",
+   "kind": "bone",
+   "vertexCount": 436,
+   "indexCount": 2382,
+   "positionOffset": 261844,
+   "indexOffset": 264460,
+   "indexType": "uint16"
+  },
+  {
+   "key": "proximal-big-toe",
+   "kind": "bone",
+   "vertexCount": 281,
+   "indexCount": 1458,
+   "positionOffset": 269224,
+   "indexOffset": 270912,
+   "indexType": "uint16"
+  },
+  {
+   "key": "distal-big-toe",
+   "kind": "bone",
+   "vertexCount": 289,
+   "indexCount": 1320,
+   "positionOffset": 273828,
+   "indexOffset": 275564,
+   "indexType": "uint16"
+  },
+  {
+   "key": "proximal-second-toe",
+   "kind": "bone",
+   "vertexCount": 236,
+   "indexCount": 1242,
+   "positionOffset": 278204,
+   "indexOffset": 279620,
+   "indexType": "uint16"
+  },
+  {
+   "key": "middle-second-toe",
+   "kind": "bone",
+   "vertexCount": 192,
+   "indexCount": 792,
+   "positionOffset": 282104,
+   "indexOffset": 283256,
+   "indexType": "uint16"
+  },
+  {
+   "key": "distal-second-toe",
+   "kind": "bone",
+   "vertexCount": 170,
+   "indexCount": 600,
+   "positionOffset": 284840,
+   "indexOffset": 285860,
+   "indexType": "uint16"
+  },
+  {
+   "key": "proximal-third-toe",
+   "kind": "bone",
+   "vertexCount": 276,
+   "indexCount": 1266,
+   "positionOffset": 287060,
+   "indexOffset": 288716,
+   "indexType": "uint16"
+  },
+  {
+   "key": "middle-third-toe",
+   "kind": "bone",
+   "vertexCount": 190,
+   "indexCount": 876,
+   "positionOffset": 291248,
+   "indexOffset": 292388,
+   "indexType": "uint16"
+  },
+  {
+   "key": "distal-third-toe",
+   "kind": "bone",
+   "vertexCount": 162,
+   "indexCount": 780,
+   "positionOffset": 294140,
+   "indexOffset": 295112,
+   "indexType": "uint16"
+  },
+  {
+   "key": "proximal-fourth-toe",
+   "kind": "bone",
+   "vertexCount": 254,
+   "indexCount": 1314,
+   "positionOffset": 296672,
+   "indexOffset": 298196,
+   "indexType": "uint16"
+  },
+  {
+   "key": "middle-fourth-toe",
+   "kind": "bone",
+   "vertexCount": 220,
+   "indexCount": 1050,
+   "positionOffset": 300824,
+   "indexOffset": 302144,
+   "indexType": "uint16"
+  },
+  {
+   "key": "distal-fourth-toe",
+   "kind": "bone",
+   "vertexCount": 144,
+   "indexCount": 732,
+   "positionOffset": 304244,
+   "indexOffset": 305108,
+   "indexType": "uint16"
+  },
+  {
+   "key": "proximal-little-toe",
+   "kind": "bone",
+   "vertexCount": 238,
+   "indexCount": 1218,
+   "positionOffset": 306572,
+   "indexOffset": 308000,
+   "indexType": "uint16"
+  },
+  {
+   "key": "middle-little-toe",
+   "kind": "bone",
+   "vertexCount": 102,
+   "indexCount": 408,
+   "positionOffset": 310436,
+   "indexOffset": 311048,
+   "indexType": "uint16"
+  },
+  {
+   "key": "distal-little-toe",
+   "kind": "bone",
+   "vertexCount": 178,
+   "indexCount": 630,
+   "positionOffset": 311864,
+   "indexOffset": 312932,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.gluteus-maximus",
+   "kind": "muscle",
+   "vertexCount": 2053,
+   "indexCount": 7128,
+   "positionOffset": 314192,
+   "indexOffset": 326512,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.gluteus-medius",
+   "kind": "muscle",
+   "vertexCount": 2312,
+   "indexCount": 10068,
+   "positionOffset": 340768,
+   "indexOffset": 354640,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.gluteus-minimus",
+   "kind": "muscle",
+   "vertexCount": 3066,
+   "indexCount": 12624,
+   "positionOffset": 374776,
+   "indexOffset": 393172,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.tensor-fasciae-latae",
+   "kind": "muscle",
+   "vertexCount": 1087,
+   "indexCount": 3762,
+   "positionOffset": 418420,
+   "indexOffset": 424944,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.piriformis",
+   "kind": "muscle",
+   "vertexCount": 798,
+   "indexCount": 3276,
+   "positionOffset": 432468,
+   "indexOffset": 437256,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.obturator-internus",
+   "kind": "muscle",
+   "vertexCount": 1883,
+   "indexCount": 7398,
+   "positionOffset": 443808,
+   "indexOffset": 455108,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.gemellus-superior",
+   "kind": "muscle",
+   "vertexCount": 525,
+   "indexCount": 1206,
+   "positionOffset": 469904,
+   "indexOffset": 473056,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.gemellus-inferior",
+   "kind": "muscle",
+   "vertexCount": 503,
+   "indexCount": 1926,
+   "positionOffset": 475468,
+   "indexOffset": 478488,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.quadratus-femoris",
+   "kind": "muscle",
+   "vertexCount": 1015,
+   "indexCount": 3588,
+   "positionOffset": 482340,
+   "indexOffset": 488432,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.obturator-externus",
+   "kind": "muscle",
+   "vertexCount": 715,
+   "indexCount": 2352,
+   "positionOffset": 495608,
+   "indexOffset": 499900,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.psoas-major",
+   "kind": "muscle",
+   "vertexCount": 3632,
+   "indexCount": 14700,
+   "positionOffset": 504604,
+   "indexOffset": 526396,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.iliacus",
+   "kind": "muscle",
+   "vertexCount": 2447,
+   "indexCount": 8586,
+   "positionOffset": 555796,
+   "indexOffset": 570480,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.pectineus",
+   "kind": "muscle",
+   "vertexCount": 963,
+   "indexCount": 4140,
+   "positionOffset": 587652,
+   "indexOffset": 593432,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.adductor-longus",
+   "kind": "muscle",
+   "vertexCount": 1536,
+   "indexCount": 7848,
+   "positionOffset": 601712,
+   "indexOffset": 610928,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.adductor-brevis",
+   "kind": "muscle",
+   "vertexCount": 1091,
+   "indexCount": 4392,
+   "positionOffset": 626624,
+   "indexOffset": 633172,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.adductor-magnus",
+   "kind": "muscle",
+   "vertexCount": 4560,
+   "indexCount": 17916,
+   "positionOffset": 641956,
+   "indexOffset": 669316,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.gracilis",
+   "kind": "muscle",
+   "vertexCount": 2086,
+   "indexCount": 9516,
+   "positionOffset": 705148,
+   "indexOffset": 717664,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.sartorius",
+   "kind": "muscle",
+   "vertexCount": 2630,
+   "indexCount": 10332,
+   "positionOffset": 736696,
+   "indexOffset": 752476,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.rectus-femoris",
+   "kind": "muscle",
+   "vertexCount": 3326,
+   "indexCount": 17064,
+   "positionOffset": 773140,
+   "indexOffset": 793096,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.vastus-lateralis",
+   "kind": "muscle",
+   "vertexCount": 3975,
+   "indexCount": 20064,
+   "positionOffset": 827224,
+   "indexOffset": 851076,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.vastus-medialis",
+   "kind": "muscle",
+   "vertexCount": 2773,
+   "indexCount": 13656,
+   "positionOffset": 891204,
+   "indexOffset": 907844,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.vastus-intermedius",
+   "kind": "muscle",
+   "vertexCount": 2748,
+   "indexCount": 12780,
+   "positionOffset": 935156,
+   "indexOffset": 951644,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.biceps-femoris",
+   "kind": "muscle",
+   "vertexCount": 4049,
+   "indexCount": 20514,
+   "positionOffset": 977204,
+   "indexOffset": 1001500,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.semitendinosus",
+   "kind": "muscle",
+   "vertexCount": 1812,
+   "indexCount": 8136,
+   "positionOffset": 1042528,
+   "indexOffset": 1053400,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.semimembranosus",
+   "kind": "muscle",
+   "vertexCount": 2588,
+   "indexCount": 13836,
+   "positionOffset": 1069672,
+   "indexOffset": 1085200,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.popliteus",
+   "kind": "muscle",
+   "vertexCount": 588,
+   "indexCount": 2574,
+   "positionOffset": 1112872,
+   "indexOffset": 1116400,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.tibialis-anterior",
+   "kind": "muscle",
+   "vertexCount": 2204,
+   "indexCount": 7530,
+   "positionOffset": 1121548,
+   "indexOffset": 1134772,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.extensor-hallucis-longus",
+   "kind": "muscle",
+   "vertexCount": 1388,
+   "indexCount": 5004,
+   "positionOffset": 1149832,
+   "indexOffset": 1158160,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.extensor-digitorum-longus",
+   "kind": "muscle",
+   "vertexCount": 3964,
+   "indexCount": 13638,
+   "positionOffset": 1168168,
+   "indexOffset": 1191952,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.fibularis-tertius",
+   "kind": "muscle",
+   "vertexCount": 1488,
+   "indexCount": 4248,
+   "positionOffset": 1219228,
+   "indexOffset": 1228156,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.fibularis-longus",
+   "kind": "muscle",
+   "vertexCount": 2946,
+   "indexCount": 11580,
+   "positionOffset": 1236652,
+   "indexOffset": 1254328,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.fibularis-brevis",
+   "kind": "muscle",
+   "vertexCount": 1605,
+   "indexCount": 5298,
+   "positionOffset": 1277488,
+   "indexOffset": 1287120,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.gastrocnemius",
+   "kind": "muscle",
+   "vertexCount": 4011,
+   "indexCount": 20682,
+   "positionOffset": 1297716,
+   "indexOffset": 1321784,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.soleus",
+   "kind": "muscle",
+   "vertexCount": 2674,
+   "indexCount": 13254,
+   "positionOffset": 1363148,
+   "indexOffset": 1379192,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.plantaris",
+   "kind": "muscle",
+   "vertexCount": 1466,
+   "indexCount": 7536,
+   "positionOffset": 1405700,
+   "indexOffset": 1414496,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.tibialis-posterior",
+   "kind": "muscle",
+   "vertexCount": 5039,
+   "indexCount": 15408,
+   "positionOffset": 1429568,
+   "indexOffset": 1459804,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.flexor-hallucis-longus",
+   "kind": "muscle",
+   "vertexCount": 1847,
+   "indexCount": 8274,
+   "positionOffset": 1490620,
+   "indexOffset": 1501704,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.flexor-digitorum-longus",
+   "kind": "muscle",
+   "vertexCount": 3037,
+   "indexCount": 12012,
+   "positionOffset": 1518252,
+   "indexOffset": 1536476,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.extensor-hallucis-brevis",
+   "kind": "muscle",
+   "vertexCount": 1257,
+   "indexCount": 3690,
+   "positionOffset": 1560500,
+   "indexOffset": 1568044,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.abductor-hallucis",
+   "kind": "muscle",
+   "vertexCount": 974,
+   "indexCount": 3204,
+   "positionOffset": 1575424,
+   "indexOffset": 1581268,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.flexor-digitorum-brevis",
+   "kind": "muscle",
+   "vertexCount": 2468,
+   "indexCount": 7308,
+   "positionOffset": 1587676,
+   "indexOffset": 1602484,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.abductor-digiti-minimi-pedis",
+   "kind": "muscle",
+   "vertexCount": 1492,
+   "indexCount": 3828,
+   "positionOffset": 1617100,
+   "indexOffset": 1626052,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.lumbricales-pedis",
+   "kind": "muscle",
+   "vertexCount": 2022,
+   "indexCount": 4824,
+   "positionOffset": 1633708,
+   "indexOffset": 1645840,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.flexor-hallucis-brevis",
+   "kind": "muscle",
+   "vertexCount": 3412,
+   "indexCount": 8202,
+   "positionOffset": 1655488,
+   "indexOffset": 1675960,
+   "indexType": "uint16"
+  },
+  {
+   "key": "m.adductor-hallucis",
+   "kind": "muscle",
+   "vertexCount": 2283,
+   "indexCount": 5616,
+   "positionOffset": 1692364,
+   "indexOffset": 1706064,
+   "indexType": "uint16"
+  }
+ ],
+ "structures": {
+  "m.gluteus-maximus": [
+   "m.gluteus-maximus"
+  ],
+  "m.gluteus-medius": [
+   "m.gluteus-medius"
+  ],
+  "m.gluteus-minimus": [
+   "m.gluteus-minimus"
+  ],
+  "m.tensor-fasciae-latae": [
+   "m.tensor-fasciae-latae"
+  ],
+  "m.piriformis": [
+   "m.piriformis"
+  ],
+  "m.obturator-internus": [
+   "m.obturator-internus"
+  ],
+  "m.gemellus-superior": [
+   "m.gemellus-superior"
+  ],
+  "m.gemellus-inferior": [
+   "m.gemellus-inferior"
+  ],
+  "m.quadratus-femoris": [
+   "m.quadratus-femoris"
+  ],
+  "m.obturator-externus": [
+   "m.obturator-externus"
+  ],
+  "m.psoas-major": [
+   "m.psoas-major"
+  ],
+  "m.iliacus": [
+   "m.iliacus"
+  ],
+  "m.pectineus": [
+   "m.pectineus"
+  ],
+  "m.adductor-longus": [
+   "m.adductor-longus"
+  ],
+  "m.adductor-brevis": [
+   "m.adductor-brevis"
+  ],
+  "m.adductor-magnus": [
+   "m.adductor-magnus"
+  ],
+  "m.gracilis": [
+   "m.gracilis"
+  ],
+  "m.sartorius": [
+   "m.sartorius"
+  ],
+  "m.rectus-femoris": [
+   "m.rectus-femoris"
+  ],
+  "m.vastus-lateralis": [
+   "m.vastus-lateralis"
+  ],
+  "m.vastus-medialis": [
+   "m.vastus-medialis"
+  ],
+  "m.vastus-intermedius": [
+   "m.vastus-intermedius"
+  ],
+  "m.biceps-femoris": [
+   "m.biceps-femoris"
+  ],
+  "m.semitendinosus": [
+   "m.semitendinosus"
+  ],
+  "m.semimembranosus": [
+   "m.semimembranosus"
+  ],
+  "m.popliteus": [
+   "m.popliteus"
+  ],
+  "m.tibialis-anterior": [
+   "m.tibialis-anterior"
+  ],
+  "m.extensor-hallucis-longus": [
+   "m.extensor-hallucis-longus"
+  ],
+  "m.extensor-digitorum-longus": [
+   "m.extensor-digitorum-longus"
+  ],
+  "m.fibularis-tertius": [
+   "m.fibularis-tertius"
+  ],
+  "m.fibularis-longus": [
+   "m.fibularis-longus"
+  ],
+  "m.fibularis-brevis": [
+   "m.fibularis-brevis"
+  ],
+  "m.gastrocnemius": [
+   "m.gastrocnemius"
+  ],
+  "m.soleus": [
+   "m.soleus"
+  ],
+  "m.plantaris": [
+   "m.plantaris"
+  ],
+  "m.tibialis-posterior": [
+   "m.tibialis-posterior"
+  ],
+  "m.flexor-hallucis-longus": [
+   "m.flexor-hallucis-longus"
+  ],
+  "m.flexor-digitorum-longus": [
+   "m.flexor-digitorum-longus"
+  ],
+  "m.extensor-hallucis-brevis": [
+   "m.extensor-hallucis-brevis"
+  ],
+  "m.abductor-hallucis": [
+   "m.abductor-hallucis"
+  ],
+  "m.flexor-digitorum-brevis": [
+   "m.flexor-digitorum-brevis"
+  ],
+  "m.abductor-digiti-minimi-pedis": [
+   "m.abductor-digiti-minimi-pedis"
+  ],
+  "m.lumbricales-pedis": [
+   "m.lumbricales-pedis"
+  ],
+  "m.flexor-hallucis-brevis": [
+   "m.flexor-hallucis-brevis"
+  ],
+  "m.adductor-hallucis": [
+   "m.adductor-hallucis"
+  ],
+  "art.coxae": [
+   "hip-bone",
+   "femur"
+  ],
+  "art.genus": [
+   "femur",
+   "tibia",
+   "patella"
+  ],
+  "art.talocruralis": [
+   "tibia",
+   "fibula",
+   "talus"
+  ],
+  "art.subtalaris": [
+   "talus",
+   "calcaneus"
+  ],
+  "art.tarsi-transversa": [
+   "talus",
+   "calcaneus",
+   "navicular",
+   "cuboid"
+  ],
+  "art.metatarsophalangeae": [
+   "mtfirst",
+   "mtsecond",
+   "mtthird",
+   "mtfourth",
+   "mtfifth",
+   "proximal-big-toe",
+   "proximal-second-toe",
+   "proximal-third-toe",
+   "proximal-fourth-toe",
+   "proximal-little-toe"
+  ]
+ }
+}

@@ -4619,6 +4619,4394 @@
         "by": null,
         "date": null
       }
+    },
+    {
+      "id": "cs1",
+      "topic": "csipo",
+      "type": "mc",
+      "prompt": {
+        "hu": "Egy beteg a jobb lábán áll; a medence bal oldala lesüllyed. Melyik izom, illetve ideg gyengeségére utal ez?",
+        "sv": "En patient står på höger ben; bäckenets vänstra sida sjunker. Vilken muskel respektive nerv tyder detta på svaghet i?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "Bal m. gluteus medius – bal n. gluteus superior",
+            "sv": "Vänster m. gluteus medius – vänster n. gluteus superior"
+          },
+          "whyWrong": {
+            "hu": "A lesüllyedő oldal a lengő láb oldala; a medencét a támaszoldali abductoroknak kell tartaniuk.",
+            "sv": "Den sjunkande sidan är svingbenets sida; bäckenet ska hållas uppe av ståbenets abduktorer."
+          }
+        },
+        {
+          "text": {
+            "hu": "Jobb m. gluteus maximus – jobb n. gluteus inferior",
+            "sv": "Höger m. gluteus maximus – höger n. gluteus inferior"
+          },
+          "whyWrong": {
+            "hu": "A m. gluteus maximus főleg extensor; gyengesége hátradőlő törzzsel járó járást okoz, nem frontális medencesüllyedést.",
+            "sv": "M. gluteus maximus är främst extensor; svaghet ger gång med bakåtlutad bål, inte att bäckenet sjunker i frontalplanet."
+          }
+        },
+        {
+          "text": {
+            "hu": "Jobb m. gluteus medius – jobb n. gluteus superior",
+            "sv": "Höger m. gluteus medius – höger n. gluteus superior"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "Jobb m. adductor longus – jobb n. obturatorius",
+            "sv": "Höger m. adductor longus – höger n. obturatorius"
+          },
+          "whyWrong": {
+            "hu": "Az adductorok a medencét a támaszláb felé húznák, nem tartják vízszintesen az ellenoldalt.",
+            "sv": "Adduktorerna håller inte den motsatta sidan vågrätt; det är abduktorernas uppgift."
+          }
+        }
+      ],
+      "answer": 2,
+      "explanation": {
+        "hu": "Pozitív Trendelenburg-jel: a támaszoldali (itt jobb) m. gluteus medius és minimus nem tudja megtartani a medencét, ezért az ellenoldal süllyed le. Mindkét izmot a n. gluteus superior (L4–S1) idegzi be, amely a foramen suprapiriformén lép ki; sérülhet glutealis injekciónál vagy csípőprotézis-műtétnél.",
+        "sv": "Positivt Trendelenburgs tecken: ståbenets (här högra) m. gluteus medius och minimus orkar inte hålla bäckenet, så den motsatta sidan sjunker. Båda musklerna innerveras av n. gluteus superior (L4–S1), som passerar foramen suprapiriforme; den kan skadas vid injektion i sätet eller vid höftprotesoperation."
+      },
+      "link": {
+        "view": "modul-csipo",
+        "item": "m.gluteus-medius"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "cs2",
+      "topic": "csipo",
+      "type": "mc",
+      "prompt": {
+        "hu": "Thomas-tesztben a vizsgált (asztalon fekvő) comb felemelkedik az asztalról, a térd hajlított marad. Mi a legvalószínűbb ok?",
+        "sv": "Vid Thomas test lyfter det undersökta (vilande) låret från britsen medan knät förblir flekterat. Vad är den mest sannolika orsaken?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "Rövidült m. rectus femoris",
+            "sv": "Förkortad m. rectus femoris"
+          },
+          "whyWrong": {
+            "hu": "A rectus femoris rövidülésekor elsősorban a térd nyújtásba megy (csökkent térdflexio az asztal szélén).",
+            "sv": "Vid förkortad rectus femoris extenderas främst knät (minskad knäflexion över britskanten)."
+          }
+        },
+        {
+          "text": {
+            "hu": "Rövidült m. iliopsoas",
+            "sv": "Förkortad m. iliopsoas"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "Rövidült hamstringizmok",
+            "sv": "Förkortade hamstringsmuskler"
+          },
+          "whyWrong": {
+            "hu": "A hamstringizmok a csípőt nyújtják; rövidülésük nem emeli fel a combot ebben a helyzetben.",
+            "sv": "Hamstringsmusklerna extenderar höften; förkortning lyfter inte låret i denna position."
+          }
+        },
+        {
+          "text": {
+            "hu": "Gyenge m. gluteus maximus",
+            "sv": "Svag m. gluteus maximus"
+          },
+          "whyWrong": {
+            "hu": "A Thomas-teszt passzív hossz-, nem erővizsgálat; a comb felemelkedése egyirányú izomfeszességet jelez.",
+            "sv": "Thomas test är ett passivt längdtest, inte ett styrketest; att låret lyfter visar stramhet."
+          }
+        }
+      ],
+      "answer": 1,
+      "explanation": {
+        "hu": "A Thomas-tesztben az ellenoldali térd mellkashoz húzása kisimítja a lumbális lordózist, így a medence nem tud előrebillenni. Ha ilyenkor a vizsgált comb nem éri el az asztalt, de a térd hajlítva marad, a mono-artikuláris csípőhajlító (m. iliopsoas) rövidült. Ha a térd is nyújtásba megy, a kétízületi m. rectus femoris is érintett.",
+        "sv": "Vid Thomas test plattar man ut ländlordosen genom att dra det andra knät mot bröstet, så att bäckenet inte kan tippa framåt. Om det undersökta låret då inte når britsen men knät förblir böjt är den enledade höftflexorn (m. iliopsoas) förkortad. Om knät också extenderas är även den tvåledade m. rectus femoris påverkad."
+      },
+      "link": {
+        "view": "modul-csipo",
+        "item": "m.psoas-major"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "cs3",
+      "topic": "csipo",
+      "type": "mc",
+      "prompt": {
+        "hu": "Hol hagyja el a n. ischiadicus a medencét a leggyakoribb anatómiai helyzetben?",
+        "sv": "Var lämnar n. ischiadicus bäckenet i det vanligaste anatomiska förhållandet?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "A foramen ischiadicum minuson át",
+            "sv": "Genom foramen ischiadicum minus"
+          },
+          "whyWrong": {
+            "hu": "A foramen ischiadicum minuson a m. obturator internus ina és a n. pudendus (visszatérve) halad, nem a n. ischiadicus.",
+            "sv": "Genom foramen ischiadicum minus passerar senan av m. obturator internus och (på väg tillbaka) n. pudendus, inte n. ischiadicus."
+          }
+        },
+        {
+          "text": {
+            "hu": "A m. piriformis felett (foramen suprapiriforme)",
+            "sv": "Ovanför m. piriformis (foramen suprapiriforme)"
+          },
+          "whyWrong": {
+            "hu": "Itt a n. és a. glutea superior lép ki.",
+            "sv": "Här passerar n. och a. glutea superior."
+          }
+        },
+        {
+          "text": {
+            "hu": "A canalis obturatoriuson át",
+            "sv": "Genom canalis obturatorius"
+          },
+          "whyWrong": {
+            "hu": "Ezen a n. obturatorius és az a. obturatoria halad a comb mediális részére.",
+            "sv": "Här passerar n. obturatorius och a. obturatoria till lårets mediala del."
+          }
+        },
+        {
+          "text": {
+            "hu": "A m. piriformis alatt (foramen infrapiriforme)",
+            "sv": "Nedanför m. piriformis (foramen infrapiriforme)"
+          },
+          "whyWrong": null
+        }
+      ],
+      "answer": 3,
+      "explanation": {
+        "hu": "A n. ischiadicus (L4–S3) a foramen ischiadicum majus alsó részén, a m. piriformis alatt lép ki, majd a mély kifelé forgatók felszínén fut lefelé. Változatként a piriformist részben vagy egészben átfúrhatja – ez az egyik magyarázat a piriformis-szindrómára.",
+        "sv": "N. ischiadicus (L4–S3) passerar genom den nedre delen av foramen ischiadicum majus, nedanför m. piriformis, och löper sedan nedåt på de djupa utåtrotatorernas yta. Som variant kan den helt eller delvis genomborra piriformis – en av förklaringarna till piriformissyndrom."
+      },
+      "link": {
+        "view": "modul-csipo",
+        "item": "m.piriformis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "cs4",
+      "topic": "csipo",
+      "type": "mc",
+      "prompt": {
+        "hu": "Melyik a csípőízület tipikus kapszuláris mintázata (a legjobban beszűkült mozgással kezdve)?",
+        "sv": "Vilket är höftledens typiska kapselmönster (med den mest inskränkta rörelsen först)?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "Kifelé forgatás > abductio > befelé forgatás",
+            "sv": "Utåtrotation > abduktion > inåtrotation"
+          },
+          "whyWrong": {
+            "hu": "Ez a vállízület kapszuláris mintázata (pl. fagyott váll).",
+            "sv": "Detta är axelledens kapselmönster (t.ex. frozen shoulder)."
+          }
+        },
+        {
+          "text": {
+            "hu": "Befelé forgatás > flexio > abductio",
+            "sv": "Inåtrotation > flexion > abduktion"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "Extensio > adductio > kifelé forgatás",
+            "sv": "Extension > adduktion > utåtrotation"
+          },
+          "whyWrong": {
+            "hu": "Az adductio és a kifelé forgatás a csípő kapszuláris mintázatában viszonylag megtartott.",
+            "sv": "Adduktion och utåtrotation är relativt bevarade i höftens kapselmönster."
+          }
+        },
+        {
+          "text": {
+            "hu": "Flexio > extensio, a rotáció szabad",
+            "sv": "Flexion > extension, rotationen fri"
+          },
+          "whyWrong": {
+            "hu": "Ez inkább a térd mintázatára emlékeztet; a csípőben éppen a befelé forgatás szűkül elsőként.",
+            "sv": "Detta påminner mer om knäts mönster; i höften är det just inåtrotationen som inskränks först."
+          }
+        }
+      ],
+      "answer": 1,
+      "explanation": {
+        "hu": "Cyriax szerint a csípő kapszuláris mintázata: a befelé forgatás a legkorlátozottabb, ezt követi a flexio és az abductio; az extensio kissé, az adductio és kifelé forgatás alig szűkül. A sorrend forrásonként kissé eltér. A csökkent befelé forgatás a csípőartrózis egyik legkorábbi klinikai jele.",
+        "sv": "Enligt Cyriax är höftens kapselmönster: inåtrotation är mest inskränkt, därefter flexion och abduktion; extension är lätt, adduktion och utåtrotation knappt begränsade. Ordningen varierar något mellan källor. Minskad inåtrotation är ett av de tidigaste kliniska tecknen på höftledsartros."
+      },
+      "link": {
+        "view": "modul-csipo",
+        "item": "art.coxae"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "cs5",
+      "topic": "csipo",
+      "type": "mc",
+      "prompt": {
+        "hu": "Egy 24 éves labdarúgó lágyékfájdalmat jelez; a FADIR-teszt a jellegzetes lágyéki fájdalmat váltja ki. Mire gondolunk elsősorban?",
+        "sv": "En 24-årig fotbollsspelare har ljumsksmärta; FADIR-testet framkallar den typiska ljumsksmärtan. Vad misstänker man i första hand?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "Trochanter major-bursitis",
+            "sv": "Trokantärbursit"
+          },
+          "whyWrong": {
+            "hu": "Laterális csípőfájdalmat okoz, tapintási érzékenységgel a trochanter majoron; a FADIR nem jellemzően provokálja.",
+            "sv": "Ger lateral höftsmärta med palpationsömhet över trochanter major; provoceras inte typiskt av FADIR."
+          }
+        },
+        {
+          "text": {
+            "hu": "Piriformis-szindróma",
+            "sv": "Piriformissyndrom"
+          },
+          "whyWrong": {
+            "hu": "Farfájdalmat okoz ischiasjellegű kisugárzással, nem tipikus lágyékfájdalmat.",
+            "sv": "Ger sätessmärta med ischiasliknande utstrålning, inte typisk ljumsksmärta."
+          }
+        },
+        {
+          "text": {
+            "hu": "Femoroacetabuláris impingement (FAI) / labrumsérülés",
+            "sv": "Femoroacetabulär impingement (FAI) / labrumskada"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "N. gluteus superior-sérülés",
+            "sv": "Skada på n. gluteus superior"
+          },
+          "whyWrong": {
+            "hu": "Fájdalom helyett abductor-gyengeséget és Trendelenburg-jelet okoz.",
+            "sv": "Ger abduktorsvaghet och Trendelenburgs tecken snarare än smärta."
+          }
+        }
+      ],
+      "answer": 2,
+      "explanation": {
+        "hu": "A FADIR (flexio, adductio, befelé forgatás) a combnyakat az acetabulum elülső pereméhez és a labrumhoz nyomja, ezért FAI-ban és labrumsérülésben fájdalmas. A teszt érzékeny, de nem specifikus: a negatív eredmény segít kizárni, a pozitívat képalkotással és anamnézissel kell értelmezni.",
+        "sv": "FADIR (flexion, adduktion, inåtrotation) pressar lårbenshalsen mot acetabulums främre kant och labrum, därför gör det ont vid FAI och labrumskada. Testet är sensitivt men inte specifikt: ett negativt resultat hjälper att utesluta, ett positivt måste tolkas tillsammans med anamnes och bilddiagnostik."
+      },
+      "link": {
+        "view": "modul-csipo",
+        "item": "art.coxae"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "cs6",
+      "topic": "csipo",
+      "type": "mc",
+      "prompt": {
+        "hu": "Rúgás közben egy labdarúgó hirtelen éles fájdalmat érez a lágyék mediális részén; az ellenállásos adductio és a squeeze-teszt fájdalmas. Melyik izom sérül a leggyakrabban?",
+        "sv": "En fotbollsspelare får plötslig skarp smärta i ljumskens mediala del vid en spark; adduktion mot motstånd och squeezetest gör ont. Vilken muskel skadas oftast?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "M. adductor longus",
+            "sv": "M. adductor longus"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "M. adductor magnus",
+            "sv": "M. adductor magnus"
+          },
+          "whyWrong": {
+            "hu": "Nagy és erős, de mélyebb és hátrébb fekszik; ritkábban sérül, mint az adductor longus.",
+            "sv": "Stor och stark men ligger djupare och mer bakåt; skadas mer sällan än adductor longus."
+          }
+        },
+        {
+          "text": {
+            "hu": "M. pectineus",
+            "sv": "M. pectineus"
+          },
+          "whyWrong": {
+            "hu": "Sérülhet, de ritkábban; inkább flexiós-adductiós komponenssel.",
+            "sv": "Kan skadas men mer sällan; snarare med en flexions-adduktionskomponent."
+          }
+        },
+        {
+          "text": {
+            "hu": "M. gluteus medius",
+            "sv": "M. gluteus medius"
+          },
+          "whyWrong": {
+            "hu": "Abductor a csípő laterális oldalán; nem okoz mediális lágyékfájdalmat.",
+            "sv": "Abduktor på höftens laterala sida; ger inte medial ljumsksmärta."
+          }
+        }
+      ],
+      "answer": 0,
+      "explanation": {
+        "hu": "A m. adductor longus a leggyakrabban sérülő adductor: rövid, kerek ínnal ered a tuberculum pubicum alatt, és rúgáskor, irányváltáskor excentrikusan terhelődik. Tipikus lelet a tapintási érzékenység az eredésen és fájdalom ellenállásos adductióra. A Koppenhágai adductor-gyakorlat bizonyítottan csökkenti a lágyéksérülések előfordulását.",
+        "sv": "M. adductor longus är den vanligast skadade adduktorn: den utgår med en kort, rund sena nedanför tuberculum pubicum och belastas excentriskt vid spark och riktningsändring. Typiska fynd är palpationsömhet vid ursprunget och smärta vid adduktion mot motstånd. Köpenhamnsövningen har visat sig minska förekomsten av ljumskskador."
+      },
+      "link": {
+        "view": "modul-csipo",
+        "item": "m.adductor-longus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "cs7",
+      "topic": "csipo",
+      "type": "mc",
+      "prompt": {
+        "hu": "A m. adductor magnus melyik részét idegzi be a n. ischiadicus?",
+        "sv": "Vilken del av m. adductor magnus innerveras av n. ischiadicus?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "Az adductor (pubofemorális) részt",
+            "sv": "Adduktordelen (pubofemorala delen)"
+          },
+          "whyWrong": {
+            "hu": "Ezt a n. obturatorius ramus posteriorja idegzi be.",
+            "sv": "Den innerveras av ramus posterior av n. obturatorius."
+          }
+        },
+        {
+          "text": {
+            "hu": "Az egész izmot",
+            "sv": "Hela muskeln"
+          },
+          "whyWrong": {
+            "hu": "Az izom kettős beidegzésű; nagy részét a n. obturatorius látja el.",
+            "sv": "Muskeln har dubbel innervation; största delen försörjs av n. obturatorius."
+          }
+        },
+        {
+          "text": {
+            "hu": "Egyik részét sem; csak a n. femoralis idegzi be",
+            "sv": "Ingen del; den innerveras bara av n. femoralis"
+          },
+          "whyWrong": {
+            "hu": "A n. femoralis a csípőhajlítókat és a quadricepset idegzi be, nem az adductor magnust.",
+            "sv": "N. femoralis innerverar höftflexorerna och quadriceps, inte adductor magnus."
+          }
+        },
+        {
+          "text": {
+            "hu": "A tuber ischiadicumról eredő hamstring (ischiocondylaris) részt",
+            "sv": "Hamstringsdelen (ischiokondylära delen) från tuber ischiadicum"
+          },
+          "whyWrong": null
+        }
+      ],
+      "answer": 3,
+      "explanation": {
+        "hu": "A m. adductor magnus két izom fejlődéstani egyesülése. A tuber ischiadicumról a tuberculum adductoriumhoz futó része a hamstringizmokhoz hasonlóan a n. ischiadicus tibialis részéből kap rostokat, és a csípőt nyújtja. Ezért obturatorideg-sérülés után ez a rész megtartott maradhat.",
+        "sv": "M. adductor magnus är embryologiskt en sammanslagning av två muskler. Delen från tuber ischiadicum till tuberculum adductorium innerveras liksom hamstringsmusklerna av den tibiala delen av n. ischiadicus och extenderar höften. Därför kan denna del vara bevarad efter skada på n. obturatorius."
+      },
+      "link": {
+        "view": "modul-csipo",
+        "item": "m.adductor-magnus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "cs8",
+      "topic": "csipo",
+      "type": "mc",
+      "prompt": {
+        "hu": "Egy beteg nehezen áll fel székből és nehezen megy fel a lépcsőn; járáskor a támaszfázisban a törzsét hátradönti. Melyik ideg sérülése valószínű?",
+        "sv": "En patient har svårt att resa sig från en stol och att gå uppför trappor; vid gång lutar hen bålen bakåt i ståfasen. Vilken nervskada är sannolik?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "N. gluteus superior",
+            "sv": "N. gluteus superior"
+          },
+          "whyWrong": {
+            "hu": "Abductor-gyengeséget okoz (Trendelenburg- vagy Duchenne-járás), frontális síkú eltéréssel.",
+            "sv": "Ger abduktorsvaghet (Trendelenburg- eller Duchennegång), en avvikelse i frontalplanet."
+          }
+        },
+        {
+          "text": {
+            "hu": "N. gluteus inferior",
+            "sv": "N. gluteus inferior"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "N. femoralis",
+            "sv": "N. femoralis"
+          },
+          "whyWrong": {
+            "hu": "Gyenge térdnyújtást és csípőflexiót okoz; a beteg inkább előre dől, és a térd \"beroggyan\".",
+            "sv": "Ger svag knäextension och höftflexion; patienten lutar sig snarare framåt och knät \"viker sig\"."
+          }
+        },
+        {
+          "text": {
+            "hu": "N. obturatorius",
+            "sv": "N. obturatorius"
+          },
+          "whyWrong": {
+            "hu": "Adductor-gyengeséget okoz, a láb járáskor kifelé kileng (circumductio), de a csípőextensio megtartott.",
+            "sv": "Ger adduktorsvaghet och benet svingar ut vid gång (cirkumduktion), men höftextensionen är bevarad."
+          }
+        }
+      ],
+      "answer": 1,
+      "explanation": {
+        "hu": "A n. gluteus inferior (L5–S2) egyedül a m. gluteus maximust idegzi be. Gyengeségekor a beteg a törzs hátradöntésével a testsúly vonalát a csípőízület mögé helyezi, így a lig. iliofemorale passzívan tartja a csípőt (gluteus maximus-járás). A felállás és lépcsőzés erős csípőextensiót igényel, ezért ezek nehezülnek.",
+        "sv": "N. gluteus inferior (L5–S2) innerverar enbart m. gluteus maximus. Vid svaghet lutar patienten bålen bakåt så att tyngdlinjen hamnar bakom höftleden och lig. iliofemorale passivt håller höften (gluteus maximus-gång). Uppresning och trappgång kräver kraftig höftextension och blir därför svåra."
+      },
+      "link": {
+        "view": "modul-csipo",
+        "item": "m.gluteus-maximus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "cs9",
+      "topic": "csipo",
+      "type": "mc",
+      "prompt": {
+        "hu": "Melyik klinikai kép illik legjobban a csípőartrózishoz?",
+        "sv": "Vilken klinisk bild stämmer bäst med höftledsartros?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "Laterális csípőfájdalom, éjjel az érintett oldalon fekve rosszabb, a ROM teljes",
+            "sv": "Lateral höftsmärta, värre nattetid vid liggande på den sidan, fullt ROM"
+          },
+          "whyWrong": {
+            "hu": "Ez gluteális tendinopathiára (nagytompor-fájdalomszindróma) jellemző.",
+            "sv": "Detta är typiskt för gluteal tendinopati (trokantärt smärtsyndrom)."
+          }
+        },
+        {
+          "text": {
+            "hu": "Fiatal életkor, órákig tartó reggeli merevség, több ízület duzzanata",
+            "sv": "Ung ålder, morgonstelhet i flera timmar, svullnad i flera leder"
+          },
+          "whyWrong": {
+            "hu": "A hosszú reggeli merevség és a sokízületi duzzanat gyulladásos ízületi betegségre (pl. rheumatoid arthritis) utal.",
+            "sv": "Lång morgonstelhet och svullnad i flera leder talar för inflammatorisk ledsjukdom (t.ex. reumatoid artrit)."
+          }
+        },
+        {
+          "text": {
+            "hu": "45 év felett terheléses lágyékfájdalom, csökkent befelé forgatás, rövid reggeli merevség",
+            "sv": "Belastningsrelaterad ljumsksmärta efter 45 års ålder, minskad inåtrotation, kort morgonstelhet"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "Farfájdalom a láb hátsó oldalán a talpig sugárzó zsibbadással",
+            "sv": "Sätessmärta med domningar som strålar ut på benets baksida ner till foten"
+          },
+          "whyWrong": {
+            "hu": "Ez radikuláris (pl. S1-gyöki) tünetegyüttes, nem intraartikuláris csípőprobléma.",
+            "sv": "Detta är en radikulär bild (t.ex. S1-rot), inte ett intraartikulärt höftproblem."
+          }
+        }
+      ],
+      "answer": 2,
+      "explanation": {
+        "hu": "A csípőartrózis klinikai diagnózisa felállítható képalkotás nélkül is: tipikus a 45 év feletti életkor, a terheléshez kötött lágyék- (esetleg combba, térdbe sugárzó) fájdalom, a csökkent befelé forgatás és flexio, valamint a legfeljebb kb. 30 perces reggeli merevség. Első vonalbeli kezelés a betegoktatás és a terápiás edzés.",
+        "sv": "Höftledsartros kan diagnostiseras kliniskt utan bilddiagnostik: typiskt är ålder över 45 år, belastningsrelaterad ljumsksmärta (ibland utstrålande till låret eller knät), minskad inåtrotation och flexion samt morgonstelhet på högst ca 30 minuter. Förstahandsbehandling är patientutbildning och träning."
+      },
+      "link": {
+        "view": "modul-csipo",
+        "item": "art.coxae"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "cs10",
+      "topic": "csipo",
+      "type": "mc",
+      "prompt": {
+        "hu": "Egy idős nő elesik; a lába rövidült és kifelé forgatott helyzetű. Dislokált combnyaktörés esetén melyik ér sérülése miatt nő meg a combfejnecrosis kockázata?",
+        "sv": "En äldre kvinna faller; benet är förkortat och utåtroterat. Vid dislocerad collumfraktur ökar risken för caputnekros på grund av skada på vilket kärl?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "A. glutea superior",
+            "sv": "A. glutea superior"
+          },
+          "whyWrong": {
+            "hu": "A farizmokat (medius, minimus) látja el, a combfej vérellátásában nincs fő szerepe.",
+            "sv": "Försörjer sätesmusklerna (medius, minimus) och har ingen huvudroll för lårbenshuvudet."
+          }
+        },
+        {
+          "text": {
+            "hu": "A. lig. capitis femoris",
+            "sv": "A. lig. capitis femoris"
+          },
+          "whyWrong": {
+            "hu": "Felnőttben a combfejnek csak kis részét látja el; egymagában nem elegendő.",
+            "sv": "Hos vuxna försörjer den bara en liten del av lårbenshuvudet; den räcker inte ensam."
+          }
+        },
+        {
+          "text": {
+            "hu": "A. profunda femoris aa. perforantes",
+            "sv": "Aa. perforantes från a. profunda femoris"
+          },
+          "whyWrong": {
+            "hu": "A comb hátsó izmait és a femur diaphysisét látják el, nem a combfejet.",
+            "sv": "De försörjer lårets bakre muskler och femurdiafysen, inte lårbenshuvudet."
+          }
+        },
+        {
+          "text": {
+            "hu": "A. circumflexa femoris medialis",
+            "sv": "A. circumflexa femoris medialis"
+          },
+          "whyWrong": null
+        }
+      ],
+      "answer": 3,
+      "explanation": {
+        "hu": "A felnőtt combfej fő ere az a. circumflexa femoris medialis, amelynek ágai (retinacularis artériák) a combnyak mentén haladnak a fej felé. Dislokált intracapsularis törésnél ezek elszakadhatnak, ezért gyakran protézist választanak osteosynthesis helyett. A rövidült, kifelé forgatott láb a combnyaktörés klasszikus jele.",
+        "sv": "Lårbenshuvudets viktigaste kärl hos vuxna är a. circumflexa femoris medialis, vars grenar (retinakulära artärer) löper längs lårbenshalsen mot huvudet. Vid dislocerad intrakapsulär fraktur kan de slitas av, därför väljs ofta protes i stället för osteosyntes. Ett förkortat, utåtroterat ben är det klassiska tecknet på collumfraktur."
+      },
+      "link": {
+        "view": "modul-csipo",
+        "item": "art.coxae"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "cs11",
+      "topic": "csipo",
+      "type": "mc",
+      "prompt": {
+        "hu": "Melyik szalag a legerősebb a csípőízületen, és elsősorban az extensiót gátolja?",
+        "sv": "Vilket ligament är det starkaste i höftleden och hämmar främst extension?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "Lig. ischiofemorale",
+            "sv": "Lig. ischiofemorale"
+          },
+          "whyWrong": {
+            "hu": "Hátul fekszik, főleg a befelé forgatást gátolja; gyengébb, mint az iliofemorale.",
+            "sv": "Ligger baktill och hämmar främst inåtrotation; svagare än iliofemorale."
+          }
+        },
+        {
+          "text": {
+            "hu": "Lig. iliofemorale",
+            "sv": "Lig. iliofemorale"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "Lig. capitis femoris",
+            "sv": "Lig. capitis femoris"
+          },
+          "whyWrong": {
+            "hu": "Ízületen belüli, gyenge szalag; fő szerepe az ér vezetése, stabilitásban alig vesz részt.",
+            "sv": "Intraartikulärt, svagt ligament; främst kärlbärare, bidrar knappt till stabiliteten."
+          }
+        },
+        {
+          "text": {
+            "hu": "Lig. pubofemorale",
+            "sv": "Lig. pubofemorale"
+          },
+          "whyWrong": {
+            "hu": "Elöl-alul fekszik, főleg a túlzott abductiót gátolja.",
+            "sv": "Ligger framtill-nedtill och hämmar främst överdriven abduktion."
+          }
+        }
+      ],
+      "answer": 1,
+      "explanation": {
+        "hu": "A lig. iliofemorale (Y- vagy Bigelow-szalag) a spina iliaca anterior inferiortól a linea intertrochantericáig fut, és a test legerősebb szalaga. Extensióban megfeszül, így állás közben izommunka nélkül is megtartja a medencét. Ezért kompenzálhat a gluteus maximus-gyengeséggel járó beteg hátradöntött törzzsel.",
+        "sv": "Lig. iliofemorale (Y- eller Bigelows ligament) löper från spina iliaca anterior inferior till linea intertrochanterica och är kroppens starkaste ligament. Det sträcks i extension och håller därför upp bäckenet vid stående utan muskelarbete. Det är därför en patient med gluteus maximus-svaghet kan kompensera med bakåtlutad bål."
+      },
+      "link": {
+        "view": "modul-csipo",
+        "item": "art.coxae"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "cs12",
+      "topic": "csipo",
+      "type": "mc",
+      "prompt": {
+        "hu": "Miért a far felső-külső negyedébe adjuk az intramuszkuláris glutealis injekciót?",
+        "sv": "Varför ges intramuskulär injektion i sätet i den övre yttre kvadranten?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "Mert ott a legvastagabb a bőr alatti zsírszövet",
+            "sv": "För att underhudsfettet är tjockast där"
+          },
+          "whyWrong": {
+            "hu": "Nem ez az ok; a vastag zsírréteg inkább hátrány, mert az injekció nem éri el az izmot.",
+            "sv": "Det är inte skälet; ett tjockt fettlager är snarare en nackdel eftersom injektionen kanske inte når muskeln."
+          }
+        },
+        {
+          "text": {
+            "hu": "Mert ott fekszik a m. piriformis",
+            "sv": "För att m. piriformis ligger där"
+          },
+          "whyWrong": {
+            "hu": "A m. piriformis mélyen, középen fekszik, és éppen mellette fut a n. ischiadicus – ezt a területet kerülni kell.",
+            "sv": "M. piriformis ligger djupt och centralt, och n. ischiadicus löper just där – området ska undvikas."
+          }
+        },
+        {
+          "text": {
+            "hu": "Mert így elkerüljük a n. ischiadicust, amely az alsó-mediális részen halad",
+            "sv": "För att undvika n. ischiadicus, som löper i den nedre-mediala delen"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "Mert ott nincs ideg a farizmokban",
+            "sv": "För att det inte finns några nerver i sätesmusklerna där"
+          },
+          "whyWrong": {
+            "hu": "A felső területen is futnak ágak (n. gluteus superior); ezért a ventrogluteális pontot gyakran még biztonságosabbnak tartják.",
+            "sv": "Även i det övre området löper grenar (n. gluteus superior); därför anses den ventrogluteala platsen ofta vara ännu säkrare."
+          }
+        }
+      ],
+      "answer": 2,
+      "explanation": {
+        "hu": "A n. ischiadicus a m. piriformis alatt lép ki, és a far alsó-mediális negyedén halad a trochanter major és a tuber ischiadicum között lefelé. A felső-külső negyed ettől távol esik. A n. gluteus superior azonban a felső részen fut, és rosszul helyezett injekció után Trendelenburg-jelet okozhat.",
+        "sv": "N. ischiadicus kommer ut nedanför m. piriformis och löper nedåt i sätets nedre-mediala kvadrant mellan trochanter major och tuber ischiadicum. Den övre yttre kvadranten ligger långt därifrån. N. gluteus superior löper dock i den övre delen och kan efter en felplacerad injektion ge Trendelenburgs tecken."
+      },
+      "link": {
+        "view": "modul-csipo",
+        "item": "m.gluteus-maximus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "cs13",
+      "topic": "csipo",
+      "type": "mc",
+      "prompt": {
+        "hu": "Melyik mély kifelé forgatót idegzi be a n. obturatorius?",
+        "sv": "Vilken av de djupa utåtrotatorerna innerveras av n. obturatorius?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "M. obturator externus",
+            "sv": "M. obturator externus"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "M. obturator internus",
+            "sv": "M. obturator internus"
+          },
+          "whyWrong": {
+            "hu": "A nevük hasonló, de a belső csípőlyukizmot a plexus sacralis ága (n. musculi obturatorii interni, L5–S2) látja el.",
+            "sv": "Namnen liknar varandra, men inre obturatormuskeln försörjs av en gren från plexus sacralis (n. musculi obturatorii interni, L5–S2)."
+          }
+        },
+        {
+          "text": {
+            "hu": "M. quadratus femoris",
+            "sv": "M. quadratus femoris"
+          },
+          "whyWrong": {
+            "hu": "Saját ideget kap a plexus sacralisból (n. musculi quadrati femoris, L4–S1).",
+            "sv": "Får en egen nerv från plexus sacralis (n. musculi quadrati femoris, L4–S1)."
+          }
+        },
+        {
+          "text": {
+            "hu": "M. piriformis",
+            "sv": "M. piriformis"
+          },
+          "whyWrong": {
+            "hu": "Közvetlen ágakat kap a plexus sacralisból (S1–S2).",
+            "sv": "Får direkta grenar från plexus sacralis (S1–S2)."
+          }
+        }
+      ],
+      "answer": 0,
+      "explanation": {
+        "hu": "A m. obturator externus a comb mediális (adductor) rekeszének mélyén fekszik, ezért annak idegét, a n. obturatoriust (L3–L4) kapja. A többi mély kifelé forgató hátul, a plexus sacralis rövid ágaiból kap beidegzést. A kivételt érdemes a fejlődéstani rekeszlogikával megjegyezni.",
+        "sv": "M. obturator externus ligger djupt i lårets mediala (adduktor)kompartment och innerveras därför av dess nerv, n. obturatorius (L3–L4). De övriga djupa utåtrotatorerna ligger baktill och innerveras av korta grenar från plexus sacralis. Undantaget är lättare att minnas med kompartmentlogiken."
+      },
+      "link": {
+        "view": "modul-csipo",
+        "item": "m.obturator-externus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "cs14",
+      "topic": "csipo",
+      "type": "mc",
+      "prompt": {
+        "hu": "Mit vizsgál elsősorban az Ober-teszt?",
+        "sv": "Vad undersöker Obers test i första hand?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "A tractus iliotibialis és a m. tensor fasciae latae feszességét",
+            "sv": "Stramhet i tractus iliotibialis och m. tensor fasciae latae"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "A m. iliopsoas rövidülését",
+            "sv": "Förkortning av m. iliopsoas"
+          },
+          "whyWrong": {
+            "hu": "Erre a Thomas-teszt szolgál.",
+            "sv": "För detta används Thomas test."
+          }
+        },
+        {
+          "text": {
+            "hu": "A labrum acetabuli sérülését",
+            "sv": "Skada på labrum acetabuli"
+          },
+          "whyWrong": {
+            "hu": "Labrumsérülésre inkább a FADIR-teszt utal.",
+            "sv": "Vid labrumskada används snarare FADIR-testet."
+          }
+        },
+        {
+          "text": {
+            "hu": "A n. gluteus superior működését",
+            "sv": "Funktionen hos n. gluteus superior"
+          },
+          "whyWrong": {
+            "hu": "Ennek funkcionális vizsgálata a Trendelenburg-teszt és az abductio MMT.",
+            "sv": "Den bedöms funktionellt med Trendelenburgs test och abduktion-MMT."
+          }
+        }
+      ],
+      "answer": 0,
+      "explanation": {
+        "hu": "Az Ober-tesztben a beteg oldalt fekszik, a felső lábat a vizsgáló abducálja és enyhén nyújtja, majd elengedi. Ha a comb nem süllyed adductióba, a tractus iliotibialis vagy a TFL feszes. Futóknál a laterális térdfájdalom (ITB-szindróma) vizsgálatának része.",
+        "sv": "Vid Obers test ligger patienten på sidan; undersökaren abducerar och extenderar lätt det övre benet och släpper det sedan. Om låret inte sjunker ned i adduktion är tractus iliotibialis eller TFL stram. Testet ingår i bedömningen av lateral knäsmärta (ITB-syndrom) hos löpare."
+      },
+      "link": {
+        "view": "modul-csipo",
+        "item": "m.tensor-fasciae-latae"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "cs15",
+      "topic": "csipo",
+      "type": "mc",
+      "prompt": {
+        "hu": "Milyen kiinduló helyzetet jelent a FABER-teszt rövidítése?",
+        "sv": "Vilken position står förkortningen FABER-test för?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "Flexio, adductio, befelé forgatás",
+            "sv": "Flexion, adduktion, inåtrotation"
+          },
+          "whyWrong": {
+            "hu": "Ez a FADIR-teszt helyzete.",
+            "sv": "Detta är positionen för FADIR-testet."
+          }
+        },
+        {
+          "text": {
+            "hu": "Extensio, abductio, kifelé forgatás",
+            "sv": "Extension, abduktion, utåtrotation"
+          },
+          "whyWrong": {
+            "hu": "A FABER hajlított csípővel történik (a sarok az ellenoldali térdnél).",
+            "sv": "FABER utförs med flekterad höft (hälen vid motsatta knät)."
+          }
+        },
+        {
+          "text": {
+            "hu": "Flexio, abductio, kifelé forgatás",
+            "sv": "Flexion, abduktion, utåtrotation"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "Flexio, abductio, befelé forgatás",
+            "sv": "Flexion, abduktion, inåtrotation"
+          },
+          "whyWrong": {
+            "hu": "A FABER-ben a comb kifelé forog („négyes” alak).",
+            "sv": "Vid FABER utåtroteras låret (\"fyrans\" figur)."
+          }
+        }
+      ],
+      "answer": 2,
+      "explanation": {
+        "hu": "A FABER (Patrick-teszt) során a vizsgált láb sarka az ellenoldali térdre kerül, és a térdet az asztal felé engedjük. A lágyékfájdalom csípőízületi eredetre, a hátsó (sacroiliacalis tájéki) fájdalom SI-ízületi problémára utalhat; a nem süllyedő térd csökkent csípőmobilitást jelez.",
+        "sv": "Vid FABER (Patricks test) placeras hälen på det undersökta benet vid motsatta knät och knät får sjunka mot britsen. Ljumsksmärta talar för höftledsursprung, bakre smärta (i sakroiliakaregionen) för SI-ledsproblem; ett knä som inte sjunker visar minskad höftrörlighet."
+      },
+      "link": {
+        "view": "modul-csipo",
+        "item": "art.coxae"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "cs16",
+      "topic": "csipo",
+      "type": "tf",
+      "prompt": {
+        "hu": "A m. gracilis az egyetlen adductor, amely a térdízületet is áthidalja.",
+        "sv": "M. gracilis är den enda adduktorn som också passerar över knäleden."
+      },
+      "answer": true,
+      "explanation": {
+        "hu": "Igaz. A m. gracilis a pes anserinus superficialisban tapad a tibia mediális felszínén, így a térdet hajlítja és befelé forgatja. Ina gyakori graft az elülső keresztszalag-pótlásnál.",
+        "sv": "Sant. M. gracilis fäster i pes anserinus superficialis på tibias mediala yta och flekterar och inåtroterar därför knät. Senan är ett vanligt graft vid rekonstruktion av främre korsbandet."
+      },
+      "link": {
+        "view": "modul-csipo",
+        "item": "m.gracilis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "cs17",
+      "topic": "csipo",
+      "type": "tf",
+      "prompt": {
+        "hu": "Pozitív Trendelenburg-jelnél a medence a terhelt (támaszláb) oldalon süllyed le.",
+        "sv": "Vid positivt Trendelenburgs tecken sjunker bäckenet på den belastade sidan (ståbenets sida)."
+      },
+      "answer": false,
+      "explanation": {
+        "hu": "Hamis. A medence a lengő, tehermentes oldalon süllyed le, mert a támaszoldali abductorok (m. gluteus medius és minimus) gyengék. A hibás oldal tehát az, amelyiken a beteg áll.",
+        "sv": "Falskt. Bäckenet sjunker på svingbenets, obelastade sida, eftersom ståbenets abduktorer (m. gluteus medius och minimus) är svaga. Den drabbade sidan är alltså den som patienten står på."
+      },
+      "link": {
+        "view": "modul-csipo",
+        "item": "m.gluteus-medius"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "cs18",
+      "topic": "csipo",
+      "type": "tf",
+      "prompt": {
+        "hu": "A csípőízület zárt (close-packed) helyzete a teljes flexio.",
+        "sv": "Höftledens låsta (close-packed) position är full flexion."
+      },
+      "answer": false,
+      "explanation": {
+        "hu": "Hamis. A csípő zárt helyzete az extensio, befelé forgatás és enyhe abductio, amikor a spirálisan futó tokszalagok feszesek. A laza (resting) helyzet kb. 30° flexio, 30° abductio és enyhe kifelé forgatás – ezt veszi fel spontán az ízületi folyadékgyülemmel járó csípő is.",
+        "sv": "Falskt. Höftens låsta position är extension, inåtrotation och lätt abduktion, då de spiralformade kapselligamenten är sträckta. Vilopositionen är ca 30° flexion, 30° abduktion och lätt utåtrotation – den position som en höft med ledutgjutning spontant intar."
+      },
+      "link": {
+        "view": "modul-csipo",
+        "item": "art.coxae"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "cs19",
+      "topic": "csipo",
+      "type": "tf",
+      "prompt": {
+        "hu": "A m. iliacust a n. femoralis, a m. psoas majort a plexus lumbalis közvetlen ágai idegzik be.",
+        "sv": "M. iliacus innerveras av n. femoralis och m. psoas major av direkta grenar från plexus lumbalis."
+      },
+      "answer": true,
+      "explanation": {
+        "hu": "Igaz. A két izom közös ínnal tapad a trochanter minoron (m. iliopsoas), de beidegzésük eltér: a psoas major a L1–L3 rami anteriores közvetlen ágait kapja, az iliacus a n. femoralist (L2–L3). Klinikailag az ellenállásos csípőflexio az L2 myotoma vizsgálata.",
+        "sv": "Sant. De två musklerna fäster med gemensam sena på trochanter minor (m. iliopsoas), men innervationen skiljer sig: psoas major får direkta grenar från rami anteriores L1–L3, iliacus n. femoralis (L2–L3). Kliniskt används höftflexion mot motstånd för att testa myotom L2."
+      },
+      "link": {
+        "view": "modul-csipo",
+        "item": "m.iliacus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "cs20",
+      "topic": "csipo",
+      "type": "match",
+      "prompt": {
+        "hu": "Párosítsd az izmot a beidegző idegével és a szegmensekkel!",
+        "sv": "Para ihop muskeln med dess nerv och segment!"
+      },
+      "heads": {
+        "hu": [
+          "IZOM",
+          "IDEG",
+          "SZEGMENSEK"
+        ],
+        "sv": [
+          "MUSKEL",
+          "NERV",
+          "SEGMENT"
+        ]
+      },
+      "rows": [
+        [
+          "m. gluteus maximus",
+          "n. gluteus inferior",
+          "L5–S2"
+        ],
+        [
+          "m. gluteus medius",
+          "n. gluteus superior",
+          "L4–S1"
+        ],
+        [
+          "m. adductor longus",
+          "n. obturatorius",
+          "L2–L4"
+        ],
+        [
+          "m. iliacus",
+          "n. femoralis",
+          "L2–L3"
+        ]
+      ],
+      "explanation": {
+        "hu": "Elöl a plexus lumbalis (n. femoralis a flexorokhoz, n. obturatorius az adductorokhoz), hátul a plexus sacralis (nn. glutei) idegzi be a csípő izmait. A segmentumok segítenek a gyöki és a perifériás idegi lézió elkülönítésében: L5-gyöki laesio például gyengítheti a gluteus mediust is.",
+        "sv": "Framtill innerveras höftens muskler av plexus lumbalis (n. femoralis till flexorerna, n. obturatorius till adduktorerna), baktill av plexus sacralis (nn. glutei). Segmenten hjälper att skilja rotpåverkan från perifer nervskada: en L5-rotpåverkan kan till exempel också försvaga gluteus medius."
+      },
+      "link": {
+        "view": "modul-csipo",
+        "item": null
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "cs21",
+      "topic": "csipo",
+      "type": "match",
+      "prompt": {
+        "hu": "Párosítsd a magyar kifejezést a svéd és a latin alakkal!",
+        "sv": "Para ihop den ungerska termen med den svenska och den latinska formen!"
+      },
+      "rows": [
+        [
+          "nagy tompor",
+          "stora trokantern",
+          "trochanter major"
+        ],
+        [
+          "ülőgumó",
+          "sittbensknöl",
+          "tuber ischiadicum"
+        ],
+        [
+          "combnyak",
+          "lårbenshals",
+          "collum femoris"
+        ],
+        [
+          "csípőtaraj",
+          "höftbenskam",
+          "crista iliaca"
+        ]
+      ],
+      "explanation": {
+        "hu": "Ezek a csípőtáj legfontosabb tapintható vagy klinikailag gyakran emlegetett csontos pontjai. A trochanter major a farizmok, a tuber ischiadicum a hamstringizmok és az adductor magnus tapadási helye, a collum femoris pedig a csípőtáji törések jellegzetes helye.",
+        "sv": "Detta är höftregionens viktigaste palpabla eller kliniskt ofta nämnda benpunkter. Trochanter major är fäste för sätesmusklerna, tuber ischiadicum ursprung för hamstringsmusklerna och adductor magnus, och collum femoris är ett typiskt ställe för höftfrakturer."
+      },
+      "link": {
+        "view": "szotar",
+        "item": null
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "cs22",
+      "topic": "csipo",
+      "type": "order",
+      "prompt": {
+        "hu": "Állítsd sorrendbe a Thomas-teszt lépéseit!",
+        "sv": "Ordna stegen i Thomas test!"
+      },
+      "items": [
+        {
+          "hu": "A beteg az asztal végén ül, majd hanyatt fekszik, a combok félig az asztalon túl lógnak",
+          "sv": "Patienten sitter vid britsens kortände och lägger sig sedan på rygg med låren delvis utanför britsen"
+        },
+        {
+          "hu": "Mindkét térdet a mellkashoz húzza, hogy kisimuljon a lumbális lordózis",
+          "sv": "Patienten drar båda knäna mot bröstet så att ländlordosen planas ut"
+        },
+        {
+          "hu": "Az egyik térdet a mellkasnál tartja, a vizsgált lábat az asztal felé engedi",
+          "sv": "Patienten håller kvar ena knät mot bröstet och sänker det undersökta benet mot britsen"
+        },
+        {
+          "hu": "A vizsgáló megnézi, eléri-e a comb az asztalt (m. iliopsoas)",
+          "sv": "Undersökaren ser om låret når britsen (m. iliopsoas)"
+        },
+        {
+          "hu": "A vizsgáló megnézi a térd hajlítási szögét (m. rectus femoris) és a comb abductióját (TFL)",
+          "sv": "Undersökaren bedömer knäts flexionsvinkel (m. rectus femoris) och lårets abduktion (TFL)"
+        }
+      ],
+      "explanation": {
+        "hu": "A lordózis kisimítása a kulcs: anélkül a beteg a medence előrebillentésével és a derék homorításával elfedheti a csípőflexiós kontraktúrát. A comb helyzete a mono-artikuláris iliopsoasról, a térdszög a kétízületi rectus femorisról ad információt.",
+        "sv": "Att plana ut lordosen är nyckeln: utan det kan patienten dölja en höftflexionskontraktur genom att tippa bäckenet framåt och svanka. Lårets läge säger något om den enledade iliopsoas, knävinkeln om den tvåledade rectus femoris."
+      },
+      "link": {
+        "view": "modul-csipo",
+        "item": "m.psoas-major"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "ct1",
+      "topic": "comb-terd",
+      "type": "mc",
+      "prompt": {
+        "hu": "Egy kézilabdázó fordulás közben nem kontakt térdsérülést szenved, a térd órákon belül megduzzad. Melyik teszt a legérzékenyebb az elülső keresztszalag-szakadásra?",
+        "sv": "En handbollsspelare får en icke-kontaktskada i knät vid en vridning, och knät svullnar inom några timmar. Vilket test är mest känsligt för en ruptur av främre korsbandet?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "Elülső fiókteszt 90°-os flexióban",
+            "sv": "Främre draglådstest i 90° flexion"
+          },
+          "whyWrong": {
+            "hu": "Érvényes ACL-teszt, de akut helyzetben kevésbé érzékeny: a fájdalom és a duzzanat miatt a hamstringek feszülnek, és a meniscus hátsó szarva \"ékként\" fékezheti az elmozdulást.",
+            "sv": "Ett giltigt ACL-test, men mindre känsligt i akut skede: smärta och svullnad gör att hamstrings spänns, och meniskens bakhorn kan bromsa translationen som en \"kil\"."
+          }
+        },
+        {
+          "text": {
+            "hu": "Valgus-stressz 30°-ban",
+            "sv": "Valgusstress i 30°"
+          },
+          "whyWrong": {
+            "hu": "Ez a lig. collaterale tibiale (MCL) tesztje, nem az elülső tibia-elmozdulásé.",
+            "sv": "Detta testar lig. collaterale tibiale (MCL), inte främre tibiatranslation."
+          }
+        },
+        {
+          "text": {
+            "hu": "Lachman-teszt 20–30°-os flexióban",
+            "sv": "Lachmans test i 20–30° flexion"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "McMurray-teszt",
+            "sv": "McMurrays test"
+          },
+          "whyWrong": {
+            "hu": "A McMurray-teszt meniscussérülést keres, nem szalaginstabilitást.",
+            "sv": "McMurrays test letar efter meniskskada, inte ligamentinstabilitet."
+          }
+        }
+      ],
+      "answer": 2,
+      "explanation": {
+        "hu": "A Lachman-teszt enyhe flexióban vizsgálja a tibia elülső elcsúszását, amikor a hamstringek kevésbé gátolnak, és a meniscus sem ékelődik be. Pozitív, ha az elmozdulás nagyobb az ép oldalnál, és a végérzés puha, határozatlan. Az akut duzzanat (haemarthros) órákon belül szintén ACL-sérülésre utal.",
+        "sv": "Lachmans test bedömer främre translation av tibia i lätt flexion, då hamstrings hämmar mindre och menisken inte kilar fast. Testet är positivt när translationen är större än på friska sidan och ändkänslan är mjuk och odefinierad. Snabb svullnad (hemartros) inom några timmar talar också för ACL-skada."
+      },
+      "link": {
+        "view": "modul-comb-terd",
+        "item": "art.genus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "ct2",
+      "topic": "comb-terd",
+      "type": "mc",
+      "prompt": {
+        "hu": "Mit idéz elő a pivot shift teszt pozitív esetben?",
+        "sv": "Vad framkallar ett positivt pivot shift-test?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "A patella laterális kificamodásának érzését",
+            "sv": "En känsla av att patella luxerar lateralt"
+          },
+          "whyWrong": {
+            "hu": "Ez a patella apprehension teszt célja, nem a pivot shifté.",
+            "sv": "Det är syftet med patellar apprehension-testet, inte pivot shift."
+          }
+        },
+        {
+          "text": {
+            "hu": "A tibia laterális platójának elülső subluxatióját és annak hirtelen visszaugrását kb. 30°-os flexiónál",
+            "sv": "Främre subluxation av tibias laterala platå och dess plötsliga reposition vid ca 30° flexion"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "A meniscus becsípődését és kattanást az ízületi résben",
+            "sv": "Inklämning av menisken och ett klick i ledspringan"
+          },
+          "whyWrong": {
+            "hu": "Ez a McMurray-teszt jellemző lelete.",
+            "sv": "Detta är det typiska fyndet vid McMurrays test."
+          }
+        },
+        {
+          "text": {
+            "hu": "A tibia hátrasüllyedését 90°-os flexióban",
+            "sv": "Bakåtsjunkning av tibia i 90° flexion"
+          },
+          "whyWrong": {
+            "hu": "A \"posterior sag\" a hátsó keresztszalag (PCL) sérülésére utal.",
+            "sv": "\"Posterior sag\" talar för skada på bakre korsbandet (PCL)."
+          }
+        }
+      ],
+      "answer": 1,
+      "explanation": {
+        "hu": "A pivot shift a funkcionális, rotációs ACL-instabilitást utánozza: valgus és a tibia befelé forgatása mellett a nyújtott térdet hajlítják. ACL-hiányban a laterális tibiaplató elöl subluxálódik, majd kb. 20–40° között a tractus iliotibialis hirtelen visszahúzza. Éber betegnél gyakran a védekező izomfeszülés miatt nehezen kivitelezhető.",
+        "sv": "Pivot shift efterliknar funktionell, rotatorisk ACL-instabilitet: knät flekteras från extension med valgus och inåtrotation av tibia. Vid ACL-insufficiens subluxerar laterala tibiaplatån framåt och reponeras plötsligt av tractus iliotibialis vid ca 20–40°. Hos en vaken patient är testet ofta svårt att utföra på grund av muskulärt försvar."
+      },
+      "link": {
+        "view": "modul-comb-terd",
+        "item": "art.genus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "ct3",
+      "topic": "comb-terd",
+      "type": "tf",
+      "prompt": {
+        "hu": "Az elülső keresztszalag a tibia femurhoz képesti elülső elcsúszását és befelé forgatását fékezi.",
+        "sv": "Främre korsbandet bromsar främre translation och inåtrotation av tibia i förhållande till femur."
+      },
+      "answer": true,
+      "explanation": {
+        "hu": "Igaz. Az ACL a tibia area intercondylaris anteriorjától a condylus lateralis femoris mediális felszínének hátsó részéig fut, így feszül a tibia előrecsúszásakor és befelé forgatásakor. Ezért gyakori a sérülés rögzített lábbal végzett fordulásnál és valgus-mozgásnál.",
+        "sv": "Sant. ACL löper från tibias area intercondylaris anterior till bakre delen av mediala ytan på femurs condylus lateralis och spänns därför vid främre translation och inåtrotation av tibia. Därför är skadan vanlig vid vridning med fixerad fot och valgusrörelse."
+      },
+      "link": {
+        "view": "modul-comb-terd",
+        "item": "art.genus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "ct4",
+      "topic": "comb-terd",
+      "type": "mc",
+      "prompt": {
+        "hu": "McMurray-teszt során a térdet teljes flexióból nyújtják, miközben a tibiát kifelé forgatják (valgussal). A beteg fájdalmat és kattanást jelez a mediális ízületi résben. Melyik struktúra sérülése a legvalószínűbb?",
+        "sv": "Vid McMurrays test extenderas knät från full flexion medan tibia utåtroteras (med valgus). Patienten anger smärta och ett klick i mediala ledspringan. Vilken struktur är mest sannolikt skadad?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "Lig. collaterale fibulare",
+            "sv": "Lig. collaterale fibulare"
+          },
+          "whyWrong": {
+            "hu": "Az LCL a laterális oldalon van, és varus-stresszel vizsgálják.",
+            "sv": "LCL sitter på laterala sidan och undersöks med varusstress."
+          }
+        },
+        {
+          "text": {
+            "hu": "Meniscus lateralis",
+            "sv": "Meniscus lateralis"
+          },
+          "whyWrong": {
+            "hu": "A laterális meniscust a tibia befelé forgatásával (varussal) vizsgálják, és a tünetek laterálisan jelentkeznek.",
+            "sv": "Laterala menisken testas med inåtrotation av tibia (med varus), och symtomen uppträder lateralt."
+          }
+        },
+        {
+          "text": {
+            "hu": "Lig. cruciatum posterius",
+            "sv": "Lig. cruciatum posterius"
+          },
+          "whyWrong": {
+            "hu": "A PCL-t a hátsó fiókteszt és a posterior sag vizsgálja; nem ad ízületi rés kattanást.",
+            "sv": "PCL undersöks med bakre draglådstest och posterior sag; den ger inget klick i ledspringan."
+          }
+        },
+        {
+          "text": {
+            "hu": "Meniscus medialis",
+            "sv": "Meniscus medialis"
+          },
+          "whyWrong": null
+        }
+      ],
+      "answer": 3,
+      "explanation": {
+        "hu": "A tibia kifelé forgatása a mediális meniscus hátsó szarvát a femurcondylus alá szorítja; a mediális résben jelentkező fájdalom és kattanás erre utal. A McMurray-teszt specificitása jó, de érzékenysége mérsékelt, ezért az ízületi rés nyomásérzékenységével és az anamnézissel (elakadás, blokkolás) együtt értelmezzük.",
+        "sv": "Utåtrotation av tibia klämmer mediala meniskens bakhorn under femurkondylen; smärta och klick i mediala ledspringan talar för skada där. McMurrays test har god specificitet men måttlig sensitivitet och tolkas därför tillsammans med ömhet över ledspringan och anamnesen (upphakning, låsning)."
+      },
+      "link": {
+        "view": "modul-comb-terd",
+        "item": "art.genus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "ct5",
+      "topic": "comb-terd",
+      "type": "mc",
+      "prompt": {
+        "hu": "Miért sérül a mediális meniscus gyakrabban, mint a laterális?",
+        "sv": "Varför skadas mediala menisken oftare än den laterala?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "Mert a tokhoz és az MCL mély rostjaihoz rögzül, ezért kevésbé tud kitérni",
+            "sv": "Eftersom den är fäst vid kapseln och MCL:s djupa fibrer och därför har svårare att vika undan"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "Mert vastagabb és merevebb a porca",
+            "sv": "Eftersom dess brosk är tjockare och styvare"
+          },
+          "whyWrong": {
+            "hu": "Nem a vastagság a döntő tényező; a laterális meniscus éppen kerekebb és egyenletesebb vastagságú.",
+            "sv": "Tjockleken är inte avgörande; den laterala menisken är tvärtom rundare och jämnare i tjocklek."
+          }
+        },
+        {
+          "text": {
+            "hu": "Mert a m. popliteus a mediális meniscushoz tapad",
+            "sv": "Eftersom m. popliteus fäster i mediala menisken"
+          },
+          "whyWrong": {
+            "hu": "A m. popliteus a laterális meniscushoz ad rostokat, és azt védi (hátrahúzza) flexióban.",
+            "sv": "M. popliteus ger fibrer till laterala menisken och skyddar den (drar den bakåt) vid flexion."
+          }
+        },
+        {
+          "text": {
+            "hu": "Mert nincs vérellátása",
+            "sv": "Eftersom den saknar blodförsörjning"
+          },
+          "whyWrong": {
+            "hu": "Mindkét meniscus külső harmada (\"red zone\") vérellátott; ez a gyógyulást befolyásolja, nem a sérülés gyakoriságát.",
+            "sv": "Båda meniskernas yttre tredjedel (\"red zone\") är vaskulariserad; det påverkar läkningen, inte hur ofta de skadas."
+          }
+        }
+      ],
+      "answer": 0,
+      "explanation": {
+        "hu": "A mediális meniscus C alakú, tágabb ívű, és szorosan kapcsolódik a tokhoz és a lig. collaterale tibiale mély rostjaihoz. Rotációs és valgus-terhelésnél ezért nem tud kitérni a femurcondylus elől. A laterális meniscus kerekebb, nem rögzül az LCL-hez, és a m. popliteus aktívan mozgatja.",
+        "sv": "Den mediala menisken är C-formad med vidare båge och tätt förbunden med kapseln och de djupa fibrerna i lig. collaterale tibiale. Vid rotations- och valgusbelastning kan den därför inte vika undan för femurkondylen. Den laterala menisken är rundare, fäster inte i LCL och dras aktivt av m. popliteus."
+      },
+      "link": {
+        "view": "modul-comb-terd",
+        "item": "art.genus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "ct6",
+      "topic": "comb-terd",
+      "type": "mc",
+      "prompt": {
+        "hu": "Valgus-stresszteszt: a térd 30°-os flexióban a mediális oldalon nyílik, de teljes nyújtásban (0°) stabil. Mi a legvalószínűbb értelmezés?",
+        "sv": "Valgusstresstest: knät öppnar sig medialt i 30° flexion men är stabilt i full extension (0°). Vad är den mest sannolika tolkningen?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "Kombinált ACL- és MCL-szakadás",
+            "sv": "Kombinerad ACL- och MCL-ruptur"
+          },
+          "whyWrong": {
+            "hu": "Kombinált sérülésnél a térd jellemzően 0°-ban is nyílik, mert a keresztszalagok és a hátsó tok sem fékez.",
+            "sv": "Vid kombinerad skada öppnar sig knät typiskt även i 0°, eftersom korsbanden och den bakre kapseln inte heller bromsar."
+          }
+        },
+        {
+          "text": {
+            "hu": "Izolált lig. collaterale tibiale (MCL) sérülés",
+            "sv": "Isolerad skada på lig. collaterale tibiale (MCL)"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "Lig. collaterale fibulare sérülés",
+            "sv": "Skada på lig. collaterale fibulare"
+          },
+          "whyWrong": {
+            "hu": "Az LCL-t varus-stressz vizsgálja, és laterális nyílást okoz.",
+            "sv": "LCL testas med varusstress och ger lateral uppklaffning."
+          }
+        },
+        {
+          "text": {
+            "hu": "Normális lelet",
+            "sv": "Normalt fynd"
+          },
+          "whyWrong": {
+            "hu": "Normálisan 30°-ban is csak minimális, az ép oldallal megegyező nyílás és határozott végérzés van.",
+            "sv": "Normalt finns även i 30° bara minimal uppklaffning, lika med friska sidan, och en fast ändkänsla."
+          }
+        }
+      ],
+      "answer": 1,
+      "explanation": {
+        "hu": "30°-os flexióban a hátsó tok és a keresztszalagok ellazulnak, így a valgus-stabilitást szinte csak az MCL adja: ilyenkor a laxitás izolált MCL-sérülésre utal. Teljes nyújtásban a tok és a keresztszalagok is fékeznek; ha a térd 0°-ban is nyílik, súlyosabb, kombinált sérülésre kell gondolni.",
+        "sv": "I 30° flexion är den bakre kapseln och korsbanden avslappnade, så valgusstabiliteten ges nästan bara av MCL: laxitet där talar för isolerad MCL-skada. I full extension bromsar även kapseln och korsbanden; öppnar sig knät även i 0° bör man misstänka en allvarligare, kombinerad skada."
+      },
+      "link": {
+        "view": "modul-comb-terd",
+        "item": "art.genus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "ct7",
+      "topic": "comb-terd",
+      "type": "mc",
+      "prompt": {
+        "hu": "Melyik három struktúra alkotja a klasszikus \"unhappy triad\"-et (O'Donoghue-triász)?",
+        "sv": "Vilka tre strukturer ingår i den klassiska \"unhappy triad\" (O'Donoghues triad)?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "PCL, LCL, laterális meniscus",
+            "sv": "PCL, LCL, laterala menisken"
+          },
+          "whyWrong": {
+            "hu": "Ez inkább a posterolaterális sérülések köréhez tartozik, nem a klasszikus triászhoz.",
+            "sv": "Detta hör snarare till de posterolaterala skadorna, inte den klassiska triaden."
+          }
+        },
+        {
+          "text": {
+            "hu": "ACL, PCL, MCL",
+            "sv": "ACL, PCL, MCL"
+          },
+          "whyWrong": {
+            "hu": "Mindkét keresztszalag és egy oldalszalag sérülése már térdficamra (knee dislocation) utal, nem a triászra.",
+            "sv": "Skada på båda korsbanden och ett kollateralligament talar snarare för knäluxation, inte för triaden."
+          }
+        },
+        {
+          "text": {
+            "hu": "ACL, MCL, mediális meniscus",
+            "sv": "ACL, MCL, mediala menisken"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "MCL, patella, lig. patellae",
+            "sv": "MCL, patella, lig. patellae"
+          },
+          "whyWrong": {
+            "hu": "A patella és a lig. patellae a feszítőapparátus része; a triász szalag- és meniscussérülés.",
+            "sv": "Patella och lig. patellae tillhör extensorapparaten; triaden är en ligament- och meniskskada."
+          }
+        }
+      ],
+      "answer": 2,
+      "explanation": {
+        "hu": "A klasszikus leírás szerint a térd külső oldalát érő ütés valgus- és rotációs erővel egyszerre szakítja az ACL-t, az MCL-t és a hozzá rögzült mediális meniscust. Későbbi vizsgálatok szerint akut ACL+MCL-sérülésnél valójában a laterális meniscus sérül gyakrabban, de a fogalom a vizsgálatban és a nyelvhasználatban megmaradt.",
+        "sv": "Enligt den klassiska beskrivningen ger ett slag mot knäts utsida en valgus- och rotationskraft som samtidigt skadar ACL, MCL och den därtill fästa mediala menisken. Senare studier visar att den laterala menisken faktiskt skadas oftare vid akut ACL+MCL-skada, men begreppet lever kvar i undersökning och språkbruk."
+      },
+      "link": {
+        "view": "modul-comb-terd",
+        "item": "art.genus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "ct8",
+      "topic": "comb-terd",
+      "type": "mc",
+      "prompt": {
+        "hu": "Melyik izomrész rostjai erednek a m. adductor magnus inából, és fékezik közvetlenül a patella laterális elmozdulását?",
+        "sv": "Vilken muskeldels fibrer utgår från senan till m. adductor magnus och motverkar direkt lateral förskjutning av patella?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "M. vastus intermedius",
+            "sv": "M. vastus intermedius"
+          },
+          "whyWrong": {
+            "hu": "A vastus intermedius a femur elülső felszínéről ered, és egyenesen felfelé húz.",
+            "sv": "Vastus intermedius utgår från femurs framsida och drar rakt uppåt."
+          }
+        },
+        {
+          "text": {
+            "hu": "M. rectus femoris",
+            "sv": "M. rectus femoris"
+          },
+          "whyWrong": {
+            "hu": "A rectus femoris a medencéről ered, húzása nagyjából a comb hossztengelyében hat.",
+            "sv": "Rectus femoris utgår från bäckenet och drar ungefär i lårets längdaxel."
+          }
+        },
+        {
+          "text": {
+            "hu": "M. vastus lateralis",
+            "sv": "M. vastus lateralis"
+          },
+          "whyWrong": {
+            "hu": "Épp ellenkezőleg: a vastus lateralis laterális irányba húzza a patellát.",
+            "sv": "Tvärtom: vastus lateralis drar patella lateralt."
+          }
+        },
+        {
+          "text": {
+            "hu": "M. vastus medialis obliquus (VMO)",
+            "sv": "M. vastus medialis obliquus (VMO)"
+          },
+          "whyWrong": null
+        }
+      ],
+      "answer": 3,
+      "explanation": {
+        "hu": "A VMO disztális rostjai kb. 50–55°-os szögben, mediális irányból érik el a patellát, ezért a patella laterális elcsúszásával szemben dinamikus ellenerőt adnak. Patellofemorális fájdalomnál hagyományosan a VMO-t célozták; a mai evidencia szerint a teljes quadriceps és a csípőizmok kombinált erősítése a hatékony.",
+        "sv": "VMO:s distala fibrer når patella från medialt i ca 50–55° vinkel och ger därför en dynamisk motkraft mot lateral glidning av patella. Vid patellofemoral smärta har VMO traditionellt varit i fokus; enligt dagens evidens är kombinerad träning av hela quadriceps och höftmusklerna effektiv."
+      },
+      "link": {
+        "view": "modul-comb-terd",
+        "item": "m.vastus-medialis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "ct9",
+      "topic": "comb-terd",
+      "type": "tf",
+      "prompt": {
+        "hu": "A nagyobb Q-szög a quadriceps húzóerejének laterális komponensét növeli, így hajlamosíthat a patella laterális tracking-zavarára.",
+        "sv": "En större Q-vinkel ökar den laterala komponenten av quadriceps dragkraft och kan därmed predisponera för lateral patellar tracking."
+      },
+      "answer": true,
+      "explanation": {
+        "hu": "Igaz. A Q-szöget a SIAS–patellaközép és a patellaközép–tuberositas tibiae vonalak zárják be; normálértéke kb. 10–15°, nőknél valamivel nagyobb (forrásonként eltér). Önmagában gyenge előrejelző, de dinamikus valgusszal (gyenge csípőabductorok, befelé rotált femur) együtt fokozza a patellofemorális terhelést.",
+        "sv": "Sant. Q-vinkeln bildas av linjerna SIAS–patellas mitt och patellas mitt–tuberositas tibiae; normalvärdet är ca 10–15°, något större hos kvinnor (varierar mellan källor). Ensam är den en svag prediktor, men tillsammans med dynamisk valgus (svaga höftabduktorer, inåtroterat femur) ökar den den patellofemorala belastningen."
+      },
+      "link": {
+        "view": "modul-comb-terd",
+        "item": "m.vastus-medialis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "ct10",
+      "topic": "comb-terd",
+      "type": "mc",
+      "prompt": {
+        "hu": "ACL-rekonstrukció után 2 héttel a beteg passzívan teljesen nyújtja a térdét, de aktívan (egyenes lábemeléskor) 15°-os deficit marad. Mi ennek a leggyakoribb oka?",
+        "sv": "Två veckor efter ACL-rekonstruktion kan patienten passivt sträcka knät fullt, men aktivt (vid raka benlyft) kvarstår ett deficit på 15°. Vad är den vanligaste orsaken?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "Arthrogén izomgátlás (fájdalom, effúzió) okozta quadriceps lag",
+            "sv": "Quadriceps lag orsakad av artrogen muskelhämning (smärta, effusion)"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "Hátsó tok zsugorodása (flexiós kontraktúra)",
+            "sv": "Skrumpning av den bakre kapseln (flexionskontraktur)"
+          },
+          "whyWrong": {
+            "hu": "Kontraktúránál a passzív extensio is korlátozott lenne; itt a passzív nyújtás teljes.",
+            "sv": "Vid kontraktur skulle även den passiva extensionen vara begränsad; här är den passiva extensionen full."
+          }
+        },
+        {
+          "text": {
+            "hu": "A n. femoralis műtéti sérülése",
+            "sv": "Kirurgisk skada på n. femoralis"
+          },
+          "whyWrong": {
+            "hu": "Lehetséges, de ritka; idegsérülésnél bénulás, reflexkiesés és érzészavar is lenne. Először a gyakori, reverzibilis okra gondolunk.",
+            "sv": "Möjligt men ovanligt; vid nervskada skulle man även se förlamning, bortfall av reflexen och känselstörning. Först tänker man på den vanliga, reversibla orsaken."
+          }
+        },
+        {
+          "text": {
+            "hu": "Hamstring-rövidülés",
+            "sv": "Förkortade hamstrings"
+          },
+          "whyWrong": {
+            "hu": "Rövidült hamstring a passzív nyújtást is fékezné, főleg hajlított csípőnél.",
+            "sv": "Förkortade hamstrings skulle även bromsa den passiva extensionen, särskilt med flekterad höft."
+          }
+        }
+      ],
+      "answer": 0,
+      "explanation": {
+        "hu": "Ha a passzív extensio teljes, de az aktív nem, \"extensiós lag\"-ről beszélünk: a quadriceps nem képes a mozgás utolsó fokait végrehajtani. Műtét után ezt főleg a fájdalom és az effúzió okozta reflexes gátlás (arthrogén izomgátlás) okozza. Kezelése: duzzanatcsökkentés, izometriás quadriceps-gyakorlatok, szükség esetén NMES, és a teljes aktív extensio korai visszanyerése.",
+        "sv": "När den passiva extensionen är full men inte den aktiva talar man om \"extension lag\": quadriceps klarar inte de sista graderna av rörelsen. Efter operation beror detta främst på reflexmässig hämning orsakad av smärta och effusion (artrogen muskelhämning). Behandling: svullnadsreduktion, isometrisk quadricepsträning, vid behov NMES, och att tidigt återfå full aktiv extension."
+      },
+      "link": {
+        "view": "modul-comb-terd",
+        "item": "m.rectus-femoris"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "ct11",
+      "topic": "comb-terd",
+      "type": "mc",
+      "prompt": {
+        "hu": "Egy sprinter a futás késői lendítési fázisában hirtelen éles fájdalmat érez a comb hátsó oldalán. Melyik izom sérül a leggyakrabban ilyen mechanizmusnál?",
+        "sv": "En sprinter känner plötslig skarp smärta på lårets baksida i sen svingfas. Vilken muskel skadas oftast vid denna mekanism?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "M. semimembranosus",
+            "sv": "M. semimembranosus"
+          },
+          "whyWrong": {
+            "hu": "A semimembranosus inkább a nagy nyújtással járó (tánc, magas rúgás) mechanizmusnál sérül.",
+            "sv": "Semimembranosus skadas snarare vid mekanismer med stor töjning (dans, höga sparkar)."
+          }
+        },
+        {
+          "text": {
+            "hu": "M. biceps femoris, caput longum",
+            "sv": "M. biceps femoris, caput longum"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "M. popliteus",
+            "sv": "M. popliteus"
+          },
+          "whyWrong": {
+            "hu": "A popliteus kis, mély térdizom; sprintben nem ez a jellemző sérülés.",
+            "sv": "Popliteus är en liten, djup knämuskel; den är inte den typiska skadan vid sprint."
+          }
+        },
+        {
+          "text": {
+            "hu": "M. rectus femoris",
+            "sv": "M. rectus femoris"
+          },
+          "whyWrong": {
+            "hu": "A rectus femoris a comb elülső oldalán van.",
+            "sv": "Rectus femoris ligger på lårets framsida."
+          }
+        }
+      ],
+      "answer": 1,
+      "explanation": {
+        "hu": "A késői lendítési fázisban a hamstringek excentrikusan fékezik a térd nyújtását, miközben a csípő hajlított – ekkor a legnagyobb a hosszuk és a terhelésük. A m. biceps femoris hosszú feje sérül a leggyakrabban, főleg az izom–ín átmenetnél. A megelőzésben az excentrikus erősítés (pl. Nordic hamstring) bizonyítottan hatékony.",
+        "sv": "I sen svingfas bromsar hamstrings excentriskt knäextensionen medan höften är flekterad – då är deras längd och belastning störst. Långa huvudet av m. biceps femoris skadas oftast, särskilt vid muskel–senövergången. Excentrisk träning (t.ex. Nordic hamstring) har visad förebyggande effekt."
+      },
+      "link": {
+        "view": "modul-comb-terd",
+        "item": "m.biceps-femoris"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "ct12",
+      "topic": "comb-terd",
+      "type": "mc",
+      "prompt": {
+        "hu": "Egy futó a tibia proximális mediális oldalán, az ízületi rés alatt kb. 5 cm-rel érez fájdalmat és duzzanatot. Melyik izmok közös tapadása található itt?",
+        "sv": "En löpare har smärta och svullnad på tibias proximala mediala sida, ca 5 cm nedanför ledspringan. Vilka musklers gemensamma fäste finns här?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "M. semimembranosus, m. popliteus, m. gastrocnemius",
+            "sv": "M. semimembranosus, m. popliteus, m. gastrocnemius"
+          },
+          "whyWrong": {
+            "hu": "Ezek a térd hátsó oldalán tapadnak vagy erednek, nem a pes anserinusban.",
+            "sv": "Dessa fäster eller utgår på knäts baksida, inte i pes anserinus."
+          }
+        },
+        {
+          "text": {
+            "hu": "M. vastus medialis, m. rectus femoris, m. sartorius",
+            "sv": "M. vastus medialis, m. rectus femoris, m. sartorius"
+          },
+          "whyWrong": {
+            "hu": "A vastus medialis és a rectus femoris a patellán át a tuberositas tibiae-n tapad.",
+            "sv": "Vastus medialis och rectus femoris fäster via patella på tuberositas tibiae."
+          }
+        },
+        {
+          "text": {
+            "hu": "M. sartorius, m. gracilis, m. semitendinosus",
+            "sv": "M. sartorius, m. gracilis, m. semitendinosus"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "M. biceps femoris, m. gracilis, m. adductor magnus",
+            "sv": "M. biceps femoris, m. gracilis, m. adductor magnus"
+          },
+          "whyWrong": {
+            "hu": "A biceps femoris a caput fibulae-n, a laterális oldalon tapad; az adductor magnus a femuron.",
+            "sv": "Biceps femoris fäster på caput fibulae på laterala sidan; adductor magnus på femur."
+          }
+        }
+      ],
+      "answer": 2,
+      "explanation": {
+        "hu": "A pes anserinus (\"lúdláb\") három izom – sartorius (n. femoralis), gracilis (n. obturatorius) és semitendinosus (n. ischiadicus) – közös tapadása; mindhárom térdhajlító és a tibia befelé forgatója. Alatta bursa van, amelynek gyulladása mediális térdfájdalmat okoz, és könnyen összetéveszthető mediális meniscus- vagy MCL-panasszal.",
+        "sv": "Pes anserinus (\"gåsfoten\") är det gemensamma fästet för tre muskler – sartorius (n. femoralis), gracilis (n. obturatorius) och semitendinosus (n. ischiadicus); alla tre är knäflexorer och inåtrotatorer av tibia. Under fästet finns en bursa vars inflammation ger medial knäsmärta och lätt förväxlas med besvär från mediala menisken eller MCL."
+      },
+      "link": {
+        "view": "modul-comb-terd",
+        "item": "m.semitendinosus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "ct13",
+      "topic": "comb-terd",
+      "type": "order",
+      "prompt": {
+        "hu": "Állítsd sorrendbe a pes anserinus izmainak tapadását elölről hátrafelé (felülről lefelé)!",
+        "sv": "Ordna musklernas fästen i pes anserinus framifrån och bakåt (uppifrån och nedåt)!"
+      },
+      "items": [
+        {
+          "hu": "M. sartorius",
+          "sv": "M. sartorius"
+        },
+        {
+          "hu": "M. gracilis",
+          "sv": "M. gracilis"
+        },
+        {
+          "hu": "M. semitendinosus",
+          "sv": "M. semitendinosus"
+        }
+      ],
+      "explanation": {
+        "hu": "Elölről hátra: sartorius, gracilis, semitendinosus – ez három különböző idegterület (femoralis, obturatorius, ischiadicus) és három izomrekesz (elülső, mediális, hátsó). Angol emlékeztető: \"Say Grace before Tea\". A semitendinosus és a gracilis ina gyakori ACL-graft.",
+        "sv": "Framifrån och bakåt: sartorius, gracilis, semitendinosus – tre olika nervområden (femoralis, obturatorius, ischiadicus) och tre muskelkompartment (främre, mediala, bakre). Engelsk minnesregel: \"Say Grace before Tea\". Senorna från semitendinosus och gracilis är vanliga ACL-graft."
+      },
+      "link": {
+        "view": "modul-comb-terd",
+        "item": "m.sartorius"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "ct14",
+      "topic": "comb-terd",
+      "type": "mc",
+      "prompt": {
+        "hu": "Mi történik nyílt láncú térdnyújtás utolsó fokaiban a screw-home mechanizmus során?",
+        "sv": "Vad händer under de sista graderna av knäextension i öppen kedja vid screw-home-mekanismen?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "A tibia befelé forog a femuron",
+            "sv": "Tibia roterar inåt på femur"
+          },
+          "whyWrong": {
+            "hu": "Fordítva: befelé forgatás a térd \"kioldásakor\", a flexio kezdetén történik.",
+            "sv": "Tvärtom: inåtrotation sker när knät \"låses upp\", i början av flexionen."
+          }
+        },
+        {
+          "text": {
+            "hu": "A patella mediálisan csúszik",
+            "sv": "Patella glider medialt"
+          },
+          "whyWrong": {
+            "hu": "A patella mozgása nem része a screw-home mechanizmusnak; nyújtás végén inkább enyhén laterálisan helyezkedik.",
+            "sv": "Patellas rörelse ingår inte i screw-home-mekanismen; i slutet av extensionen ligger den snarare något lateralt."
+          }
+        },
+        {
+          "text": {
+            "hu": "A meniscusok hátrafelé mozognak",
+            "sv": "Meniskerna rör sig bakåt"
+          },
+          "whyWrong": {
+            "hu": "Nyújtáskor a meniscusok előre mozognak (a quadriceps a retinaculumokon át előre húzza őket); hajlításkor mennek hátra.",
+            "sv": "Vid extension rör sig meniskerna framåt (quadriceps drar dem framåt via retinaklerna); vid flexion rör de sig bakåt."
+          }
+        },
+        {
+          "text": {
+            "hu": "A tibia kb. 10°-kal kifelé forog a femuron, és a térd \"bezár\"",
+            "sv": "Tibia roterar ca 10° utåt på femur och knät \"låses\""
+          },
+          "whyWrong": null
+        }
+      ],
+      "answer": 3,
+      "explanation": {
+        "hu": "A condylus medialis femoris ízfelszíne hosszabb, mint a lateralisé, ezért a nyújtás végén a tibia kifelé rotál (zárt láncban a femur befelé), és a szalagok megfeszülnek. Ez a \"bezárt\" helyzet lehetővé teszi a kis izommunkájú állást. A mozgást az ACL, a condylusok alakja és a quadriceps húzása együtt irányítja.",
+        "sv": "Ledytan på femurs condylus medialis är längre än på lateralis, därför roterar tibia utåt i slutet av extensionen (i sluten kedja roterar femur inåt) och ligamenten spänns. Detta \"låsta\" läge möjliggör stående med lite muskelarbete. Rörelsen styrs av ACL, kondylernas form och quadriceps drag tillsammans."
+      },
+      "link": {
+        "view": "modul-comb-terd",
+        "item": "art.genus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "ct15",
+      "topic": "comb-terd",
+      "type": "mc",
+      "prompt": {
+        "hu": "Álló helyzetből guggolásba indulva melyik izom \"oldja ki\" a bezárt térdet, és milyen mozgással (zárt láncban)?",
+        "sv": "När man går från stående till knäböj, vilken muskel \"låser upp\" det låsta knät, och med vilken rörelse (i sluten kedja)?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "M. biceps femoris – a tibia kifelé forgatásával",
+            "sv": "M. biceps femoris – genom utåtrotation av tibia"
+          },
+          "whyWrong": {
+            "hu": "A biceps femoris a tibiát kifelé forgatja, ami a bezárt helyzet irányába hat, nem oldja ki.",
+            "sv": "Biceps femoris utåtroterar tibia, vilket verkar i det låsta lägets riktning och låser inte upp."
+          }
+        },
+        {
+          "text": {
+            "hu": "M. popliteus – a femur kifelé forgatásával a rögzített tibián",
+            "sv": "M. popliteus – genom utåtrotation av femur på den fixerade tibian"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "M. vastus medialis – a patella mediális húzásával",
+            "sv": "M. vastus medialis – genom att dra patella medialt"
+          },
+          "whyWrong": {
+            "hu": "A vastus medialis térdnyújtó; nem végez rotációt és nem oldja ki a térdet.",
+            "sv": "Vastus medialis är en knäextensor; den roterar inte och låser inte upp knät."
+          }
+        },
+        {
+          "text": {
+            "hu": "M. sartorius – a csípő hajlításával",
+            "sv": "M. sartorius – genom höftflexion"
+          },
+          "whyWrong": {
+            "hu": "A sartorius gyenge térdhajlító, de a kioldó rotációt főleg a popliteus végzi.",
+            "sv": "Sartorius är en svag knäflexor, men den upplåsande rotationen utförs främst av popliteus."
+          }
+        }
+      ],
+      "answer": 1,
+      "explanation": {
+        "hu": "A m. popliteus a screw-home mechanizmus ellentétét végzi: zárt láncban a femurt kifelé forgatja a tibián (nyílt láncban a tibiát befelé a femuron), így a térd hajlítása megkezdődhet. Közben a laterális meniscust is hátrahúzza, ami védi a becsípődéstől. N. tibialis idegzi be.",
+        "sv": "M. popliteus utför motsatsen till screw-home-mekanismen: i sluten kedja roterar den femur utåt på tibia (i öppen kedja tibia inåt på femur), så att knäflexionen kan börja. Samtidigt drar den laterala menisken bakåt, vilket skyddar den mot inklämning. Den innerveras av n. tibialis."
+      },
+      "link": {
+        "view": "modul-comb-terd",
+        "item": "m.popliteus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "ct16",
+      "topic": "comb-terd",
+      "type": "match",
+      "prompt": {
+        "hu": "Párosítsd a magyar kifejezést a svéd és a latin alakkal!",
+        "sv": "Para ihop den ungerska termen med den svenska och den latinska formen!"
+      },
+      "rows": [
+        [
+          "elülső keresztszalag",
+          "främre korsbandet",
+          "lig. cruciatum anterius"
+        ],
+        [
+          "belső oldalszalag",
+          "mediala kollateralligamentet",
+          "lig. collaterale tibiale"
+        ],
+        [
+          "térdhajlat",
+          "knävecket",
+          "fossa poplitea"
+        ],
+        [
+          "szabóizom",
+          "skräddarmuskeln",
+          "m. sartorius"
+        ]
+      ],
+      "explanation": {
+        "hu": "A térd oldalszalagjait latinul arról a csontról nevezzük el, amelyen disztálisan tapadnak (tibiale, fibulare); a klinikai rövidítések (MCL, LCL, ACL, PCL) angol eredetűek. A sartorius a nevét a \"szabóülésről\" kapta, amelyet összehúzódása létrehoz.",
+        "sv": "Knäts kollateralligament namnges på latin efter det ben de fäster distalt på (tibiale, fibulare); de kliniska förkortningarna (MCL, LCL, ACL, PCL) är engelska. Sartorius har fått sitt namn efter \"skräddarställningen\" som dess kontraktion ger."
+      },
+      "link": {
+        "view": "modul-comb-terd",
+        "item": "art.genus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "ct17",
+      "topic": "comb-terd",
+      "type": "tf",
+      "prompt": {
+        "hu": "A m. biceps femoris rövid fejét a n. ischiadicus tibialis része idegzi be.",
+        "sv": "Korta huvudet av m. biceps femoris innerveras av tibialisdelen av n. ischiadicus."
+      },
+      "answer": false,
+      "explanation": {
+        "hu": "Hamis. A rövid fej az egyetlen hátsó combizom, amelyet a n. ischiadicus fibularis communis része idegez be; a többi hamstring (és a hosszú fej) a tibialis részből kap ágat. Ez segít a lézió magasságának meghatározásában: n. fibularis communis-sérülésnél a rövid fej érintettsége a térdhajlat feletti léziót jelez.",
+        "sv": "Falskt. Korta huvudet är den enda bakre lårmuskeln som innerveras av fibularis communis-delen av n. ischiadicus; övriga hamstrings (och långa huvudet) får grenar från tibialisdelen. Detta hjälper till att bestämma lesionsnivån: om korta huvudet är påverkat vid peroneusskada talar det för en lesion ovanför knävecket."
+      },
+      "link": {
+        "view": "modul-comb-terd",
+        "item": "m.biceps-femoris"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "ct18",
+      "topic": "comb-terd",
+      "type": "mc",
+      "prompt": {
+        "hu": "Egy beteg nem tudja aktívan nyújtani a térdét, a patellareflex hiányzik, és érzészavara van a comb elülső és a lábszár mediális oldalán. Melyik ideg sérült?",
+        "sv": "En patient kan inte aktivt sträcka knät, patellarreflexen saknas och känseln är nedsatt på lårets framsida och underbenets mediala sida. Vilken nerv är skadad?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "N. obturatorius",
+            "sv": "N. obturatorius"
+          },
+          "whyWrong": {
+            "hu": "A n. obturatorius az adductorokat idegzi be, érzőterülete a comb mediális oldalán kis folt; a térdnyújtás ép.",
+            "sv": "N. obturatorius innerverar adduktorerna och har ett litet sensoriskt område på lårets mediala sida; knäextensionen är intakt."
+          }
+        },
+        {
+          "text": {
+            "hu": "N. ischiadicus",
+            "sv": "N. ischiadicus"
+          },
+          "whyWrong": {
+            "hu": "Az ischiadicus-sérülés a térdhajlítást és a lábszár–lábfej izmait érinti, a quadricepset nem.",
+            "sv": "Ischiasskada drabbar knäflexionen och underbenets och fotens muskler, inte quadriceps."
+          }
+        },
+        {
+          "text": {
+            "hu": "N. femoralis",
+            "sv": "N. femoralis"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "N. fibularis communis",
+            "sv": "N. fibularis communis"
+          },
+          "whyWrong": {
+            "hu": "Ez lábejtést (lógó láb, gyenge dorsalflexio) okoz, és a lábszár laterális oldalán ad érzészavart.",
+            "sv": "Den ger droppfot (svag dorsalflexion) och känselstörning på underbenets laterala sida."
+          }
+        }
+      ],
+      "answer": 2,
+      "explanation": {
+        "hu": "A n. femoralis (L2–L4) idegzi be a quadricepset és a sartoriust; érzőágai a comb elülső oldalát, a n. saphenus pedig a lábszár mediális oldalát látják el. A patellareflex főleg L3–L4-et vizsgálja. Gyakori ok: csípőműtét, femoralis katéterezés, retroperitonealis haematoma.",
+        "sv": "N. femoralis (L2–L4) innerverar quadriceps och sartorius; dess sensoriska grenar försörjer lårets framsida, och n. saphenus underbenets mediala sida. Patellarreflexen testar främst L3–L4. Vanliga orsaker: höftkirurgi, femoraliskateterisering, retroperitonealt hematom."
+      },
+      "link": {
+        "view": "modul-comb-terd",
+        "item": "m.vastus-medialis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "ct19",
+      "topic": "comb-terd",
+      "type": "mc",
+      "prompt": {
+        "hu": "Hason fekvésben passzívan hajlítják a beteg térdét, és közben az azonos oldali csípő felemelkedik az asztalról. Melyik izom rövidülésére utal ez?",
+        "sv": "I bukläge flekteras patientens knä passivt, och samtidigt lyfter höften på samma sida från britsen. Vilken muskels förkortning talar detta för?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "M. rectus femoris",
+            "sv": "M. rectus femoris"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "M. vastus lateralis",
+            "sv": "M. vastus lateralis"
+          },
+          "whyWrong": {
+            "hu": "Egyízületi izom: rövidülése korlátozza a térdflexiót, de a csípőt nem emeli fel.",
+            "sv": "En enledsmuskel: förkortning begränsar knäflexionen men lyfter inte höften."
+          }
+        },
+        {
+          "text": {
+            "hu": "M. biceps femoris",
+            "sv": "M. biceps femoris"
+          },
+          "whyWrong": {
+            "hu": "A hamstringek térdhajlítók; a passzív térdflexio ellazítja őket, nem feszíti.",
+            "sv": "Hamstrings är knäflexorer; passiv knäflexion slappnar av dem, inte spänner dem."
+          }
+        },
+        {
+          "text": {
+            "hu": "M. gluteus maximus",
+            "sv": "M. gluteus maximus"
+          },
+          "whyWrong": {
+            "hu": "A gluteus maximus csípőnyújtó; rövidülése a csípőflexiót korlátozná, nem a térdflexiót.",
+            "sv": "Gluteus maximus är höftextensor; förkortning skulle begränsa höftflexion, inte knäflexion."
+          }
+        }
+      ],
+      "answer": 0,
+      "explanation": {
+        "hu": "Ez az Ely-teszt. A rectus femoris kétízületi izom (csípőflexor és térdextensor): nyújtott csípő mellett a térd hajlítása megfeszíti, és ha rövid, a csípő hajlításával \"enged\" – a medence felemelkedik. Az egyízületi vastusok rövidülése csak a térdflexiót korlátozná.",
+        "sv": "Detta är Elys test. Rectus femoris är en tvåledsmuskel (höftflexor och knäextensor): med extenderad höft spänns den när knät flekteras, och om den är förkortad \"ger den efter\" genom höftflexion – bäckenet lyfts. Förkortning av de enledade vasti skulle endast begränsa knäflexionen."
+      },
+      "link": {
+        "view": "modul-comb-terd",
+        "item": "m.rectus-femoris"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "ct20",
+      "topic": "comb-terd",
+      "type": "match",
+      "prompt": {
+        "hu": "Párosítsd az izmot a tapadásával és a beidegzésével!",
+        "sv": "Para ihop muskeln med dess fäste och innervation!"
+      },
+      "heads": {
+        "hu": [
+          "IZOM",
+          "TAPADÁS",
+          "IDEG"
+        ],
+        "sv": [
+          "MUSKEL",
+          "FÄSTE",
+          "NERV"
+        ]
+      },
+      "rows": [
+        [
+          "m. semitendinosus",
+          "pes anserinus",
+          "n. ischiadicus (pars tibialis)"
+        ],
+        [
+          "m. biceps femoris (caput breve)",
+          "caput fibulae",
+          "n. fibularis communis"
+        ],
+        [
+          "m. rectus femoris",
+          "tuberositas tibiae",
+          "n. femoralis"
+        ],
+        [
+          "m. popliteus",
+          "facies posterior tibiae",
+          "n. tibialis"
+        ]
+      ],
+      "explanation": {
+        "hu": "A comb izmai rekeszek szerint kapják idegüket: elöl n. femoralis, hátul n. ischiadicus. A hátsó rekeszen belül csak a biceps rövid feje kap ágat a fibularis részből. A térdhajlat mélyén fekvő m. popliteus már a n. tibialis ága, a lábszár hátsó izmaihoz hasonlóan.",
+        "sv": "Lårets muskler får sin innervation efter kompartment: framtill n. femoralis, baktill n. ischiadicus. Inom det bakre kompartmentet får bara korta bicepshuvudet en gren från fibularisdelen. M. popliteus djupt i knävecket försörjs redan av n. tibialis, liksom underbenets bakre muskler."
+      },
+      "link": {
+        "view": "modul-comb-terd",
+        "item": "m.biceps-femoris"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "lb1",
+      "topic": "labszar",
+      "type": "mc",
+      "prompt": {
+        "hu": "Egy kosárlabdázó lábujjhegyen érkezve befelé bicsaklik a bokája. Melyik szalag sérül a legnagyobb valószínűséggel elsőként?",
+        "sv": "En basketspelare landar på tå och vrickar foten inåt. Vilket ligament skadas med störst sannolikhet först?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "Lig. deltoideum",
+            "sv": "Lig. deltoideum"
+          },
+          "whyWrong": {
+            "hu": "A mediális deltaszalag eversiós mechanizmusnál sérül, és sokkal erősebb; izolált sérülése ritka.",
+            "sv": "Det mediala deltaligamentet skadas vid eversionsmekanism och är mycket starkare; isolerad skada är ovanlig."
+          }
+        },
+        {
+          "text": {
+            "hu": "Lig. calcaneofibulare",
+            "sv": "Lig. calcaneofibulare"
+          },
+          "whyWrong": {
+            "hu": "Általában csak súlyosabb, második lépcsős sérülésként szakad az ATFL után; semleges helyzetben feszes.",
+            "sv": "Rupturerar oftast först i ett svårare, andra steg efter ATFL; det är spänt i neutralläge."
+          }
+        },
+        {
+          "text": {
+            "hu": "Lig. talofibulare anterius",
+            "sv": "Lig. talofibulare anterius"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "Lig. tibiofibulare anterius",
+            "sv": "Lig. tibiofibulare anterius"
+          },
+          "whyWrong": {
+            "hu": "A syndesmosis szalagja külső rotációs mechanizmusnál sérül („magas bokaficam”), nem tipikus inversiónál.",
+            "sv": "Syndesmosens ligament skadas vid utåtrotationsmekanism (”hög fotledsdistorsion”), inte vid typisk inversion."
+          }
+        }
+      ],
+      "answer": 2,
+      "explanation": {
+        "hu": "Plantarflexióban a talus keskenyebb hátsó része van a villában, ezért az ízület lazább, és az ATFL a szalagrostok irányával párhuzamosan feszül meg. Ez a leggyengébb laterális szalag, ezért szakad elsőként; súlyosabb trauma esetén a lig. calcaneofibulare, ritkán a lig. talofibulare posterius is sérül.",
+        "sv": "I plantarflexion ligger talus smalare bakre del i gaffeln, så leden är lösare och ATFL spänns i sin fiberriktning. Det är det svagaste laterala ligamentet och skadas därför först; vid svårare trauma skadas även lig. calcaneofibulare och sällan lig. talofibulare posterius."
+      },
+      "link": {
+        "view": "modul-labszar",
+        "item": "art.talocruralis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "lb2",
+      "topic": "labszar",
+      "type": "mc",
+      "prompt": {
+        "hu": "Hogyan végzed az elülső fióktesztet a boka laterális szalagjainak vizsgálatára?",
+        "sv": "Hur utför du främre lådtestet för att undersöka fotledens laterala ligament?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "A tibiát rögzítve a sarkat előre húzod, kb. 10–20° plantarflexióban",
+            "sv": "Du fixerar tibia och drar hälen framåt i ca 10–20° plantarflexion"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "A sarkat inversióba billented maximális dorsalflexióban",
+            "sv": "Du tippar hälen i inversion i maximal dorsalflexion"
+          },
+          "whyWrong": {
+            "hu": "Ez a talar tilt teszt, amely elsősorban a lig. calcaneofibularét vizsgálja, nem az ATFL-t.",
+            "sv": "Det är talar tilt-testet, som främst undersöker lig. calcaneofibulare, inte ATFL."
+          }
+        },
+        {
+          "text": {
+            "hu": "A lábszár közepén összenyomod a tibiát és a fibulát",
+            "sv": "Du komprimerar tibia och fibula mitt på underbenet"
+          },
+          "whyWrong": {
+            "hu": "Ez a squeeze-teszt a syndesmosis sérülésére.",
+            "sv": "Det är squeeze-testet för syndesmosskada."
+          }
+        },
+        {
+          "text": {
+            "hu": "Hason fekve összenyomod a vádlit",
+            "sv": "Du komprimerar vaden i bukläge"
+          },
+          "whyWrong": {
+            "hu": "Ez a Thompson-teszt az Achilles-ín folytonosságára.",
+            "sv": "Det är Thompsons test för hälsenans kontinuitet."
+          }
+        }
+      ],
+      "answer": 0,
+      "explanation": {
+        "hu": "Az ATFL enyhe plantarflexióban feszes, ezért ebben a helyzetben a talus előrecsúszását fékezi. A fokozott elmozdulás vagy a lágy végérzés az ATFL-szakadásra utal, és összehasonlítjuk az ép oldallal. A teszt néhány nappal a sérülés után, a duzzanat csökkenésével megbízhatóbb.",
+        "sv": "ATFL är spänt i lätt plantarflexion och hindrar då talus från att glida framåt. Ökad förskjutning eller mjuk ändkänsla talar för ATFL-ruptur och jämförs med den friska sidan. Testet är mer tillförlitligt några dagar efter skadan när svullnaden minskat."
+      },
+      "link": {
+        "view": "modul-labszar",
+        "item": "art.talocruralis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "lb3",
+      "topic": "labszar",
+      "type": "mc",
+      "prompt": {
+        "hu": "Bokaficam után melyik lelet indokol röntgent az Ottawa-bokaszabályok szerint?",
+        "sv": "Vilket fynd motiverar röntgen efter fotledsdistorsion enligt Ottawa ankle rules?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "Jelentős duzzanat a malleolus lateralis előtt",
+            "sv": "Kraftig svullnad framför malleolus lateralis"
+          },
+          "whyWrong": {
+            "hu": "A duzzanat mértéke nem része a szabályoknak; szalagsérülésnél is nagy lehet.",
+            "sv": "Svullnadens storlek ingår inte i reglerna; den kan vara stor även vid ligamentskada."
+          }
+        },
+        {
+          "text": {
+            "hu": "Fájdalmas passzív inversio",
+            "sv": "Smärtsam passiv inversion"
+          },
+          "whyWrong": {
+            "hu": "Szalagsérülésnél is jellemző, nem specifikus a törésre, és nem szerepel a szabályokban.",
+            "sv": "Typiskt även vid ligamentskada, inte specifikt för fraktur, och ingår inte i reglerna."
+          }
+        },
+        {
+          "text": {
+            "hu": "Bevérzés a lábháton",
+            "sv": "Blåmärke på fotryggen"
+          },
+          "whyWrong": {
+            "hu": "A haematoma nem kritérium; a szabályok csontos nyomásérzékenységre és terhelhetőségre épülnek.",
+            "sv": "Hematom är inget kriterium; reglerna bygger på benömhet och belastningsförmåga."
+          }
+        },
+        {
+          "text": {
+            "hu": "Nyomásérzékenység a malleolus lateralis hátsó szélén vagy csúcsán",
+            "sv": "Palpationsömhet vid bakkanten eller spetsen av malleolus lateralis"
+          },
+          "whyWrong": null
+        }
+      ],
+      "answer": 3,
+      "explanation": {
+        "hu": "Az Ottawa-szabályok szerint bokaröntgen kell, ha a malleolaris zónában fájdalom van és nyomásérzékeny bármelyik malleolus hátsó széle/csúcsa (disztális 6 cm), vagy a beteg sem rögtön, sem a vizsgálatkor nem tud 4 lépést tenni. Lábfejröntgen kell az os naviculare vagy az V. metatarsus basisának nyomásérzékenységénél. Nagy szenzitivitásuk miatt biztonságosan csökkentik a szükségtelen felvételeket.",
+        "sv": "Enligt Ottawareglerna behövs fotledsröntgen om det finns smärta i malleolzonen och ömhet vid bakkanten/spetsen av någon malleol (distala 6 cm), eller om patienten varken direkt eller vid undersökningen kan ta 4 steg. Fotröntgen behövs vid ömhet över os naviculare eller basen av femte metatarsalen. Den höga sensitiviteten gör att de säkert minskar onödiga röntgenundersökningar."
+      },
+      "link": {
+        "view": "modul-labszar",
+        "item": "art.talocruralis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "lb4",
+      "topic": "labszar",
+      "type": "mc",
+      "prompt": {
+        "hu": "Egy 42 éves teniszező „mintha hátulról megrúgták volna” érzést írt le. Hason fekve összenyomod a vádliját. Melyik lelet utal Achilles-ínszakadásra?",
+        "sv": "En 42-årig tennisspelare beskriver en känsla ”som om någon sparkat mig bakifrån”. I bukläge komprimerar du vaden. Vilket fynd talar för hälseneruptur?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "A lábfej dorsalflexióba mozdul",
+            "sv": "Foten rör sig i dorsalflexion"
+          },
+          "whyWrong": {
+            "hu": "Ilyen mozgás nem keletkezik a vádli összenyomására; ép ín esetén plantarflexio jön létre.",
+            "sv": "En sådan rörelse uppstår inte vid vadkompression; med intakt sena blir det plantarflexion."
+          }
+        },
+        {
+          "text": {
+            "hu": "Elmarad a lábfej plantarflexiója",
+            "sv": "Fotens plantarflexion uteblir"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "Fájdalom a sarok tapadásánál",
+            "sv": "Smärta vid fästet på hälen"
+          },
+          "whyWrong": {
+            "hu": "Ez inkább insertiós tendinopathiára utal, a teszt eredménye a mozgás, nem a fájdalom.",
+            "sv": "Det talar snarare för insertionstendinopati; testets utfall är rörelsen, inte smärtan."
+          }
+        },
+        {
+          "text": {
+            "hu": "Erőteljes plantarflexio, mint az ép oldalon",
+            "sv": "Kraftig plantarflexion som på friska sidan"
+          },
+          "whyWrong": {
+            "hu": "Ez negatív (normális) Thompson-teszt: az ín folytonos.",
+            "sv": "Det är ett negativt (normalt) Thompsons test: senan är kontinuerlig."
+          }
+        }
+      ],
+      "answer": 1,
+      "explanation": {
+        "hu": "A Thompson- (Simmonds-) tesztben a vádli összenyomása ép tendo calcaneus esetén passzív plantarflexiót okoz. Teljes szakadásnál ez elmarad (pozitív teszt). Kiegészítő jelek: tapintható rés kb. 2–6 cm-rel a tapadás felett, és a Matles-teszt (hason, 90°-os térdflexióban a sérült láb semleges vagy dorsalflexiós helyzetbe esik).",
+        "sv": "I Thompsons (Simmonds) test ger kompression av vaden passiv plantarflexion om tendo calcaneus är intakt. Vid total ruptur uteblir den (positivt test). Kompletterande fynd: palpabel glipa ca 2–6 cm ovanför fästet och Matles test (i bukläge med 90° knäflexion faller den skadade foten i neutral- eller dorsalflexionsläge)."
+      },
+      "link": {
+        "view": "modul-labszar",
+        "item": "m.gastrocnemius"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "lb5",
+      "topic": "labszar",
+      "type": "tf",
+      "prompt": {
+        "hu": "Ha a beteg aktívan tud plantarflexiót végezni, az Achilles-ínszakadás kizárható.",
+        "sv": "Om patienten aktivt kan plantarflektera kan hälseneruptur uteslutas."
+      },
+      "answer": false,
+      "explanation": {
+        "hu": "Hamis. A m. tibialis posterior, a m. flexor hallucis longus, a m. flexor digitorum longus és a mm. fibulares a tuber calcanei megkerülésével is képesek plantarflexióra, így szakadt Achilles-ín mellett is lehet gyenge aktív plantarflexio. Ezért a Thompson-teszt és a tapintható rés a döntő, nem az aktív mozgás; az egylábas sarokemelés viszont jellemzően nem megy.",
+        "sv": "Falskt. M. tibialis posterior, m. flexor hallucis longus, m. flexor digitorum longus och mm. fibulares kan plantarflektera utan hälsenan, så svag aktiv plantarflexion kan finnas trots ruptur. Därför är Thompsons test och palpabel glipa avgörande, inte den aktiva rörelsen; enbenstående tåhävning går däremot typiskt inte."
+      },
+      "link": {
+        "view": "modul-labszar",
+        "item": "m.flexor-hallucis-longus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "lb6",
+      "topic": "labszar",
+      "type": "mc",
+      "prompt": {
+        "hu": "Egy beteg collum fibulae-törés miatt térd alatti gipszet visel. Két nap múlva nem tudja felhúzni a lábfejét, és a lábháta zsibbad. Melyik ideg károsodott valószínűleg?",
+        "sv": "En patient har ett underbensgips efter fraktur på collum fibulae. Efter två dagar kan hen inte lyfta foten och har domningar på fotryggen. Vilken nerv är troligen skadad?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "N. tibialis",
+            "sv": "N. tibialis"
+          },
+          "whyWrong": {
+            "hu": "A n. tibialis a hátsó rekesz izmait és a talpat látja el; sérülése plantarflexiós gyengeséget és talpi érzészavart okozna.",
+            "sv": "N. tibialis försörjer bakre logens muskler och fotsulan; skada skulle ge plantarflexionssvaghet och känselstörning i fotsulan."
+          }
+        },
+        {
+          "text": {
+            "hu": "N. suralis",
+            "sv": "N. suralis"
+          },
+          "whyWrong": {
+            "hu": "Tisztán érző ideg a lábfej laterális szélén; motoros deficitet nem okoz.",
+            "sv": "En ren känselnerv för fotens laterala kant; ger inget motoriskt bortfall."
+          }
+        },
+        {
+          "text": {
+            "hu": "N. fibularis communis",
+            "sv": "N. fibularis communis"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "N. femoralis",
+            "sv": "N. femoralis"
+          },
+          "whyWrong": {
+            "hu": "A comb elülső izmait idegzi be; a lábszáron csak érző ága (n. saphenus) van, a mediális oldalon.",
+            "sv": "Den innerverar lårets främre muskler; på underbenet har den bara en känselgren (n. saphenus) på medialsidan."
+          }
+        }
+      ],
+      "answer": 2,
+      "explanation": {
+        "hu": "A n. fibularis communis a caput és collum fibulae körül közvetlenül a csonton, felszínesen fut, ezért törés, szoros gipsz vagy nyomás könnyen károsítja. A mély ág kiesése a dorsalflexorok bénulását (lógó láb), a felszíni ágé az evertorok gyengeségét és a lábhát érzészavarát okozza.",
+        "sv": "N. fibularis communis löper ytligt direkt mot benet runt caput och collum fibulae och skadas därför lätt av fraktur, trånga gips eller tryck. Bortfall av den djupa grenen ger förlamning av dorsalflexorerna (droppfot), av den ytliga grenen svaga evertorer och känselstörning på fotryggen."
+      },
+      "link": {
+        "view": "modul-labszar",
+        "item": "m.tibialis-anterior"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "lb7",
+      "topic": "labszar",
+      "type": "mc",
+      "prompt": {
+        "hu": "Lógó lábú beteg járását figyeled. Mi jellemzi a kakaslépést (steppage-járást)?",
+        "sv": "Du observerar gången hos en patient med droppfot. Vad kännetecknar steppagegång?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "Fokozott csípő- és térdflexio a lendítő fázisban, majd a lábfej „csapódó” talajra érkezése",
+            "sv": "Ökad höft- och knäflexion i svingfasen och därefter att foten ”smäller” i underlaget"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "A törzs oldalra dőlése a támaszfázisban",
+            "sv": "Lateralflexion av bålen i ståfasen"
+          },
+          "whyWrong": {
+            "hu": "Ez Duchenne-jel, a csípőabductorok gyengeségére utal.",
+            "sv": "Det är Duchennes tecken och talar för svaga höftabduktorer."
+          }
+        },
+        {
+          "text": {
+            "hu": "A medence leesése az ellenoldalon",
+            "sv": "Bäckenet sjunker på motsatt sida"
+          },
+          "whyWrong": {
+            "hu": "Ez Trendelenburg-jel (m. gluteus medius-gyengeség).",
+            "sv": "Det är Trendelenburgs tecken (svaghet i m. gluteus medius)."
+          }
+        },
+        {
+          "text": {
+            "hu": "Nyújtott térddel, ívben kifelé lendített láb",
+            "sv": "Benet svingas ut i en båge med extenderat knä"
+          },
+          "whyWrong": {
+            "hu": "Ez a circumductio, a láb megrövidülésének egy másik kompenzációja (pl. merev térd vagy spasztikus hemiparesis); lógó lábnál előfordulhat, de nem a steppage definíciója.",
+            "sv": "Det är cirkumduktion, en annan kompensation för ett funktionellt långt ben (t.ex. stelt knä eller spastisk hemipares); kan förekomma vid droppfot men är inte definitionen av steppage."
+          }
+        }
+      ],
+      "answer": 0,
+      "explanation": {
+        "hu": "Gyenge dorsalflexoroknál a lábfej a lendítő fázisban lóg, ezért a beteg a csípőt és a térdet a szokottnál jobban hajlítja, hogy a lábujjak ne akadjanak meg. Sarokra érkezés helyett a lábfej elülső része vagy egész talpa érkezik, gyakran hallható csattanással. A kezelés része lehet a peroneus-ortézis (AFO).",
+        "sv": "Vid svaga dorsalflexorer hänger foten i svingfasen, så patienten flekterar höft och knä mer än vanligt för att tårna inte ska ta i. I stället för hälisättning landar framfoten eller hela foten, ofta med hörbar smäll. Behandlingen kan innefatta en fotledsortos (AFO, droppfotsskena)."
+      },
+      "link": {
+        "view": "modul-labszar",
+        "item": "m.tibialis-anterior"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "lb8",
+      "topic": "labszar",
+      "type": "mc",
+      "prompt": {
+        "hu": "Lógó láb két lehetséges oka: n. fibularis communis-bénulás vagy L5-radiculopathia. Melyik vizsgálat segít leginkább elkülöníteni őket?",
+        "sv": "Droppfot kan orsakas av pares i n. fibularis communis eller av L5-radikulopati. Vilket test hjälper bäst att skilja dem åt?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "A nagylábujj extensiójának ereje",
+            "sv": "Styrkan i stortåns extension"
+          },
+          "whyWrong": {
+            "hu": "Mindkét állapotban gyenge, mert a m. extensor hallucis longus az L5-gyökből és a n. fibularis profundusból is függ.",
+            "sv": "Den är svag i båda tillstånden, eftersom m. extensor hallucis longus är beroende av både L5-roten och n. fibularis profundus."
+          }
+        },
+        {
+          "text": {
+            "hu": "Az eversio ereje",
+            "sv": "Styrkan i eversion"
+          },
+          "whyWrong": {
+            "hu": "A mm. fibulares (n. fibularis superficialis, L5–S1) mindkét esetben gyengék lehetnek.",
+            "sv": "Mm. fibulares (n. fibularis superficialis, L5–S1) kan vara svaga i båda fallen."
+          }
+        },
+        {
+          "text": {
+            "hu": "Az inversio ereje (m. tibialis posterior) és a csípőabductio",
+            "sv": "Styrkan i inversion (m. tibialis posterior) och höftabduktion"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "Az Achilles-reflex",
+            "sv": "Hälsenereflexen"
+          },
+          "whyWrong": {
+            "hu": "Az Achilles-reflex S1-es; L5-radiculopathiában és fibularis-bénulásban is általában normális.",
+            "sv": "Hälsenereflexen är S1; den är oftast normal både vid L5-radikulopati och fibularispares."
+          }
+        }
+      ],
+      "answer": 2,
+      "explanation": {
+        "hu": "A m. tibialis posteriort a n. tibialis idegzi be (L4–L5), a m. gluteus mediust a n. gluteus superior (L4–S1). Perifériás n. fibularis-sérülésnél ezek épek, L5-gyöki károsodásnál viszont gyengék lehetnek. Az érzészavar eloszlása (lábhát vs. L5-dermatoma a lábszár laterális oldalán) és a hátfájás is segít.",
+        "sv": "M. tibialis posterior innerveras av n. tibialis (L4–L5), m. gluteus medius av n. gluteus superior (L4–S1). Vid perifer fibularisskada är de intakta, men vid L5-rotpåverkan kan de vara svaga. Även känselstörningens utbredning (fotrygg jämfört med L5-dermatomet på underbenets laterala sida) och ryggsmärta hjälper."
+      },
+      "link": {
+        "view": "modul-labszar",
+        "item": "m.tibialis-posterior"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "lb9",
+      "topic": "labszar",
+      "type": "mc",
+      "prompt": {
+        "hu": "Tibiatörés rögzítése után a beteg fájdalomcsillapítóra sem csökkenő lábszárfájdalomról panaszkodik; az elülső rekesz feszes. Melyik lelet erősíti leginkább az elülső compartment-szindróma gyanúját?",
+        "sv": "Efter fixation av en tibiafraktur klagar patienten på underbenssmärta som inte lindras av smärtstillande; främre logen är spänd. Vilket fynd stärker mest misstanken om kompartmentsyndrom i främre logen?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "Fájdalmas passzív plantarflexio és lábujjflexio",
+            "sv": "Smärtsam passiv plantarflexion och tåflexion"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "Hiányzó a. dorsalis pedis pulzus mint korai jel",
+            "sv": "Avsaknad av puls i a. dorsalis pedis som tidigt tecken"
+          },
+          "whyWrong": {
+            "hu": "A pulzus jellemzően sokáig megtartott; hiánya késői jel, nem a korai diagnózis alapja.",
+            "sv": "Pulsen är typiskt bevarad länge; avsaknad är ett sent tecken, inte grunden för tidig diagnos."
+          }
+        },
+        {
+          "text": {
+            "hu": "Fájdalmas passzív dorsalflexio",
+            "sv": "Smärtsam passiv dorsalflexion"
+          },
+          "whyWrong": {
+            "hu": "Ez a hátsó rekesz izmait nyújtja, nem az elülsőt.",
+            "sv": "Det töjer bakre logens muskler, inte den främre."
+          }
+        },
+        {
+          "text": {
+            "hu": "Zsibbadás a talpon",
+            "sv": "Domningar i fotsulan"
+          },
+          "whyWrong": {
+            "hu": "A talp érzését a n. tibialis adja (hátsó mély rekesz); elülső rekesznél az 1. ujjközi rés zsibbad (n. fibularis profundus).",
+            "sv": "Fotsulans känsel kommer från n. tibialis (bakre djupa logen); vid främre logen domnar första interdigitalrummet (n. fibularis profundus)."
+          }
+        }
+      ],
+      "answer": 0,
+      "explanation": {
+        "hu": "Compartment-szindrómában a zárt rekesz nyomása meghaladja a kapilláris perfúziós nyomást. A legkorábbi jelek a sérüléssel arányban nem álló fájdalom és a rekesz izmainak passzív nyújtására kiváltott fájdalom; az elülső rekesz izmait a passzív plantarflexio és lábujjflexio nyújtja. Akut esetben azonnali orvosi ellátás (fasciotomia) szükséges.",
+        "sv": "Vid kompartmentsyndrom överstiger trycket i den slutna logen kapillärernas perfusionstryck. De tidigaste tecknen är smärta som inte står i proportion till skadan och smärta vid passiv töjning av logens muskler; främre logens muskler töjs av passiv plantarflexion och tåflexion. I akuta fall krävs omedelbar läkarbedömning (fasciotomi)."
+      },
+      "link": {
+        "view": "modul-labszar",
+        "item": "m.tibialis-anterior"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "lb10",
+      "topic": "labszar",
+      "type": "tf",
+      "prompt": {
+        "hu": "Ha az a. dorsalis pedis pulzusa jól tapintható, akut compartment-szindróma kizárható.",
+        "sv": "Om pulsen i a. dorsalis pedis är väl palpabel kan akut kompartmentsyndrom uteslutas."
+      },
+      "answer": false,
+      "explanation": {
+        "hu": "Hamis. A rekesznyomás már jóval az artériás nyomás alatt elégtelenné teszi a kapilláris (izom- és ideg-) perfúziót, miközben a nagy artériák pulzusa megmarad. A pulzus hiánya késői jel; a diagnózis a klinikai képen (fájdalom, passzív nyújtási fájdalom, feszes rekesz) és szükség esetén nyomásmérésen alapul.",
+        "sv": "Falskt. Logetrycket gör kapillärperfusionen (muskler och nerver) otillräcklig långt under det arteriella trycket, medan pulsen i de stora artärerna kvarstår. Pulslöshet är ett sent tecken; diagnosen bygger på kliniken (smärta, smärta vid passiv töjning, spänd loge) och vid behov tryckmätning."
+      },
+      "link": {
+        "view": "modul-labszar",
+        "item": "m.tibialis-anterior"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "lb11",
+      "topic": "labszar",
+      "type": "mc",
+      "prompt": {
+        "hu": "Egy 55 éves nő mediális bokafájdalomról és egyre laposabb lábról panaszkodik. Melyik lelet utal leginkább tibialis posterior-ín diszfunkcióra?",
+        "sv": "En 55-årig kvinna har medial fotledssmärta och en allt plattare fot. Vilket fynd talar mest för dysfunktion i tibialis posterior-senan?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "Pozitív Thompson-teszt",
+            "sv": "Positivt Thompsons test"
+          },
+          "whyWrong": {
+            "hu": "Az Achilles-ín teljes szakadására utal, nem a tibialis posterior-ínra.",
+            "sv": "Talar för total hälseneruptur, inte för tibialis posterior-senan."
+          }
+        },
+        {
+          "text": {
+            "hu": "Fájdalmas elülső fiókteszt",
+            "sv": "Smärtsamt främre lådtest"
+          },
+          "whyWrong": {
+            "hu": "Az ATFL-t vizsgálja a boka laterális oldalán.",
+            "sv": "Undersöker ATFL på fotledens laterala sida."
+          }
+        },
+        {
+          "text": {
+            "hu": "Gyenge nagylábujj-extensio",
+            "sv": "Svag extension av stortån"
+          },
+          "whyWrong": {
+            "hu": "Az EHL-t (n. fibularis profundus, L5) vizsgálja, nem a mediális boltozat támaszát.",
+            "sv": "Undersöker EHL (n. fibularis profundus, L5), inte stödet för det mediala valvet."
+          }
+        },
+        {
+          "text": {
+            "hu": "Egylábas sarokemelés nem sikerül, vagy a sarok nem fordul inversióba",
+            "sv": "Enbenstående tåhävning går inte, eller hälen går inte i inversion"
+          },
+          "whyWrong": null
+        }
+      ],
+      "answer": 3,
+      "explanation": {
+        "hu": "Sarokemeléskor a m. tibialis posterior inversióba fordítja a sarkat, és ezzel „zárja” a tarsust, merev emelőkart képezve. Diszfunkciónál ez elmarad, a sarok valgusban marad vagy az emelés nem sikerül. További jelek: „too many toes” hátulról, duzzanat a malleolus medialis mögött, a mediális boltozat süllyedése.",
+        "sv": "Vid tåhävning för m. tibialis posterior hälen i inversion och ”låser” därmed tarsus till en stel hävstång. Vid dysfunktion uteblir detta, hälen förblir i valgus eller hävningen misslyckas. Ytterligare tecken: ”too many toes” bakifrån, svullnad bakom malleolus medialis, sänkt medialt valv."
+      },
+      "link": {
+        "view": "modul-labszar",
+        "item": "m.tibialis-posterior"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "lb12",
+      "topic": "labszar",
+      "type": "mc",
+      "prompt": {
+        "hu": "Térd–fal tesztet végzel. Mit mér elsősorban ez a vizsgálat?",
+        "sv": "Du utför ett knä-mot-vägg-test. Vad mäter testet främst?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "A plantarflexorok erejét",
+            "sv": "Plantarflexorernas styrka"
+          },
+          "whyWrong": {
+            "hu": "Az erőt sarokemeléssel vizsgáljuk; ez a teszt mozgásterjedelmet mér.",
+            "sv": "Styrka testas med tåhävning; detta test mäter rörlighet."
+          }
+        },
+        {
+          "text": {
+            "hu": "A terheléses dorsalflexiót hajlított térddel (a soleus és a felső ugróízület mozgását)",
+            "sv": "Belastad dorsalflexion med flekterat knä (soleus och övre språngledens rörlighet)"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "A gastrocnemius hosszát nyújtott térddel",
+            "sv": "Gastrocnemius längd med extenderat knä"
+          },
+          "whyWrong": {
+            "hu": "A térd hajlított, így a kétízületi gastrocnemius ellazul; a teszt főleg a soleust és az ízületet terheli.",
+            "sv": "Knät är flekterat så att tvåledsmuskeln gastrocnemius är avslappnad; testet belastar främst soleus och leden."
+          }
+        },
+        {
+          "text": {
+            "hu": "Az alsó ugróízület inversióját",
+            "sv": "Inversion i nedre språngleden"
+          },
+          "whyWrong": {
+            "hu": "Az inversio–eversio nem része a tesztnek; sőt a sarok kifelé dőlése hibaforrás.",
+            "sv": "Inversion–eversion ingår inte i testet; tvärtom är att hälen faller ut en felkälla."
+          }
+        }
+      ],
+      "answer": 1,
+      "explanation": {
+        "hu": "A beteg a sarkát a talajon tartva a térdét a falhoz érinti, és mérjük a nagylábujj–fal távolságot (cm) vagy a tibia dőlésszögét. A teszt funkcionális, terheléses és megbízhatóan ismételhető; az oldalkülönbség és a változás követése fontosabb, mint egyetlen normérték, mert a határértékek forrásonként eltérnek. Figyelni kell, hogy a láb ne pronálódjon és a sarok ne emelkedjen fel.",
+        "sv": "Patienten för knät mot väggen med hälen kvar i golvet, och man mäter avståndet stortå–vägg (cm) eller tibias lutningsvinkel. Testet är funktionellt, belastat och har god reliabilitet; sidoskillnad och förändring över tid är viktigare än ett enskilt normvärde, eftersom gränsvärdena varierar mellan källor. Se till att foten inte pronerar och att hälen inte lyfter."
+      },
+      "link": {
+        "view": "modul-labszar",
+        "item": "art.talocruralis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "lb13",
+      "topic": "labszar",
+      "type": "mc",
+      "prompt": {
+        "hu": "Hanyatt fekvő betegnél a passzív dorsalflexio nyújtott térddel 0°, de 90°-os térdflexióban 15°. Mire utal ez?",
+        "sv": "Hos en patient i ryggläge är passiv dorsalflexion 0° med extenderat knä men 15° med knät flekterat 90°. Vad talar detta för?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "A m. soleus rövidülésére",
+            "sv": "Förkortad m. soleus"
+          },
+          "whyWrong": {
+            "hu": "A soleus egyízületi, a térd helyzete nem változtatja a hosszát; rövidülésekor mindkét helyzetben beszűkült volna a mozgás.",
+            "sv": "Soleus är en enledsmuskel och dess längd påverkas inte av knäläget; vid förkortning skulle rörelsen vara inskränkt i båda lägena."
+          }
+        },
+        {
+          "text": {
+            "hu": "A felső ugróízület tokjának zsugorodására",
+            "sv": "Kapselkontraktur i övre språngleden"
+          },
+          "whyWrong": {
+            "hu": "Ízületi korlátozás a térd helyzetétől függetlenül fennállna.",
+            "sv": "En ledbegränsning skulle finnas oberoende av knäets läge."
+          }
+        },
+        {
+          "text": {
+            "hu": "A m. tibialis anterior gyengeségére",
+            "sv": "Svaghet i m. tibialis anterior"
+          },
+          "whyWrong": {
+            "hu": "Passzív mozgásról van szó; a dorsalflexor ereje nem befolyásolja a passzív terjedelmet.",
+            "sv": "Det gäller passiv rörelse; dorsalflexorns styrka påverkar inte det passiva omfånget."
+          }
+        },
+        {
+          "text": {
+            "hu": "A m. gastrocnemius rövidülésére",
+            "sv": "Förkortad m. gastrocnemius"
+          },
+          "whyWrong": null
+        }
+      ],
+      "answer": 3,
+      "explanation": {
+        "hu": "A m. gastrocnemius a femurcondylusokon ered, ezért térdflexióban ellazul. Ha a dorsalflexio csak nyújtott térdnél korlátozott, a gastrocnemius a korlátozó tényező (Silfverskiöld-elv). Ha mindkét helyzetben azonosan beszűkült, a soleus vagy az ízület (tok, csontos ütközés) a felelős.",
+        "sv": "M. gastrocnemius har sitt ursprung på femurkondylerna och slappnar därför av i knäflexion. Om dorsalflexionen bara är begränsad med extenderat knä är gastrocnemius den begränsande faktorn (Silfverskiölds princip). Är den lika inskränkt i båda lägena är soleus eller leden (kapsel, benigt anslag) orsaken."
+      },
+      "link": {
+        "view": "modul-labszar",
+        "item": "m.gastrocnemius"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "lb14",
+      "topic": "labszar",
+      "type": "mc",
+      "prompt": {
+        "hu": "Egy kezdő futó a tibia disztális harmadának mediális szélén kb. 8 cm hosszan érzékeny, fájdalma futás elején jelentkezik és bemelegítés után enyhül. Mi a legvalószínűbb diagnózis?",
+        "sv": "En nybörjarlöpare är öm längs tibias mediala kant i distala tredjedelen på en sträcka av ca 8 cm; smärtan kommer i början av löppasset och lättar efter uppvärmning. Vilken diagnos är mest sannolik?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "Tibia-stressztörés",
+            "sv": "Stressfraktur i tibia"
+          },
+          "whyWrong": {
+            "hu": "Stressztörésnél jellemzően pontszerű (kb. < 5 cm) csontérzékenység, egyre korábban jelentkező, nyugalomban vagy éjjel is fennálló fájdalom van.",
+            "sv": "Vid stressfraktur finns typiskt punktformig (ca < 5 cm) benömhet och smärta som kommer allt tidigare och finns i vila eller nattetid."
+          }
+        },
+        {
+          "text": {
+            "hu": "Mediális tibiális stressz-szindróma",
+            "sv": "Medialt tibialt stressyndrom"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "Krónikus terheléses compartment-szindróma",
+            "sv": "Kroniskt ansträngningsutlöst kompartmentsyndrom"
+          },
+          "whyWrong": {
+            "hu": "Ebben a fájdalom adott terhelés után fokozódik edzés közben és pihenésre szűnik, nem bemelegítéskor enyhül; csontos nyomásérzékenység nincs.",
+            "sv": "Där ökar smärtan under träningen efter en viss belastning och går över i vila, den lättar inte vid uppvärmning; ingen benömhet."
+          }
+        },
+        {
+          "text": {
+            "hu": "Achilles-tendinopathia",
+            "sv": "Hälsenetendinopati"
+          },
+          "whyWrong": {
+            "hu": "Az Achilles-ín területén, a sarok felett okoz fájdalmat, nem a tibia mediális szélén.",
+            "sv": "Ger smärta i hälsenan ovanför hälen, inte längs tibias mediala kant."
+          }
+        }
+      ],
+      "answer": 1,
+      "explanation": {
+        "hu": "A mediális tibiális stressz-szindróma terheléshez kötött, diffúz (legalább kb. 5 cm-es) fájdalom és nyomásérzékenység a tibia posteromediális szélén, ahol a m. soleus, a m. flexor digitorum longus és a m. tibialis posterior, illetve a fascia cruris tapad. Rizikótényező a hirtelen terhelésnövekedés, korábbi előfordulás és a magasabb BMI. Kezelése terhelésszabályozás és fokozatos visszatérés.",
+        "sv": "Medialt tibialt stressyndrom är belastningsrelaterad, diffus (minst ca 5 cm) smärta och palpationsömhet längs tibias posteromediala kant, där m. soleus, m. flexor digitorum longus, m. tibialis posterior och fascia cruris fäster. Riskfaktorer är snabb belastningsökning, tidigare episoder och högre BMI. Behandlingen är belastningsstyrning och gradvis återgång."
+      },
+      "link": {
+        "view": "modul-labszar",
+        "item": "m.soleus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "lb15",
+      "topic": "labszar",
+      "type": "match",
+      "prompt": {
+        "hu": "Párosítsd az izmot a tapadásával és a beidegzésével!",
+        "sv": "Para ihop muskeln med dess fäste och innervation!"
+      },
+      "rows": [
+        [
+          "m. tibialis anterior",
+          "os cuneiforme mediale, os metatarsi I",
+          "n. fibularis profundus"
+        ],
+        [
+          "m. fibularis brevis",
+          "tuberositas ossis metatarsi V",
+          "n. fibularis superficialis"
+        ],
+        [
+          "m. tibialis posterior",
+          "tuberositas ossis navicularis",
+          "n. tibialis"
+        ]
+      ],
+      "heads": {
+        "hu": [
+          "IZOM",
+          "TAPADÁS",
+          "BEIDEGZÉS"
+        ],
+        "sv": [
+          "MUSKEL",
+          "FÄSTE",
+          "INNERVATION"
+        ]
+      },
+      "explanation": {
+        "hu": "A lábszár minden rekeszének saját idege van: elülső – n. fibularis profundus, oldalsó – n. fibularis superficialis, hátsó – n. tibialis. A tapadások magyarázzák a funkciót: a lábfej mediális szélén tapadó izmok inverterek, a laterális szélén tapadók evertorok.",
+        "sv": "Varje loge i underbenet har sin egen nerv: främre – n. fibularis profundus, laterala – n. fibularis superficialis, bakre – n. tibialis. Fästena förklarar funktionen: muskler som fäster på fotens mediala kant är invertorer, de som fäster på den laterala kanten är evertorer."
+      },
+      "link": {
+        "view": "modul-labszar",
+        "item": null
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "lb16",
+      "topic": "labszar",
+      "type": "match",
+      "prompt": {
+        "hu": "Párosítsd a magyar kifejezést a svéd és a latin alakkal!",
+        "sv": "Para ihop den ungerska termen med den svenska och den latinska formen!"
+      },
+      "rows": [
+        [
+          "ugrócsont",
+          "språngbenet",
+          "talus"
+        ],
+        [
+          "sarokcsont",
+          "hälbenet",
+          "calcaneus"
+        ],
+        [
+          "külboka",
+          "yttre fotknölen",
+          "malleolus lateralis"
+        ],
+        [
+          "Achilles-ín",
+          "hälsenan",
+          "tendo calcaneus"
+        ]
+      ],
+      "explanation": {
+        "hu": "A malleolus lateralis a fibula, a malleolus medialis a tibia disztális vége; a laterális boka disztálisabbra ér, ezért az inversio terjedelme nagyobb, mint az eversióé. A tendo calcaneus a m. gastrocnemius és a m. soleus közös ína, a tuber calcaneire tapad.",
+        "sv": "Malleolus lateralis är fibulas och malleolus medialis tibias distala ände; den laterala fotknölen når längre distalt, därför är inversionsomfånget större än eversionsomfånget. Tendo calcaneus är den gemensamma senan för m. gastrocnemius och m. soleus och fäster på tuber calcanei."
+      },
+      "link": {
+        "view": "modul-labszar",
+        "item": null
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "lb17",
+      "topic": "labszar",
+      "type": "order",
+      "prompt": {
+        "hu": "Állítsd sorrendbe a malleolus medialis mögött futó képleteket elölről hátrafelé!",
+        "sv": "Ordna strukturerna som löper bakom malleolus medialis framifrån och bakåt!"
+      },
+      "items": [
+        {
+          "hu": "M. tibialis posterior ína",
+          "sv": "Senan till m. tibialis posterior"
+        },
+        {
+          "hu": "M. flexor digitorum longus ína",
+          "sv": "Senan till m. flexor digitorum longus"
+        },
+        {
+          "hu": "A. és vv. tibiales posteriores",
+          "sv": "A. och vv. tibiales posteriores"
+        },
+        {
+          "hu": "N. tibialis",
+          "sv": "N. tibialis"
+        },
+        {
+          "hu": "M. flexor hallucis longus ína",
+          "sv": "Senan till m. flexor hallucis longus"
+        }
+      ],
+      "explanation": {
+        "hu": "Klasszikus angol emlékeztető: „Tom, Dick And Very Nervous Harry” (Tibialis posterior, flexor Digitorum longus, Artery, Vein, Nerve, flexor Hallucis longus). A képletek a retinaculum musculorum flexorum alatt, a tarsalis alagútban futnak; a n. tibialis itt szorulhat be (tarsalis alagút-szindróma). Az a. tibialis posterior pulzusa a malleolus medialis és az Achilles-ín között tapintható.",
+        "sv": "Klassisk engelsk minnesregel: ”Tom, Dick And Very Nervous Harry” (Tibialis posterior, flexor Digitorum longus, Artery, Vein, Nerve, flexor Hallucis longus). Strukturerna löper under retinaculum musculorum flexorum i tarsaltunneln; n. tibialis kan klämmas här (tarsaltunnelsyndrom). Pulsen i a. tibialis posterior palperas mellan malleolus medialis och hälsenan."
+      },
+      "link": {
+        "view": "modul-labszar",
+        "item": "m.tibialis-posterior"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "lb18",
+      "topic": "labszar",
+      "type": "order",
+      "prompt": {
+        "hu": "Inversiós bokaficamnál a sérülés súlyosbodásával milyen sorrendben érintettek a laterális szalagok?",
+        "sv": "I vilken ordning skadas de laterala ligamenten när en inversionsdistorsion blir allt svårare?"
+      },
+      "items": [
+        {
+          "hu": "Lig. talofibulare anterius",
+          "sv": "Lig. talofibulare anterius"
+        },
+        {
+          "hu": "Lig. calcaneofibulare",
+          "sv": "Lig. calcaneofibulare"
+        },
+        {
+          "hu": "Lig. talofibulare posterius",
+          "sv": "Lig. talofibulare posterius"
+        }
+      ],
+      "explanation": {
+        "hu": "Az ATFL a leggyengébb és plantarflexióban feszes, ezért szakad elsőként; a lig. calcaneofibulare súlyosabb inversiónál, a legerősebb lig. talofibulare posterius csak nagyon súlyos (ficammal járó) traumánál sérül. Ezért a talar tilt teszt pozitivitása már kombinált ATFL + CFL sérülésre utal.",
+        "sv": "ATFL är svagast och spänt i plantarflexion och skadas därför först; lig. calcaneofibulare vid kraftigare inversion, och det starkaste, lig. talofibulare posterius, bara vid mycket svårt trauma (med luxation). Därför talar ett positivt talar tilt-test för en kombinerad ATFL + CFL-skada."
+      },
+      "link": {
+        "view": "modul-labszar",
+        "item": "art.talocruralis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "lb19",
+      "topic": "labszar",
+      "type": "mc",
+      "prompt": {
+        "hu": "Nyugodt álláskor a testsúlyvonal a felső ugróízület előtt halad. Melyik izom fékezi elsősorban folyamatosan a lábszár előredőlését?",
+        "sv": "Vid avslappnat stående passerar tyngdlinjen framför övre språngleden. Vilken muskel bromsar främst kontinuerligt underbenets framåtfall?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "M. tibialis anterior",
+            "sv": "M. tibialis anterior"
+          },
+          "whyWrong": {
+            "hu": "Dorsalflexor; álláskor alig aktív, mert a súlyvonal előrebillentő hatását nem ellensúlyozhatja.",
+            "sv": "Dorsalflexor; den är knappt aktiv vid stående eftersom den inte kan motverka tyngdlinjens framåttippande effekt."
+          }
+        },
+        {
+          "text": {
+            "hu": "M. soleus",
+            "sv": "M. soleus"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "M. fibularis longus",
+            "sv": "M. fibularis longus"
+          },
+          "whyWrong": {
+            "hu": "Elsősorban az oldalirányú (medio-laterális) egyensúlyban és a boltozat támasztásában vesz részt.",
+            "sv": "Deltar främst i den mediolaterala balansen och i valvstödet."
+          }
+        },
+        {
+          "text": {
+            "hu": "M. plantaris",
+            "sv": "M. plantaris"
+          },
+          "whyWrong": {
+            "hu": "Kicsi, gyenge izom; érdemi tartóerőt nem fejt ki.",
+            "sv": "En liten, svag muskel; den ger ingen betydande hållkraft."
+          }
+        }
+      ],
+      "answer": 1,
+      "explanation": {
+        "hu": "A m. soleus egyízületi, túlnyomóan lassú (I-es típusú) rostokból álló posturalis izom, amely álláskor folyamatos alacsony szintű aktivitással tartja a lábszárat a talus felett. Emellett vénás izompumpaként segíti a vér visszaáramlását, ezért gyakran „második szívnek” is nevezik.",
+        "sv": "M. soleus är en enledig posturalmuskel med övervägande långsamma (typ I) fibrer som vid stående håller underbenet över talus med kontinuerlig låg aktivitet. Den fungerar även som venös muskelpump och kallas därför ibland ”andra hjärtat”."
+      },
+      "link": {
+        "view": "modul-labszar",
+        "item": "m.soleus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "lb20",
+      "topic": "labszar",
+      "type": "mc",
+      "prompt": {
+        "hu": "Bokarándulás után a beteg a lábfej laterális szélén, az V. metatarsus basisán nyomásérzékeny. Melyik izom ínja okozhat itt avulsiós törést?",
+        "sv": "Efter en fotledsdistorsion är patienten öm på fotens laterala kant över basen av femte metatarsalen. Vilken muskels sena kan orsaka en avulsionsfraktur här?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "M. fibularis longus",
+            "sv": "M. fibularis longus"
+          },
+          "whyWrong": {
+            "hu": "Ínja az os cuboideum alatt a talpon át az os cuneiforme medialéig és az I. metatarsusig fut.",
+            "sv": "Senan löper under os cuboideum tvärs över fotsulan till os cuneiforme mediale och första metatarsalen."
+          }
+        },
+        {
+          "text": {
+            "hu": "M. extensor digitorum longus",
+            "sv": "M. extensor digitorum longus"
+          },
+          "whyWrong": {
+            "hu": "A lábujjak dorsalis aponeurosisába tapad, nem a metatarsus basisára.",
+            "sv": "Fäster i tårnas dorsalaponeuros, inte på metatarsalbasen."
+          }
+        },
+        {
+          "text": {
+            "hu": "M. tibialis anterior",
+            "sv": "M. tibialis anterior"
+          },
+          "whyWrong": {
+            "hu": "A lábfej mediális oldalán tapad (os cuneiforme mediale, I. metatarsus).",
+            "sv": "Fäster på fotens mediala sida (os cuneiforme mediale, första metatarsalen)."
+          }
+        },
+        {
+          "text": {
+            "hu": "M. fibularis brevis",
+            "sv": "M. fibularis brevis"
+          },
+          "whyWrong": null
+        }
+      ],
+      "answer": 3,
+      "explanation": {
+        "hu": "Hirtelen inversiónál a m. fibularis brevis reflexesen összehúzódik, és a tuberositas ossis metatarsi V-ről csontdarabot szakíthat le (a lateralis plantaris aponeurosis is szerepet játszik). Ezért szerepel az Ottawa-szabályokban az V. metatarsus basisának nyomásérzékenysége. Ettől el kell különíteni a nehezebben gyógyuló, disztálisabb Jones-törést.",
+        "sv": "Vid plötslig inversion kontraherar m. fibularis brevis reflexmässigt och kan slita loss ett benfragment från tuberositas ossis metatarsi V (även laterala plantaraponeurosen bidrar). Därför ingår ömhet över basen av femte metatarsalen i Ottawareglerna. Den ska skiljas från den mer distala Jonesfrakturen som läker sämre."
+      },
+      "link": {
+        "view": "modul-labszar",
+        "item": "m.fibularis-brevis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "lb21",
+      "topic": "labszar",
+      "type": "tf",
+      "prompt": {
+        "hu": "A felső ugróízület dorsalflexióban stabilabb, mint plantarflexióban, mert a talus trochleája elöl szélesebb.",
+        "sv": "Övre språngleden är stabilare i dorsalflexion än i plantarflexion eftersom trochlea tali är bredare framtill."
+      },
+      "answer": true,
+      "explanation": {
+        "hu": "Igaz. Dorsalflexióban a trochlea széles elülső része beékelődik a bokavillába (zárt, „close-packed” helyzet). Plantarflexióban a keskenyebb hátsó rész van a villában, ezért nagyobb a talus oldalirányú játéka – ez magyarázza, miért plantarflexióban (pl. lábujjhegyen érkezve) a leggyakoribb a bokaficam.",
+        "sv": "Sant. I dorsalflexion kilas trochleas breda främre del in i malleolgaffeln (låst, ”close-packed” läge). I plantarflexion ligger den smalare bakre delen i gaffeln, så talus har mer sidorörlighet – det förklarar varför fotledsdistorsion är vanligast i plantarflexion (t.ex. vid landning på tå)."
+      },
+      "link": {
+        "view": "modul-labszar",
+        "item": "art.talocruralis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "lb22",
+      "topic": "labszar",
+      "type": "mc",
+      "prompt": {
+        "hu": "Egy beteg calcaneustörés után jól hajlítja és feszíti a bokáját, de egyenetlen talajon (pl. erdei ösvényen) bizonytalan és fájdalmas a járása. Melyik ízület mozgásának beszűkülése a legvalószínűbb ok?",
+        "sv": "En patient kan efter en calcaneusfraktur böja och sträcka fotleden väl, men gången på ojämnt underlag (t.ex. en skogsstig) är osäker och smärtsam. Inskränkt rörlighet i vilken led är den mest sannolika orsaken?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "Articulatio talocruralis",
+            "sv": "Articulatio talocruralis"
+          },
+          "whyWrong": {
+            "hu": "A dorsalflexio–plantarflexio ép, tehát a felső ugróízület mozgása megtartott.",
+            "sv": "Dorsalflexion–plantarflexion är bevarad, alltså fungerar övre språngleden."
+          }
+        },
+        {
+          "text": {
+            "hu": "Articulatio subtalaris",
+            "sv": "Articulatio subtalaris"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "Articulatio genus",
+            "sv": "Articulatio genus"
+          },
+          "whyWrong": {
+            "hu": "A térd nem vesz részt a lábfej talajhoz igazításában; a calcaneustörés sem érinti.",
+            "sv": "Knät deltar inte i fotens anpassning till underlaget och påverkas inte av en calcaneusfraktur."
+          }
+        },
+        {
+          "text": {
+            "hu": "Articulatio tibiofibularis proximalis",
+            "sv": "Articulatio tibiofibularis proximalis"
+          },
+          "whyWrong": {
+            "hu": "Kis mozgású ízület a térd alatt; nem felel az inversio–eversióért.",
+            "sv": "En led med liten rörlighet nedanför knät; den står inte för inversion–eversion."
+          }
+        }
+      ],
+      "answer": 1,
+      "explanation": {
+        "hu": "Az alsó ugróízület (talus–calcaneus) inversiója és eversiója igazítja a lábfejet az egyenetlen talajhoz, és alakítja át a lábszár rotációját a lábfej pronatiójává–supinatiójává. Az ízületbe hatoló calcaneustörés után ez a mozgás gyakran tartósan beszűkül, posttraumás arthrosis is kialakulhat.",
+        "sv": "Inversion och eversion i nedre språngleden (talus–calcaneus) anpassar foten till ojämnt underlag och omvandlar underbenets rotation till pronation–supination av foten. Efter en intraartikulär calcaneusfraktur är denna rörlighet ofta varaktigt inskränkt, och posttraumatisk artros kan utvecklas."
+      },
+      "link": {
+        "view": "modul-labszar",
+        "item": "art.subtalaris"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "lf1",
+      "topic": "labfej",
+      "type": "mc",
+      "prompt": {
+        "hu": "Járásban a sarok felemelkedésekor az öregujj MTP-ízülete extensióba kerül. Melyik struktúra feszül meg emiatt, és emeli meg a belső hosszanti boltozatot (windlass-mechanizmus)?",
+        "sv": "När hälen lyfts under gång extenderas stortåns MTP-led. Vilken struktur spänns då och höjer det mediala längsgående fotvalvet (windlass-mekanismen)?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "Lig. plantare longum",
+            "sv": "Lig. plantare longum"
+          },
+          "whyWrong": {
+            "hu": "A hosszú talpi szalag a calcaneustól a cuboideumig és a lábközépcsontok alapjáig fut; nem ér el az ujjakig, ezért az ujjextensio nem feszíti meg.",
+            "sv": "Långa plantarligamentet går från calcaneus till os cuboideum och metatarsalbasen; det når inte tårna och spänns därför inte av tåextension."
+          }
+        },
+        {
+          "text": {
+            "hu": "M. extensor hallucis longus ina",
+            "sv": "Senan från m. extensor hallucis longus"
+          },
+          "whyWrong": {
+            "hu": "Ez az ín a lábháton fut, és aktívan feszíti az öregujjat; nem a talpon tekeredik fel, így nem emeli a boltozatot.",
+            "sv": "Senan löper på fotryggen och extenderar stortån aktivt; den lindas inte upp i fotsulan och höjer inte valvet."
+          }
+        },
+        {
+          "text": {
+            "hu": "Aponeurosis plantaris",
+            "sv": "Aponeurosis plantaris"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "Lig. calcaneonaviculare plantare (spring ligament)",
+            "sv": "Lig. calcaneonaviculare plantare (spring ligament)"
+          },
+          "whyWrong": {
+            "hu": "A spring ligament fontos statikus boltozattartó a taluszfej alatt, de nem kapcsolódik az ujjakhoz, ezért az ujjextensio nem feszíti.",
+            "sv": "Spring ligament är ett viktigt statiskt valvstöd under talushuvudet, men det är inte fäst vid tårna och spänns inte av tåextension."
+          }
+        }
+      ],
+      "answer": 2,
+      "explanation": {
+        "hu": "A talpi bőnye a tuber calcaneitől a proximális ujjpercekig fut. Az MTP-extensio során a lábközépcsontfejek körül feltekeredik, mint egy csörlő kötele: lerövidíti a sarok–ujjak távolságot, megemeli a boltozatot és supinálja a sarkat. Így lesz a láb merev emelő az elrugaszkodáshoz.",
+        "sv": "Plantaraponeurosen går från tuber calcanei till de proximala falangerna. Vid MTP-extension lindas den upp runt metatarsalhuvudena som linan på en vinsch: avståndet häl–tår förkortas, valvet höjs och hälen supineras. Så blir foten en stel hävstång för frånskjutet."
+      },
+      "link": {
+        "view": "modul-labfej",
+        "item": "art.metatarsophalangeae"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "lf2",
+      "topic": "labfej",
+      "type": "tf",
+      "prompt": {
+        "hu": "Ha álló helyzetben passzívan extendáljuk a beteg öregujját (Jack-teszt), normál esetben a belső hosszanti boltozat megemelkedik, és a tibia kifelé rotálódik.",
+        "sv": "Om man i stående passivt extenderar patientens stortå (Jacks test) höjs normalt det mediala längsgående valvet och tibia utåtroteras."
+      },
+      "answer": true,
+      "explanation": {
+        "hu": "Igaz. A windlass-mechanizmus a talpi bőnyén keresztül megemeli a boltozatot, supinálja a hátsó lábat, és ezzel a tibiát kifelé rotálja. Ha a boltozat nem emelkedik, merev lúdtalpra vagy a windlass-mechanizmus zavarára gondolunk.",
+        "sv": "Sant. Windlass-mekanismen höjer via plantaraponeurosen valvet, supinerar bakfoten och utåtroterar därmed tibia. Om valvet inte höjs misstänks stel plattfot eller en störd windlass-mekanism."
+      },
+      "link": {
+        "view": "modul-labfej",
+        "item": "art.metatarsophalangeae"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "lf3",
+      "topic": "labfej",
+      "type": "mc",
+      "prompt": {
+        "hu": "Egy 45 éves, sokat álló bolti eladó reggel az első lépéseknél erős sarokfájdalmat érez, amely néhány perc járás után enyhül. Hol várható a legnagyobb nyomásérzékenység?",
+        "sv": "En 45-årig butiksanställd som står mycket har kraftig hälsmärta vid de första stegen på morgonen, som lättar efter några minuters gång. Var förväntas den största palpationsömheten?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "Az Achilles-ín tapadásánál, a calcaneus hátsó felszínén",
+            "sv": "Vid hälsenans fäste på calcaneus bakre yta"
+          },
+          "whyWrong": {
+            "hu": "Az Achilles-tendinopathia a sarok hátsó részén fáj, és a terhelés (futás, ugrás) jellemzően rontja, nem az első lépések.",
+            "sv": "Hälseneinsertionstendinopati ger smärta baktill på hälen och förvärras typiskt av belastning (löpning, hopp), inte främst av de första stegen."
+          }
+        },
+        {
+          "text": {
+            "hu": "A tuber calcanei medialis nyúlványánál, a talpi bőnye eredésénél",
+            "sv": "Vid processus medialis tuberis calcanei, där plantaraponeurosen utgår"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "A III. és IV. lábközépcsont feje között",
+            "sv": "Mellan huvudena på 3:e och 4:e metatarsalbenet"
+          },
+          "whyWrong": {
+            "hu": "Ez a Morton-neuroma jellegzetes helye; a fájdalom az előlábban és az ujjakban jelentkezik, nem a sarokban.",
+            "sv": "Detta är det typiska stället för Mortons neurom; smärtan sitter i framfoten och tårna, inte i hälen."
+          }
+        },
+        {
+          "text": {
+            "hu": "A tuberositas ossis metatarsi V-nél",
+            "sv": "Vid tuberositas ossis metatarsi V"
+          },
+          "whyWrong": {
+            "hu": "Itt a m. fibularis brevis tapad; fájdalma inkább inversiós sérülés vagy avulziós törés után jelentkezik.",
+            "sv": "Här fäster m. fibularis brevis; smärta här ses snarare efter inversionsskada eller avulsionsfraktur."
+          }
+        }
+      ],
+      "answer": 1,
+      "explanation": {
+        "hu": "A plantaris fasciopathia típusos tünete az éjszakai pihenés utáni \"első lépés\" fájdalom a talpi bőnye eredésénél. Kockázati tényező a sok állás, a magas BMI és a beszűkült bokadorsalflexio. A kezelés alapja az edukáció, a terhelésadagolás és a progresszív erősítés.",
+        "sv": "Det typiska symtomet vid plantar fasciopati är smärta vid \"första steget\" efter nattvila, vid plantaraponeurosens ursprung. Riskfaktorer är mycket stående, högt BMI och nedsatt dorsalflexion i fotleden. Behandlingen bygger på information, belastningsdosering och progressiv styrketräning."
+      },
+      "link": {
+        "view": "modul-labfej",
+        "item": "m.flexor-digitorum-brevis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "lf4",
+      "topic": "labfej",
+      "type": "mc",
+      "prompt": {
+        "hu": "Előrehaladott hallux valgusban melyik izom csúszik plantaris irányba, és veszíti el emiatt az öregujjat távolító hatását?",
+        "sv": "Vid framskriden hallux valgus glider en muskel plantart och förlorar därför sin abducerande verkan på stortån. Vilken?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "M. adductor hallucis",
+            "sv": "M. adductor hallucis"
+          },
+          "whyWrong": {
+            "hu": "Az adductor hallucis éppen ellenkezőleg: ellensúly nélkül húz, és fokozza a lateralis deviációt.",
+            "sv": "Adductor hallucis gör tvärtom: den drar utan motvikt och ökar den laterala deviationen."
+          }
+        },
+        {
+          "text": {
+            "hu": "M. extensor hallucis longus",
+            "sv": "M. extensor hallucis longus"
+          },
+          "whyWrong": {
+            "hu": "Az EHL ina lateralisan elmozdulhat, és \"íjhúrként\" fokozhatja a deformitást, de nem plantarisan vándorol, és nem távolító izom.",
+            "sv": "EHL-senan kan förskjutas lateralt och som en \"bågsträng\" öka deformiteten, men den vandrar inte plantart och är ingen abduktor."
+          }
+        },
+        {
+          "text": {
+            "hu": "M. flexor hallucis longus",
+            "sv": "M. flexor hallucis longus"
+          },
+          "whyWrong": {
+            "hu": "Az FHL ina a szezámcsontok között fut, és hajlít; nem az öregujj távolító izma.",
+            "sv": "FHL-senan löper mellan sesambenen och flekterar; den är inte stortåns abduktor."
+          }
+        },
+        {
+          "text": {
+            "hu": "M. abductor hallucis",
+            "sv": "M. abductor hallucis"
+          },
+          "whyWrong": null
+        }
+      ],
+      "answer": 3,
+      "explanation": {
+        "hu": "Hallux valgusban az I. lábközépcsont mediálisan, az öregujj lateralisan tér ki, a szezámcsontok lateralisan subluxálódnak. A m. abductor hallucis ina a fej alá kerül, így inkább hajlít, mint távolít, a m. adductor hallucis pedig ellensúly nélkül húz – ez magyarázza a deformitás progresszióját.",
+        "sv": "Vid hallux valgus deviera första metatarsalbenet medialt och stortån lateralt, och sesambenen subluxerar lateralt. Senan från m. abductor hallucis hamnar under metatarsalhuvudet och flekterar snarare än abducerar, medan m. adductor hallucis drar utan motvikt – det förklarar varför deformiteten progredierar."
+      },
+      "link": {
+        "view": "modul-labfej",
+        "item": "m.abductor-hallucis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "lf5",
+      "topic": "labfej",
+      "type": "mc",
+      "prompt": {
+        "hu": "Normál járás terminális támaszfázisában kb. mekkora extensio szükséges az I. MTP-ízületben?",
+        "sv": "Ungefär hur mycket extension behövs i första MTP-leden i sen ståfas vid normal gång?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "Kb. 60°",
+            "sv": "Ca 60°"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "Kb. 10°",
+            "sv": "Ca 10°"
+          },
+          "whyWrong": {
+            "hu": "Ennyi csak minimális sarokemelést engedne; az öregujjon át történő normál elrugaszkodáshoz ennél jóval több kell.",
+            "sv": "Det skulle bara tillåta ett minimalt hällyft; för ett normalt frånskjut över stortån krävs betydligt mer."
+          }
+        },
+        {
+          "text": {
+            "hu": "Kb. 25°",
+            "sv": "Ca 25°"
+          },
+          "whyWrong": {
+            "hu": "Ez kevés: már ilyen beszűkülés is kompenzációs járásmintát (külső szélen történő legördülés) okoz.",
+            "sv": "Det är för lite: redan en sådan inskränkning ger ett kompensatoriskt gångmönster (avrullning över laterala kanten)."
+          }
+        },
+        {
+          "text": {
+            "hu": "Kb. 120°",
+            "sv": "Ca 120°"
+          },
+          "whyWrong": {
+            "hu": "Az I. MTP teljes extensiós mozgásterjedelme sem éri el ezt az értéket; a tipikus normák kb. 70–90°.",
+            "sv": "Inte ens hela extensionsomfånget i första MTP-leden når detta värde; typiska normer är ca 70–90°."
+          }
+        }
+      ],
+      "answer": 0,
+      "explanation": {
+        "hu": "A sarok felemelkedésekor az öregujj a talajon marad, így az I. MTP kb. 60°-os extensióba kerül (a források 50–65° közötti értéket adnak). Hallux rigidusban ez a mozgás fájdalmas vagy beszűkült, ezért a járás megváltozik.",
+        "sv": "När hälen lyfts stannar stortån kvar mot underlaget, så första MTP-leden extenderas ca 60° (källor anger 50–65°). Vid hallux rigidus är rörelsen smärtsam eller inskränkt och gångmönstret förändras."
+      },
+      "link": {
+        "view": "modul-labfej",
+        "item": "art.metatarsophalangeae"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "lf6",
+      "topic": "labfej",
+      "type": "mc",
+      "prompt": {
+        "hu": "Egy hallux rigidusos beteg járását figyeled. Melyik kompenzáció a legjellemzőbb?",
+        "sv": "Du observerar gången hos en patient med hallux rigidus. Vilken kompensation är mest typisk?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "Fokozott öregujj-extensio az elrugaszkodáskor",
+            "sv": "Ökad extension av stortån vid frånskjutet"
+          },
+          "whyWrong": {
+            "hu": "Éppen ez a mozgás fájdalmas és beszűkült, ezért a beteg kerüli.",
+            "sv": "Det är just denna rörelse som är smärtsam och inskränkt, därför undviker patienten den."
+          }
+        },
+        {
+          "text": {
+            "hu": "Hosszabb lépés a fájós oldalon, erőteljes elrugaszkodással",
+            "sv": "Längre steg på den onda sidan med kraftigt frånskjut"
+          },
+          "whyWrong": {
+            "hu": "Az elrugaszkodás az öregujjon át történne, ami fájdalmas; a lépéshossz inkább csökken.",
+            "sv": "Frånskjutet skulle ske över stortån, vilket gör ont; steglängden minskar snarare."
+          }
+        },
+        {
+          "text": {
+            "hu": "Legördülés a láb külső szélén, kifelé fordított lábbal",
+            "sv": "Avrullning över fotens laterala kant med utåtvinklad fot"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "Sarokjárás, a talaj érintése nélkül az előlábbal",
+            "sv": "Hälgång utan att framfoten tar i underlaget"
+          },
+          "whyWrong": {
+            "hu": "Ez nem reális, tartós járásminta; a beteg az előlábat használja, csak a terhelést helyezi át lateralisan.",
+            "sv": "Det är inget realistiskt, varaktigt gångmönster; patienten använder framfoten men flyttar belastningen lateralt."
+          }
+        }
+      ],
+      "answer": 2,
+      "explanation": {
+        "hu": "Beszűkült I. MTP-extensio mellett a beteg a terhelést a kisebb ujjakra és a láb külső szélére helyezi, a lábat kifelé fordítja, és rövidebb elrugaszkodással jár. Ez túlterhelheti a lateralis lábközépcsontokat; a kezelésben merev talpú cipő, gördülő talp (rocker) és mobilizáció is szerepel.",
+        "sv": "Vid nedsatt extension i första MTP-leden flyttar patienten belastningen till de mindre tårna och fotens laterala kant, vinklar foten utåt och går med kortare frånskjut. Det kan överbelasta de laterala metatarsalbenen; behandlingen kan omfatta sko med styv sula, rullsula (rocker) och mobilisering."
+      },
+      "link": {
+        "view": "modul-labfej",
+        "item": "art.metatarsophalangeae"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "lf7",
+      "topic": "labfej",
+      "type": "mc",
+      "prompt": {
+        "hu": "Egy nő szűk, magas sarkú cipőben égő fájdalmat és zsibbadást érez a 3. és 4. ujja között; a lábközép oldalirányú összenyomásakor kattanás érezhető. Hol a legvalószínűbb az elváltozás?",
+        "sv": "En kvinna i trånga skor med hög klack har brännande smärta och domningar mellan 3:e och 4:e tån; vid sidokompression av mellanfoten känns ett klick. Var sitter förändringen mest sannolikt?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "Az 1. intermetatarsalis résben",
+            "sv": "I 1:a intermetatarsala mellanrummet"
+          },
+          "whyWrong": {
+            "hu": "Itt ritkán alakul ki neuroma; a tünetek az öregujj és a 2. ujj között jelentkeznének.",
+            "sv": "Här uppstår neurom sällan; symtomen skulle sitta mellan stortån och 2:a tån."
+          }
+        },
+        {
+          "text": {
+            "hu": "A 3. intermetatarsalis résben, a III. és IV. lábközépcsont feje között",
+            "sv": "I 3:e intermetatarsala mellanrummet, mellan huvudena på 3:e och 4:e metatarsalbenet"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "A tarsalis alagútban, a malleolus medialis mögött",
+            "sv": "I tarsaltunneln, bakom malleolus medialis"
+          },
+          "whyWrong": {
+            "hu": "A tarsalis alagút-szindróma a talp nagyobb területén okoz zsibbadást, és nem jár lábközépi kattanással.",
+            "sv": "Tarsaltunnelsyndrom ger domningar över en större del av fotsulan och ger inget klick i mellanfoten."
+          }
+        },
+        {
+          "text": {
+            "hu": "Az I. MTP-ízület szezámcsontjai alatt",
+            "sv": "Under sesambenen vid första MTP-leden"
+          },
+          "whyWrong": {
+            "hu": "A sesamoiditis az öregujj töve alatt fáj, és nem okoz zsibbadást a 3–4. ujj között.",
+            "sv": "Sesamoidit gör ont under stortåns bas och ger inga domningar mellan 3:e och 4:e tån."
+          }
+        }
+      ],
+      "answer": 1,
+      "explanation": {
+        "hu": "A Morton-neuroma a közös talpi ujjideg perineuralis fibrózisa, amely leggyakrabban a 3. résben alakul ki, ahol a medialis és lateralis plantaris ideg ágai találkoznak, és az ideg a lig. metatarsale transversum profundum alatt nyomás alá kerül. A Mulder-teszt (oldalirányú összenyomás + talpi nyomás) kattanást és fájdalmat vált ki.",
+        "sv": "Mortons neurom är en perineural fibros i en gemensam plantar digitalnerv, oftast i 3:e mellanrummet där grenar från mediala och laterala plantarnerven möts och nerven kläms under lig. metatarsale transversum profundum. Mulders test (sidokompression + tryck från fotsulan) framkallar klick och smärta."
+      },
+      "link": {
+        "view": "modul-labfej",
+        "item": "art.metatarsophalangeae"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "lf8",
+      "topic": "labfej",
+      "type": "mc",
+      "prompt": {
+        "hu": "\"Short foot\" gyakorlatot tanítasz egy lúdtalpas futónak. Melyik utasítás a helyes?",
+        "sv": "Du lär ut \"short foot\"-övningen till en löpare med plattfot. Vilken instruktion är korrekt?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "\"Markold meg erősen a talajt az ujjaiddal!\"",
+            "sv": "\"Krafsa tag i golvet hårt med tårna!\""
+          },
+          "whyWrong": {
+            "hu": "Ilyenkor a hosszú ujjhajlítók (FDL, FHL) dolgoznak, és az ujjak behajlanak; a gyakorlat célja éppen a talp kisizmainak izolált aktiválása.",
+            "sv": "Då arbetar de långa tåböjarna (FDL, FHL) och tårna kröks; övningens syfte är just att aktivera fotsulans små muskler isolerat."
+          }
+        },
+        {
+          "text": {
+            "hu": "\"Billentsd a lábad a külső szélére!\"",
+            "sv": "\"Tippa över foten på den laterala kanten!\""
+          },
+          "whyWrong": {
+            "hu": "Ez supinatio (inversio), amely a hátsó lábat mozgatja, nem a talpi izmokat edzi.",
+            "sv": "Det är supination (inversion), som rör bakfoten i stället för att träna fotsulans muskler."
+          }
+        },
+        {
+          "text": {
+            "hu": "\"Emeld fel az összes ujjadat a talajról!\"",
+            "sv": "\"Lyft alla tårna från golvet!\""
+          },
+          "whyWrong": {
+            "hu": "Az ujjemelés a feszítőket aktiválja, és a windlass-mechanizmuson át passzívan emeli a boltozatot, de nem edzi az intrinsic izmokat.",
+            "sv": "Tålyft aktiverar extensorerna och höjer valvet passivt via windlass-mekanismen, men tränar inte de inre fotmusklerna."
+          }
+        },
+        {
+          "text": {
+            "hu": "\"Húzd az öregujj tövét a sarok felé, az ujjak behajlítása nélkül, hogy a boltozat megemelkedjen!\"",
+            "sv": "\"Dra stortåns bas mot hälen utan att böja tårna, så att valvet höjs!\""
+          },
+          "whyWrong": null
+        }
+      ],
+      "answer": 3,
+      "explanation": {
+        "hu": "A short foot (Janda) gyakorlatban a lábfej \"megrövidül\": az I. lábközépcsont feje a sarok felé közelít, a boltozat emelkedik, az ujjak nyújtva maradnak. Elsősorban a m. abductor hallucist és a talp többi kisizmát aktiválja; fokozatosan ülésből állásba és egylábas helyzetbe haladunk.",
+        "sv": "I short foot-övningen (Janda) \"förkortas\" foten: huvudet på första metatarsalbenet dras mot hälen, valvet höjs och tårna förblir sträckta. Den aktiverar främst m. abductor hallucis och fotsulans övriga små muskler; progressionen går från sittande till stående och enbensstående."
+      },
+      "link": {
+        "view": "modul-labfej",
+        "item": "m.abductor-hallucis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "lf9",
+      "topic": "labfej",
+      "type": "tf",
+      "prompt": {
+        "hu": "A Chopart-ízületvonal a lábtőcsontok és a lábközépcsontok alapja között húzódik.",
+        "sv": "Choparts ledlinje går mellan fotrotsbenen och metatarsalbenens baser."
+      },
+      "answer": false,
+      "explanation": {
+        "hu": "Hamis. Ez a Lisfranc-vonal (articulationes tarsometatarsales). A Chopart-vonal hátrébb van: a talonavicularis és a calcaneocuboidea ízületből áll, és a hátsó lábat (talus, calcaneus) választja el a középlábtól.",
+        "sv": "Falskt. Det är Lisfrancs linje (articulationes tarsometatarsales). Choparts linje ligger längre bak: den består av den talonavikulära och den kalkaneokuboida leden och skiljer bakfoten (talus, calcaneus) från mellanfoten."
+      },
+      "link": {
+        "view": "modul-labfej",
+        "item": "art.tarsi-transversa"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "lf10",
+      "topic": "labfej",
+      "type": "mc",
+      "prompt": {
+        "hu": "Egy focista lábára ráesett egy játékos, a talp közepén bevérzés látható, és nem tud egy lábon sarokemelést végezni. Lisfranc-sérülést gyanítasz. Mely csontokat köti össze a Lisfranc-szalag?",
+        "sv": "En fotbollsspelare har fått en spelare över foten; det finns ett blodutträde mitt i fotsulan och han kan inte göra tåhävning på ett ben. Du misstänker Lisfrancskada. Vilka ben förbinder Lisfrancligamentet?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "Az os naviculare és az os cuboideum",
+            "sv": "Os naviculare och os cuboideum"
+          },
+          "whyWrong": {
+            "hu": "Ezek a középláb lábtőcsontjai, a Chopart-vonal előtt; a Lisfranc-szalag a tarsometatarsalis vonalon fut.",
+            "sv": "Dessa är mellanfotens tarsalben framför Choparts linje; Lisfrancligamentet sitter vid den tarsometatarsala linjen."
+          }
+        },
+        {
+          "text": {
+            "hu": "A calcaneus és az os naviculare",
+            "sv": "Calcaneus och os naviculare"
+          },
+          "whyWrong": {
+            "hu": "Ezeket a spring ligament (lig. calcaneonaviculare plantare) és a lig. bifurcatum köti össze.",
+            "sv": "Dessa förbinds av spring ligament (lig. calcaneonaviculare plantare) och lig. bifurcatum."
+          }
+        },
+        {
+          "text": {
+            "hu": "Az os cuneiforme mediale és a II. lábközépcsont alapja",
+            "sv": "Os cuneiforme mediale och basen av 2:a metatarsalbenet"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "Az I. és II. lábközépcsont alapja",
+            "sv": "Basen av 1:a och 2:a metatarsalbenet"
+          },
+          "whyWrong": {
+            "hu": "Az I. és II. lábközépcsont alapja között nincs erős haránt szalag – éppen ezért a Lisfranc-szalag a stabilitás kulcsa.",
+            "sv": "Mellan basen av 1:a och 2:a metatarsalbenet finns inget starkt tvärgående ligament – därför är Lisfrancligamentet nyckeln till stabiliteten."
+          }
+        }
+      ],
+      "answer": 2,
+      "explanation": {
+        "hu": "A II. lábközépcsont alapja \"zárókőként\" beékelődik az ékcsontok közé, és a Lisfranc-szalag (főleg plantaris része) a medialis ékcsonthoz rögzíti. Sérülése gyakran elnézett, ezért talpi bevérzésnél és terheléskor jelentkező középláb-fájdalomnál terheléses röntgen vagy CT kell.",
+        "sv": "Basen av 2:a metatarsalbenet är inkilad som en \"slutsten\" mellan kilbenen, och Lisfrancligamentet (särskilt dess plantara del) fäster den mot mediala kilbenet. Skadan missas ofta, därför behövs belastad röntgen eller DT vid plantart blodutträde och belastningssmärta i mellanfoten."
+      },
+      "link": {
+        "view": "modul-labfej",
+        "item": null
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "lf11",
+      "topic": "labfej",
+      "type": "mc",
+      "prompt": {
+        "hu": "Mit mér a navicular drop teszt?",
+        "sv": "Vad mäter navicular drop test?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "A tuberositas ossis navicularis magasságának különbségét subtalaris neutrális ülő helyzet és ellazult állás között",
+            "sv": "Skillnaden i höjd för tuberositas ossis navicularis mellan subtalar neutralställning i sittande och avslappnat stående"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "A sarok szögét a lábszár tengelyéhez képest hátulról nézve",
+            "sv": "Hälens vinkel mot underbenets axel sett bakifrån"
+          },
+          "whyWrong": {
+            "hu": "Ez a hátsó láb (rearfoot) szögének mérése, amely a Foot Posture Indexnek is része, de nem a navicular drop.",
+            "sv": "Det är mätning av bakfotsvinkeln, som även ingår i Foot Posture Index, men det är inte navicular drop."
+          }
+        },
+        {
+          "text": {
+            "hu": "Az öregujj passzív extensiós szögét állásban",
+            "sv": "Stortåns passiva extensionsvinkel i stående"
+          },
+          "whyWrong": {
+            "hu": "Ez az I. MTP ROM-mérése vagy Jack-teszt, amely a windlass-mechanizmust vizsgálja.",
+            "sv": "Det är ROM-mätning av första MTP-leden eller Jacks test, som undersöker windlass-mekanismen."
+          }
+        },
+        {
+          "text": {
+            "hu": "A belső boka és a talaj közötti távolságot egylábas guggolásban",
+            "sv": "Avståndet mellan inre fotknölen och golvet i enbensknäböj"
+          },
+          "whyWrong": {
+            "hu": "Ez nem standardizált teszt; a navicular drop a csontos tájékozódási pontot, a tuberositas ossis navicularist használja.",
+            "sv": "Det är inget standardiserat test; navicular drop använder det benliga landmärket tuberositas ossis navicularis."
+          }
+        }
+      ],
+      "answer": 0,
+      "explanation": {
+        "hu": "A tuberositas ossis navicularist megjelöljük subtalaris neutrális helyzetben, majd ellazult, terhelt állásban újra megmérjük a talajtól való távolságát. A kb. 10 mm-nél nagyobb süllyedést általában túlzott pronációnak tekintik; a megbízhatóság mérőnként változó, ezért más tesztekkel (pl. Foot Posture Index) együtt értelmezzük.",
+        "sv": "Tuberositas ossis navicularis markeras i subtalar neutralställning, och dess höjd över golvet mäts igen i avslappnat, belastat stående. Ett fall på mer än ca 10 mm anses i regel som överdriven pronation; reliabiliteten varierar mellan bedömare, så testet tolkas tillsammans med andra (t.ex. Foot Posture Index)."
+      },
+      "link": {
+        "view": "modul-labfej",
+        "item": "art.tarsi-transversa"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "lf12",
+      "topic": "labfej",
+      "type": "order",
+      "prompt": {
+        "hu": "Állítsd sorrendbe a talp rétegeit a felszíntől a mélység felé!",
+        "sv": "Ordna fotsulans lager från ytan mot djupet!"
+      },
+      "items": [
+        {
+          "hu": "Aponeurosis plantaris (talpi bőnye)",
+          "sv": "Aponeurosis plantaris (plantarfascian)"
+        },
+        {
+          "hu": "1. réteg: m. abductor hallucis, m. flexor digitorum brevis, m. abductor digiti minimi",
+          "sv": "1:a lagret: m. abductor hallucis, m. flexor digitorum brevis, m. abductor digiti minimi"
+        },
+        {
+          "hu": "2. réteg: m. quadratus plantae, mm. lumbricales, FDL- és FHL-ín",
+          "sv": "2:a lagret: m. quadratus plantae, mm. lumbricales, FDL- och FHL-senor"
+        },
+        {
+          "hu": "3. réteg: m. flexor hallucis brevis, m. adductor hallucis, m. flexor digiti minimi brevis",
+          "sv": "3:e lagret: m. flexor hallucis brevis, m. adductor hallucis, m. flexor digiti minimi brevis"
+        },
+        {
+          "hu": "4. réteg: mm. interossei, m. tibialis posterior és m. fibularis longus ina",
+          "sv": "4:e lagret: mm. interossei, senorna från m. tibialis posterior och m. fibularis longus"
+        }
+      ],
+      "explanation": {
+        "hu": "Az 1. réteg a talpi bőnye alatt fekvő három hosszanti izom (öregujj, középső ujjak, kisujj). A 2. réteget a hosszú hajlítóinak és a hozzájuk kapcsolódó izmok alkotják. A 3. réteg az I. és V. lábközépcsonthoz kötődő rövid izmokat, a 4. a csontközi izmokat és a lábat alulról \"kengyelként\" tartó két ínt tartalmazza.",
+        "sv": "Det 1:a lagret är de tre längsgående musklerna direkt under plantaraponeurosen (stortå, mellersta tår, lilltå). Det 2:a lagret utgörs av de långa flexorsenorna och musklerna som fäster vid dem. Det 3:e lagret innehåller de korta musklerna vid 1:a och 5:e metatarsalbenet, och det 4:e interosseusmusklerna och de två senor som bär foten underifrån som en \"stigbygel\"."
+      },
+      "link": {
+        "view": "modul-labfej",
+        "item": "m.quadratus-plantae"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "lf13",
+      "topic": "labfej",
+      "type": "match",
+      "prompt": {
+        "hu": "Párosítsd az izmot a beidegzésével és a helyével!",
+        "sv": "Para ihop muskeln med dess innervation och läge!"
+      },
+      "heads": {
+        "hu": [
+          "IZOM",
+          "IDEG",
+          "HELY"
+        ],
+        "sv": [
+          "MUSKEL",
+          "NERV",
+          "LÄGE"
+        ]
+      },
+      "rows": [
+        [
+          "m. abductor hallucis",
+          "n. plantaris medialis",
+          "talp 1. réteg / sula lager 1"
+        ],
+        [
+          "m. quadratus plantae",
+          "n. plantaris lateralis",
+          "talp 2. réteg / sula lager 2"
+        ],
+        [
+          "m. adductor hallucis",
+          "n. plantaris lateralis (r. profundus)",
+          "talp 3. réteg / sula lager 3"
+        ],
+        [
+          "m. extensor digitorum brevis",
+          "n. fibularis profundus",
+          "lábhát / fotrygg"
+        ]
+      ],
+      "explanation": {
+        "hu": "A n. plantaris medialis csak négy izmot idegez be (abductor hallucis, flexor digitorum brevis, flexor hallucis brevis, 1. lumbricalis), a többi talpi izmot a n. plantaris lateralis. Ez a kéz medianus–ulnaris felosztásának megfelelője. A lábhát izmai a lábszár elülső rekeszéhez hasonlóan a n. fibularis profundustól kapnak beidegzést.",
+        "sv": "N. plantaris medialis innerverar bara fyra muskler (abductor hallucis, flexor digitorum brevis, flexor hallucis brevis, 1:a lumbrikalen); övriga fotsulemuskler innerveras av n. plantaris lateralis. Det motsvarar handens fördelning mellan medianus och ulnaris. Fotryggens muskler innerveras, liksom underbenets främre kompartment, av n. fibularis profundus."
+      },
+      "link": {
+        "view": "modul-labfej",
+        "item": "m.abductor-hallucis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "lf14",
+      "topic": "labfej",
+      "type": "mc",
+      "prompt": {
+        "hu": "Egy L5-radiculopathiás beteg lábát nézed. A malleolus lateralis előtt a lábháton a normál kis \"izompárna\" hiányzik. Melyik izom sorvadt?",
+        "sv": "Du inspekterar foten hos en patient med L5-radikulopati. Framför malleolus lateralis på fotryggen saknas den normala lilla \"muskelkudden\". Vilken muskel har atrofierat?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "M. abductor digiti minimi pedis",
+            "sv": "M. abductor digiti minimi pedis"
+          },
+          "whyWrong": {
+            "hu": "Ez a láb külső szélén, a talpon fekszik, és a n. plantaris lateralis idegzi be, nem a lábháton.",
+            "sv": "Den ligger på fotsulans laterala kant och innerveras av n. plantaris lateralis, inte på fotryggen."
+          }
+        },
+        {
+          "text": {
+            "hu": "M. extensor digitorum brevis",
+            "sv": "M. extensor digitorum brevis"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "M. fibularis brevis",
+            "sv": "M. fibularis brevis"
+          },
+          "whyWrong": {
+            "hu": "A m. fibularis brevis a lábszár lateralis rekeszében van, és csak az ina fut a malleolus mögött; nem a lábháton képez izomhast.",
+            "sv": "M. fibularis brevis ligger i underbenets laterala kompartment och bara senan löper bakom malleolen; den bildar ingen muskelbuk på fotryggen."
+          }
+        },
+        {
+          "text": {
+            "hu": "M. quadratus plantae",
+            "sv": "M. quadratus plantae"
+          },
+          "whyWrong": {
+            "hu": "A m. quadratus plantae a talp mélyén fekszik, kívülről nem látható.",
+            "sv": "M. quadratus plantae ligger djupt i fotsulan och syns inte utifrån."
+          }
+        }
+      ],
+      "answer": 1,
+      "explanation": {
+        "hu": "A m. extensor digitorum brevis az egyetlen kívülről jól látható és tapintható izomhas a lábháton. A n. fibularis profundus (L5–S1) idegzi be, ezért sorvadása L5-gyöki vagy n. fibularis profundus-lézióra utalhat. Elektroneurográfiánál is ebből az izomból vezetik el a n. fibularis motoros válaszát.",
+        "sv": "M. extensor digitorum brevis är den enda väl synliga och palpabla muskelbuken på fotryggen. Den innerveras av n. fibularis profundus (L5–S1), så atrofi kan tyda på L5-rotpåverkan eller skada på n. fibularis profundus. Vid neurografi registreras också n. fibularis motoriska svar från denna muskel."
+      },
+      "link": {
+        "view": "modul-labfej",
+        "item": "m.extensor-digitorum-brevis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "lf15",
+      "topic": "labfej",
+      "type": "mc",
+      "prompt": {
+        "hu": "Mi a m. quadratus plantae fő funkcionális szerepe?",
+        "sv": "Vilken är den viktigaste funktionella rollen för m. quadratus plantae?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "Az öregujj adductiója és a harántboltozat tartása",
+            "sv": "Adduktion av stortån och stöd för det tvärgående valvet"
+          },
+          "whyWrong": {
+            "hu": "Ez a m. adductor hallucis (főleg a haránt fej) feladata.",
+            "sv": "Det är uppgiften för m. adductor hallucis (främst det tvärgående huvudet)."
+          }
+        },
+        {
+          "text": {
+            "hu": "A 2–5. ujj MTP-flexiója és IP-extensiója",
+            "sv": "MTP-flexion och IP-extension av 2:a–5:e tån"
+          },
+          "whyWrong": {
+            "hu": "Ez a mm. lumbricales és az interosseusok jellemző hatása, amelyek a dorsalis aponeurosisba tapadnak.",
+            "sv": "Det är den typiska verkan av mm. lumbricales och interosseusmusklerna, som fäster i dorsalaponeurosen."
+          }
+        },
+        {
+          "text": {
+            "hu": "A m. flexor digitorum longus ferde húzásának kiegyenlítése, hogy az ujjak a saját tengelyükben hajoljanak",
+            "sv": "Att korrigera det sneda draget från m. flexor digitorum longus så att tårna böjs i sin egen axel"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "A boka plantarflexiója",
+            "sv": "Plantarflexion i fotleden"
+          },
+          "whyWrong": {
+            "hu": "A m. quadratus plantae nem keresztezi a bokaízületet; a calcaneuson ered és az FDL inán tapad.",
+            "sv": "M. quadratus plantae korsar inte fotleden; den utgår från calcaneus och fäster på FDL-senan."
+          }
+        }
+      ],
+      "answer": 2,
+      "explanation": {
+        "hu": "Az FDL ina a malleolus medialis mögül ferdén, medialis irányból érkezik a talpra. A calcaneusról eredő m. quadratus plantae hátrafelé-lateralisan húzza az ínt, így az eredő erő az ujjak tengelyébe esik. Emellett plantarflexiós bokánál is segíti az ujjflexiót, amikor az FDL már rövidült helyzetben van.",
+        "sv": "FDL-senan når fotsulan snett från medialt, bakom malleolus medialis. M. quadratus plantae, som utgår från calcaneus, drar senan bakåt-lateralt så att den resulterande kraften hamnar i tårnas axel. Dessutom hjälper den tåflexion när fotleden är plantarflekterad och FDL redan är förkortad."
+      },
+      "link": {
+        "view": "modul-labfej",
+        "item": "m.quadratus-plantae"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "lf16",
+      "topic": "labfej",
+      "type": "tf",
+      "prompt": {
+        "hu": "A lábon az ujjak ab- és adductiójának viszonyítási tengelye a 2. ujjon halad át: a dorsalis interosseusok ettől távolítanak, a plantaris interosseusok ehhez közelítenek.",
+        "sv": "På foten går referensaxeln för ab- och adduktion av tårna genom 2:a tån: de dorsala interosseusmusklerna abducerar bort från den, de plantara adducerar mot den."
+      },
+      "answer": true,
+      "explanation": {
+        "hu": "Igaz. A kézen a tengely a középső ujjon, a lábon a 2. ujjon halad át. Ezért a 2. ujjnak két dorsalis interosseusa van (medialis és lateralis oldalon), a 3–5. ujjnak pedig egy-egy plantaris interosseusa a medialis oldalon (PAD/DAB).",
+        "sv": "Sant. På handen går axeln genom långfingret, på foten genom 2:a tån. Därför har 2:a tån två dorsala interosseusmuskler (på mediala och laterala sidan), medan 3:e–5:e tån har var sin plantar interosseusmuskel på den mediala sidan (PAD/DAB)."
+      },
+      "link": {
+        "view": "modul-labfej",
+        "item": "m.interossei-pedis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "lf17",
+      "topic": "labfej",
+      "type": "mc",
+      "prompt": {
+        "hu": "Egy balett-táncosnak az öregujj töve alatt, terheléskor jelentkező fájdalma van. Melyik izom inaiban helyezkednek el az ott tapintható szezámcsontok?",
+        "sv": "En balettdansös har belastningssmärta under stortåns bas. I vilken muskels senor ligger sesambenen som kan palperas där?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "M. flexor hallucis longus",
+            "sv": "M. flexor hallucis longus"
+          },
+          "whyWrong": {
+            "hu": "Az FHL ina a két szezámcsont között fut, és azok védik, de nem ebben az ínban vannak.",
+            "sv": "FHL-senan löper mellan de två sesambenen och skyddas av dem, men de ligger inte i denna sena."
+          }
+        },
+        {
+          "text": {
+            "hu": "M. abductor hallucis",
+            "sv": "M. abductor hallucis"
+          },
+          "whyWrong": {
+            "hu": "Az abductor hallucis a medialis szezámcsont közelében tapad, de a szezámcsontok a rövid hajlító két fejének inaiban vannak.",
+            "sv": "Abductor hallucis fäster nära det mediala sesambenet, men sesambenen ligger i senorna från den korta böjarens två huvuden."
+          }
+        },
+        {
+          "text": {
+            "hu": "M. extensor hallucis brevis",
+            "sv": "M. extensor hallucis brevis"
+          },
+          "whyWrong": {
+            "hu": "Ez a lábháton futó feszítőizom; a szezámcsontok a talpi oldalon vannak.",
+            "sv": "Det är en extensor på fotryggen; sesambenen ligger på plantarsidan."
+          }
+        },
+        {
+          "text": {
+            "hu": "M. flexor hallucis brevis",
+            "sv": "M. flexor hallucis brevis"
+          },
+          "whyWrong": null
+        }
+      ],
+      "answer": 3,
+      "explanation": {
+        "hu": "Az I. MTP alatt két szezámcsont (medialis és lateralis) van a m. flexor hallucis brevis két fejének inaiban. Növelik az izom emelőkarját, elosztják a terhelést, és csatornát képeznek az FHL inának. Ismételt túlterhelés sesamoiditist vagy fáradásos törést okozhat.",
+        "sv": "Under första MTP-leden finns två sesamben (medialt och lateralt) i senorna från m. flexor hallucis brevis två huvuden. De ökar muskelns hävarm, fördelar belastningen och bildar en kanal för FHL-senan. Upprepad överbelastning kan ge sesamoidit eller stressfraktur."
+      },
+      "link": {
+        "view": "modul-labfej",
+        "item": "m.flexor-hallucis-brevis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "lf18",
+      "topic": "labfej",
+      "type": "mc",
+      "prompt": {
+        "hu": "A járás terhelésfelvételi fázisában a láb alkalmazkodik a talajhoz, elrugaszkodáskor merev emelővé válik. Mi magyarázza ezt a Chopart-ízület szintjén?",
+        "sv": "I gångens belastningsmottagande fas anpassar sig foten till underlaget, vid frånskjutet blir den en stel hävstång. Vad förklarar detta på nivån av Choparts led?"
+      },
+      "options": [
+        {
+          "text": {
+            "hu": "A lig. plantare longum terhelésfelvételkor elszakad, majd újra feszül",
+            "sv": "Lig. plantare longum brister vid belastningsmottagandet och spänns sedan igen"
+          },
+          "whyWrong": {
+            "hu": "A szalag normál járásban nem szakad el; feszülése változhat, de ez nem magyarázza a merevség váltakozását.",
+            "sv": "Ligamentet brister inte vid normal gång; dess spänning kan variera, men det förklarar inte växlingen i stelhet."
+          }
+        },
+        {
+          "text": {
+            "hu": "A hátsó láb helyzete: pronációban a két midtarsalis tengely párhuzamos (rugalmas középláb), supinációban nem párhuzamos (zárt, merev középláb)",
+            "sv": "Bakfotens ställning: vid pronation är de två midtarsala axlarna parallella (flexibel mellanfot), vid supination inte parallella (låst, stel mellanfot)"
+          },
+          "whyWrong": null
+        },
+        {
+          "text": {
+            "hu": "Az os naviculare és az os cuboideum összenő terhelés alatt",
+            "sv": "Os naviculare och os cuboideum växer samman under belastning"
+          },
+          "whyWrong": {
+            "hu": "A csontok nem nőnek össze funkcionálisan; a merevség az ízületi tengelyek helyzetéből és a szalagfeszülésből adódik.",
+            "sv": "Benen växer inte samman funktionellt; stelheten beror på ledaxlarnas läge och ligamentens spänning."
+          }
+        },
+        {
+          "text": {
+            "hu": "Kizárólag a lábszárizmok aktivitása; az ízületi geometria nem számít",
+            "sv": "Enbart underbenets muskelaktivitet; ledgeometrin spelar ingen roll"
+          },
+          "whyWrong": {
+            "hu": "Az izmok fontosak, de a midtarsalis zár elsősorban az ízületi tengelyek egymáshoz viszonyított helyzetén alapul.",
+            "sv": "Musklerna är viktiga, men den midtarsala låsningen bygger främst på hur ledaxlarna står i förhållande till varandra."
+          }
+        }
+      ],
+      "answer": 1,
+      "explanation": {
+        "hu": "A talonavicularis és a calcaneocuboidea ízület tengelye a subtalaris helyzettől függ. Pronált hátsó lábnál párhuzamosak, ezért a középláb szabadon mozog és tompítja a talajérintést; supinációban (amit a windlass-mechanizmus és a m. tibialis posterior is segít) a tengelyek nem párhuzamosak, a középláb bezár. Merev hátsó láb esetén ez a váltás zavart szenved.",
+        "sv": "Axlarna för den talonavikulära och den kalkaneokuboida leden beror på subtalarledens ställning. Med pronerad bakfot är de parallella, så mellanfoten rör sig fritt och dämpar markkontakten; vid supination (som också främjas av windlass-mekanismen och m. tibialis posterior) är axlarna inte parallella och mellanfoten låses. Vid stel bakfot störs denna växling."
+      },
+      "link": {
+        "view": "modul-labfej",
+        "item": "art.tarsi-transversa"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
     }
   ]
 }

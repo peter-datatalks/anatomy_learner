@@ -2122,6 +2122,1337 @@
         "by": null,
         "date": null
       }
+    },
+    {
+      "id": "t.gluteus-minimus",
+      "category": "muscles",
+      "name": {
+        "hu": "kis farizom",
+        "sv": "lilla sätesmuskeln",
+        "la": "m. gluteus minimus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.tensor-fasciae-latae",
+      "category": "muscles",
+      "name": {
+        "hu": "combpólyafeszítő izom",
+        "sv": "fascia lata-spännaren",
+        "la": "m. tensor fasciae latae"
+      },
+      "synonymsHu": "TFL",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.piriformis",
+      "category": "muscles",
+      "name": {
+        "hu": "körteképű izom",
+        "sv": "päronformade muskeln",
+        "la": "m. piriformis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.obturator-internus",
+      "category": "muscles",
+      "name": {
+        "hu": "belső csípőlyukizom",
+        "sv": "inre obturatormuskeln",
+        "la": "m. obturator internus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.gemellus-superior",
+      "category": "muscles",
+      "name": {
+        "hu": "felső ikerizom",
+        "sv": "övre tvillingmuskeln",
+        "la": "m. gemellus superior"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.gemellus-inferior",
+      "category": "muscles",
+      "name": {
+        "hu": "alsó ikerizom",
+        "sv": "nedre tvillingmuskeln",
+        "la": "m. gemellus inferior"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.quadratus-femoris",
+      "category": "muscles",
+      "name": {
+        "hu": "négyszögletes combizom",
+        "sv": "fyrkantiga lårmuskeln",
+        "la": "m. quadratus femoris"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.obturator-externus",
+      "category": "muscles",
+      "name": {
+        "hu": "külső csípőlyukizom",
+        "sv": "yttre obturatormuskeln",
+        "la": "m. obturator externus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.psoas-major",
+      "category": "muscles",
+      "name": {
+        "hu": "nagy horpaszizom",
+        "sv": "stora ländmuskeln",
+        "la": "m. psoas major"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.iliacus",
+      "category": "muscles",
+      "name": {
+        "hu": "csípőizom",
+        "sv": "tarmbensmuskeln",
+        "la": "m. iliacus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.pectineus",
+      "category": "muscles",
+      "name": {
+        "hu": "fésűs izom",
+        "sv": "kammuskeln",
+        "la": "m. pectineus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.adductor-longus",
+      "category": "muscles",
+      "name": {
+        "hu": "hosszú combközelítő izom",
+        "sv": "långa adduktorn",
+        "la": "m. adductor longus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.adductor-brevis",
+      "category": "muscles",
+      "name": {
+        "hu": "rövid combközelítő izom",
+        "sv": "korta adduktorn",
+        "la": "m. adductor brevis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.adductor-magnus",
+      "category": "muscles",
+      "name": {
+        "hu": "nagy combközelítő izom",
+        "sv": "stora adduktorn",
+        "la": "m. adductor magnus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.gracilis",
+      "category": "muscles",
+      "name": {
+        "hu": "karcsú izom",
+        "sv": "smala lårmuskeln",
+        "la": "m. gracilis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.os-coxae",
+      "category": "bones",
+      "name": {
+        "hu": "csípőcsont",
+        "sv": "höftben",
+        "la": "os coxae"
+      },
+      "synonymsHu": "medencecsont",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.acetabulum",
+      "category": "bones",
+      "name": {
+        "hu": "csípővápa",
+        "sv": "höftledspanna",
+        "la": "acetabulum"
+      },
+      "synonymsHu": "vápa",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.caput-femoris",
+      "category": "bones",
+      "name": {
+        "hu": "combcsontfej",
+        "sv": "lårbenshuvud",
+        "la": "caput femoris"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.collum-femoris",
+      "category": "bones",
+      "name": {
+        "hu": "combnyak",
+        "sv": "lårbenshals",
+        "la": "collum femoris"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.trochanter-major",
+      "category": "bones",
+      "name": {
+        "hu": "nagy tompor",
+        "sv": "stora trokantern",
+        "la": "trochanter major"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.trochanter-minor",
+      "category": "bones",
+      "name": {
+        "hu": "kis tompor",
+        "sv": "lilla trokantern",
+        "la": "trochanter minor"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.tuber-ischiadicum",
+      "category": "bones",
+      "name": {
+        "hu": "ülőgumó",
+        "sv": "sittbensknöl",
+        "la": "tuber ischiadicum"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.spina-iliaca-anterior-superior",
+      "category": "bones",
+      "name": {
+        "hu": "elülső felső csípőtövis",
+        "sv": "främre övre höftbenstaggen",
+        "la": "spina iliaca anterior superior"
+      },
+      "synonymsHu": "SIAS",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.crista-iliaca",
+      "category": "bones",
+      "name": {
+        "hu": "csípőtaraj",
+        "sv": "höftbenskam",
+        "la": "crista iliaca"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.foramen-ischiadicum-majus",
+      "category": "bones",
+      "name": {
+        "hu": "nagy ülőcsonti lyuk",
+        "sv": "stora ischiadiska hålet",
+        "la": "foramen ischiadicum majus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.lig-iliofemorale",
+      "category": "joints",
+      "name": {
+        "hu": "csípő-combcsonti szalag",
+        "sv": "iliofemorala ligamentet",
+        "la": "lig. iliofemorale"
+      },
+      "synonymsHu": "Y-szalag, Bigelow-szalag",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.labrum-acetabuli",
+      "category": "joints",
+      "name": {
+        "hu": "vápaajak",
+        "sv": "acetabulära labrum",
+        "la": "labrum acetabuli"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.sartorius",
+      "category": "muscles",
+      "name": {
+        "hu": "szabóizom",
+        "sv": "skräddarmuskeln",
+        "la": "m. sartorius"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.rectus-femoris",
+      "category": "muscles",
+      "name": {
+        "hu": "egyenes combizom",
+        "sv": "raka lårmuskeln",
+        "la": "m. rectus femoris"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.vastus-lateralis",
+      "category": "muscles",
+      "name": {
+        "hu": "külső vaskos izom",
+        "sv": "laterala vida lårmuskeln",
+        "la": "m. vastus lateralis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.vastus-medialis",
+      "category": "muscles",
+      "name": {
+        "hu": "belső vaskos izom",
+        "sv": "mediala vida lårmuskeln",
+        "la": "m. vastus medialis"
+      },
+      "synonymsHu": "VMO (ferde rostjai)",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.vastus-intermedius",
+      "category": "muscles",
+      "name": {
+        "hu": "középső vaskos izom",
+        "sv": "mellersta vida lårmuskeln",
+        "la": "m. vastus intermedius"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.biceps-femoris",
+      "category": "muscles",
+      "name": {
+        "hu": "kétfejű combizom",
+        "sv": "tvåhövdade lårmuskeln",
+        "la": "m. biceps femoris"
+      },
+      "synonymsHu": "hamstring",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.semitendinosus",
+      "category": "muscles",
+      "name": {
+        "hu": "félig inas izom",
+        "sv": "halvsenmuskeln",
+        "la": "m. semitendinosus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.semimembranosus",
+      "category": "muscles",
+      "name": {
+        "hu": "félig hártyás izom",
+        "sv": "halvhinnmuskeln",
+        "la": "m. semimembranosus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.popliteus",
+      "category": "muscles",
+      "name": {
+        "hu": "térdalji izom",
+        "sv": "knävecksmuskeln",
+        "la": "m. popliteus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.condylus-medialis-femoris",
+      "category": "bones",
+      "name": {
+        "hu": "a combcsont belső bütyke",
+        "sv": "mediala femurkondylen",
+        "la": "condylus medialis femoris"
+      },
+      "synonymsHu": "mediális femurcondylus",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.condylus-lateralis-femoris",
+      "category": "bones",
+      "name": {
+        "hu": "a combcsont külső bütyke",
+        "sv": "laterala femurkondylen",
+        "la": "condylus lateralis femoris"
+      },
+      "synonymsHu": "laterális femurcondylus",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.meniscus-medialis",
+      "category": "joints",
+      "name": {
+        "hu": "belső meniscus",
+        "sv": "mediala menisken",
+        "la": "meniscus medialis"
+      },
+      "synonymsHu": "belső félholdporc",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.meniscus-lateralis",
+      "category": "joints",
+      "name": {
+        "hu": "külső meniscus",
+        "sv": "laterala menisken",
+        "la": "meniscus lateralis"
+      },
+      "synonymsHu": "külső félholdporc",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.lig-cruciatum-anterius",
+      "category": "joints",
+      "name": {
+        "hu": "elülső keresztszalag",
+        "sv": "främre korsbandet",
+        "la": "lig. cruciatum anterius"
+      },
+      "synonymsHu": "ACL",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.lig-cruciatum-posterius",
+      "category": "joints",
+      "name": {
+        "hu": "hátsó keresztszalag",
+        "sv": "bakre korsbandet",
+        "la": "lig. cruciatum posterius"
+      },
+      "synonymsHu": "PCL",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.lig-collaterale-tibiale",
+      "category": "joints",
+      "name": {
+        "hu": "belső oldalszalag",
+        "sv": "mediala kollateralligamentet",
+        "la": "lig. collaterale tibiale"
+      },
+      "synonymsHu": "MCL, tibiális oldalszalag",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.lig-collaterale-fibulare",
+      "category": "joints",
+      "name": {
+        "hu": "külső oldalszalag",
+        "sv": "laterala kollateralligamentet",
+        "la": "lig. collaterale fibulare"
+      },
+      "synonymsHu": "LCL, fibuláris oldalszalag",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.lig-patellae",
+      "category": "joints",
+      "name": {
+        "hu": "térdkalácsszalag",
+        "sv": "patellarsenan",
+        "la": "lig. patellae"
+      },
+      "synonymsHu": "patellaín",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.tuberositas-tibiae",
+      "category": "bones",
+      "name": {
+        "hu": "sípcsont-érdesség",
+        "sv": "skenbensknölen",
+        "la": "tuberositas tibiae"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.fossa-poplitea",
+      "category": "basics",
+      "name": {
+        "hu": "térdhajlat",
+        "sv": "knävecket",
+        "la": "fossa poplitea"
+      },
+      "synonymsHu": "térdárok",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.pes-anserinus",
+      "category": "muscles",
+      "name": {
+        "hu": "lúdláb",
+        "sv": "gåsfoten",
+        "la": "pes anserinus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.tractus-iliotibialis",
+      "category": "muscles",
+      "name": {
+        "hu": "csípő-sípcsonti szalagköteg",
+        "sv": "iliotibiala bandet",
+        "la": "tractus iliotibialis"
+      },
+      "synonymsHu": "ITB",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.tibialis-anterior",
+      "category": "muscles",
+      "name": {
+        "hu": "elülső sípcsontizom",
+        "sv": "främre skenbensmuskeln",
+        "la": "m. tibialis anterior"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.extensor-hallucis-longus",
+      "category": "muscles",
+      "name": {
+        "hu": "hosszú öregujj-feszítő izom",
+        "sv": "långa stortåsträckaren",
+        "la": "m. extensor hallucis longus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.extensor-digitorum-longus",
+      "category": "muscles",
+      "name": {
+        "hu": "hosszú lábujjfeszítő izom",
+        "sv": "långa tåsträckaren",
+        "la": "m. extensor digitorum longus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.fibularis-tertius",
+      "category": "muscles",
+      "name": {
+        "hu": "harmadik szárkapocsizom",
+        "sv": "tredje vadbensmuskeln",
+        "la": "m. fibularis tertius"
+      },
+      "synonymsHu": "m. peroneus tertius",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.fibularis-longus",
+      "category": "muscles",
+      "name": {
+        "hu": "hosszú szárkapocsizom",
+        "sv": "långa vadbensmuskeln",
+        "la": "m. fibularis longus"
+      },
+      "synonymsHu": "m. peroneus longus",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.fibularis-brevis",
+      "category": "muscles",
+      "name": {
+        "hu": "rövid szárkapocsizom",
+        "sv": "korta vadbensmuskeln",
+        "la": "m. fibularis brevis"
+      },
+      "synonymsHu": "m. peroneus brevis",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.gastrocnemius",
+      "category": "muscles",
+      "name": {
+        "hu": "kétfejű lábikraizom",
+        "sv": "tvåhövdade vadmuskeln",
+        "la": "m. gastrocnemius"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.soleus",
+      "category": "muscles",
+      "name": {
+        "hu": "gázlóizom",
+        "sv": "flundremuskeln",
+        "la": "m. soleus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.plantaris",
+      "category": "muscles",
+      "name": {
+        "hu": "talpizom",
+        "sv": "plantarismuskeln",
+        "la": "m. plantaris"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.tibialis-posterior",
+      "category": "muscles",
+      "name": {
+        "hu": "hátsó sípcsontizom",
+        "sv": "bakre skenbensmuskeln",
+        "la": "m. tibialis posterior"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.flexor-hallucis-longus",
+      "category": "muscles",
+      "name": {
+        "hu": "hosszú öregujj-hajlító izom",
+        "sv": "långa stortåböjaren",
+        "la": "m. flexor hallucis longus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.flexor-digitorum-longus",
+      "category": "muscles",
+      "name": {
+        "hu": "hosszú lábujjhajlító izom",
+        "sv": "långa tåböjaren",
+        "la": "m. flexor digitorum longus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.articulatio-subtalaris",
+      "category": "joints",
+      "name": {
+        "hu": "alsó ugróízület",
+        "sv": "nedre språngleden",
+        "la": "articulatio subtalaris"
+      },
+      "synonymsHu": "subtalaris ízület",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.malleolus-medialis",
+      "category": "bones",
+      "name": {
+        "hu": "belboka",
+        "sv": "inre fotknölen",
+        "la": "malleolus medialis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.malleolus-lateralis",
+      "category": "bones",
+      "name": {
+        "hu": "külboka",
+        "sv": "yttre fotknölen",
+        "la": "malleolus lateralis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.talus",
+      "category": "bones",
+      "name": {
+        "hu": "ugrócsont",
+        "sv": "språngbenet",
+        "la": "talus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.calcaneus",
+      "category": "bones",
+      "name": {
+        "hu": "sarokcsont",
+        "sv": "hälbenet",
+        "la": "calcaneus"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.tendo-calcaneus",
+      "category": "muscles",
+      "name": {
+        "hu": "Achilles-ín",
+        "sv": "hälsenan",
+        "la": "tendo calcaneus"
+      },
+      "synonymsHu": "sarokín",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.lig-talofibulare-anterius",
+      "category": "joints",
+      "name": {
+        "hu": "elülső ugrócsont–szárkapocs szalag",
+        "sv": "främre talofibulara ligamentet",
+        "la": "lig. talofibulare anterius"
+      },
+      "synonymsHu": "ATFL",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.lig-calcaneofibulare",
+      "category": "joints",
+      "name": {
+        "hu": "sarokcsont–szárkapocs szalag",
+        "sv": "kalkaneofibulara ligamentet",
+        "la": "lig. calcaneofibulare"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.lig-deltoideum",
+      "category": "joints",
+      "name": {
+        "hu": "deltaszalag",
+        "sv": "deltaligamentet",
+        "la": "lig. deltoideum"
+      },
+      "synonymsHu": "mediális oldalszalag",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.membrana-interossea-cruris",
+      "category": "joints",
+      "name": {
+        "hu": "lábszári csontközti hártya",
+        "sv": "underbenets mellanbensmembran",
+        "la": "membrana interossea cruris"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.retinaculum-musculorum-fibularium",
+      "category": "muscles",
+      "name": {
+        "hu": "szárkapocsizmok ínrögzítő szalagja",
+        "sv": "peronealretinaklet",
+        "la": "retinaculum musculorum fibularium"
+      },
+      "synonymsHu": "retinaculum peroneorum",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.extensor-digitorum-brevis",
+      "category": "muscles",
+      "name": {
+        "hu": "rövid ujjfeszítő izom (láb)",
+        "sv": "korta tåsträckarmuskeln",
+        "la": "m. extensor digitorum brevis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.extensor-hallucis-brevis",
+      "category": "muscles",
+      "name": {
+        "hu": "rövid öregujj-feszítő izom",
+        "sv": "korta stortåsträckarmuskeln",
+        "la": "m. extensor hallucis brevis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.abductor-hallucis",
+      "category": "muscles",
+      "name": {
+        "hu": "öregujj-távolító izom",
+        "sv": "stortåns utåtförarmuskel",
+        "la": "m. abductor hallucis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.flexor-digitorum-brevis",
+      "category": "muscles",
+      "name": {
+        "hu": "rövid ujjhajlító izom (láb)",
+        "sv": "korta tåböjarmuskeln",
+        "la": "m. flexor digitorum brevis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.abductor-digiti-minimi-pedis",
+      "category": "muscles",
+      "name": {
+        "hu": "kislábujj-távolító izom",
+        "sv": "lilltåns utåtförarmuskel",
+        "la": "m. abductor digiti minimi pedis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.quadratus-plantae",
+      "category": "muscles",
+      "name": {
+        "hu": "négyszögletes talpizom",
+        "sv": "fyrkantiga fotsulemuskeln",
+        "la": "m. quadratus plantae"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.lumbricales-pedis",
+      "category": "muscles",
+      "name": {
+        "hu": "féregszerű izmok (láb)",
+        "sv": "maskmusklerna (foten)",
+        "la": "mm. lumbricales pedis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.flexor-hallucis-brevis",
+      "category": "muscles",
+      "name": {
+        "hu": "rövid öregujj-hajlító izom",
+        "sv": "korta stortåböjarmuskeln",
+        "la": "m. flexor hallucis brevis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.adductor-hallucis",
+      "category": "muscles",
+      "name": {
+        "hu": "öregujj-közelítő izom",
+        "sv": "stortåns inåtförarmuskel",
+        "la": "m. adductor hallucis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.interossei-pedis",
+      "category": "muscles",
+      "name": {
+        "hu": "csontközi izmok (láb)",
+        "sv": "mellanbensmusklerna (foten)",
+        "la": "mm. interossei pedis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.articulatio-tarsi-transversa",
+      "category": "joints",
+      "name": {
+        "hu": "Chopart-ízület (harántos lábtőízület)",
+        "sv": "Choparts led (tvärgående tarsalleden)",
+        "la": "articulatio tarsi transversa"
+      },
+      "synonymsHu": "Chopart-vonal",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.articulationes-metatarsophalangeae",
+      "category": "joints",
+      "name": {
+        "hu": "lábközép-ujjpercízületek (MTP)",
+        "sv": "metatarsofalangealleder (MTP)",
+        "la": "articulationes metatarsophalangeae"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.os-naviculare",
+      "category": "bones",
+      "name": {
+        "hu": "sajkacsont",
+        "sv": "båtbenet",
+        "la": "os naviculare"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.os-cuboideum",
+      "category": "bones",
+      "name": {
+        "hu": "kockacsont",
+        "sv": "kuboidbenet (tärningsbenet)",
+        "la": "os cuboideum"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.ossa-cuneiformia",
+      "category": "bones",
+      "name": {
+        "hu": "ékcsontok",
+        "sv": "kilbenen",
+        "la": "ossa cuneiformia"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.ossa-metatarsi",
+      "category": "bones",
+      "name": {
+        "hu": "lábközépcsontok",
+        "sv": "mellanfotsbenen (metatarsalbenen)",
+        "la": "ossa metatarsi"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.phalanges-pedis",
+      "category": "bones",
+      "name": {
+        "hu": "lábujjpercek",
+        "sv": "tåbenen (tåfalangerna)",
+        "la": "phalanges pedis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.aponeurosis-plantaris",
+      "category": "muscles",
+      "name": {
+        "hu": "talpi bőnye",
+        "sv": "plantarfascian (plantaraponeurosen)",
+        "la": "aponeurosis plantaris"
+      },
+      "synonymsHu": "fascia plantaris",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.arcus-pedis-longitudinalis-medialis",
+      "category": "basics",
+      "name": {
+        "hu": "belső hosszanti lábboltozat",
+        "sv": "mediala längsgående fotvalvet",
+        "la": "arcus pedis longitudinalis medialis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.articulatio-tarsometatarsalis",
+      "category": "joints",
+      "name": {
+        "hu": "Lisfranc-ízület (lábtő-lábközépízület)",
+        "sv": "Lisfrancs led (tarsometatarsalleden)",
+        "la": "articulatio tarsometatarsalis"
+      },
+      "synonymsHu": "Lisfranc-vonal",
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "t.os-sesamoideum-hallucis",
+      "category": "bones",
+      "name": {
+        "hu": "öregujj szezámcsontja",
+        "sv": "stortåns sesamben",
+        "la": "os sesamoideum hallucis"
+      },
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
     }
   ]
 }

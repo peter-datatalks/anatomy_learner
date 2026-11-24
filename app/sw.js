@@ -35,7 +35,8 @@ self.addEventListener('fetch', event => {
   // Page loads: network first so a new build shows up, cached copy when offline.
   if (req.mode === 'navigate') {
     event.respondWith(
-      fetch(req).then(res => {
+      // no-cache: always revalidate with the server, so a new build is never hidden by the HTTP cache
+      fetch(req.url, { cache: 'no-cache', credentials: 'same-origin' }).then(res => {
         const copy = res.clone();
         caches.open(CACHE).then(c => c.put('index.html', copy));
         return res;

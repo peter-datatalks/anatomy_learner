@@ -803,17 +803,23 @@ async function boot(){
    The viewer module (and three.js) load only when the student asks for 3D once;
    after that the choice is remembered and every datasheet opens with its 3D view. */
 const BONE_LA={scapula:'scapula',clavicle:'clavicula',humerus:'humerus',radius:'radius',ulna:'ulna',scaphoid:'os scaphoideum',lunate:'os lunatum',triquetral:'os triquetrum',pisiform:'os pisiforme',trapezium:'os trapezium',trapezoid:'os trapezoideum',capitate:'os capitatum',hamate:'os hamatum',
-  mcfirst:'os metacarpi I',mcsecond:'os metacarpi II',mcthird:'os metacarpi III',mcfourth:'os metacarpi IV',mcfifth:'os metacarpi V'};
+  mcfirst:'os metacarpi I',mcsecond:'os metacarpi II',mcthird:'os metacarpi III',mcfourth:'os metacarpi IV',mcfifth:'os metacarpi V',
+  'hip-bone':'os coxae',sacrum:'os sacrum',femur:'femur',patella:'patella',tibia:'tibia',fibula:'fibula',talus:'talus',calcaneus:'calcaneus',navicular:'os naviculare',cuboid:'os cuboideum',
+  'cuneiform-medial':'os cuneiforme mediale','cuneiform-intermediate':'os cuneiforme intermedium','cuneiform-lateral':'os cuneiforme laterale',
+  mtfirst:'os metatarsi I',mtsecond:'os metatarsi II',mtthird:'os metatarsi III',mtfourth:'os metatarsi IV',mtfifth:'os metatarsi V'};
+const TOE_LA={big:'hallucis',second:'digiti II pedis',third:'digiti III pedis',fourth:'digiti IV pedis',little:'digiti minimi pedis'};
 const FINGER_LA={thumb:'pollicis',index:'indicis',middle:'digiti medii',ring:'digiti anularis',little:'digiti minimi'};
 function boneLatin(k){
   if(BONE_LA[k])return BONE_LA[k];
-  const [ph,f]=k.split('-');return `phalanx ${({proximal:'proximalis',middle:'media',distal:'distalis'})[ph]} ${FINGER_LA[f]||''}`;
+  const [ph,f,toe]=k.split('-');const pl=({proximal:'proximalis',middle:'media',distal:'distalis'})[ph];
+  return `phalanx ${pl} ${toe==='toe'?TOE_LA[f]:FINGER_LA[f]||''}`;
 }
 let viewer=null,viewerMod=null,viewerToken=0;
 function v3dHtml(key){
   const m=MODEL_OF[key];
   if(!m){
-    return SHEETS[key]&&SHEETS[key].kind==='ideg'?`<p class="small muted">${u('Az idegek 3D-modellje még nem érhető el: a jelenlegi forrás (BodyParts3D) nem tartalmaz perifériás idegeket.','3D-modell för nerver finns inte än: den nuvarande källan (BodyParts3D) innehåller inga perifera nerver.')}</p>`:'';
+    return SHEETS[key]&&SHEETS[key].kind==='ideg'?`<p class="small muted">${u('Az idegek 3D-modellje még nem érhető el: a jelenlegi forrás (BodyParts3D) nem tartalmaz perifériás idegeket.','3D-modell för nerver finns inte än: den nuvarande källan (BodyParts3D) innehåller inga perifera nerver.')}</p>`
+      :`<p class="small muted">${u('Ehhez a struktúrához nincs külön 3D-modell a jelenlegi forrásban (BodyParts3D).','Den här strukturen har ingen egen 3D-modell i den nuvarande källan (BodyParts3D).')}</p>`;
   }
   return `<section class="v3d-panel">
     <div class="row" style="justify-content:space-between"><h3>${lb('3D nézet','3D-vy')}</h3>

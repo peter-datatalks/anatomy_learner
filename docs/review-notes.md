@@ -51,6 +51,39 @@ When a record is checked, set its `review` to `{"status": "reviewed", "by": "<na
 - **Test names to check:** Cozen, moving valgus stress, Hook test, elbow flexion test, Schaeffer test
   (palmaris longus), Finkelstein, Eichhoff, Froment, grind test.
 
+## Lower limb (modules csipo, comb-terd, labszar, labfej)
+- **Hungarian names:**
+  - muscles: "belső/külső csípőlyukizom", "combpólyafeszítő izom", "karcsú izom", "külső/belső/középső vaskos izom", "térdalji izom", "félig inas / félig hártyás izom", "talpizom" (plantaris), "gázlóizom" (soleus)
+  - landmarks: "csípővápa", "lúdláb", "csípő-sípcsonti szalagköteg", "sípcsont-érdesség", "kakaslépés" (steppage gait)
+- **Swedish names:**
+  - muscles: "fascia lata-spännaren", "smala lårmuskeln", "tarmbensmuskeln", "inre/yttre obturatormuskeln", "laterala/mediala/mellersta vida lårmuskeln", "knävecksmuskeln", "halvsenmuskeln", "halvhinnmuskeln", "plantarismuskeln", "flundremuskeln", "tredje vadbensmuskeln", "stortåns inåtförarmuskel", "fyrkantiga fotsulemuskeln"
+  - other terms: "höftledspanna", "patellarsenan", "kuboidbenet (tärningsbenet)", "tennisvad"
+- **Spinal segments that vary by source:**
+  - hip: piriformis S1–S2 (or L5–S2), psoas major L1–L3 (or L1–L4), adductor magnus (tibial part L4, obturator part L2–L4), gemellus inferior L4–S1
+  - thigh and knee: sartorius L2–L3, quadriceps L2–L4, hamstrings L5–S2, popliteus L4–S1
+  - leg and foot: FHL, FDL and plantaris S1–S2, tibialis posterior L4–L5 (or L5–S1), plantar nerves S1–S2 (Kendall: medial plantar L4–S1)
+- **ROM norms (AAOS-style):**
+  - hip: flexion 120, extension 20, abduction 45, adduction 30, rotation 45/45
+  - knee: flexion 135 (some sources 140–150)
+  - ankle: dorsiflexion 20, plantarflexion 50
+  - subtalar: inversion 35, eversion 15 (calcaneal-angle methods give smaller values)
+  - 1st MTP: extension 70 (70–90), flexion 45; about 60° extension needed in gait
+- **Clinical figures and claims:**
+  - Q-angle 10–15°; VMO fibre angle 50–55°; navicular drop >10 mm
+  - MTSS ≥5 cm vs stress fracture <5 cm; Achilles rupture 2–6 cm above the insertion
+  - sciatic nerve through piriformis in about 10–15%; plantaris absent in 7–10%
+  - hip capsular pattern internal rotation > flexion > abduction (Cyriax)
+  - hip OA criteria NICE-style (age ≥45, morning stiffness ≤30 min)
+  - "unhappy triad" in its classic form (with a note on the lateral meniscus)
+  - midtarsal locking in the classic Elftman model (newer work disputes it)
+  - Baxter nerve course; Morton's neuroma in the 3rd interspace
+  - anterior drawer most reliable 4–5 days after injury
+- **Open terminology choices:**
+  - category of tractus iliotibialis, tendo calcaneus and the retinacula ("muscles")
+  - articulatio tarsometatarsalis (TA uses the plural)
+  - interossei pedis kept as one record
+- **No 3D mesh** for extensor digitorum brevis, quadratus plantae or the interossei of the foot (not in BodyParts3D).
+
 ## Fixed during drafting
 - The median nerve "benediction/oath hand" means **fingers 2–3** stay extended. Earlier text said 1–2.
 - The plexus roots C5–T1 include the first thoracic segment.

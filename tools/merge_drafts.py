@@ -5,7 +5,7 @@
 
 Each draft file holds {"module", "structures", "questions", "terms"}. Records whose id already
 exists are replaced, so a corrected draft can be merged again. Terms whose Latin name already
-exists under another id are skipped. Run tools/build.py --check afterwards.
+exists under another id are skipped (terms without a Latin name are compared by id only). Run tools/build.py --check afterwards.
 """
 import json
 import pathlib
@@ -57,8 +57,11 @@ def main(paths):
             data = read(fname)
             new = draft.get(key, [])
             if key == 'terms':
-                latin = {t['name']['la'].lower(): t['id'] for t in data[lkey]}
-                kept = [t for t in new if t['name']['la'].lower() not in latin or latin[t['name']['la'].lower()] == t['id']]
+                def latin_key(t):  # terms without a Latin name ("—") are compared by id only
+                    la = t['name']['la'].strip().lower()
+                    return None if la in ('', '—', '-') else la
+                latin = {latin_key(t): t["id"] for t in data[lkey] if latin_key(t)}
+                kept = [t for t in new if latin_key(t) is None or latin_key(t) not in latin or latin[latin_key(t)] == t["id"]]
                 skipped = len(new) - len(kept)
                 new = kept
             a, r = upsert(data[lkey], new)

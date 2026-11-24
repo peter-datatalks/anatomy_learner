@@ -94,6 +94,34 @@
           }
         },
         {
+          "view": "modul-csipo",
+          "label": {
+            "hu": "Csípő modul",
+            "sv": "Modul: höft"
+          }
+        },
+        {
+          "view": "modul-comb-terd",
+          "label": {
+            "hu": "Comb és térd modul",
+            "sv": "Modul: lår och knä"
+          }
+        },
+        {
+          "view": "modul-labszar",
+          "label": {
+            "hu": "Lábszár és boka modul",
+            "sv": "Modul: underben och fotled"
+          }
+        },
+        {
+          "view": "modul-labfej",
+          "label": {
+            "hu": "Lábfej modul",
+            "sv": "Modul: fot"
+          }
+        },
+        {
           "view": "szotar",
           "label": {
             "hu": "Szótár",

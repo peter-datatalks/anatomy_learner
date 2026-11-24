@@ -1,6 +1,442 @@
 {
   "modules": [
     {
+      "id": "csipo",
+      "region": "lower-limb",
+      "order": 1,
+      "title": {
+        "hu": "Csípő és farizmok",
+        "sv": "Höft och sätesmuskler"
+      },
+      "latin": "regio coxae et glutealis",
+      "termName": {
+        "hu": "csípő",
+        "sv": "höft",
+        "la": "coxa"
+      },
+      "kiCourses": [
+        "1FY053",
+        "1FY055"
+      ],
+      "lessons": {
+        "basic": {
+          "hu": "<p>A csípő köti össze a törzset az alsó végtaggal. A medencét alkotó <span class=\"la\">os coxae</span> (csípőcsont) mély vápájába, az <span class=\"la\">acetabulum</span>ba illeszkedik a combcsont feje (<span class=\"la\">caput femoris</span>). Ez a test egyik legstabilabb ízülete, mert egész nap a testsúlyt hordozza.</p>\n<ul><li>A <b>farizmok</b> hátul és oldalt fekszenek: a nagy farizom nyújtja a csípőt (felállás, lépcsőzés), a középső és kis farizom pedig egylábas álláskor vízszintesen tartja a medencét.</li><li>A <b>mély kifelé forgatók</b> kis izmok a far mélyén; a combot kifelé forgatják és a combfejet a vápában tartják. Közülük a körteképű izom (piriformis) mellett halad a test legvastagabb idege, a <span class=\"la\">n. ischiadicus</span>.</li><li>A <b>csípőhajlítók</b> (nagy horpaszizom és csípőizom, együtt <span class=\"la\">m. iliopsoas</span>) elöl emelik a combot, például lépéskor.</li><li>A <b>közelítők</b> (adductorok) a comb belső oldalán húzzák a lábat a középvonal felé; a sportban gyakran sérülnek.</li></ul>",
+          "sv": "<p>Höften förbinder bålen med den nedre extremiteten. Lårbenshuvudet (<span class=\"la\">caput femoris</span>) passar in i den djupa ledpannan, <span class=\"la\">acetabulum</span>, på höftbenet (<span class=\"la\">os coxae</span>). Det är en av kroppens stabilaste leder, eftersom den bär kroppsvikten hela dagen.</p>\n<ul><li><b>Sätesmusklerna</b> ligger bakom och på sidan: stora sätesmuskeln sträcker höften (uppresning, trappgång), mellersta och lilla sätesmuskeln håller bäckenet vågrätt när man står på ett ben.</li><li>De <b>djupa utåtrotatorerna</b> är små muskler djupt i sätet; de vrider låret utåt och håller lårbenshuvudet i ledpannan. Intill päronformade muskeln (piriformis) löper kroppens grövsta nerv, <span class=\"la\">n. ischiadicus</span>.</li><li><b>Höftflexorerna</b> (stora ländmuskeln och tarmbensmuskeln, tillsammans <span class=\"la\">m. iliopsoas</span>) lyfter låret framåt, till exempel när man tar ett steg.</li><li><b>Adduktorerna</b> på lårets insida drar benet mot mittlinjen; de skadas ofta inom idrott.</li></ul>"
+        },
+        "university": {
+          "hu": "<p>Az <span class=\"la\">articulatio coxae</span> dióízület: a labrummal mélyített vápa a combfej több mint felét körülöleli. A tok erős szalagjai (<span class=\"la\">lig. iliofemorale, pubofemorale, ischiofemorale</span>) csavarvonalban futnak, így extensióban feszülnek meg – ezért álláskor a szalagok passzívan tartják a medencét, és a zárt (close-packed) helyzet az extensio + befelé forgatás + enyhe abductio.</p>\n<ul><li><b>Beidegzési logika:</b> a plexus lumbalis elöl (flexorok: <span class=\"la\">n. femoralis</span>, L2–L3; adductorok: <span class=\"la\">n. obturatorius</span>, L2–L4), a plexus sacralis hátul (farizmok: <span class=\"la\">n. gluteus superior</span> L4–S1 a medius, minimus és TFL számára; <span class=\"la\">n. gluteus inferior</span> L5–S2 a maximus számára; a mély rotátorok saját kis ágakat kapnak). Kivétel: a m. obturator externus a n. obturatoriusból, a m. psoas major közvetlenül a plexus lumbalisból, a m. adductor magnus hamstring része a n. ischiadicusból kap rostokat.</li><li><b>Foramen ischiadicum majus:</b> a m. piriformis két részre osztja. Felette (foramen suprapiriforme) a n. és a. glutea superior, alatta (foramen infrapiriforme) a n. ischiadicus, n. gluteus inferior, n. cutaneus femoris posterior és n. pudendus lép ki.</li><li><b>Frontális síkú stabilitás:</b> egylábas támaszban a testsúly a csípőízülettől mediálisan hat, ezért a támaszoldali abductoroknak (gluteus medius és minimus) kell a medencét vízszintesen tartaniuk; az ízületi terhelés így a testsúly többszöröse.</li><li><b>Izomfunkció helyzetfüggése:</b> több izom hatása a csípő helyzetével változik – pl. a m. piriformis nyújtott csípőben kifelé forgat, erős flexióban horizontálisan abducál; az adductorok semleges helyzetből flexióban, erős flexióból extensióban segítenek.</li></ul>",
+          "sv": "<p><span class=\"la\">Articulatio coxae</span> är en nötled: den labrumfördjupade ledpannan omsluter mer än halva lårbenshuvudet. Kapselns kraftiga ligament (<span class=\"la\">lig. iliofemorale, pubofemorale, ischiofemorale</span>) löper spiralformat och sträcks därför i extension – vid stående håller ligamenten passivt upp bäckenet, och den låsta (close-packed) positionen är extension + inåtrotation + lätt abduktion.</p>\n<ul><li><b>Innervationslogik:</b> plexus lumbalis framtill (flexorer: <span class=\"la\">n. femoralis</span>, L2–L3; adduktorer: <span class=\"la\">n. obturatorius</span>, L2–L4), plexus sacralis baktill (sätesmuskler: <span class=\"la\">n. gluteus superior</span> L4–S1 till medius, minimus och TFL; <span class=\"la\">n. gluteus inferior</span> L5–S2 till maximus; de djupa rotatorerna får egna små grenar). Undantag: m. obturator externus innerveras av n. obturatorius, m. psoas major direkt från plexus lumbalis och hamstringsdelen av m. adductor magnus av n. ischiadicus.</li><li><b>Foramen ischiadicum majus:</b> delas i två av m. piriformis. Ovanför (foramen suprapiriforme) passerar n. och a. glutea superior, nedanför (foramen infrapiriforme) n. ischiadicus, n. gluteus inferior, n. cutaneus femoris posterior och n. pudendus.</li><li><b>Stabilitet i frontalplanet:</b> i enbensstående verkar kroppsvikten medialt om höftleden, så ståbenets abduktorer (gluteus medius och minimus) måste hålla bäckenet vågrätt; ledbelastningen blir därmed flera gånger kroppsvikten.</li><li><b>Lägesberoende muskelfunktion:</b> flera musklers verkan ändras med höftens läge – t.ex. utåtroterar m. piriformis i extenderad höft men abducerar horisontellt i kraftig flexion; adduktorerna hjälper till med flexion från neutralläge och med extension från kraftig flexion.</li></ul>"
+        },
+        "clinical": {
+          "hu": "<p>A csípőpanaszok helye jól irányít: a <b>lágyékfájdalom</b> gyakran intraartikuláris (artrózis, FAI, labrum) vagy adductor-eredetű, a <b>laterális fájdalom</b> gyakran gluteális tendinopathia, a <b>farfájdalom</b> lehet lumbális, sacroiliacalis vagy mély gluteális eredetű.</p>\n<ul><li><b>Trendelenburg-jel:</b> egylábas álláskor a medence a lengő (ellen)oldalon lesüllyed → a támaszoldali m. gluteus medius és minimus gyengesége vagy a <span class=\"la\">n. gluteus superior</span> sérülése (pl. rosszul helyezett glutealis injekció, csípőprotézis-műtét). Kompenzáció: Duchenne-járás (törzsdöntés a támaszoldal felé).</li><li><b>Thomas-teszt:</b> hanyatt fekve az egyik térdet a mellkashoz húzzuk; ha az ellenoldali comb felemelkedik, a csípőhajlítók (m. iliopsoas) rövidültek; ha a térd nyújtásba megy, a m. rectus femoris; ha a comb abducálódik, a TFL/tractus iliotibialis feszes.</li><li><b>FABER és FADIR:</b> a FABER (flexio, abductio, kifelé forgatás; Patrick-teszt) lágyékfájdalma csípőre, hátsó fájdalma sacroiliacalis eredetre utalhat; a pozitív FADIR (flexio, adductio, befelé forgatás) FAI-ra és labrumsérülésre jellemző, de inkább kizáró (szenzitív), mint megerősítő teszt.</li><li><b>Piriformis és n. ischiadicus:</b> mély farfájdalom ischiasjellegű kisugárzással; FAIR-teszt. Előbb a lumbális gyökkompressziót kell kizárni.</li><li><b>Adductor-húzódás:</b> labdarúgásban, jégkorongban; fájdalom ellenállásos adductióra és squeeze-tesztre, érzékeny adductor longus-eredés. Megelőzés: Koppenhágai adductor-gyakorlat.</li><li><b>Csípőartrózis:</b> 45 év felett terheléses lágyékfájdalom, csökkent befelé forgatás és flexio, rövid reggeli merevség. A kapszuláris mintázat: befelé forgatás &gt; flexio &gt; abductio. Első vonalbeli kezelés: betegoktatás, terápiás edzés és szükség esetén testsúlycsökkentés (Svédországban pl. a BOA-program).</li></ul>\n<p class=\"note\">Oktatási célú összefoglaló; nem helyettesíti a szakmai irányelveket és az egyéni klinikai döntést.</p>",
+          "sv": "<p>Var smärtan sitter vägleder bedömningen: <b>ljumsksmärta</b> är ofta intraartikulär (artros, FAI, labrum) eller adduktorrelaterad, <b>lateral smärta</b> ofta gluteal tendinopati, och <b>sätessmärta</b> kan ha lumbalt, sakroiliakalt eller djupt glutealt ursprung.</p>\n<ul><li><b>Trendelenburgs tecken:</b> i enbensstående sjunker bäckenet på svingbenets (kontralaterala) sida → svaghet i ståbenets m. gluteus medius och minimus eller skada på <span class=\"la\">n. gluteus superior</span> (t.ex. felplacerad intramuskulär injektion i sätet, höftprotesoperation). Kompensation: Duchennegång (bållutning mot ståbenet).</li><li><b>Thomas test:</b> i ryggläge dras ena knät mot bröstet; om det andra låret lyfter från britsen är höftflexorerna (m. iliopsoas) förkortade; om knät extenderas m. rectus femoris; om låret abduceras är TFL/tractus iliotibialis stram.</li><li><b>FABER och FADIR:</b> vid FABER (flexion, abduktion, utåtrotation; Patricks test) talar ljumsksmärta för höften och bakre smärta för sakroiliakalt ursprung; ett positivt FADIR (flexion, adduktion, inåtrotation) är typiskt för FAI och labrumskada, men testet är bättre på att utesluta (sensitivt) än att bekräfta.</li><li><b>Piriformis och n. ischiadicus:</b> djup sätessmärta med ischiasliknande utstrålning; FAIR-test. Lumbal rotkompression bör uteslutas först.</li><li><b>Adduktorbristning:</b> inom fotboll och ishockey; smärta vid adduktion mot motstånd och squeezetest, öm adductor longus-ursprung. Prevention: Köpenhamnsövningen (Copenhagen adduction).</li><li><b>Höftledsartros:</b> belastningsrelaterad ljumsksmärta efter 45 års ålder, minskad inåtrotation och flexion, kort morgonstelhet. Kapselmönster: inåtrotation &gt; flexion &gt; abduktion. Förstahandsbehandling: patientutbildning, träning och vid behov viktnedgång (i Sverige t.ex. BOA-programmet).</li></ul>\n<p class=\"note\">Sammanfattning för utbildningssyfte; ersätter inte professionella riktlinjer eller individuell klinisk bedömning.</p>"
+        }
+      },
+      "structureGroups": [
+        {
+          "title": {
+            "hu": "Farizmok",
+            "sv": "Sätesmuskler"
+          },
+          "structures": [
+            "m.gluteus-maximus",
+            "m.gluteus-medius",
+            "m.gluteus-minimus",
+            "m.tensor-fasciae-latae"
+          ]
+        },
+        {
+          "title": {
+            "hu": "Mély kifelé forgatók",
+            "sv": "Djupa utåtrotatorer"
+          },
+          "structures": [
+            "m.piriformis",
+            "m.obturator-internus",
+            "m.gemellus-superior",
+            "m.gemellus-inferior",
+            "m.quadratus-femoris",
+            "m.obturator-externus"
+          ]
+        },
+        {
+          "title": {
+            "hu": "Csípőhajlítók",
+            "sv": "Höftflexorer"
+          },
+          "structures": [
+            "m.psoas-major",
+            "m.iliacus"
+          ]
+        },
+        {
+          "title": {
+            "hu": "Közelítők",
+            "sv": "Adduktorer"
+          },
+          "structures": [
+            "m.pectineus",
+            "m.adductor-longus",
+            "m.adductor-brevis",
+            "m.adductor-magnus",
+            "m.gracilis"
+          ]
+        },
+        {
+          "title": {
+            "hu": "Ízület",
+            "sv": "Led"
+          },
+          "structures": [
+            "art.coxae"
+          ]
+        }
+      ],
+      "structures": [
+        "m.gluteus-maximus",
+        "m.gluteus-medius",
+        "m.gluteus-minimus",
+        "m.tensor-fasciae-latae",
+        "m.piriformis",
+        "m.obturator-internus",
+        "m.gemellus-superior",
+        "m.gemellus-inferior",
+        "m.quadratus-femoris",
+        "m.obturator-externus",
+        "m.psoas-major",
+        "m.iliacus",
+        "m.pectineus",
+        "m.adductor-longus",
+        "m.adductor-brevis",
+        "m.adductor-magnus",
+        "m.gracilis",
+        "art.coxae"
+      ],
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "comb-terd",
+      "region": "lower-limb",
+      "order": 2,
+      "title": {
+        "hu": "Comb és térd",
+        "sv": "Lår och knä"
+      },
+      "latin": "regio femoris et genus",
+      "termName": {
+        "hu": "térd",
+        "sv": "knä",
+        "la": "genu"
+      },
+      "kiCourses": [
+        "1FY053",
+        "1FY055"
+      ],
+      "lessons": {
+        "basic": {
+          "hu": "<p>A comb és a térd adja a járás, a lépcsőzés és a felállás erejét. A comb egyetlen csontja a <span class=\"la\">femur</span> (combcsont); a térdet a femur, a <span class=\"la\">tibia</span> (sípcsont) és a <span class=\"la\">patella</span> (térdkalács) alkotja. A <span class=\"la\">fibula</span> (szárkapocscsont) nem vesz részt a térdízületben, de szalagok és izmok tapadnak rajta.</p>\n<ul><li>Elöl a négyfejű combizom (<span class=\"la\">m. quadriceps femoris</span>) nyújtja a térdet; ina a térdkalácsot magában foglalva a sípcsont érdességén tapad.</li><li>Hátul a hátsó combizmok (\"hamstrings\") hajlítják a térdet és nyújtják a csípőt.</li><li>A térd stabilitását főleg szalagok (két keresztszalag, két oldalszalag) és izmok adják; a két meniscus (félhold alakú porc) a terhelést osztja el.</li><li>A térd hátsó oldalán lévő térdhajlatban (<span class=\"la\">fossa poplitea</span>) fut a láb fő ere és idegei.</li></ul>",
+          "sv": "<p>Låret och knät ger kraften för gång, trappgång och uppresning. Lårets enda ben är <span class=\"la\">femur</span> (lårbenet); knät bildas av femur, <span class=\"la\">tibia</span> (skenbenet) och <span class=\"la\">patella</span> (knäskålen). <span class=\"la\">Fibula</span> (vadbenet) ingår inte i knäleden, men ligament och muskler fäster på den.</p>\n<ul><li>Framtill sträcker den fyrhövdade lårmuskeln (<span class=\"la\">m. quadriceps femoris</span>) knät; dess sena omsluter knäskålen och fäster på skenbensknölen.</li><li>Baktill böjer de bakre lårmusklerna (\"hamstrings\") knät och sträcker höften.</li><li>Knäts stabilitet ges främst av ligament (två korsband, två kollateralligament) och muskler; de två meniskerna (halvmåneformade broskskivor) fördelar belastningen.</li><li>I knävecket (<span class=\"la\">fossa poplitea</span>) på knäts baksida löper benets stora kärl och nerver.</li></ul>"
+        },
+        "university": {
+          "hu": "<p>A térdízület (<span class=\"la\">articulatio genus</span>) két részből áll: a <span class=\"la\">articulatio femorotibialis</span> és a <span class=\"la\">articulatio femoropatellaris</span>. Fő mozgása a flexio–extensio, hajlított térdnél kismértékű tengelyirányú rotatio is lehetséges. A csontos illeszkedés gyenge, ezért a stabilitás szalagokon, meniscusokon és izmokon múlik.</p>\n<ul><li><b>Szalagok:</b> a <span class=\"la\">lig. cruciatum anterius</span> a tibia elülső elcsúszását és befelé rotatióját, a <span class=\"la\">lig. cruciatum posterius</span> a hátsó elcsúszást fékezi; a <span class=\"la\">lig. collaterale tibiale</span> valgus, a <span class=\"la\">lig. collaterale fibulare</span> varus irányban stabilizál.</li><li><b>Meniscusok:</b> a mediális C alakú, a tokhoz és az MCL mély rostjaihoz rögzül, ezért kevésbé mozgékony; a laterális kerekebb és mozgékonyabb.</li><li><b>Screw-home mechanizmus:</b> a nyújtás utolsó fokaiban a tibia kifelé rotál a femuron (zárt láncban a femur befelé), és a térd \"bezár\"; a m. popliteus oldja ki ezt a zárt helyzetet.</li><li><b>Beidegzési logika:</b> az elülső rekesz (quadriceps, sartorius) a <span class=\"la\">n. femoralis</span> (L2–L4), a hátsó rekesz a <span class=\"la\">n. ischiadicus</span> (L5–S2) ellátási területe: tibialis része a hamstringeket, fibularis része csak a m. biceps femoris rövid fejét idegzi be.</li><li>A m. rectus femoris és a hamstringek (a biceps rövid feje kivételével) kétízületi izmok: csípő- és térdhelyzet együtt határozza meg hosszukat és erejüket.</li></ul>",
+          "sv": "<p>Knäleden (<span class=\"la\">articulatio genus</span>) består av två delar: <span class=\"la\">articulatio femorotibialis</span> och <span class=\"la\">articulatio femoropatellaris</span>. Huvudrörelsen är flexion–extension; i flekterat knä är även en mindre axiell rotation möjlig. Den beniga passformen är svag, så stabiliteten beror på ligament, menisker och muskler.</p>\n<ul><li><b>Ligament:</b> <span class=\"la\">lig. cruciatum anterius</span> bromsar främre translation och inåtrotation av tibia, <span class=\"la\">lig. cruciatum posterius</span> bakre translation; <span class=\"la\">lig. collaterale tibiale</span> stabiliserar mot valgus, <span class=\"la\">lig. collaterale fibulare</span> mot varus.</li><li><b>Menisker:</b> den mediala är C-formad och fäst vid kapseln och de djupa fibrerna i MCL, därför mindre rörlig; den laterala är rundare och rörligare.</li><li><b>Screw-home-mekanismen:</b> under de sista graderna av extension roterar tibia utåt på femur (i sluten kedja roterar femur inåt) och knät \"låses\"; m. popliteus låser upp knät.</li><li><b>Innervationslogik:</b> det främre kompartmentet (quadriceps, sartorius) försörjs av <span class=\"la\">n. femoralis</span> (L2–L4), det bakre av <span class=\"la\">n. ischiadicus</span> (L5–S2): tibialisdelen innerverar hamstrings, fibularisdelen endast korta huvudet av m. biceps femoris.</li><li>M. rectus femoris och hamstrings (utom korta bicepshuvudet) är tvåledsmuskler: höft- och knäposition avgör tillsammans deras längd och kraft.</li></ul>"
+        },
+        "clinical": {
+          "hu": "<p>A térdvizsgálat menete: anamnézis (sérülési mechanizmus, azonnali duzzanat, \"elakadás\", kifordulásérzés), inspekció (duzzanat, tengelyállás, quadriceps-atrófia), tapintás (ízületi rés, patella, tuberositas tibiae, pes anserinus), aktív és passzív ROM, izomerő, majd célzott szalag- és meniscustesztek.</p>\n<ul><li><b>Elülső keresztszalag (ACL):</b> jellemzően nem kontakt, fordulásos sérülés, gyors haemarthros. Lachman-teszt 20–30°-os flexióban (a legérzékenyebb), elülső fiókteszt 90°-ban, pivot shift teszt (rotációs instabilitás).</li><li><b>Meniscus:</b> ízületi rés nyomásérzékenysége, McMurray-teszt, Thessaly-teszt; mechanikus tünetek (elakadás, \"blokkolás\").</li><li><b>Oldalszalagok:</b> valgus-stressz (MCL) és varus-stressz (LCL) 30°-ban és 0°-ban; ha 0°-ban is laza, a keresztszalagok vagy a tok is sérülhetett. Az \"unhappy triad\": ACL + MCL + mediális meniscus.</li><li><b>Patellofemorális fájdalom:</b> elülső térdfájdalom lépcsőn, guggolásban, hosszú ülés után. Szerepet játszhat a csípő abductorainak és kifelé forgatóinak gyengesége, a dinamikus valgus és a Q-szög; a kezelés csípő- és térdizom-erősítést kombinál (a VMO szelektív aktiválásának bizonyítéka korlátozott).</li><li><b>Műtét után:</b> quadriceps-gátlás (arthrogén izomgátlás) és nyújtási deficit (\"quadriceps lag\") – a teljes aktív extensio korai visszanyerése kiemelt cél.</li><li><b>Hamstring-húzódás:</b> sprintben főleg a m. biceps femoris hosszú feje, nyújtásos mechanizmusnál (tánc) gyakran a m. semimembranosus proximális ina.</li><li><b>Egyéb:</b> pes anserinus bursitis (mediális tibiafájdalom), tractus iliotibialis szindróma (laterális fájdalom futóknál), Baker-ciszta a térdhajlatban.</li></ul>\n<p class=\"note\">Oktatási célú összefoglaló; nem helyettesíti a szakmai irányelveket és az egyéni klinikai döntést.</p>",
+          "sv": "<p>Knäundersökningens gång: anamnes (skademekanism, omedelbar svullnad, upphakningar, giving way), inspektion (svullnad, benaxel, quadricepsatrofi), palpation (ledspringa, patella, tuberositas tibiae, pes anserinus), aktivt och passivt ROM, muskelstyrka och därefter riktade ligament- och menisktester.</p>\n<ul><li><b>Främre korsbandet (ACL):</b> typiskt en icke-kontaktskada vid vridning, snabbt hemartros. Lachmans test i 20–30° flexion (mest känsligt), främre draglådstest i 90°, pivot shift-test (rotatorisk instabilitet).</li><li><b>Menisk:</b> ömhet över ledspringan, McMurrays test, Thessalys test; mekaniska symtom (upphakning, låsning).</li><li><b>Kollateralligament:</b> valgusstress (MCL) och varusstress (LCL) i 30° och 0°; är knät lösare även i 0° kan även korsband eller kapsel vara skadade. \"Unhappy triad\": ACL + MCL + mediala menisken.</li><li><b>Patellofemoral smärta:</b> främre knäsmärta i trappor, vid knäböj och efter långvarigt sittande. Svaghet i höftens abduktorer och utåtrotatorer, dynamisk valgus och Q-vinkeln kan bidra; behandlingen kombinerar höft- och knämuskelträning (evidensen för selektiv VMO-aktivering är begränsad).</li><li><b>Efter operation:</b> quadricepshämning (artrogen muskelhämning) och extensionsdeficit (\"quadriceps lag\") – att tidigt återfå full aktiv extension är ett prioriterat mål.</li><li><b>Hamstringsskada:</b> vid sprint främst långa huvudet av m. biceps femoris, vid stretchmekanism (dans) ofta den proximala senan av m. semimembranosus.</li><li><b>Övrigt:</b> pes anserinus-bursit (medial tibiasmärta), iliotibialbandssyndrom (lateral smärta hos löpare), Bakercysta i knävecket.</li></ul>\n<p class=\"note\">Sammanfattning för utbildningssyfte; ersätter inte professionella riktlinjer eller individuell klinisk bedömning.</p>"
+        }
+      },
+      "structureGroups": [
+        {
+          "title": {
+            "hu": "Elülső combizmok",
+            "sv": "Främre lårmuskler"
+          },
+          "structures": [
+            "m.sartorius",
+            "m.rectus-femoris",
+            "m.vastus-lateralis",
+            "m.vastus-medialis",
+            "m.vastus-intermedius"
+          ]
+        },
+        {
+          "title": {
+            "hu": "Hátsó combizmok",
+            "sv": "Bakre lårmuskler (hamstrings)"
+          },
+          "structures": [
+            "m.biceps-femoris",
+            "m.semitendinosus",
+            "m.semimembranosus"
+          ]
+        },
+        {
+          "title": {
+            "hu": "Térdhajlat",
+            "sv": "Knävecket"
+          },
+          "structures": [
+            "m.popliteus"
+          ]
+        },
+        {
+          "title": {
+            "hu": "Ízület",
+            "sv": "Led"
+          },
+          "structures": [
+            "art.genus"
+          ]
+        }
+      ],
+      "structures": [
+        "m.sartorius",
+        "m.rectus-femoris",
+        "m.vastus-lateralis",
+        "m.vastus-medialis",
+        "m.vastus-intermedius",
+        "m.biceps-femoris",
+        "m.semitendinosus",
+        "m.semimembranosus",
+        "m.popliteus",
+        "art.genus"
+      ],
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "labszar",
+      "region": "lower-limb",
+      "order": 3,
+      "title": {
+        "hu": "Lábszár és boka",
+        "sv": "Underben och fotled"
+      },
+      "latin": "crus et regio talocruralis",
+      "termName": {
+        "hu": "lábszár",
+        "sv": "underben",
+        "la": "crus"
+      },
+      "kiCourses": [
+        "1FY053",
+        "1FY055"
+      ],
+      "lessons": {
+        "basic": {
+          "hu": "<p>A lábszár két csontja a vastag, teherviselő <span class=\"la\">tibia</span> (sípcsont) és a vékony <span class=\"la\">fibula</span> (szárkapocscsont). Alul a két csont a bokákkal (<span class=\"la\">malleolus medialis</span> és <span class=\"la\">malleolus lateralis</span>) villaként fogja közre az ugrócsontot (<span class=\"la\">talus</span>); ez a bokaízület.</p>\n<ul><li>A lábszár izmai erős pólyák által elválasztott rekeszekben fekszenek: elülső, oldalsó és hátsó (felszíni és mély) rekesz.</li><li>Az elülső izmok felhúzzák a lábfejet és a lábujjakat (dorsalflexio), az oldalsók kifelé fordítják (eversio), a hátsók lábujjhegyre emelnek (plantarflexio).</li><li>A vádlit a <span class=\"la\">m. gastrocnemius</span> és a <span class=\"la\">m. soleus</span> adja; közös ínjuk az Achilles-ín (<span class=\"la\">tendo calcaneus</span>), a test legerősebb ína.</li><li>Az ugrócsont alatti alsó ugróízület teszi lehetővé, hogy a talp befelé és kifelé dőljön, így alkalmazkodik az egyenetlen talajhoz.</li></ul>",
+          "sv": "<p>Underbenets två ben är det tjocka, viktbärande <span class=\"la\">tibia</span> (skenbenet) och det tunna <span class=\"la\">fibula</span> (vadbenet). Nedtill omsluter de två benen med fotknölarna (<span class=\"la\">malleolus medialis</span> och <span class=\"la\">malleolus lateralis</span>) språngbenet (<span class=\"la\">talus</span>) som en gaffel; detta är fotleden.</p>\n<ul><li>Underbenets muskler ligger i loger som avgränsas av kraftiga fascior: främre, laterala och bakre (ytlig och djup) logen.</li><li>De främre musklerna lyfter foten och tårna (dorsalflexion), de laterala vrider foten utåt (eversion), de bakre lyfter upp på tå (plantarflexion).</li><li>Vaden formas av <span class=\"la\">m. gastrocnemius</span> och <span class=\"la\">m. soleus</span>; deras gemensamma sena är hälsenan (<span class=\"la\">tendo calcaneus</span>), kroppens starkaste sena.</li><li>Nedre språngleden under talus gör att fotsulan kan luta inåt och utåt och därmed anpassa sig till ojämnt underlag.</li></ul>"
+        },
+        "university": {
+          "hu": "<p>A <span class=\"la\">membrana interossea cruris</span>, a <span class=\"la\">septum intermusculare cruris anterius et posterius</span> és a <span class=\"la\">fascia cruris</span> négy osteofascialis rekeszre osztja a lábszárat; mindegyiknek saját fő idege van – ez a beidegzés logikájának kulcsa.</p>\n<ul><li><b>Elülső rekesz</b> (<span class=\"la\">m. tibialis anterior</span>, <span class=\"la\">m. extensor hallucis longus</span>, <span class=\"la\">m. extensor digitorum longus</span>, <span class=\"la\">m. fibularis tertius</span>): dorsalflexorok, <span class=\"la\">n. fibularis profundus</span> (L4–S1), <span class=\"la\">a. tibialis anterior</span>.</li><li><b>Oldalsó rekesz</b> (<span class=\"la\">m. fibularis longus</span> és <span class=\"la\">brevis</span>; régi néven peroneus): evertorok, <span class=\"la\">n. fibularis superficialis</span> (L5–S1). Ínjaik a malleolus lateralis mögött, a <span class=\"la\">retinaculum musculorum fibularium</span> alatt futnak. A longus a m. tibialis anteriorral „kengyelt” alkot a talp alatt.</li><li><b>Hátsó felszíni réteg</b> (<span class=\"la\">m. gastrocnemius</span>, <span class=\"la\">m. soleus</span>, <span class=\"la\">m. plantaris</span>): plantarflexorok, <span class=\"la\">n. tibialis</span> (S1–S2). A kétízületi gastrocnemius nyújtott térdnél, az egyízületi soleus térdhelyzettől függetlenül hat – ezen alapul a hosszúságuk elkülönítő vizsgálata.</li><li><b>Hátsó mély réteg</b> (<span class=\"la\">m. tibialis posterior</span>, <span class=\"la\">m. flexor digitorum longus</span>, <span class=\"la\">m. flexor hallucis longus</span>): <span class=\"la\">n. tibialis</span>. Ínjaik a malleolus medialis mögött elölről hátrafelé: tibialis posterior – flexor digitorum longus – a./vv. tibiales posteriores és n. tibialis – flexor hallucis longus.</li><li>A <span class=\"la\">n. fibularis communis</span> a collum fibulae körül felszínesen kanyarodik, és itt oszlik felszíni és mély ágra – ezért sérülékeny.</li><li>A felső ugróízület (<span class=\"la\">articulatio talocruralis</span>) csuklóízület; a talus trochleája elöl szélesebb, így dorsalflexióban stabilabb. Az alsó ugróízület (<span class=\"la\">articulatio subtalaris</span>) ferde tengelye körül zajlik az inversio–eversio.</li></ul>",
+          "sv": "<p><span class=\"la\">Membrana interossea cruris</span>, <span class=\"la\">septum intermusculare cruris anterius et posterius</span> och <span class=\"la\">fascia cruris</span> delar underbenet i fyra osteofasciala loger; var och en har sin egen huvudnerv – detta är nyckeln till innervationslogiken.</p>\n<ul><li><b>Främre logen</b> (<span class=\"la\">m. tibialis anterior</span>, <span class=\"la\">m. extensor hallucis longus</span>, <span class=\"la\">m. extensor digitorum longus</span>, <span class=\"la\">m. fibularis tertius</span>): dorsalflexorer, <span class=\"la\">n. fibularis profundus</span> (L4–S1), <span class=\"la\">a. tibialis anterior</span>.</li><li><b>Laterala logen</b> (<span class=\"la\">m. fibularis longus</span> och <span class=\"la\">brevis</span>; äldre namn peroneus): evertorer, <span class=\"la\">n. fibularis superficialis</span> (L5–S1). Senorna löper bakom malleolus lateralis under <span class=\"la\">retinaculum musculorum fibularium</span>. Longus bildar tillsammans med <span class=\"la\">m. tibialis anterior</span> en ”stigbygel” under fotsulan.</li><li><b>Bakre ytliga lagret</b> (<span class=\"la\">m. gastrocnemius</span>, <span class=\"la\">m. soleus</span>, <span class=\"la\">m. plantaris</span>): plantarflexorer, <span class=\"la\">n. tibialis</span> (S1–S2). Tvåledsmuskeln gastrocnemius verkar med extenderat knä, enledsmuskeln soleus oberoende av knäets läge – det är grunden för att skilja deras längd åt vid undersökning.</li><li><b>Bakre djupa lagret</b> (<span class=\"la\">m. tibialis posterior</span>, <span class=\"la\">m. flexor digitorum longus</span>, <span class=\"la\">m. flexor hallucis longus</span>): <span class=\"la\">n. tibialis</span>. Senorna bakom malleolus medialis framifrån och bakåt: tibialis posterior – flexor digitorum longus – a./vv. tibiales posteriores och n. tibialis – flexor hallucis longus.</li><li><span class=\"la\">N. fibularis communis</span> löper ytligt runt collum fibulae och delar sig här i en ytlig och en djup gren – därför är den sårbar.</li><li>Övre språngleden (<span class=\"la\">articulatio talocruralis</span>) är en gångjärnsled; trochlea tali är bredare framtill och leden är därför stabilare i dorsalflexion. I nedre språngleden (<span class=\"la\">articulatio subtalaris</span>) sker inversion–eversion kring en sned axel.</li></ul>"
+        },
+        "clinical": {
+          "hu": "<p>A lábszár és boka fizioterápiás vizsgálatának fő kérdései: van-e törés vagy szalagsérülés, ép-e az Achilles-ín, működik-e a n. fibularis, és elegendő-e a dorsalflexio a járáshoz és a sporthoz.</p>\n<ul><li><b>Laterális bokaficam:</b> plantarflexio + inversio; elsőként a <span class=\"la\">lig. talofibulare anterius</span> (ATFL), majd a <span class=\"la\">lig. calcaneofibulare</span> sérül. Elülső fiókteszt (enyhe plantarflexióban; a duzzanat csökkenése után, kb. 4–5 nap múlva megbízhatóbb), talar tilt. Röntgen az Ottawa-bokaszabályok szerint: nyomásérzékenység a malleolusok hátsó szélén/csúcsán, az os naviculare-n vagy az V. metatarsus basisán, illetve képtelenség 4 lépést megtenni.</li><li><b>Achilles-ínszakadás:</b> hirtelen „rúgásszerű” fájdalom, tapintható rés. Thompson- (Simmonds-) teszt: hason fekve a vádli összenyomására elmarad a plantarflexio. Az aktív plantarflexio a mély hajlítók miatt megmaradhat.</li><li><b>N. fibularis communis-bénulás:</b> collum fibulae-törés, szoros gipsz, keresztbe tett láb, térdficam. Lógó láb, kakaslépés (steppage: fokozott csípő- és térdflexio a lendítő fázisban), csökkent eversio, érzéskiesés a lábháton; az inversio (m. tibialis posterior, n. tibialis) megtartott – ez különíti el az L5-radiculopathiától.</li><li><b>Compartment-szindróma:</b> akut formája (pl. tibiatörés után) sürgősségi állapot: aránytalan fájdalom, fájdalom passzív nyújtásra, feszes rekesz, később zsibbadás; a pulzus sokáig tapintható marad. Krónikus terheléses formája edzés közben jelentkezik és pihenésre szűnik.</li><li><b>Tibialis posterior-diszfunkció:</b> mediális bokafájdalom, süllyedő boltozat, „too many toes” jel; egylábas sarokemelés nehezített, a sarok nem fordul inversióba.</li><li><b>Dorsalflexio és izomhossz:</b> térd–fal teszt a terheléses dorsalflexióra; nyújtott térddel beszűkült, hajlított térddel normális dorsalflexio a gastrocnemius rövidülésére utal (Silfverskiöld-elv), ha mindkét helyzetben beszűkült, a soleus vagy az ízület a korlátozó.</li><li><b>Mediális tibiális stressz-szindróma („shin splints”):</b> diffúz, legalább kb. 5 cm hosszú nyomásérzékenység a tibia disztális kétharmadának posteromediális szélén terheléskor; a stressztöréstől a pontszerű csontérzékenység, a nyugalmi/éjszakai fájdalom különíti el. Kezelés: terhelésszabályozás, fokozatos visszatérés, a vádli és csípő erősítése.</li></ul>\n<p class=\"note\">Oktatási célú összefoglaló; nem helyettesíti a szakmai irányelveket és az egyéni klinikai döntést.</p>",
+          "sv": "<p>Huvudfrågorna vid fysioterapeutisk undersökning av underben och fotled: finns fraktur eller ligamentskada, är hälsenan intakt, fungerar n. fibularis, och räcker dorsalflexionen för gång och idrott?</p>\n<ul><li><b>Lateral fotledsdistorsion:</b> plantarflexion + inversion; först skadas <span class=\"la\">lig. talofibulare anterius</span> (ATFL), därefter <span class=\"la\">lig. calcaneofibulare</span>. Främre lådtest (i lätt plantarflexion; mer tillförlitligt när svullnaden minskat, efter ca 4–5 dagar), talar tilt. Röntgen enligt Ottawa ankle rules: palpationsömhet vid malleolernas bakkant/spets, över os naviculare eller basen av femte metatarsalen, eller oförmåga att ta 4 steg.</li><li><b>Hälseneruptur:</b> plötslig smärta ”som en spark”, palpabel glipa. Thompsons (Simmonds) test: i bukläge ger kompression av vaden ingen plantarflexion. Aktiv plantarflexion kan finnas kvar tack vare de djupa flexorerna.</li><li><b>Pares av n. fibularis communis:</b> fraktur av collum fibulae, trånga gips, korslagda ben, knäluxation. Droppfot, steppagegång (ökad höft- och knäflexion i svingfasen), nedsatt eversion, känselbortfall på fotryggen; inversionen (m. tibialis posterior, n. tibialis) är bevarad – det skiljer den från L5-radikulopati.</li><li><b>Kompartmentsyndrom:</b> den akuta formen (t.ex. efter tibiafraktur) är ett akut tillstånd: oproportionerlig smärta, smärta vid passiv töjning, spänd loge, senare domningar; pulsen är ofta palpabel länge. Den kroniska ansträngningsutlösta formen uppträder under träning och går över i vila.</li><li><b>Tibialis posterior-dysfunktion:</b> medial fotledssmärta, sjunkande valv, ”too many toes”-tecken; enbenstående tåhävning försvårad, hälen går inte i inversion.</li><li><b>Dorsalflexion och muskellängd:</b> knä-mot-vägg-test för belastad dorsalflexion; inskränkt dorsalflexion med extenderat knä men normal med flekterat knä talar för förkortad gastrocnemius (Silfverskiölds princip); är den inskränkt i båda lägena är soleus eller leden begränsande.</li><li><b>Medialt tibialt stressyndrom (”shin splints”):</b> diffus, minst ca 5 cm lång palpationsömhet längs posteromediala kanten av tibias distala två tredjedelar vid belastning; skiljs från stressfraktur genom punktformig benömhet och vilo-/nattsmärta. Behandling: belastningsstyrning, gradvis återgång, styrketräning av vad och höft.</li></ul>\n<p class=\"note\">Sammanfattning för utbildningssyfte; ersätter inte professionella riktlinjer eller individuell klinisk bedömning.</p>"
+        }
+      },
+      "structureGroups": [
+        {
+          "title": {
+            "hu": "Elülső rekesz",
+            "sv": "Främre logen"
+          },
+          "structures": [
+            "m.tibialis-anterior",
+            "m.extensor-hallucis-longus",
+            "m.extensor-digitorum-longus",
+            "m.fibularis-tertius"
+          ]
+        },
+        {
+          "title": {
+            "hu": "Oldalsó rekesz",
+            "sv": "Laterala logen"
+          },
+          "structures": [
+            "m.fibularis-longus",
+            "m.fibularis-brevis"
+          ]
+        },
+        {
+          "title": {
+            "hu": "Hátsó felszíni réteg",
+            "sv": "Bakre ytliga lagret"
+          },
+          "structures": [
+            "m.gastrocnemius",
+            "m.soleus",
+            "m.plantaris"
+          ]
+        },
+        {
+          "title": {
+            "hu": "Hátsó mély réteg",
+            "sv": "Bakre djupa lagret"
+          },
+          "structures": [
+            "m.tibialis-posterior",
+            "m.flexor-hallucis-longus",
+            "m.flexor-digitorum-longus"
+          ]
+        },
+        {
+          "title": {
+            "hu": "Ízületek",
+            "sv": "Leder"
+          },
+          "structures": [
+            "art.talocruralis",
+            "art.subtalaris"
+          ]
+        }
+      ],
+      "structures": [
+        "m.tibialis-anterior",
+        "m.extensor-hallucis-longus",
+        "m.extensor-digitorum-longus",
+        "m.fibularis-tertius",
+        "m.fibularis-longus",
+        "m.fibularis-brevis",
+        "m.gastrocnemius",
+        "m.soleus",
+        "m.plantaris",
+        "m.tibialis-posterior",
+        "m.flexor-hallucis-longus",
+        "m.flexor-digitorum-longus",
+        "art.talocruralis",
+        "art.subtalaris"
+      ],
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
+      "id": "labfej",
+      "region": "lower-limb",
+      "order": 4,
+      "title": {
+        "hu": "Lábfej",
+        "sv": "Fot"
+      },
+      "latin": "pes",
+      "termName": {
+        "hu": "lábfej",
+        "sv": "fot",
+        "la": "pes"
+      },
+      "kiCourses": [
+        "1FY053",
+        "1FY055"
+      ],
+      "lessons": {
+        "basic": {
+          "hu": "<p>A lábfej (<span class=\"la\">pes</span>) hordozza a testsúlyt: járás közben egyszerre kell alkalmazkodó \"rugónak\" és merev emelőnek lennie. Három része van: a lábtő (<span class=\"la\">tarsus</span>, 7 csont), a lábközép (<span class=\"la\">metatarsus</span>, 5 csont) és az ujjak (<span class=\"la\">phalanges</span>, 14 csont).</p>\n<ul><li>A csontok boltozatokat alkotnak; a legfontosabb a belső hosszanti boltozat, amelyet szalagok, a talpi bőnye (<span class=\"la\">aponeurosis plantaris</span>) és izmok tartanak.</li><li>A lábhát saját izmai a rövid ujjfeszítő és a rövid öregujj-feszítő; a talp kisizmai négy rétegben fekszenek.</li><li>A lábfej saját (intrinsic) izmai finoman szabályozzák a boltozatot és az ujjak talajfogását; a nagy erőt a lábszárból érkező hosszú izmok inai adják.</li><li>Két fontos ízületvonal: a Chopart-vonal (a hátsó és a középső lábtő között) és a Lisfranc-vonal (a lábtő és a lábközép között).</li></ul>",
+          "sv": "<p>Foten (<span class=\"la\">pes</span>) bär kroppsvikten: under gång ska den både vara en anpassningsbar \"fjäder\" och en stel hävstång. Den har tre delar: fotroten (<span class=\"la\">tarsus</span>, 7 ben), mellanfoten (<span class=\"la\">metatarsus</span>, 5 ben) och tårna (<span class=\"la\">phalanges</span>, 14 ben).</p>\n<ul><li>Benen bildar fotvalv; viktigast är det mediala längsgående valvet, som hålls upp av ligament, plantarfascian (<span class=\"la\">aponeurosis plantaris</span>) och muskler.</li><li>Fotryggens egna muskler är korta tåsträckaren och korta stortåsträckaren; fotsulans små muskler ligger i fyra lager.</li><li>Fotens inre (intrinsic) muskler finjusterar valvet och tårnas grepp mot underlaget; den stora kraften kommer från senorna till underbenets långa muskler.</li><li>Två viktiga ledlinjer: Choparts linje (mellan bakre och mellersta fotroten) och Lisfrancs linje (mellan fotroten och mellanfoten).</li></ul>"
+        },
+        "university": {
+          "hu": "<p>A talp izmai a talpi bőnye alatt négy rétegben helyezkednek el a felszíntől a mélység felé: <b>1.</b> <span class=\"la\">m. abductor hallucis, m. flexor digitorum brevis, m. abductor digiti minimi</span>; <b>2.</b> <span class=\"la\">m. quadratus plantae, mm. lumbricales</span>, valamint a m. flexor digitorum longus és a m. flexor hallucis longus ina; <b>3.</b> <span class=\"la\">m. flexor hallucis brevis, m. adductor hallucis, m. flexor digiti minimi brevis</span>; <b>4.</b> <span class=\"la\">mm. interossei</span>, valamint a m. tibialis posterior és a m. fibularis longus ina.</p>\n<ul><li><b>Beidegzési logika:</b> a talp izmait a n. tibialis két végága látja el. A n. plantaris medialis (a kéz n. medianusának megfelelője) a m. abductor hallucist, a m. flexor digitorum brevist, a m. flexor hallucis brevist és az 1. lumbricalist idegzi be; minden más talpi izmot a n. plantaris lateralis (a n. ulnaris megfelelője). A lábhát két izmát a n. fibularis profundus (L5–S1) látja el.</li><li><b>Boltozatok:</b> a belső hosszanti boltozat zárókövét a talus feje és az <span class=\"la\">os naviculare</span> adja; alulról a <span class=\"la\">lig. calcaneonaviculare plantare</span> (spring ligament) tartja a taluszfejet. Aktív támasz: m. tibialis posterior, m. flexor hallucis longus, m. abductor hallucis.</li><li><b>Windlass-mechanizmus:</b> az öregujj MTP-extensiója megfeszíti a talpi bőnyét, amely \"csörlőként\" feltekeredik a lábközépcsontfejek körül: a boltozat emelkedik, a sarok supinálódik, a láb merev emelővé válik az elrugaszkodáshoz.</li><li><b>Midtarsalis zár:</b> a Chopart-ízület két tengelye pronált (everált) hátsó lábnál párhuzamos, ezért a középláb rugalmas; supinált hátsó lábnál a tengelyek nem párhuzamosak, és a középláb \"bezár\".</li><li><b>Ujjak tengelye:</b> a láb funkcionális tengelye a 2. ujjon halad át: a dorsalis interosseusok ettől távolítanak (DAB), a plantaris interosseusok ehhez közelítenek (PAD).</li></ul>",
+          "sv": "<p>Fotsulans muskler ligger under plantaraponeurosen i fyra lager från ytan mot djupet: <b>1.</b> <span class=\"la\">m. abductor hallucis, m. flexor digitorum brevis, m. abductor digiti minimi</span>; <b>2.</b> <span class=\"la\">m. quadratus plantae, mm. lumbricales</span> samt senorna från m. flexor digitorum longus och m. flexor hallucis longus; <b>3.</b> <span class=\"la\">m. flexor hallucis brevis, m. adductor hallucis, m. flexor digiti minimi brevis</span>; <b>4.</b> <span class=\"la\">mm. interossei</span> samt senorna från m. tibialis posterior och m. fibularis longus.</p>\n<ul><li><b>Innervationslogik:</b> fotsulans muskler försörjs av de två ändgrenarna från n. tibialis. N. plantaris medialis (motsvarar handens n. medianus) innerverar m. abductor hallucis, m. flexor digitorum brevis, m. flexor hallucis brevis och 1:a lumbrikalen; alla övriga fotsulemuskler innerveras av n. plantaris lateralis (motsvarar n. ulnaris). Fotryggens två muskler försörjs av n. fibularis profundus (L5–S1).</li><li><b>Fotvalv:</b> det mediala längsgående valvets slutsten utgörs av talushuvudet och <span class=\"la\">os naviculare</span>; underifrån bärs talushuvudet av <span class=\"la\">lig. calcaneonaviculare plantare</span> (spring ligament). Aktivt stöd: m. tibialis posterior, m. flexor hallucis longus, m. abductor hallucis.</li><li><b>Windlass-mekanismen:</b> extension i stortåns MTP-led spänner plantaraponeurosen, som lindas upp runt metatarsalhuvudena som på en vinsch: valvet höjs, hälen supineras och foten blir en stel hävstång för frånskjutet.</li><li><b>Midtarsal låsning:</b> Choparts leds två axlar är parallella när bakfoten är pronerad (everterad), så mellanfoten är flexibel; när bakfoten är supinerad är axlarna inte parallella och mellanfoten \"låses\".</li><li><b>Tårnas axel:</b> fotens funktionella axel går genom 2:a tån: de dorsala interosseusmusklerna abducerar bort från den (DAB), de plantara adducerar mot den (PAD).</li></ul>"
+        },
+        "clinical": {
+          "hu": "<p>A lábfej vizsgálatakor a fizioterapeuta állásban és járás közben is megnézi a boltozatot, a sarok helyzetét és az ujjak állását, majd ROM-ot, izomerőt, egyensúlyt és specifikus teszteket vizsgál.</p>\n<ul><li><b>Plantaris fasciopathia (fasciitis):</b> reggeli \"első lépés\" fájdalom a tuber calcanei medialis nyúlványánál; pozitív windlass-teszt. Ellátás: edukáció, terhelésadagolás, a talpi bőnye és a vádli nyújtása, progresszív erősítés (sarokemelés az ujjak alá tett törölközővel), tape, betét.</li><li><b>Hallux valgus:</b> az öregujj lateralis deviációja és az I. lábközépcsont medialis deviációja; a m. abductor hallucis plantaris irányba vándorol és elveszti távolító hatását, a m. adductor hallucis ellensúly nélkül húz.</li><li><b>Hallux rigidus:</b> az I. MTP-ízület artrózisa beszűkült extensióval. A terminális támaszfázisban kb. 60° extensio szükséges; ennek hiányában a beteg a láb külső szélén gördül le, kifelé fordított lábbal jár.</li><li><b>Morton-neuroma:</b> a közös talpi ujjideg megvastagodása, leggyakrabban a 3. intermetatarsalis résben (a III. és IV. lábközépcsont feje között); égő fájdalom, zsibbadás a 3–4. ujjban, Mulder-kattanás. Tágabb cipő, metatarsalis párna.</li><li><b>Lisfranc-sérülés:</b> a tarsometatarsalis ízületvonal sérülése, gyakran elnézik; talpi bevérzés, fájdalom egylábas sarokemeléskor, terheléses röntgen szükséges. A Chopart-vonal (talonavicularis + calcaneocuboidea) sérülései ritkábbak.</li><li><b>Boltozat és intrinsic izmok:</b> navicular drop teszt (>10 mm túlzott pronációra utal), Foot Posture Index; \"short foot\" gyakorlat a m. abductor hallucis és a talp többi kisizmának aktiválására, ujjhajlítás nélkül.</li></ul>\n<p class=\"note\">Oktatási célú összefoglaló; nem helyettesíti a szakmai irányelveket és az egyéni klinikai döntést.</p>",
+          "sv": "<p>Vid undersökning av foten bedömer fysioterapeuten valvet, hälens ställning och tårnas ställning både stående och under gång, och undersöker sedan ROM, muskelstyrka, balans och specifika tester.</p>\n<ul><li><b>Plantar fasciopati (fasciit):</b> morgonsmärta vid \"första steget\" över processus medialis tuberis calcanei; positivt windlass-test. Behandling: information, belastningsdosering, stretching av plantarfascian och vaden, progressiv styrketräning (tåhävning med handduk under tårna), tejpning, inlägg.</li><li><b>Hallux valgus:</b> lateral deviation av stortån och medial deviation av första metatarsalbenet; m. abductor hallucis vandrar plantart och förlorar sin abducerande verkan, m. adductor hallucis drar utan motvikt.</li><li><b>Hallux rigidus:</b> artros i första MTP-leden med nedsatt extension. I sen ståfas krävs ca 60° extension; saknas den rullar patienten av över fotens laterala kant och går med utåtvinklad fot.</li><li><b>Mortons neurom:</b> förtjockning av en gemensam plantar digitalnerv, oftast i 3:e intermetatarsala mellanrummet (mellan huvudena på 3:e och 4:e metatarsalbenet); brännande smärta och domningar i 3:e–4:e tån, Mulders klick. Rymligare sko, metatarsalkudde.</li><li><b>Lisfrancskada:</b> skada i den tarsometatarsala ledlinjen, ofta missad; plantart blodutträde, smärta vid tåhävning på ett ben, belastad röntgen krävs. Skador i Choparts linje (talonavikulär + kalkaneokuboid) är ovanligare.</li><li><b>Fotvalv och inre fotmuskler:</b> navicular drop test (>10 mm talar för överdriven pronation), Foot Posture Index; \"short foot\"-övning för att aktivera m. abductor hallucis och övriga fotsulemuskler utan tåflexion.</li></ul>\n<p class=\"note\">Sammanfattning för utbildningssyfte; ersätter inte professionella riktlinjer eller individuell klinisk bedömning.</p>"
+        }
+      },
+      "structureGroups": [
+        {
+          "title": {
+            "hu": "Lábhát",
+            "sv": "Fotryggen"
+          },
+          "structures": [
+            "m.extensor-digitorum-brevis",
+            "m.extensor-hallucis-brevis"
+          ]
+        },
+        {
+          "title": {
+            "hu": "Talp 1. réteg",
+            "sv": "Fotsulans 1:a lager"
+          },
+          "structures": [
+            "m.abductor-hallucis",
+            "m.flexor-digitorum-brevis",
+            "m.abductor-digiti-minimi-pedis"
+          ]
+        },
+        {
+          "title": {
+            "hu": "Talp 2. réteg",
+            "sv": "2:a lager"
+          },
+          "structures": [
+            "m.quadratus-plantae",
+            "m.lumbricales-pedis"
+          ]
+        },
+        {
+          "title": {
+            "hu": "Talp 3. réteg",
+            "sv": "3:e lager"
+          },
+          "structures": [
+            "m.flexor-hallucis-brevis",
+            "m.adductor-hallucis"
+          ]
+        },
+        {
+          "title": {
+            "hu": "Talp 4. réteg",
+            "sv": "4:e lager"
+          },
+          "structures": [
+            "m.interossei-pedis"
+          ]
+        },
+        {
+          "title": {
+            "hu": "Ízületek",
+            "sv": "Leder"
+          },
+          "structures": [
+            "art.tarsi-transversa",
+            "art.metatarsophalangeae"
+          ]
+        }
+      ],
+      "structures": [
+        "m.extensor-digitorum-brevis",
+        "m.extensor-hallucis-brevis",
+        "m.abductor-hallucis",
+        "m.flexor-digitorum-brevis",
+        "m.abductor-digiti-minimi-pedis",
+        "m.quadratus-plantae",
+        "m.lumbricales-pedis",
+        "m.flexor-hallucis-brevis",
+        "m.adductor-hallucis",
+        "m.interossei-pedis",
+        "art.tarsi-transversa",
+        "art.metatarsophalangeae"
+      ],
+      "review": {
+        "status": "draft",
+        "by": null,
+        "date": null
+      }
+    },
+    {
       "id": "plexus",
       "region": "nervous",
       "order": 1,

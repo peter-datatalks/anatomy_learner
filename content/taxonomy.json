@@ -57,6 +57,22 @@
     "kez": {
       "hu": "Kéz",
       "sv": "Hand"
+    },
+    "csipo": {
+      "hu": "Csípő és farizmok",
+      "sv": "Höft och sätesmuskler"
+    },
+    "comb-terd": {
+      "hu": "Comb és térd",
+      "sv": "Lår och knä"
+    },
+    "labszar": {
+      "hu": "Lábszár és boka",
+      "sv": "Underben och fotled"
+    },
+    "labfej": {
+      "hu": "Lábfej",
+      "sv": "Fot"
     }
   },
   "regions": {

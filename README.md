@@ -3,7 +3,7 @@
 A trilingual (Hungarian · Swedish · Latin) anatomy study app for physiotherapy students, aligned with
 the Karolinska Institutet Fysioterapeutprogrammet (1FY26). It installs on a phone and works offline.
 
-Status: Phase 0 (Foundation) is done, and Phase 1 has started: the upper limb has 4 modules (shoulder girdle, arm and elbow, forearm and wrist, hand). All content is an unreviewed draft. Start reviewing with [docs/review-notes.md](docs/review-notes.md).
+Status: Phase 0 (Foundation) is done, and Phase 1 covers both limbs: 4 upper-limb modules (shoulder girdle, arm and elbow, forearm and wrist, hand) and 4 lower-limb modules (hip, thigh and knee, leg and ankle, foot), each with a 3D view. All content is an unreviewed draft. Start reviewing with [docs/review-notes.md](docs/review-notes.md).
 
 ## Run it
 
@@ -70,12 +70,12 @@ Modules without a custom page get one automatically at `#modul-<id>`. Record ids
 
 ## 3D anatomy
 
-Datasheets of muscles and joints have a 3D view of the right upper limb. The selected structure lights up,
+Datasheets of muscles and joints have a 3D view of the right upper or lower limb. The selected structure lights up,
 the bone and muscle layers can be switched off, and tapping a part shows its name. The viewer downloads
-about 2.6 MB (three.js + meshes) the first time a student opens it; after that it works offline.
+about 2.5 MB per limb (three.js + meshes) the first time a student opens it; after that it works offline.
 
 The meshes come from **BodyParts3D**, © The Database Center for Life Science, licensed under
-[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). We selected the right upper limb parts,
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). We selected the right upper and lower limb parts,
 merged them per structure and converted them to a compact format. The credit is shown under every 3D view.
 Peripheral nerves are not part of BodyParts3D, so nerve datasheets have no 3D view yet.
 
